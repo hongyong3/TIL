@@ -57,3 +57,19 @@
 #     for i in range(1, 6):
 #         line = (f'이 줄은 {i}번 째 탭입니다.\t')
 #         f.write(line)
+
+# with open("new.txt", "w", encoding = 'utf-8') as f:
+#     for i in range(1, 11):
+#         data = f"{i}번째 줄입니다.\n"
+#         f.write(data)
+
+#readline으로 읽기
+# with open("new.txt", "r", encoding = 'utf-8') as f:
+#     line = f.readline()
+#     print(line.strip())
+
+# #readlines 파일 전체를 list 형태로 리턴
+# with open("new.txt", "r", encoding = 'utf-8') as f:
+#     lines = f.readlines()   ------> 모든 라인을 불러옴
+#     for i in lines:
+#         print(i.strip())
