@@ -1,0 +1,35 @@
+.text-center {
+    text-align: center;
+}
+.text-large {
+    font-size: 200%;
+}
+.text-red {
+    color: red;
+}
+
+.text-blue {
+    color: blue;
+}
+#dinner {
+    background: green;
+}
+.container {
+    background: cadetblue;
+}
+/* 후손태그 */
+div p {
+    color:  green;
+}
+/* 자식태그 */
+div > p {
+    color: hotpink;
+}
+/* 형제는 p + span ------> 형제 사이에 방해하는 요소가 있으면 에러// p ~ span은 형제 사이의 요소도 같이 바뀜  */
+p + span {
+    color: brown;
+}
+* {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-family: 'Permanent Marker', cursive;
+}
