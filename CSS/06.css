@@ -1,0 +1,63 @@
+.square {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    background-color: darkgray;
+}
+
+.relative-box {
+    position : relative;
+    background-color: navy;
+    top: 10px;
+    left: 10px;
+}
+
+.absolute-box {
+    /* absolute는 부모를 기준으로 움직이는 것. */
+    /* 부모를 relative를 주면 편하다. */
+    position: absolute;
+    background-color: chocolate;
+    top: 30px;
+    left: 30px;
+}
+
+.fixed {
+    position: fixed;
+    background-color: coral;
+
+    /* bottom에 붙였다. */
+    bottom: 0px;
+
+    /* left에 붙였다. */
+    left: 0px;
+
+    /* px를 20을 주었다. */
+    height: 20px;
+}
+
+.z-index-1 {
+    /* z-index는 body가 부모이다. */
+    /* 인덱스 순위가  1이 낮기 때문에 바닥에 깔린다. */
+    /* 만약 올리고 싶으면 높은 숫자 */
+    /* 부모의 z-index를 상속 받기 때문에 주의 해야 한다. */
+    background-color: brown;
+    top: 300px;
+    left: 300px;
+    z-index: 4;
+}
+
+.z-index-2 {
+    /* z-index는 body가 부모이다. */
+    background-color: blue;
+    top: 350px;
+    left: 350px;
+    z-index: 5;
+}
+
+.z-index-3 {
+    /* z-index는 body가 부모이다. */
+    background-color: red;
+    top: 400px;
+    left: 400px;
+    z-index: 3;
+}

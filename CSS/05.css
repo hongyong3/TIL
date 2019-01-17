@@ -1,0 +1,9 @@
+.none {
+    /* none은 공간도 사라진다. */
+    display: none;
+}
+
+.hidden {
+    /* hidden은 공간은 남아있다. */
+    visibility: hidden;
+}

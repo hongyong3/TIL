@@ -1,0 +1,23 @@
+html {
+    font-size:20px;
+}
+
+ol, ol li {
+    font-size:  1.2rem;
+    color: black;
+}
+
+ul, ul li {
+    font-size: 1.2em;
+    color: rgb(42, 13, 51);
+}
+
+.vh {
+    font-size: 5vh;
+    color: #834444;
+}
+
+.vw {
+    font-size: 5vw;
+    color: rgba(132, 42, 51, 0.5);
+}
