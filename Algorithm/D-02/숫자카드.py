@@ -1,5 +1,4 @@
 import sys
-
 sys.stdin = open("card_input.txt")
 T = int(input())
 

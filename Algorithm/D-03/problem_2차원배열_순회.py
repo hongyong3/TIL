@@ -53,17 +53,16 @@ def calAbs(y, x):
 arr = [[0 for _ in range(5)] for _ in range(5)] # [ ] 안이 열 // 바깥쪽이 행
 for i in range(5):
     arr[i] = list(map(int, input().split()))
-print(arr)
 
-# dx = [0, 0, -1, 1]
-# dy = [-1, 1, 0, 0]
-#
-# sum = 0
-# for x in range(len(arr)):
-#     for y in range(len(arr[x])):
-#         for i in range(4):
-#             testX = x + dx[i]
-#             testY = y + dy[i]
-#             if isWall(testX, testY) == False: # testX, testY가 0,0 같이 벽에 붙어 있지 않다면
-#                 sum += calAbs(arr[y][x], arr[testY][testX])
-# print("sum = {}".format(sum))
+dx = [0, 0, -1, 1]
+dy = [-1, 1, 0, 0]
+
+sum = 0
+for y in range(len(arr)):
+    for x in range(len(arr[0])):
+        for i in range(4):
+            testX = x + dx[i]
+            testY = y + dy[i]
+            if isWall(testX, testY) == False: # testX, testY가 0,0 같이 벽에 붙어 있지 않다면
+                sum += calAbs(arr[y][x], arr[testY][testX])
+print("sum = {}".format(sum))
