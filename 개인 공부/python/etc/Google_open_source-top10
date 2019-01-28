@@ -1,0 +1,144 @@
+# Google open-source-list
+
+## TOP 10
+
+구글은 어떤 기업보다 오픈소스 기술에 관심을 갖고 열심히 투자하는 기업이다. [현재까지 구글이 공개한 오픈소스 프로젝트는 900여개이며, 구글이 작성한 오픈소스 코드의 분량은 2천만줄 넘는다.](https://developers.google.com/open-source/projects) 여기에는 안드로이드 운영체제서부터 웹, 개발도구, 머신러닝까지 다양하다. 물론 900여개 기술 모두가 현재 유용한 것은 아니다. 출시된 지 수 년이 지난 오픈소스 기술은 피드백을 받지 못해 정체돼 있으며, 시간이 지날수록 가능성을 더 인정받는 기술도 있다. 이 인기를 가늠할 수 있는 것이 깃허브의 ‘스타’수와 ‘포크’수다. 깃허브는 오픈소스 기술들이 모여 있는 저장소로, 즐겨찾기라는 뜻의 ‘스타’와 소스코드를 복사해 갈 수 있는 ‘포크’라는 기능을 제공하고 있다. 스타와 포크수가 높을수록 관심을 많이 받는 프로젝트라고 볼 수 있다. 다음은 구글이 공개한 오픈소스 기술 가운데 ‘스타’ 개수가 1천개를 넘은 프로젝트들이다. 이 중 스타수가 가장 높은 프로젝트와 포크수가 가장 높은 프로젝트를 나눠 1위부터 10위까지 순위를 매겨보았다.
+
+**깃허브 스타수가 가장 많은 구글의 오픈소스 프로젝트**
+
+**1. 앵귤러JS**
+
+‘앵귤러JS’는 웹 어플리케이션 프레임워크로 개발과 테스트 환경을 단순화시킨 기술이다. 해외에는 ‘[앵귤라JS잡닷컴](https://www.angularjobs.com/)’이라는 구직 웹사이트가 있을 정도로 앵귤라JS의 인기는 높다. 앵귤러JS는 제이쿼리나 자바스크립트 UI 컴포넌트를 쉽게 재사용할 수 있는 것이 특징이다. 양방향 데이터 바인딩을 통해 불필요한 코드를 제거해 향후 유지보수를 쉽게 할 수 있는 장점도 지녔다. 앵귤러JS는 현재 1.4.7버전까지 나왔으며 최근 앵귤라JS 2.0버전을 만들기 위한 작업이 진행되고있다.![google_open_source_popular_04_AngularJS](http://www.bloter.net/wp-content/uploads/2015/11/google_open_source_popular_04_AngularJS.png)
+
+[앵귤러JS 프로젝트는 깃허브에 있는 모든 오픈소스 프로젝트를 기준으로 분석했을 때도 3번째로 높은 ‘스타’수를 가지고 있다. 현재 깃허브에 등록된 프로젝트는 100만개가 넘는다. ](https://github.com/search?o=desc&q=stars%3A%3E1&s=stars&type=Repositories)참고로 4번째로 스타수가 높은 프로젝트는 D3.js이고, 5번째는 노드JS다.
+
+![google_opensource_github_04_all_github_star-re](http://www.bloter.net/wp-content/uploads/2015/11/google_opensource_github_04_all_github_star-re-800x741.jpg)
+
+▲앵귤러JS 프로젝트는 깃허브에 있는 모든 오픈소스 프로젝트를 기준으로 분석했을 때도 3번째로 높은 ‘스타’수를 가지고 있다.(사진:깃허브 검색화면)
+
+- [앵귤러JS 공식 홈페이지](https://angular.io/)
+- [앵귤러JS 깃허브 홈페이지](https://github.com/angular/angular.js)
+
+**2. 머티리얼 디자인 아이콘**
+
+‘머티리얼 디자인 아이콘’에는 구글의 디자인 철학을 구현하기 위해 필요한 자료들이 포함돼 있다. 이미지 파일뿐만 아니라 머티리얼 디자인의 원리와 목표, 개발자가 알아야 할 가이드라인도 함께 제공되고 있다. 머티리얼 디자인에 적용된 구글의 오픈소스 폰트 ‘[로보토](https://github.com/google/roboto)‘도 큰 인기를 끌고 있다.
+
+![google_opensource_github_05_material-design-icons](http://www.bloter.net/wp-content/uploads/2015/11/google_opensource_github_05_material-design-icons.jpg)
+
+▲머티리얼 디자인 아이콘 예시
+
+- [머티리얼 디자인 아이콘 공식 홈페이지](http://google.github.io/material-design-icons/)
+- [머티리얼 디자인 아이콘 깃허브 페이지](https://github.com/google/material-design-icons)
+
+**3. 머티리얼 디자인 라이트**
+
+‘머티리얼 디자인 라이트'(Material Design Lite,MDL)는 머티리얼 디자인을 좀 더 쉽게 구현할 수 있도록 돕는 예제 소스 모음집이다. CSS, HTML, 자바스크립트 컴포넌트 등이 들어 있다. 개발자는 MDL를 참고해 버튼, 체크박스, 텍스트박스부터 레이아웃, 글씨 크기, 색상 등을 어떻게 적용해야 할지 알 수 있다. 소스코드들은 라이브러리, 프레임워크, 개발환경 등 외부 요소에 의해서 머티리얼 디자인이 변하지 않도록 신경썼다.
+
+![google_opensource_github_06_material-design-lite](http://www.bloter.net/wp-content/uploads/2015/11/google_opensource_github_06_material-design-lite.jpg)
+
+▲머티리얼 디자인 라이트
+
+- [머티리얼 디자인 라이트 공식 홈페이지](http://getmdl.io/)
+- [머티리얼 디자인 라이트 깃허브 홈페이지](https://github.com/google/material-design-lite)
+
+**4. ‘고’ 언어**
+
+‘고’는 2009년 구글이 만든 프로그래밍 언어다. C언어의 대안 언어로도 평가되고 있으며, 현재 1.4버전까지 나왔다. 고 언어의 ‘고루틴(goroutine)’을 이용하면 보다 쉽게 동시성 프로그래밍을 할 수 있다. 복잡하게 작성하고 디버깅도 어려웠던 병렬처리도 고 언어에서는 편한 방법으로 처리할 수 있다. 빌드 속도가 빠른 것도 고의 장점이다. 또한 고는 헤더 파일 등을 통해 의존 관계를 분석하지 않는다. 그 덕분에 기존엔 몇 시간씩 걸리던 컴파일 시간을 줄일 수 있다.
+
+아직 국내에서 고를 활용하는 사례는 적은 편이지만, 커뮤니티 중심으로 [한글 문서화 작업이 이뤄지고 세미나도 열리고 있다.](http://go-tour-kr.appspot.com/#1) 해외에는 고를 도입한 사례를 종종 볼 수 있다. 유튜브, 히로쿠, 도커, 드롭박스 등에서 고 언어를 활용하고 있다고 밝혔다.
+
+[![google_opensource_github_07_GO](http://www.bloter.net/wp-content/uploads/2015/11/google_opensource_github_07_GO.jpg)](http://www.bloter.net/wp-content/uploads/2015/11/google_opensource_github_07_GO.jpg)
+
+- [고 언어 공식 홈페이지](http://golang.org/)
+- [고 언어 깃허브 페이지](https://github.com/golang/go)
+
+**5. 웹 스타터 키트**
+
+‘웹 스타터 키트’는 말 그대로 웹 개발을 처음 시작하는 사람에게 제공하는 예제 소스다. 이제 막 웹 개발에 입문하는 사람이라면 웹 스타트 키트를 자습서로 활용할 수 있다. 구글이 어떤식으로 웹 개발을 진행하는지에 대한 기준도 알 수 있다. 웹 스타터 키트는 반응형 웹사이트가 부드럽게 구현될 수 있도록 신경썼고, [Sass](http://sass-lang.com/)를 활용할 수 있게 지원했다. 성능을 높이고 여러 기기를 쉽게 동기화할 수 있는 기능도 구현돼 있다.
+
+[![google_opensource_github_08_Web_Starter_Kit](http://www.bloter.net/wp-content/uploads/2015/11/google_opensource_github_08_Web_Starter_Kit.png)](http://www.bloter.net/wp-content/uploads/2015/11/google_opensource_github_08_Web_Starter_Kit.png)
+
+- [웹 스타터 키트 공식 홈페이지](http://developers.google.com/web/starter-kit)
+- [웹 스타터 키트 깃허브 페이지](https://github.com/google/web-starter-kit)
+
+**6. 쿠버네티스**
+
+컨테이너 기술은 최근 엔터프라이즈 분야에서 큰 화두가 되고 있다. MS, IBM, VM웨어 등 클라우드를 준비하는 기업일수록 컨테이너를 지원하느라 바쁘다. 그 중 구글은 컨테이너 기술의 선두주자로 꼽힌다. 특히 오픈소스 전문기업인 레드햇과 손잡아 컨테이너 기술을 부지런히 연구하고 있다. 쿠버네티스는 구글이 오픈소스 형태로 연구하는 컨테이너 기술이다. 구글은 쿠버네티스를 기반으로 상용 클라우드 서비스도 만들고 있다. 쿠버네티스 뿐만 아니라 ‘[c어드바이저](https://github.com/google/cadvisor)‘, ‘[LMCTFY(Let Me Contain That For You)](https://github.com/google/lmctfy)‘라는 또 다른 컨테이너 오픈소스 기술도 공개했으며, 이 역시 개발자들에게 큰 관심을 받고 있다.
+
+[![google_opensource_github_09_kubernetes](http://www.bloter.net/wp-content/uploads/2015/11/google_opensource_github_09_kubernetes.jpg)](http://www.bloter.net/wp-content/uploads/2015/11/google_opensource_github_09_kubernetes.jpg)
+
+- [쿠버네티스 공식 홈페이지](http://kubernetes.io/)
+- [쿠버네티스 깃허브 페이지](https://github.com/kubernetes/kubernetes)
+
+**7. 구글 I/O 2015 안드로이드 앱**
+
+‘구글 I/O’는 구글의 연례 개발자 행사다. 말하자면 ‘구글 I/O 안드로이드 앱’은 컨퍼런스 참가자들에게 도움을 주는 앱이다. 이미 올해 I/O 행사가 다 끝난 마당에 원본소스에 대한 관심이 높은 이유는 무엇일까? 바로 구글이 만든 앱 가운데 가장 재활용하기 좋은 앱이기 때문이다. 구글은 검색, e메일 등의 서비스를 제공한다. 일반 기업이 똑같이 검색, e메일 등의 앱을 만드는 경우는 드물다. 하지만 컨퍼런스, 세미나를 주최하는 기업들은 아주 많고, 관련 앱을 만들려는 기업도 많다. 구글도 깃허브 페이지에 “만약 앱을 만드는 사람이 있다면 이 소스코드가 좋은 시작점을 알려줄 것”이라고 설명하고 있다.
+
+![google_opensource_github_10_IO_APP](http://www.bloter.net/wp-content/uploads/2015/11/google_opensource_github_10_IO_APP-800x474.jpg)
+
+▲구글 I/O 2015 모바일 앱 예시(사진:구글플레이)
+
+예를 들어 이 앱에는 컨퍼런스 주제를 한번에 보여주고, 개인이 나만의 스케줄을 조정할 수 있는 기능이 들어 있다. 여러 기기에 지정한 스케줄을 동기화하는 기능이나, 연사의 사진을 보여주고 이를 ‘구글플러스’와 연동하는 기능도 포함됐다. 컨퍼런스 장소를 쉽게 볼 수 있는 벡터 지도를 제공하고, 사용자가 즐겨찾기한 세션을 미리 알려주는 기능도 있다. 동영상을 실시간으로 보거나, 사용자에게 피드백을 각 발표마다 따로 받을 수 있는 기능도 제공한다. 이러한 기능을 안드로이드 앱으로 구현하고 싶은 모바일 개발자가 있다면 구글 I/O 앱을 샘플로 활용할 수 있을 것이다.
+
+- [구글 I/O 2015 안드로이드 앱](https://play.google.com/store/apps/details?id=com.google.samples.apps.iosched)
+- [구글 I/O 2015 안드로이드 앱 깃허브 페이지](https://github.com/google/iosched)
+
+**8. 텐서플로**
+
+‘텐서플로’는 공식 출시 며칠 만에 많은 사람들이 즐겨찾기한 오픈소스 소프트웨어다. 깃허브는 일, 주, 월 단위로 가장 관심을 많이 받는 오픈소스 프로젝트를 집계하고 있는데, 텐서플로는 11월 둘째 주 가장 인기있는 프로젝트로 조사됐다. 머신러닝은 많은 IT기업들이 투자하고 있는 기술이다. 기술 수준은 아직 초기단계라 다양한 방법론과 실험이 이뤄지고 있다. 텐서플로는 머신러닝을 연구하는 사람들에게 좋은 참고자료가 될 것으로 보인다.
+
+![google_opensource_github_11_TensorFlow](http://www.bloter.net/wp-content/uploads/2015/11/google_opensource_github_11_TensorFlow-800x423.jpg)
+
+▲텐서플로는 11월둘째주 많은 사람들에게 주목받는 오픈소스 프로젝트로 뽑혔다(사진:깃허브 트랜딩 사이트)
+
+텐서플로라는 이름에서 텐서는 ‘다차원의 데이터 배열’를 처리한다는 의미에서 나왔다. 플로라는 단어는 노드와 엣지를 이용하는 데이터 흐름도(flow graphs)를 사용해서 쓰여졌다. 노드에서는 수학적 계산을 이뤄지거나 데이터 결과값이 보여진다. 텐서플로는 여러 노드들이 무엇인가 계산하거나 실행할 때 다차원 데이터 배열들이 막히지 않고 동시다발적으로 잘 흘러갈 수 있도록 도와준다.
+
+![google_opensource_github_11_IncremeterFifoQueue](http://www.bloter.net/wp-content/uploads/2015/11/google_opensource_github_11_IncremeterFifoQueue-800x343.gif)
+
+▲텐서플로우 예
+
+- [텐서플로 공식 홈페이지](http://tensorflow.org/)
+- [텐서플로 깃허브 페이지](https://github.com/tensorflow/tensorflow)
+
+**9. 딥드림**
+
+‘딥드림’은 구글 리서치팀이 만든 예제코드이다. 아이파이썬 노트북(IPython Notebook) 기반에서 확인할 수 있다. 예제코드는 신경망(Neural Network)을 활용해 그림의 일부를 바꿔 새로운 예술작품으로 만든 내용을 포함하고 있다. 구글은 이 예제로 신경망이 어떻게 작동하는지, 복잡한 분류 문제를 어떻게 해결했는지, 네트워크 구조를 어떻게 해결하는지에 대한 정보를 줄 수 있을 것으로 기대했다. 신경망과 예술을 결합한 조합 때문에 더 많은 사람들이 딥드림에 주목했다.
+
+![google_opensource_github_12_DeepDream](http://www.bloter.net/wp-content/uploads/2015/11/google_opensource_github_12_DeepDream.jpg)
+
+▲딥드림 결과물(사진;구글블로그/ MIT Computer Science and AI Laboratory)
+
+- [딥드림 소개 페이지](http://googleresearch.blogspot.ch/2015/06/inceptionism-going-deeper-into-neural.html)
+- [딥드림 깃허브 페이지](https://github.com/google/deepdream)
+
+**10. 지브라크로싱**
+
+‘지브라크로싱’은 1차원 혹은 2차원 QR코드를 인식하는 기술이다. 최근 모바일에서 QR코드를 활용하는 경우가 많아져 지브라크로싱에도 관심이 높아지고 있다.
+
+- [지브라크로싱 깃허브 페이지](https://github.com/zxing/zxing)
+
+![google_opensource_github_13_ZXing](http://www.bloter.net/wp-content/uploads/2015/11/google_opensource_github_13_ZXing.png)
+
+▲지브라크로싱 로고
+
+[![google_opensource_github_02_list_by_star](http://www.bloter.net/wp-content/uploads/2015/11/google_opensource_github_02_list_by_star.jpg)](http://www.bloter.net/wp-content/uploads/2015/11/google_opensource_github_02_list_by_star.jpg)
+
+**깃허브 ‘포크’수가 가장 높은 구글의 오픈소스 프로젝트**
+
+순위는 조금 바뀌었지만 ‘스타’수가 높았던 상위 10개의 오픈소스 기술들이 대부분 높은 포크수를 받았다. 딱 하나, 고 언어가 10위권 밖에 나왔으며, ‘[프로토콜 버퍼스](https://developers.google.com/protocol-buffers/)‘가 대신 10위를 차지했다. 프로토콜[ 버퍼스](https://developers.google.com/protocol-buffers/)는 언어와 플랫폼에 구애받지 않는 데이터 교환 형식이다.
+
+1위 앵귤러JS
+2위 지브라크로싱
+3위 구글 I/O 안드로이드 앱
+4위 머티리얼 디자인 아이콘
+5위 쿠버네티스
+6위 머티리얼 디자인 라이트
+7위 텐서플로
+8위 딥드림
+9위 웹 스타터 키트
+10위 프로토콜 버퍼스
+
+[![google_opensource_github_03_list_by_fork](http://www.bloter.net/wp-content/uploads/2015/11/google_opensource_github_03_list_by_fork.jpg)](http://www.bloter.net/wp-content/uploads/2015/11/google_opensource_github_03_list_by_fork.jpg)
+
+두 그래프에 나온 모든 기술의 링크는 아래 문서에서 볼 수 있다.
+☞ [두 그래프에 나온 기술 이름 및 깃허브 주소 바로 보기](https://docs.google.com/spreadsheets/d/1M30TgmCpDRNl9aeFoVivyR3AO_Eno7FIShBn_nhepv4/pubhtml?gid=0&single=true)
