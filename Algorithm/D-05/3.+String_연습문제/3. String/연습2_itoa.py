@@ -1,5 +1,6 @@
 def itoa(x):
     str = list()
+    count = 0
     i, y = 0, 0
     while True:
         y = x % 10
@@ -8,9 +9,9 @@ def itoa(x):
         if x == 0: break
         i += 1
 
-        str.reverse()
-        str = "".join(str)
-        return str
+    str.reverse()
+    str = "".join(str)
+    return str
 
 x = 123;
 print(x, type(x))
