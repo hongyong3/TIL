@@ -5,8 +5,8 @@ def palindrome(N, M, data):
         # 가로
         for x in range(len(data)):
             for y in range(len(data)):
-                if data[x][y:y+M-1] == data[x][y+M-1:y:-1]:
-                    ans.append(data[x][y:y+M])
+                if data[x][y:y+len(data)-1] == data[x][y+len(data)-1:y:-1]:
+                    ans.append(data[x][y:y+len(data)])
 
 
 
@@ -21,7 +21,8 @@ def palindrome(N, M, data):
         for x in range(len(data)):
             for y in range(len(data)):
                 if inverse[x][y : y+len(data)-1] == inverse[x][y+len(data)-1 : y : -1]:
-                    ans.data.append(data[x][y: y + len(data) - 1])
+                    # ans.data.append(data[x][y: y + len(data) - 1])
+                    ans.append(inverse[x][y:y+len(data)])
         M -= 1
     answer = []
     for i in ans:
