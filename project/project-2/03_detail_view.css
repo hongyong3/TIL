@@ -11,3 +11,19 @@ body {
     margin-top: 1rem;
     margin-bottom: 1rem;
 }
+
+.card-img-top {
+    cursor: pointer;
+    height: 335px;
+}
+
+.Header:hover {
+    background-image: url('./assets/header.jpg');
+    background-color: rgba(250, 250, 250, 0.376);
+    background-blend-mode: screen;
+}
+
+.card-title {
+    display: flex;
+    flex-wrap: nowrap;
+}

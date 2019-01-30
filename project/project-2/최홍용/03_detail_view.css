@@ -1,0 +1,13 @@
+body {
+    height: 10000px;
+}
+
+.subtitle {
+    background-position: center;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+.card {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
