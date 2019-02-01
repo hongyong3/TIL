@@ -26,6 +26,37 @@ class Circle:
 
 
 
+# Point class 생성
+class Point:
+
+    # 생성자 
+    def __init__(self, x, y):
+        self.x = int(x)
+        self.y = int(y)
+    
+# Circle class 생성
+class Circle:
+
+    # 생성자
+    def __init__(self, center, r):
+        self.center = center
+        self.r = r
+
+
+    def get_area(self):
+        return ((self.r)**2)*3.14
+
+
+    def get_perimeter(self):
+        return ((self.r)*2)*3.14
+
+    def get_center(self):
+        return (self.center.x, self.center.y)
+
+    def print(self):
+        print(f'Circle: {(self.center.x, self.center.y), r: {self.r}')
+
+
 
 
 

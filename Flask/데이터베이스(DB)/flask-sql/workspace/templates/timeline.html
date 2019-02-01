@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="/timeline/create" target="_blank">
+        <input type="text" name="username">
+        <input type="text" name="message">
+        <input type="submit" value="submit">
+    </form>
+
+    <!--flask에서 받은 객체(딕셔너리 형태)를 받아서 반복문으로 출력. -->
+    <ul>
+        {% for key, value in um_dict.items() %}
+        <li>{{ key }}, {{ value }} </li>
+        {% endfor %}
+    </ul>
+    
+    <!-- 선생님 풀이 -->
+    <!--<ul>-->
+    <!--    {% for timeline in timelines %}-->
+    <!--    <li>{{timeline['username']}} : {{timeline['message']}}</li>         ----> 방법1)-->
+    <!--    <li>{{timeline.username}} : {{timeline.message}}</li>               ----> 방법2> 앞으로는 이방법을 자주 쓸 예정-->
+    <!--    {% endfor %}-->
+    <!--</ul>-->
+    
+</body>
+
+</html>
