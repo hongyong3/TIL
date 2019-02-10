@@ -1,28 +1,27 @@
 def palindrome(N, M, data):
     ans = []
     while M > 0:
+        inverse = []
 
         # 가로
-        for x in range(len(data)):
-            for y in range(len(data)):
-                if data[x][y:y+len(data)-1] == data[x][y+len(data)-1:y:-1]:
-                    ans.append(data[x][y:y+len(data)])
-
+        for i in range(len(data)):
+            for j in range(len(data)):
+                if data[i][j:j+M-1] == data[i][j+M-1:j:-1]:
+                    ans.append(data[i][j:j+M])
 
 
         # 세로
-        inverse = []
-        for y in range(len(data)):
+        for j in range(len(data)):
             inverse_str = ''
-            for x in range(len(data)):
-                inverse_str += data[x][y]
-            inverse.append("".join(inverse_str))
+            for i in range(len(data)):
+                inverse_str += data[i][j]
+            inverse.append(''.join(inverse_str))
 
-        for x in range(len(data)):
-            for y in range(len(data)):
-                if inverse[x][y : y+len(data)-1] == inverse[x][y+len(data)-1 : y : -1]:
-                    # ans.data.append(data[x][y: y + len(data) - 1])
-                    ans.append(inverse[x][y:y+len(data)])
+        for i in range(len(data)):
+            for j in range(len(data)):
+                if inverse[i][j:j+M-1] == inverse[i][j+M-1:j:-1]:
+                    ans.append(inverse[i][j:j+M])
+                    
         M -= 1
     answer = []
     for i in ans:
@@ -31,9 +30,8 @@ def palindrome(N, M, data):
 
 import sys
 sys.stdin =open("회문2_input.txt", "r")
-for test_case in range(1, 11):
+for test_case in range(10):
     T = int(input())
     N, M = 100, 100
     data = [input() for _ in range(N)]
-    # print(data)
-    print("#{} {}".format(test_case, palindrome(N, M, data)))
+    print("#{} {}".format(test_case + 1, palindrome(N, M, data)))
