@@ -10,7 +10,7 @@ visited = [0 for i in range(n)] # 방문처리
 
 
 for i in range(0, len(temp), 2): # 입력
-    G[temp[i]][temp[i+1]] = 1q
+    G[temp[i]][temp[i+1]] = 1
     G[temp[i+1]][temp[i]] = 1
 
 for i in range(n): # 입력확인

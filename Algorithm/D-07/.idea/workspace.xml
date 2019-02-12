@@ -2,21 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="717c18e2-56c8-4513-944b-58e440159650" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/DFS알고리즘.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ladder.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ladder_input.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/stack.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/stack2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/괄호검사.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/연습.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/연습3_input.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/종이붙이기.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/종이붙이기_input.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/팩토리열.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/피보나치수.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/피보나치수2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/피보나치수3.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../algorithm/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../algorithm/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/연습.py" beforeDir="false" afterPath="$PROJECT_DIR$/연습.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../project/project-03" beforeDir="false" afterPath="$PROJECT_DIR$/../../project/project-03" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -29,8 +18,49 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ladder.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="76">
-              <caret line="4" column="16" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="16" />
+            <state relative-caret-position="266">
+              <caret line="14" column="37" lean-forward="true" selection-start-line="14" selection-start-column="37" selection-end-line="14" selection-end-column="37" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ladder2.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="608">
+              <caret line="32" column="24" lean-forward="true" selection-end-line="35" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/연습.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="475">
+              <caret line="25" column="18" selection-start-line="25" selection-start-column="18" selection-end-line="25" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/day7_stack1/연습3_DFS_반복.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="532">
+              <caret line="28" column="34" lean-forward="true" selection-start-line="28" selection-start-column="34" selection-end-line="28" selection-end-column="34" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/day7_stack1/연습3_DFS_재귀.py">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/연습3_input.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="19">
+              <caret line="1" column="19" selection-start-line="1" selection-start-column="19" selection-end-line="1" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -50,7 +80,7 @@
     </findStrings>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -67,16 +97,16 @@
         <option value="$PROJECT_DIR$/종이붙이기.py" />
         <option value="$PROJECT_DIR$/DFS알고리즘.py" />
         <option value="$PROJECT_DIR$/연습3_input.txt" />
-        <option value="$PROJECT_DIR$/연습.py" />
         <option value="$PROJECT_DIR$/ladder_input.txt" />
         <option value="$PROJECT_DIR$/ladder.py" />
+        <option value="$PROJECT_DIR$/연습.py" />
+        <option value="$PROJECT_DIR$/venv/ladder2.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="333" />
-    <option name="y" value="147" />
-    <option name="width" value="1030" />
+    <option name="x" value="953" />
+    <option name="width" value="974" />
     <option name="height" value="1047" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -86,10 +116,29 @@
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes />
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="D-07" type="b2602c69:ProjectViewProjectNode" />
+              <item name="D-07" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\student\Desktop\Choi\TIL\Algorithm\D-07" />
+      <recent name="C:\Users\student\Desktop\Choi\TIL\Algorithm\D-07\day7_stack1" />
       <recent name="C:\Users\student\Desktop\SM\til\D-07" />
     </key>
   </component>
@@ -105,7 +154,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.ladder">
+  <component name="RunManager" selected="Python.ladder2 (1)">
     <configuration name="연습" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="D-07" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -127,7 +176,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="회문2" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="연습3_DFS_반복" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="D-07" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -135,32 +184,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../../../Choi/TIL/Algorithm/D-06" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../../../Choi/TIL/Algorithm/D-06/회문2.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="DFS알고리즘" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="D-07" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/day7_stack1" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/DFS알고리즘.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/day7_stack1/연습3_DFS_반복.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -211,12 +239,55 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="ladder2 (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="D-07" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ladder2.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="ladder2" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="D-07" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/venv" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="C:\Users\student\Desktop\Choi\TIL\Algorithm\D-07\ladder2.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.ladder" />
-        <item itemvalue="Python.회문2" />
+        <item itemvalue="Python.ladder2 (1)" />
+        <item itemvalue="Python.ladder2" />
+        <item itemvalue="Python.연습3_DFS_반복" />
         <item itemvalue="Python.연습" />
-        <item itemvalue="Python.DFS알고리즘" />
+        <item itemvalue="Python.ladder" />
       </list>
     </recent_temporary>
   </component>
@@ -234,13 +305,14 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="333" y="147" width="1030" height="1047" extended-state="0" />
+    <frame x="953" y="0" width="974" height="1047" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26495728" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32968238" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.3264642" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
@@ -254,23 +326,30 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
+    <layout-to-restore>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" visible="true" weight="0.32968238" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3264642" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Python Console" order="10" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout-to-restore>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../../../Choi/TIL/Algorithm/D-06/문자열비교.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="18" column="20" lean-forward="true" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../Choi/TIL/Algorithm/D-06/문자열비교.py" />
     <entry file="file://$PROJECT_DIR$/venv/피보나치수열.py" />
-    <entry file="file://$PROJECT_DIR$/../../../Choi/TIL/Algorithm/D-05/BruteForce.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="14" column="17" lean-forward="true" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../Choi/TIL/Algorithm/D-05/BruteForce.py" />
     <entry file="file://$PROJECT_DIR$/팩토리열.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="114">
@@ -278,16 +357,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/괄호검사.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="267">
-          <caret line="31" column="19" lean-forward="true" selection-start-line="31" selection-start-column="19" selection-end-line="31" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../../Choi/TIL/Algorithm/D-05/bit별의암호화.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../Choi/TIL/Algorithm/D-05/bit별의암호화.py" />
     <entry file="file://$PROJECT_DIR$/피보나치수2.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="209">
@@ -330,16 +400,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../../../Choi/TIL/Algorithm/D-04/나사.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/연습3_input.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="3" lean-forward="true" selection-start-column="3" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../Choi/TIL/Algorithm/D-04/나사.py" />
     <entry file="file://$PROJECT_DIR$/DFS알고리즘.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="114">
@@ -354,23 +415,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../../../Choi/TIL/Algorithm/D-06/회문_input.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../../Choi/TIL/Algorithm/D-06/회문2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="722">
-          <caret line="38" column="49" selection-start-line="38" selection-start-column="49" selection-end-line="38" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../../Choi/TIL/Algorithm/D-06/회문.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="19" column="30" selection-start-line="19" selection-start-column="30" selection-end-line="19" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../Choi/TIL/Algorithm/D-06/회문_input.txt" />
+    <entry file="file://$PROJECT_DIR$/../../../Choi/TIL/Algorithm/D-06/회문2.py" />
+    <entry file="file://$PROJECT_DIR$/../../../Choi/TIL/Algorithm/D-06/회문.py" />
     <entry file="file://$PROJECT_DIR$/ladder_input.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="646">
@@ -378,17 +425,50 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/연습1_스택.py" />
+    <entry file="file://$PROJECT_DIR$/연습2_괄호.py" />
+    <entry file="file://$PROJECT_DIR$/괄호검사.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="15" column="20" lean-forward="true" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/연습.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="8" selection-start-column="8" selection-end-column="8" />
+        <state relative-caret-position="475">
+          <caret line="25" column="18" selection-start-line="25" selection-start-column="18" selection-end-line="25" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day7_stack1/연습3_DFS_재귀.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/연습3_input.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="1" column="19" selection-start-line="1" selection-start-column="19" selection-end-line="1" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day7_stack1/연습3_DFS_반복.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="532">
+          <caret line="28" column="34" lean-forward="true" selection-start-line="28" selection-start-column="34" selection-end-line="28" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ladder2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="608">
+          <caret line="32" column="24" lean-forward="true" selection-end-line="35" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ladder.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="4" column="16" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="16" />
+        <state relative-caret-position="266">
+          <caret line="14" column="37" lean-forward="true" selection-start-line="14" selection-start-column="37" selection-end-line="14" selection-end-column="37" />
         </state>
       </provider>
     </entry>
