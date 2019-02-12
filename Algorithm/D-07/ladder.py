@@ -1,24 +1,25 @@
 import sys
 sys.stdin = open("ladder_input.txt", "r")
 
-def ladder(99, X, data):
-    while X > 0:
-
-
-
-
-
-
-
 for test_case in range(10):
     T = int(input())
     data = [list(map(int, input().split())) for _ in range(100)]
-    X = 0
-    # print(data)
-    for j in range(100):
-        if data[99][j] == 2:
-            X = j
-    print(X)
+    ans = 0
+    for y in range(100):
+        if data[99][y] == 2:
+            ans = y
+    for x in range(1, 100):
+        if ans-1 >= 0 and data[99-x][ans-1] == 1:
+            data[99-x][ans] == 0
+            ans = ans - 1
+            while ans > 0 and data[99-x][ans-1] == 1:
+                data[99-x][ans] == 0
+                ans = ans - 1
 
-
-    # print("#{} {}".format(test_case, ladder(99, X, data)))
+        elif ans+1 <= 99 and data[99-x][ans+1] == 1:
+            data[99-x][ans] == 0
+            ans = ans + 1
+            while ans < 99 and data[99-x][ans+1] == 1:
+                data[99-x][ans] == 0
+                ans = ans + 1
+    print(f"#{T} {ans}")
