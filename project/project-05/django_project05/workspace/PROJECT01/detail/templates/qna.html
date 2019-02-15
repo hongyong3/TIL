@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+{% load static %} 
+
+{% block title %}Q&A{% endblock %} 
+
+{% block css %}
+<link rel="stylesheet" href="{% static 'detail/stylesheets/stylesheet.css' %}" type="text/css" /> 
+{% endblock %}
+
+{% block body %}
+<h2 class="py-3 d-flex justify-content-center">Q & A</h2>
+    <form>
+        <div class='container-fluid'>
+            <div class="form-row">
+                <div class="mt-2 col-12 col-lg-6">
+                    <label for="text">제목</label>
+                    <input type="text" class="mt-2 form-control">
+                </div>
+                
+                <div class="mt-2 col-12 col-lg-6">
+                    <label for="text">이메일</label>
+                    <input type="email" class="mt-2 form-control">
+                </div>
+            </div>
+            
+            <div class ="mt-2">  
+                <label for="text">내용</label>
+                <textarea teype="text" class="mt-2 form-control" id="comment"></textarea>
+            </div>
+            <div class ="mt-2">  
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+        </div>
+    </form>
+    
+{% endblock %}
+
+form

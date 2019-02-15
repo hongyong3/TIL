@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% load static %} 
+
+{% block title %}MySite{% endblock %} 
+
+{% block css %}
+<link rel="stylesheet" href="{% static 'detail/stylesheets/stylesheet.css' %}" type="text/css" />
+{% endblock %} 
+
+{% block body %}
+
+    <header>
+        <h1>Header</h1>
+    </header>
+    
+    
+
+    <div class="footer fixed-bottom d-flex justify-content-between align-items-center px-3 text-start bg-light">
+        <h5>Hongyong3</h5>
+        <a class="align-items-center" href="#bgi">
+            <i class="fas fa-arrow-circle-up fa-2x"></i>
+        </a>
+        <a href="#top">상단으로 올라가기</a>
+    </div>
+
+{% endblock %}

@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+{% load static %} 
+
+{% block title %}MySite{% endblock %} 
+
+{% block css %}
+<link rel="stylesheet" href="{% static 'detail/stylesheets/stylesheet.css' %}" type="text/css" />
+{% endblock %} 
+
+{% block body %}
+    <div class="card position-fixed" style="width: 18rem;">
+      <img src="{% static 'detail/images/Audrey.jpg' %}" class="card-img-top rounded-circle" alt="user_image">
+      <div class="card-body">
+        <h4 class= "card-name">Audrey Hepbrn</h4>
+        <h5 class="card-title">user@ssafy.com</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <p><a href="#" class="btn text-primary px-0">Logout</a></p>
+      </div>
+    </div>
+    
+    <div class="card mx-auto" style="width: 48rem;">
+      <img src="{% static 'detail/images/12.jpg' %}" class="card-img-top" alt="user_image">
+      <div class="card-body">
+        <h4 class= "card-name">로마의 휴일</h4>
+        <p class="card-text">[로마의 휴일]은 오드리 헵번의 할리우드 데뷔작이자 출세작이다.</p>
+      </div>
+    </div>
+    <div class="card mx-auto mt-3" style="width: 48rem;">
+      <img src="{% static 'detail/images/12.jpg' %}" class="card-img-top" alt="user_image">
+      <div class="card-body">
+        <h4 class= "card-name">로마의 휴일</h4>
+        <p class="card-text">[로마의 휴일]은 오드리 헵번의 할리우드 데뷔작이자 출세작이다.</p>
+      </div>
+    </div>
+    <div class="card mx-auto mt-3" style="width: 48rem;">
+      <img src="{% static 'detail/images/12.jpg' %}" class="card-img-top" alt="user_image">
+      <div class="card-body">
+        <h4 class= "card-name">로마의 휴일</h4>
+        <p class="card-text">[로마의 휴일]은 오드리 헵번의 할리우드 데뷔작이자 출세작이다.</p>
+      </div>
+    </div>
+{% endblock %}

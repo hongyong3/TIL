@@ -1,0 +1,16 @@
+header {
+    height : 350px;
+    background-image: url('/static/detail/images/header.jpg');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+}
+
+
+body {
+    height: 10000px;
+}
+
+h1 {
+    line-height: 350px;
+}

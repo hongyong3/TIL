@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% load static %} 
+
+{% block title %}MySite{% endblock %} 
+
+{% block css %}
+<link rel="stylesheet" href="{% static 'detail/stylesheets/stylesheet.css' %}" type="text/css" />
+{% endblock %} 
+
+{% block body %}
+<header>
+        <h1>{{ not_found }} / 는 없는 경로입니다.</h1>
+    </header>
+{% endblock %}
