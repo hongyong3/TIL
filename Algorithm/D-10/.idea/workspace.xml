@@ -2,21 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9b4ce22e-2247-4012-a074-1a6b8f2b6892" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../../개인 공부/Algorithm/D-10/.idea/D-10.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../개인 공부/Algorithm/D-10/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../개인 공부/Algorithm/D-10/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../개인 공부/Algorithm/D-10/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../개인 공부/Algorithm/D-10/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../개인 공부/Algorithm/D-10/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../개인 공부/Algorithm/D-10/미로.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../개인 공부/Algorithm/D-10/미로_input.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../개인 공부/Algorithm/D-10/배열 최소 합.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../개인 공부/Algorithm/D-10/배열 최소 합_input.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Forth.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../개인 공부/Algorithm/D-10/Forth.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Forth_input.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../개인 공부/Algorithm/D-10/Forth_input.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/미로.py" beforeDir="false" afterPath="$PROJECT_DIR$/미로.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../개인 공부/Algorithm/D-09/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../개인 공부/Algorithm/D-09/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/계산기3.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/계산기3_input.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../project/project-03" beforeDir="false" afterPath="$PROJECT_DIR$/../../project/project-03" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -26,29 +14,29 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../../개인 공부/Algorithm/D-10/배열 최소 합.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="608">
-              <caret line="32" column="34" selection-start-line="32" selection-start-column="34" selection-end-line="32" selection-end-column="34" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/미로_input.txt">
+        <entry file="file://$PROJECT_DIR$/계산기3.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="114">
-              <caret line="6" column="5" lean-forward="true" selection-start-line="6" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
+            <state relative-caret-position="171">
+              <caret line="9" selection-start-line="9" selection-end-line="9" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/배열 최소 합.py">
+        <entry file="file://$PROJECT_DIR$/Forth.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="95">
-              <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+            <state relative-caret-position="417">
+              <caret line="37" lean-forward="true" selection-start-line="37" selection-end-line="37" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/계산기3_input.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="285">
+              <caret line="15" column="8" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="8" />
             </state>
           </provider>
         </entry>
@@ -73,17 +61,20 @@
         <option value="$PROJECT_DIR$/Forth.py" />
         <option value="$PROJECT_DIR$/미로_input.txt" />
         <option value="$PROJECT_DIR$/미로.py" />
-        <option value="$PROJECT_DIR$/배열 최소 합_input.txt" />
         <option value="$PROJECT_DIR$/../D-09/backtrack_permutaion.py" />
         <option value="$PROJECT_DIR$/as.py" />
         <option value="$PROJECT_DIR$/배열 최소 합.py" />
+        <option value="$PROJECT_DIR$/배열 최소 합_input.txt" />
+        <option value="$PROJECT_DIR$/계산기3_input.txt" />
+        <option value="$PROJECT_DIR$/계산기3.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="y" value="17" />
-    <option name="width" value="840" />
-    <option name="height" value="1062" />
+    <option name="x" value="84" />
+    <option name="y" value="37" />
+    <option name="width" value="974" />
+    <option name="height" value="1047" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -127,7 +118,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.배열 최소 합">
+  <component name="RunManager" selected="Python.계산기3">
     <configuration name="배열 최소 합" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="D-10" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -162,6 +153,27 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../D-09/5.+stack2연습문제/5. stack2연습문제/5. Stack2/연습2_가지치기.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="계산기3" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="D-10" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/계산기3.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -235,6 +247,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.계산기3" />
         <item itemvalue="Python.배열 최소 합" />
         <item itemvalue="Python.backtrack_permutation" />
         <item itemvalue="Python.연습2_가지치기" />
@@ -256,15 +269,14 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="17" width="840" height="1062" extended-state="0" />
-    <editor active="true" />
+    <frame x="84" y="37" width="974" height="1047" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2680798" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22970085" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.31128848" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.31106243" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -386,20 +398,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/as.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/배열 최소 합.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/as.py" />
     <entry file="file://$PROJECT_DIR$/../../개인 공부/Algorithm/D-10/배열 최소 합.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="608">
@@ -411,6 +410,41 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="114">
           <caret line="6" column="5" lean-forward="true" selection-start-line="6" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/배열 최소 합_input.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="12" column="9" lean-forward="true" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/배열 최소 합.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="494">
+          <caret line="26" column="36" selection-start-line="26" selection-start-column="36" selection-end-line="26" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/계산기3_input.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="15" column="8" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Forth.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="417">
+          <caret line="37" lean-forward="true" selection-start-line="37" selection-end-line="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/계산기3.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
         </state>
       </provider>
     </entry>
