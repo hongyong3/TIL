@@ -5,11 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ee77dc1e-5284-4ed2-a88e-0b76d37f46a6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations/.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../개인 공부/Algorithm/D-10/행렬찾기.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../개인 공부/Algorithm/D-10/행렬찾기_input.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../D-12/.idea/D-12.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../D-12/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../D-12/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../D-12/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../D-12/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../D-12/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../D-12/미로의 거리.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../D-12/미로의 거리_input.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../D-12/피자 굽기.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../D-12/피자 굽기_input.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../D-12/회전.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../D-12/회전_input.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../개인 공부/Algorithm/D-10/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../개인 공부/Algorithm/D-10/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/행렬찾기.py" beforeDir="false" afterPath="$PROJECT_DIR$/행렬찾기.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../project/project-03" beforeDir="false" afterPath="$PROJECT_DIR$/../../project/project-03" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -22,8 +32,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/행렬찾기.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="8" column="35" selection-start-line="8" selection-start-column="35" selection-end-line="8" selection-end-column="35" />
+            <state relative-caret-position="703">
+              <caret line="37" column="17" selection-start-line="37" selection-start-column="17" selection-end-line="38" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -35,29 +45,6 @@
               <caret line="1" column="1" selection-start-line="1" selection-start-column="1" selection-end-line="1" selection-end-column="1" />
             </state>
           </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/연습문제3_BFS.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="418">
-              <caret line="22" column="32" selection-start-line="22" selection-start-column="32" selection-end-line="22" selection-end-column="32" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../D-10/미로.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="57">
-              <caret line="3" column="19" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../D-10/미로_input.txt">
-          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -85,15 +72,16 @@
         <option value="$PROJECT_DIR$/연습문제3_BFS2.py" />
         <option value="$PROJECT_DIR$/행렬찾기_input.txt" />
         <option value="$PROJECT_DIR$/ww.txt" />
-        <option value="$PROJECT_DIR$/행렬찾기.py" />
         <option value="$PROJECT_DIR$/../D-10/미로.py" />
+        <option value="$PROJECT_DIR$/행렬찾기.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="840" />
-    <option name="width" value="840" />
-    <option name="height" value="1010" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="496" />
+    <option name="y" value="52" />
+    <option name="width" value="974" />
+    <option name="height" value="1047" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -103,6 +91,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -114,7 +103,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -261,10 +249,11 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="840" y="0" width="840" height="1010" extended-state="0" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.2755611" />
+      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.13382508" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="0" />
       <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" />
@@ -348,20 +337,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/행렬찾기.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" column="35" selection-start-line="8" selection-start-column="35" selection-end-line="8" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/행렬찾기_input.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="1" column="1" selection-start-line="1" selection-start-column="1" selection-end-line="1" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/연습문제3_BFS.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="418">
@@ -378,6 +353,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../D-10/미로_input.txt">
       <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/행렬찾기_input.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="1" column="1" selection-start-line="1" selection-start-column="1" selection-end-line="1" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/행렬찾기.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="703">
+          <caret line="37" column="17" selection-start-line="37" selection-start-column="17" selection-end-line="38" selection-end-column="17" />
+        </state>
+      </provider>
     </entry>
   </component>
 </project>
