@@ -5,25 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1e3911a6-d98e-43d5-91ee-9e644c500bd1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/[TEST] 색종이 배치.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/[TST]같은 모양 찾기 simple.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/[TST]그릇.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/[TST]배부른 돼지.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/[TST]배열 정리.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/[TST]색종이(중).py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/[TST]색종이(초).py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/[TST]숫자근.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/[TST]전자레인지.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/같은 모양 찾기_input.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/배열정리.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/색종이 배치_input.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/색종이(중)_input.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/색종이(초)_input.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/숫자근_input.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../D_P-01/파리 퇴치.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../D_P-01/파리 퇴치_input.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../D-12/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../D-12/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../D-14/.idea/D-14.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../D-14/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../D-14/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../D-14/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../D-14/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../D-14/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../D-14/[TST]마을 위성사진.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../D-14/마을 위성사진_input.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/[TST]같은 모양 찾기 simple.py" beforeDir="false" afterPath="$PROJECT_DIR$/[TST]같은 모양 찾기 simple.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../project/project-03" beforeDir="false" afterPath="$PROJECT_DIR$/../../project/project-03" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../개인 공부/c9_Flask_sql/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../개인 공부/c9_Flask_sql/views.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -33,11 +26,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/[TST]배열 정리.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="57">
-              <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="4" selection-end-column="11" />
+            <state relative-caret-position="95">
+              <caret line="5" selection-start-line="5" selection-end-line="5" />
             </state>
           </provider>
         </entry>
@@ -45,17 +38,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/[TST]색종이(중).py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="76">
-              <caret line="4" column="52" lean-forward="true" selection-start-line="4" selection-end-line="4" selection-end-column="52" />
+            <state relative-caret-position="57">
+              <caret line="3" column="9" selection-start-line="3" selection-start-column="9" selection-end-line="3" selection-end-column="9" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/[TST]같은 모양 찾기 simple.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="10" column="32" lean-forward="true" selection-start-line="10" selection-start-column="32" selection-end-line="10" selection-end-column="32" />
+            <state relative-caret-position="57">
+              <caret line="3" selection-start-line="3" selection-end-line="3" selection-end-column="50" />
             </state>
           </provider>
         </entry>
@@ -63,7 +56,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/codecs.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="36">
+            <state relative-caret-position="5529">
               <caret line="291" selection-start-line="291" selection-end-line="291" />
             </state>
           </provider>
@@ -74,6 +67,15 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="266">
               <caret line="14" column="3" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="3" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/배열정리.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="76">
+              <caret line="4" column="7" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -112,8 +114,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="704" />
-    <option name="y" value="-14" />
+    <option name="x" value="525" />
+    <option name="y" value="-11" />
     <option name="width" value="840" />
     <option name="height" value="1010" />
   </component>
@@ -151,7 +153,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.[TST]같은 모양 찾기 simple">
+  <component name="RunManager" selected="Python.[TST]배열 정리">
     <configuration name="[TEST] 색종이 배치" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="D-13" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -194,7 +196,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="[TST]배부른 돼지" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="[TST]배열 정리" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="D-13" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -206,7 +208,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/[TST]배부른 돼지.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/[TST]배열 정리.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -301,10 +303,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.[TST]같은 모양 찾기 simple" />
         <item itemvalue="Python.[TST]배열 정리" />
+        <item itemvalue="Python.[TST]같은 모양 찾기 simple" />
         <item itemvalue="Python.[TEST] 색종이 배치" />
-        <item itemvalue="Python.[TST]색종이(중)" />
         <item itemvalue="Python.[TST]색종이(초)" />
       </list>
     </recent_temporary>
@@ -436,13 +437,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/배열정리.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="4" column="7" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/색종이(초)_input.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="19">
@@ -457,17 +451,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/[TST]색종이(중).py">
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/_pydev_imps/_pydev_execfile.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="4" column="52" lean-forward="true" selection-start-line="4" selection-end-line="4" selection-end-column="52" />
+        <state relative-caret-position="323">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/[TST]배열 정리.py">
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/codecs.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5529">
+          <caret line="291" selection-start-line="291" selection-end-line="291" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/[TST]색종이(중).py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="57">
-          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="4" selection-end-column="11" />
+          <caret line="3" column="9" selection-start-line="3" selection-start-column="9" selection-end-line="3" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/[TST]같은 모양 찾기 simple.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="3" selection-start-line="3" selection-end-line="3" selection-end-column="50" />
         </state>
       </provider>
     </entry>
@@ -478,24 +486,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/_pydev_imps/_pydev_execfile.py">
+    <entry file="file://$PROJECT_DIR$/배열정리.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        <state relative-caret-position="76">
+          <caret line="4" column="7" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="7" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/codecs.py">
+    <entry file="file://$PROJECT_DIR$/[TST]배열 정리.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="291" selection-start-line="291" selection-end-line="291" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/[TST]같은 모양 찾기 simple.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="10" column="32" lean-forward="true" selection-start-line="10" selection-start-column="32" selection-end-line="10" selection-end-column="32" />
+        <state relative-caret-position="95">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
         </state>
       </provider>
     </entry>
