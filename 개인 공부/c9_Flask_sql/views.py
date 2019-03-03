@@ -1,45 +1,19 @@
-from .models import Tag
-
-def index(request):
-    tag = Tag.objects.all()
-    return render(request, 'web/index.html', {'tag': tag})
-
-def create(request):
-    title = request.POST.get('title')
-    content = request.POST.get('content')
-    tag =Tag(title=title, content=content)
-    tag.save()
-    return redirect(index)
-
-def delete(request, pk):
-    tag = Tag.objects.get(pk=pk)
-    tag.delete()
-    return redirect(index)
-
-
-
-
-
-
-
-
-
 from django.shortcuts import render, redirect
+from .models import Student
 
 def index(request):
     students = Student.objects.all()
-    return render(request, 'students/index.html', {'students':students})
+    return render(request, 'students/index.html', {'students: students'})
 
 def create(request):
     name = request.POST.get('name')
-    title = redirect.POST.get('title')
-
-    student = Student(name=name, title=title)
-    student.save()
+    email = request.POST.get('email')
     
+    student = Student(name=name, email=email)
+    student.save()
     return redirect('/students/')
 
-def delete(redirect, pk):
-    student = student.objects.get(pk=pk)
+def delete(request, pk):
+    student = Student.objects.get(pk=pk)
     student.delete()
     return redirect('/students/')
