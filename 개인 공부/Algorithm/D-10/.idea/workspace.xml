@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="60f48577-d0ad-4503-8d4b-9b85b3a21b8a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../IM_pracetice/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../IM_pracetice/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../IM_pracetice/[TST]같은 모양 찾기.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../IM_pracetice/같은 모양 찾기_input.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../IM_pracetice/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../IM_pracetice/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -115,6 +112,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -126,7 +124,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -152,7 +149,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.노드의 거리">
+  <component name="RunManager" selected="Python.미로의 거리">
     <configuration name="피자 굽기 (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="D-10" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -174,7 +171,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="미로의 거리" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="노드의 거리" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="D-10" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -186,7 +183,7 @@
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../../../Algorithm/D-12/미로의 거리.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../../../Algorithm/D-12/노드의 거리.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -216,7 +213,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="노드의 거리" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="미로의 거리" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="D-10" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -228,7 +225,7 @@
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../../../Algorithm/D-12/노드의 거리.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../../../Algorithm/D-12/미로의 거리.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -260,7 +257,6 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.노드의 거리" />
         <item itemvalue="Python.회전" />
         <item itemvalue="Python.피자 굽기 (1)" />
         <item itemvalue="Python.행렬찾기 (1)" />
@@ -282,7 +278,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1696" height="1026" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.09770808" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
