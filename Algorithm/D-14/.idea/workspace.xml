@@ -2,33 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3de81b8e-b02b-4aec-95f3-c1568d22e6c3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../D-13/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Algorithm/D-14/.idea/D-14.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Algorithm/D-14/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Algorithm/D-14/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Algorithm/D-14/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Algorithm/D-14/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Algorithm/D-14/노드의 합.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Algorithm/D-14/노드의 합_input.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Algorithm/D-14/사칙연산.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Algorithm/D-14/사칙연산_input.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Algorithm/D-14/서브 트리.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Algorithm/D-14/서브 트리_input.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Algorithm/D-14/이진 탐색.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Algorithm/D-14/이진 탐색_input.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Algorithm/D-14/이진 힙.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Algorithm/D-14/이진 힙_input.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Algorithm/D-14/이진합.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Algorithm/D-14/이진합_input.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Algorithm/D-14t/.idea/D-14.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Algorithm/D-14t/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Algorithm/D-14t/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Algorithm/D-14t/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Algorithm/D-14t/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Algorithm/D-14t/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Algorithm/D-14t/[TST]마을 위성사진.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Algorithm/D-14t/마을 위성사진_input.txt" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/../D_P-02/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../D_P-02/회문1.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../D_P-02/회문1_input.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../D-13t/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../D-13t/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -91,9 +69,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-7" />
-    <option name="width" value="974" />
-    <option name="height" value="1047" />
+    <option name="x" value="525" />
+    <option name="y" value="-11" />
+    <option name="width" value="840" />
+    <option name="height" value="1010" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -103,7 +82,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -115,10 +93,11 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../D-13" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../D-13t" />
     <property name="settings.editor.selected.configurable" value="preferences.updates" />
   </component>
   <component name="RunDashboard">
@@ -133,28 +112,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.이진 탐색">
-    <configuration name="이진 힙" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="D-14" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/이진 힙.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python.이진 힙">
     <configuration name="이진 탐색" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="D-14" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -168,6 +126,27 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/이진 탐색.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="이진 힙" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="D-14" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/이진 힙.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -261,7 +240,7 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.이진 탐색" />
+      <item itemvalue="Python.이진 힙" />
       <item itemvalue="Python.이진합" />
     </list>
     <recent_temporary>
