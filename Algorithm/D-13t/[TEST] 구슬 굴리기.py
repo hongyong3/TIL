@@ -1,19 +1,47 @@
-def check(x, y):
-    dx = [0, 0, -1, 1]  # 위 아래 왼쪽 오른쪽
-    dy = [-1, 1, 0, 0]  # 위 아래 왼쪽 오른쪽
-
-
 import sys
 sys.stdin = open("구슬 굴리기_input.txt", "r")
-N, M = list(map(int, input().split()))
-data = [list(map(int, input())) for _ in range(M)]
-A = int(input())
-ans = list(map(int, input().split()))
-count = 0
 
-for i in range(N):
-    for j in range(M):
-        if data[i][j] == 2:
-            new_i, new_j = i, j
-            print(new_i, new_j)
-            check(new_i, new_j)
+X, Y = map(int, input().split())
+dy = [0, -1, 1, 0, 0]
+dx = [0, 0, 0, -1, 1]
+field = [(list(map(int, input()))) for _ in range(Y)]
+
+def iswall(y, x):
+    if Y-1 >= y > -1 and X-1 >= x > -1:
+        return True
+    else:
+        return False
+
+def movement(y, x, m):
+    global cnt
+    while True:
+        ny = dy[move[m]] + y
+        nx = dx[move[m]] + x
+        if iswall(ny, nx) and field[ny][nx] != 1:
+            if field[ny][nx] != 2:
+                field[ny][nx] = 2
+                x = nx
+                y = ny
+                start[0][0], start[0][1] = y, x
+                cnt += 1
+            else:
+                x = nx
+                y = ny
+                start[0][0], start[0][1] = y, x
+        else:
+            break
+    return cnt
+
+cnt = 1
+N = int(input())
+move = list(map(int, input().split()))
+start = []
+for y in range(Y):
+    for x in range(X):
+        if field[y][x] == 2:
+            start.append([y,x])
+
+for m in range(N):
+    movement(start[0][0], start[0][1], m)
+
+print(cnt)
