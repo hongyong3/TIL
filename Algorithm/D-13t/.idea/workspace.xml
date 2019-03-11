@@ -4,15 +4,7 @@
     <bookmark url="file://$PROJECT_DIR$/[TST]색종이(초).py" line="3" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1e3911a6-d98e-43d5-91ee-9e644c500bd1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/[TST]참외 밭(중등).py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/참외 밭_input.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/D-13.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/D-13.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/[TEST] 구슬 굴리기.py" beforeDir="false" afterPath="$PROJECT_DIR$/[TEST] 구슬 굴리기.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/[TST]스파이 조직.py" beforeDir="false" afterPath="$PROJECT_DIR$/[TST]스파이 조직.py" afterDir="false" />
-    </list>
+    <list default="true" id="1e3911a6-d98e-43d5-91ee-9e644c500bd1" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -344,14 +336,13 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24776785" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.352459" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.352459" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.38327906" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
