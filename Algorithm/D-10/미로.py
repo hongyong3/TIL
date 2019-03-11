@@ -20,7 +20,6 @@ for test_case in range(T):
     N = int(input())
     data = [list(map(int, input())) for _ in range(N)]
     flag = 0
-    print(data)
 
     dx = [0, 0, -1, 1] # 상 하 좌 우
     dy = [-1, 1, 0, 0] # 상 하 좌 우
@@ -30,4 +29,5 @@ for test_case in range(T):
                 start_x = x
                 start_y = y
 
-    print(f'#{test_case+1} {search(start_x, start_y)}')
+    print("#{} {}".format(test_case+1, search(start_x, start_y)))
+    # print(f'#{test_case+1} {search(start_x, start_y)}')
