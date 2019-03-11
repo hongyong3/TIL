@@ -10,12 +10,11 @@ def Searchtree(node):
     return count
 
 T = int(input())
-for test_case in range(1):
+for test_case in range(T):
     V, E = map(int, input().split())
     temp = list(map(int, input().split()))
     tree = [[0 for _ in range(3)] for _ in range(V+2)]
     count = 0
-    print(temp)
     for i in range(V):
         n1 = temp[i * 2]        # 왼쪽
         n2 = temp[i * 2 + 1]    # 오른쪽

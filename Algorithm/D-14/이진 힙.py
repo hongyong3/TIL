@@ -5,14 +5,14 @@ def enQ(n):
     global last
     last += 1   # 마지막 노드번호 증가
     child = last    # 마지막 노드를 자식노드로
-    parent = child//2    # 부모 노드 번호 계산
+    parent = child // 2    # 부모 노드 번호 계산
     Q[last] = n # 마지막 노드에 값 저장
     while child > 1 and Q[parent] > Q[child]:    # 루트가 아니고, 부모 노드의 값이 더 크면
         t = Q[parent]    # 저장된 값 바꿈
         Q[parent] = Q[child]
         Q[child] = t
         child = parent   # 부모를 새로운 자식노드로
-        parent = parent//2
+        parent = parent // 2
 
 def deQ():
     global last
@@ -39,13 +39,28 @@ def deQ():
                 parent = child1
             else:
                 break
+        else:
+            break
     return r
 
+def find(): # 마지막 노드의 조상 노드 찾기
+    global N
+    child = N
+    parent = child // 2
+    s = 0
+    while parent > 0:
+        s += Q[parent]
+        parent = parent // 2
+    return s
+
 T = int(input())
-for test_case in range(1):
+for test_case in range(T):
     N = int(input())
-    V = list(map(int, input().split()))
+    last = 0 # 노드가 하나도 없는 상태
+    Q = [0 for i in range(N + 1)]   # 이진 힙 구현을 위한 리스트 생성
+    l = list(map(int, input().split()))
     Q = [0] * (N+1)
-    last = 1
-    enQ(N)
-    # print("#{} {}".format(test_case + 1, enQ(N)))
+
+    for i in range(N):  # 힙에 저장
+        enQ(l[i])
+    print("#{} {}".format(test_case + 1, find()))

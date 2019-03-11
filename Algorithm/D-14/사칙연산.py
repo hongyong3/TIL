@@ -6,9 +6,9 @@ for test_case in range(10):
     tree = [0 for _ in range(N+1)]
     for i in range(N):
         input_T = input().split()
-        # print(input_T)
         tree[int(input_T[0])] = input_T[1:]
     stack = []
+
     def postorder(n):
         if len(tree[n]) > 1:
             postorder(int(tree[n][1]))
