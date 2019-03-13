@@ -2,13 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d7918990-ec97-49f6-b5fd-cc0b9dad30f7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/미로1.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/미로1_input.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../D-10/미로.py" beforeDir="false" afterPath="$PROJECT_DIR$/../D-10/미로.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/D_P-01.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/D_P-01.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/미로2.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/미로2_input.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ladder2.py" beforeDir="false" afterPath="$PROJECT_DIR$/Ladder2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/미로1.py" beforeDir="false" afterPath="$PROJECT_DIR$/미로1.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -20,55 +17,67 @@
     <session id="-1302103156">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="4" />
+          <entry key="project.closed" value="6" />
           <entry key="project.open.time.0" value="1" />
-          <entry key="project.open.time.2" value="3" />
-          <entry key="project.opened" value="4" />
+          <entry key="project.open.time.2" value="5" />
+          <entry key="project.opened" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="py" value="12" />
-          <entry key="txt" value="3" />
+          <entry key="py" value="15" />
+          <entry key="txt" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="PLAIN_TEXT" value="3" />
-          <entry key="Python" value="12" />
+          <entry key="PLAIN_TEXT" value="4" />
+          <entry key="Python" value="15" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="2619" />
+          <entry key="py" value="4070" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Python" value="2619" />
+          <entry key="Python" value="4070" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/미로1.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+            <state relative-caret-position="120">
+              <caret line="16" column="35" lean-forward="true" selection-start-line="12" selection-start-column="8" selection-end-line="16" selection-end-column="35" />
               <folding>
-                <marker date="1552261663075" expanded="true" signature="65:458" ph="..." />
+                <marker date="1552432073888" expanded="true" signature="555:667" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/미로2.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="51">
+              <caret line="3" selection-start-line="3" selection-end-line="40" selection-end-column="52" />
+              <folding>
+                <marker date="1552435026549" expanded="true" signature="603:715" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../D-10/미로.py">
+        <entry file="file://$PROJECT_DIR$/미로2_input.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="8" column="24" lean-forward="true" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
+            <state relative-caret-position="17170">
+              <caret line="1010" selection-start-line="1010" selection-end-line="1010" />
             </state>
           </provider>
         </entry>
@@ -95,13 +104,16 @@
         <option value="$PROJECT_DIR$/Ladder2.py" />
         <option value="$PROJECT_DIR$/미로1_input.txt" />
         <option value="$PROJECT_DIR$/../D-10/미로.py" />
+        <option value="$PROJECT_DIR$/미로1/미로1.py" />
         <option value="$PROJECT_DIR$/미로1.py" />
+        <option value="$PROJECT_DIR$/미로2_input.txt" />
+        <option value="$PROJECT_DIR$/미로2.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="954" />
-    <option name="width" value="973" />
+    <option name="x" value="953" />
+    <option name="width" value="974" />
     <option name="height" value="1047" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -142,7 +154,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.미로1">
+  <component name="RunManager" selected="Python.미로2">
     <configuration name="미로" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="D_P-01" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -156,6 +168,27 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../D-10/미로.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="미로1 (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="D_P-01" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/미로1" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/미로1/미로1.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -185,7 +218,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Ladder2" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="미로2" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="D_P-01" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -197,7 +230,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Ladder2.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/미로2.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -227,41 +260,20 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="(1211)Ladder2" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="D_P-01" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$USER_HOME$/AppData/Local/Temp/V3ZE5A7.tmp" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$USER_HOME$/AppData/Local/Temp/V3ZE5A7.tmp/(1211)Ladder2.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <list>
-      <item itemvalue="Python.Ladder2" />
-      <item itemvalue="Python.(1211)Ladder2" />
       <item itemvalue="Python.(1211)Ladder2 (1)" />
       <item itemvalue="Python.미로1" />
       <item itemvalue="Python.미로" />
+      <item itemvalue="Python.미로1 (1)" />
+      <item itemvalue="Python.미로2" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.미로2" />
         <item itemvalue="Python.미로1" />
+        <item itemvalue="Python.미로1 (1)" />
         <item itemvalue="Python.미로" />
         <item itemvalue="Python.(1211)Ladder2 (1)" />
-        <item itemvalue="Python.Ladder2" />
-        <item itemvalue="Python.(1211)Ladder2" />
       </list>
     </recent_temporary>
   </component>
@@ -279,15 +291,16 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="954" y="0" width="973" height="1047" extended-state="0" />
+    <frame x="953" y="0" width="974" height="1047" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.5058824" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.5053419" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32894737" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.3995657" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3991228" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -321,6 +334,17 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/미로2.py</url>
+          <line>3</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/../D-09/Magnetic.py">
@@ -395,20 +419,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/V3ZE5A7.tmp/(1211)Ladder2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="3" column="40" lean-forward="true" selection-start-line="3" selection-start-column="40" selection-end-line="3" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/V3ZF2DA.tmp/(1211)Ladder2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="640">
-          <caret line="40" column="42" lean-forward="true" selection-start-line="40" selection-start-column="42" selection-end-line="40" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/V3ZE5A7.tmp/(1211)Ladder2.py" />
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/V3ZF2DA.tmp/(1211)Ladder2.py" />
     <entry file="file://$PROJECT_DIR$/Ladder2_input.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="114">
@@ -427,9 +439,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="133">
           <caret line="7" column="19" lean-forward="true" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
-          <folding>
-            <marker date="1552259751635" expanded="true" signature="213:970" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -438,17 +447,48 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../D-10/미로.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" column="24" lean-forward="true" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
+        <state relative-caret-position="374">
+          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/미로1/미로1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/미로2_input.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17170">
+          <caret line="1010" selection-start-line="1010" selection-end-line="1010" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Program Files/Python35/Lib/_bootlocale.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/미로1.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+        <state relative-caret-position="120">
+          <caret line="16" column="35" lean-forward="true" selection-start-line="12" selection-start-column="8" selection-end-line="16" selection-end-column="35" />
           <folding>
-            <marker date="1552261663075" expanded="true" signature="65:458" ph="..." />
+            <marker date="1552432073888" expanded="true" signature="555:667" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/미로2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" selection-start-line="3" selection-end-line="40" selection-end-column="52" />
+          <folding>
+            <marker date="1552435026549" expanded="true" signature="603:715" ph="..." />
           </folding>
         </state>
       </provider>
