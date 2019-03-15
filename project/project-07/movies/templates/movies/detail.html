@@ -1,0 +1,40 @@
+{% extends 'movies/base.html' %}
+{% block title %}영화 정보 상세 조회{% endblock %}
+{% block body %}
+<h1>영화 정보 상세 조회</h1>
+<hr>
+<img src="{{ movie.poster_url }}" alt="movie.img"></img>
+<h2>{{ movie.title }}</h2>
+<h2>종합  평점 : {{ movie.score_avg }}</h2>
+<h2>관  객  수 : {{ movie.audience }}</h2>
+<h2>영화  소개 : {{ movie.description }}</h2>
+<h2>장      르 : {{ genre.name }}</h2>
+
+<a href="{% url 'movies:index' %}">[BACK]</a>
+<a href="#">[EDIT]</a>
+<form action="{% url 'movies:delete' movie.pk %}" method="POST" style="display: inline" onsubmit="return confirm('R U SURE?');">
+    {% csrf_token %}
+    <input type="submit" value="[DELETE]"/>
+</form>
+
+<hr>
+{% for score in scores %}
+    <li>{{ score.score }} / 한줄평 : {{ score.content }}</li>
+    <form action="{% url 'movies:scores_delete' movie.pk score.pk %}" method="POST" onsubmit="return confirm('R U SURE?');" style="display:inline" />
+        {% csrf_token %}
+        <input type="submit" value="[DELETE]"/>
+    </form>
+    {% empty %}
+    <p>한줄평이 없습니다.</p>
+{% endfor %}
+
+<hr>
+<p>한줄평 작성</p> {{ scores | length }} 개의 한줄평</P>
+<form action = "{% url 'movies:new' movie.pk %}" method="POST">
+    {% csrf_token %}
+    평점 : <input type="number" name="score" min="1" max="10" />
+    한줄평 : <input type="text" name="content"/>
+    <input type="submit" value="submit"/>
+</form>
+
+{% endblock %}
