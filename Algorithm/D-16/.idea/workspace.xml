@@ -2,28 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="58d431df-a7c9-479a-9c79-d6bc2e19167e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/단순 2진 암호코드.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/단순 2진 암호코드_input.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/비트 연산 예제1.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/비트 연산 예제5.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/연습문제1.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/연습문제2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/연습문제3.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/이진힙.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/이진힙_input.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/표준 입출력 방법.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/표준 입출력 방법_input.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../DP/농작물 수확하기.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../DP/농작물 수확하기_input.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../DP/원재의 메모리 복구하기.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../DP/원재의 메모리 복구하기_input.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../개인 공부/Algorithm/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../개인 공부/Algorithm/SUM.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../개인 공부/Algorithm/SUM_inut.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../D-17/.idea/D-17.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../D-17/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../D-17/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../D-17/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../D-17/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../D-17/이진수.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../D-17/이진수_input.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DP/숫자 배열 회전.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DP/숫자 배열 회전_input.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../DP/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../DP/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../개인 공부/Algorithm/Practice/ssafy_club/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../개인 공부/Algorithm/Practice/ssafy_club/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../개인 공부/Algorithm/Practice/ssafy_club/N-QUEEN.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../개인 공부/Algorithm/Practice/ssafy_club/N-QUEEN.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -35,23 +24,24 @@
     <session id="-6176895">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="4" />
+          <entry key="project.closed" value="7" />
           <entry key="project.open.time.0" value="1" />
-          <entry key="project.open.time.1" value="2" />
+          <entry key="project.open.time.1" value="4" />
+          <entry key="project.open.time.2" value="1" />
           <entry key="project.open.time.6" value="1" />
-          <entry key="project.opened" value="4" />
+          <entry key="project.opened" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="py" value="21" />
+          <entry key="py" value="25" />
           <entry key="txt" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="PLAIN_TEXT" value="4" />
-          <entry key="Python" value="21" />
+          <entry key="Python" value="25" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -70,7 +60,32 @@
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/단순 2진 암호코드.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="391">
+              <caret line="23" column="21" lean-forward="true" selection-start-line="23" selection-start-column="21" selection-end-line="23" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/연습문제2.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="629">
+              <caret line="37" column="12" lean-forward="true" selection-start-line="16" selection-end-line="37" selection-end-column="12" />
+              <folding>
+                <marker date="1552886007547" expanded="true" signature="396:481" ph="..." />
+                <marker date="1552886007547" expanded="true" signature="478:479" ph="..." />
+                <marker date="1552886007547" expanded="true" signature="478:480" ph="..." />
+                <marker date="1552886007547" expanded="true" signature="494:495" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -106,7 +121,7 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="953" />
+    <option name="x" value="-7" />
     <option name="width" value="974" />
     <option name="height" value="1047" />
   </component>
@@ -133,7 +148,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../개인 공부/Algorithm" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="preferences.general" />
   </component>
   <component name="RunDashboard">
@@ -148,7 +163,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.단순 2진 암호코드">
+  <component name="RunManager" selected="Python.연습문제2">
     <configuration name="표준 입출력 방법" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="D-16" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -183,6 +198,27 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/표준 입출력 방법.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="기본 확률" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="D-16" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="C:\Users\student\Desktop\Choi\TIL\Algorithm\D-16\순열.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -212,7 +248,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="기본 확률" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="이진힙" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="D-16" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -224,7 +260,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="C:\Users\student\Desktop\Choi\TIL\Algorithm\D-16\순열.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/이진힙.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -296,28 +332,9 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="이진힙" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="D-16" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/이진힙.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <list>
+      <item itemvalue="Python.기본 확률" />
+      <item itemvalue="Python.이진힙" />
       <item itemvalue="Python.표준 입출력 방법" />
       <item itemvalue="Python.연습문제1" />
       <item itemvalue="Python.연습문제2" />
@@ -326,9 +343,9 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.연습문제2" />
         <item itemvalue="Python.단순 2진 암호코드" />
         <item itemvalue="Python.연습문제3" />
-        <item itemvalue="Python.연습문제2" />
         <item itemvalue="Python.연습문제1" />
         <item itemvalue="Python.표준 입출력 방법" />
       </list>
@@ -357,7 +374,8 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="953" y="0" width="974" height="1047" extended-state="0" />
+    <frame x="-7" y="0" width="974" height="1047" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24893162" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -496,9 +514,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="15" column="9" lean-forward="true" selection-start-line="15" selection-start-column="9" selection-end-line="15" selection-end-column="9" />
-          <folding>
-            <marker date="1552878536571" expanded="true" signature="18:23" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -516,37 +531,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/연습문제2.py">
+    <entry file="file://$PROJECT_DIR$/단순 2진 암호코드_input.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="14" lean-forward="true" selection-start-line="3" selection-start-column="5" selection-end-line="9" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/연습문제3.py">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret selection-end-line="15" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/단순 2진 암호코드.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="21" lean-forward="true" selection-start-line="23" selection-start-column="21" selection-end-line="23" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/연습문제2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="629">
+          <caret line="37" column="12" lean-forward="true" selection-start-line="16" selection-end-line="37" selection-end-column="12" />
           <folding>
             <marker date="1552886007547" expanded="true" signature="396:481" ph="..." />
             <marker date="1552886007547" expanded="true" signature="478:479" ph="..." />
             <marker date="1552886007547" expanded="true" signature="478:480" ph="..." />
             <marker date="1552886007547" expanded="true" signature="494:495" ph="..." />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/단순 2진 암호코드.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="18" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/연습문제3.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="447">
-          <caret line="50" lean-forward="true" selection-start-line="50" selection-end-line="50" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/단순 2진 암호코드_input.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="14" lean-forward="true" selection-start-line="3" selection-start-column="5" selection-end-line="9" selection-end-column="14" />
         </state>
       </provider>
     </entry>

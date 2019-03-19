@@ -27,17 +27,20 @@ ans = [[0,0,1,1,0,1],    # 0
        [1,0,1,1,1,1]]    # 9
 
 # arr = "0DEC"
-arr = "0269FAC9A0"
+arr = "41DA16CD"
+print(type(arr))
 def aToh(c):
     if c <= '9': return ord(c) - ord('0')
     else: return ord(c) - ord('A') + 10
 
 t = []
 
+
 for j in range(len(arr)):
     for i in range(4):
         t.append(asc[aToh(arr[j])][i])
-print(t)
+for i in range(len(t)):
+    print(t[i], end="")
 
 result = []
 k = len(t)-1
@@ -47,6 +50,3 @@ while k >= 5:
             result.append(ans.index(t[k-5:k+1]))
             k -= 5
     k -= 1
-
-result.reverse()
-print(*result)

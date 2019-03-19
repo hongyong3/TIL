@@ -2,13 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d7918990-ec97-49f6-b5fd-cc0b9dad30f7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/농작물 수확하기.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/농작물 수확하기_input.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/원재의 메모리 복구하기.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/원재의 메모리 복구하기_input.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/숫자 배열 회전.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/숫자 배열 회전_input.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../D-16/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../D-16/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../개인 공부/Algorithm/Practice/ssafy_club/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../개인 공부/Algorithm/Practice/ssafy_club/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../개인 공부/Algorithm/Practice/ssafy_club/N-QUEEN.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../개인 공부/Algorithm/Practice/ssafy_club/N-QUEEN.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -20,69 +17,52 @@
     <session id="-1302103156">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="9" />
-          <entry key="project.open.time.0" value="2" />
+          <entry key="project.closed" value="10" />
+          <entry key="project.open.time.0" value="3" />
           <entry key="project.open.time.2" value="7" />
-          <entry key="project.opened" value="9" />
+          <entry key="project.opened" value="10" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="py" value="19" />
-          <entry key="txt" value="7" />
+          <entry key="py" value="20" />
+          <entry key="txt" value="8" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="PLAIN_TEXT" value="7" />
-          <entry key="Python" value="19" />
+          <entry key="PLAIN_TEXT" value="8" />
+          <entry key="Python" value="20" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="4727" />
+          <entry key="py" value="5800" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Python" value="4727" />
+          <entry key="Python" value="5800" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../../개인 공부/Algorithm/Practice/ssafy_club/N-QUEEN.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="42" column="4" lean-forward="true" selection-start-line="42" selection-start-column="4" selection-end-line="42" selection-end-column="4" />
-              <folding>
-                <element signature="n#!!doc" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../../개인 공부/Algorithm/Practice/ssafy_club/N-QUEEN_input.txt">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/원재의 메모리 복구하기.py">
+        <entry file="file://$PROJECT_DIR$/숫자 배열 회전.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" column="22" selection-start-line="15" selection-start-column="16" selection-end-line="17" selection-end-column="22" />
+            <state relative-caret-position="51">
+              <caret line="3" column="24" selection-start-line="3" selection-start-column="24" selection-end-line="3" selection-end-column="24" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/원재의 메모리 복구하기_input.txt">
+        <entry file="file://$PROJECT_DIR$/숫자 배열 회전_input.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="19" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
+            <state relative-caret-position="918">
+              <caret line="54" column="9" selection-start-line="54" selection-start-column="9" selection-end-line="54" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -118,6 +98,8 @@
         <option value="$PROJECT_DIR$/../../개인 공부/Algorithm/Practice/ssafy_club/N-QUEEN.py" />
         <option value="$PROJECT_DIR$/원재의 메모리 복구하기_input.txt" />
         <option value="$PROJECT_DIR$/원재의 메모리 복구하기.py" />
+        <option value="$PROJECT_DIR$/숫자 배열 회전_input.txt" />
+        <option value="$PROJECT_DIR$/숫자 배열 회전.py" />
       </list>
     </option>
   </component>
@@ -149,7 +131,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../D-16" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RunDashboard">
@@ -164,7 +146,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.원재의 메모리 복구하기">
+  <component name="RunManager" selected="Python.숫자 배열 회전">
     <configuration name="원재의 메모리 복구하기" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="D_P-01" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -186,6 +168,27 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="숫자 배열 회전" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="D_P-01" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/숫자 배열 회전.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="농작물 수확하기" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="D_P-01" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -199,27 +202,6 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/농작물 수확하기.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="미로1" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="D_P-01" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/미로1.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -271,19 +253,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.미로1" />
       <item itemvalue="Python.미로2" />
       <item itemvalue="Python.농작물 수확하기" />
       <item itemvalue="Python.N-QUEEN" />
       <item itemvalue="Python.원재의 메모리 복구하기" />
+      <item itemvalue="Python.숫자 배열 회전" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.숫자 배열 회전" />
         <item itemvalue="Python.원재의 메모리 복구하기" />
         <item itemvalue="Python.N-QUEEN" />
         <item itemvalue="Python.농작물 수확하기" />
         <item itemvalue="Python.미로2" />
-        <item itemvalue="Python.미로1" />
       </list>
     </recent_temporary>
   </component>
@@ -302,8 +284,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24920969" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24920969" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -489,9 +472,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
           <caret line="16" column="35" selection-start-line="12" selection-start-column="8" selection-end-line="16" selection-end-column="35" />
-          <folding>
-            <marker date="1552432073888" expanded="true" signature="555:667" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -519,10 +499,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/농작물 수확하기.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="38" lean-forward="true" selection-start-line="16" selection-start-column="38" selection-end-line="16" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/../../개인 공부/Algorithm/Practice/ssafy_club/N-QUEEN.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
-          <caret line="42" column="4" lean-forward="true" selection-start-line="42" selection-start-column="4" selection-end-line="42" selection-end-column="4" />
+          <caret line="42" column="4" selection-start-line="42" selection-start-column="4" selection-end-line="42" selection-end-column="4" />
           <folding>
             <element signature="n#!!doc" />
           </folding>
@@ -532,6 +519,13 @@
     <entry file="file://$PROJECT_DIR$/../../개인 공부/Algorithm/Practice/ssafy_club/N-QUEEN_input.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/원재의 메모리 복구하기.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="22" selection-start-line="15" selection-start-column="16" selection-end-line="17" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/원재의 메모리 복구하기_input.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
@@ -539,17 +533,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/농작물 수확하기.py">
+    <entry file="file://$PROJECT_DIR$/숫자 배열 회전_input.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="38" lean-forward="true" selection-start-line="16" selection-start-column="38" selection-end-line="16" selection-end-column="38" />
+        <state relative-caret-position="918">
+          <caret line="54" column="9" selection-start-line="54" selection-start-column="9" selection-end-line="54" selection-end-column="9" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/원재의 메모리 복구하기.py">
+    <entry file="file://$PROJECT_DIR$/숫자 배열 회전.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="22" selection-start-line="15" selection-start-column="16" selection-end-line="17" selection-end-column="22" />
+        <state relative-caret-position="51">
+          <caret line="3" column="24" selection-start-line="3" selection-start-column="24" selection-end-line="3" selection-end-column="24" />
         </state>
       </provider>
     </entry>

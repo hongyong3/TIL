@@ -2,28 +2,30 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4fd15486-7f3f-4d99-bbf5-2efef67f83cd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../../Algorithm/D-16/단순 2진 암호코드.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Algorithm/D-16/단순 2진 암호코드_input.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Algorithm/D-16/비트 연산 예제1.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Algorithm/D-16/비트 연산 예제5.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Algorithm/D-16/연습문제1.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Algorithm/D-16/연습문제2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Algorithm/D-16/연습문제3.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Algorithm/D-16/이진힙.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Algorithm/D-16/이진힙_input.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Algorithm/D-16/표준 입출력 방법.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Algorithm/D-16/표준 입출력 방법_input.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Algorithm/DP/농작물 수확하기.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Algorithm/DP/농작물 수확하기_input.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Algorithm/DP/원재의 메모리 복구하기.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Algorithm/DP/원재의 메모리 복구하기_input.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SUM.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SUM_inut.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Algorithm/D-17/.idea/D-17.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Algorithm/D-17/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Algorithm/D-17/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Algorithm/D-17/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Algorithm/D-17/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Algorithm/D-17/암호코드 스캔.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Algorithm/D-17/암호코드 스캔_input.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Algorithm/D-17/이진수.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Algorithm/D-17/이진수2.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Algorithm/D-17/이진수2_input.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Algorithm/D-17/이진수_input.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Algorithm/D-17/정식이의 은행업무.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Algorithm/D-17/정식이의 은행업무_input.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Algorithm/DP/숫자 배열 회전.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Algorithm/DP/숫자 배열 회전_input.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/X_SUM.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/X_SUM_input.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Algorithm/D-16/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Algorithm/D-16/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Algorithm/D-16/연습문제3.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../Algorithm/D-16/연습문제3.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Algorithm/DP/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Algorithm/DP/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Practice/ssafy_club/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Practice/ssafy_club/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Practice/ssafy_club/N-QUEEN.py" beforeDir="false" afterPath="$PROJECT_DIR$/Practice/ssafy_club/N-QUEEN.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Algorithm.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Algorithm.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SUM.py" beforeDir="false" afterPath="$PROJECT_DIR$/SUM.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -36,50 +38,59 @@
       <usages-collector id="statistics.lifecycle.project">
         <counts>
           <entry key="project.closed" value="1" />
-          <entry key="project.open.time.0" value="1" />
-          <entry key="project.opened" value="1" />
+          <entry key="project.open.time.0" value="2" />
+          <entry key="project.opened" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="py" value="1" />
-          <entry key="txt" value="1" />
+          <entry key="py" value="2" />
+          <entry key="txt" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="PLAIN_TEXT" value="1" />
-          <entry key="Python" value="1" />
+          <entry key="PLAIN_TEXT" value="2" />
+          <entry key="Python" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="702" />
+          <entry key="py" value="825" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Python" value="702" />
+          <entry key="Python" value="825" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/SUM.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="19" column="49" lean-forward="true" selection-start-line="19" selection-start-column="49" selection-end-line="19" selection-end-column="49" />
+            <state relative-caret-position="85">
+              <caret line="5" column="12" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SUM_inut.txt">
+        <entry file="file://$PROJECT_DIR$/X_SUM.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17170">
-              <caret line="1010" selection-start-line="1010" selection-end-line="1010" />
+            <state relative-caret-position="17">
+              <caret line="1" column="38" selection-start-line="1" selection-start-column="38" selection-end-line="1" selection-end-column="38" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/X_SUM_input.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="5" column="7" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -100,11 +111,13 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/SUM_inut.txt" />
+        <option value="$PROJECT_DIR$/X_SUM_input.txt" />
+        <option value="$PROJECT_DIR$/X_SUM.py" />
         <option value="$PROJECT_DIR$/SUM.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds">
     <option name="x" value="953" />
     <option name="width" value="974" />
     <option name="height" value="1047" />
@@ -117,13 +130,23 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Algorithm" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Algorithm" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="preferences.general" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -137,7 +160,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.SUM">
     <configuration name="SUM" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Algorithm" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -159,9 +182,35 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="X_SUM" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Algorithm" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/X_SUM.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Python.SUM" />
+      <item itemvalue="Python.X_SUM" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Python.SUM" />
+        <item itemvalue="Python.X_SUM" />
       </list>
     </recent_temporary>
   </component>
@@ -179,23 +228,23 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="953" y="0" width="974" height="1047" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" weight="0.50641024" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.6698718" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Version Control" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Python Console" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3257329" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3256579" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Python Console" order="10" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -207,15 +256,29 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/SUM_inut.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17170">
+        <state relative-caret-position="770">
           <caret line="1010" selection-start-line="1010" selection-end-line="1010" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/X_SUM_input.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="7" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/X_SUM.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="38" selection-start-line="1" selection-start-column="38" selection-end-line="1" selection-end-column="38" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/SUM.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="49" lean-forward="true" selection-start-line="19" selection-start-column="49" selection-end-line="19" selection-end-column="49" />
+        <state relative-caret-position="85">
+          <caret line="5" column="12" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
         </state>
       </provider>
     </entry>
