@@ -2,30 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="010ad1d8-4e63-4960-8874-2af417000a04" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/D-17.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/암호코드 스캔.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/암호코드 스캔_input.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/이진수.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/이진수2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/이진수2_input.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/이진수_input.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/정식이의 은행업무.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/정식이의 은행업무_input.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../DP/숫자 배열 회전.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../DP/숫자 배열 회전_input.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../개인 공부/Algorithm/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../개인 공부/Algorithm/X_SUM.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../개인 공부/Algorithm/X_SUM_input.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../D-16/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../D-16/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../D-16/연습문제3.py" beforeDir="false" afterPath="$PROJECT_DIR$/../D-16/연습문제3.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DP/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../DP/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../개인 공부/Algorithm/.idea/Algorithm.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../../개인 공부/Algorithm/.idea/Algorithm.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../개인 공부/Algorithm/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../개인 공부/Algorithm/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../개인 공부/Algorithm/SUM.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../개인 공부/Algorithm/SUM.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -37,6 +14,7 @@
     <session id="-1813631357">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
+          <entry key="project.closed" value="1" />
           <entry key="project.open.time.5" value="1" />
           <entry key="project.opened" value="1" />
         </counts>
@@ -72,8 +50,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/암호코드 스캔.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="36" selection-start-line="4" selection-start-column="36" selection-end-line="4" selection-end-column="36" />
+            <state relative-caret-position="85">
+              <caret line="5" column="54" selection-start-line="5" selection-start-column="54" selection-end-line="5" selection-end-column="54" />
             </state>
           </provider>
         </entry>
@@ -307,7 +285,7 @@
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3257329" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3257329" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3984799" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -435,8 +413,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/암호코드 스캔.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="36" selection-start-line="4" selection-start-column="36" selection-end-line="4" selection-end-column="36" />
+        <state relative-caret-position="85">
+          <caret line="5" column="54" selection-start-line="5" selection-start-column="54" selection-end-line="5" selection-end-column="54" />
         </state>
       </provider>
     </entry>

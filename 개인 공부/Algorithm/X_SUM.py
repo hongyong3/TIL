@@ -6,7 +6,7 @@ for test_case in range(T):
     data = [list(map(int,input().split())) for _ in range(N)]
 
     substract = []
-    minn = 987654
+    min = 987654
 
     for i in range(N-K+1):
         for j in range(N-K+1):
@@ -22,7 +22,7 @@ for test_case in range(T):
 
 
     for i in substract:
-        if i < minn:
-            minn = i
+        if i < min:
+            min = i
 
-    print(minn)
+    print(min)
