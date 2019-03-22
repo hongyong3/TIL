@@ -1,0 +1,20 @@
+{% extends 'movies/base.html' %}
+{% block title %}INDEX{% endblock %}
+{% block body %}
+<h1>영화 목록</h1>
+<button type="button" class="btn btn-primary"><a class="text-light" href="{% url 'movies:create' %}">NEW</a></button>
+
+<hr>
+{% for movie in movies %}
+    <img src="{{ movie.poster_url }}" style="width: 200px; height: 250px;" alt="movie_img"></img>
+    <h2><a href="{% url 'movies:detail' movie.pk %}">{{ movie.title }}</a><br></h2>
+    
+    {% if movie.score_avg == NONE %}
+        <h5 class="text-secondary">등록된 평점이 없습니다.</h5>
+    {% else %}
+        <h3>종합 평점 : {{ movie.score_avg|floatformat }}</h3>
+    {% endif %}
+    
+    <hr>
+{% endfor %}
+{% endblock %}

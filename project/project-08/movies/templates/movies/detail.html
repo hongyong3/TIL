@@ -1,0 +1,45 @@
+{% extends 'movies/base.html' %}
+{% block title %}DETAIL{% endblock %}
+{% block body %}
+{% load crispy_forms_tags %}
+<h1>영화정보 상세정보</h1>
+<hr>    
+<img src="{{ movie.poster_url }}" style="width: 300px; height: 400px;" alt="movie_img"></img><br>
+<h4>영   화  명 : {{ movie.title }}</h4><br>
+<h4>장       르 : {{ genre.name }}</h4><br>
+<h4>관   중  수 : {{ movie.audience }}</h4><br>
+{% if movie.score_avg == NONE %}
+    <h4 class="text-secondary">종 합 평 점 : 등록된 평점이 없습니다.</h4><br>
+{% else %}
+    <h4>종 합 평 점 : {{ movie.score_avg|floatformat }}</h4><br>
+{% endif %}
+<h4>영 화 소 개</h4>
+<h5>{{ movie.description }}</h5><br><br>
+<form action = "{% url 'movies:scores_create' movie.pk %}" method="POST">
+    <button type="button" class="btn btn-primary"><a class="text-light" href="{% url 'movies:index' %}">BACK</a></button>
+    <button type="button" class="btn btn-success"><a class="text-light" href="{% url 'movies:update' movie.pk %}">UPDATE</a></button>
+    <button type="button" class="btn btn-danger"><a class="text-light" href="{% url 'movies:delete' movie.pk %}">DELETE</a></button>
+</form>
+<br><hr><br>
+<h4>{{ scores | length }} 개의 한줄평</h4><hr>
+{% for score in scores %}
+    <p class="d-inline">{{ score.score }} / 한줄평 : {{ score.content }}</p>
+    <form action="{% url 'movies:scores_delete' movie.pk score.pk %}" method="POST" onsubmit="return confirm('R U SURE?');" style="display:inline" />
+        {% csrf_token %}
+        <button type="button" class="btn btn-danger"><a class="text-light" href="{% url 'movies:scores_delete' movie.pk score.pk %}">DELETE</a></button>
+        <br><hr>
+    </form>
+    {% empty %}
+    <p>한줄평이 없습니다.</p>
+{% endfor %}
+
+
+<p class="d-inline">한줄평 작성</p> 
+<form action = "{% url 'movies:scores_create' movie.pk %}" method="POST">
+    {% csrf_token %}
+    {% crispy form %}
+</form>
+
+
+
+{% endblock %}
