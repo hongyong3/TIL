@@ -2,10 +2,73 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d7918990-ec97-49f6-b5fd-cc0b9dad30f7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/정곤이의 단조 증가하는 수.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/정곤이의 단조 증가하는 수_input.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../D-17/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../D-17/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../D-17/암호코드 스캔.py" beforeDir="false" afterPath="$PROJECT_DIR$/../D-17/암호코드 스캔.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../D-13t/AD/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../D-13t/AD/[PY-TST]최소 비용으로 포장 다시 하기.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../D-13t/AD/[PY-TST]최소 비용으로 포장 다시 하기_input.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../D-13t/AD/[TST]오름차순 정렬 (단순정렬).py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../D-13t/AD/[TST]오름차순 정렬 (단순정렬)_input.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/사냥꾼.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/사냥꾼_input.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../D-13t/[PY-TST] 도약.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../D-13t/[PY-TST]연속부분최대곱.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../D-13t/[TEST] 과수원.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../D-13t/[TEST] 구슬 굴리기.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../D-13t/[TEST] 도넛츠 합계.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../D-13t/[TEST] 반나누기.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../D-13t/[TEST] 사냥꾼.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../D-13t/[TEST] 색종이 배치.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../D-13t/[TEST] 원안의 마을.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../D-13t/[TEST] 호수의 깊이.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../D-13t/[TST]같은 모양 찾기 simple.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../D-13t/[TST]그릇.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../D-13t/[TST]나는 학급회장이다.(투표).py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../D-13t/[TST]달팽이사각형.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../D-13t/[TST]덧셈(Plus).py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../D-13t/[TST]마을 위성사진.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../D-13t/[TST]미로탈출 로봇중간 단계.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../D-13t/[TST]배부른 돼지.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../D-13t/[TST]배열 정리.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../D-13t/[TST]빙고.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../D-13t/[TST]색종이(중).py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../D-13t/[TST]색종이(초).py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../D-13t/[TST]소수의 개수와 최대 최소 구하기.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../D-13t/[TST]숫자근.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../D-13t/[TST]스파이 조직.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../D-13t/[TST]시간외 근무 수당.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../D-13t/[TST]원안의 사각형.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../D-13t/[TST]전자레인지.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../D-13t/[TST]줄세우기.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../D-13t/[TST]참외 밭(중등).py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../D-13t/[TST]폭탄 돌리기.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../D-13t/같은 모양 찾기_input.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../D-13t/과수원_input.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../D-13t/구슬 굴리기_input.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../D-13t/나는 학급회장이다_input.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../D-13t/달팽이사각형_input.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../D-13t/덧셈_input.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../D-13t/도넛츠 합계_input.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../D-13t/도약_input.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../D-13t/마을 위성사진_input.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../D-13t/미로탈출 로봇중간 단계_input.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../D-13t/반나누기_input.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../D-13t/배열정리.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../D-13t/빙고_input.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../D-13t/사냥꾼_input.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../D-13t/색종이 배치_input.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../D-13t/색종이(중)_input.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../D-13t/색종이(초)_input.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../D-13t/소수의 개수와 최대 최소 구하기_input.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../D-13t/숫자근_input.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../D-13t/스파이 조직_input.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../D-13t/시간외 근무 수당_input.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../D-13t/연속부분최대곱_input.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../D-13t/원안의 마을_input.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../D-13t/원안의 사각형_input.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../D-13t/줄세우기_input.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../D-13t/참외 밭_input.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../D-13t/폭탄돌리기_input.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../D-13t/호수의 깊이_input.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../D-19/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../D-19/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -18,59 +81,41 @@
     <session id="-1302103156">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="16" />
-          <entry key="project.open.time.0" value="4" />
+          <entry key="project.closed" value="19" />
+          <entry key="project.open.time.0" value="5" />
+          <entry key="project.open.time.1" value="2" />
           <entry key="project.open.time.2" value="12" />
-          <entry key="project.opened" value="16" />
+          <entry key="project.opened" value="19" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="py" value="36" />
-          <entry key="txt" value="12" />
+          <entry key="py" value="45" />
+          <entry key="txt" value="13" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="PLAIN_TEXT" value="12" />
-          <entry key="Python" value="36" />
+          <entry key="PLAIN_TEXT" value="13" />
+          <entry key="Python" value="45" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="8611" />
+          <entry key="py" value="9752" />
           <entry key="txt" value="18" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="PLAIN_TEXT" value="18" />
-          <entry key="Python" value="8611" />
+          <entry key="Python" value="9752" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/정곤이의 단조 증가하는 수.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" selection-start-line="14" selection-end-line="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/정곤이의 단조 증가하는 수_input.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" selection-start-line="3" selection-end-line="3" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -109,6 +154,8 @@
         <option value="$PROJECT_DIR$/어디에 단어가 들어갈 수 있을까.py" />
         <option value="$PROJECT_DIR$/정곤이의 단조 증가하는 수.py" />
         <option value="$PROJECT_DIR$/정곤이의 단조 증가하는 수_input.txt" />
+        <option value="$PROJECT_DIR$/사냥꾼_input.txt" />
+        <option value="$PROJECT_DIR$/사냥꾼.py" />
       </list>
     </option>
   </component>
@@ -140,7 +187,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../D-17" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../D-13t/AD" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RunDashboard">
@@ -155,7 +202,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.정곤이의 단조 증가하는 수">
+  <component name="RunManager" selected="Python.사냥꾼">
     <configuration name="어디에 단어가 들어갈 수 있을까" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="D_P-01" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -240,27 +287,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="농작물 수확하기" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="D_P-01" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/농작물 수확하기.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="스도쿠 검증" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="D_P-01" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -282,7 +308,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="N-QUEEN" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="사냥꾼" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="D_P-01" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -290,11 +316,32 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../../개인 공부/Algorithm/Practice/ssafy_club" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/사냥꾼.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="[TEST] 사냥꾼" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="D_P-01" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../D-13t" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../../개인 공부/Algorithm/Practice/ssafy_club/N-QUEEN.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../D-13t/[TEST] 사냥꾼.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -304,19 +351,20 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.농작물 수확하기" />
-      <item itemvalue="Python.N-QUEEN" />
+      <item itemvalue="Python.스도쿠 검증" />
       <item itemvalue="Python.원재의 메모리 복구하기" />
       <item itemvalue="Python.어디에 단어가 들어갈 수 있을까" />
       <item itemvalue="Python.정곤이의 단조 증가하는 수" />
+      <item itemvalue="Python.사냥꾼" />
+      <item itemvalue="Python.[TEST] 사냥꾼" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.사냥꾼" />
+        <item itemvalue="Python.[TEST] 사냥꾼" />
         <item itemvalue="Python.정곤이의 단조 증가하는 수" />
         <item itemvalue="Python.어디에 단어가 들어갈 수 있을까" />
         <item itemvalue="Python.원재의 메모리 복구하기" />
-        <item itemvalue="Python.N-QUEEN" />
-        <item itemvalue="Python.농작물 수확하기" />
       </list>
     </recent_temporary>
   </component>
@@ -356,20 +404,20 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
     <layout-to-restore>
-      <window_info id="Favorites" order="0" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.24973656" />
-      <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="0" />
-      <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="2" />
-      <window_info anchor="bottom" id="Python Console" order="3" />
-      <window_info anchor="bottom" id="Message" order="4" />
-      <window_info anchor="bottom" id="Find" order="5" />
-      <window_info active="true" anchor="bottom" id="Run" order="6" visible="true" weight="0.329718" />
-      <window_info anchor="bottom" id="Debug" order="7" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="10" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.5053419" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32894737" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39364034" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Python Console" order="10" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -525,13 +573,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://C:/Program Files/Python35/Lib/_bootlocale.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/미로1.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
@@ -608,22 +649,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/pydevd.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="177">
-          <caret line="1067" selection-start-line="1067" selection-end-line="1067" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../../개인 공부/Algorithm/X_SUM.py">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/_pydev_imps/_pydev_execfile.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/스도쿠검증/(1974)스도쿠검증.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -643,13 +670,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="442">
           <caret line="45" column="28" selection-start-line="45" selection-start-column="28" selection-end-line="45" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/Program Files/Python35/Lib/codecs.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="237">
-          <caret line="323" selection-start-line="323" selection-end-line="323" />
         </state>
       </provider>
     </entry>
@@ -677,6 +697,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/정곤이의 단조 증가하는 수_input.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/정곤이의 단조 증가하는 수.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
@@ -684,10 +711,59 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/정곤이의 단조 증가하는 수_input.txt">
+    <entry file="file://$PROJECT_DIR$/../D-13t/[TEST] 사냥꾼.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        <state relative-caret-position="153">
+          <caret line="9" column="21" lean-forward="true" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Program Files/Python35/Lib/_bootlocale.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/_pydev_imps/_pydev_execfile.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Program Files/Python35/Lib/codecs.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="237">
+          <caret line="291" selection-start-line="291" selection-end-line="291" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/pydevd.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="443">
+          <caret line="1663" selection-start-line="1663" selection-end-line="1663" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/사냥꾼.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" selection-start-line="4" selection-end-line="31" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/사냥꾼.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="36" selection-start-line="23" selection-start-column="36" selection-end-line="23" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/사냥꾼_input.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="24" column="9" selection-start-line="24" selection-start-column="9" selection-end-line="24" selection-end-column="9" />
         </state>
       </provider>
     </entry>
