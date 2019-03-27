@@ -31,8 +31,6 @@ data = [list(map(int, input().split())) for _ in range(N)]
 count = 0
 flag = 1
 tomato = [[i, j] for i in range(N) for j in range(M) if data[i][j] == 1]
-print(tomato)
-
 BFS()
 
 for i in range(N):
