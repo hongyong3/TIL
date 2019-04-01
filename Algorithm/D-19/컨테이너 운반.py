@@ -1,7 +1,6 @@
 import sys
 sys.stdin = open("컨테이너 운반_input.txt", "r")
 T = int(input())
-
 for test_case in range(T):
     N, M = map(int, input().split())
     w = list(map(int, input().split()))

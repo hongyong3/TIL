@@ -1,6 +1,31 @@
 import sys
 sys.stdin = open("최소합_input.txt", "r")
 
+def dfs(x, y, sum):
+    global min
+    ###########################
+    if min <= sum:          # 가지치기
+        return
+    #########################
+    if x == N-1 and y == N-1:
+        if min > sum:
+            min = sum
+    else:
+        if x + 1 < N:
+            dfs(x+1, y, sum + data[x+1][y])
+        if y + 1 < N:
+            dfs(x, y + 1, sum + data[x][y + 1])
+
+T = int(input())
+for test_case in range(T):
+    N = int(input())
+    data = [list(map(int, input().split())) for _ in range(N)]
+    min = 987654321
+    dfs(0, 0, data[0][0])    # x, y, sum
+
+    print("#{} {}".format(test_case + 1, min))
+
+
 # def iswall(x, y, N):
 #     if x < 0 or x >= N: return True
 #     if y < 0 or y >= N: return True
@@ -34,39 +59,3 @@ sys.stdin = open("최소합_input.txt", "r")
 #     find(0, 0, 0, N)
 #
 #     print("#{} {}".format(test_case+1, ans))
-
-def dfs(x, y, sum):
-    global min
-    if x == N-1 and y == N-1:
-        if min > sum:
-            min = sum
-        # return
-
-    else:
-        dx = [1, 0]
-        dy = [0, 1]
-
-        for i in range(2):
-            nx = x + dx[i]
-            ny = y + dy[i]
-
-            if ny >= N:  # 오른쪽 벽
-                continue
-            elif nx >= N: # 아래 벽
-                continue
-            else:
-                sum += data[nx][ny]
-                x = nx
-                y = ny
-                dfs(x, y, sum)
-
-
-T = int(input())
-for tese_case in range(1):
-    N = int(input())
-    data = [list(map(int, input().split())) for _ in range(N)]
-
-    min = 987654321
-    dfs(0, 0, data[0][0])    # x, y, sum
-
-    print(min)

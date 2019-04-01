@@ -1,7 +1,6 @@
 import sys
 sys.stdin = open("화물 도크_input.txt", "r")
 T = int(input())
-
 def check(data):
     visited = [0] * 24
     count = 0
