@@ -1,11 +1,11 @@
 import sys
 sys.stdin = open("최소 이동 거리_input.txt", "r")
 
-def Dijkstra(G, r):
+def Dijkstra():
     D = [9876543210] * (N + 1)
     P = [-1] * (N + 1)
     visited = [0] * (N + 1)
-    D[r] = 0
+    D[0] = 0
 
     for _ in range(N + 1):
         minindex = -1
@@ -23,8 +23,6 @@ def Dijkstra(G, r):
                 P[i] = minindex
     return D[N]
 
-
-
 T = int(input())
 for test_case in range(T):
     N, E = map(int, input().split())
@@ -32,4 +30,5 @@ for test_case in range(T):
     graph = [[0] * (N + 1) for _ in range(N + 1)]
     for i in range(E):
         graph[data[i][0]][data[i][1]] = data[i][2]
-    print("#{} {}".format(test_case+1, Dijkstra(N, 0)))
+    print("#{} {}".format(test_case+1, Dijkstra()))
+
