@@ -25,5 +25,5 @@ def nqueen(sol, N):
 
 count = 0
 N = int(input())
-table = [[0 for _ in range(4)] for _ in range(4)]
+table = [[0 for _ in range(N)] for _ in range(N)]
 print(count)

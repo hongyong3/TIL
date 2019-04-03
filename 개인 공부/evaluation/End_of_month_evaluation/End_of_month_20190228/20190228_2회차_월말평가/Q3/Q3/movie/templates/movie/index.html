@@ -1,0 +1,11 @@
+<!--여기에 코드를 작성하시오.-->
+
+{% extends 'movie/base.html' %}
+
+{% block myblock %}
+    {% for movie in movies %}
+        <h2>{{ movie.title }}</h2>
+        <h5>{{ movie.content }}</h5>
+    {% endfor %}
+
+{% endblock %}
