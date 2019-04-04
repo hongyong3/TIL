@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
+<<<<<<< HEAD
+    <list default="true" id="3e250b6a-a3da-4bc8-bf59-d0e54aaa19a2" name="Default Changelist" comment="" />
+=======
     <list default="true" id="3e250b6a-a3da-4bc8-bf59-d0e54aaa19a2" name="Default Changelist" comment="">
       <change afterPath="$PROJECT_DIR$/../D-21/.idea/misc.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../D-21/.idea/vcs.xml" afterDir="false" />
@@ -19,6 +22,7 @@
       <change beforePath="$PROJECT_DIR$/최소 이동 거리.py" beforeDir="false" afterPath="$PROJECT_DIR$/최소 이동 거리.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../개인 공부/Algorithm/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../개인 공부/Algorithm/.idea/workspace.xml" afterDir="false" />
     </list>
+>>>>>>> 99bd1460f81cfb751d4cdfaea01f0fae18e6c33c
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,7 +64,30 @@
     </session>
   </component>
   <component name="FileEditorManager">
+<<<<<<< HEAD
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/사람 네트워크2.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="355">
+              <caret line="25" column="73" lean-forward="true" selection-start-line="25" selection-start-column="73" selection-end-line="25" selection-end-column="73" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/사람 네트워크2_input.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="57">
+              <caret line="3" column="14" selection-start-line="3" selection-start-column="3" selection-end-line="3" selection-end-column="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+=======
     <leaf />
+>>>>>>> 99bd1460f81cfb751d4cdfaea01f0fae18e6c33c
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -298,7 +325,11 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
+<<<<<<< HEAD
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3306189" />
+=======
       <window_info anchor="bottom" id="Run" order="2" weight="0.33333334" />
+>>>>>>> 99bd1460f81cfb751d4cdfaea01f0fae18e6c33c
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39522257" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -422,8 +453,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/최소 이동 거리(선생님풀이).py">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state relative-caret-position="355">
+          <caret line="25" column="73" lean-forward="true" selection-start-line="25" selection-start-column="73" selection-end-line="25" selection-end-column="73" />
+=======
         <state>
           <caret column="5" selection-start-column="5" selection-end-column="5" />
+>>>>>>> 99bd1460f81cfb751d4cdfaea01f0fae18e6c33c
         </state>
       </provider>
     </entry>
