@@ -1,3 +1,6 @@
+import time
+from time import strftime
+start_time = time.time()
 import sys
 sys.stdin = open("최소 비용_input.txt", "r")
 
@@ -28,3 +31,4 @@ for test_case in range(T):
     visited = [[float('inf')] * N for _ in range(N)]
     Find(0, 0)
     print("#{} {}".format(test_case+1, visited[N - 1][N - 1]))
+print(time.time() - start_time, 'seconds')

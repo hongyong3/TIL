@@ -1,3 +1,6 @@
+import time
+from time import strftime
+start_time = time.time()
 import sys
 sys.stdin = open("보급로_input.txt", "r")
 
@@ -17,10 +20,11 @@ def BFS(x, y):
                     Q.append((nx, ny))
 
 T = int(input())
-for test_case in range(2):
+for test_case in range(T):
     N = int(input())
     data = [list(map(int, input())) for _ in range(N)]
     visited = [[float('inf')] * N for _ in range(N)]
     minn = float('inf')
     BFS(0, 0)
     print("#{} {}".format(test_case+1, visited[N - 1][N - 1]))
+print(time.time() - start_time, 'seconds')

@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="96ca9a12-90af-4a54-b444-fb9b32b8dc3b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../D-13t/AD/[TEST] 미로탈출.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../D-13t/AD/[TEST] 미로탈출_input.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../D-13t/AD/[TST] 구슬 집어넣기 게임.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../D-13t/AD/[TST] 구슬 집어넣기 게임_input.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../D-13t/AD/[TST]로봇.py" beforeDir="false" afterPath="$PROJECT_DIR$/../D-13t/AD/[TST]로봇.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/보급로.py" beforeDir="false" afterPath="$PROJECT_DIR$/보급로.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/최소 비용.py" beforeDir="false" afterPath="$PROJECT_DIR$/최소 비용.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/최소 비용_input.txt" beforeDir="false" afterPath="$PROJECT_DIR$/최소 비용_input.txt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -18,7 +16,7 @@
     <session id="244647403">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="3" />
+          <entry key="project.closed" value="4" />
           <entry key="project.open.time.2" value="3" />
           <entry key="project.open.time.6" value="1" />
           <entry key="project.opened" value="4" />
@@ -26,35 +24,38 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="py" value="29" />
-          <entry key="txt" value="7" />
+          <entry key="py" value="41" />
+          <entry key="txt" value="10" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="PLAIN_TEXT" value="7" />
-          <entry key="Python" value="29" />
+          <entry key="PLAIN_TEXT" value="10" />
+          <entry key="Python" value="41" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="4042" />
+          <entry key="py" value="4047" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Python" value="4042" />
+          <entry key="Python" value="4047" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/보급로.py">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/최소 비용.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" selection-start-line="17" selection-end-line="17" />
+            <state relative-caret-position="476">
+              <caret line="28" column="20" lean-forward="true" selection-start-line="28" selection-start-column="20" selection-end-line="28" selection-end-column="20" />
+              <folding>
+                <element signature="e#0#11#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -62,17 +63,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/보급로_input.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="9197">
+            <state relative-caret-position="7268">
               <caret line="541" selection-start-line="541" selection-end-line="541" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/최소 비용.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="21" lean-forward="true" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -92,13 +84,13 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/최소 비용_input.txt" />
         <option value="$PROJECT_DIR$/그룹 나누기_input.txt" />
         <option value="$PROJECT_DIR$/../D-20/최소 신장 트리_Kruskal.py" />
         <option value="$PROJECT_DIR$/연산_input.txt" />
         <option value="$PROJECT_DIR$/연산.py" />
         <option value="$PROJECT_DIR$/보급로_input.txt" />
         <option value="$PROJECT_DIR$/그룹 나누기.py" />
+        <option value="$PROJECT_DIR$/최소 비용_input.txt" />
         <option value="$PROJECT_DIR$/최소 비용.py" />
         <option value="$PROJECT_DIR$/보급로.py" />
       </list>
@@ -147,27 +139,6 @@
     </option>
   </component>
   <component name="RunManager" selected="Python.최소 비용">
-    <configuration name="최소 신장 트리_Kruskal" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="D-21" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../D-20" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../D-20/최소 신장 트리_Kruskal.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="최소 비용" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="D-21" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -231,7 +202,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="연산" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="보급로" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="D-21" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -243,7 +214,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/연산.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/보급로.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -273,16 +244,83 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="(1249)보급로_heap" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="D-21" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/보급로" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/보급로/(1249)보급로_heap.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="(5250)최소비용" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="D-21" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/4_그래프_실습문제" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/4_그래프_실습문제/(5250)최소비용.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="(5250)최소비용2" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="D-21" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/4_그래프_실습문제" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/4_그래프_실습문제/(5250)최소비용2.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <list>
       <item itemvalue="Python.최소 비용" />
-      <item itemvalue="Python.연산" />
-      <item itemvalue="Python.최소 신장 트리_Kruskal" />
+      <item itemvalue="Python.(5250)최소비용" />
+      <item itemvalue="Python.(5250)최소비용2" />
+      <item itemvalue="Python.보급로" />
+      <item itemvalue="Python.(1249)보급로_heap" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Python.최소 비용" />
-        <item itemvalue="Python.연산" />
-        <item itemvalue="Python.최소 신장 트리_Kruskal" />
+        <item itemvalue="Python.(5250)최소비용2" />
+        <item itemvalue="Python.보급로" />
+        <item itemvalue="Python.(1249)보급로_heap" />
+        <item itemvalue="Python.(5250)최소비용" />
       </list>
     </recent_temporary>
   </component>
@@ -354,13 +392,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/최소 비용_input.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="9" lean-forward="true" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../D-19/최소합.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
@@ -418,38 +449,89 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/그룹 나누기.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="51" lean-forward="true" selection-start-line="15" selection-start-column="51" selection-end-line="15" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/최소 비용_input.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="550">
+          <caret line="486" column="288" selection-start-line="486" selection-start-column="288" selection-end-line="486" selection-end-column="288" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/4_그래프_실습문제/(5251)최소이동거리.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/4_그래프_실습문제/(5248)그룹나누기.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/연산.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="442">
-          <caret line="26" column="14" selection-start-line="26" selection-start-column="14" selection-end-line="26" selection-end-column="14" />
+          <caret line="26" selection-start-line="26" selection-end-line="26" selection-end-column="42" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/그룹 나누기.py">
+    <entry file="file://$PROJECT_DIR$/4_그래프_실습문제/(5250)최소비용.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="29" selection-start-line="29" selection-end-line="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/보급로.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        <state>
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/보급로_input.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="9197">
+        <state relative-caret-position="7268">
           <caret line="541" selection-start-line="541" selection-end-line="541" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/보급로.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="373">
+          <caret line="24" column="53" selection-start-line="24" selection-start-column="53" selection-end-line="24" selection-end-column="53" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/보급로/(1249)보급로_heap.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="549">
+          <caret line="37" column="26" lean-forward="true" selection-start-line="37" selection-start-column="26" selection-end-line="37" selection-end-column="26" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/4_그래프_실습문제/(5250)최소비용2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="23" lean-forward="true" selection-start-line="23" selection-start-column="23" selection-end-line="23" selection-end-column="23" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/최소 비용.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="21" lean-forward="true" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="21" />
+        <state relative-caret-position="476">
+          <caret line="28" column="20" lean-forward="true" selection-start-line="28" selection-start-column="20" selection-end-line="28" selection-end-column="20" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
