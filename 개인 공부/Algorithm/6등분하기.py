@@ -7,7 +7,7 @@ def comb(idx, count, L):
             if check[idx] == 1:
                 k.append(L[idx])
         result_check.append(k[:])
-        return
+        return`
     if idx >= 6:
         return
     check[idx] = 1
