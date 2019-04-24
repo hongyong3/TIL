@@ -65,6 +65,7 @@
 
 #### 2) 트리
 
+```
 .
 ├── db.sqlite3
 ├── manage.py
@@ -112,6 +113,7 @@
     └── wsgi.py
 
 9 directories, 35 files
+```
 
 
 
