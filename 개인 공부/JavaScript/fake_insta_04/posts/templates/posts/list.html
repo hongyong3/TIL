@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="d-flex flex-wrap justify-content-center">
+    {% for post in posts %}
+        {% include 'posts/_post.html' %}
+    {% endfor %}
+</div>
+<script>
+    const likeButtons = document.querySelectorAll('.like-button')
+    likeButtons.forEach( button => {
+        button.addEventListener('click', function (event) {
+            const postId = event.target.dataset.id
+            // 이거 XHR 요청이야! 라고 django한테 말해주는 것
+            axios.defaults.headers['X-Requested-with'] = 'XMLHttpRequest'
+            axios.defaults.xsrfCookieName = 'csrftoken'
+            axios.defaults.xsrfHeaderName = 'X-CSRFToken'
+            axios.post(`/posts/${postId}/like/`)
+                .then( response => {
+                    document.querySelector(`#like-count-${postId}`).innerText = response.data.count
+                    if (response.data.liked) {
+                        event.target.classList.remove('far')
+                        event.target.classList.add('fas')
+                    } else {
+                        event.target.classList.remove('fas')
+                        event.target.classList.add('far')
+                    }
+                })
+                .catch( error => console.log(error))
+        })
+    })
+</script>
+{% endblock  %}
