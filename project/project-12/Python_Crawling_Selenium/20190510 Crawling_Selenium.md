@@ -11,18 +11,22 @@
 * Beautiful Soup는 웹사이트에서 버튼을 클릭해야 얻을 수 있는 데이터라던가, Javascript에 조건이 충족되어야만 얻을 수 있는 데이터에 접근하는 것에 한계가 있다.
 * Selenium은 직접적으로 웹 사이트에 접근할 수 있다.
 * 이를 위해서 새로운 환경에서 웹 브라우저를 대신해 줄 `Web Driver `가 필요.
-  * Chrome을 사용할 것이므로 `Chrome Driver`를 설치.
-  * `<http://chromedriver.chromium.org/>`에서 driver 설치
-  * Web Driver는 Selenium이 사용할 웹 브라우저이고, Selenium으로 자동화하여 웹 사이트를 탐험
+  > Chrome을 사용할 것이므로 `Chrome Driver`를 설치.
+  >
+  > `<http://chromedriver.chromium.org/>`에서 driver 설치
+  >
+  > Web Driver는 Selenium이 사용할 웹 브라우저이고, Selenium으로 자동화하여 웹 사이트를 탐험
 
 
 
 ### 2) Selenium 사용
 
 * 우선 pip 명령어를 통해 Selenium을 설치
-  * `pip install selenium`
+
+  > `pip install selenium`
 * `jupyter notebook`을 사용할 것이므로 jupyter 설치
-  * pip install jupyter
+
+  > `pip install jupyter`
 
 
 
@@ -92,3 +96,73 @@ Chrome Driver 75 버전이 호환되지 않음.
 Chrome Driver 74 버전을 다운받아 해결.
 ```
 
+
+
+---
+
+# 20190511
+
+## The movie DB를 이용한 크롤링
+
+### 
+
+### 1) API 키 발급
+
+* 회원가입 후 `<https://www.themoviedb.org/settings/api>`에서 API 키를 발급
+
+
+
+### 2) 크롤링
+
+#### 2-1 *크롤링 사전 작업
+
+* `<https://developers.themoviedb.org/3/movies/get-movie-details>`로 이동
+
+* 현재 상영작을 크롤링하기 위해서 `now-playing`로 이동
+
+* `https://api.themoviedb.org/3/movie/now_playing?api_key=<<api_key>>&language=ko-kr&page=1`
+
+  > * API키
+  >
+  > * language : ko-kr
+  > * page 수 설정
+
+#### 2-2  *크롤링
+
+```python
+import http.client
+
+conn = http.client.HTTPSConnection("api.themoviedb.org")
+
+payload = "{}"
+for i in range(10):
+    conn.request("GET", "/3/movie/now_playing?page="+f"{i+1}"+"&language=ko-kr&api_key=f55decdd8b4533ff751d5e5df47ac372", payload)
+    res = conn.getresponse()
+    data = res.read()
+    print(data.decode("utf-8"))
+```
+
+* import http.client 사용 이유
+
+  > HttpClient를 이용하면 간편하게 HTTP request를 보낼 수 있다.
+  >
+  > 간혹 웹 서버를 만들면서 다른 서버로 보터 request를 보내 response 받아 데이터를 처리해야할 때,
+  >
+  > HttpClient를 이용하면 간단하게 구현 가능.
+
+  
+
+* for 문 사용한 이유
+
+  > movie data를 10page를 크롤링하기 위해
+
+#### 2-3 * 결과
+
+![image](https://user-images.githubusercontent.com/45934494/57575190-1a28de80-7481-11e9-9c57-4fa11ca0a220.png)
+
+
+
+#### 2-4 *해결할 과제
+
+* 한개의 디렉토리로 변경.
+* json 파일로 변경.
