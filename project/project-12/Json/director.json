@@ -1,0 +1,4342 @@
+[
+    {
+        "pk": 1302082,
+        "model": "movies.director",
+        "fields": {
+            "name": "David F. Sandberg",
+            "job": "Director",
+            "img": "/10p2i4OW0JWAbnOb7yMLUEGdSqM.jpg",
+            "directed": 287947
+        }
+    },
+    {
+        "pk": 19272,
+        "model": "movies.director",
+        "fields": {
+            "name": "Joe Russo",
+            "job": "Director",
+            "img": "/679Os4tbY1YsU01KdLhM1NPXNWu.jpg",
+            "directed": 299534
+        }
+    },
+    {
+        "pk": 19271,
+        "model": "movies.director",
+        "fields": {
+            "name": "Anthony Russo",
+            "job": "Director",
+            "img": "/fIa5wXK7MHAquhefTr3TcnZiYy8.jpg",
+            "directed": 299534
+        }
+    },
+    {
+        "pk": 53068,
+        "model": "movies.director",
+        "fields": {
+            "name": "Ryan Fleck",
+            "job": "Director",
+            "img": "/z5EL2oWKEVUgFb6wjoX0BSxthsJ.jpg",
+            "directed": 299537
+        }
+    },
+    {
+        "pk": 53069,
+        "model": "movies.director",
+        "fields": {
+            "name": "Anna Boden",
+            "job": "Director",
+            "img": "/h5YMXdI42zb0uqn5UJHF4fT9AER.jpg",
+            "directed": 299537
+        }
+    },
+    {
+        "pk": 65630,
+        "model": "movies.director",
+        "fields": {
+            "name": "Rob Letterman",
+            "job": "Director",
+            "img": "/v2GPTQ41ZqHtML8W1ft3UJej5xA.jpg",
+            "directed": 447404
+        }
+    },
+    {
+        "pk": 1424064,
+        "model": "movies.director",
+        "fields": {
+            "name": "Kyouhei Yamaguchi",
+            "job": "Director",
+            "img": "/uAFzPnQsnGzkR9KlU260TsGMFI1.jpg",
+            "directed": 543103
+        }
+    },
+    {
+        "pk": 1297518,
+        "model": "movies.director",
+        "fields": {
+            "name": "Kazuaki Imai",
+            "job": "Director",
+            "img": null,
+            "directed": 495925
+        }
+    },
+    {
+        "pk": 57581,
+        "model": "movies.director",
+        "fields": {
+            "name": "Neil Marshall",
+            "job": "Director",
+            "img": "/Au5p9cFlj2XVoVIECQ40ruOp1Qz.jpg",
+            "directed": 456740
+        }
+    },
+    {
+        "pk": 1495940,
+        "model": "movies.director",
+        "fields": {
+            "name": "Frankie Chen",
+            "job": "Director",
+            "img": "/3jfec79vr7xVdgW8qJgTdheYXyt.jpg",
+            "directed": 576393
+        }
+    },
+    {
+        "pk": 95972,
+        "model": "movies.director",
+        "fields": {
+            "name": "Hans Petter Moland",
+            "job": "Director",
+            "img": "/xPUm6zfCrmDZb8fkby2zzF6sp8z.jpg",
+            "directed": 438650
+        }
+    },
+    {
+        "pk": 11614,
+        "model": "movies.director",
+        "fields": {
+            "name": "M. Night Shyamalan",
+            "job": "Director",
+            "img": "/shV9dGXMj7zt7myRFkR6FR51LYu.jpg",
+            "directed": 450465
+        }
+    },
+    {
+        "pk": 1586194,
+        "model": "movies.director",
+        "fields": {
+            "name": "Jenny Gage",
+            "job": "Director",
+            "img": "/wdvHWFssy6KAliSrY89pvszBlmO.jpg",
+            "directed": 537915
+        }
+    },
+    {
+        "pk": 19272,
+        "model": "movies.director",
+        "fields": {
+            "name": "Joe Russo",
+            "job": "Director",
+            "img": "/679Os4tbY1YsU01KdLhM1NPXNWu.jpg",
+            "directed": 299536
+        }
+    },
+    {
+        "pk": 19271,
+        "model": "movies.director",
+        "fields": {
+            "name": "Anthony Russo",
+            "job": "Director",
+            "img": "/fIa5wXK7MHAquhefTr3TcnZiYy8.jpg",
+            "directed": 299536
+        }
+    },
+    {
+        "pk": 84124,
+        "model": "movies.director",
+        "fields": {
+            "name": "Tina Gordon Chism",
+            "job": "Director",
+            "img": "/2Vho1qUJBLUPlgh3c4bnXTPKZUs.jpg",
+            "directed": 526050
+        }
+    },
+    {
+        "pk": 20739,
+        "model": "movies.director",
+        "fields": {
+            "name": "Adam Shankman",
+            "job": "Director",
+            "img": "/alYdaxIYDvJZFnVrM2n01jcafKo.jpg",
+            "directed": 487297
+        }
+    },
+    {
+        "pk": 1290272,
+        "model": "movies.director",
+        "fields": {
+            "name": "Dennis Widmyer",
+            "job": "Director",
+            "img": "/wZbN0JZd6kbGAHRglEH8u7CfGJ0.jpg",
+            "directed": 157433
+        }
+    },
+    {
+        "pk": 1154561,
+        "model": "movies.director",
+        "fields": {
+            "name": "Kevin Kölsch",
+            "job": "Director",
+            "img": "/4494wQuVUThEzLBAFkEPhXgpUyS.jpg",
+            "directed": 157433
+        }
+    },
+    {
+        "pk": 69797,
+        "model": "movies.director",
+        "fields": {
+            "name": "Dean DeBlois",
+            "job": "Director",
+            "img": "/vofzPcdNUzUD1xqaMUwMAJRgFiy.jpg",
+            "directed": 166428
+        }
+    },
+    {
+        "pk": 1481804,
+        "model": "movies.director",
+        "fields": {
+            "name": "Tomoka Nagaoka",
+            "job": "Director",
+            "img": null,
+            "directed": 566555
+        }
+    },
+    {
+        "pk": 1056121,
+        "model": "movies.director",
+        "fields": {
+            "name": "Ryan Coogler",
+            "job": "Director",
+            "img": "/ddGaRFrlDdyR0OBTd1hAMWnfvim.jpg",
+            "directed": 284054
+        }
+    },
+    {
+        "pk": 12891,
+        "model": "movies.director",
+        "fields": {
+            "name": "Joss Whedon",
+            "job": "Director",
+            "img": "/dTiVsuaTVTeGmvkhcyJvKp2A5kr.jpg",
+            "directed": 24428
+        }
+    },
+    {
+        "pk": 7879,
+        "model": "movies.director",
+        "fields": {
+            "name": "John Lasseter",
+            "job": "Director",
+            "img": "/7EdqiNbr4FRjIhKHyPPdFfEEEFG.jpg",
+            "directed": 920
+        }
+    },
+    {
+        "pk": 39189,
+        "model": "movies.director",
+        "fields": {
+            "name": "Stephen Merchant",
+            "job": "Director",
+            "img": "/A70Gtg3kkTeCBgtFkSRPu9qfPQu.jpg",
+            "directed": 445629
+        }
+    },
+    {
+        "pk": 510,
+        "model": "movies.director",
+        "fields": {
+            "name": "Tim Burton",
+            "job": "Director",
+            "img": "/yHEHAHQpN9PfSEQx1UxZPczhcAi.jpg",
+            "directed": 329996
+        }
+    },
+    {
+        "pk": 15218,
+        "model": "movies.director",
+        "fields": {
+            "name": "James Gunn",
+            "job": "Director",
+            "img": "/2w2mprJhSucgA8pbM5BRdBKl3p9.jpg",
+            "directed": 283995
+        }
+    },
+    {
+        "pk": 1607672,
+        "model": "movies.director",
+        "fields": {
+            "name": "Michael Chaves",
+            "job": "Director",
+            "img": "/SOd71vk0kx5cJygzCifEOMGjRW.jpg",
+            "directed": 480414
+        }
+    },
+    {
+        "pk": 15218,
+        "model": "movies.director",
+        "fields": {
+            "name": "James Gunn",
+            "job": "Director",
+            "img": "/2w2mprJhSucgA8pbM5BRdBKl3p9.jpg",
+            "directed": 118340
+        }
+    },
+    {
+        "pk": 936670,
+        "model": "movies.director",
+        "fields": {
+            "name": "Bob Persichetti",
+            "job": "Director",
+            "img": "/kk1cN73iulyn3G4PvZ01TnsW4gN.jpg",
+            "directed": 324857
+        }
+    },
+    {
+        "pk": 151007,
+        "model": "movies.director",
+        "fields": {
+            "name": "Peter Ramsey",
+            "job": "Director",
+            "img": "/9708uu7CeTLSzm69ykdYxgPcd2S.jpg",
+            "directed": 324857
+        }
+    },
+    {
+        "pk": 59918,
+        "model": "movies.director",
+        "fields": {
+            "name": "Rodney Rothman",
+            "job": "Director",
+            "img": "/3GlFmeP4me6uxZGVsmnC0d4A5BV.jpg",
+            "directed": 324857
+        }
+    },
+    {
+        "pk": 150630,
+        "model": "movies.director",
+        "fields": {
+            "name": "Nicholas McCarthy",
+            "job": "Director",
+            "img": null,
+            "directed": 532671
+        }
+    },
+    {
+        "pk": 55934,
+        "model": "movies.director",
+        "fields": {
+            "name": "Taika Waititi",
+            "job": "Director",
+            "img": "/zCLBXGo5BS2e27srDBa5WpRnKul.jpg",
+            "directed": 284053
+        }
+    },
+    {
+        "pk": 1362815,
+        "model": "movies.director",
+        "fields": {
+            "name": "David Yarovesky",
+            "job": "Director",
+            "img": "/fNaQfVEnSrK6ff2bEaatRsEtMO2.jpg",
+            "directed": 531309
+        }
+    },
+    {
+        "pk": 231084,
+        "model": "movies.director",
+        "fields": {
+            "name": "Chee Keong Cheung",
+            "job": "Director",
+            "img": "/gxvTUIuvWkoQa9BpapQZiha4R8K.jpg",
+            "directed": 485811
+        }
+    },
+    {
+        "pk": 69237,
+        "model": "movies.director",
+        "fields": {
+            "name": "Joe Berlinger",
+            "job": "Director",
+            "img": "/nm1QiopjjZLypVQUjJkJ3SkEGnB.jpg",
+            "directed": 457799
+        }
+    },
+    {
+        "pk": 366,
+        "model": "movies.director",
+        "fields": {
+            "name": "James Mangold",
+            "job": "Director",
+            "img": "/1gt0VmCyBHhQLKhaBDCEIwvRWe.jpg",
+            "directed": 263115
+        }
+    },
+    {
+        "pk": 1306608,
+        "model": "movies.director",
+        "fields": {
+            "name": "Adam Robitel",
+            "job": "Director",
+            "img": "/ujwEsVKMCN0JD6Mx2PlfSqmbxd1.jpg",
+            "directed": 522681
+        }
+    },
+    {
+        "pk": 59026,
+        "model": "movies.director",
+        "fields": {
+            "name": "Peyton Reed",
+            "job": "Director",
+            "img": "/aucXNycAtFREMIKr6ikmHvd2Mmp.jpg",
+            "directed": 363088
+        }
+    },
+    {
+        "pk": 291263,
+        "model": "movies.director",
+        "fields": {
+            "name": "Jordan Peele",
+            "job": "Director",
+            "img": "/9rOEfvKUInuUpJ6MMhiC8Tch1WM.jpg",
+            "directed": 458723
+        }
+    },
+    {
+        "pk": 54040,
+        "model": "movies.director",
+        "fields": {
+            "name": "John Lee Hancock",
+            "job": "Director",
+            "img": "/1eCqzsuFp0xKGeTEErXyEifN82U.jpg",
+            "directed": 500682
+        }
+    },
+    {
+        "pk": 1196401,
+        "model": "movies.director",
+        "fields": {
+            "name": "Tomonori Sudou",
+            "job": "Director",
+            "img": "/eTPynNLvv0K8tHbsIWaAaPVhWZR.jpg",
+            "directed": 390634
+        }
+    },
+    {
+        "pk": 19850,
+        "model": "movies.director",
+        "fields": {
+            "name": "Catherine Hardwicke",
+            "job": "Director",
+            "img": "/x8qMlCXpXlM66hOZ7dSMMWnojNo.jpg",
+            "directed": 500852
+        }
+    },
+    {
+        "pk": 1100748,
+        "model": "movies.director",
+        "fields": {
+            "name": "Frant Gwo",
+            "job": "Director",
+            "img": "/ifiWmvaHho8kmjyt9ZCBwd9j6c4.jpg",
+            "directed": 535167
+        }
+    },
+    {
+        "pk": 12891,
+        "model": "movies.director",
+        "fields": {
+            "name": "Joss Whedon",
+            "job": "Director",
+            "img": "/dTiVsuaTVTeGmvkhcyJvKp2A5kr.jpg",
+            "directed": 99861
+        }
+    },
+    {
+        "pk": 1033661,
+        "model": "movies.director",
+        "fields": {
+            "name": "Travis Knight",
+            "job": "Director",
+            "img": "/rn207qabc6oJ8JFSH7ekS9hYDXb.jpg",
+            "directed": 424783
+        }
+    },
+    {
+        "pk": 2127,
+        "model": "movies.director",
+        "fields": {
+            "name": "James Wan",
+            "job": "Director",
+            "img": "/9AlAMoHVDUX8GVOTw6JOyKil8k9.jpg",
+            "directed": 297802
+        }
+    },
+    {
+        "pk": 66212,
+        "model": "movies.director",
+        "fields": {
+            "name": "Timo Vuorensola",
+            "job": "Director",
+            "img": "/vOvgjfKURnz7HledfDyEY3JfQ9Z.jpg",
+            "directed": 302349
+        }
+    },
+    {
+        "pk": 2294,
+        "model": "movies.director",
+        "fields": {
+            "name": "Robert Rodriguez",
+            "job": "Director",
+            "img": "/bPqRdLWWwpOT8sBdj9PWOzNgwou.jpg",
+            "directed": 399579
+        }
+    },
+    {
+        "pk": 74619,
+        "model": "movies.director",
+        "fields": {
+            "name": "Sean Anders",
+            "job": "Director",
+            "img": "/o3DDfIrbhETjJxuORuTEbm29DIU.jpg",
+            "directed": 491418
+        }
+    },
+    {
+        "pk": 40644,
+        "model": "movies.director",
+        "fields": {
+            "name": "Chad Stahelski",
+            "job": "Director",
+            "img": "/hr82USXEc8XWvdnH0TpyddMpi7j.jpg",
+            "directed": 245891
+        }
+    },
+    {
+        "pk": 54248,
+        "model": "movies.director",
+        "fields": {
+            "name": "Christopher Landon",
+            "job": "Director",
+            "img": "/421KrcuMkPQnKbIvdp2yyFE4D0I.jpg",
+            "directed": 512196
+        }
+    },
+    {
+        "pk": 88857,
+        "model": "movies.director",
+        "fields": {
+            "name": "Dome Karukoski",
+            "job": "Director",
+            "img": "/4lkhkvoVu5pUQE04kQS27Ynncoe.jpg",
+            "directed": 468224
+        }
+    },
+    {
+        "pk": 15277,
+        "model": "movies.director",
+        "fields": {
+            "name": "Jon Favreau",
+            "job": "Director",
+            "img": "/sJSGJwGa3hjMlJNUCxF7wQwo7fb.jpg",
+            "directed": 1726
+        }
+    },
+    {
+        "pk": 11181,
+        "model": "movies.director",
+        "fields": {
+            "name": "Kenneth Branagh",
+            "job": "Director",
+            "img": "/bmpGjbqvAVNOK3ggiuET2Jl96tZ.jpg",
+            "directed": 10195
+        }
+    },
+    {
+        "pk": 40644,
+        "model": "movies.director",
+        "fields": {
+            "name": "Chad Stahelski",
+            "job": "Director",
+            "img": "/hr82USXEc8XWvdnH0TpyddMpi7j.jpg",
+            "directed": 458156
+        }
+    },
+    {
+        "pk": 19271,
+        "model": "movies.director",
+        "fields": {
+            "name": "Anthony Russo",
+            "job": "Director",
+            "img": "/fIa5wXK7MHAquhefTr3TcnZiYy8.jpg",
+            "directed": 271110
+        }
+    },
+    {
+        "pk": 19272,
+        "model": "movies.director",
+        "fields": {
+            "name": "Joe Russo",
+            "job": "Director",
+            "img": "/679Os4tbY1YsU01KdLhM1NPXNWu.jpg",
+            "directed": 271110
+        }
+    },
+    {
+        "pk": 80602,
+        "model": "movies.director",
+        "fields": {
+            "name": "Tyler Perry",
+            "job": "Director",
+            "img": "/fdBvkrv4lSKZ97eDLpmjlK1Tnbx.jpg",
+            "directed": 464504
+        }
+    },
+    {
+        "pk": 11694,
+        "model": "movies.director",
+        "fields": {
+            "name": "Doug Liman",
+            "job": "Director",
+            "img": "/cWpE3dSbskWOea4kAGzQpNIkfxM.jpg",
+            "directed": 137113
+        }
+    },
+    {
+        "pk": 1293994,
+        "model": "movies.director",
+        "fields": {
+            "name": "Jon Watts",
+            "job": "Director",
+            "img": "/5CKKBhuScdsHs2KPBBx5pveMOQQ.jpg",
+            "directed": 315635
+        }
+    },
+    {
+        "pk": 9888,
+        "model": "movies.director",
+        "fields": {
+            "name": "Claire Denis",
+            "job": "Director",
+            "img": "/v3dZPE1f1ICeF3m2GYYFvwuqvfT.jpg",
+            "directed": 376865
+        }
+    },
+    {
+        "pk": 11343,
+        "model": "movies.director",
+        "fields": {
+            "name": "David Yates",
+            "job": "Director",
+            "img": "/fiIZNbwdK07ntpE2wpLRIMuSXEy.jpg",
+            "directed": 338952
+        }
+    },
+    {
+        "pk": 190,
+        "model": "movies.director",
+        "fields": {
+            "name": "Clint Eastwood",
+            "job": "Director",
+            "img": "/n8h4ZHteFFXfmzUW6OEaPWanDnm.jpg",
+            "directed": 504172
+        }
+    },
+    {
+        "pk": 165787,
+        "model": "movies.director",
+        "fields": {
+            "name": "Rich Moore",
+            "job": "Director",
+            "img": "/oIAmkZf9LuJuMqR8zSchoD3FJT8.jpg",
+            "directed": 404368
+        }
+    },
+    {
+        "pk": 567562,
+        "model": "movies.director",
+        "fields": {
+            "name": "Phil Johnston",
+            "job": "Director",
+            "img": "/jCaUirgugytyigPpexIyUU1laLQ.jpg",
+            "directed": 404368
+        }
+    },
+    {
+        "pk": 64151,
+        "model": "movies.director",
+        "fields": {
+            "name": "Mike Mitchell",
+            "job": "Director",
+            "img": "/thoCDW89KWWaSYrbvUX0adPcg8S.jpg",
+            "directed": 280217
+        }
+    },
+    {
+        "pk": 37932,
+        "model": "movies.director",
+        "fields": {
+            "name": "F. Gary Gray",
+            "job": "Director",
+            "img": "/6p11B9eBjvoiAY5Nyoao6Pm7a2J.jpg",
+            "directed": 337339
+        }
+    },
+    {
+        "pk": 4945,
+        "model": "movies.director",
+        "fields": {
+            "name": "Joe Johnston",
+            "job": "Director",
+            "img": "/fbGZo6CG9Z9zKFh8D5wHunyu7gJ.jpg",
+            "directed": 1771
+        }
+    },
+    {
+        "pk": 128276,
+        "model": "movies.director",
+        "fields": {
+            "name": "Otto Bathurst",
+            "job": "Director",
+            "img": "/vojDKrTe52mnPrYSKUTOLWotEIN.jpg",
+            "directed": 375588
+        }
+    },
+    {
+        "pk": 58656,
+        "model": "movies.director",
+        "fields": {
+            "name": "Doug Lefler",
+            "job": "Director",
+            "img": null,
+            "directed": 9703
+        }
+    },
+    {
+        "pk": 47005,
+        "model": "movies.director",
+        "fields": {
+            "name": "Alan Taylor",
+            "job": "Director",
+            "img": "/f8hPlHuaRw1py22wp2qqNRfVDMw.jpg",
+            "directed": 76338
+        }
+    },
+    {
+        "pk": 18899,
+        "model": "movies.director",
+        "fields": {
+            "name": "Yuen Woo-ping",
+            "job": "Director",
+            "img": "/7gr04tWDnsBHHmo18aYLWXZHAvC.jpg",
+            "directed": 450001
+        }
+    },
+    {
+        "pk": 17633,
+        "model": "movies.director",
+        "fields": {
+            "name": "Rob Marshall",
+            "job": "Director",
+            "img": "/eK6o1eP4aZTnowGYc1NUnEdvCNJ.jpg",
+            "directed": 400650
+        }
+    },
+    {
+        "pk": 1354171,
+        "model": "movies.director",
+        "fields": {
+            "name": "Henry Hobson",
+            "job": "Director",
+            "img": null,
+            "directed": 287424
+        }
+    },
+    {
+        "pk": 9032,
+        "model": "movies.director",
+        "fields": {
+            "name": "Bryan Singer",
+            "job": "Director",
+            "img": "/ts06thbCv9Ug2mNpcbcrmLGRL4Q.jpg",
+            "directed": 424694
+        }
+    },
+    {
+        "pk": 91268,
+        "model": "movies.director",
+        "fields": {
+            "name": "Ruben Fleischer",
+            "job": "Director",
+            "img": "/y001RIxie7Vk3qMW3oLSFkjO1IA.jpg",
+            "directed": 335983
+        }
+    },
+    {
+        "pk": 55499,
+        "model": "movies.director",
+        "fields": {
+            "name": "Scott Derrickson",
+            "job": "Director",
+            "img": "/2498q7kKjApqbUMh4WEMxbtSDjn.jpg",
+            "directed": 284052
+        }
+    },
+    {
+        "pk": 17496,
+        "model": "movies.director",
+        "fields": {
+            "name": "Jacques Audiard",
+            "job": "Director",
+            "img": "/dJ2XCySH5NKZTEEapYK3RaBtL61.jpg",
+            "directed": 440161
+        }
+    },
+    {
+        "pk": 26714,
+        "model": "movies.director",
+        "fields": {
+            "name": "John R. Leonetti",
+            "job": "Director",
+            "img": "/uksq1bamaA4MfpBPaP4Vv8BvLpu.jpg",
+            "directed": 527261
+        }
+    },
+    {
+        "pk": 155531,
+        "model": "movies.director",
+        "fields": {
+            "name": "Joe Cornish",
+            "job": "Director",
+            "img": "/yJNJ0haP69aPf3fhiCJXvlESDss.jpg",
+            "directed": 454294
+        }
+    },
+    {
+        "pk": 108,
+        "model": "movies.director",
+        "fields": {
+            "name": "Peter Jackson",
+            "job": "Director",
+            "img": "/kSrfI3TbMdIMmPVOflLQ56OfscB.jpg",
+            "directed": 122917
+        }
+    },
+    {
+        "pk": 56322,
+        "model": "movies.director",
+        "fields": {
+            "name": "Amy Poehler",
+            "job": "Director",
+            "img": "/uMGW762oDZbR8jhFJRImJ1ls5cd.jpg",
+            "directed": 513083
+        }
+    },
+    {
+        "pk": 36602,
+        "model": "movies.director",
+        "fields": {
+            "name": "Peter Berg",
+            "job": "Director",
+            "img": "/1pR16H0zqRG49ns8cYykYpodgGF.jpg",
+            "directed": 347375
+        }
+    },
+    {
+        "pk": 1709468,
+        "model": "movies.director",
+        "fields": {
+            "name": "Gerard McMurray",
+            "job": "Director",
+            "img": null,
+            "directed": 442249
+        }
+    },
+    {
+        "pk": 91493,
+        "model": "movies.director",
+        "fields": {
+            "name": "Chris Addison",
+            "job": "Director",
+            "img": "/cCVVvQIuVyNkUTDg34lgHZ9fuCr.jpg",
+            "directed": 449562
+        }
+    },
+    {
+        "pk": 5281,
+        "model": "movies.director",
+        "fields": {
+            "name": "Spike Lee",
+            "job": "Director",
+            "img": "/2KOHXgk2uoRXl6u7V9xpAIo3uay.jpg",
+            "directed": 487558
+        }
+    },
+    {
+        "pk": 7396,
+        "model": "movies.director",
+        "fields": {
+            "name": "Peter Farrelly",
+            "job": "Director",
+            "img": "/8vLjukhhj4dKQSbtZ8qFr2Ybf5T.jpg",
+            "directed": 490132
+        }
+    },
+    {
+        "pk": 10965,
+        "model": "movies.director",
+        "fields": {
+            "name": "Chris Columbus",
+            "job": "Director",
+            "img": "/2fHN78oumrJRM84UydgfVzj0YEl.jpg",
+            "directed": 671
+        }
+    },
+    {
+        "pk": 40684,
+        "model": "movies.director",
+        "fields": {
+            "name": "David Leitch",
+            "job": "Director",
+            "img": "/eVSgvAIsP6mwuVbbhVb4HkVvmsu.jpg",
+            "directed": 383498
+        }
+    },
+    {
+        "pk": 1419579,
+        "model": "movies.director",
+        "fields": {
+            "name": "Christian Rivers",
+            "job": "Director",
+            "img": "/qm9JrFiMFIkZCTAbM9scJVZIjOk.jpg",
+            "directed": 428078
+        }
+    },
+    {
+        "pk": 51329,
+        "model": "movies.director",
+        "fields": {
+            "name": "Bradley Cooper",
+            "job": "Director",
+            "img": "/w2iNEYKNuWzGfGzISeh4P6IiR4U.jpg",
+            "directed": 332562
+        }
+    },
+    {
+        "pk": 108,
+        "model": "movies.director",
+        "fields": {
+            "name": "Peter Jackson",
+            "job": "Director",
+            "img": "/kSrfI3TbMdIMmPVOflLQ56OfscB.jpg",
+            "directed": 120
+        }
+    },
+    {
+        "pk": 4499,
+        "model": "movies.director",
+        "fields": {
+            "name": "Tom Shadyac",
+            "job": "Director",
+            "img": "/8CtwYIVmCSDQ9F1SXFpifKW0N3v.jpg",
+            "directed": 10052
+        }
+    },
+    {
+        "pk": 1293994,
+        "model": "movies.director",
+        "fields": {
+            "name": "Jon Watts",
+            "job": "Director",
+            "img": "/5CKKBhuScdsHs2KPBBx5pveMOQQ.jpg",
+            "directed": 429617
+        }
+    },
+    {
+        "pk": 47506,
+        "model": "movies.director",
+        "fields": {
+            "name": "Drew Goddard",
+            "job": "Director",
+            "img": "/j5Le3QQljdGJ3kPAcjAZr9V4QUC.jpg",
+            "directed": 446021
+        }
+    },
+    {
+        "pk": 51894,
+        "model": "movies.director",
+        "fields": {
+            "name": "J.A. Bayona",
+            "job": "Director",
+            "img": "/cnbbnS7K8Uu6yohAfSRHv5Kxc7r.jpg",
+            "directed": 351286
+        }
+    },
+    {
+        "pk": 67367,
+        "model": "movies.director",
+        "fields": {
+            "name": "Rian Johnson",
+            "job": "Director",
+            "img": "/j7ACBDkCgMqf6sSz2XeCmfqGNd3.jpg",
+            "directed": 181808
+        }
+    },
+    {
+        "pk": 1,
+        "model": "movies.director",
+        "fields": {
+            "name": "George Lucas",
+            "job": "Director",
+            "img": "/8qxin8urtFE0NqaZNFWOuV537bH.jpg",
+            "directed": 11
+        }
+    },
+    {
+        "pk": 222470,
+        "model": "movies.director",
+        "fields": {
+            "name": "Todd Strauss-Schulson",
+            "job": "Director",
+            "img": "/ebACQB0WKup42JE6epPJMdcLT0I.jpg",
+            "directed": 449563
+        }
+    },
+    {
+        "pk": 140151,
+        "model": "movies.director",
+        "fields": {
+            "name": "William Bindley",
+            "job": "Director",
+            "img": "/7KWLEzEgfag8shGRQsbmmT9zEJl.jpg",
+            "directed": 502292
+        }
+    },
+    {
+        "pk": 6884,
+        "model": "movies.director",
+        "fields": {
+            "name": "Patty Jenkins",
+            "job": "Director",
+            "img": "/za4JYxjctECHLJJel3lEFPsbeht.jpg",
+            "directed": 297762
+        }
+    },
+    {
+        "pk": 2034,
+        "model": "movies.director",
+        "fields": {
+            "name": "Danny Boyle",
+            "job": "Director",
+            "img": "/b5qQpFHmgNyvV1t81ou17Jt2fRj.jpg",
+            "directed": 627
+        }
+    },
+    {
+        "pk": 1018106,
+        "model": "movies.director",
+        "fields": {
+            "name": "S. Craig Zahler",
+            "job": "Director",
+            "img": "/vomw5TlCtMtKFSsgOtwkit464nd.jpg",
+            "directed": 438674
+        }
+    },
+    {
+        "pk": 122423,
+        "model": "movies.director",
+        "fields": {
+            "name": "Yorgos Lanthimos",
+            "job": "Director",
+            "img": "/p6ykeQGWagu0wkLUJZX5xVtAkG8.jpg",
+            "directed": 375262
+        }
+    },
+    {
+        "pk": 78160,
+        "model": "movies.director",
+        "fields": {
+            "name": "Luca Guadagnino",
+            "job": "Director",
+            "img": "/lO2GD4s6fRloZLEhsZgBlhJQasE.jpg",
+            "directed": 361292
+        }
+    },
+    {
+        "pk": 15358,
+        "model": "movies.director",
+        "fields": {
+            "name": "Vic Armstrong",
+            "job": "Director",
+            "img": null,
+            "directed": 218043
+        }
+    },
+    {
+        "pk": 56501,
+        "model": "movies.director",
+        "fields": {
+            "name": "Michael Spierig",
+            "job": "Director",
+            "img": "/ecQPSEB9HP4LQ2cC4mhfzycZJ08.jpg",
+            "directed": 298250
+        }
+    },
+    {
+        "pk": 56502,
+        "model": "movies.director",
+        "fields": {
+            "name": "Peter Spierig",
+            "job": "Director",
+            "img": "/66rowkv57i9D2cyhrZPgoohw4VX.jpg",
+            "directed": 298250
+        }
+    },
+    {
+        "pk": 1315177,
+        "model": "movies.director",
+        "fields": {
+            "name": "No Zin-soo",
+            "job": "Director",
+            "img": null,
+            "directed": 399905
+        }
+    },
+    {
+        "pk": 7087,
+        "model": "movies.director",
+        "fields": {
+            "name": "Brad Bird",
+            "job": "Director",
+            "img": "/2XwJyYs6XNLaQuC1O2gbEHT3jxx.jpg",
+            "directed": 260513
+        }
+    },
+    {
+        "pk": 16847,
+        "model": "movies.director",
+        "fields": {
+            "name": "Eli Roth",
+            "job": "Director",
+            "img": "/eHBxgJXeDKiYZMbL3VgAf7i9wor.jpg",
+            "directed": 395990
+        }
+    },
+    {
+        "pk": 15277,
+        "model": "movies.director",
+        "fields": {
+            "name": "Jon Favreau",
+            "job": "Director",
+            "img": "/sJSGJwGa3hjMlJNUCxF7wQwo7fb.jpg",
+            "directed": 10138
+        }
+    },
+    {
+        "pk": 57113,
+        "model": "movies.director",
+        "fields": {
+            "name": "Dan Gilroy",
+            "job": "Director",
+            "img": "/am569DiWC0blnbM98ZphiwBItsS.jpg",
+            "directed": 463684
+        }
+    },
+    {
+        "pk": 1066705,
+        "model": "movies.director",
+        "fields": {
+            "name": "Vince Marcello",
+            "job": "Director",
+            "img": null,
+            "directed": 454983
+        }
+    },
+    {
+        "pk": 132876,
+        "model": "movies.director",
+        "fields": {
+            "name": "Brad Peyton",
+            "job": "Director",
+            "img": "/7F7dM4A6QbA67xOxTJyv3aqinrA.jpg",
+            "directed": 254128
+        }
+    },
+    {
+        "pk": 19850,
+        "model": "movies.director",
+        "fields": {
+            "name": "Catherine Hardwicke",
+            "job": "Director",
+            "img": "/x8qMlCXpXlM66hOZ7dSMMWnojNo.jpg",
+            "directed": 8966
+        }
+    },
+    {
+        "pk": 1108,
+        "model": "movies.director",
+        "fields": {
+            "name": "Shane Black",
+            "job": "Director",
+            "img": "/lEyKmYizNVNLsOEgeaPFwX9MZoA.jpg",
+            "directed": 68721
+        }
+    },
+    {
+        "pk": 55252,
+        "model": "movies.director",
+        "fields": {
+            "name": "Tim Miller",
+            "job": "Director",
+            "img": "/dCyBYwhO76j5wA96HPb6k5xk2Le.jpg",
+            "directed": 293660
+        }
+    },
+    {
+        "pk": 525,
+        "model": "movies.director",
+        "fields": {
+            "name": "Christopher Nolan",
+            "job": "Director",
+            "img": "/zPvcQPnp3q6R9mqJGm8RENsXYY9.jpg",
+            "directed": 157336
+        }
+    },
+    {
+        "pk": 55075,
+        "model": "movies.director",
+        "fields": {
+            "name": "Jeff Wadlow",
+            "job": "Director",
+            "img": "/cOTfT6Jmg5aG86UJpgqVM5pY9Wv.jpg",
+            "directed": 460019
+        }
+    },
+    {
+        "pk": 33192,
+        "model": "movies.director",
+        "fields": {
+            "name": "Joel Edgerton",
+            "job": "Director",
+            "img": "/uMmyyCBHR9N0FwIE79IHlPNTlDw.jpg",
+            "directed": 472451
+        }
+    },
+    {
+        "pk": 89112,
+        "model": "movies.director",
+        "fields": {
+            "name": "Anthony Leondis",
+            "job": "Director",
+            "img": "/ri6nyNxNmCVO6ZYiv29qKgzVYsA.jpg",
+            "directed": 378236
+        }
+    },
+    {
+        "pk": 1627343,
+        "model": "movies.director",
+        "fields": {
+            "name": "Tatsuya Koyanagi",
+            "job": "Director",
+            "img": null,
+            "directed": 532321
+        }
+    },
+    {
+        "pk": 1624751,
+        "model": "movies.director",
+        "fields": {
+            "name": "Masaharu Watanabe",
+            "job": "Director",
+            "img": null,
+            "directed": 532321
+        }
+    },
+    {
+        "pk": 18865,
+        "model": "movies.director",
+        "fields": {
+            "name": "Louis Leterrier",
+            "job": "Director",
+            "img": "/54rsjgcmdZj2wymmKy3FPRgkrie.jpg",
+            "directed": 1724
+        }
+    },
+    {
+        "pk": 67813,
+        "model": "movies.director",
+        "fields": {
+            "name": "Baltasar Kormákur",
+            "job": "Director",
+            "img": "/Aml85bUldhLbVubYBk38ag8JmVK.jpg",
+            "directed": 429300
+        }
+    },
+    {
+        "pk": 9340,
+        "model": "movies.director",
+        "fields": {
+            "name": "Lana Wachowski",
+            "job": "Director",
+            "img": "/fxZ7SpJCZ9DgJERWEpGmn5a4mdp.jpg",
+            "directed": 603
+        }
+    },
+    {
+        "pk": 9339,
+        "model": "movies.director",
+        "fields": {
+            "name": "Lilly Wachowski",
+            "job": "Director",
+            "img": "/9sxE10LUA7TGlS1pHw2RM6mckHp.jpg",
+            "directed": 603
+        }
+    },
+    {
+        "pk": 15217,
+        "model": "movies.director",
+        "fields": {
+            "name": "Zack Snyder",
+            "job": "Director",
+            "img": "/iD0GDqkvJXDXiNEZej198hjt3Tt.jpg",
+            "directed": 141052
+        }
+    },
+    {
+        "pk": 71329,
+        "model": "movies.director",
+        "fields": {
+            "name": "Jonas Åkerlund",
+            "job": "Director",
+            "img": "/bGnXImWTXDPvvwD4kcS7NdlMGW8.jpg",
+            "directed": 483906
+        }
+    },
+    {
+        "pk": 2662,
+        "model": "movies.director",
+        "fields": {
+            "name": "Frank Capra",
+            "job": "Director",
+            "img": "/hvPrtfKnJs9arck1zKGnG8uRkBC.jpg",
+            "directed": 1585
+        }
+    },
+    {
+        "pk": 15287,
+        "model": "movies.director",
+        "fields": {
+            "name": "Niki Caro",
+            "job": "Director",
+            "img": "/ooJcmnhX9qJ0E7bCdSQCxr7JViH.jpg",
+            "directed": 289222
+        }
+    },
+    {
+        "pk": 7467,
+        "model": "movies.director",
+        "fields": {
+            "name": "David Fincher",
+            "job": "Director",
+            "img": "/dcBHejOsKvzVZVozWJAPzYthb8X.jpg",
+            "directed": 4922
+        }
+    },
+    {
+        "pk": 17655,
+        "model": "movies.director",
+        "fields": {
+            "name": "Farhad Safinia",
+            "job": "Director",
+            "img": null,
+            "directed": 411728
+        }
+    },
+    {
+        "pk": 6159,
+        "model": "movies.director",
+        "fields": {
+            "name": "Ron Howard",
+            "job": "Director",
+            "img": "/67WIgpOGIeb4NSN9yIxsOITbnns.jpg",
+            "directed": 348350
+        }
+    },
+    {
+        "pk": 108,
+        "model": "movies.director",
+        "fields": {
+            "name": "Peter Jackson",
+            "job": "Director",
+            "img": "/kSrfI3TbMdIMmPVOflLQ56OfscB.jpg",
+            "directed": 122
+        }
+    },
+    {
+        "pk": 137427,
+        "model": "movies.director",
+        "fields": {
+            "name": "Denis Villeneuve",
+            "job": "Director",
+            "img": "/433lXlkdMGXzrpwnKM4Ul1sln15.jpg",
+            "directed": 335984
+        }
+    },
+    {
+        "pk": 1003237,
+        "model": "movies.director",
+        "fields": {
+            "name": "Dorota Kobiela",
+            "job": "Director",
+            "img": null,
+            "directed": 339877
+        }
+    },
+    {
+        "pk": 1466181,
+        "model": "movies.director",
+        "fields": {
+            "name": "Hugh Welchman",
+            "job": "Director",
+            "img": null,
+            "directed": 339877
+        }
+    },
+    {
+        "pk": 1719601,
+        "model": "movies.director",
+        "fields": {
+            "name": "Nicolai Fuglsig",
+            "job": "Director",
+            "img": null,
+            "directed": 429351
+        }
+    },
+    {
+        "pk": 143593,
+        "model": "movies.director",
+        "fields": {
+            "name": "Xavier Dolan",
+            "job": "Director",
+            "img": "/ohlR0okNYx0lg4NFqQJoys8c4Zp.jpg",
+            "directed": 338189
+        }
+    },
+    {
+        "pk": 76595,
+        "model": "movies.director",
+        "fields": {
+            "name": "Byron Howard",
+            "job": "Director",
+            "img": "/ePJXkxrD44nM0VB7Xx9Q4ityzfT.jpg",
+            "directed": 269149
+        }
+    },
+    {
+        "pk": 165787,
+        "model": "movies.director",
+        "fields": {
+            "name": "Rich Moore",
+            "job": "Director",
+            "img": "/oIAmkZf9LuJuMqR8zSchoD3FJT8.jpg",
+            "directed": 269149
+        }
+    },
+    {
+        "pk": 59026,
+        "model": "movies.director",
+        "fields": {
+            "name": "Peyton Reed",
+            "job": "Director",
+            "img": "/aucXNycAtFREMIKr6ikmHvd2Mmp.jpg",
+            "directed": 102899
+        }
+    },
+    {
+        "pk": 40644,
+        "model": "movies.director",
+        "fields": {
+            "name": "Chad Stahelski",
+            "job": "Director",
+            "img": "/hr82USXEc8XWvdnH0TpyddMpi7j.jpg",
+            "directed": 324552
+        }
+    },
+    {
+        "pk": 1215,
+        "model": "movies.director",
+        "fields": {
+            "name": "Raja Gosnell",
+            "job": "Director",
+            "img": "/jbcOXhl4QGaYcvAK5WsbEARkkQZ.jpg",
+            "directed": 77931
+        }
+    },
+    {
+        "pk": 1721377,
+        "model": "movies.director",
+        "fields": {
+            "name": "Jennifer Kaytin Robinson",
+            "job": "Director",
+            "img": null,
+            "directed": 515248
+        }
+    },
+    {
+        "pk": 929825,
+        "model": "movies.director",
+        "fields": {
+            "name": "Ava DuVernay",
+            "job": "Director",
+            "img": "/84rc8I3Wf5zkCWGMNeTtmRekHW0.jpg",
+            "directed": 407451
+        }
+    },
+    {
+        "pk": 84335,
+        "model": "movies.director",
+        "fields": {
+            "name": "Joe Lynch",
+            "job": "Director",
+            "img": "/maeIOyMqToTT0XuWxO0Fy40lNzR.jpg",
+            "directed": 13186
+        }
+    },
+    {
+        "pk": 12962,
+        "model": "movies.director",
+        "fields": {
+            "name": "Jon Turteltaub",
+            "job": "Director",
+            "img": "/borF48XTUkOCKE3ryh3BFxe4Unr.jpg",
+            "directed": 345940
+        }
+    },
+    {
+        "pk": 7312,
+        "model": "movies.director",
+        "fields": {
+            "name": "Angela Robinson",
+            "job": "Director",
+            "img": "/fA8mw3bRWALK7ZGi0YUpDxNWVVf.jpg",
+            "directed": 11451
+        }
+    },
+    {
+        "pk": 9033,
+        "model": "movies.director",
+        "fields": {
+            "name": "Christopher McQuarrie",
+            "job": "Director",
+            "img": "/b2zCcMMd0cawVhYjmSwICu2eTRu.jpg",
+            "directed": 353081
+        }
+    },
+    {
+        "pk": 2710,
+        "model": "movies.director",
+        "fields": {
+            "name": "James Cameron",
+            "job": "Director",
+            "img": "/4TjSh3Er5LIOvFcB5inaRDPrBKu.jpg",
+            "directed": 19995
+        }
+    },
+    {
+        "pk": 1044250,
+        "model": "movies.director",
+        "fields": {
+            "name": "Panos Cosmatos",
+            "job": "Director",
+            "img": "/rGjZWiTtr21BZ1fpntREEuSnEqg.jpg",
+            "directed": 460885
+        }
+    },
+    {
+        "pk": 88675,
+        "model": "movies.director",
+        "fields": {
+            "name": "Justin Baldoni",
+            "job": "Director",
+            "img": "/2sc6iUWljADnqtjsaKU3s6f0DGW.jpg",
+            "directed": 527641
+        }
+    },
+    {
+        "pk": 54025,
+        "model": "movies.director",
+        "fields": {
+            "name": "Karyn Kusama",
+            "job": "Director",
+            "img": "/d8jLYxsHkoPJiGXvps9SD7zVdAc.jpg",
+            "directed": 471507
+        }
+    },
+    {
+        "pk": 578,
+        "model": "movies.director",
+        "fields": {
+            "name": "Ridley Scott",
+            "job": "Director",
+            "img": "/oTAL0z0vsjipCruxXUsDUIieuhk.jpg",
+            "directed": 11976
+        }
+    },
+    {
+        "pk": 1551545,
+        "model": "movies.director",
+        "fields": {
+            "name": "Steven Caple Jr.",
+            "job": "Director",
+            "img": "/aU8p958QyhfV2jurc3L5pn7sN6L.jpg",
+            "directed": 480530
+        }
+    },
+    {
+        "pk": 34396,
+        "model": "movies.director",
+        "fields": {
+            "name": "Roxann Dawson",
+            "job": "Director",
+            "img": "/n4YNcGj3wCg9bKbDj1U3BRYoUXL.jpg",
+            "directed": 514439
+        }
+    },
+    {
+        "pk": 3702,
+        "model": "movies.director",
+        "fields": {
+            "name": "Sebastian Schipper",
+            "job": "Director",
+            "img": "/fzRs9csoyl9uE5aybQ9bqe1SGuc.jpg",
+            "directed": 320007
+        }
+    },
+    {
+        "pk": 1090,
+        "model": "movies.director",
+        "fields": {
+            "name": "John McTiernan",
+            "job": "Director",
+            "img": "/tknmquMIO2oAVUZ0vVX78ALHyaT.jpg",
+            "directed": 562
+        }
+    },
+    {
+        "pk": 7316,
+        "model": "movies.director",
+        "fields": {
+            "name": "Mark Burton",
+            "job": "Director",
+            "img": null,
+            "directed": 263109
+        }
+    },
+    {
+        "pk": 1244465,
+        "model": "movies.director",
+        "fields": {
+            "name": "Richard Starzak",
+            "job": "Director",
+            "img": "/o8Dm54LgHmsxkGmTRtmyKc1boHV.jpg",
+            "directed": 263109
+        }
+    },
+    {
+        "pk": 928490,
+        "model": "movies.director",
+        "fields": {
+            "name": "Camille Delamarre",
+            "job": "Director",
+            "img": null,
+            "directed": 287948
+        }
+    },
+    {
+        "pk": 2636,
+        "model": "movies.director",
+        "fields": {
+            "name": "Alfred Hitchcock",
+            "job": "Director",
+            "img": "/rKYyX58azJv1SZNXQWOJyNyvB9F.jpg",
+            "directed": 574
+        }
+    },
+    {
+        "pk": 154705,
+        "model": "movies.director",
+        "fields": {
+            "name": "Chris Butler",
+            "job": "Director",
+            "img": "/1Og4LcnyrdHfWl6nYEtxLbPHjqn.jpg",
+            "directed": 458253
+        }
+    },
+    {
+        "pk": 17350,
+        "model": "movies.director",
+        "fields": {
+            "name": "Kevin Macdonald",
+            "job": "Director",
+            "img": "/k46Er5HaZ8FqbNEpBXf9FlnxxOX.jpg",
+            "directed": 246080
+        }
+    },
+    {
+        "pk": 956,
+        "model": "movies.director",
+        "fields": {
+            "name": "Guy Ritchie",
+            "job": "Director",
+            "img": "/uLpiixgcko2W5GLsqBEvSfluyEs.jpg",
+            "directed": 420817
+        }
+    },
+    {
+        "pk": 11614,
+        "model": "movies.director",
+        "fields": {
+            "name": "M. Night Shyamalan",
+            "job": "Director",
+            "img": "/shV9dGXMj7zt7myRFkR6FR51LYu.jpg",
+            "directed": 381288
+        }
+    },
+    {
+        "pk": 525,
+        "model": "movies.director",
+        "fields": {
+            "name": "Christopher Nolan",
+            "job": "Director",
+            "img": "/zPvcQPnp3q6R9mqJGm8RENsXYY9.jpg",
+            "directed": 27205
+        }
+    },
+    {
+        "pk": 11694,
+        "model": "movies.director",
+        "fields": {
+            "name": "Doug Liman",
+            "job": "Director",
+            "img": "/cWpE3dSbskWOea4kAGzQpNIkfxM.jpg",
+            "directed": 38363
+        }
+    },
+    {
+        "pk": 525,
+        "model": "movies.director",
+        "fields": {
+            "name": "Christopher Nolan",
+            "job": "Director",
+            "img": "/zPvcQPnp3q6R9mqJGm8RENsXYY9.jpg",
+            "directed": 155
+        }
+    },
+    {
+        "pk": 13426,
+        "model": "movies.director",
+        "fields": {
+            "name": "Peter Segal",
+            "job": "Director",
+            "img": "/4wl3AZ16vUhFupFpfKQZ0sQ4jHX.jpg",
+            "directed": 503616
+        }
+    },
+    {
+        "pk": 1704,
+        "model": "movies.director",
+        "fields": {
+            "name": "Gore Verbinski",
+            "job": "Director",
+            "img": "/bV0rGSPrK4AUvODjB3zMAwDdeIf.jpg",
+            "directed": 22
+        }
+    },
+    {
+        "pk": 1461,
+        "model": "movies.director",
+        "fields": {
+            "name": "George Clooney",
+            "job": "Director",
+            "img": "/z4SBfpKDThuQY0FsvDbajcooBdA.jpg",
+            "directed": 395458
+        }
+    },
+    {
+        "pk": 100734,
+        "model": "movies.director",
+        "fields": {
+            "name": "Johannes Roberts",
+            "job": "Director",
+            "img": "/8hHny6atmFXcuNl2m1AP3fIOayz.jpg",
+            "directed": 403119
+        }
+    },
+    {
+        "pk": 65630,
+        "model": "movies.director",
+        "fields": {
+            "name": "Rob Letterman",
+            "job": "Director",
+            "img": "/v2GPTQ41ZqHtML8W1ft3UJej5xA.jpg",
+            "directed": 257445
+        }
+    },
+    {
+        "pk": 56661,
+        "model": "movies.director",
+        "fields": {
+            "name": "Jonathan Levine",
+            "job": "Director",
+            "img": "/gfJOKZPSbpzls7FV0Ogv4IpEeXh.jpg",
+            "directed": 459992
+        }
+    },
+    {
+        "pk": 55710,
+        "model": "movies.director",
+        "fields": {
+            "name": "Adam McKay",
+            "job": "Director",
+            "img": "/vOyZXNJq7Oo01LPtSD5AZHjctgH.jpg",
+            "directed": 429197
+        }
+    },
+    {
+        "pk": 20907,
+        "model": "movies.director",
+        "fields": {
+            "name": "Antoine Fuqua",
+            "job": "Director",
+            "img": "/z8BLZcMQxE4GqUiEc2gsoAzc8xS.jpg",
+            "directed": 156022
+        }
+    },
+    {
+        "pk": 1108,
+        "model": "movies.director",
+        "fields": {
+            "name": "Shane Black",
+            "job": "Director",
+            "img": "/lEyKmYizNVNLsOEgeaPFwX9MZoA.jpg",
+            "directed": 346910
+        }
+    },
+    {
+        "pk": 3055,
+        "model": "movies.director",
+        "fields": {
+            "name": "David Mackenzie",
+            "job": "Director",
+            "img": "/oHZ2kkGICUnSbm73BQFK3Hau82f.jpg",
+            "directed": 454227
+        }
+    },
+    {
+        "pk": 111736,
+        "model": "movies.director",
+        "fields": {
+            "name": "Klay Hall",
+            "job": "Director",
+            "img": null,
+            "directed": 151960
+        }
+    },
+    {
+        "pk": 97026,
+        "model": "movies.director",
+        "fields": {
+            "name": "John Luessenhop",
+            "job": "Director",
+            "img": "/HI2jnUyVBZu2xYOohzjM4nB8XQ.jpg",
+            "directed": 76617
+        }
+    },
+    {
+        "pk": 1215,
+        "model": "movies.director",
+        "fields": {
+            "name": "Raja Gosnell",
+            "job": "Director",
+            "img": "/jbcOXhl4QGaYcvAK5WsbEARkkQZ.jpg",
+            "directed": 11024
+        }
+    },
+    {
+        "pk": 15217,
+        "model": "movies.director",
+        "fields": {
+            "name": "Zack Snyder",
+            "job": "Director",
+            "img": "/iD0GDqkvJXDXiNEZej198hjt3Tt.jpg",
+            "directed": 209112
+        }
+    },
+    {
+        "pk": 63973,
+        "model": "movies.director",
+        "fields": {
+            "name": "Matteo Garrone",
+            "job": "Director",
+            "img": null,
+            "directed": 314405
+        }
+    },
+    {
+        "pk": 52114,
+        "model": "movies.director",
+        "fields": {
+            "name": "Jon Lucas",
+            "job": "Director",
+            "img": "/7MT62A1wIX6u4mjSimVDOcbRQ5s.jpg",
+            "directed": 431530
+        }
+    },
+    {
+        "pk": 226089,
+        "model": "movies.director",
+        "fields": {
+            "name": "Scott Moore",
+            "job": "Director",
+            "img": "/txnoRflzzdTwjMaTgrVtUEnTRWp.jpg",
+            "directed": 431530
+        }
+    },
+    {
+        "pk": 21678,
+        "model": "movies.director",
+        "fields": {
+            "name": "Olivier Assayas",
+            "job": "Director",
+            "img": "/bB5TzDaPHLbHxPdsYzQ1blNRcxS.jpg",
+            "directed": 340676
+        }
+    },
+    {
+        "pk": 5501,
+        "model": "movies.director",
+        "fields": {
+            "name": "Gary Fleder",
+            "job": "Director",
+            "img": "/fKPxO8iWMuWYQ8sXeH1BPfQzqxm.jpg",
+            "directed": 12103
+        }
+    },
+    {
+        "pk": 1003245,
+        "model": "movies.director",
+        "fields": {
+            "name": "Donovan Marsh",
+            "job": "Director",
+            "img": null,
+            "directed": 399402
+        }
+    },
+    {
+        "pk": 47005,
+        "model": "movies.director",
+        "fields": {
+            "name": "Alan Taylor",
+            "job": "Director",
+            "img": "/f8hPlHuaRw1py22wp2qqNRfVDMw.jpg",
+            "directed": 87101
+        }
+    },
+    {
+        "pk": 27846,
+        "model": "movies.director",
+        "fields": {
+            "name": "John Herzfeld",
+            "job": "Director",
+            "img": null,
+            "directed": 2749
+        }
+    },
+    {
+        "pk": 154547,
+        "model": "movies.director",
+        "fields": {
+            "name": "Chris Nelson",
+            "job": "Director",
+            "img": null,
+            "directed": 543540
+        }
+    },
+    {
+        "pk": 1480620,
+        "model": "movies.director",
+        "fields": {
+            "name": "Lucia Aniello",
+            "job": "Director",
+            "img": "/60s5psYbHSs6NvgOHzMIQTlUJf0.jpg",
+            "directed": 397422
+        }
+    },
+    {
+        "pk": 1967046,
+        "model": "movies.director",
+        "fields": {
+            "name": "Sarah Daggar-Nickson",
+            "job": "Director",
+            "img": "/bOCNYlll4XyHeGVfMLBeH98i27G.jpg",
+            "directed": 500904
+        }
+    },
+    {
+        "pk": 556172,
+        "model": "movies.director",
+        "fields": {
+            "name": "J. C. Chandor",
+            "job": "Director",
+            "img": "/6oaCrcLpqAvuWci6kStnuuAc34I.jpg",
+            "directed": 399361
+        }
+    },
+    {
+        "pk": 6047,
+        "model": "movies.director",
+        "fields": {
+            "name": "Jeffrey Nachmanoff",
+            "job": "Director",
+            "img": null,
+            "directed": 300681
+        }
+    },
+    {
+        "pk": 1449727,
+        "model": "movies.director",
+        "fields": {
+            "name": "Rejishh Midhila",
+            "job": "Director",
+            "img": null,
+            "directed": 579598
+        }
+    },
+    {
+        "pk": 12989,
+        "model": "movies.director",
+        "fields": {
+            "name": "Andrew Davis",
+            "job": "Director",
+            "img": "/vE3ls4wUsHQZAtu4gIzTIeQEmMG.jpg",
+            "directed": 12123
+        }
+    },
+    {
+        "pk": 1279781,
+        "model": "movies.director",
+        "fields": {
+            "name": "Peter Sattler",
+            "job": "Director",
+            "img": "/MBCBAoqZcqrUFqoJRSatktQf7a.jpg",
+            "directed": 244506
+        }
+    },
+    {
+        "pk": 56370,
+        "model": "movies.director",
+        "fields": {
+            "name": "Ruben Östlund",
+            "job": "Director",
+            "img": "/kD2GQaROZYBRic7A99imCN67IaD.jpg",
+            "directed": 401246
+        }
+    },
+    {
+        "pk": 40476,
+        "model": "movies.director",
+        "fields": {
+            "name": "Maren Ade",
+            "job": "Director",
+            "img": "/nOholiGROBPeCFE1CGagTvtsFpf.jpg",
+            "directed": 374475
+        }
+    },
+    {
+        "pk": 11401,
+        "model": "movies.director",
+        "fields": {
+            "name": "John Woo",
+            "job": "Director",
+            "img": "/d1ovGZj05qWU1MjVKAePVj7ZMRh.jpg",
+            "directed": 12289
+        }
+    },
+    {
+        "pk": 2917,
+        "model": "movies.director",
+        "fields": {
+            "name": "James Whale",
+            "job": "Director",
+            "img": "/xyJ2YCs8eUZoPQ5SUHGadFosEWR.jpg",
+            "directed": 3035
+        }
+    },
+    {
+        "pk": 69416,
+        "model": "movies.director",
+        "fields": {
+            "name": "Bradley Raymond",
+            "job": "Director",
+            "img": "/jU7NyWtjGUh3YJSGOjHseTSSOou.jpg",
+            "directed": 11430
+        }
+    },
+    {
+        "pk": 115128,
+        "model": "movies.director",
+        "fields": {
+            "name": "Bo Burnham",
+            "job": "Director",
+            "img": "/drc8vlHZ0wlyEqCus4BZpYY4CCX.jpg",
+            "directed": 489925
+        }
+    },
+    {
+        "pk": 59998,
+        "model": "movies.director",
+        "fields": {
+            "name": "Greg McLean",
+            "job": "Director",
+            "img": "/2DPAARHLV29cCdQeUjkQ06lZh9b.jpg",
+            "directed": 390062
+        }
+    },
+    {
+        "pk": 8685,
+        "model": "movies.director",
+        "fields": {
+            "name": "Andrew Niccol",
+            "job": "Director",
+            "img": "/ffu94ltKqX6mAPSWdimz7MIdJMZ.jpg",
+            "directed": 396806
+        }
+    },
+    {
+        "pk": 16959,
+        "model": "movies.director",
+        "fields": {
+            "name": "Jonathan Dayton",
+            "job": "Director",
+            "img": "/7sKsTeeiVjpAIujAw86NStfZvFM.jpg",
+            "directed": 369192
+        }
+    },
+    {
+        "pk": 16960,
+        "model": "movies.director",
+        "fields": {
+            "name": "Valerie Faris",
+            "job": "Director",
+            "img": "/bHxIbrHwSI5RWdahw21euXm2hjv.jpg",
+            "directed": 369192
+        }
+    },
+    {
+        "pk": 578,
+        "model": "movies.director",
+        "fields": {
+            "name": "Ridley Scott",
+            "job": "Director",
+            "img": "/oTAL0z0vsjipCruxXUsDUIieuhk.jpg",
+            "directed": 348
+        }
+    },
+    {
+        "pk": 1163460,
+        "model": "movies.director",
+        "fields": {
+            "name": "Joe Penna",
+            "job": "Director",
+            "img": "/1xQNv7nR25arh8wQeGfQkZ3Iafc.jpg",
+            "directed": 453755
+        }
+    },
+    {
+        "pk": 11343,
+        "model": "movies.director",
+        "fields": {
+            "name": "David Yates",
+            "job": "Director",
+            "img": "/fiIZNbwdK07ntpE2wpLRIMuSXEy.jpg",
+            "directed": 12445
+        }
+    },
+    {
+        "pk": 17329,
+        "model": "movies.director",
+        "fields": {
+            "name": "Neil Burger",
+            "job": "Director",
+            "img": "/eUDHt2OWYnCwC8FOVIgU2uTPK3x.jpg",
+            "directed": 440472
+        }
+    },
+    {
+        "pk": 97942,
+        "model": "movies.director",
+        "fields": {
+            "name": "Jonathan Teplitzky",
+            "job": "Director",
+            "img": "/mkvXjucr6iRAB4w9zVt5veoEQln.jpg",
+            "directed": 127560
+        }
+    },
+    {
+        "pk": 10965,
+        "model": "movies.director",
+        "fields": {
+            "name": "Chris Columbus",
+            "job": "Director",
+            "img": "/2fHN78oumrJRM84UydgfVzj0YEl.jpg",
+            "directed": 672
+        }
+    },
+    {
+        "pk": 32250,
+        "model": "movies.director",
+        "fields": {
+            "name": "Sean Ellis",
+            "job": "Director",
+            "img": "/aODTopWlu757mM7n163rTBmXRHX.jpg",
+            "directed": 351339
+        }
+    },
+    {
+        "pk": 10943,
+        "model": "movies.director",
+        "fields": {
+            "name": "Francis Lawrence",
+            "job": "Director",
+            "img": "/pyGWo5mAwZ2Koe6leB2RjKd7vmc.jpg",
+            "directed": 131631
+        }
+    },
+    {
+        "pk": 15488,
+        "model": "movies.director",
+        "fields": {
+            "name": "Ken Loach",
+            "job": "Director",
+            "img": "/vGtkrPgNeK3xkbbKTQ4vWD1VsEm.jpg",
+            "directed": 1116
+        }
+    },
+    {
+        "pk": 59,
+        "model": "movies.director",
+        "fields": {
+            "name": "Luc Besson",
+            "job": "Director",
+            "img": "/2TzRsqSx0xb1DK3HsEQKSXhRGcu.jpg",
+            "directed": 101
+        }
+    },
+    {
+        "pk": 12995,
+        "model": "movies.director",
+        "fields": {
+            "name": "Marc Forster",
+            "job": "Director",
+            "img": "/mYpqFeHOKTPXLbZRKQjW1xECycl.jpg",
+            "directed": 72190
+        }
+    },
+    {
+        "pk": 930707,
+        "model": "movies.director",
+        "fields": {
+            "name": "Colin Trevorrow",
+            "job": "Director",
+            "img": "/txsIRCos9meRg5dYCsrJ2BNbrsB.jpg",
+            "directed": 135397
+        }
+    },
+    {
+        "pk": 35453,
+        "model": "movies.director",
+        "fields": {
+            "name": "Pierre Morel",
+            "job": "Director",
+            "img": "/yyhcEUYW4znC6JbNKZv2OJp1Cy0.jpg",
+            "directed": 266396
+        }
+    },
+    {
+        "pk": 1884,
+        "model": "movies.director",
+        "fields": {
+            "name": "Steven Soderbergh",
+            "job": "Director",
+            "img": "/579zHkhyHD1gj3B6a2VveOXrJAD.jpg",
+            "directed": 467660
+        }
+    },
+    {
+        "pk": 1071,
+        "model": "movies.director",
+        "fields": {
+            "name": "Tom Tykwer",
+            "job": "Director",
+            "img": "/9J53KiI0OWIjSxwkUyxVLGrlnHy.jpg",
+            "directed": 270010
+        }
+    },
+    {
+        "pk": 1278722,
+        "model": "movies.director",
+        "fields": {
+            "name": "Trish Sie",
+            "job": "Director",
+            "img": "/wB8cnaVXGikYjoWhcyvcNf8wWi9.jpg",
+            "directed": 353616
+        }
+    },
+    {
+        "pk": 227439,
+        "model": "movies.director",
+        "fields": {
+            "name": "Don Hall",
+            "job": "Director",
+            "img": "/jVevHpWoDaepeNmbNpBYHCktdd5.jpg",
+            "directed": 177572
+        }
+    },
+    {
+        "pk": 70238,
+        "model": "movies.director",
+        "fields": {
+            "name": "Chris Williams",
+            "job": "Director",
+            "img": "/eE2NDdeKN1DC3XuV6L4xuEbVaS.jpg",
+            "directed": 177572
+        }
+    },
+    {
+        "pk": 5970,
+        "model": "movies.director",
+        "fields": {
+            "name": "Pier Paolo Pasolini",
+            "job": "Director",
+            "img": "/zHqXNL85yvOokI7y12UGS1Lkm6D.jpg",
+            "directed": 5336
+        }
+    },
+    {
+        "pk": 63571,
+        "model": "movies.director",
+        "fields": {
+            "name": "Wilson Yip",
+            "job": "Director",
+            "img": "/wJHHLPt6oVvurN9Sk4ff1MFh7z6.jpg",
+            "directed": 449924
+        }
+    },
+    {
+        "pk": 74730,
+        "model": "movies.director",
+        "fields": {
+            "name": "Felix Herngren",
+            "job": "Director",
+            "img": "/hKZcphTUNIRhpYiWHgOSxhNnvuw.jpg",
+            "directed": 145247
+        }
+    },
+    {
+        "pk": 9181,
+        "model": "movies.director",
+        "fields": {
+            "name": "Edward Zwick",
+            "job": "Director",
+            "img": "/ucBi071XeIGMEHaEGKtU6PN1FwN.jpg",
+            "directed": 245698
+        }
+    },
+    {
+        "pk": 1401474,
+        "model": "movies.director",
+        "fields": {
+            "name": "Corin Hardy",
+            "job": "Director",
+            "img": "/p1ggxloo9MMOS72BLGuM3NOzhxQ.jpg",
+            "directed": 439079
+        }
+    },
+    {
+        "pk": 11614,
+        "model": "movies.director",
+        "fields": {
+            "name": "M. Night Shyamalan",
+            "job": "Director",
+            "img": "/shV9dGXMj7zt7myRFkR6FR51LYu.jpg",
+            "directed": 2675
+        }
+    },
+    {
+        "pk": 71792,
+        "model": "movies.director",
+        "fields": {
+            "name": "George Scribner",
+            "job": "Director",
+            "img": null,
+            "directed": 12233
+        }
+    },
+    {
+        "pk": 23799,
+        "model": "movies.director",
+        "fields": {
+            "name": "Uwe Boll",
+            "job": "Director",
+            "img": "/1zfnrStCzUo4hUTvsKyEu4C3SP6.jpg",
+            "directed": 2312
+        }
+    },
+    {
+        "pk": 1496011,
+        "model": "movies.director",
+        "fields": {
+            "name": "Matt Brown",
+            "job": "Director",
+            "img": "/hNUhL6UA7eqUfRdTWzPeLJYaVc2.jpg",
+            "directed": 353326
+        }
+    },
+    {
+        "pk": 129718,
+        "model": "movies.director",
+        "fields": {
+            "name": "Shana Feste",
+            "job": "Director",
+            "img": "/Ai9XWB3Nq5w0ueTgMfx8JkxptIp.jpg",
+            "directed": 226857
+        }
+    },
+    {
+        "pk": 229931,
+        "model": "movies.director",
+        "fields": {
+            "name": "Asghar Farhadi",
+            "job": "Director",
+            "img": "/ifnfNhvI40VbCfNsxDW9ezn6scE.jpg",
+            "directed": 152780
+        }
+    },
+    {
+        "pk": 12300,
+        "model": "movies.director",
+        "fields": {
+            "name": "Fred M. Wilcox",
+            "job": "Director",
+            "img": null,
+            "directed": 830
+        }
+    },
+    {
+        "pk": 136495,
+        "model": "movies.director",
+        "fields": {
+            "name": "Damien Chazelle",
+            "job": "Director",
+            "img": "/x5bpTU8b2mwgPpPDGJGWsJ1Qt3t.jpg",
+            "directed": 244786
+        }
+    },
+    {
+        "pk": 70212,
+        "model": "movies.director",
+        "fields": {
+            "name": "Kazuaki Kiriya",
+            "job": "Director",
+            "img": null,
+            "directed": 308504
+        }
+    },
+    {
+        "pk": 1224425,
+        "model": "movies.director",
+        "fields": {
+            "name": "Rob Thomas",
+            "job": "Director",
+            "img": "/ksd5zcrzvyQ4RemsanCxQ9b6GvF.jpg",
+            "directed": 177494
+        }
+    },
+    {
+        "pk": 59998,
+        "model": "movies.director",
+        "fields": {
+            "name": "Greg McLean",
+            "job": "Director",
+            "img": "/2DPAARHLV29cCdQeUjkQ06lZh9b.jpg",
+            "directed": 341006
+        }
+    },
+    {
+        "pk": 88039,
+        "model": "movies.director",
+        "fields": {
+            "name": "Steven R. Monroe",
+            "job": "Director",
+            "img": "/6CeSKA4OIbdPpkuX6SKYCH3RAnk.jpg",
+            "directed": 207768
+        }
+    },
+    {
+        "pk": 23964,
+        "model": "movies.director",
+        "fields": {
+            "name": "Gary Ross",
+            "job": "Director",
+            "img": "/dMoUDOJHsGrQcxKpFgbuMWRwiyI.jpg",
+            "directed": 316152
+        }
+    },
+    {
+        "pk": 21807,
+        "model": "movies.director",
+        "fields": {
+            "name": "Billy Ray",
+            "job": "Director",
+            "img": "/c607NMZCDpKlsJVuGUaD9wvglUk.jpg",
+            "directed": 290751
+        }
+    },
+    {
+        "pk": 15810,
+        "model": "movies.director",
+        "fields": {
+            "name": "Ron Clements",
+            "job": "Director",
+            "img": "/iCq89uPdVjtGkO7UbTn5UPqHIPx.jpg",
+            "directed": 812
+        }
+    },
+    {
+        "pk": 15811,
+        "model": "movies.director",
+        "fields": {
+            "name": "John Musker",
+            "job": "Director",
+            "img": "/do3vzNWSKhJLARV8VfNS9q9rRXV.jpg",
+            "directed": 812
+        }
+    },
+    {
+        "pk": 19272,
+        "model": "movies.director",
+        "fields": {
+            "name": "Joe Russo",
+            "job": "Director",
+            "img": "/679Os4tbY1YsU01KdLhM1NPXNWu.jpg",
+            "directed": 100402
+        }
+    },
+    {
+        "pk": 19271,
+        "model": "movies.director",
+        "fields": {
+            "name": "Anthony Russo",
+            "job": "Director",
+            "img": "/fIa5wXK7MHAquhefTr3TcnZiYy8.jpg",
+            "directed": 100402
+        }
+    },
+    {
+        "pk": 21768,
+        "model": "movies.director",
+        "fields": {
+            "name": "Sylvain Chomet",
+            "job": "Director",
+            "img": "/tDVVYaJ8LCHbEkALwoDcBvBa1ot.jpg",
+            "directed": 9662
+        }
+    },
+    {
+        "pk": 69797,
+        "model": "movies.director",
+        "fields": {
+            "name": "Dean DeBlois",
+            "job": "Director",
+            "img": "/vofzPcdNUzUD1xqaMUwMAJRgFiy.jpg",
+            "directed": 10191
+        }
+    },
+    {
+        "pk": 66193,
+        "model": "movies.director",
+        "fields": {
+            "name": "Chris Sanders",
+            "job": "Director",
+            "img": "/m4kZMS2J0AFjlAuwtijEmsOXYfc.jpg",
+            "directed": 10191
+        }
+    },
+    {
+        "pk": 1299642,
+        "model": "movies.director",
+        "fields": {
+            "name": "Julius Avery",
+            "job": "Director",
+            "img": "/nK9ITHGuAWABC0q3fQUD4JQ9yQ1.jpg",
+            "directed": 438799
+        }
+    },
+    {
+        "pk": 54248,
+        "model": "movies.director",
+        "fields": {
+            "name": "Christopher Landon",
+            "job": "Director",
+            "img": "/421KrcuMkPQnKbIvdp2yyFE4D0I.jpg",
+            "directed": 273477
+        }
+    },
+    {
+        "pk": 578,
+        "model": "movies.director",
+        "fields": {
+            "name": "Ridley Scott",
+            "job": "Director",
+            "img": "/oTAL0z0vsjipCruxXUsDUIieuhk.jpg",
+            "directed": 286217
+        }
+    },
+    {
+        "pk": 64877,
+        "model": "movies.director",
+        "fields": {
+            "name": "Rod Daniel",
+            "job": "Director",
+            "img": "/kun8t560f7kIy9kiRayG3E72ohi.jpg",
+            "directed": 12536
+        }
+    },
+    {
+        "pk": 12453,
+        "model": "movies.director",
+        "fields": {
+            "name": "Wong Kar-wai",
+            "job": "Director",
+            "img": "/zLngBAag9DSKtSAOWcfsFtEU3i5.jpg",
+            "directed": 844
+        }
+    },
+    {
+        "pk": 49903,
+        "model": "movies.director",
+        "fields": {
+            "name": "Tim Hill",
+            "job": "Director",
+            "img": "/jN6KyRKLoI1UgC1EnyAEYJ5uDYy.jpg",
+            "directed": 9513
+        }
+    },
+    {
+        "pk": 4600,
+        "model": "movies.director",
+        "fields": {
+            "name": "Joe Dante",
+            "job": "Director",
+            "img": "/7Z5R4cCY1k5XHdsFd2LYr3WWXdb.jpg",
+            "directed": 2614
+        }
+    },
+    {
+        "pk": 1776,
+        "model": "movies.director",
+        "fields": {
+            "name": "Francis Ford Coppola",
+            "job": "Director",
+            "img": "/mDNBl1DUkC1BkkMsbtaNEFQQaHu.jpg",
+            "directed": 238
+        }
+    },
+    {
+        "pk": 56370,
+        "model": "movies.director",
+        "fields": {
+            "name": "Ruben Östlund",
+            "job": "Director",
+            "img": "/kD2GQaROZYBRic7A99imCN67IaD.jpg",
+            "directed": 265189
+        }
+    },
+    {
+        "pk": 4027,
+        "model": "movies.director",
+        "fields": {
+            "name": "Frank Darabont",
+            "job": "Director",
+            "img": "/9KVvZtDyy8DXacw2TTsjC9VLxQi.jpg",
+            "directed": 278
+        }
+    },
+    {
+        "pk": 84437,
+        "model": "movies.director",
+        "fields": {
+            "name": "Gabriela Tagliavini",
+            "job": "Director",
+            "img": null,
+            "directed": 588001
+        }
+    },
+    {
+        "pk": 133259,
+        "model": "movies.director",
+        "fields": {
+            "name": "Arthur Hiller",
+            "job": "Director",
+            "img": "/irrSj7cAn2ByM7hhu2emkMdFOai.jpg",
+            "directed": 11185
+        }
+    },
+    {
+        "pk": 3556,
+        "model": "movies.director",
+        "fields": {
+            "name": "Roman Polanski",
+            "job": "Director",
+            "img": "/5yMO7d7NsODZtCwF22Xnlp3oVnE.jpg",
+            "directed": 10497
+        }
+    },
+    {
+        "pk": 48583,
+        "model": "movies.director",
+        "fields": {
+            "name": "Anne Fontaine",
+            "job": "Director",
+            "img": "/wtl2OPo3IydskWY3cMXInBba1w.jpg",
+            "directed": 111190
+        }
+    },
+    {
+        "pk": 138,
+        "model": "movies.director",
+        "fields": {
+            "name": "Quentin Tarantino",
+            "job": "Director",
+            "img": "/rivHScdhT043n5jCSci7ToqLsoE.jpg",
+            "directed": 680
+        }
+    },
+    {
+        "pk": 6384,
+        "model": "movies.director",
+        "fields": {
+            "name": "Keanu Reeves",
+            "job": "Director",
+            "img": "/bOlYWhVuOiU6azC4Bw6zlXZ5QTC.jpg",
+            "directed": 76544
+        }
+    },
+    {
+        "pk": 78173,
+        "model": "movies.director",
+        "fields": {
+            "name": "Hiroyuki Morita",
+            "job": "Director",
+            "img": "/5tqP0LxEHIv5z7znlhnnZ4JD1CM.jpg",
+            "directed": 15370
+        }
+    },
+    {
+        "pk": 56150,
+        "model": "movies.director",
+        "fields": {
+            "name": "Ellory Elkayem",
+            "job": "Director",
+            "img": null,
+            "directed": 8869
+        }
+    },
+    {
+        "pk": 15774,
+        "model": "movies.director",
+        "fields": {
+            "name": "Chris Buck",
+            "job": "Director",
+            "img": "/aFzDfJIIOC0tkGgqpwsZoDHzqu0.jpg",
+            "directed": 109445
+        }
+    },
+    {
+        "pk": 1120694,
+        "model": "movies.director",
+        "fields": {
+            "name": "Jennifer Lee",
+            "job": "Director",
+            "img": "/9BkQnsppXFWcNSRGo4GJ6QNq313.jpg",
+            "directed": 109445
+        }
+    },
+    {
+        "pk": 190,
+        "model": "movies.director",
+        "fields": {
+            "name": "Clint Eastwood",
+            "job": "Director",
+            "img": "/n8h4ZHteFFXfmzUW6OEaPWanDnm.jpg",
+            "directed": 66
+        }
+    },
+    {
+        "pk": 224,
+        "model": "movies.director",
+        "fields": {
+            "name": "David Cronenberg",
+            "job": "Director",
+            "img": "/nFHIlkIuile5RmtSqbyCB4w8SpH.jpg",
+            "directed": 157851
+        }
+    },
+    {
+        "pk": 24,
+        "model": "movies.director",
+        "fields": {
+            "name": "Robert Zemeckis",
+            "job": "Director",
+            "img": "/ryiZwDAQg18IdE9gfiM4Go3ankT.jpg",
+            "directed": 351044
+        }
+    },
+    {
+        "pk": 6733,
+        "model": "movies.director",
+        "fields": {
+            "name": "Dan Mazer",
+            "job": "Director",
+            "img": "/AibJrdiVq0nZmSeNAGSrlY0yIi1.jpg",
+            "directed": 150117
+        }
+    },
+    {
+        "pk": 69797,
+        "model": "movies.director",
+        "fields": {
+            "name": "Dean DeBlois",
+            "job": "Director",
+            "img": "/vofzPcdNUzUD1xqaMUwMAJRgFiy.jpg",
+            "directed": 82702
+        }
+    },
+    {
+        "pk": 15775,
+        "model": "movies.director",
+        "fields": {
+            "name": "Kevin Lima",
+            "job": "Director",
+            "img": "/725jzhxXkAPIqo9P5nEnlBW3Q1y.jpg",
+            "directed": 15789
+        }
+    },
+    {
+        "pk": 56147,
+        "model": "movies.director",
+        "fields": {
+            "name": "Paul Brizzi",
+            "job": "Director",
+            "img": null,
+            "directed": 15789
+        }
+    },
+    {
+        "pk": 19840,
+        "model": "movies.director",
+        "fields": {
+            "name": "Alejandro Amenábar",
+            "job": "Director",
+            "img": "/oNOZAy7tzekG0fL6fHniHvwHPAg.jpg",
+            "directed": 241257
+        }
+    },
+    {
+        "pk": 65688,
+        "model": "movies.director",
+        "fields": {
+            "name": "Jim Drake",
+            "job": "Director",
+            "img": "/2a4iZ2zlCcGzKGwoUQlSWRs6iXl.jpg",
+            "directed": 10587
+        }
+    },
+    {
+        "pk": 90367,
+        "model": "movies.director",
+        "fields": {
+            "name": "Sam Liu",
+            "job": "Director",
+            "img": "/3u01dPeS4Us9sUFzwS8DzjA3udr.jpg",
+            "directed": 382322
+        }
+    },
+    {
+        "pk": 58498,
+        "model": "movies.director",
+        "fields": {
+            "name": "Dominic Sena",
+            "job": "Director",
+            "img": "/ofWADCsDpNxbTFfoK1CpU8KnBGF.jpg",
+            "directed": 22787
+        }
+    },
+    {
+        "pk": 1392433,
+        "model": "movies.director",
+        "fields": {
+            "name": "Julia Ducournau",
+            "job": "Director",
+            "img": "/2Sx56zsMGei5p7RjETmcqpgblnO.jpg",
+            "directed": 393519
+        }
+    },
+    {
+        "pk": 81718,
+        "model": "movies.director",
+        "fields": {
+            "name": "Mamoru Hosoda",
+            "job": "Director",
+            "img": "/oh1GS6x8cdGkyL4QPKmpMSaD6Wu.jpg",
+            "directed": 110420
+        }
+    },
+    {
+        "pk": 14392,
+        "model": "movies.director",
+        "fields": {
+            "name": "Kathryn Bigelow",
+            "job": "Director",
+            "img": "/llfsTIvItT7IEmX5qK1qUX0dbqc.jpg",
+            "directed": 407448
+        }
+    },
+    {
+        "pk": 69579,
+        "model": "movies.director",
+        "fields": {
+            "name": "James Isaac",
+            "job": "Director",
+            "img": "/j1j2q5iVzPptPNr1p9NluULP89L.jpg",
+            "directed": 11470
+        }
+    },
+    {
+        "pk": 592493,
+        "model": "movies.director",
+        "fields": {
+            "name": "David Lowery",
+            "job": "Director",
+            "img": "/soYt2uITKFDaWPBhe3fft6jNyav.jpg",
+            "directed": 428449
+        }
+    },
+    {
+        "pk": 54248,
+        "model": "movies.director",
+        "fields": {
+            "name": "Christopher Landon",
+            "job": "Director",
+            "img": "/421KrcuMkPQnKbIvdp2yyFE4D0I.jpg",
+            "directed": 227348
+        }
+    },
+    {
+        "pk": 7145,
+        "model": "movies.director",
+        "fields": {
+            "name": "Michael Lehmann",
+            "job": "Director",
+            "img": "/rM0KmE5Fr9zAi5gzQv9bc78Q1GX.jpg",
+            "directed": 1257
+        }
+    },
+    {
+        "pk": 11343,
+        "model": "movies.director",
+        "fields": {
+            "name": "David Yates",
+            "job": "Director",
+            "img": "/fiIZNbwdK07ntpE2wpLRIMuSXEy.jpg",
+            "directed": 767
+        }
+    },
+    {
+        "pk": 7467,
+        "model": "movies.director",
+        "fields": {
+            "name": "David Fincher",
+            "job": "Director",
+            "img": "/dcBHejOsKvzVZVozWJAPzYthb8X.jpg",
+            "directed": 210577
+        }
+    },
+    {
+        "pk": 15175,
+        "model": "movies.director",
+        "fields": {
+            "name": "William Friedkin",
+            "job": "Director",
+            "img": "/1iBd92izRHpkSH4hOhcUBmF2cv7.jpg",
+            "directed": 10479
+        }
+    },
+    {
+        "pk": 62854,
+        "model": "movies.director",
+        "fields": {
+            "name": "Akiva Schaffer",
+            "job": "Director",
+            "img": "/AndF7ndhBbCgHTicoHjCKDxmoi5.jpg",
+            "directed": 341012
+        }
+    },
+    {
+        "pk": 62863,
+        "model": "movies.director",
+        "fields": {
+            "name": "Jorma Taccone",
+            "job": "Director",
+            "img": "/8NqZvjdsMIT3HgfdltoMBqxsEcB.jpg",
+            "directed": 341012
+        }
+    },
+    {
+        "pk": 4786,
+        "model": "movies.director",
+        "fields": {
+            "name": "Richard Attenborough",
+            "job": "Director",
+            "img": "/Abo8fAcdruACs344ut6PNSKH7N4.jpg",
+            "directed": 5902
+        }
+    },
+    {
+        "pk": 11343,
+        "model": "movies.director",
+        "fields": {
+            "name": "David Yates",
+            "job": "Director",
+            "img": "/fiIZNbwdK07ntpE2wpLRIMuSXEy.jpg",
+            "directed": 259316
+        }
+    },
+    {
+        "pk": 26875,
+        "model": "movies.director",
+        "fields": {
+            "name": "Hideo Nakata",
+            "job": "Director",
+            "img": "/fQ3XJXTNpxzt6gMpMM0pJOyuibA.jpg",
+            "directed": 10320
+        }
+    },
+    {
+        "pk": 109017,
+        "model": "movies.director",
+        "fields": {
+            "name": "Chuck Konzelman",
+            "job": "Director",
+            "img": null,
+            "directed": 576071
+        }
+    },
+    {
+        "pk": 109016,
+        "model": "movies.director",
+        "fields": {
+            "name": "Cary Solomon",
+            "job": "Director",
+            "img": null,
+            "directed": 576071
+        }
+    },
+    {
+        "pk": 7775,
+        "model": "movies.director",
+        "fields": {
+            "name": "Stephen Sommers",
+            "job": "Director",
+            "img": "/50bI0PixdzrD5Mdygl4wrpxHCiH.jpg",
+            "directed": 179826
+        }
+    },
+    {
+        "pk": 1257827,
+        "model": "movies.director",
+        "fields": {
+            "name": "Max Joseph",
+            "job": "Director",
+            "img": "/kwBSbD2sRn34chAKR9me05wDtbg.jpg",
+            "directed": 301351
+        }
+    },
+    {
+        "pk": 53333,
+        "model": "movies.director",
+        "fields": {
+            "name": "John Hillcoat",
+            "job": "Director",
+            "img": "/dysF1m1OGCl22EDSRG87yiw2QPw.jpg",
+            "directed": 16608
+        }
+    },
+    {
+        "pk": 525,
+        "model": "movies.director",
+        "fields": {
+            "name": "Christopher Nolan",
+            "job": "Director",
+            "img": "/zPvcQPnp3q6R9mqJGm8RENsXYY9.jpg",
+            "directed": 49026
+        }
+    },
+    {
+        "pk": 525,
+        "model": "movies.director",
+        "fields": {
+            "name": "Christopher Nolan",
+            "job": "Director",
+            "img": "/zPvcQPnp3q6R9mqJGm8RENsXYY9.jpg",
+            "directed": 272
+        }
+    },
+    {
+        "pk": 15488,
+        "model": "movies.director",
+        "fields": {
+            "name": "Ken Loach",
+            "job": "Director",
+            "img": "/vGtkrPgNeK3xkbbKTQ4vWD1VsEm.jpg",
+            "directed": 374473
+        }
+    },
+    {
+        "pk": 608,
+        "model": "movies.director",
+        "fields": {
+            "name": "Hayao Miyazaki",
+            "job": "Director",
+            "img": "/1OBQPIwR88n49oAEzk47k0fhhOV.jpg",
+            "directed": 129
+        }
+    },
+    {
+        "pk": 15810,
+        "model": "movies.director",
+        "fields": {
+            "name": "Ron Clements",
+            "job": "Director",
+            "img": "/iCq89uPdVjtGkO7UbTn5UPqHIPx.jpg",
+            "directed": 9994
+        }
+    },
+    {
+        "pk": 61677,
+        "model": "movies.director",
+        "fields": {
+            "name": "Burny Mattinson",
+            "job": "Director",
+            "img": null,
+            "directed": 9994
+        }
+    },
+    {
+        "pk": 61678,
+        "model": "movies.director",
+        "fields": {
+            "name": "David Michener",
+            "job": "Director",
+            "img": "/1Sgz4iH3f7KTPAgZw8fubJX8wJA.jpg",
+            "directed": 9994
+        }
+    },
+    {
+        "pk": 15811,
+        "model": "movies.director",
+        "fields": {
+            "name": "John Musker",
+            "job": "Director",
+            "img": "/do3vzNWSKhJLARV8VfNS9q9rRXV.jpg",
+            "directed": 9994
+        }
+    },
+    {
+        "pk": 17016,
+        "model": "movies.director",
+        "fields": {
+            "name": "Neil Jordan",
+            "job": "Director",
+            "img": "/uZ7CvCLTKb9qxjU4VsTNeyMRucd.jpg",
+            "directed": 102780
+        }
+    },
+    {
+        "pk": 1179066,
+        "model": "movies.director",
+        "fields": {
+            "name": "Wes Ball",
+            "job": "Director",
+            "img": "/zVPXrhuAxYAWlwDEWCaqeUPycFx.jpg",
+            "directed": 198663
+        }
+    },
+    {
+        "pk": 9032,
+        "model": "movies.director",
+        "fields": {
+            "name": "Bryan Singer",
+            "job": "Director",
+            "img": "/ts06thbCv9Ug2mNpcbcrmLGRL4Q.jpg",
+            "directed": 246655
+        }
+    },
+    {
+        "pk": 61069,
+        "model": "movies.director",
+        "fields": {
+            "name": "Miguel Arteta",
+            "job": "Director",
+            "img": "/bAuqxNYzxFxU4lX8wExPzBZ8vJ6.jpg",
+            "directed": 218778
+        }
+    },
+    {
+        "pk": 5045,
+        "model": "movies.director",
+        "fields": {
+            "name": "Dan O'Bannon",
+            "job": "Director",
+            "img": "/slLZWXZ1lmdF763166ATRRI200n.jpg",
+            "directed": 10925
+        }
+    },
+    {
+        "pk": 142312,
+        "model": "movies.director",
+        "fields": {
+            "name": "Jennifer Yuh Nelson",
+            "job": "Director",
+            "img": "/opLn7bTvqUOkio2OrZU5Ejam6cV.jpg",
+            "directed": 445651
+        }
+    },
+    {
+        "pk": 2182985,
+        "model": "movies.director",
+        "fields": {
+            "name": "Clint Cure",
+            "job": "Director",
+            "img": null,
+            "directed": 564394
+        }
+    },
+    {
+        "pk": 7270,
+        "model": "movies.director",
+        "fields": {
+            "name": "Adrian Lyne",
+            "job": "Director",
+            "img": "/fUOF9IbyOZgUJCNZdVamMfLGA2c.jpg",
+            "directed": 535
+        }
+    },
+    {
+        "pk": 51984,
+        "model": "movies.director",
+        "fields": {
+            "name": "Mimi Leder",
+            "job": "Director",
+            "img": "/2ULHtgL3NMQ89H3kcg2AM5Nf96.jpg",
+            "directed": 339380
+        }
+    },
+    {
+        "pk": 2710,
+        "model": "movies.director",
+        "fields": {
+            "name": "James Cameron",
+            "job": "Director",
+            "img": "/4TjSh3Er5LIOvFcB5inaRDPrBKu.jpg",
+            "directed": 597
+        }
+    },
+    {
+        "pk": 3227,
+        "model": "movies.director",
+        "fields": {
+            "name": "Steve Pink",
+            "job": "Director",
+            "img": "/myHOgo8mQSCiCAZNGMRdHVr03jr.jpg",
+            "directed": 243938
+        }
+    },
+    {
+        "pk": 93288,
+        "model": "movies.director",
+        "fields": {
+            "name": "Sarah Gavron",
+            "job": "Director",
+            "img": "/5fVcGTQJq8UObOmQgrivf6LntOA.jpg",
+            "directed": 245168
+        }
+    },
+    {
+        "pk": 52443,
+        "model": "movies.director",
+        "fields": {
+            "name": "Jason Reitman",
+            "job": "Director",
+            "img": "/bW44MnIOve5kqqtcmmbzBre0N7D.jpg",
+            "directed": 130150
+        }
+    },
+    {
+        "pk": 223,
+        "model": "movies.director",
+        "fields": {
+            "name": "Alejandro González Iñárritu",
+            "job": "Director",
+            "img": "/qWrltG9e0ssM3Y9pF86EAgteKHu.jpg",
+            "directed": 194662
+        }
+    },
+    {
+        "pk": 15344,
+        "model": "movies.director",
+        "fields": {
+            "name": "J.J. Abrams",
+            "job": "Director",
+            "img": "/xljsYopubv9egYzclBPNf9EAYxB.jpg",
+            "directed": 140607
+        }
+    },
+    {
+        "pk": 20907,
+        "model": "movies.director",
+        "fields": {
+            "name": "Antoine Fuqua",
+            "job": "Director",
+            "img": "/z8BLZcMQxE4GqUiEc2gsoAzc8xS.jpg",
+            "directed": 345887
+        }
+    },
+    {
+        "pk": 59649,
+        "model": "movies.director",
+        "fields": {
+            "name": "Michael Pressman",
+            "job": "Director",
+            "img": "/svlIYwFa9ATEQnM4QD3iz1G59vq.jpg",
+            "directed": 1497
+        }
+    },
+    {
+        "pk": 999760,
+        "model": "movies.director",
+        "fields": {
+            "name": "Eran Creevy",
+            "job": "Director",
+            "img": "/aKUdK4llvXFD9RRITqNXJaSdN4V.jpg",
+            "directed": 93828
+        }
+    },
+    {
+        "pk": 74091,
+        "model": "movies.director",
+        "fields": {
+            "name": "Makoto Shinkai",
+            "job": "Director",
+            "img": "/xFofUu6o9iVnqh7fbnLLEcolxEw.jpg",
+            "directed": 198375
+        }
+    },
+    {
+        "pk": 56578,
+        "model": "movies.director",
+        "fields": {
+            "name": "Jeff Tremaine",
+            "job": "Director",
+            "img": "/dLUeKVdZXfFx3VOgf2zNV9fu1Ll.jpg",
+            "directed": 327331
+        }
+    },
+    {
+        "pk": 132876,
+        "model": "movies.director",
+        "fields": {
+            "name": "Brad Peyton",
+            "job": "Director",
+            "img": "/7F7dM4A6QbA67xOxTJyv3aqinrA.jpg",
+            "directed": 427641
+        }
+    },
+    {
+        "pk": 74752,
+        "model": "movies.director",
+        "fields": {
+            "name": "Nikolaj Arcel",
+            "job": "Director",
+            "img": "/dHYeFCNDP5Hg7IihESiLXgqNElT.jpg",
+            "directed": 88273
+        }
+    },
+    {
+        "pk": 1159855,
+        "model": "movies.director",
+        "fields": {
+            "name": "André Badalo",
+            "job": "Director",
+            "img": null,
+            "directed": 280960
+        }
+    },
+    {
+        "pk": 20028,
+        "model": "movies.director",
+        "fields": {
+            "name": "Danis Tanović",
+            "job": "Director",
+            "img": "/vjVlIeuNdvpzrrI7I4CYp8fhPdz.jpg",
+            "directed": 8342
+        }
+    },
+    {
+        "pk": 932533,
+        "model": "movies.director",
+        "fields": {
+            "name": "Stefano Sollima",
+            "job": "Director",
+            "img": "/vBv41EnEGVSD6EgSj2mD9dPSdJW.jpg",
+            "directed": 400535
+        }
+    },
+    {
+        "pk": 44056,
+        "model": "movies.director",
+        "fields": {
+            "name": "Fred Dekker",
+            "job": "Director",
+            "img": null,
+            "directed": 5550
+        }
+    },
+    {
+        "pk": 9339,
+        "model": "movies.director",
+        "fields": {
+            "name": "Lilly Wachowski",
+            "job": "Director",
+            "img": "/9sxE10LUA7TGlS1pHw2RM6mckHp.jpg",
+            "directed": 604
+        }
+    },
+    {
+        "pk": 9340,
+        "model": "movies.director",
+        "fields": {
+            "name": "Lana Wachowski",
+            "job": "Director",
+            "img": "/fxZ7SpJCZ9DgJERWEpGmn5a4mdp.jpg",
+            "directed": 604
+        }
+    },
+    {
+        "pk": 11218,
+        "model": "movies.director",
+        "fields": {
+            "name": "Alfonso Cuarón",
+            "job": "Director",
+            "img": "/eoCHiXaQzGgx9RiwXnt3k239FLc.jpg",
+            "directed": 673
+        }
+    },
+    {
+        "pk": 59,
+        "model": "movies.director",
+        "fields": {
+            "name": "Luc Besson",
+            "job": "Director",
+            "img": "/2TzRsqSx0xb1DK3HsEQKSXhRGcu.jpg",
+            "directed": 9992
+        }
+    },
+    {
+        "pk": 5174,
+        "model": "movies.director",
+        "fields": {
+            "name": "Barry Sonnenfeld",
+            "job": "Director",
+            "img": "/m8vIfbXI44Fd8VK7HSJRisYQjQc.jpg",
+            "directed": 607
+        }
+    },
+    {
+        "pk": 14773,
+        "model": "movies.director",
+        "fields": {
+            "name": "Don Siegel",
+            "job": "Director",
+            "img": "/vylrJ53CsYbxECA8c2CDEqkYKge.jpg",
+            "directed": 11549
+        }
+    },
+    {
+        "pk": 144519,
+        "model": "movies.director",
+        "fields": {
+            "name": "Gilles Paquet-Brenner",
+            "job": "Director",
+            "img": "/IEF0dTTYw4vTatbQYqDfiZKhrp.jpg",
+            "directed": 182560
+        }
+    },
+    {
+        "pk": 54451,
+        "model": "movies.director",
+        "fields": {
+            "name": "Brian G. Hutton",
+            "job": "Director",
+            "img": "/cem8wlan7z6amIzoeKmAvC8yRZF.jpg",
+            "directed": 11046
+        }
+    },
+    {
+        "pk": 11401,
+        "model": "movies.director",
+        "fields": {
+            "name": "John Woo",
+            "job": "Director",
+            "img": "/d1ovGZj05qWU1MjVKAePVj7ZMRh.jpg",
+            "directed": 2019
+        }
+    },
+    {
+        "pk": 1884,
+        "model": "movies.director",
+        "fields": {
+            "name": "Steven Soderbergh",
+            "job": "Director",
+            "img": "/579zHkhyHD1gj3B6a2VveOXrJAD.jpg",
+            "directed": 8881
+        }
+    },
+    {
+        "pk": 57090,
+        "model": "movies.director",
+        "fields": {
+            "name": "Brett Leonard",
+            "job": "Director",
+            "img": "/24eM4jVMEY790YFNf3t7VhgX19z.jpg",
+            "directed": 10163
+        }
+    },
+    {
+        "pk": 52968,
+        "model": "movies.director",
+        "fields": {
+            "name": "Russell Mulcahy",
+            "job": "Director",
+            "img": "/61VZ3twvslKZir66aLCi5Z5TE2Y.jpg",
+            "directed": 8010
+        }
+    },
+    {
+        "pk": 52803,
+        "model": "movies.director",
+        "fields": {
+            "name": "Etan Cohen",
+            "job": "Director",
+            "img": "/x4OA0VvljTVemWDqRyYtCHL0Ipl.jpg",
+            "directed": 426563
+        }
+    },
+    {
+        "pk": 8452,
+        "model": "movies.director",
+        "fields": {
+            "name": "Andrei Tarkovsky",
+            "job": "Director",
+            "img": "/cEfzcvS6ZfSlpdn4SHsxZsVG0a3.jpg",
+            "directed": 31442
+        }
+    },
+    {
+        "pk": 9032,
+        "model": "movies.director",
+        "fields": {
+            "name": "Bryan Singer",
+            "job": "Director",
+            "img": "/ts06thbCv9Ug2mNpcbcrmLGRL4Q.jpg",
+            "directed": 127585
+        }
+    },
+    {
+        "pk": 58712,
+        "model": "movies.director",
+        "fields": {
+            "name": "Steve Miner",
+            "job": "Director",
+            "img": "/wrd7rzHlMzwwS8CG8mcf6zpm7sE.jpg",
+            "directed": 9725
+        }
+    },
+    {
+        "pk": 20019,
+        "model": "movies.director",
+        "fields": {
+            "name": "Lee Daniels",
+            "job": "Director",
+            "img": "/at0bnM4UNbyR5fTM8hi4UhBSRZn.jpg",
+            "directed": 82390
+        }
+    },
+    {
+        "pk": 2523,
+        "model": "movies.director",
+        "fields": {
+            "name": "Stuart Baird",
+            "job": "Director",
+            "img": "/k7nLNZ0MYsPrKq5T3ZV7m9zwEGY.jpg",
+            "directed": 2320
+        }
+    },
+    {
+        "pk": 53120,
+        "model": "movies.director",
+        "fields": {
+            "name": "James DeMonaco",
+            "job": "Director",
+            "img": "/xaI54hbO8pwMnQ5oTCIo5xscFro.jpg",
+            "directed": 238636
+        }
+    },
+    {
+        "pk": 17697,
+        "model": "movies.director",
+        "fields": {
+            "name": "John Krasinski",
+            "job": "Director",
+            "img": "/nOWwdZURikW22qo6OUSGFCTukgc.jpg",
+            "directed": 447332
+        }
+    },
+    {
+        "pk": 69003,
+        "model": "movies.director",
+        "fields": {
+            "name": "John Lounsbery",
+            "job": "Director",
+            "img": "/5iwFX8llmSfEudddEXO8BGczdTs.jpg",
+            "directed": 11319
+        }
+    },
+    {
+        "pk": 57314,
+        "model": "movies.director",
+        "fields": {
+            "name": "Wolfgang Reitherman",
+            "job": "Director",
+            "img": "/p9ywBLS3Pvv3BcocjLsPwnll6mc.jpg",
+            "directed": 11319
+        }
+    },
+    {
+        "pk": 67607,
+        "model": "movies.director",
+        "fields": {
+            "name": "Art Stevens",
+            "job": "Director",
+            "img": "/5SqkXwKbSFSUW9Ho8dxxAYIp2s4.jpg",
+            "directed": 11319
+        }
+    },
+    {
+        "pk": 133502,
+        "model": "movies.director",
+        "fields": {
+            "name": "Simon Curtis",
+            "job": "Director",
+            "img": "/mpMyd3Cc7WG2epXYCbdDmcMX2BD.jpg",
+            "directed": 304357
+        }
+    },
+    {
+        "pk": 18356,
+        "model": "movies.director",
+        "fields": {
+            "name": "Stephen Herek",
+            "job": "Director",
+            "img": "/v6eEBvBiOoMZwrbbU30u4ObmDWE.jpg",
+            "directed": 10057
+        }
+    },
+    {
+        "pk": 56209,
+        "model": "movies.director",
+        "fields": {
+            "name": "Jean-Pierre Dardenne",
+            "job": "Director",
+            "img": "/kn4tpNTPwWODCu356VHzCjGzSG0.jpg",
+            "directed": 221902
+        }
+    },
+    {
+        "pk": 45138,
+        "model": "movies.director",
+        "fields": {
+            "name": "Luc Dardenne",
+            "job": "Director",
+            "img": "/rZRSDYFQn0MJE1ZQHYIsFnO06XC.jpg",
+            "directed": 221902
+        }
+    },
+    {
+        "pk": 208527,
+        "model": "movies.director",
+        "fields": {
+            "name": "Yann Demange",
+            "job": "Director",
+            "img": "/5RK0Y2IjNZupP3sq6ibZ1b9mCHh.jpg",
+            "directed": 438808
+        }
+    },
+    {
+        "pk": 64152,
+        "model": "movies.director",
+        "fields": {
+            "name": "Robert Stevenhagen",
+            "job": "Director",
+            "img": null,
+            "directed": 10199
+        }
+    },
+    {
+        "pk": 58897,
+        "model": "movies.director",
+        "fields": {
+            "name": "Sam Fell",
+            "job": "Director",
+            "img": "/29NFQubb9A5OrA9OyXhnX4eOfkv.jpg",
+            "directed": 10199
+        }
+    },
+    {
+        "pk": 83730,
+        "model": "movies.director",
+        "fields": {
+            "name": "Jonathan English",
+            "job": "Director",
+            "img": null,
+            "directed": 38543
+        }
+    },
+    {
+        "pk": 53267,
+        "model": "movies.director",
+        "fields": {
+            "name": "Craig Brewer",
+            "job": "Director",
+            "img": "/1F5Sjw9oAkKQOLaD2Bs3vrsIlMg.jpg",
+            "directed": 68817
+        }
+    },
+    {
+        "pk": 84931,
+        "model": "movies.director",
+        "fields": {
+            "name": "Michael Cuesta",
+            "job": "Director",
+            "img": "/n3iTN6e1Bq13WlalqddULpsnEUn.jpg",
+            "directed": 245916
+        }
+    },
+    {
+        "pk": 29922,
+        "model": "movies.director",
+        "fields": {
+            "name": "Marcus Nispel",
+            "job": "Director",
+            "img": "/gKvwpCr23UxQIuS4yJZhTvHLN0C.jpg",
+            "directed": 1534
+        }
+    },
+    {
+        "pk": 105643,
+        "model": "movies.director",
+        "fields": {
+            "name": "Jay Oliva",
+            "job": "Director",
+            "img": "/y7EbnuoKFMvU7uZ4aD50jThyNoF.jpg",
+            "directed": 123025
+        }
+    },
+    {
+        "pk": 74924,
+        "model": "movies.director",
+        "fields": {
+            "name": "Mabrouk El Mechri",
+            "job": "Director",
+            "img": null,
+            "directed": 77948
+        }
+    },
+    {
+        "pk": 18184,
+        "model": "movies.director",
+        "fields": {
+            "name": "Xavier Gens",
+            "job": "Director",
+            "img": "/nvGKZUazQO0TUR1CW0IUJiIJAT3.jpg",
+            "directed": 38541
+        }
+    },
+    {
+        "pk": 7623,
+        "model": "movies.director",
+        "fields": {
+            "name": "Sam Raimi",
+            "job": "Director",
+            "img": "/uEAaCUJzyMI8N5mOVyLtaOPKoEf.jpg",
+            "directed": 559
+        }
+    },
+    {
+        "pk": 35318,
+        "model": "movies.director",
+        "fields": {
+            "name": "Ken Annakin",
+            "job": "Director",
+            "img": "/8oFZguwvvd1F3CETULi37Gq1ZtL.jpg",
+            "directed": 9289
+        }
+    },
+    {
+        "pk": 57142,
+        "model": "movies.director",
+        "fields": {
+            "name": "Andrew Marton",
+            "job": "Director",
+            "img": "/nY91bRdDR6MfgUhEst0tzHEevfG.jpg",
+            "directed": 9289
+        }
+    },
+    {
+        "pk": 9894,
+        "model": "movies.director",
+        "fields": {
+            "name": "Bernhard Wicki",
+            "job": "Director",
+            "img": "/kWBdiWLhjdFDMV953W5xhFyHTxv.jpg",
+            "directed": 9289
+        }
+    },
+    {
+        "pk": 87877,
+        "model": "movies.director",
+        "fields": {
+            "name": "Roar Uthaug",
+            "job": "Director",
+            "img": "/92PL9gKDnVN67e6Q25spP2UNi1y.jpg",
+            "directed": 338970
+        }
+    },
+    {
+        "pk": 56828,
+        "model": "movies.director",
+        "fields": {
+            "name": "Christopher Cain",
+            "job": "Director",
+            "img": "/atUMxA5Anavwqdd5tH3B3S8ayli.jpg",
+            "directed": 11967
+        }
+    },
+    {
+        "pk": 12028,
+        "model": "movies.director",
+        "fields": {
+            "name": "John Moore",
+            "job": "Director",
+            "img": "/1zFWQ0hCvRgfXlQ3NaUn2HzChBW.jpg",
+            "directed": 11866
+        }
+    },
+    {
+        "pk": 2042,
+        "model": "movies.director",
+        "fields": {
+            "name": "Stephen Hopkins",
+            "job": "Director",
+            "img": "/zHwFIL63LbeSS83FMC8J6TAgDNL.jpg",
+            "directed": 10160
+        }
+    },
+    {
+        "pk": 59611,
+        "model": "movies.director",
+        "fields": {
+            "name": "Pascal Laugier",
+            "job": "Director",
+            "img": "/jfRV2BRpKfHo0ff9nxrhIT03iUv.jpg",
+            "directed": 86597
+        }
+    },
+    {
+        "pk": 36425,
+        "model": "movies.director",
+        "fields": {
+            "name": "McG",
+            "job": "Director",
+            "img": "/hT0I4rLSOhIQoEYuYAP4tG16AjH.jpg",
+            "directed": 419479
+        }
+    },
+    {
+        "pk": 108,
+        "model": "movies.director",
+        "fields": {
+            "name": "Peter Jackson",
+            "job": "Director",
+            "img": "/kSrfI3TbMdIMmPVOflLQ56OfscB.jpg",
+            "directed": 121
+        }
+    },
+    {
+        "pk": 59,
+        "model": "movies.director",
+        "fields": {
+            "name": "Luc Besson",
+            "job": "Director",
+            "img": "/2TzRsqSx0xb1DK3HsEQKSXhRGcu.jpg",
+            "directed": 35552
+        }
+    },
+    {
+        "pk": 578,
+        "model": "movies.director",
+        "fields": {
+            "name": "Ridley Scott",
+            "job": "Director",
+            "img": "/oTAL0z0vsjipCruxXUsDUIieuhk.jpg",
+            "directed": 78
+        }
+    },
+    {
+        "pk": 15045,
+        "model": "movies.director",
+        "fields": {
+            "name": "Michael Lembeck",
+            "job": "Director",
+            "img": "/nSksRzDoUToxdS2MqIeV7LGAiVk.jpg",
+            "directed": 9021
+        }
+    },
+    {
+        "pk": 143966,
+        "model": "movies.director",
+        "fields": {
+            "name": "Joan Carr-Wiggin",
+            "job": "Director",
+            "img": "/nA8MyVs6VwDG7EoPCd1g66ShyU1.jpg",
+            "directed": 443055
+        }
+    },
+    {
+        "pk": 52194,
+        "model": "movies.director",
+        "fields": {
+            "name": "Tony Randel",
+            "job": "Director",
+            "img": "/gyDJpk5CBU5UuKVrezdwwbeFg25.jpg",
+            "directed": 9064
+        }
+    },
+    {
+        "pk": 118639,
+        "model": "movies.director",
+        "fields": {
+            "name": "Tom Six",
+            "job": "Director",
+            "img": "/dkj0gsN4twgJqhQmI4EY2OnGW6D.jpg",
+            "directed": 74997
+        }
+    },
+    {
+        "pk": 291263,
+        "model": "movies.director",
+        "fields": {
+            "name": "Jordan Peele",
+            "job": "Director",
+            "img": "/9rOEfvKUInuUpJ6MMhiC8Tch1WM.jpg",
+            "directed": 419430
+        }
+    },
+    {
+        "pk": 114334,
+        "model": "movies.director",
+        "fields": {
+            "name": "David Michôd",
+            "job": "Director",
+            "img": "/2BD1vy3Q96l7jhXdA3t8KM8xkmP.jpg",
+            "directed": 157845
+        }
+    },
+    {
+        "pk": 26775,
+        "model": "movies.director",
+        "fields": {
+            "name": "Liu Chia-Liang",
+            "job": "Director",
+            "img": "/1cKWtvMp0onUAn4OfuclM1693gn.jpg",
+            "directed": 12207
+        }
+    },
+    {
+        "pk": 1323509,
+        "model": "movies.director",
+        "fields": {
+            "name": "Zak Hilditch",
+            "job": "Director",
+            "img": "/ldV8enhMydvNittZlbwjrmv9QWh.jpg",
+            "directed": 452507
+        }
+    },
+    {
+        "pk": 32278,
+        "model": "movies.director",
+        "fields": {
+            "name": "Matt Reeves",
+            "job": "Director",
+            "img": "/nVMMYJJa2UTg9WaTYrd8c0E9B3A.jpg",
+            "directed": 119450
+        }
+    },
+    {
+        "pk": 1278722,
+        "model": "movies.director",
+        "fields": {
+            "name": "Trish Sie",
+            "job": "Director",
+            "img": "/wB8cnaVXGikYjoWhcyvcNf8wWi9.jpg",
+            "directed": 243683
+        }
+    },
+    {
+        "pk": 11770,
+        "model": "movies.director",
+        "fields": {
+            "name": "John Carpenter",
+            "job": "Director",
+            "img": "/jGprVNNSmlJzLNhm2tcdmjquLyL.jpg",
+            "directed": 790
+        }
+    },
+    {
+        "pk": 30365,
+        "model": "movies.director",
+        "fields": {
+            "name": "Michael Caton-Jones",
+            "job": "Director",
+            "img": "/oKzuAA9S6VAb0qkmD9v8Z30jGSf.jpg",
+            "directed": 3093
+        }
+    },
+    {
+        "pk": 15890,
+        "model": "movies.director",
+        "fields": {
+            "name": "James Foley",
+            "job": "Director",
+            "img": "/ujAhQvNNnBqa6ZP2C46DMdAp09w.jpg",
+            "directed": 337167
+        }
+    },
+    {
+        "pk": 32277,
+        "model": "movies.director",
+        "fields": {
+            "name": "Geoff Murphy",
+            "job": "Director",
+            "img": "/h9qts2xTEQyaI6ICnEcyLU69y7W.jpg",
+            "directed": 3512
+        }
+    },
+    {
+        "pk": 64151,
+        "model": "movies.director",
+        "fields": {
+            "name": "Mike Mitchell",
+            "job": "Director",
+            "img": "/thoCDW89KWWaSYrbvUX0adPcg8S.jpg",
+            "directed": 55301
+        }
+    },
+    {
+        "pk": 4109,
+        "model": "movies.director",
+        "fields": {
+            "name": "Michael Curtiz",
+            "job": "Director",
+            "img": "/3rQXKSKx1IV7Lg9LwPaJicQdAkC.jpg",
+            "directed": 10907
+        }
+    },
+    {
+        "pk": 67426,
+        "model": "movies.director",
+        "fields": {
+            "name": "William Keighley",
+            "job": "Director",
+            "img": "/dDrjL0J7qwZPZtNF8igisqL8OyV.jpg",
+            "directed": 10907
+        }
+    },
+    {
+        "pk": 71280,
+        "model": "movies.director",
+        "fields": {
+            "name": "Michael Dowse",
+            "job": "Director",
+            "img": "/xShST7ecFRhXY8lGGyqmTnbUuXF.jpg",
+            "directed": 50725
+        }
+    },
+    {
+        "pk": 11435,
+        "model": "movies.director",
+        "fields": {
+            "name": "Howard Hawks",
+            "job": "Director",
+            "img": "/elyqP5MhDcBhWErIO5W6Rn4kBlG.jpg",
+            "directed": 301
+        }
+    },
+    {
+        "pk": 12786,
+        "model": "movies.director",
+        "fields": {
+            "name": "Simon West",
+            "job": "Director",
+            "img": "/dgg76ebEa1KMdclIL0UrYQTOK7H.jpg",
+            "directed": 2275
+        }
+    },
+    {
+        "pk": 1103,
+        "model": "movies.director",
+        "fields": {
+            "name": "Bill Duke",
+            "job": "Director",
+            "img": "/46uPgJKKjAhPak4G7526ZFHiRvA.jpg",
+            "directed": 6279
+        }
+    },
+    {
+        "pk": 20629,
+        "model": "movies.director",
+        "fields": {
+            "name": "George Miller",
+            "job": "Director",
+            "img": "/4FyQESSzuu1VkPup9CmMjdnUyhv.jpg",
+            "directed": 65759
+        }
+    },
+    {
+        "pk": 8,
+        "model": "movies.director",
+        "fields": {
+            "name": "Lee Unkrich",
+            "job": "Director",
+            "img": "/bdTCCXjgOV3YyaNmLGYGOxFQMOc.jpg",
+            "directed": 354912
+        }
+    },
+    {
+        "pk": 7879,
+        "model": "movies.director",
+        "fields": {
+            "name": "John Lasseter",
+            "job": "Director",
+            "img": "/7EdqiNbr4FRjIhKHyPPdFfEEEFG.jpg",
+            "directed": 862
+        }
+    },
+    {
+        "pk": 4453,
+        "model": "movies.director",
+        "fields": {
+            "name": "Thomas Vinterberg",
+            "job": "Director",
+            "img": "/1lChKBPVLqbn7Kl8lHghybBVzgw.jpg",
+            "directed": 250734
+        }
+    },
+    {
+        "pk": 58324,
+        "model": "movies.director",
+        "fields": {
+            "name": "Jean-François Richet",
+            "job": "Director",
+            "img": "/PipS4XiDbV0hDfhydX9p8PkqZh.jpg",
+            "directed": 309886
+        }
+    },
+    {
+        "pk": 1182269,
+        "model": "movies.director",
+        "fields": {
+            "name": "Josie Rourke",
+            "job": "Director",
+            "img": "/3F1E0K3KzPiWaWbcuWiHK6oqZwO.jpg",
+            "directed": 457136
+        }
+    },
+    {
+        "pk": 7187,
+        "model": "movies.director",
+        "fields": {
+            "name": "Richard Donner",
+            "job": "Director",
+            "img": "/2G0gyLVJzLmRl4W3sFyaVfxppJJ.jpg",
+            "directed": 526
+        }
+    },
+    {
+        "pk": 143660,
+        "model": "movies.director",
+        "fields": {
+            "name": "Aleksey Sidorov",
+            "job": "Director",
+            "img": "/lNDYoh0ZP05rE7Iz17WQGugT7Yc.jpg",
+            "directed": 505954
+        }
+    },
+    {
+        "pk": 15557,
+        "model": "movies.director",
+        "fields": {
+            "name": "Bill Condon",
+            "job": "Director",
+            "img": "/wYS9OCX85SJQWdjQokWVgmX7PQX.jpg",
+            "directed": 321612
+        }
+    },
+    {
+        "pk": 37948,
+        "model": "movies.director",
+        "fields": {
+            "name": "Brad Anderson",
+            "job": "Director",
+            "img": "/qjEl3MLqL4MDZFMWO4ukQbBBal0.jpg",
+            "directed": 6687
+        }
+    },
+    {
+        "pk": 12890,
+        "model": "movies.director",
+        "fields": {
+            "name": "Pete Docter",
+            "job": "Director",
+            "img": "/r6ngPgnReA3RHmKjmSoVsc6Awjp.jpg",
+            "directed": 150540
+        }
+    },
+    {
+        "pk": 33485,
+        "model": "movies.director",
+        "fields": {
+            "name": "Ron Underwood",
+            "job": "Director",
+            "img": "/6Que5sFtOzJ0q4D7vrFqG60sdzG.jpg",
+            "directed": 1406
+        }
+    },
+    {
+        "pk": 208527,
+        "model": "movies.director",
+        "fields": {
+            "name": "Yann Demange",
+            "job": "Director",
+            "img": "/5RK0Y2IjNZupP3sq6ibZ1b9mCHh.jpg",
+            "directed": 252178
+        }
+    },
+    {
+        "pk": 1213074,
+        "model": "movies.director",
+        "fields": {
+            "name": "Steven S. DeKnight",
+            "job": "Director",
+            "img": "/zB5y8qPvfIcTPWjM7iVsyxB552G.jpg",
+            "directed": 268896
+        }
+    },
+    {
+        "pk": 16590,
+        "model": "movies.director",
+        "fields": {
+            "name": "Sheldon Lettich",
+            "job": "Director",
+            "img": "/ecORUrI7PKBO3Mm0aVjen1dSng6.jpg",
+            "directed": 9594
+        }
+    },
+    {
+        "pk": 20400,
+        "model": "movies.director",
+        "fields": {
+            "name": "Tim Story",
+            "job": "Director",
+            "img": "/30HZn70vyclGRRn5AU3szpKyfgC.jpg",
+            "directed": 11045
+        }
+    },
+    {
+        "pk": 65298,
+        "model": "movies.director",
+        "fields": {
+            "name": "Brian Henson",
+            "job": "Director",
+            "img": "/m2Bczi1gvhnIYCGp8Fhg2QCPuNf.jpg",
+            "directed": 10437
+        }
+    },
+    {
+        "pk": 1238965,
+        "model": "movies.director",
+        "fields": {
+            "name": "Bora Dağtekin",
+            "job": "Director",
+            "img": "/uzlEIBPfxZWE1NWZirbjwRYE6xN.jpg",
+            "directed": 233063
+        }
+    },
+    {
+        "pk": 9340,
+        "model": "movies.director",
+        "fields": {
+            "name": "Lana Wachowski",
+            "job": "Director",
+            "img": "/fxZ7SpJCZ9DgJERWEpGmn5a4mdp.jpg",
+            "directed": 9303
+        }
+    },
+    {
+        "pk": 9339,
+        "model": "movies.director",
+        "fields": {
+            "name": "Lilly Wachowski",
+            "job": "Director",
+            "img": "/9sxE10LUA7TGlS1pHw2RM6mckHp.jpg",
+            "directed": 9303
+        }
+    }
+]
