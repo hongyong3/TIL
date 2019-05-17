@@ -4,8 +4,7 @@
         "model": "movies.Director",
         "fields": {
             "name": "Joe Russo",
-            "img": "/679Os4tbY1YsU01KdLhM1NPXNWu.jpg",
-            "movies": 299534
+            "img": "/679Os4tbY1YsU01KdLhM1NPXNWu.jpg"
         }
     },
     {
@@ -13,8 +12,7 @@
         "model": "movies.Director",
         "fields": {
             "name": "Anthony Russo",
-            "img": "/fIa5wXK7MHAquhefTr3TcnZiYy8.jpg",
-            "movies": 299534
+            "img": "/fIa5wXK7MHAquhefTr3TcnZiYy8.jpg"
         }
     },
     {
@@ -22,35 +20,7 @@
         "model": "movies.Director",
         "fields": {
             "name": "David F. Sandberg",
-            "img": "/10p2i4OW0JWAbnOb7yMLUEGdSqM.jpg",
-            "movies": 287947
-        }
-    },
-    {
-        "pk": 65630,
-        "model": "movies.Director",
-        "fields": {
-            "name": "Rob Letterman",
-            "img": "/v2GPTQ41ZqHtML8W1ft3UJej5xA.jpg",
-            "movies": 447404
-        }
-    },
-    {
-        "pk": 53068,
-        "model": "movies.Director",
-        "fields": {
-            "name": "Ryan Fleck",
-            "img": "/z5EL2oWKEVUgFb6wjoX0BSxthsJ.jpg",
-            "movies": 299537
-        }
-    },
-    {
-        "pk": 53069,
-        "model": "movies.Director",
-        "fields": {
-            "name": "Anna Boden",
-            "img": "/h5YMXdI42zb0uqn5UJHF4fT9AER.jpg",
-            "movies": 299537
+            "img": "/10p2i4OW0JWAbnOb7yMLUEGdSqM.jpg"
         }
     },
     {
@@ -58,188 +28,7 @@
         "model": "movies.Director",
         "fields": {
             "name": "Kyouhei Yamaguchi",
-            "img": "/uAFzPnQsnGzkR9KlU260TsGMFI1.jpg",
-            "movies": 543103
-        }
-    },
-    {
-        "pk": 1297518,
-        "model": "movies.Director",
-        "fields": {
-            "name": "Kazuaki Imai",
-            "img": null,
-            "movies": 495925
-        }
-    },
-    {
-        "pk": 95972,
-        "model": "movies.Director",
-        "fields": {
-            "name": "Hans Petter Moland",
-            "img": "/xPUm6zfCrmDZb8fkby2zzF6sp8z.jpg",
-            "movies": 438650
-        }
-    },
-    {
-        "pk": 57581,
-        "model": "movies.Director",
-        "fields": {
-            "name": "Neil Marshall",
-            "img": "/Au5p9cFlj2XVoVIECQ40ruOp1Qz.jpg",
-            "movies": 456740
-        }
-    },
-    {
-        "pk": 11614,
-        "model": "movies.Director",
-        "fields": {
-            "name": "M. Night Shyamalan",
-            "img": "/shV9dGXMj7zt7myRFkR6FR51LYu.jpg",
-            "movies": 450465
-        }
-    },
-    {
-        "pk": 19272,
-        "model": "movies.Director",
-        "fields": {
-            "name": "Joe Russo",
-            "img": "/679Os4tbY1YsU01KdLhM1NPXNWu.jpg",
-            "movies": 299536
-        }
-    },
-    {
-        "pk": 19271,
-        "model": "movies.Director",
-        "fields": {
-            "name": "Anthony Russo",
-            "img": "/fIa5wXK7MHAquhefTr3TcnZiYy8.jpg",
-            "movies": 299536
-        }
-    },
-    {
-        "pk": 1586194,
-        "model": "movies.Director",
-        "fields": {
-            "name": "Jenny Gage",
-            "img": "/wdvHWFssy6KAliSrY89pvszBlmO.jpg",
-            "movies": 537915
-        }
-    },
-    {
-        "pk": 1495940,
-        "model": "movies.Director",
-        "fields": {
-            "name": "Frankie Chen",
-            "img": "/3jfec79vr7xVdgW8qJgTdheYXyt.jpg",
-            "movies": 576393
-        }
-    },
-    {
-        "pk": 1362815,
-        "model": "movies.Director",
-        "fields": {
-            "name": "David Yarovesky",
-            "img": "/fNaQfVEnSrK6ff2bEaatRsEtMO2.jpg",
-            "movies": 531309
-        }
-    },
-    {
-        "pk": 84124,
-        "model": "movies.Director",
-        "fields": {
-            "name": "Tina Gordon Chism",
-            "img": "/2Vho1qUJBLUPlgh3c4bnXTPKZUs.jpg",
-            "movies": 526050
-        }
-    },
-    {
-        "pk": 12891,
-        "model": "movies.Director",
-        "fields": {
-            "name": "Joss Whedon",
-            "img": "/dTiVsuaTVTeGmvkhcyJvKp2A5kr.jpg",
-            "movies": 24428
-        }
-    },
-    {
-        "pk": 20739,
-        "model": "movies.Director",
-        "fields": {
-            "name": "Adam Shankman",
-            "img": "/alYdaxIYDvJZFnVrM2n01jcafKo.jpg",
-            "movies": 487297
-        }
-    },
-    {
-        "pk": 69797,
-        "model": "movies.Director",
-        "fields": {
-            "name": "Dean DeBlois",
-            "img": "/vofzPcdNUzUD1xqaMUwMAJRgFiy.jpg",
-            "movies": 166428
-        }
-    },
-    {
-        "pk": 1290272,
-        "model": "movies.Director",
-        "fields": {
-            "name": "Dennis Widmyer",
-            "img": "/wZbN0JZd6kbGAHRglEH8u7CfGJ0.jpg",
-            "movies": 157433
-        }
-    },
-    {
-        "pk": 1154561,
-        "model": "movies.Director",
-        "fields": {
-            "name": "Kevin Kölsch",
-            "img": "/4494wQuVUThEzLBAFkEPhXgpUyS.jpg",
-            "movies": 157433
-        }
-    },
-    {
-        "pk": 1056121,
-        "model": "movies.Director",
-        "fields": {
-            "name": "Ryan Coogler",
-            "img": "/ddGaRFrlDdyR0OBTd1hAMWnfvim.jpg",
-            "movies": 284054
-        }
-    },
-    {
-        "pk": 1481804,
-        "model": "movies.Director",
-        "fields": {
-            "name": "Tomoka Nagaoka",
-            "img": null,
-            "movies": 566555
-        }
-    },
-    {
-        "pk": 19272,
-        "model": "movies.Director",
-        "fields": {
-            "name": "Joe Russo",
-            "img": "/679Os4tbY1YsU01KdLhM1NPXNWu.jpg",
-            "movies": 299534
-        }
-    },
-    {
-        "pk": 19271,
-        "model": "movies.Director",
-        "fields": {
-            "name": "Anthony Russo",
-            "img": "/fIa5wXK7MHAquhefTr3TcnZiYy8.jpg",
-            "movies": 299534
-        }
-    },
-    {
-        "pk": 1302082,
-        "model": "movies.Director",
-        "fields": {
-            "name": "David F. Sandberg",
-            "img": "/10p2i4OW0JWAbnOb7yMLUEGdSqM.jpg",
-            "movies": 287947
+            "img": "/uAFzPnQsnGzkR9KlU260TsGMFI1.jpg"
         }
     },
     {
@@ -247,8 +36,7 @@
         "model": "movies.Director",
         "fields": {
             "name": "Rob Letterman",
-            "img": "/v2GPTQ41ZqHtML8W1ft3UJej5xA.jpg",
-            "movies": 447404
+            "img": "/v2GPTQ41ZqHtML8W1ft3UJej5xA.jpg"
         }
     },
     {
@@ -256,8 +44,7 @@
         "model": "movies.Director",
         "fields": {
             "name": "Ryan Fleck",
-            "img": "/z5EL2oWKEVUgFb6wjoX0BSxthsJ.jpg",
-            "movies": 299537
+            "img": "/z5EL2oWKEVUgFb6wjoX0BSxthsJ.jpg"
         }
     },
     {
@@ -265,89 +52,7 @@
         "model": "movies.Director",
         "fields": {
             "name": "Anna Boden",
-            "img": "/h5YMXdI42zb0uqn5UJHF4fT9AER.jpg",
-            "movies": 299537
-        }
-    },
-    {
-        "pk": 1424064,
-        "model": "movies.Director",
-        "fields": {
-            "name": "Kyouhei Yamaguchi",
-            "img": "/uAFzPnQsnGzkR9KlU260TsGMFI1.jpg",
-            "movies": 543103
-        }
-    },
-    {
-        "pk": 1297518,
-        "model": "movies.Director",
-        "fields": {
-            "name": "Kazuaki Imai",
-            "img": null,
-            "movies": 495925
-        }
-    },
-    {
-        "pk": 95972,
-        "model": "movies.Director",
-        "fields": {
-            "name": "Hans Petter Moland",
-            "img": "/xPUm6zfCrmDZb8fkby2zzF6sp8z.jpg",
-            "movies": 438650
-        }
-    },
-    {
-        "pk": 57581,
-        "model": "movies.Director",
-        "fields": {
-            "name": "Neil Marshall",
-            "img": "/Au5p9cFlj2XVoVIECQ40ruOp1Qz.jpg",
-            "movies": 456740
-        }
-    },
-    {
-        "pk": 11614,
-        "model": "movies.Director",
-        "fields": {
-            "name": "M. Night Shyamalan",
-            "img": "/shV9dGXMj7zt7myRFkR6FR51LYu.jpg",
-            "movies": 450465
-        }
-    },
-    {
-        "pk": 19272,
-        "model": "movies.Director",
-        "fields": {
-            "name": "Joe Russo",
-            "img": "/679Os4tbY1YsU01KdLhM1NPXNWu.jpg",
-            "movies": 299536
-        }
-    },
-    {
-        "pk": 19271,
-        "model": "movies.Director",
-        "fields": {
-            "name": "Anthony Russo",
-            "img": "/fIa5wXK7MHAquhefTr3TcnZiYy8.jpg",
-            "movies": 299536
-        }
-    },
-    {
-        "pk": 1586194,
-        "model": "movies.Director",
-        "fields": {
-            "name": "Jenny Gage",
-            "img": "/wdvHWFssy6KAliSrY89pvszBlmO.jpg",
-            "movies": 537915
-        }
-    },
-    {
-        "pk": 1495940,
-        "model": "movies.Director",
-        "fields": {
-            "name": "Frankie Chen",
-            "img": "/3jfec79vr7xVdgW8qJgTdheYXyt.jpg",
-            "movies": 576393
+            "img": "/h5YMXdI42zb0uqn5UJHF4fT9AER.jpg"
         }
     },
     {
@@ -355,80 +60,7 @@
         "model": "movies.Director",
         "fields": {
             "name": "David Yarovesky",
-            "img": "/fNaQfVEnSrK6ff2bEaatRsEtMO2.jpg",
-            "movies": 531309
-        }
-    },
-    {
-        "pk": 84124,
-        "model": "movies.Director",
-        "fields": {
-            "name": "Tina Gordon Chism",
-            "img": "/2Vho1qUJBLUPlgh3c4bnXTPKZUs.jpg",
-            "movies": 526050
-        }
-    },
-    {
-        "pk": 12891,
-        "model": "movies.Director",
-        "fields": {
-            "name": "Joss Whedon",
-            "img": "/dTiVsuaTVTeGmvkhcyJvKp2A5kr.jpg",
-            "movies": 24428
-        }
-    },
-    {
-        "pk": 20739,
-        "model": "movies.Director",
-        "fields": {
-            "name": "Adam Shankman",
-            "img": "/alYdaxIYDvJZFnVrM2n01jcafKo.jpg",
-            "movies": 487297
-        }
-    },
-    {
-        "pk": 69797,
-        "model": "movies.Director",
-        "fields": {
-            "name": "Dean DeBlois",
-            "img": "/vofzPcdNUzUD1xqaMUwMAJRgFiy.jpg",
-            "movies": 166428
-        }
-    },
-    {
-        "pk": 1290272,
-        "model": "movies.Director",
-        "fields": {
-            "name": "Dennis Widmyer",
-            "img": "/wZbN0JZd6kbGAHRglEH8u7CfGJ0.jpg",
-            "movies": 157433
-        }
-    },
-    {
-        "pk": 1154561,
-        "model": "movies.Director",
-        "fields": {
-            "name": "Kevin Kölsch",
-            "img": "/4494wQuVUThEzLBAFkEPhXgpUyS.jpg",
-            "movies": 157433
-        }
-    },
-    {
-        "pk": 1056121,
-        "model": "movies.Director",
-        "fields": {
-            "name": "Ryan Coogler",
-            "img": "/ddGaRFrlDdyR0OBTd1hAMWnfvim.jpg",
-            "movies": 284054
-        }
-    },
-    {
-        "pk": 1481804,
-        "model": "movies.Director",
-        "fields": {
-            "name": "Tomoka Nagaoka",
-            "img": null,
-            "movies": 566555
+            "img": "/fNaQfVEnSrK6ff2bEaatRsEtMO2.jpg"
         }
     },
     {
@@ -436,8 +68,7 @@
         "model": "movies.Director",
         "fields": {
             "name": "Joe Russo",
-            "img": "/679Os4tbY1YsU01KdLhM1NPXNWu.jpg",
-            "movies": 299534
+            "img": "/679Os4tbY1YsU01KdLhM1NPXNWu.jpg"
         }
     },
     {
@@ -445,17 +76,839 @@
         "model": "movies.Director",
         "fields": {
             "name": "Anthony Russo",
-            "img": "/fIa5wXK7MHAquhefTr3TcnZiYy8.jpg",
-            "movies": 299534
+            "img": "/fIa5wXK7MHAquhefTr3TcnZiYy8.jpg"
         }
     },
     {
-        "pk": 1302082,
+        "pk": 95972,
         "model": "movies.Director",
         "fields": {
-            "name": "David F. Sandberg",
-            "img": "/10p2i4OW0JWAbnOb7yMLUEGdSqM.jpg",
-            "movies": 287947
+            "name": "Hans Petter Moland",
+            "img": "/xPUm6zfCrmDZb8fkby2zzF6sp8z.jpg"
+        }
+    },
+    {
+        "pk": 1297518,
+        "model": "movies.Director",
+        "fields": {
+            "name": "Kazuaki Imai",
+            "img": null
+        }
+    },
+    {
+        "pk": 57581,
+        "model": "movies.Director",
+        "fields": {
+            "name": "Neil Marshall",
+            "img": "/Au5p9cFlj2XVoVIECQ40ruOp1Qz.jpg"
+        }
+    },
+    {
+        "pk": 40644,
+        "model": "movies.Director",
+        "fields": {
+            "name": "Chad Stahelski",
+            "img": "/hr82USXEc8XWvdnH0TpyddMpi7j.jpg"
+        }
+    },
+    {
+        "pk": 1290272,
+        "model": "movies.Director",
+        "fields": {
+            "name": "Dennis Widmyer",
+            "img": "/wZbN0JZd6kbGAHRglEH8u7CfGJ0.jpg"
+        }
+    },
+    {
+        "pk": 1154561,
+        "model": "movies.Director",
+        "fields": {
+            "name": "Kevin Kölsch",
+            "img": "/4494wQuVUThEzLBAFkEPhXgpUyS.jpg"
+        }
+    },
+    {
+        "pk": 1495940,
+        "model": "movies.Director",
+        "fields": {
+            "name": "Frankie Chen",
+            "img": "/3jfec79vr7xVdgW8qJgTdheYXyt.jpg"
+        }
+    },
+    {
+        "pk": 11614,
+        "model": "movies.Director",
+        "fields": {
+            "name": "M. Night Shyamalan",
+            "img": "/2YQooZHX3spvybbCHHGALKGjt4O.jpg"
+        }
+    },
+    {
+        "pk": 12891,
+        "model": "movies.Director",
+        "fields": {
+            "name": "Joss Whedon",
+            "img": "/dTiVsuaTVTeGmvkhcyJvKp2A5kr.jpg"
+        }
+    },
+    {
+        "pk": 1586194,
+        "model": "movies.Director",
+        "fields": {
+            "name": "Jenny Gage",
+            "img": "/wdvHWFssy6KAliSrY89pvszBlmO.jpg"
+        }
+    },
+    {
+        "pk": 69237,
+        "model": "movies.Director",
+        "fields": {
+            "name": "Joe Berlinger",
+            "img": "/nm1QiopjjZLypVQUjJkJ3SkEGnB.jpg"
+        }
+    },
+    {
+        "pk": 1056121,
+        "model": "movies.Director",
+        "fields": {
+            "name": "Ryan Coogler",
+            "img": "/ddGaRFrlDdyR0OBTd1hAMWnfvim.jpg"
+        }
+    },
+    {
+        "pk": 91493,
+        "model": "movies.Director",
+        "fields": {
+            "name": "Chris Addison",
+            "img": "/cCVVvQIuVyNkUTDg34lgHZ9fuCr.jpg"
+        }
+    },
+    {
+        "pk": 55934,
+        "model": "movies.Director",
+        "fields": {
+            "name": "Taika Waititi",
+            "img": "/zCLBXGo5BS2e27srDBa5WpRnKul.jpg"
+        }
+    },
+    {
+        "pk": 69797,
+        "model": "movies.Director",
+        "fields": {
+            "name": "Dean DeBlois",
+            "img": "/vofzPcdNUzUD1xqaMUwMAJRgFiy.jpg"
+        }
+    },
+    {
+        "pk": 84124,
+        "model": "movies.Director",
+        "fields": {
+            "name": "Tina Gordon Chism",
+            "img": "/2Vho1qUJBLUPlgh3c4bnXTPKZUs.jpg"
+        }
+    },
+    {
+        "pk": 15218,
+        "model": "movies.Director",
+        "fields": {
+            "name": "James Gunn",
+            "img": "/2w2mprJhSucgA8pbM5BRdBKl3p9.jpg"
+        }
+    },
+    {
+        "pk": 1481804,
+        "model": "movies.Director",
+        "fields": {
+            "name": "Tomoka Nagaoka",
+            "img": null
+        }
+    },
+    {
+        "pk": 15218,
+        "model": "movies.Director",
+        "fields": {
+            "name": "James Gunn",
+            "img": "/2w2mprJhSucgA8pbM5BRdBKl3p9.jpg"
+        }
+    },
+    {
+        "pk": 510,
+        "model": "movies.Director",
+        "fields": {
+            "name": "Tim Burton",
+            "img": "/yHEHAHQpN9PfSEQx1UxZPczhcAi.jpg"
+        }
+    },
+    {
+        "pk": 936670,
+        "model": "movies.Director",
+        "fields": {
+            "name": "Bob Persichetti",
+            "img": "/kk1cN73iulyn3G4PvZ01TnsW4gN.jpg"
+        }
+    },
+    {
+        "pk": 151007,
+        "model": "movies.Director",
+        "fields": {
+            "name": "Peter Ramsey",
+            "img": "/9708uu7CeTLSzm69ykdYxgPcd2S.jpg"
+        }
+    },
+    {
+        "pk": 59918,
+        "model": "movies.Director",
+        "fields": {
+            "name": "Rodney Rothman",
+            "img": "/3GlFmeP4me6uxZGVsmnC0d4A5BV.jpg"
+        }
+    },
+    {
+        "pk": 39189,
+        "model": "movies.Director",
+        "fields": {
+            "name": "Stephen Merchant",
+            "img": "/A70Gtg3kkTeCBgtFkSRPu9qfPQu.jpg"
+        }
+    },
+    {
+        "pk": 40644,
+        "model": "movies.Director",
+        "fields": {
+            "name": "Chad Stahelski",
+            "img": "/hr82USXEc8XWvdnH0TpyddMpi7j.jpg"
+        }
+    },
+    {
+        "pk": 366,
+        "model": "movies.Director",
+        "fields": {
+            "name": "James Mangold",
+            "img": "/1gt0VmCyBHhQLKhaBDCEIwvRWe.jpg"
+        }
+    },
+    {
+        "pk": 12891,
+        "model": "movies.Director",
+        "fields": {
+            "name": "Joss Whedon",
+            "img": "/dTiVsuaTVTeGmvkhcyJvKp2A5kr.jpg"
+        }
+    },
+    {
+        "pk": 20739,
+        "model": "movies.Director",
+        "fields": {
+            "name": "Adam Shankman",
+            "img": "/alYdaxIYDvJZFnVrM2n01jcafKo.jpg"
+        }
+    },
+    {
+        "pk": 7879,
+        "model": "movies.Director",
+        "fields": {
+            "name": "John Lasseter",
+            "img": "/7EdqiNbr4FRjIhKHyPPdFfEEEFG.jpg"
+        }
+    },
+    {
+        "pk": 56322,
+        "model": "movies.Director",
+        "fields": {
+            "name": "Amy Poehler",
+            "img": "/uMGW762oDZbR8jhFJRImJ1ls5cd.jpg"
+        }
+    },
+    {
+        "pk": 11181,
+        "model": "movies.Director",
+        "fields": {
+            "name": "Kenneth Branagh",
+            "img": "/bmpGjbqvAVNOK3ggiuET2Jl96tZ.jpg"
+        }
+    },
+    {
+        "pk": 231084,
+        "model": "movies.Director",
+        "fields": {
+            "name": "Chee Keong Cheung",
+            "img": "/gxvTUIuvWkoQa9BpapQZiha4R8K.jpg"
+        }
+    },
+    {
+        "pk": 2294,
+        "model": "movies.Director",
+        "fields": {
+            "name": "Robert Rodriguez",
+            "img": "/bPqRdLWWwpOT8sBdj9PWOzNgwou.jpg"
+        }
+    },
+    {
+        "pk": 291263,
+        "model": "movies.Director",
+        "fields": {
+            "name": "Jordan Peele",
+            "img": "/9rOEfvKUInuUpJ6MMhiC8Tch1WM.jpg"
+        }
+    },
+    {
+        "pk": 2127,
+        "model": "movies.Director",
+        "fields": {
+            "name": "James Wan",
+            "img": "/9AlAMoHVDUX8GVOTw6JOyKil8k9.jpg"
+        }
+    },
+    {
+        "pk": 59026,
+        "model": "movies.Director",
+        "fields": {
+            "name": "Peyton Reed",
+            "img": "/aucXNycAtFREMIKr6ikmHvd2Mmp.jpg"
+        }
+    },
+    {
+        "pk": 15277,
+        "model": "movies.Director",
+        "fields": {
+            "name": "Jon Favreau",
+            "img": "/sJSGJwGa3hjMlJNUCxF7wQwo7fb.jpg"
+        }
+    },
+    {
+        "pk": 108,
+        "model": "movies.Director",
+        "fields": {
+            "name": "Peter Jackson",
+            "img": "/kSrfI3TbMdIMmPVOflLQ56OfscB.jpg"
+        }
+    },
+    {
+        "pk": 956,
+        "model": "movies.Director",
+        "fields": {
+            "name": "Guy Ritchie",
+            "img": "/uLpiixgcko2W5GLsqBEvSfluyEs.jpg"
+        }
+    },
+    {
+        "pk": 37932,
+        "model": "movies.Director",
+        "fields": {
+            "name": "F. Gary Gray",
+            "img": "/6p11B9eBjvoiAY5Nyoao6Pm7a2J.jpg"
+        }
+    },
+    {
+        "pk": 4945,
+        "model": "movies.Director",
+        "fields": {
+            "name": "Joe Johnston",
+            "img": "/fbGZo6CG9Z9zKFh8D5wHunyu7gJ.jpg"
+        }
+    },
+    {
+        "pk": 165787,
+        "model": "movies.Director",
+        "fields": {
+            "name": "Rich Moore",
+            "img": "/oIAmkZf9LuJuMqR8zSchoD3FJT8.jpg"
+        }
+    },
+    {
+        "pk": 567562,
+        "model": "movies.Director",
+        "fields": {
+            "name": "Phil Johnston",
+            "img": "/jCaUirgugytyigPpexIyUU1laLQ.jpg"
+        }
+    },
+    {
+        "pk": 1033661,
+        "model": "movies.Director",
+        "fields": {
+            "name": "Travis Knight",
+            "img": "/rn207qabc6oJ8JFSH7ekS9hYDXb.jpg"
+        }
+    },
+    {
+        "pk": 525,
+        "model": "movies.Director",
+        "fields": {
+            "name": "Christopher Nolan",
+            "img": "/zPvcQPnp3q6R9mqJGm8RENsXYY9.jpg"
+        }
+    },
+    {
+        "pk": 40684,
+        "model": "movies.Director",
+        "fields": {
+            "name": "David Leitch",
+            "img": "/eVSgvAIsP6mwuVbbhVb4HkVvmsu.jpg"
+        }
+    },
+    {
+        "pk": 1293994,
+        "model": "movies.Director",
+        "fields": {
+            "name": "Jon Watts",
+            "img": "/5CKKBhuScdsHs2KPBBx5pveMOQQ.jpg"
+        }
+    },
+    {
+        "pk": 10965,
+        "model": "movies.Director",
+        "fields": {
+            "name": "Chris Columbus",
+            "img": "/2fHN78oumrJRM84UydgfVzj0YEl.jpg"
+        }
+    },
+    {
+        "pk": 150630,
+        "model": "movies.Director",
+        "fields": {
+            "name": "Nicholas McCarthy",
+            "img": null
+        }
+    },
+    {
+        "pk": 1607672,
+        "model": "movies.Director",
+        "fields": {
+            "name": "Michael Chaves",
+            "img": "/SOd71vk0kx5cJygzCifEOMGjRW.jpg"
+        }
+    },
+    {
+        "pk": 128276,
+        "model": "movies.Director",
+        "fields": {
+            "name": "Otto Bathurst",
+            "img": "/vojDKrTe52mnPrYSKUTOLWotEIN.jpg"
+        }
+    },
+    {
+        "pk": 2636,
+        "model": "movies.Director",
+        "fields": {
+            "name": "Alfred Hitchcock",
+            "img": "/rKYyX58azJv1SZNXQWOJyNyvB9F.jpg"
+        }
+    },
+    {
+        "pk": 11343,
+        "model": "movies.Director",
+        "fields": {
+            "name": "David Yates",
+            "img": "/fiIZNbwdK07ntpE2wpLRIMuSXEy.jpg"
+        }
+    },
+    {
+        "pk": 40644,
+        "model": "movies.Director",
+        "fields": {
+            "name": "Chad Stahelski",
+            "img": "/hr82USXEc8XWvdnH0TpyddMpi7j.jpg"
+        }
+    },
+    {
+        "pk": 26714,
+        "model": "movies.Director",
+        "fields": {
+            "name": "John R. Leonetti",
+            "img": "/uksq1bamaA4MfpBPaP4Vv8BvLpu.jpg"
+        }
+    },
+    {
+        "pk": 1196401,
+        "model": "movies.Director",
+        "fields": {
+            "name": "Tomonori Sudou",
+            "img": "/eTPynNLvv0K8tHbsIWaAaPVhWZR.jpg"
+        }
+    },
+    {
+        "pk": 56501,
+        "model": "movies.Director",
+        "fields": {
+            "name": "Michael Spierig",
+            "img": "/ecQPSEB9HP4LQ2cC4mhfzycZJ08.jpg"
+        }
+    },
+    {
+        "pk": 56502,
+        "model": "movies.Director",
+        "fields": {
+            "name": "Peter Spierig",
+            "img": "/66rowkv57i9D2cyhrZPgoohw4VX.jpg"
+        }
+    },
+    {
+        "pk": 1159855,
+        "model": "movies.Director",
+        "fields": {
+            "name": "André Badalo",
+            "img": null
+        }
+    },
+    {
+        "pk": 19271,
+        "model": "movies.Director",
+        "fields": {
+            "name": "Anthony Russo",
+            "img": "/fIa5wXK7MHAquhefTr3TcnZiYy8.jpg"
+        }
+    },
+    {
+        "pk": 19272,
+        "model": "movies.Director",
+        "fields": {
+            "name": "Joe Russo",
+            "img": "/679Os4tbY1YsU01KdLhM1NPXNWu.jpg"
+        }
+    },
+    {
+        "pk": 1306608,
+        "model": "movies.Director",
+        "fields": {
+            "name": "Adam Robitel",
+            "img": "/ujwEsVKMCN0JD6Mx2PlfSqmbxd1.jpg"
+        }
+    },
+    {
+        "pk": 15344,
+        "model": "movies.Director",
+        "fields": {
+            "name": "J.J. Abrams",
+            "img": "/xljsYopubv9egYzclBPNf9EAYxB.jpg"
+        }
+    },
+    {
+        "pk": 59026,
+        "model": "movies.Director",
+        "fields": {
+            "name": "Peyton Reed",
+            "img": "/aucXNycAtFREMIKr6ikmHvd2Mmp.jpg"
+        }
+    },
+    {
+        "pk": 36602,
+        "model": "movies.Director",
+        "fields": {
+            "name": "Peter Berg",
+            "img": "/1pR16H0zqRG49ns8cYykYpodgGF.jpg"
+        }
+    },
+    {
+        "pk": 3556,
+        "model": "movies.Director",
+        "fields": {
+            "name": "Roman Polanski",
+            "img": "/5yMO7d7NsODZtCwF22Xnlp3oVnE.jpg"
+        }
+    },
+    {
+        "pk": 54040,
+        "model": "movies.Director",
+        "fields": {
+            "name": "John Lee Hancock",
+            "img": "/1eCqzsuFp0xKGeTEErXyEifN82U.jpg"
+        }
+    },
+    {
+        "pk": 108,
+        "model": "movies.Director",
+        "fields": {
+            "name": "Peter Jackson",
+            "img": "/kSrfI3TbMdIMmPVOflLQ56OfscB.jpg"
+        }
+    },
+    {
+        "pk": 74619,
+        "model": "movies.Director",
+        "fields": {
+            "name": "Sean Anders",
+            "img": "/o3DDfIrbhETjJxuORuTEbm29DIU.jpg"
+        }
+    },
+    {
+        "pk": 47005,
+        "model": "movies.Director",
+        "fields": {
+            "name": "Alan Taylor",
+            "img": "/f8hPlHuaRw1py22wp2qqNRfVDMw.jpg"
+        }
+    },
+    {
+        "pk": 30715,
+        "model": "movies.Director",
+        "fields": {
+            "name": "Terrence Malick",
+            "img": "/4w0C0RaJ3qS6YZ7Ons6VZcEdfl7.jpg"
+        }
+    },
+    {
+        "pk": 55499,
+        "model": "movies.Director",
+        "fields": {
+            "name": "Scott Derrickson",
+            "img": "/2498q7kKjApqbUMh4WEMxbtSDjn.jpg"
+        }
+    },
+    {
+        "pk": 91268,
+        "model": "movies.Director",
+        "fields": {
+            "name": "Ruben Fleischer",
+            "img": "/y001RIxie7Vk3qMW3oLSFkjO1IA.jpg"
+        }
+    },
+    {
+        "pk": 66212,
+        "model": "movies.Director",
+        "fields": {
+            "name": "Timo Vuorensola",
+            "img": "/vOvgjfKURnz7HledfDyEY3JfQ9Z.jpg"
+        }
+    },
+    {
+        "pk": 1704,
+        "model": "movies.Director",
+        "fields": {
+            "name": "Gore Verbinski",
+            "img": "/bV0rGSPrK4AUvODjB3zMAwDdeIf.jpg"
+        }
+    },
+    {
+        "pk": 1,
+        "model": "movies.Director",
+        "fields": {
+            "name": "George Lucas",
+            "img": "/8qxin8urtFE0NqaZNFWOuV537bH.jpg"
+        }
+    },
+    {
+        "pk": 190,
+        "model": "movies.Director",
+        "fields": {
+            "name": "Clint Eastwood",
+            "img": "/n8h4ZHteFFXfmzUW6OEaPWanDnm.jpg"
+        }
+    },
+    {
+        "pk": 2034,
+        "model": "movies.Director",
+        "fields": {
+            "name": "Danny Boyle",
+            "img": "/b5qQpFHmgNyvV1t81ou17Jt2fRj.jpg"
+        }
+    },
+    {
+        "pk": 19850,
+        "model": "movies.Director",
+        "fields": {
+            "name": "Catherine Hardwicke",
+            "img": "/x8qMlCXpXlM66hOZ7dSMMWnojNo.jpg"
+        }
+    },
+    {
+        "pk": 54248,
+        "model": "movies.Director",
+        "fields": {
+            "name": "Christopher Landon",
+            "img": "/421KrcuMkPQnKbIvdp2yyFE4D0I.jpg"
+        }
+    },
+    {
+        "pk": 108,
+        "model": "movies.Director",
+        "fields": {
+            "name": "Peter Jackson",
+            "img": "/kSrfI3TbMdIMmPVOflLQ56OfscB.jpg"
+        }
+    },
+    {
+        "pk": 11694,
+        "model": "movies.Director",
+        "fields": {
+            "name": "Doug Liman",
+            "img": "/cWpE3dSbskWOea4kAGzQpNIkfxM.jpg"
+        }
+    },
+    {
+        "pk": 77123,
+        "model": "movies.Director",
+        "fields": {
+            "name": "Gonzalo López-Gallego",
+            "img": "/2C0IA635PgBHctQd60RJdROuJ1j.jpg"
+        }
+    },
+    {
+        "pk": 18899,
+        "model": "movies.Director",
+        "fields": {
+            "name": "Yuen Woo-ping",
+            "img": "/7gr04tWDnsBHHmo18aYLWXZHAvC.jpg"
+        }
+    },
+    {
+        "pk": 88857,
+        "model": "movies.Director",
+        "fields": {
+            "name": "Dome Karukoski",
+            "img": "/4lkhkvoVu5pUQE04kQS27Ynncoe.jpg"
+        }
+    },
+    {
+        "pk": 1108,
+        "model": "movies.Director",
+        "fields": {
+            "name": "Shane Black",
+            "img": "/lEyKmYizNVNLsOEgeaPFwX9MZoA.jpg"
+        }
+    },
+    {
+        "pk": 76004,
+        "model": "movies.Director",
+        "fields": {
+            "name": "Josh Janowicz",
+            "img": "/1seLOZQxZFxLwefhtDPfzmx64cS.jpg"
+        }
+    },
+    {
+        "pk": 19850,
+        "model": "movies.Director",
+        "fields": {
+            "name": "Catherine Hardwicke",
+            "img": "/x8qMlCXpXlM66hOZ7dSMMWnojNo.jpg"
+        }
+    },
+    {
+        "pk": 5281,
+        "model": "movies.Director",
+        "fields": {
+            "name": "Spike Lee",
+            "img": "/2KOHXgk2uoRXl6u7V9xpAIo3uay.jpg"
+        }
+    },
+    {
+        "pk": 9032,
+        "model": "movies.Director",
+        "fields": {
+            "name": "Bryan Singer",
+            "img": "/ts06thbCv9Ug2mNpcbcrmLGRL4Q.jpg"
+        }
+    },
+    {
+        "pk": 1419579,
+        "model": "movies.Director",
+        "fields": {
+            "name": "Christian Rivers",
+            "img": "/qm9JrFiMFIkZCTAbM9scJVZIjOk.jpg"
+        }
+    },
+    {
+        "pk": 15277,
+        "model": "movies.Director",
+        "fields": {
+            "name": "Jon Favreau",
+            "img": "/sJSGJwGa3hjMlJNUCxF7wQwo7fb.jpg"
+        }
+    },
+    {
+        "pk": 55252,
+        "model": "movies.Director",
+        "fields": {
+            "name": "Tim Miller",
+            "img": "/dCyBYwhO76j5wA96HPb6k5xk2Le.jpg"
+        }
+    },
+    {
+        "pk": 10965,
+        "model": "movies.Director",
+        "fields": {
+            "name": "Chris Columbus",
+            "img": "/2fHN78oumrJRM84UydgfVzj0YEl.jpg"
+        }
+    },
+    {
+        "pk": 1100748,
+        "model": "movies.Director",
+        "fields": {
+            "name": "Frant Gwo",
+            "img": "/ifiWmvaHho8kmjyt9ZCBwd9j6c4.jpg"
+        }
+    },
+    {
+        "pk": 6884,
+        "model": "movies.Director",
+        "fields": {
+            "name": "Patty Jenkins",
+            "img": "/za4JYxjctECHLJJel3lEFPsbeht.jpg"
+        }
+    },
+    {
+        "pk": 4499,
+        "model": "movies.Director",
+        "fields": {
+            "name": "Tom Shadyac",
+            "img": "/8CtwYIVmCSDQ9F1SXFpifKW0N3v.jpg"
+        }
+    },
+    {
+        "pk": 525,
+        "model": "movies.Director",
+        "fields": {
+            "name": "Christopher Nolan",
+            "img": "/zPvcQPnp3q6R9mqJGm8RENsXYY9.jpg"
+        }
+    },
+    {
+        "pk": 1709468,
+        "model": "movies.Director",
+        "fields": {
+            "name": "Gerard McMurray",
+            "img": null
+        }
+    },
+    {
+        "pk": 64151,
+        "model": "movies.Director",
+        "fields": {
+            "name": "Mike Mitchell",
+            "img": "/thoCDW89KWWaSYrbvUX0adPcg8S.jpg"
+        }
+    },
+    {
+        "pk": 17633,
+        "model": "movies.Director",
+        "fields": {
+            "name": "Rob Marshall",
+            "img": "/eK6o1eP4aZTnowGYc1NUnEdvCNJ.jpg"
+        }
+    },
+    {
+        "pk": 525,
+        "model": "movies.Director",
+        "fields": {
+            "name": "Christopher Nolan",
+            "img": "/zPvcQPnp3q6R9mqJGm8RENsXYY9.jpg"
+        }
+    },
+    {
+        "pk": 16847,
+        "model": "movies.Director",
+        "fields": {
+            "name": "Eli Roth",
+            "img": "/eHBxgJXeDKiYZMbL3VgAf7i9wor.jpg"
+        }
+    },
+    {
+        "pk": 11343,
+        "model": "movies.Director",
+        "fields": {
+            "name": "David Yates",
+            "img": "/fiIZNbwdK07ntpE2wpLRIMuSXEy.jpg"
         }
     },
     {
@@ -463,575 +916,567 @@
         "model": "movies.Director",
         "fields": {
             "name": "Rob Letterman",
-            "img": "/v2GPTQ41ZqHtML8W1ft3UJej5xA.jpg",
-            "movies": 447404
+            "img": "/v2GPTQ41ZqHtML8W1ft3UJej5xA.jpg"
         }
     },
     {
-        "pk": 53068,
+        "pk": 47506,
         "model": "movies.Director",
         "fields": {
-            "name": "Ryan Fleck",
-            "img": "/z5EL2oWKEVUgFb6wjoX0BSxthsJ.jpg",
-            "movies": 299537
+            "name": "Drew Goddard",
+            "img": "/j5Le3QQljdGJ3kPAcjAZr9V4QUC.jpg"
         }
     },
     {
-        "pk": 53069,
+        "pk": 12890,
         "model": "movies.Director",
         "fields": {
-            "name": "Anna Boden",
-            "img": "/h5YMXdI42zb0uqn5UJHF4fT9AER.jpg",
-            "movies": 299537
+            "name": "Pete Docter",
+            "img": "/r6ngPgnReA3RHmKjmSoVsc6Awjp.jpg"
         }
     },
     {
-        "pk": 1424064,
+        "pk": 1571489,
         "model": "movies.Director",
         "fields": {
-            "name": "Kyouhei Yamaguchi",
-            "img": "/uAFzPnQsnGzkR9KlU260TsGMFI1.jpg",
-            "movies": 543103
+            "name": "Agus Pestol",
+            "img": null
         }
     },
     {
-        "pk": 1297518,
+        "pk": 7087,
         "model": "movies.Director",
         "fields": {
-            "name": "Kazuaki Imai",
-            "img": null,
-            "movies": 495925
+            "name": "Brad Bird",
+            "img": "/2XwJyYs6XNLaQuC1O2gbEHT3jxx.jpg"
         }
     },
     {
-        "pk": 95972,
+        "pk": 7467,
         "model": "movies.Director",
         "fields": {
-            "name": "Hans Petter Moland",
-            "img": "/xPUm6zfCrmDZb8fkby2zzF6sp8z.jpg",
-            "movies": 438650
+            "name": "David Fincher",
+            "img": "/dcBHejOsKvzVZVozWJAPzYthb8X.jpg"
         }
     },
     {
-        "pk": 57581,
+        "pk": 5174,
         "model": "movies.Director",
         "fields": {
-            "name": "Neil Marshall",
-            "img": "/Au5p9cFlj2XVoVIECQ40ruOp1Qz.jpg",
-            "movies": 456740
+            "name": "Barry Sonnenfeld",
+            "img": "/m8vIfbXI44Fd8VK7HSJRisYQjQc.jpg"
         }
     },
     {
-        "pk": 11614,
+        "pk": 108,
         "model": "movies.Director",
         "fields": {
-            "name": "M. Night Shyamalan",
-            "img": "/shV9dGXMj7zt7myRFkR6FR51LYu.jpg",
-            "movies": 450465
+            "name": "Peter Jackson",
+            "img": "/kSrfI3TbMdIMmPVOflLQ56OfscB.jpg"
         }
     },
     {
-        "pk": 19272,
+        "pk": 80602,
         "model": "movies.Director",
         "fields": {
-            "name": "Joe Russo",
-            "img": "/679Os4tbY1YsU01KdLhM1NPXNWu.jpg",
-            "movies": 299536
+            "name": "Tyler Perry",
+            "img": "/fdBvkrv4lSKZ97eDLpmjlK1Tnbx.jpg"
         }
     },
     {
-        "pk": 19271,
+        "pk": 1293994,
         "model": "movies.Director",
         "fields": {
-            "name": "Anthony Russo",
-            "img": "/fIa5wXK7MHAquhefTr3TcnZiYy8.jpg",
-            "movies": 299536
+            "name": "Jon Watts",
+            "img": "/5CKKBhuScdsHs2KPBBx5pveMOQQ.jpg"
         }
     },
     {
-        "pk": 1586194,
+        "pk": 9033,
         "model": "movies.Director",
         "fields": {
-            "name": "Jenny Gage",
-            "img": "/wdvHWFssy6KAliSrY89pvszBlmO.jpg",
-            "movies": 537915
+            "name": "Christopher McQuarrie",
+            "img": "/b2zCcMMd0cawVhYjmSwICu2eTRu.jpg"
         }
     },
     {
-        "pk": 1495940,
+        "pk": 1551545,
         "model": "movies.Director",
         "fields": {
-            "name": "Frankie Chen",
-            "img": "/3jfec79vr7xVdgW8qJgTdheYXyt.jpg",
-            "movies": 576393
+            "name": "Steven Caple Jr.",
+            "img": "/aU8p958QyhfV2jurc3L5pn7sN6L.jpg"
         }
     },
     {
-        "pk": 1362815,
+        "pk": 67367,
         "model": "movies.Director",
         "fields": {
-            "name": "David Yarovesky",
-            "img": "/fNaQfVEnSrK6ff2bEaatRsEtMO2.jpg",
-            "movies": 531309
+            "name": "Rian Johnson",
+            "img": "/j7ACBDkCgMqf6sSz2XeCmfqGNd3.jpg"
         }
     },
     {
-        "pk": 84124,
+        "pk": 1354171,
         "model": "movies.Director",
         "fields": {
-            "name": "Tina Gordon Chism",
-            "img": "/2Vho1qUJBLUPlgh3c4bnXTPKZUs.jpg",
-            "movies": 526050
+            "name": "Henry Hobson",
+            "img": null
         }
     },
     {
-        "pk": 12891,
+        "pk": 9032,
         "model": "movies.Director",
         "fields": {
-            "name": "Joss Whedon",
-            "img": "/dTiVsuaTVTeGmvkhcyJvKp2A5kr.jpg",
-            "movies": 24428
+            "name": "Bryan Singer",
+            "img": "/ts06thbCv9Ug2mNpcbcrmLGRL4Q.jpg"
         }
     },
     {
-        "pk": 20739,
+        "pk": 6159,
         "model": "movies.Director",
         "fields": {
-            "name": "Adam Shankman",
-            "img": "/alYdaxIYDvJZFnVrM2n01jcafKo.jpg",
-            "movies": 487297
+            "name": "Ron Howard",
+            "img": "/67WIgpOGIeb4NSN9yIxsOITbnns.jpg"
         }
     },
     {
-        "pk": 69797,
+        "pk": 525,
         "model": "movies.Director",
         "fields": {
-            "name": "Dean DeBlois",
-            "img": "/vofzPcdNUzUD1xqaMUwMAJRgFiy.jpg",
-            "movies": 166428
+            "name": "Christopher Nolan",
+            "img": "/zPvcQPnp3q6R9mqJGm8RENsXYY9.jpg"
         }
     },
     {
-        "pk": 1290272,
+        "pk": 9340,
         "model": "movies.Director",
         "fields": {
-            "name": "Dennis Widmyer",
-            "img": "/wZbN0JZd6kbGAHRglEH8u7CfGJ0.jpg",
-            "movies": 157433
+            "name": "Lana Wachowski",
+            "img": "/fxZ7SpJCZ9DgJERWEpGmn5a4mdp.jpg"
         }
     },
     {
-        "pk": 1154561,
+        "pk": 9339,
         "model": "movies.Director",
         "fields": {
-            "name": "Kevin Kölsch",
-            "img": "/4494wQuVUThEzLBAFkEPhXgpUyS.jpg",
-            "movies": 157433
+            "name": "Lilly Wachowski",
+            "img": "/9sxE10LUA7TGlS1pHw2RM6mckHp.jpg"
         }
     },
     {
-        "pk": 1056121,
+        "pk": 111736,
         "model": "movies.Director",
         "fields": {
-            "name": "Ryan Coogler",
-            "img": "/ddGaRFrlDdyR0OBTd1hAMWnfvim.jpg",
-            "movies": 284054
+            "name": "Klay Hall",
+            "img": null
         }
     },
     {
-        "pk": 1481804,
+        "pk": 1179066,
         "model": "movies.Director",
         "fields": {
-            "name": "Tomoka Nagaoka",
-            "img": null,
-            "movies": 566555
+            "name": "Wes Ball",
+            "img": "/zVPXrhuAxYAWlwDEWCaqeUPycFx.jpg"
         }
     },
     {
-        "pk": 19272,
+        "pk": 63571,
         "model": "movies.Director",
         "fields": {
-            "name": "Joe Russo",
-            "img": "/679Os4tbY1YsU01KdLhM1NPXNWu.jpg",
-            "movies": 299534
+            "name": "Wilson Yip",
+            "img": "/wJHHLPt6oVvurN9Sk4ff1MFh7z6.jpg"
         }
     },
     {
-        "pk": 19271,
+        "pk": 525,
         "model": "movies.Director",
         "fields": {
-            "name": "Anthony Russo",
-            "img": "/fIa5wXK7MHAquhefTr3TcnZiYy8.jpg",
-            "movies": 299534
+            "name": "Christopher Nolan",
+            "img": "/zPvcQPnp3q6R9mqJGm8RENsXYY9.jpg"
         }
     },
     {
-        "pk": 1302082,
+        "pk": 7467,
         "model": "movies.Director",
         "fields": {
-            "name": "David F. Sandberg",
-            "img": "/10p2i4OW0JWAbnOb7yMLUEGdSqM.jpg",
-            "movies": 287947
+            "name": "David Fincher",
+            "img": "/dcBHejOsKvzVZVozWJAPzYthb8X.jpg"
         }
     },
     {
-        "pk": 65630,
+        "pk": 51894,
         "model": "movies.Director",
         "fields": {
-            "name": "Rob Letterman",
-            "img": "/v2GPTQ41ZqHtML8W1ft3UJej5xA.jpg",
-            "movies": 447404
+            "name": "J.A. Bayona",
+            "img": "/cnbbnS7K8Uu6yohAfSRHv5Kxc7r.jpg"
         }
     },
     {
-        "pk": 53068,
+        "pk": 76595,
         "model": "movies.Director",
         "fields": {
-            "name": "Ryan Fleck",
-            "img": "/z5EL2oWKEVUgFb6wjoX0BSxthsJ.jpg",
-            "movies": 299537
+            "name": "Byron Howard",
+            "img": "/ePJXkxrD44nM0VB7Xx9Q4ityzfT.jpg"
         }
     },
     {
-        "pk": 53069,
+        "pk": 165787,
         "model": "movies.Director",
         "fields": {
-            "name": "Anna Boden",
-            "img": "/h5YMXdI42zb0uqn5UJHF4fT9AER.jpg",
-            "movies": 299537
+            "name": "Rich Moore",
+            "img": "/oIAmkZf9LuJuMqR8zSchoD3FJT8.jpg"
         }
     },
     {
-        "pk": 1424064,
+        "pk": 15358,
         "model": "movies.Director",
         "fields": {
-            "name": "Kyouhei Yamaguchi",
-            "img": "/uAFzPnQsnGzkR9KlU260TsGMFI1.jpg",
-            "movies": 543103
+            "name": "Vic Armstrong",
+            "img": null
         }
     },
     {
-        "pk": 1297518,
+        "pk": 1066705,
         "model": "movies.Director",
         "fields": {
-            "name": "Kazuaki Imai",
-            "img": null,
-            "movies": 495925
+            "name": "Vince Marcello",
+            "img": null
         }
     },
     {
-        "pk": 95972,
+        "pk": 15217,
         "model": "movies.Director",
         "fields": {
-            "name": "Hans Petter Moland",
-            "img": "/xPUm6zfCrmDZb8fkby2zzF6sp8z.jpg",
-            "movies": 438650
+            "name": "Zack Snyder",
+            "img": "/iD0GDqkvJXDXiNEZej198hjt3Tt.jpg"
         }
     },
     {
-        "pk": 57581,
+        "pk": 15217,
         "model": "movies.Director",
         "fields": {
-            "name": "Neil Marshall",
-            "img": "/Au5p9cFlj2XVoVIECQ40ruOp1Qz.jpg",
-            "movies": 456740
+            "name": "Zack Snyder",
+            "img": "/iD0GDqkvJXDXiNEZej198hjt3Tt.jpg"
         }
     },
     {
-        "pk": 11614,
+        "pk": 222470,
         "model": "movies.Director",
         "fields": {
-            "name": "M. Night Shyamalan",
-            "img": "/shV9dGXMj7zt7myRFkR6FR51LYu.jpg",
-            "movies": 450465
+            "name": "Todd Strauss-Schulson",
+            "img": "/ebACQB0WKup42JE6epPJMdcLT0I.jpg"
         }
     },
     {
-        "pk": 19272,
+        "pk": 15774,
         "model": "movies.Director",
         "fields": {
-            "name": "Joe Russo",
-            "img": "/679Os4tbY1YsU01KdLhM1NPXNWu.jpg",
-            "movies": 299536
+            "name": "Chris Buck",
+            "img": "/aFzDfJIIOC0tkGgqpwsZoDHzqu0.jpg"
         }
     },
     {
-        "pk": 19271,
+        "pk": 1120694,
         "model": "movies.Director",
         "fields": {
-            "name": "Anthony Russo",
-            "img": "/fIa5wXK7MHAquhefTr3TcnZiYy8.jpg",
-            "movies": 299536
+            "name": "Jennifer Lee",
+            "img": "/9BkQnsppXFWcNSRGo4GJ6QNq313.jpg"
         }
     },
     {
-        "pk": 1586194,
+        "pk": 1449727,
         "model": "movies.Director",
         "fields": {
-            "name": "Jenny Gage",
-            "img": "/wdvHWFssy6KAliSrY89pvszBlmO.jpg",
-            "movies": 537915
+            "name": "Rejishh Midhila",
+            "img": null
         }
     },
     {
-        "pk": 1495940,
+        "pk": 137427,
         "model": "movies.Director",
         "fields": {
-            "name": "Frankie Chen",
-            "img": "/3jfec79vr7xVdgW8qJgTdheYXyt.jpg",
-            "movies": 576393
+            "name": "Denis Villeneuve",
+            "img": "/433lXlkdMGXzrpwnKM4Ul1sln15.jpg"
         }
     },
     {
-        "pk": 1362815,
+        "pk": 7396,
         "model": "movies.Director",
         "fields": {
-            "name": "David Yarovesky",
-            "img": "/fNaQfVEnSrK6ff2bEaatRsEtMO2.jpg",
-            "movies": 531309
+            "name": "Peter Farrelly",
+            "img": "/8vLjukhhj4dKQSbtZ8qFr2Ybf5T.jpg"
         }
     },
     {
-        "pk": 84124,
+        "pk": 1627343,
         "model": "movies.Director",
         "fields": {
-            "name": "Tina Gordon Chism",
-            "img": "/2Vho1qUJBLUPlgh3c4bnXTPKZUs.jpg",
-            "movies": 526050
+            "name": "Tatsuya Koyanagi",
+            "img": null
         }
     },
     {
-        "pk": 12891,
+        "pk": 1624751,
         "model": "movies.Director",
         "fields": {
-            "name": "Joss Whedon",
-            "img": "/dTiVsuaTVTeGmvkhcyJvKp2A5kr.jpg",
-            "movies": 24428
+            "name": "Masaharu Watanabe",
+            "img": null
         }
     },
     {
-        "pk": 20739,
+        "pk": 69416,
         "model": "movies.Director",
         "fields": {
-            "name": "Adam Shankman",
-            "img": "/alYdaxIYDvJZFnVrM2n01jcafKo.jpg",
-            "movies": 487297
+            "name": "Bradley Raymond",
+            "img": "/jU7NyWtjGUh3YJSGOjHseTSSOou.jpg"
         }
     },
     {
-        "pk": 69797,
+        "pk": 2710,
         "model": "movies.Director",
         "fields": {
-            "name": "Dean DeBlois",
-            "img": "/vofzPcdNUzUD1xqaMUwMAJRgFiy.jpg",
-            "movies": 166428
+            "name": "James Cameron",
+            "img": "/4TjSh3Er5LIOvFcB5inaRDPrBKu.jpg"
         }
     },
     {
-        "pk": 1290272,
+        "pk": 32278,
         "model": "movies.Director",
         "fields": {
-            "name": "Dennis Widmyer",
-            "img": "/wZbN0JZd6kbGAHRglEH8u7CfGJ0.jpg",
-            "movies": 157433
+            "name": "Matt Reeves",
+            "img": "/nVMMYJJa2UTg9WaTYrd8c0E9B3A.jpg"
         }
     },
     {
-        "pk": 1154561,
+        "pk": 51329,
         "model": "movies.Director",
         "fields": {
-            "name": "Kevin Kölsch",
-            "img": "/4494wQuVUThEzLBAFkEPhXgpUyS.jpg",
-            "movies": 157433
+            "name": "Bradley Cooper",
+            "img": "/w2iNEYKNuWzGfGzISeh4P6IiR4U.jpg"
         }
     },
     {
-        "pk": 1056121,
+        "pk": 78160,
         "model": "movies.Director",
         "fields": {
-            "name": "Ryan Coogler",
-            "img": "/ddGaRFrlDdyR0OBTd1hAMWnfvim.jpg",
-            "movies": 284054
+            "name": "Luca Guadagnino",
+            "img": "/lO2GD4s6fRloZLEhsZgBlhJQasE.jpg"
         }
     },
     {
-        "pk": 1481804,
+        "pk": 138,
         "model": "movies.Director",
         "fields": {
-            "name": "Tomoka Nagaoka",
-            "img": null,
-            "movies": 566555
+            "name": "Quentin Tarantino",
+            "img": "/rivHScdhT043n5jCSci7ToqLsoE.jpg"
         }
     },
     {
-        "pk": 19272,
+        "pk": 11343,
         "model": "movies.Director",
         "fields": {
-            "name": "Joe Russo",
-            "img": "/679Os4tbY1YsU01KdLhM1NPXNWu.jpg",
-            "movies": 299534
+            "name": "David Yates",
+            "img": "/fiIZNbwdK07ntpE2wpLRIMuSXEy.jpg"
         }
     },
     {
-        "pk": 19271,
+        "pk": 1776,
         "model": "movies.Director",
         "fields": {
-            "name": "Anthony Russo",
-            "img": "/fIa5wXK7MHAquhefTr3TcnZiYy8.jpg",
-            "movies": 299534
+            "name": "Francis Ford Coppola",
+            "img": "/mDNBl1DUkC1BkkMsbtaNEFQQaHu.jpg"
         }
     },
     {
-        "pk": 1302082,
+        "pk": 9888,
         "model": "movies.Director",
         "fields": {
-            "name": "David F. Sandberg",
-            "img": "/10p2i4OW0JWAbnOb7yMLUEGdSqM.jpg",
-            "movies": 287947
+            "name": "Claire Denis",
+            "img": "/v3dZPE1f1ICeF3m2GYYFvwuqvfT.jpg"
         }
     },
     {
-        "pk": 65630,
+        "pk": 140151,
         "model": "movies.Director",
         "fields": {
-            "name": "Rob Letterman",
-            "img": "/v2GPTQ41ZqHtML8W1ft3UJej5xA.jpg",
-            "movies": 447404
+            "name": "William Bindley",
+            "img": "/7KWLEzEgfag8shGRQsbmmT9zEJl.jpg"
         }
     },
     {
-        "pk": 53068,
+        "pk": 18865,
         "model": "movies.Director",
         "fields": {
-            "name": "Ryan Fleck",
-            "img": "/z5EL2oWKEVUgFb6wjoX0BSxthsJ.jpg",
-            "movies": 299537
+            "name": "Louis Leterrier",
+            "img": "/54rsjgcmdZj2wymmKy3FPRgkrie.jpg"
         }
     },
     {
-        "pk": 53069,
+        "pk": 5174,
         "model": "movies.Director",
         "fields": {
-            "name": "Anna Boden",
-            "img": "/h5YMXdI42zb0uqn5UJHF4fT9AER.jpg",
-            "movies": 299537
+            "name": "Barry Sonnenfeld",
+            "img": "/m8vIfbXI44Fd8VK7HSJRisYQjQc.jpg"
         }
     },
     {
-        "pk": 1424064,
+        "pk": 1496011,
         "model": "movies.Director",
         "fields": {
-            "name": "Kyouhei Yamaguchi",
-            "img": "/uAFzPnQsnGzkR9KlU260TsGMFI1.jpg",
-            "movies": 543103
+            "name": "Matt Brown",
+            "img": "/hNUhL6UA7eqUfRdTWzPeLJYaVc2.jpg"
         }
     },
     {
-        "pk": 1297518,
+        "pk": 227439,
         "model": "movies.Director",
         "fields": {
-            "name": "Kazuaki Imai",
-            "img": null,
-            "movies": 495925
+            "name": "Don Hall",
+            "img": "/jVevHpWoDaepeNmbNpBYHCktdd5.jpg"
         }
     },
     {
-        "pk": 95972,
+        "pk": 70238,
         "model": "movies.Director",
         "fields": {
-            "name": "Hans Petter Moland",
-            "img": "/xPUm6zfCrmDZb8fkby2zzF6sp8z.jpg",
-            "movies": 438650
+            "name": "Chris Williams",
+            "img": "/eE2NDdeKN1DC3XuV6L4xuEbVaS.jpg"
         }
     },
     {
-        "pk": 57581,
+        "pk": 17496,
         "model": "movies.Director",
         "fields": {
-            "name": "Neil Marshall",
-            "img": "/Au5p9cFlj2XVoVIECQ40ruOp1Qz.jpg",
-            "movies": 456740
+            "name": "Jacques Audiard",
+            "img": "/dJ2XCySH5NKZTEEapYK3RaBtL61.jpg"
         }
     },
     {
-        "pk": 11614,
+        "pk": 55075,
         "model": "movies.Director",
         "fields": {
-            "name": "M. Night Shyamalan",
-            "img": "/shV9dGXMj7zt7myRFkR6FR51LYu.jpg",
-            "movies": 450465
+            "name": "Jeff Wadlow",
+            "img": "/cOTfT6Jmg5aG86UJpgqVM5pY9Wv.jpg"
         }
     },
     {
-        "pk": 19272,
+        "pk": 1401474,
         "model": "movies.Director",
         "fields": {
-            "name": "Joe Russo",
-            "img": "/679Os4tbY1YsU01KdLhM1NPXNWu.jpg",
-            "movies": 299536
+            "name": "Corin Hardy",
+            "img": "/p1ggxloo9MMOS72BLGuM3NOzhxQ.jpg"
         }
     },
     {
-        "pk": 19271,
+        "pk": 608,
         "model": "movies.Director",
         "fields": {
-            "name": "Anthony Russo",
-            "img": "/fIa5wXK7MHAquhefTr3TcnZiYy8.jpg",
-            "movies": 299536
+            "name": "Hayao Miyazaki",
+            "img": "/1OBQPIwR88n49oAEzk47k0fhhOV.jpg"
         }
     },
     {
-        "pk": 1586194,
+        "pk": 2662,
         "model": "movies.Director",
         "fields": {
-            "name": "Jenny Gage",
-            "img": "/wdvHWFssy6KAliSrY89pvszBlmO.jpg",
-            "movies": 537915
+            "name": "Frank Capra",
+            "img": "/hvPrtfKnJs9arck1zKGnG8uRkBC.jpg"
         }
     },
     {
-        "pk": 1495940,
+        "pk": 155531,
         "model": "movies.Director",
         "fields": {
-            "name": "Frankie Chen",
-            "img": "/3jfec79vr7xVdgW8qJgTdheYXyt.jpg",
-            "movies": 576393
+            "name": "Joe Cornish",
+            "img": "/yJNJ0haP69aPf3fhiCJXvlESDss.jpg"
         }
     },
     {
-        "pk": 1362815,
+        "pk": 17655,
         "model": "movies.Director",
         "fields": {
-            "name": "David Yarovesky",
-            "img": "/fNaQfVEnSrK6ff2bEaatRsEtMO2.jpg",
-            "movies": 531309
+            "name": "Farhad Safinia",
+            "img": null
         }
     },
     {
-        "pk": 84124,
+        "pk": 9032,
         "model": "movies.Director",
         "fields": {
-            "name": "Tina Gordon Chism",
-            "img": "/2Vho1qUJBLUPlgh3c4bnXTPKZUs.jpg",
-            "movies": 526050
+            "name": "Bryan Singer",
+            "img": "/ts06thbCv9Ug2mNpcbcrmLGRL4Q.jpg"
         }
     },
     {
-        "pk": 12891,
+        "pk": 10943,
         "model": "movies.Director",
         "fields": {
-            "name": "Joss Whedon",
-            "img": "/dTiVsuaTVTeGmvkhcyJvKp2A5kr.jpg",
-            "movies": 24428
+            "name": "Francis Lawrence",
+            "img": "/pyGWo5mAwZ2Koe6leB2RjKd7vmc.jpg"
         }
     },
     {
-        "pk": 20739,
+        "pk": 929825,
         "model": "movies.Director",
         "fields": {
-            "name": "Adam Shankman",
-            "img": "/alYdaxIYDvJZFnVrM2n01jcafKo.jpg",
-            "movies": 487297
+            "name": "Ava DuVernay",
+            "img": "/84rc8I3Wf5zkCWGMNeTtmRekHW0.jpg"
+        }
+    },
+    {
+        "pk": 7623,
+        "model": "movies.Director",
+        "fields": {
+            "name": "Sam Raimi",
+            "img": "/uEAaCUJzyMI8N5mOVyLtaOPKoEf.jpg"
+        }
+    },
+    {
+        "pk": 11181,
+        "model": "movies.Director",
+        "fields": {
+            "name": "Kenneth Branagh",
+            "img": "/bmpGjbqvAVNOK3ggiuET2Jl96tZ.jpg"
+        }
+    },
+    {
+        "pk": 12962,
+        "model": "movies.Director",
+        "fields": {
+            "name": "Jon Turteltaub",
+            "img": "/borF48XTUkOCKE3ryh3BFxe4Unr.jpg"
+        }
+    },
+    {
+        "pk": 84335,
+        "model": "movies.Director",
+        "fields": {
+            "name": "Joe Lynch",
+            "img": "/maeIOyMqToTT0XuWxO0Fy40lNzR.jpg"
+        }
+    },
+    {
+        "pk": 930707,
+        "model": "movies.Director",
+        "fields": {
+            "name": "Colin Trevorrow",
+            "img": "/txsIRCos9meRg5dYCsrJ2BNbrsB.jpg"
+        }
+    },
+    {
+        "pk": 1315177,
+        "model": "movies.Director",
+        "fields": {
+            "name": "No Zin-soo",
+            "img": null
+        }
+    },
+    {
+        "pk": 928490,
+        "model": "movies.Director",
+        "fields": {
+            "name": "Camille Delamarre",
+            "img": null
         }
     },
     {
@@ -1039,26 +1484,207 @@
         "model": "movies.Director",
         "fields": {
             "name": "Dean DeBlois",
-            "img": "/vofzPcdNUzUD1xqaMUwMAJRgFiy.jpg",
-            "movies": 166428
+            "img": "/vofzPcdNUzUD1xqaMUwMAJRgFiy.jpg"
         }
     },
     {
-        "pk": 1290272,
+        "pk": 20907,
         "model": "movies.Director",
         "fields": {
-            "name": "Dennis Widmyer",
-            "img": "/wZbN0JZd6kbGAHRglEH8u7CfGJ0.jpg",
-            "movies": 157433
+            "name": "Antoine Fuqua",
+            "img": "/z8BLZcMQxE4GqUiEc2gsoAzc8xS.jpg"
         }
     },
     {
-        "pk": 1154561,
+        "pk": 108,
         "model": "movies.Director",
         "fields": {
-            "name": "Kevin Kölsch",
-            "img": "/4494wQuVUThEzLBAFkEPhXgpUyS.jpg",
-            "movies": 157433
+            "name": "Peter Jackson",
+            "img": "/kSrfI3TbMdIMmPVOflLQ56OfscB.jpg"
+        }
+    },
+    {
+        "pk": 11343,
+        "model": "movies.Director",
+        "fields": {
+            "name": "David Yates",
+            "img": "/fiIZNbwdK07ntpE2wpLRIMuSXEy.jpg"
+        }
+    },
+    {
+        "pk": 59,
+        "model": "movies.Director",
+        "fields": {
+            "name": "Luc Besson",
+            "img": "/2TzRsqSx0xb1DK3HsEQKSXhRGcu.jpg"
+        }
+    },
+    {
+        "pk": 2917,
+        "model": "movies.Director",
+        "fields": {
+            "name": "James Whale",
+            "img": "/xyJ2YCs8eUZoPQ5SUHGadFosEWR.jpg"
+        }
+    },
+    {
+        "pk": 15810,
+        "model": "movies.Director",
+        "fields": {
+            "name": "Ron Clements",
+            "img": "/iCq89uPdVjtGkO7UbTn5UPqHIPx.jpg"
+        }
+    },
+    {
+        "pk": 15811,
+        "model": "movies.Director",
+        "fields": {
+            "name": "John Musker",
+            "img": "/do3vzNWSKhJLARV8VfNS9q9rRXV.jpg"
+        }
+    },
+    {
+        "pk": 578,
+        "model": "movies.Director",
+        "fields": {
+            "name": "Ridley Scott",
+            "img": "/oTAL0z0vsjipCruxXUsDUIieuhk.jpg"
+        }
+    },
+    {
+        "pk": 89112,
+        "model": "movies.Director",
+        "fields": {
+            "name": "Anthony Leondis",
+            "img": "/ri6nyNxNmCVO6ZYiv29qKgzVYsA.jpg"
+        }
+    },
+    {
+        "pk": 12300,
+        "model": "movies.Director",
+        "fields": {
+            "name": "Fred M. Wilcox",
+            "img": null
+        }
+    },
+    {
+        "pk": 57113,
+        "model": "movies.Director",
+        "fields": {
+            "name": "Dan Gilroy",
+            "img": "/am569DiWC0blnbM98ZphiwBItsS.jpg"
+        }
+    },
+    {
+        "pk": 52114,
+        "model": "movies.Director",
+        "fields": {
+            "name": "Jon Lucas",
+            "img": "/7MT62A1wIX6u4mjSimVDOcbRQ5s.jpg"
+        }
+    },
+    {
+        "pk": 226089,
+        "model": "movies.Director",
+        "fields": {
+            "name": "Scott Moore",
+            "img": "/txnoRflzzdTwjMaTgrVtUEnTRWp.jpg"
+        }
+    },
+    {
+        "pk": 71329,
+        "model": "movies.Director",
+        "fields": {
+            "name": "Jonas Åkerlund",
+            "img": "/bGnXImWTXDPvvwD4kcS7NdlMGW8.jpg"
+        }
+    },
+    {
+        "pk": 14773,
+        "model": "movies.Director",
+        "fields": {
+            "name": "Don Siegel",
+            "img": "/vylrJ53CsYbxECA8c2CDEqkYKge.jpg"
+        }
+    },
+    {
+        "pk": 1044250,
+        "model": "movies.Director",
+        "fields": {
+            "name": "Panos Cosmatos",
+            "img": "/rGjZWiTtr21BZ1fpntREEuSnEqg.jpg"
+        }
+    },
+    {
+        "pk": 26713,
+        "model": "movies.Director",
+        "fields": {
+            "name": "Chuck Russell",
+            "img": "/vgZnLAHFCi3ZwwEcTSwdvK7pKHF.jpg"
+        }
+    },
+    {
+        "pk": 2710,
+        "model": "movies.Director",
+        "fields": {
+            "name": "James Cameron",
+            "img": "/4TjSh3Er5LIOvFcB5inaRDPrBKu.jpg"
+        }
+    },
+    {
+        "pk": 7879,
+        "model": "movies.Director",
+        "fields": {
+            "name": "John Lasseter",
+            "img": "/7EdqiNbr4FRjIhKHyPPdFfEEEFG.jpg"
+        }
+    },
+    {
+        "pk": 11343,
+        "model": "movies.Director",
+        "fields": {
+            "name": "David Yates",
+            "img": "/fiIZNbwdK07ntpE2wpLRIMuSXEy.jpg"
+        }
+    },
+    {
+        "pk": 1719601,
+        "model": "movies.Director",
+        "fields": {
+            "name": "Nicolai Fuglsig",
+            "img": null
+        }
+    },
+    {
+        "pk": 57270,
+        "model": "movies.Director",
+        "fields": {
+            "name": "Robert Schwentke",
+            "img": "/gSJ6HF0fgqT3rbr2Mb2d2OemBaD.jpg"
+        }
+    },
+    {
+        "pk": 136495,
+        "model": "movies.Director",
+        "fields": {
+            "name": "Damien Chazelle",
+            "img": "/x5bpTU8b2mwgPpPDGJGWsJ1Qt3t.jpg"
+        }
+    },
+    {
+        "pk": 578,
+        "model": "movies.Director",
+        "fields": {
+            "name": "Ridley Scott",
+            "img": "/oTAL0z0vsjipCruxXUsDUIieuhk.jpg"
+        }
+    },
+    {
+        "pk": 7467,
+        "model": "movies.Director",
+        "fields": {
+            "name": "David Fincher",
+            "img": "/dcBHejOsKvzVZVozWJAPzYthb8X.jpg"
         }
     },
     {
@@ -1066,188 +1692,351 @@
         "model": "movies.Director",
         "fields": {
             "name": "Ryan Coogler",
-            "img": "/ddGaRFrlDdyR0OBTd1hAMWnfvim.jpg",
-            "movies": 284054
+            "img": "/ddGaRFrlDdyR0OBTd1hAMWnfvim.jpg"
         }
     },
     {
-        "pk": 1481804,
+        "pk": 1215,
         "model": "movies.Director",
         "fields": {
-            "name": "Tomoka Nagaoka",
-            "img": null,
-            "movies": 566555
+            "name": "Raja Gosnell",
+            "img": "/jbcOXhl4QGaYcvAK5WsbEARkkQZ.jpg"
         }
     },
     {
-        "pk": 19272,
+        "pk": 26875,
         "model": "movies.Director",
         "fields": {
-            "name": "Joe Russo",
-            "img": "/679Os4tbY1YsU01KdLhM1NPXNWu.jpg",
-            "movies": 299534
+            "name": "Hideo Nakata",
+            "img": "/fQ3XJXTNpxzt6gMpMM0pJOyuibA.jpg"
         }
     },
     {
-        "pk": 19271,
+        "pk": 4027,
         "model": "movies.Director",
         "fields": {
-            "name": "Anthony Russo",
-            "img": "/fIa5wXK7MHAquhefTr3TcnZiYy8.jpg",
-            "movies": 299534
+            "name": "Frank Darabont",
+            "img": "/9KVvZtDyy8DXacw2TTsjC9VLxQi.jpg"
         }
     },
     {
-        "pk": 1302082,
+        "pk": 608,
         "model": "movies.Director",
         "fields": {
-            "name": "David F. Sandberg",
-            "img": "/10p2i4OW0JWAbnOb7yMLUEGdSqM.jpg",
-            "movies": 287947
+            "name": "Hayao Miyazaki",
+            "img": "/1OBQPIwR88n49oAEzk47k0fhhOV.jpg"
         }
     },
     {
-        "pk": 65630,
+        "pk": 56661,
         "model": "movies.Director",
         "fields": {
-            "name": "Rob Letterman",
-            "img": "/v2GPTQ41ZqHtML8W1ft3UJej5xA.jpg",
-            "movies": 447404
+            "name": "Jonathan Levine",
+            "img": "/gfJOKZPSbpzls7FV0Ogv4IpEeXh.jpg"
         }
     },
     {
-        "pk": 53068,
+        "pk": 1574550,
         "model": "movies.Director",
         "fields": {
-            "name": "Ryan Fleck",
-            "img": "/z5EL2oWKEVUgFb6wjoX0BSxthsJ.jpg",
-            "movies": 299537
+            "name": "Ali Abbasi",
+            "img": "/iw3TjTkMidv4yjkIdkPYPHwAT3h.jpg"
         }
     },
     {
-        "pk": 53069,
+        "pk": 1107571,
         "model": "movies.Director",
         "fields": {
-            "name": "Anna Boden",
-            "img": "/h5YMXdI42zb0uqn5UJHF4fT9AER.jpg",
-            "movies": 299537
+            "name": "Syafiq Yusof",
+            "img": "/9pMjK8MwT1bnuxEABvhROqqFr02.jpg"
         }
     },
     {
-        "pk": 1424064,
+        "pk": 8685,
         "model": "movies.Director",
         "fields": {
-            "name": "Kyouhei Yamaguchi",
-            "img": "/uAFzPnQsnGzkR9KlU260TsGMFI1.jpg",
-            "movies": 543103
+            "name": "Andrew Niccol",
+            "img": "/ffu94ltKqX6mAPSWdimz7MIdJMZ.jpg"
         }
     },
     {
-        "pk": 1297518,
+        "pk": 34396,
         "model": "movies.Director",
         "fields": {
-            "name": "Kazuaki Imai",
-            "img": null,
-            "movies": 495925
+            "name": "Roxann Dawson",
+            "img": "/n4YNcGj3wCg9bKbDj1U3BRYoUXL.jpg"
         }
     },
     {
-        "pk": 95972,
+        "pk": 4786,
         "model": "movies.Director",
         "fields": {
-            "name": "Hans Petter Moland",
-            "img": "/xPUm6zfCrmDZb8fkby2zzF6sp8z.jpg",
-            "movies": 438650
+            "name": "Richard Attenborough",
+            "img": "/Abo8fAcdruACs344ut6PNSKH7N4.jpg"
         }
     },
     {
-        "pk": 57581,
+        "pk": 75035,
         "model": "movies.Director",
         "fields": {
-            "name": "Neil Marshall",
-            "img": "/Au5p9cFlj2XVoVIECQ40ruOp1Qz.jpg",
-            "movies": 456740
+            "name": "Olivier Megaton",
+            "img": "/kihfuDNnnl41DyYz3uRiMG9pYgU.jpg"
         }
     },
     {
-        "pk": 11614,
+        "pk": 52139,
         "model": "movies.Director",
         "fields": {
-            "name": "M. Night Shyamalan",
-            "img": "/shV9dGXMj7zt7myRFkR6FR51LYu.jpg",
-            "movies": 450465
+            "name": "Seth MacFarlane",
+            "img": "/4N0P6CN6HfnswVBIXzdUWPQ1cRN.jpg"
         }
     },
     {
-        "pk": 19272,
+        "pk": 10723,
         "model": "movies.Director",
         "fields": {
-            "name": "Joe Russo",
-            "img": "/679Os4tbY1YsU01KdLhM1NPXNWu.jpg",
-            "movies": 299536
+            "name": "Mike Newell",
+            "img": "/aE6M4LhrTqtQ8i3WI5QeZAFN4pO.jpg"
         }
     },
     {
-        "pk": 19271,
+        "pk": 132876,
         "model": "movies.Director",
         "fields": {
-            "name": "Anthony Russo",
-            "img": "/fIa5wXK7MHAquhefTr3TcnZiYy8.jpg",
-            "movies": 299536
+            "name": "Brad Peyton",
+            "img": "/7F7dM4A6QbA67xOxTJyv3aqinrA.jpg"
         }
     },
     {
-        "pk": 1586194,
+        "pk": 15217,
         "model": "movies.Director",
         "fields": {
-            "name": "Jenny Gage",
-            "img": "/wdvHWFssy6KAliSrY89pvszBlmO.jpg",
-            "movies": 537915
+            "name": "Zack Snyder",
+            "img": "/iD0GDqkvJXDXiNEZej198hjt3Tt.jpg"
         }
     },
     {
-        "pk": 1495940,
+        "pk": 608,
         "model": "movies.Director",
         "fields": {
-            "name": "Frankie Chen",
-            "img": "/3jfec79vr7xVdgW8qJgTdheYXyt.jpg",
-            "movies": 576393
+            "name": "Hayao Miyazaki",
+            "img": "/1OBQPIwR88n49oAEzk47k0fhhOV.jpg"
         }
     },
     {
-        "pk": 1362815,
+        "pk": 3055,
         "model": "movies.Director",
         "fields": {
-            "name": "David Yarovesky",
-            "img": "/fNaQfVEnSrK6ff2bEaatRsEtMO2.jpg",
-            "movies": 531309
+            "name": "David Mackenzie",
+            "img": "/oHZ2kkGICUnSbm73BQFK3Hau82f.jpg"
         }
     },
     {
-        "pk": 84124,
+        "pk": 122423,
         "model": "movies.Director",
         "fields": {
-            "name": "Tina Gordon Chism",
-            "img": "/2Vho1qUJBLUPlgh3c4bnXTPKZUs.jpg",
-            "movies": 526050
+            "name": "Yorgos Lanthimos",
+            "img": "/p6ykeQGWagu0wkLUJZX5xVtAkG8.jpg"
         }
     },
     {
-        "pk": 12891,
+        "pk": 1278722,
         "model": "movies.Director",
         "fields": {
-            "name": "Joss Whedon",
-            "img": "/dTiVsuaTVTeGmvkhcyJvKp2A5kr.jpg",
-            "movies": 24428
+            "name": "Trish Sie",
+            "img": "/wB8cnaVXGikYjoWhcyvcNf8wWi9.jpg"
         }
     },
     {
-        "pk": 20739,
+        "pk": 97026,
         "model": "movies.Director",
         "fields": {
-            "name": "Adam Shankman",
-            "img": "/alYdaxIYDvJZFnVrM2n01jcafKo.jpg",
-            "movies": 487297
+            "name": "John Luessenhop",
+            "img": "/HI2jnUyVBZu2xYOohzjM4nB8XQ.jpg"
+        }
+    },
+    {
+        "pk": 62854,
+        "model": "movies.Director",
+        "fields": {
+            "name": "Akiva Schaffer",
+            "img": "/AndF7ndhBbCgHTicoHjCKDxmoi5.jpg"
+        }
+    },
+    {
+        "pk": 62863,
+        "model": "movies.Director",
+        "fields": {
+            "name": "Jorma Taccone",
+            "img": "/8NqZvjdsMIT3HgfdltoMBqxsEcB.jpg"
+        }
+    },
+    {
+        "pk": 58712,
+        "model": "movies.Director",
+        "fields": {
+            "name": "Steve Miner",
+            "img": "/wrd7rzHlMzwwS8CG8mcf6zpm7sE.jpg"
+        }
+    },
+    {
+        "pk": 59998,
+        "model": "movies.Director",
+        "fields": {
+            "name": "Greg McLean",
+            "img": "/2DPAARHLV29cCdQeUjkQ06lZh9b.jpg"
+        }
+    },
+    {
+        "pk": 49903,
+        "model": "movies.Director",
+        "fields": {
+            "name": "Tim Hill",
+            "img": "/jN6KyRKLoI1UgC1EnyAEYJ5uDYy.jpg"
+        }
+    },
+    {
+        "pk": 65688,
+        "model": "movies.Director",
+        "fields": {
+            "name": "Jim Drake",
+            "img": "/2a4iZ2zlCcGzKGwoUQlSWRs6iXl.jpg"
+        }
+    },
+    {
+        "pk": 2710,
+        "model": "movies.Director",
+        "fields": {
+            "name": "James Cameron",
+            "img": "/4TjSh3Er5LIOvFcB5inaRDPrBKu.jpg"
+        }
+    },
+    {
+        "pk": 5446,
+        "model": "movies.Director",
+        "fields": {
+            "name": "David Hand",
+            "img": "/4VzUnNNHSwGT0qH99Zgd0nhmmIU.jpg"
+        }
+    },
+    {
+        "pk": 78108,
+        "model": "movies.Director",
+        "fields": {
+            "name": "Isaac Florentine",
+            "img": "/4PJrg3l105M2GMNazhu2DXZ1Wce.jpg"
+        }
+    },
+    {
+        "pk": 208527,
+        "model": "movies.Director",
+        "fields": {
+            "name": "Yann Demange",
+            "img": "/5RK0Y2IjNZupP3sq6ibZ1b9mCHh.jpg"
+        }
+    },
+    {
+        "pk": 1704,
+        "model": "movies.Director",
+        "fields": {
+            "name": "Gore Verbinski",
+            "img": "/bV0rGSPrK4AUvODjB3zMAwDdeIf.jpg"
+        }
+    },
+    {
+        "pk": 1032536,
+        "model": "movies.Director",
+        "fields": {
+            "name": "Robert Stromberg",
+            "img": "/gqP1k0dJxRVj08xudosdROOn2UK.jpg"
+        }
+    },
+    {
+        "pk": 99859,
+        "model": "movies.Director",
+        "fields": {
+            "name": "Tim McCann",
+            "img": null
+        }
+    },
+    {
+        "pk": 1325190,
+        "model": "movies.Director",
+        "fields": {
+            "name": "Ingo Vollkammer",
+            "img": null
+        }
+    },
+    {
+        "pk": 11343,
+        "model": "movies.Director",
+        "fields": {
+            "name": "David Yates",
+            "img": "/fiIZNbwdK07ntpE2wpLRIMuSXEy.jpg"
+        }
+    },
+    {
+        "pk": 488,
+        "model": "movies.Director",
+        "fields": {
+            "name": "Steven Spielberg",
+            "img": "/pOK15UNaw75Bzj7BQO1ulehbPPm.jpg"
+        }
+    },
+    {
+        "pk": 1108,
+        "model": "movies.Director",
+        "fields": {
+            "name": "Shane Black",
+            "img": "/lEyKmYizNVNLsOEgeaPFwX9MZoA.jpg"
+        }
+    },
+    {
+        "pk": 1461,
+        "model": "movies.Director",
+        "fields": {
+            "name": "George Clooney",
+            "img": "/z4SBfpKDThuQY0FsvDbajcooBdA.jpg"
+        }
+    },
+    {
+        "pk": 880,
+        "model": "movies.Director",
+        "fields": {
+            "name": "Ben Affleck",
+            "img": "/rjGdI8f7MyGXg4kpTrA0ZZq1QX8.jpg"
+        }
+    },
+    {
+        "pk": 208527,
+        "model": "movies.Director",
+        "fields": {
+            "name": "Yann Demange",
+            "img": "/5RK0Y2IjNZupP3sq6ibZ1b9mCHh.jpg"
+        }
+    },
+    {
+        "pk": 17633,
+        "model": "movies.Director",
+        "fields": {
+            "name": "Rob Marshall",
+            "img": "/eK6o1eP4aZTnowGYc1NUnEdvCNJ.jpg"
+        }
+    },
+    {
+        "pk": 1299642,
+        "model": "movies.Director",
+        "fields": {
+            "name": "Julius Avery",
+            "img": "/nK9ITHGuAWABC0q3fQUD4JQ9yQ1.jpg"
+        }
+    },
+    {
+        "pk": 20907,
+        "model": "movies.Director",
+        "fields": {
+            "name": "Antoine Fuqua",
+            "img": "/z8BLZcMQxE4GqUiEc2gsoAzc8xS.jpg"
         }
     },
     {
@@ -1255,566 +2044,375 @@
         "model": "movies.Director",
         "fields": {
             "name": "Dean DeBlois",
-            "img": "/vofzPcdNUzUD1xqaMUwMAJRgFiy.jpg",
-            "movies": 166428
+            "img": "/vofzPcdNUzUD1xqaMUwMAJRgFiy.jpg"
         }
     },
     {
-        "pk": 1290272,
+        "pk": 66193,
         "model": "movies.Director",
         "fields": {
-            "name": "Dennis Widmyer",
-            "img": "/wZbN0JZd6kbGAHRglEH8u7CfGJ0.jpg",
-            "movies": 157433
+            "name": "Chris Sanders",
+            "img": "/m4kZMS2J0AFjlAuwtijEmsOXYfc.jpg"
         }
     },
     {
-        "pk": 1154561,
+        "pk": 1090,
         "model": "movies.Director",
         "fields": {
-            "name": "Kevin Kölsch",
-            "img": "/4494wQuVUThEzLBAFkEPhXgpUyS.jpg",
-            "movies": 157433
+            "name": "John McTiernan",
+            "img": "/tknmquMIO2oAVUZ0vVX78ALHyaT.jpg"
         }
     },
     {
-        "pk": 1056121,
+        "pk": 1003245,
         "model": "movies.Director",
         "fields": {
-            "name": "Ryan Coogler",
-            "img": "/ddGaRFrlDdyR0OBTd1hAMWnfvim.jpg",
-            "movies": 284054
+            "name": "Donovan Marsh",
+            "img": null
         }
     },
     {
-        "pk": 1481804,
+        "pk": 7316,
         "model": "movies.Director",
         "fields": {
-            "name": "Tomoka Nagaoka",
-            "img": null,
-            "movies": 566555
+            "name": "Mark Burton",
+            "img": null
         }
     },
     {
-        "pk": 19272,
+        "pk": 1244465,
         "model": "movies.Director",
         "fields": {
-            "name": "Joe Russo",
-            "img": "/679Os4tbY1YsU01KdLhM1NPXNWu.jpg",
-            "movies": 299534
+            "name": "Richard Starzak",
+            "img": "/o8Dm54LgHmsxkGmTRtmyKc1boHV.jpg"
         }
     },
     {
-        "pk": 19271,
+        "pk": 291263,
         "model": "movies.Director",
         "fields": {
-            "name": "Anthony Russo",
-            "img": "/fIa5wXK7MHAquhefTr3TcnZiYy8.jpg",
-            "movies": 299534
+            "name": "Jordan Peele",
+            "img": "/9rOEfvKUInuUpJ6MMhiC8Tch1WM.jpg"
         }
     },
     {
-        "pk": 1302082,
+        "pk": 44056,
         "model": "movies.Director",
         "fields": {
-            "name": "David F. Sandberg",
-            "img": "/10p2i4OW0JWAbnOb7yMLUEGdSqM.jpg",
-            "movies": 287947
+            "name": "Fred Dekker",
+            "img": null
         }
     },
     {
-        "pk": 65630,
+        "pk": 46297,
         "model": "movies.Director",
         "fields": {
-            "name": "Rob Letterman",
-            "img": "/v2GPTQ41ZqHtML8W1ft3UJej5xA.jpg",
-            "movies": 447404
+            "name": "Jay Russell",
+            "img": "/baaNlNwUYSGpznRfWnCCUzGhtKE.jpg"
         }
     },
     {
-        "pk": 53068,
+        "pk": 5970,
         "model": "movies.Director",
         "fields": {
-            "name": "Ryan Fleck",
-            "img": "/z5EL2oWKEVUgFb6wjoX0BSxthsJ.jpg",
-            "movies": 299537
+            "name": "Pier Paolo Pasolini",
+            "img": "/zHqXNL85yvOokI7y12UGS1Lkm6D.jpg"
         }
     },
     {
-        "pk": 53069,
+        "pk": 1003237,
         "model": "movies.Director",
         "fields": {
-            "name": "Anna Boden",
-            "img": "/h5YMXdI42zb0uqn5UJHF4fT9AER.jpg",
-            "movies": 299537
+            "name": "Dorota Kobiela",
+            "img": null
         }
     },
     {
-        "pk": 1424064,
+        "pk": 1466181,
         "model": "movies.Director",
         "fields": {
-            "name": "Kyouhei Yamaguchi",
-            "img": "/uAFzPnQsnGzkR9KlU260TsGMFI1.jpg",
-            "movies": 543103
+            "name": "Hugh Welchman",
+            "img": null
         }
     },
     {
-        "pk": 1297518,
+        "pk": 1704,
         "model": "movies.Director",
         "fields": {
-            "name": "Kazuaki Imai",
-            "img": null,
-            "movies": 495925
+            "name": "Gore Verbinski",
+            "img": "/bV0rGSPrK4AUvODjB3zMAwDdeIf.jpg"
         }
     },
     {
-        "pk": 95972,
+        "pk": 67813,
         "model": "movies.Director",
         "fields": {
-            "name": "Hans Petter Moland",
-            "img": "/xPUm6zfCrmDZb8fkby2zzF6sp8z.jpg",
-            "movies": 438650
+            "name": "Baltasar Kormákur",
+            "img": "/Aml85bUldhLbVubYBk38ag8JmVK.jpg"
         }
     },
     {
-        "pk": 57581,
+        "pk": 6047,
         "model": "movies.Director",
         "fields": {
-            "name": "Neil Marshall",
-            "img": "/Au5p9cFlj2XVoVIECQ40ruOp1Qz.jpg",
-            "movies": 456740
+            "name": "Jeffrey Nachmanoff",
+            "img": null
         }
     },
     {
-        "pk": 11614,
+        "pk": 57113,
         "model": "movies.Director",
         "fields": {
-            "name": "M. Night Shyamalan",
-            "img": "/shV9dGXMj7zt7myRFkR6FR51LYu.jpg",
-            "movies": 450465
+            "name": "Dan Gilroy",
+            "img": "/am569DiWC0blnbM98ZphiwBItsS.jpg"
         }
     },
     {
-        "pk": 19272,
+        "pk": 21678,
         "model": "movies.Director",
         "fields": {
-            "name": "Joe Russo",
-            "img": "/679Os4tbY1YsU01KdLhM1NPXNWu.jpg",
-            "movies": 299536
+            "name": "Olivier Assayas",
+            "img": "/bB5TzDaPHLbHxPdsYzQ1blNRcxS.jpg"
         }
     },
     {
-        "pk": 19271,
+        "pk": 87742,
         "model": "movies.Director",
         "fields": {
-            "name": "Anthony Russo",
-            "img": "/fIa5wXK7MHAquhefTr3TcnZiYy8.jpg",
-            "movies": 299536
+            "name": "Marc Webb",
+            "img": "/7uFlVK5BDTjk6IK9iBCmfrdaAs6.jpg"
         }
     },
     {
-        "pk": 1586194,
+        "pk": 58656,
         "model": "movies.Director",
         "fields": {
-            "name": "Jenny Gage",
-            "img": "/wdvHWFssy6KAliSrY89pvszBlmO.jpg",
-            "movies": 537915
+            "name": "Doug Lefler",
+            "img": null
         }
     },
     {
-        "pk": 1495940,
+        "pk": 8,
         "model": "movies.Director",
         "fields": {
-            "name": "Frankie Chen",
-            "img": "/3jfec79vr7xVdgW8qJgTdheYXyt.jpg",
-            "movies": 576393
+            "name": "Lee Unkrich",
+            "img": "/bdTCCXjgOV3YyaNmLGYGOxFQMOc.jpg"
         }
     },
     {
-        "pk": 1362815,
+        "pk": 20629,
         "model": "movies.Director",
         "fields": {
-            "name": "David Yarovesky",
-            "img": "/fNaQfVEnSrK6ff2bEaatRsEtMO2.jpg",
-            "movies": 531309
+            "name": "George Miller",
+            "img": "/4FyQESSzuu1VkPup9CmMjdnUyhv.jpg"
         }
     },
     {
-        "pk": 84124,
+        "pk": 35453,
         "model": "movies.Director",
         "fields": {
-            "name": "Tina Gordon Chism",
-            "img": "/2Vho1qUJBLUPlgh3c4bnXTPKZUs.jpg",
-            "movies": 526050
+            "name": "Pierre Morel",
+            "img": "/yyhcEUYW4znC6JbNKZv2OJp1Cy0.jpg"
         }
     },
     {
-        "pk": 12891,
+        "pk": 105643,
         "model": "movies.Director",
         "fields": {
-            "name": "Joss Whedon",
-            "img": "/dTiVsuaTVTeGmvkhcyJvKp2A5kr.jpg",
-            "movies": 24428
+            "name": "Jay Oliva",
+            "img": "/y7EbnuoKFMvU7uZ4aD50jThyNoF.jpg"
         }
     },
     {
-        "pk": 20739,
+        "pk": 54025,
         "model": "movies.Director",
         "fields": {
-            "name": "Adam Shankman",
-            "img": "/alYdaxIYDvJZFnVrM2n01jcafKo.jpg",
-            "movies": 487297
+            "name": "Karyn Kusama",
+            "img": "/d8jLYxsHkoPJiGXvps9SD7zVdAc.jpg"
         }
     },
     {
-        "pk": 69797,
+        "pk": 11218,
         "model": "movies.Director",
         "fields": {
-            "name": "Dean DeBlois",
-            "img": "/vofzPcdNUzUD1xqaMUwMAJRgFiy.jpg",
-            "movies": 166428
+            "name": "Alfonso Cuarón",
+            "img": "/eoCHiXaQzGgx9RiwXnt3k239FLc.jpg"
         }
     },
     {
-        "pk": 1290272,
+        "pk": 77965,
         "model": "movies.Director",
         "fields": {
-            "name": "Dennis Widmyer",
-            "img": "/wZbN0JZd6kbGAHRglEH8u7CfGJ0.jpg",
-            "movies": 157433
+            "name": "Morten Tyldum",
+            "img": "/rE1zmcXoqtJl5fIa3fKoqnzteyw.jpg"
         }
     },
     {
-        "pk": 1154561,
+        "pk": 41550,
         "model": "movies.Director",
         "fields": {
-            "name": "Kevin Kölsch",
-            "img": "/4494wQuVUThEzLBAFkEPhXgpUyS.jpg",
-            "movies": 157433
+            "name": "Andrew Bergman",
+            "img": "/gTx35MhqW8MlGv7JlYnCJQClebi.jpg"
         }
     },
     {
-        "pk": 1056121,
+        "pk": 36425,
         "model": "movies.Director",
         "fields": {
-            "name": "Ryan Coogler",
-            "img": "/ddGaRFrlDdyR0OBTd1hAMWnfvim.jpg",
-            "movies": 284054
+            "name": "McG",
+            "img": "/hT0I4rLSOhIQoEYuYAP4tG16AjH.jpg"
         }
     },
     {
-        "pk": 1481804,
+        "pk": 54451,
         "model": "movies.Director",
         "fields": {
-            "name": "Tomoka Nagaoka",
-            "img": null,
-            "movies": 566555
+            "name": "Brian G. Hutton",
+            "img": "/cem8wlan7z6amIzoeKmAvC8yRZF.jpg"
         }
     },
     {
-        "pk": 19272,
+        "pk": 64877,
         "model": "movies.Director",
         "fields": {
-            "name": "Joe Russo",
-            "img": "/679Os4tbY1YsU01KdLhM1NPXNWu.jpg",
-            "movies": 299534
+            "name": "Rod Daniel",
+            "img": "/kun8t560f7kIy9kiRayG3E72ohi.jpg"
         }
     },
     {
-        "pk": 19271,
+        "pk": 61069,
         "model": "movies.Director",
         "fields": {
-            "name": "Anthony Russo",
-            "img": "/fIa5wXK7MHAquhefTr3TcnZiYy8.jpg",
-            "movies": 299534
+            "name": "Miguel Arteta",
+            "img": "/bAuqxNYzxFxU4lX8wExPzBZ8vJ6.jpg"
         }
     },
     {
-        "pk": 1302082,
+        "pk": 47005,
         "model": "movies.Director",
         "fields": {
-            "name": "David F. Sandberg",
-            "img": "/10p2i4OW0JWAbnOb7yMLUEGdSqM.jpg",
-            "movies": 287947
+            "name": "Alan Taylor",
+            "img": "/f8hPlHuaRw1py22wp2qqNRfVDMw.jpg"
         }
     },
     {
-        "pk": 65630,
+        "pk": 5524,
         "model": "movies.Director",
         "fields": {
-            "name": "Rob Letterman",
-            "img": "/v2GPTQ41ZqHtML8W1ft3UJej5xA.jpg",
-            "movies": 447404
+            "name": "Andrew Adamson",
+            "img": "/sI8oEKKzvQmrNzV5kFakrKcNcvB.jpg"
         }
     },
     {
-        "pk": 53068,
+        "pk": 16959,
         "model": "movies.Director",
         "fields": {
-            "name": "Ryan Fleck",
-            "img": "/z5EL2oWKEVUgFb6wjoX0BSxthsJ.jpg",
-            "movies": 299537
+            "name": "Jonathan Dayton",
+            "img": "/7sKsTeeiVjpAIujAw86NStfZvFM.jpg"
         }
     },
     {
-        "pk": 53069,
+        "pk": 16960,
         "model": "movies.Director",
         "fields": {
-            "name": "Anna Boden",
-            "img": "/h5YMXdI42zb0uqn5UJHF4fT9AER.jpg",
-            "movies": 299537
+            "name": "Valerie Faris",
+            "img": "/bHxIbrHwSI5RWdahw21euXm2hjv.jpg"
         }
     },
     {
-        "pk": 1424064,
+        "pk": 74924,
         "model": "movies.Director",
         "fields": {
-            "name": "Kyouhei Yamaguchi",
-            "img": "/uAFzPnQsnGzkR9KlU260TsGMFI1.jpg",
-            "movies": 543103
+            "name": "Mabrouk El Mechri",
+            "img": null
         }
     },
     {
-        "pk": 1297518,
+        "pk": 5045,
         "model": "movies.Director",
         "fields": {
-            "name": "Kazuaki Imai",
-            "img": null,
-            "movies": 495925
+            "name": "Dan O'Bannon",
+            "img": "/slLZWXZ1lmdF763166ATRRI200n.jpg"
         }
     },
     {
-        "pk": 95972,
+        "pk": 63973,
         "model": "movies.Director",
         "fields": {
-            "name": "Hans Petter Moland",
-            "img": "/xPUm6zfCrmDZb8fkby2zzF6sp8z.jpg",
-            "movies": 438650
+            "name": "Matteo Garrone",
+            "img": null
         }
     },
     {
-        "pk": 57581,
+        "pk": 1884,
         "model": "movies.Director",
         "fields": {
-            "name": "Neil Marshall",
-            "img": "/Au5p9cFlj2XVoVIECQ40ruOp1Qz.jpg",
-            "movies": 456740
+            "name": "Steven Soderbergh",
+            "img": "/579zHkhyHD1gj3B6a2VveOXrJAD.jpg"
         }
     },
     {
-        "pk": 11614,
+        "pk": 578,
         "model": "movies.Director",
         "fields": {
-            "name": "M. Night Shyamalan",
-            "img": "/shV9dGXMj7zt7myRFkR6FR51LYu.jpg",
-            "movies": 450465
+            "name": "Ridley Scott",
+            "img": "/oTAL0z0vsjipCruxXUsDUIieuhk.jpg"
         }
     },
     {
-        "pk": 19272,
+        "pk": 11401,
         "model": "movies.Director",
         "fields": {
-            "name": "Joe Russo",
-            "img": "/679Os4tbY1YsU01KdLhM1NPXNWu.jpg",
-            "movies": 299536
+            "name": "John Woo",
+            "img": "/d1ovGZj05qWU1MjVKAePVj7ZMRh.jpg"
         }
     },
     {
-        "pk": 19271,
+        "pk": 126638,
         "model": "movies.Director",
         "fields": {
-            "name": "Anthony Russo",
-            "img": "/fIa5wXK7MHAquhefTr3TcnZiYy8.jpg",
-            "movies": 299536
+            "name": "Mark Andrews",
+            "img": "/7rZMVDkuVzlSDyG9HWRdrPohaO3.jpg"
         }
     },
     {
-        "pk": 1586194,
+        "pk": 59803,
         "model": "movies.Director",
         "fields": {
-            "name": "Jenny Gage",
-            "img": "/wdvHWFssy6KAliSrY89pvszBlmO.jpg",
-            "movies": 537915
+            "name": "Brenda Chapman",
+            "img": "/3wEdiMLQObBcBbtg131ZRQG2hfK.jpg"
         }
     },
     {
-        "pk": 1495940,
+        "pk": 21085,
         "model": "movies.Director",
         "fields": {
-            "name": "Frankie Chen",
-            "img": "/3jfec79vr7xVdgW8qJgTdheYXyt.jpg",
-            "movies": 576393
+            "name": "Alex Proyas",
+            "img": "/yJEEjalWtxqg8Oe2aH0fVJIk4ii.jpg"
         }
     },
     {
-        "pk": 1362815,
+        "pk": 7312,
         "model": "movies.Director",
         "fields": {
-            "name": "David Yarovesky",
-            "img": "/fNaQfVEnSrK6ff2bEaatRsEtMO2.jpg",
-            "movies": 531309
+            "name": "Angela Robinson",
+            "img": "/fA8mw3bRWALK7ZGi0YUpDxNWVVf.jpg"
         }
     },
     {
-        "pk": 84124,
+        "pk": 88675,
         "model": "movies.Director",
         "fields": {
-            "name": "Tina Gordon Chism",
-            "img": "/2Vho1qUJBLUPlgh3c4bnXTPKZUs.jpg",
-            "movies": 526050
+            "name": "Justin Baldoni",
+            "img": "/2sc6iUWljADnqtjsaKU3s6f0DGW.jpg"
         }
     },
     {
-        "pk": 12891,
+        "pk": 93288,
         "model": "movies.Director",
         "fields": {
-            "name": "Joss Whedon",
-            "img": "/dTiVsuaTVTeGmvkhcyJvKp2A5kr.jpg",
-            "movies": 24428
-        }
-    },
-    {
-        "pk": 20739,
-        "model": "movies.Director",
-        "fields": {
-            "name": "Adam Shankman",
-            "img": "/alYdaxIYDvJZFnVrM2n01jcafKo.jpg",
-            "movies": 487297
-        }
-    },
-    {
-        "pk": 69797,
-        "model": "movies.Director",
-        "fields": {
-            "name": "Dean DeBlois",
-            "img": "/vofzPcdNUzUD1xqaMUwMAJRgFiy.jpg",
-            "movies": 166428
-        }
-    },
-    {
-        "pk": 1290272,
-        "model": "movies.Director",
-        "fields": {
-            "name": "Dennis Widmyer",
-            "img": "/wZbN0JZd6kbGAHRglEH8u7CfGJ0.jpg",
-            "movies": 157433
-        }
-    },
-    {
-        "pk": 1154561,
-        "model": "movies.Director",
-        "fields": {
-            "name": "Kevin Kölsch",
-            "img": "/4494wQuVUThEzLBAFkEPhXgpUyS.jpg",
-            "movies": 157433
-        }
-    },
-    {
-        "pk": 1056121,
-        "model": "movies.Director",
-        "fields": {
-            "name": "Ryan Coogler",
-            "img": "/ddGaRFrlDdyR0OBTd1hAMWnfvim.jpg",
-            "movies": 284054
-        }
-    },
-    {
-        "pk": 1481804,
-        "model": "movies.Director",
-        "fields": {
-            "name": "Tomoka Nagaoka",
-            "img": null,
-            "movies": 566555
-        }
-    },
-    {
-        "pk": 19272,
-        "model": "movies.Director",
-        "fields": {
-            "name": "Joe Russo",
-            "img": "/679Os4tbY1YsU01KdLhM1NPXNWu.jpg",
-            "movies": 299534
-        }
-    },
-    {
-        "pk": 19271,
-        "model": "movies.Director",
-        "fields": {
-            "name": "Anthony Russo",
-            "img": "/fIa5wXK7MHAquhefTr3TcnZiYy8.jpg",
-            "movies": 299534
-        }
-    },
-    {
-        "pk": 1302082,
-        "model": "movies.Director",
-        "fields": {
-            "name": "David F. Sandberg",
-            "img": "/10p2i4OW0JWAbnOb7yMLUEGdSqM.jpg",
-            "movies": 287947
-        }
-    },
-    {
-        "pk": 65630,
-        "model": "movies.Director",
-        "fields": {
-            "name": "Rob Letterman",
-            "img": "/v2GPTQ41ZqHtML8W1ft3UJej5xA.jpg",
-            "movies": 447404
-        }
-    },
-    {
-        "pk": 53068,
-        "model": "movies.Director",
-        "fields": {
-            "name": "Ryan Fleck",
-            "img": "/z5EL2oWKEVUgFb6wjoX0BSxthsJ.jpg",
-            "movies": 299537
-        }
-    },
-    {
-        "pk": 53069,
-        "model": "movies.Director",
-        "fields": {
-            "name": "Anna Boden",
-            "img": "/h5YMXdI42zb0uqn5UJHF4fT9AER.jpg",
-            "movies": 299537
-        }
-    },
-    {
-        "pk": 1424064,
-        "model": "movies.Director",
-        "fields": {
-            "name": "Kyouhei Yamaguchi",
-            "img": "/uAFzPnQsnGzkR9KlU260TsGMFI1.jpg",
-            "movies": 543103
-        }
-    },
-    {
-        "pk": 1297518,
-        "model": "movies.Director",
-        "fields": {
-            "name": "Kazuaki Imai",
-            "img": null,
-            "movies": 495925
-        }
-    },
-    {
-        "pk": 95972,
-        "model": "movies.Director",
-        "fields": {
-            "name": "Hans Petter Moland",
-            "img": "/xPUm6zfCrmDZb8fkby2zzF6sp8z.jpg",
-            "movies": 438650
-        }
-    },
-    {
-        "pk": 57581,
-        "model": "movies.Director",
-        "fields": {
-            "name": "Neil Marshall",
-            "img": "/Au5p9cFlj2XVoVIECQ40ruOp1Qz.jpg",
-            "movies": 456740
+            "name": "Sarah Gavron",
+            "img": "/5fVcGTQJq8UObOmQgrivf6LntOA.jpg"
         }
     },
     {
@@ -1822,215 +2420,55 @@
         "model": "movies.Director",
         "fields": {
             "name": "M. Night Shyamalan",
-            "img": "/shV9dGXMj7zt7myRFkR6FR51LYu.jpg",
-            "movies": 450465
+            "img": "/2YQooZHX3spvybbCHHGALKGjt4O.jpg"
         }
     },
     {
-        "pk": 19272,
+        "pk": 11401,
         "model": "movies.Director",
         "fields": {
-            "name": "Joe Russo",
-            "img": "/679Os4tbY1YsU01KdLhM1NPXNWu.jpg",
-            "movies": 299536
+            "name": "John Woo",
+            "img": "/d1ovGZj05qWU1MjVKAePVj7ZMRh.jpg"
         }
     },
     {
-        "pk": 19271,
+        "pk": 143966,
         "model": "movies.Director",
         "fields": {
-            "name": "Anthony Russo",
-            "img": "/fIa5wXK7MHAquhefTr3TcnZiYy8.jpg",
-            "movies": 299536
+            "name": "Joan Carr-Wiggin",
+            "img": "/nA8MyVs6VwDG7EoPCd1g66ShyU1.jpg"
         }
     },
     {
-        "pk": 1586194,
+        "pk": 15775,
         "model": "movies.Director",
         "fields": {
-            "name": "Jenny Gage",
-            "img": "/wdvHWFssy6KAliSrY89pvszBlmO.jpg",
-            "movies": 537915
+            "name": "Kevin Lima",
+            "img": "/725jzhxXkAPIqo9P5nEnlBW3Q1y.jpg"
         }
     },
     {
-        "pk": 1495940,
+        "pk": 56147,
         "model": "movies.Director",
         "fields": {
-            "name": "Frankie Chen",
-            "img": "/3jfec79vr7xVdgW8qJgTdheYXyt.jpg",
-            "movies": 576393
+            "name": "Paul Brizzi",
+            "img": null
         }
     },
     {
-        "pk": 1362815,
+        "pk": 2710,
         "model": "movies.Director",
         "fields": {
-            "name": "David Yarovesky",
-            "img": "/fNaQfVEnSrK6ff2bEaatRsEtMO2.jpg",
-            "movies": 531309
+            "name": "James Cameron",
+            "img": "/4TjSh3Er5LIOvFcB5inaRDPrBKu.jpg"
         }
     },
     {
-        "pk": 84124,
+        "pk": 20019,
         "model": "movies.Director",
         "fields": {
-            "name": "Tina Gordon Chism",
-            "img": "/2Vho1qUJBLUPlgh3c4bnXTPKZUs.jpg",
-            "movies": 526050
-        }
-    },
-    {
-        "pk": 12891,
-        "model": "movies.Director",
-        "fields": {
-            "name": "Joss Whedon",
-            "img": "/dTiVsuaTVTeGmvkhcyJvKp2A5kr.jpg",
-            "movies": 24428
-        }
-    },
-    {
-        "pk": 20739,
-        "model": "movies.Director",
-        "fields": {
-            "name": "Adam Shankman",
-            "img": "/alYdaxIYDvJZFnVrM2n01jcafKo.jpg",
-            "movies": 487297
-        }
-    },
-    {
-        "pk": 69797,
-        "model": "movies.Director",
-        "fields": {
-            "name": "Dean DeBlois",
-            "img": "/vofzPcdNUzUD1xqaMUwMAJRgFiy.jpg",
-            "movies": 166428
-        }
-    },
-    {
-        "pk": 1290272,
-        "model": "movies.Director",
-        "fields": {
-            "name": "Dennis Widmyer",
-            "img": "/wZbN0JZd6kbGAHRglEH8u7CfGJ0.jpg",
-            "movies": 157433
-        }
-    },
-    {
-        "pk": 1154561,
-        "model": "movies.Director",
-        "fields": {
-            "name": "Kevin Kölsch",
-            "img": "/4494wQuVUThEzLBAFkEPhXgpUyS.jpg",
-            "movies": 157433
-        }
-    },
-    {
-        "pk": 1056121,
-        "model": "movies.Director",
-        "fields": {
-            "name": "Ryan Coogler",
-            "img": "/ddGaRFrlDdyR0OBTd1hAMWnfvim.jpg",
-            "movies": 284054
-        }
-    },
-    {
-        "pk": 1481804,
-        "model": "movies.Director",
-        "fields": {
-            "name": "Tomoka Nagaoka",
-            "img": null,
-            "movies": 566555
-        }
-    },
-    {
-        "pk": 19272,
-        "model": "movies.Director",
-        "fields": {
-            "name": "Joe Russo",
-            "img": "/679Os4tbY1YsU01KdLhM1NPXNWu.jpg",
-            "movies": 299534
-        }
-    },
-    {
-        "pk": 19271,
-        "model": "movies.Director",
-        "fields": {
-            "name": "Anthony Russo",
-            "img": "/fIa5wXK7MHAquhefTr3TcnZiYy8.jpg",
-            "movies": 299534
-        }
-    },
-    {
-        "pk": 1302082,
-        "model": "movies.Director",
-        "fields": {
-            "name": "David F. Sandberg",
-            "img": "/10p2i4OW0JWAbnOb7yMLUEGdSqM.jpg",
-            "movies": 287947
-        }
-    },
-    {
-        "pk": 65630,
-        "model": "movies.Director",
-        "fields": {
-            "name": "Rob Letterman",
-            "img": "/v2GPTQ41ZqHtML8W1ft3UJej5xA.jpg",
-            "movies": 447404
-        }
-    },
-    {
-        "pk": 53068,
-        "model": "movies.Director",
-        "fields": {
-            "name": "Ryan Fleck",
-            "img": "/z5EL2oWKEVUgFb6wjoX0BSxthsJ.jpg",
-            "movies": 299537
-        }
-    },
-    {
-        "pk": 53069,
-        "model": "movies.Director",
-        "fields": {
-            "name": "Anna Boden",
-            "img": "/h5YMXdI42zb0uqn5UJHF4fT9AER.jpg",
-            "movies": 299537
-        }
-    },
-    {
-        "pk": 1424064,
-        "model": "movies.Director",
-        "fields": {
-            "name": "Kyouhei Yamaguchi",
-            "img": "/uAFzPnQsnGzkR9KlU260TsGMFI1.jpg",
-            "movies": 543103
-        }
-    },
-    {
-        "pk": 1297518,
-        "model": "movies.Director",
-        "fields": {
-            "name": "Kazuaki Imai",
-            "img": null,
-            "movies": 495925
-        }
-    },
-    {
-        "pk": 95972,
-        "model": "movies.Director",
-        "fields": {
-            "name": "Hans Petter Moland",
-            "img": "/xPUm6zfCrmDZb8fkby2zzF6sp8z.jpg",
-            "movies": 438650
-        }
-    },
-    {
-        "pk": 57581,
-        "model": "movies.Director",
-        "fields": {
-            "name": "Neil Marshall",
-            "img": "/Au5p9cFlj2XVoVIECQ40ruOp1Qz.jpg",
-            "movies": 456740
+            "name": "Lee Daniels",
+            "img": "/at0bnM4UNbyR5fTM8hi4UhBSRZn.jpg"
         }
     },
     {
@@ -2038,2285 +2476,967 @@
         "model": "movies.Director",
         "fields": {
             "name": "M. Night Shyamalan",
-            "img": "/shV9dGXMj7zt7myRFkR6FR51LYu.jpg",
-            "movies": 450465
+            "img": "/2YQooZHX3spvybbCHHGALKGjt4O.jpg"
         }
     },
     {
-        "pk": 19272,
+        "pk": 78173,
         "model": "movies.Director",
         "fields": {
-            "name": "Joe Russo",
-            "img": "/679Os4tbY1YsU01KdLhM1NPXNWu.jpg",
-            "movies": 299536
+            "name": "Hiroyuki Morita",
+            "img": "/5tqP0LxEHIv5z7znlhnnZ4JD1CM.jpg"
         }
     },
     {
-        "pk": 19271,
+        "pk": 41720,
         "model": "movies.Director",
         "fields": {
-            "name": "Anthony Russo",
-            "img": "/fIa5wXK7MHAquhefTr3TcnZiYy8.jpg",
-            "movies": 299536
+            "name": "Jerry Paris",
+            "img": "/mVcAxdJG3uFVhr5erMCOZvla9UA.jpg"
         }
     },
     {
-        "pk": 1586194,
+        "pk": 10965,
         "model": "movies.Director",
         "fields": {
-            "name": "Jenny Gage",
-            "img": "/wdvHWFssy6KAliSrY89pvszBlmO.jpg",
-            "movies": 537915
+            "name": "Chris Columbus",
+            "img": "/2fHN78oumrJRM84UydgfVzj0YEl.jpg"
         }
     },
     {
-        "pk": 1495940,
+        "pk": 19769,
         "model": "movies.Director",
         "fields": {
-            "name": "Frankie Chen",
-            "img": "/3jfec79vr7xVdgW8qJgTdheYXyt.jpg",
-            "movies": 576393
+            "name": "David Ayer",
+            "img": "/2oBT2jQbsV8IWPMr3Cm87YBJxGu.jpg"
         }
     },
     {
-        "pk": 1362815,
+        "pk": 7145,
         "model": "movies.Director",
         "fields": {
-            "name": "David Yarovesky",
-            "img": "/fNaQfVEnSrK6ff2bEaatRsEtMO2.jpg",
-            "movies": 531309
+            "name": "Michael Lehmann",
+            "img": "/rM0KmE5Fr9zAi5gzQv9bc78Q1GX.jpg"
         }
     },
     {
-        "pk": 84124,
+        "pk": 77357,
         "model": "movies.Director",
         "fields": {
-            "name": "Tina Gordon Chism",
-            "img": "/2Vho1qUJBLUPlgh3c4bnXTPKZUs.jpg",
-            "movies": 526050
+            "name": "Rupert Wyatt",
+            "img": "/v3ws9iAETreGVuoHXKGFPkZszgy.jpg"
         }
     },
     {
-        "pk": 12891,
+        "pk": 115128,
         "model": "movies.Director",
         "fields": {
-            "name": "Joss Whedon",
-            "img": "/dTiVsuaTVTeGmvkhcyJvKp2A5kr.jpg",
-            "movies": 24428
+            "name": "Bo Burnham",
+            "img": "/drc8vlHZ0wlyEqCus4BZpYY4CCX.jpg"
         }
     },
     {
-        "pk": 20739,
+        "pk": 525,
         "model": "movies.Director",
         "fields": {
-            "name": "Adam Shankman",
-            "img": "/alYdaxIYDvJZFnVrM2n01jcafKo.jpg",
-            "movies": 487297
+            "name": "Christopher Nolan",
+            "img": "/zPvcQPnp3q6R9mqJGm8RENsXYY9.jpg"
         }
     },
     {
-        "pk": 69797,
+        "pk": 2523,
         "model": "movies.Director",
         "fields": {
-            "name": "Dean DeBlois",
-            "img": "/vofzPcdNUzUD1xqaMUwMAJRgFiy.jpg",
-            "movies": 166428
+            "name": "Stuart Baird",
+            "img": "/k7nLNZ0MYsPrKq5T3ZV7m9zwEGY.jpg"
         }
     },
     {
-        "pk": 1290272,
+        "pk": 17268,
         "model": "movies.Director",
         "fields": {
-            "name": "Dennis Widmyer",
-            "img": "/wZbN0JZd6kbGAHRglEH8u7CfGJ0.jpg",
-            "movies": 157433
+            "name": "Ronny Yu",
+            "img": "/uOCTwD8l6WDvo1kMAEvnF5pBnAH.jpg"
         }
     },
     {
-        "pk": 1154561,
+        "pk": 5174,
         "model": "movies.Director",
         "fields": {
-            "name": "Kevin Kölsch",
-            "img": "/4494wQuVUThEzLBAFkEPhXgpUyS.jpg",
-            "movies": 157433
+            "name": "Barry Sonnenfeld",
+            "img": "/m8vIfbXI44Fd8VK7HSJRisYQjQc.jpg"
         }
     },
     {
-        "pk": 1056121,
+        "pk": 40230,
         "model": "movies.Director",
         "fields": {
-            "name": "Ryan Coogler",
-            "img": "/ddGaRFrlDdyR0OBTd1hAMWnfvim.jpg",
-            "movies": 284054
+            "name": "Kevin Hooks",
+            "img": "/xqzV7byaH95GSvR86JjGzHceIY4.jpg"
         }
     },
     {
-        "pk": 1481804,
+        "pk": 7775,
         "model": "movies.Director",
         "fields": {
-            "name": "Tomoka Nagaoka",
-            "img": null,
-            "movies": 566555
+            "name": "Stephen Sommers",
+            "img": "/50bI0PixdzrD5Mdygl4wrpxHCiH.jpg"
         }
     },
     {
-        "pk": 19272,
+        "pk": 15557,
         "model": "movies.Director",
         "fields": {
-            "name": "Joe Russo",
-            "img": "/679Os4tbY1YsU01KdLhM1NPXNWu.jpg",
-            "movies": 299534
+            "name": "Bill Condon",
+            "img": "/wYS9OCX85SJQWdjQokWVgmX7PQX.jpg"
         }
     },
     {
-        "pk": 19271,
+        "pk": 17329,
         "model": "movies.Director",
         "fields": {
-            "name": "Anthony Russo",
-            "img": "/fIa5wXK7MHAquhefTr3TcnZiYy8.jpg",
-            "movies": 299534
+            "name": "Neil Burger",
+            "img": "/eUDHt2OWYnCwC8FOVIgU2uTPK3x.jpg"
         }
     },
     {
-        "pk": 1302082,
+        "pk": 18635,
         "model": "movies.Director",
         "fields": {
-            "name": "David F. Sandberg",
-            "img": "/10p2i4OW0JWAbnOb7yMLUEGdSqM.jpg",
-            "movies": 287947
+            "name": "Ted Post",
+            "img": "/knADACiRl8Bn45BXNb0RDy3BfVf.jpg"
         }
     },
     {
-        "pk": 65630,
+        "pk": 30365,
         "model": "movies.Director",
         "fields": {
-            "name": "Rob Letterman",
-            "img": "/v2GPTQ41ZqHtML8W1ft3UJej5xA.jpg",
-            "movies": 447404
+            "name": "Michael Caton-Jones",
+            "img": "/oKzuAA9S6VAb0qkmD9v8Z30jGSf.jpg"
         }
     },
     {
-        "pk": 53068,
+        "pk": 61300,
         "model": "movies.Director",
         "fields": {
-            "name": "Ryan Fleck",
-            "img": "/z5EL2oWKEVUgFb6wjoX0BSxthsJ.jpg",
-            "movies": 299537
+            "name": "Yarrow Cheney",
+            "img": null
         }
     },
     {
-        "pk": 53069,
+        "pk": 20503,
         "model": "movies.Director",
         "fields": {
-            "name": "Anna Boden",
-            "img": "/h5YMXdI42zb0uqn5UJHF4fT9AER.jpg",
-            "movies": 299537
+            "name": "Scott Mosier",
+            "img": "/9QIQyjKlRGXBHEXFSRFGIbv5Ig4.jpg"
         }
     },
     {
-        "pk": 1424064,
+        "pk": 2042,
         "model": "movies.Director",
         "fields": {
-            "name": "Kyouhei Yamaguchi",
-            "img": "/uAFzPnQsnGzkR9KlU260TsGMFI1.jpg",
-            "movies": 543103
+            "name": "Stephen Hopkins",
+            "img": "/zHwFIL63LbeSS83FMC8J6TAgDNL.jpg"
         }
     },
     {
-        "pk": 1297518,
+        "pk": 7879,
         "model": "movies.Director",
         "fields": {
-            "name": "Kazuaki Imai",
-            "img": null,
-            "movies": 495925
+            "name": "John Lasseter",
+            "img": "/7EdqiNbr4FRjIhKHyPPdFfEEEFG.jpg"
         }
     },
     {
-        "pk": 95972,
+        "pk": 59,
         "model": "movies.Director",
         "fields": {
-            "name": "Hans Petter Moland",
-            "img": "/xPUm6zfCrmDZb8fkby2zzF6sp8z.jpg",
-            "movies": 438650
+            "name": "Luc Besson",
+            "img": "/2TzRsqSx0xb1DK3HsEQKSXhRGcu.jpg"
         }
     },
     {
-        "pk": 57581,
+        "pk": 223,
         "model": "movies.Director",
         "fields": {
-            "name": "Neil Marshall",
-            "img": "/Au5p9cFlj2XVoVIECQ40ruOp1Qz.jpg",
-            "movies": 456740
+            "name": "Alejandro González Iñárritu",
+            "img": "/qWrltG9e0ssM3Y9pF86EAgteKHu.jpg"
         }
     },
     {
-        "pk": 11614,
+        "pk": 15175,
         "model": "movies.Director",
         "fields": {
-            "name": "M. Night Shyamalan",
-            "img": "/shV9dGXMj7zt7myRFkR6FR51LYu.jpg",
-            "movies": 450465
+            "name": "William Friedkin",
+            "img": "/1iBd92izRHpkSH4hOhcUBmF2cv7.jpg"
         }
     },
     {
-        "pk": 19272,
+        "pk": 17016,
         "model": "movies.Director",
         "fields": {
-            "name": "Joe Russo",
-            "img": "/679Os4tbY1YsU01KdLhM1NPXNWu.jpg",
-            "movies": 299536
+            "name": "Neil Jordan",
+            "img": "/uZ7CvCLTKb9qxjU4VsTNeyMRucd.jpg"
         }
     },
     {
-        "pk": 19271,
+        "pk": 1071,
         "model": "movies.Director",
         "fields": {
-            "name": "Anthony Russo",
-            "img": "/fIa5wXK7MHAquhefTr3TcnZiYy8.jpg",
-            "movies": 299536
+            "name": "Tom Tykwer",
+            "img": "/9J53KiI0OWIjSxwkUyxVLGrlnHy.jpg"
         }
     },
     {
-        "pk": 1586194,
+        "pk": 59998,
         "model": "movies.Director",
         "fields": {
-            "name": "Jenny Gage",
-            "img": "/wdvHWFssy6KAliSrY89pvszBlmO.jpg",
-            "movies": 537915
+            "name": "Greg McLean",
+            "img": "/2DPAARHLV29cCdQeUjkQ06lZh9b.jpg"
         }
     },
     {
-        "pk": 1495940,
+        "pk": 2461,
         "model": "movies.Director",
         "fields": {
-            "name": "Frankie Chen",
-            "img": "/3jfec79vr7xVdgW8qJgTdheYXyt.jpg",
-            "movies": 576393
+            "name": "Mel Gibson",
+            "img": "/4IsmIFUgoJgUZjen8Ldxnw5YQvG.jpg"
         }
     },
     {
-        "pk": 1362815,
+        "pk": 57646,
         "model": "movies.Director",
         "fields": {
-            "name": "David Yarovesky",
-            "img": "/fNaQfVEnSrK6ff2bEaatRsEtMO2.jpg",
-            "movies": 531309
+            "name": "Henry Selick",
+            "img": "/6JkYvs9ce3vMvCqWXzGPUzpCKkJ.jpg"
         }
     },
     {
-        "pk": 84124,
+        "pk": 240,
         "model": "movies.Director",
         "fields": {
-            "name": "Tina Gordon Chism",
-            "img": "/2Vho1qUJBLUPlgh3c4bnXTPKZUs.jpg",
-            "movies": 526050
+            "name": "Stanley Kubrick",
+            "img": "/ywoN9gI2lFOA5EAxxyRbQ1R4GQ6.jpg"
         }
     },
     {
-        "pk": 12891,
+        "pk": 1032,
         "model": "movies.Director",
         "fields": {
-            "name": "Joss Whedon",
-            "img": "/dTiVsuaTVTeGmvkhcyJvKp2A5kr.jpg",
-            "movies": 24428
+            "name": "Martin Scorsese",
+            "img": "/4Xwx5XL1RJj0JQmEo8Fhr6nkpOg.jpg"
         }
     },
     {
-        "pk": 20739,
+        "pk": 82194,
         "model": "movies.Director",
         "fields": {
-            "name": "Adam Shankman",
-            "img": "/alYdaxIYDvJZFnVrM2n01jcafKo.jpg",
-            "movies": 487297
+            "name": "Neill Blomkamp",
+            "img": "/yj40QEEfjbRFnlwY0XunocNKdAe.jpg"
         }
     },
     {
-        "pk": 69797,
+        "pk": 37710,
         "model": "movies.Director",
         "fields": {
-            "name": "Dean DeBlois",
-            "img": "/vofzPcdNUzUD1xqaMUwMAJRgFiy.jpg",
-            "movies": 166428
+            "name": "Peter Hyams",
+            "img": "/dAuDsStGGlUESaaAYQf0GCE2JWo.jpg"
         }
     },
     {
-        "pk": 1290272,
+        "pk": 17633,
         "model": "movies.Director",
         "fields": {
-            "name": "Dennis Widmyer",
-            "img": "/wZbN0JZd6kbGAHRglEH8u7CfGJ0.jpg",
-            "movies": 157433
+            "name": "Rob Marshall",
+            "img": "/eK6o1eP4aZTnowGYc1NUnEdvCNJ.jpg"
         }
     },
     {
-        "pk": 1154561,
+        "pk": 74091,
         "model": "movies.Director",
         "fields": {
-            "name": "Kevin Kölsch",
-            "img": "/4494wQuVUThEzLBAFkEPhXgpUyS.jpg",
-            "movies": 157433
+            "name": "Makoto Shinkai",
+            "img": "/xFofUu6o9iVnqh7fbnLLEcolxEw.jpg"
         }
     },
     {
-        "pk": 1056121,
+        "pk": 2636,
         "model": "movies.Director",
         "fields": {
-            "name": "Ryan Coogler",
-            "img": "/ddGaRFrlDdyR0OBTd1hAMWnfvim.jpg",
-            "movies": 284054
+            "name": "Alfred Hitchcock",
+            "img": "/rKYyX58azJv1SZNXQWOJyNyvB9F.jpg"
         }
     },
     {
-        "pk": 1481804,
+        "pk": 52194,
         "model": "movies.Director",
         "fields": {
-            "name": "Tomoka Nagaoka",
-            "img": null,
-            "movies": 566555
+            "name": "Tony Randel",
+            "img": "/gyDJpk5CBU5UuKVrezdwwbeFg25.jpg"
         }
     },
     {
-        "pk": 19272,
+        "pk": 15810,
         "model": "movies.Director",
         "fields": {
-            "name": "Joe Russo",
-            "img": "/679Os4tbY1YsU01KdLhM1NPXNWu.jpg",
-            "movies": 299534
+            "name": "Ron Clements",
+            "img": "/iCq89uPdVjtGkO7UbTn5UPqHIPx.jpg"
         }
     },
     {
-        "pk": 19271,
+        "pk": 61677,
         "model": "movies.Director",
         "fields": {
-            "name": "Anthony Russo",
-            "img": "/fIa5wXK7MHAquhefTr3TcnZiYy8.jpg",
-            "movies": 299534
+            "name": "Burny Mattinson",
+            "img": null
         }
     },
     {
-        "pk": 1302082,
+        "pk": 61678,
         "model": "movies.Director",
         "fields": {
-            "name": "David F. Sandberg",
-            "img": "/10p2i4OW0JWAbnOb7yMLUEGdSqM.jpg",
-            "movies": 287947
+            "name": "David Michener",
+            "img": "/1Sgz4iH3f7KTPAgZw8fubJX8wJA.jpg"
         }
     },
     {
-        "pk": 65630,
+        "pk": 15811,
         "model": "movies.Director",
         "fields": {
-            "name": "Rob Letterman",
-            "img": "/v2GPTQ41ZqHtML8W1ft3UJej5xA.jpg",
-            "movies": 447404
+            "name": "John Musker",
+            "img": "/do3vzNWSKhJLARV8VfNS9q9rRXV.jpg"
         }
     },
     {
-        "pk": 53068,
+        "pk": 46297,
         "model": "movies.Director",
         "fields": {
-            "name": "Ryan Fleck",
-            "img": "/z5EL2oWKEVUgFb6wjoX0BSxthsJ.jpg",
-            "movies": 299537
+            "name": "Jay Russell",
+            "img": "/baaNlNwUYSGpznRfWnCCUzGhtKE.jpg"
         }
     },
     {
-        "pk": 53069,
+        "pk": 120245,
         "model": "movies.Director",
         "fields": {
-            "name": "Anna Boden",
-            "img": "/h5YMXdI42zb0uqn5UJHF4fT9AER.jpg",
-            "movies": 299537
+            "name": "Daniel Stamm",
+            "img": "/piJtIhtENjbkUygTeihBYqQImup.jpg"
         }
     },
     {
-        "pk": 1424064,
+        "pk": 6159,
         "model": "movies.Director",
         "fields": {
-            "name": "Kyouhei Yamaguchi",
-            "img": "/uAFzPnQsnGzkR9KlU260TsGMFI1.jpg",
-            "movies": 543103
+            "name": "Ron Howard",
+            "img": "/67WIgpOGIeb4NSN9yIxsOITbnns.jpg"
         }
     },
     {
-        "pk": 1297518,
+        "pk": 18356,
         "model": "movies.Director",
         "fields": {
-            "name": "Kazuaki Imai",
-            "img": null,
-            "movies": 495925
+            "name": "Stephen Herek",
+            "img": "/v6eEBvBiOoMZwrbbU30u4ObmDWE.jpg"
         }
     },
     {
-        "pk": 95972,
+        "pk": 3288,
         "model": "movies.Director",
         "fields": {
-            "name": "Hans Petter Moland",
-            "img": "/xPUm6zfCrmDZb8fkby2zzF6sp8z.jpg",
-            "movies": 438650
+            "name": "Chris Weitz",
+            "img": "/xlnVbsnoP3PZCjEa2d99ETVLAFB.jpg"
         }
     },
     {
-        "pk": 57581,
+        "pk": 137427,
         "model": "movies.Director",
         "fields": {
-            "name": "Neil Marshall",
-            "img": "/Au5p9cFlj2XVoVIECQ40ruOp1Qz.jpg",
-            "movies": 456740
+            "name": "Denis Villeneuve",
+            "img": "/433lXlkdMGXzrpwnKM4Ul1sln15.jpg"
         }
     },
     {
-        "pk": 11614,
+        "pk": 1392433,
         "model": "movies.Director",
         "fields": {
-            "name": "M. Night Shyamalan",
-            "img": "/shV9dGXMj7zt7myRFkR6FR51LYu.jpg",
-            "movies": 450465
+            "name": "Julia Ducournau",
+            "img": "/2Sx56zsMGei5p7RjETmcqpgblnO.jpg"
         }
     },
     {
-        "pk": 19272,
+        "pk": 69579,
         "model": "movies.Director",
         "fields": {
-            "name": "Joe Russo",
-            "img": "/679Os4tbY1YsU01KdLhM1NPXNWu.jpg",
-            "movies": 299536
+            "name": "James Isaac",
+            "img": "/j1j2q5iVzPptPNr1p9NluULP89L.jpg"
         }
     },
     {
-        "pk": 19271,
+        "pk": 40256,
         "model": "movies.Director",
         "fields": {
-            "name": "Anthony Russo",
-            "img": "/fIa5wXK7MHAquhefTr3TcnZiYy8.jpg",
-            "movies": 299536
+            "name": "D.J. Caruso",
+            "img": "/dLSaCHhZ4zfimzCz11JdcTZC4SA.jpg"
         }
     },
     {
-        "pk": 1586194,
+        "pk": 65678,
         "model": "movies.Director",
         "fields": {
-            "name": "Jenny Gage",
-            "img": "/wdvHWFssy6KAliSrY89pvszBlmO.jpg",
-            "movies": 537915
+            "name": "John Lafia",
+            "img": null
         }
     },
     {
-        "pk": 1495940,
+        "pk": 1238965,
         "model": "movies.Director",
         "fields": {
-            "name": "Frankie Chen",
-            "img": "/3jfec79vr7xVdgW8qJgTdheYXyt.jpg",
-            "movies": 576393
+            "name": "Bora Dağtekin",
+            "img": "/uzlEIBPfxZWE1NWZirbjwRYE6xN.jpg"
         }
     },
     {
-        "pk": 1362815,
+        "pk": 32250,
         "model": "movies.Director",
         "fields": {
-            "name": "David Yarovesky",
-            "img": "/fNaQfVEnSrK6ff2bEaatRsEtMO2.jpg",
-            "movies": 531309
+            "name": "Sean Ellis",
+            "img": "/aODTopWlu757mM7n163rTBmXRHX.jpg"
         }
     },
     {
-        "pk": 84124,
+        "pk": 1480620,
         "model": "movies.Director",
         "fields": {
-            "name": "Tina Gordon Chism",
-            "img": "/2Vho1qUJBLUPlgh3c4bnXTPKZUs.jpg",
-            "movies": 526050
+            "name": "Lucia Aniello",
+            "img": "/60s5psYbHSs6NvgOHzMIQTlUJf0.jpg"
         }
     },
     {
-        "pk": 12891,
+        "pk": 26775,
         "model": "movies.Director",
         "fields": {
-            "name": "Joss Whedon",
-            "img": "/dTiVsuaTVTeGmvkhcyJvKp2A5kr.jpg",
-            "movies": 24428
+            "name": "Liu Chia-Liang",
+            "img": "/1cKWtvMp0onUAn4OfuclM1693gn.jpg"
         }
     },
     {
-        "pk": 20739,
+        "pk": 56370,
         "model": "movies.Director",
         "fields": {
-            "name": "Adam Shankman",
-            "img": "/alYdaxIYDvJZFnVrM2n01jcafKo.jpg",
-            "movies": 487297
+            "name": "Ruben Östlund",
+            "img": "/kD2GQaROZYBRic7A99imCN67IaD.jpg"
         }
     },
     {
-        "pk": 69797,
+        "pk": 62541,
         "model": "movies.Director",
         "fields": {
-            "name": "Dean DeBlois",
-            "img": "/vofzPcdNUzUD1xqaMUwMAJRgFiy.jpg",
-            "movies": 166428
+            "name": "Brandon Camp",
+            "img": null
         }
     },
     {
-        "pk": 1290272,
+        "pk": 228134,
         "model": "movies.Director",
         "fields": {
-            "name": "Dennis Widmyer",
-            "img": "/wZbN0JZd6kbGAHRglEH8u7CfGJ0.jpg",
-            "movies": 157433
+            "name": "Rupert Sanders",
+            "img": "/kQyRb1BmPy6or6FHMstS2e7L3J8.jpg"
         }
     },
     {
-        "pk": 1154561,
+        "pk": 1721377,
         "model": "movies.Director",
         "fields": {
-            "name": "Kevin Kölsch",
-            "img": "/4494wQuVUThEzLBAFkEPhXgpUyS.jpg",
-            "movies": 157433
+            "name": "Jennifer Kaytin Robinson",
+            "img": null
         }
     },
     {
-        "pk": 1056121,
+        "pk": 578,
         "model": "movies.Director",
         "fields": {
-            "name": "Ryan Coogler",
-            "img": "/ddGaRFrlDdyR0OBTd1hAMWnfvim.jpg",
-            "movies": 284054
+            "name": "Ridley Scott",
+            "img": "/oTAL0z0vsjipCruxXUsDUIieuhk.jpg"
         }
     },
     {
-        "pk": 1481804,
+        "pk": 108,
         "model": "movies.Director",
         "fields": {
-            "name": "Tomoka Nagaoka",
-            "img": null,
-            "movies": 566555
+            "name": "Peter Jackson",
+            "img": "/kSrfI3TbMdIMmPVOflLQ56OfscB.jpg"
         }
     },
     {
-        "pk": 19272,
+        "pk": 1454941,
         "model": "movies.Director",
         "fields": {
-            "name": "Joe Russo",
-            "img": "/679Os4tbY1YsU01KdLhM1NPXNWu.jpg",
-            "movies": 299534
+            "name": "László Nemes",
+            "img": "/uFffwg5vgYl6jaWn6rlxWWoTe5x.jpg"
         }
     },
     {
-        "pk": 19271,
+        "pk": 8,
         "model": "movies.Director",
         "fields": {
-            "name": "Anthony Russo",
-            "img": "/fIa5wXK7MHAquhefTr3TcnZiYy8.jpg",
-            "movies": 299534
+            "name": "Lee Unkrich",
+            "img": "/bdTCCXjgOV3YyaNmLGYGOxFQMOc.jpg"
         }
     },
     {
-        "pk": 1302082,
+        "pk": 556172,
         "model": "movies.Director",
         "fields": {
-            "name": "David F. Sandberg",
-            "img": "/10p2i4OW0JWAbnOb7yMLUEGdSqM.jpg",
-            "movies": 287947
+            "name": "J. C. Chandor",
+            "img": "/6oaCrcLpqAvuWci6kStnuuAc34I.jpg"
         }
     },
     {
-        "pk": 65630,
+        "pk": 56370,
         "model": "movies.Director",
         "fields": {
-            "name": "Rob Letterman",
-            "img": "/v2GPTQ41ZqHtML8W1ft3UJej5xA.jpg",
-            "movies": 447404
+            "name": "Ruben Östlund",
+            "img": "/kD2GQaROZYBRic7A99imCN67IaD.jpg"
         }
     },
     {
-        "pk": 53068,
+        "pk": 54868,
         "model": "movies.Director",
         "fields": {
-            "name": "Ryan Fleck",
-            "img": "/z5EL2oWKEVUgFb6wjoX0BSxthsJ.jpg",
-            "movies": 299537
+            "name": "Christian Gudegast",
+            "img": "/36PHfwA6XsnAVrJ6aXC1xDEipVE.jpg"
         }
     },
     {
-        "pk": 53069,
+        "pk": 39,
         "model": "movies.Director",
         "fields": {
-            "name": "Anna Boden",
-            "img": "/h5YMXdI42zb0uqn5UJHF4fT9AER.jpg",
-            "movies": 299537
+            "name": "Sam Mendes",
+            "img": "/5z89X9rB76JDblqMQ52fviwXxAN.jpg"
         }
     },
     {
-        "pk": 1424064,
+        "pk": 4014,
         "model": "movies.Director",
         "fields": {
-            "name": "Kyouhei Yamaguchi",
-            "img": "/uAFzPnQsnGzkR9KlU260TsGMFI1.jpg",
-            "movies": 543103
+            "name": "Paul W.S. Anderson",
+            "img": "/s6GaqCkUiRXxWXg3LhdCI9i3BW0.jpg"
         }
     },
     {
-        "pk": 1297518,
+        "pk": 578,
         "model": "movies.Director",
         "fields": {
-            "name": "Kazuaki Imai",
-            "img": null,
-            "movies": 495925
+            "name": "Ridley Scott",
+            "img": "/oTAL0z0vsjipCruxXUsDUIieuhk.jpg"
         }
     },
     {
-        "pk": 95972,
+        "pk": 53333,
         "model": "movies.Director",
         "fields": {
-            "name": "Hans Petter Moland",
-            "img": "/xPUm6zfCrmDZb8fkby2zzF6sp8z.jpg",
-            "movies": 438650
+            "name": "John Hillcoat",
+            "img": "/dysF1m1OGCl22EDSRG87yiw2QPw.jpg"
         }
     },
     {
-        "pk": 57581,
+        "pk": 7623,
         "model": "movies.Director",
         "fields": {
-            "name": "Neil Marshall",
-            "img": "/Au5p9cFlj2XVoVIECQ40ruOp1Qz.jpg",
-            "movies": 456740
+            "name": "Sam Raimi",
+            "img": "/uEAaCUJzyMI8N5mOVyLtaOPKoEf.jpg"
         }
     },
     {
-        "pk": 11614,
+        "pk": 11012,
         "model": "movies.Director",
         "fields": {
-            "name": "M. Night Shyamalan",
-            "img": "/shV9dGXMj7zt7myRFkR6FR51LYu.jpg",
-            "movies": 450465
+            "name": "Michael Dougherty",
+            "img": "/spyEbbR2ySIfYY6onH0E4a26Dpo.jpg"
         }
     },
     {
-        "pk": 19272,
+        "pk": 17883,
         "model": "movies.Director",
         "fields": {
-            "name": "Joe Russo",
-            "img": "/679Os4tbY1YsU01KdLhM1NPXNWu.jpg",
-            "movies": 299536
+            "name": "David O. Russell",
+            "img": "/6aERBGHkLHpnd6V3pftvHoTvRvr.jpg"
         }
     },
     {
-        "pk": 19271,
+        "pk": 957,
         "model": "movies.Director",
         "fields": {
-            "name": "Anthony Russo",
-            "img": "/fIa5wXK7MHAquhefTr3TcnZiYy8.jpg",
-            "movies": 299536
+            "name": "Matthew Vaughn",
+            "img": "/bW19nWbfIRQ8lNDkY3StXkF1qVg.jpg"
         }
     },
     {
-        "pk": 1586194,
+        "pk": 15488,
         "model": "movies.Director",
         "fields": {
-            "name": "Jenny Gage",
-            "img": "/wdvHWFssy6KAliSrY89pvszBlmO.jpg",
-            "movies": 537915
+            "name": "Ken Loach",
+            "img": "/vGtkrPgNeK3xkbbKTQ4vWD1VsEm.jpg"
         }
     },
     {
-        "pk": 1495940,
+        "pk": 12028,
         "model": "movies.Director",
         "fields": {
-            "name": "Frankie Chen",
-            "img": "/3jfec79vr7xVdgW8qJgTdheYXyt.jpg",
-            "movies": 576393
+            "name": "John Moore",
+            "img": "/1zFWQ0hCvRgfXlQ3NaUn2HzChBW.jpg"
         }
     },
     {
-        "pk": 1362815,
+        "pk": 59,
         "model": "movies.Director",
         "fields": {
-            "name": "David Yarovesky",
-            "img": "/fNaQfVEnSrK6ff2bEaatRsEtMO2.jpg",
-            "movies": 531309
+            "name": "Luc Besson",
+            "img": "/2TzRsqSx0xb1DK3HsEQKSXhRGcu.jpg"
         }
     },
     {
-        "pk": 84124,
+        "pk": 165787,
         "model": "movies.Director",
         "fields": {
-            "name": "Tina Gordon Chism",
-            "img": "/2Vho1qUJBLUPlgh3c4bnXTPKZUs.jpg",
-            "movies": 526050
+            "name": "Rich Moore",
+            "img": "/oIAmkZf9LuJuMqR8zSchoD3FJT8.jpg"
         }
     },
     {
-        "pk": 12891,
+        "pk": 1018106,
         "model": "movies.Director",
         "fields": {
-            "name": "Joss Whedon",
-            "img": "/dTiVsuaTVTeGmvkhcyJvKp2A5kr.jpg",
-            "movies": 24428
+            "name": "S. Craig Zahler",
+            "img": "/vomw5TlCtMtKFSsgOtwkit464nd.jpg"
         }
     },
     {
-        "pk": 20739,
+        "pk": 33315,
         "model": "movies.Director",
         "fields": {
-            "name": "Adam Shankman",
-            "img": "/alYdaxIYDvJZFnVrM2n01jcafKo.jpg",
-            "movies": 487297
+            "name": "Richard Loncraine",
+            "img": "/j700yY5SyI1EZegFpL4h77Otu5W.jpg"
         }
     },
     {
-        "pk": 69797,
+        "pk": 21819,
         "model": "movies.Director",
         "fields": {
-            "name": "Dean DeBlois",
-            "img": "/vofzPcdNUzUD1xqaMUwMAJRgFiy.jpg",
-            "movies": 166428
+            "name": "Lewis Teague",
+            "img": "/8S7HOgNIpqqa7CpkV5uMR4hMSvx.jpg"
         }
     },
     {
-        "pk": 1290272,
+        "pk": 55710,
         "model": "movies.Director",
         "fields": {
-            "name": "Dennis Widmyer",
-            "img": "/wZbN0JZd6kbGAHRglEH8u7CfGJ0.jpg",
-            "movies": 157433
+            "name": "Adam McKay",
+            "img": "/vOyZXNJq7Oo01LPtSD5AZHjctgH.jpg"
         }
     },
     {
-        "pk": 1154561,
+        "pk": 18878,
         "model": "movies.Director",
         "fields": {
-            "name": "Kevin Kölsch",
-            "img": "/4494wQuVUThEzLBAFkEPhXgpUyS.jpg",
-            "movies": 157433
+            "name": "Rob Cohen",
+            "img": "/qMtAaURL6aE3GgALVQlxKGGL5AC.jpg"
         }
     },
     {
-        "pk": 1056121,
+        "pk": 1443611,
         "model": "movies.Director",
         "fields": {
-            "name": "Ryan Coogler",
-            "img": "/ddGaRFrlDdyR0OBTd1hAMWnfvim.jpg",
-            "movies": 284054
+            "name": "Gee Malik Linton",
+            "img": null
         }
     },
     {
-        "pk": 1481804,
+        "pk": 40345,
         "model": "movies.Director",
         "fields": {
-            "name": "Tomoka Nagaoka",
-            "img": null,
-            "movies": 566555
+            "name": "Don Bluth",
+            "img": "/sek7iLDM6J8Poc2FueAkgCUytfn.jpg"
         }
     },
     {
-        "pk": 19272,
+        "pk": 12881,
         "model": "movies.Director",
         "fields": {
-            "name": "Joe Russo",
-            "img": "/679Os4tbY1YsU01KdLhM1NPXNWu.jpg",
-            "movies": 299534
+            "name": "Gary Goldman",
+            "img": "/3GPDphDxHIlT3D8GiMCKsf3X4Rj.jpg"
         }
     },
     {
-        "pk": 19271,
+        "pk": 69605,
         "model": "movies.Director",
         "fields": {
-            "name": "Anthony Russo",
-            "img": "/fIa5wXK7MHAquhefTr3TcnZiYy8.jpg",
-            "movies": 299534
+            "name": "Dan Kuenster",
+            "img": null
         }
     },
     {
-        "pk": 1302082,
+        "pk": 18899,
         "model": "movies.Director",
         "fields": {
-            "name": "David F. Sandberg",
-            "img": "/10p2i4OW0JWAbnOb7yMLUEGdSqM.jpg",
-            "movies": 287947
+            "name": "Yuen Woo-ping",
+            "img": "/7gr04tWDnsBHHmo18aYLWXZHAvC.jpg"
         }
     },
     {
-        "pk": 65630,
+        "pk": 58498,
         "model": "movies.Director",
         "fields": {
-            "name": "Rob Letterman",
-            "img": "/v2GPTQ41ZqHtML8W1ft3UJej5xA.jpg",
-            "movies": 447404
+            "name": "Dominic Sena",
+            "img": "/ofWADCsDpNxbTFfoK1CpU8KnBGF.jpg"
         }
     },
     {
-        "pk": 53068,
+        "pk": 15287,
         "model": "movies.Director",
         "fields": {
-            "name": "Ryan Fleck",
-            "img": "/z5EL2oWKEVUgFb6wjoX0BSxthsJ.jpg",
-            "movies": 299537
+            "name": "Niki Caro",
+            "img": "/ooJcmnhX9qJ0E7bCdSQCxr7JViH.jpg"
         }
     },
     {
-        "pk": 53069,
+        "pk": 81718,
         "model": "movies.Director",
         "fields": {
-            "name": "Anna Boden",
-            "img": "/h5YMXdI42zb0uqn5UJHF4fT9AER.jpg",
-            "movies": 299537
+            "name": "Mamoru Hosoda",
+            "img": "/oh1GS6x8cdGkyL4QPKmpMSaD6Wu.jpg"
         }
     },
     {
-        "pk": 1424064,
+        "pk": 7,
         "model": "movies.Director",
         "fields": {
-            "name": "Kyouhei Yamaguchi",
-            "img": "/uAFzPnQsnGzkR9KlU260TsGMFI1.jpg",
-            "movies": 543103
+            "name": "Andrew Stanton",
+            "img": "/gasNitCwepbqNcYBmDHpsCgZH0I.jpg"
         }
     },
     {
-        "pk": 1297518,
+        "pk": 130938,
         "model": "movies.Director",
         "fields": {
-            "name": "Kazuaki Imai",
-            "img": null,
-            "movies": 495925
+            "name": "Sergei Bodrov",
+            "img": "/9f4SPMNwQDA64lkSRgNhvrb1etf.jpg"
         }
     },
     {
-        "pk": 95972,
+        "pk": 5501,
         "model": "movies.Director",
         "fields": {
-            "name": "Hans Petter Moland",
-            "img": "/xPUm6zfCrmDZb8fkby2zzF6sp8z.jpg",
-            "movies": 438650
+            "name": "Gary Fleder",
+            "img": "/fKPxO8iWMuWYQ8sXeH1BPfQzqxm.jpg"
         }
     },
     {
-        "pk": 57581,
+        "pk": 133502,
         "model": "movies.Director",
         "fields": {
-            "name": "Neil Marshall",
-            "img": "/Au5p9cFlj2XVoVIECQ40ruOp1Qz.jpg",
-            "movies": 456740
+            "name": "Simon Curtis",
+            "img": "/mpMyd3Cc7WG2epXYCbdDmcMX2BD.jpg"
         }
     },
     {
-        "pk": 11614,
+        "pk": 58324,
         "model": "movies.Director",
         "fields": {
-            "name": "M. Night Shyamalan",
-            "img": "/shV9dGXMj7zt7myRFkR6FR51LYu.jpg",
-            "movies": 450465
+            "name": "Jean-François Richet",
+            "img": "/PipS4XiDbV0hDfhydX9p8PkqZh.jpg"
         }
     },
     {
-        "pk": 19272,
+        "pk": 1218992,
         "model": "movies.Director",
         "fields": {
-            "name": "Joe Russo",
-            "img": "/679Os4tbY1YsU01KdLhM1NPXNWu.jpg",
-            "movies": 299536
+            "name": "Ben Palmer",
+            "img": "/amHZxuDKfrCNHUR6uVomq7JafXk.jpg"
         }
     },
     {
-        "pk": 19271,
+        "pk": 12890,
         "model": "movies.Director",
         "fields": {
-            "name": "Anthony Russo",
-            "img": "/fIa5wXK7MHAquhefTr3TcnZiYy8.jpg",
-            "movies": 299536
+            "name": "Pete Docter",
+            "img": "/r6ngPgnReA3RHmKjmSoVsc6Awjp.jpg"
         }
     },
     {
-        "pk": 1586194,
+        "pk": 170820,
         "model": "movies.Director",
         "fields": {
-            "name": "Jenny Gage",
-            "img": "/wdvHWFssy6KAliSrY89pvszBlmO.jpg",
-            "movies": 537915
+            "name": "Ben Falcone",
+            "img": "/abhsMUOZKyAGPK3uZPdf3UQ5MuZ.jpg"
         }
     },
     {
-        "pk": 1495940,
+        "pk": 88039,
         "model": "movies.Director",
         "fields": {
-            "name": "Frankie Chen",
-            "img": "/3jfec79vr7xVdgW8qJgTdheYXyt.jpg",
-            "movies": 576393
+            "name": "Steven R. Monroe",
+            "img": "/6CeSKA4OIbdPpkuX6SKYCH3RAnk.jpg"
         }
     },
     {
-        "pk": 1362815,
+        "pk": 66739,
         "model": "movies.Director",
         "fields": {
-            "name": "David Yarovesky",
-            "img": "/fNaQfVEnSrK6ff2bEaatRsEtMO2.jpg",
-            "movies": 531309
+            "name": "Jonathan Liebesman",
+            "img": "/9oDaNDxU1nI6t2J6ldOYhiq2Qkf.jpg"
         }
     },
     {
-        "pk": 84124,
+        "pk": 33192,
         "model": "movies.Director",
         "fields": {
-            "name": "Tina Gordon Chism",
-            "img": "/2Vho1qUJBLUPlgh3c4bnXTPKZUs.jpg",
-            "movies": 526050
+            "name": "Joel Edgerton",
+            "img": "/uMmyyCBHR9N0FwIE79IHlPNTlDw.jpg"
         }
     },
     {
-        "pk": 12891,
+        "pk": 1884,
         "model": "movies.Director",
         "fields": {
-            "name": "Joss Whedon",
-            "img": "/dTiVsuaTVTeGmvkhcyJvKp2A5kr.jpg",
-            "movies": 24428
+            "name": "Steven Soderbergh",
+            "img": "/579zHkhyHD1gj3B6a2VveOXrJAD.jpg"
         }
     },
     {
-        "pk": 20739,
+        "pk": 61175,
         "model": "movies.Director",
         "fields": {
-            "name": "Adam Shankman",
-            "img": "/alYdaxIYDvJZFnVrM2n01jcafKo.jpg",
-            "movies": 487297
+            "name": "John Whitesell",
+            "img": "/9wNZkrN7DnPjGIgaVNTnlCC1fpt.jpg"
         }
     },
     {
-        "pk": 69797,
+        "pk": 488,
         "model": "movies.Director",
         "fields": {
-            "name": "Dean DeBlois",
-            "img": "/vofzPcdNUzUD1xqaMUwMAJRgFiy.jpg",
-            "movies": 166428
+            "name": "Steven Spielberg",
+            "img": "/pOK15UNaw75Bzj7BQO1ulehbPPm.jpg"
         }
     },
     {
-        "pk": 1290272,
+        "pk": 84931,
         "model": "movies.Director",
         "fields": {
-            "name": "Dennis Widmyer",
-            "img": "/wZbN0JZd6kbGAHRglEH8u7CfGJ0.jpg",
-            "movies": 157433
+            "name": "Michael Cuesta",
+            "img": "/n3iTN6e1Bq13WlalqddULpsnEUn.jpg"
         }
     },
     {
-        "pk": 1154561,
+        "pk": 16938,
         "model": "movies.Director",
         "fields": {
-            "name": "Kevin Kölsch",
-            "img": "/4494wQuVUThEzLBAFkEPhXgpUyS.jpg",
-            "movies": 157433
+            "name": "Renny Harlin",
+            "img": "/lOCRZzC1UZfkObWpQtKxga5ZV8F.jpg"
         }
     },
     {
-        "pk": 1056121,
+        "pk": 510,
         "model": "movies.Director",
         "fields": {
-            "name": "Ryan Coogler",
-            "img": "/ddGaRFrlDdyR0OBTd1hAMWnfvim.jpg",
-            "movies": 284054
+            "name": "Tim Burton",
+            "img": "/yHEHAHQpN9PfSEQx1UxZPczhcAi.jpg"
         }
     },
     {
-        "pk": 1481804,
+        "pk": 608,
         "model": "movies.Director",
         "fields": {
-            "name": "Tomoka Nagaoka",
-            "img": null,
-            "movies": 566555
+            "name": "Hayao Miyazaki",
+            "img": "/1OBQPIwR88n49oAEzk47k0fhhOV.jpg"
         }
     },
     {
-        "pk": 19272,
+        "pk": 4600,
         "model": "movies.Director",
         "fields": {
-            "name": "Joe Russo",
-            "img": "/679Os4tbY1YsU01KdLhM1NPXNWu.jpg",
-            "movies": 299534
+            "name": "Joe Dante",
+            "img": "/7Z5R4cCY1k5XHdsFd2LYr3WWXdb.jpg"
         }
     },
     {
-        "pk": 19271,
+        "pk": 1279781,
         "model": "movies.Director",
         "fields": {
-            "name": "Anthony Russo",
-            "img": "/fIa5wXK7MHAquhefTr3TcnZiYy8.jpg",
-            "movies": 299534
+            "name": "Peter Sattler",
+            "img": "/MBCBAoqZcqrUFqoJRSatktQf7a.jpg"
         }
     },
     {
-        "pk": 1302082,
+        "pk": 29922,
         "model": "movies.Director",
         "fields": {
-            "name": "David F. Sandberg",
-            "img": "/10p2i4OW0JWAbnOb7yMLUEGdSqM.jpg",
-            "movies": 287947
+            "name": "Marcus Nispel",
+            "img": "/gKvwpCr23UxQIuS4yJZhTvHLN0C.jpg"
         }
     },
     {
-        "pk": 65630,
+        "pk": 154547,
         "model": "movies.Director",
         "fields": {
-            "name": "Rob Letterman",
-            "img": "/v2GPTQ41ZqHtML8W1ft3UJej5xA.jpg",
-            "movies": 447404
+            "name": "Chris Nelson",
+            "img": null
         }
     },
     {
-        "pk": 53068,
+        "pk": 4385,
         "model": "movies.Director",
         "fields": {
-            "name": "Ryan Fleck",
-            "img": "/z5EL2oWKEVUgFb6wjoX0BSxthsJ.jpg",
-            "movies": 299537
+            "name": "Sergio Leone",
+            "img": "/AhQ1Y67fCiEzntFbiHb2EAM8DgQ.jpg"
         }
     },
     {
-        "pk": 53069,
+        "pk": 24,
         "model": "movies.Director",
         "fields": {
-            "name": "Anna Boden",
-            "img": "/h5YMXdI42zb0uqn5UJHF4fT9AER.jpg",
-            "movies": 299537
+            "name": "Robert Zemeckis",
+            "img": "/ryiZwDAQg18IdE9gfiM4Go3ankT.jpg"
         }
     },
     {
-        "pk": 1424064,
+        "pk": 17016,
         "model": "movies.Director",
         "fields": {
-            "name": "Kyouhei Yamaguchi",
-            "img": "/uAFzPnQsnGzkR9KlU260TsGMFI1.jpg",
-            "movies": 543103
+            "name": "Neil Jordan",
+            "img": "/uZ7CvCLTKb9qxjU4VsTNeyMRucd.jpg"
         }
     },
     {
-        "pk": 1297518,
+        "pk": 12989,
         "model": "movies.Director",
         "fields": {
-            "name": "Kazuaki Imai",
-            "img": null,
-            "movies": 495925
+            "name": "Andrew Davis",
+            "img": "/vE3ls4wUsHQZAtu4gIzTIeQEmMG.jpg"
         }
     },
     {
-        "pk": 95972,
+        "pk": 18357,
         "model": "movies.Director",
         "fields": {
-            "name": "Hans Petter Moland",
-            "img": "/xPUm6zfCrmDZb8fkby2zzF6sp8z.jpg",
-            "movies": 438650
+            "name": "Peter Hewitt",
+            "img": "/wP8EyttEB2xca7udNERQb07eAda.jpg"
         }
     },
     {
-        "pk": 57581,
+        "pk": 107274,
         "model": "movies.Director",
         "fields": {
-            "name": "Neil Marshall",
-            "img": "/Au5p9cFlj2XVoVIECQ40ruOp1Qz.jpg",
-            "movies": 456740
+            "name": "Richard Rich",
+            "img": "/ygeJUnHFiYjecmBLBPBie81JMLm.jpg"
         }
     },
     {
-        "pk": 11614,
+        "pk": 16938,
         "model": "movies.Director",
         "fields": {
-            "name": "M. Night Shyamalan",
-            "img": "/shV9dGXMj7zt7myRFkR6FR51LYu.jpg",
-            "movies": 450465
-        }
-    },
-    {
-        "pk": 19272,
-        "model": "movies.Director",
-        "fields": {
-            "name": "Joe Russo",
-            "img": "/679Os4tbY1YsU01KdLhM1NPXNWu.jpg",
-            "movies": 299536
-        }
-    },
-    {
-        "pk": 19271,
-        "model": "movies.Director",
-        "fields": {
-            "name": "Anthony Russo",
-            "img": "/fIa5wXK7MHAquhefTr3TcnZiYy8.jpg",
-            "movies": 299536
-        }
-    },
-    {
-        "pk": 1586194,
-        "model": "movies.Director",
-        "fields": {
-            "name": "Jenny Gage",
-            "img": "/wdvHWFssy6KAliSrY89pvszBlmO.jpg",
-            "movies": 537915
-        }
-    },
-    {
-        "pk": 1495940,
-        "model": "movies.Director",
-        "fields": {
-            "name": "Frankie Chen",
-            "img": "/3jfec79vr7xVdgW8qJgTdheYXyt.jpg",
-            "movies": 576393
-        }
-    },
-    {
-        "pk": 1362815,
-        "model": "movies.Director",
-        "fields": {
-            "name": "David Yarovesky",
-            "img": "/fNaQfVEnSrK6ff2bEaatRsEtMO2.jpg",
-            "movies": 531309
-        }
-    },
-    {
-        "pk": 84124,
-        "model": "movies.Director",
-        "fields": {
-            "name": "Tina Gordon Chism",
-            "img": "/2Vho1qUJBLUPlgh3c4bnXTPKZUs.jpg",
-            "movies": 526050
-        }
-    },
-    {
-        "pk": 12891,
-        "model": "movies.Director",
-        "fields": {
-            "name": "Joss Whedon",
-            "img": "/dTiVsuaTVTeGmvkhcyJvKp2A5kr.jpg",
-            "movies": 24428
-        }
-    },
-    {
-        "pk": 20739,
-        "model": "movies.Director",
-        "fields": {
-            "name": "Adam Shankman",
-            "img": "/alYdaxIYDvJZFnVrM2n01jcafKo.jpg",
-            "movies": 487297
-        }
-    },
-    {
-        "pk": 69797,
-        "model": "movies.Director",
-        "fields": {
-            "name": "Dean DeBlois",
-            "img": "/vofzPcdNUzUD1xqaMUwMAJRgFiy.jpg",
-            "movies": 166428
-        }
-    },
-    {
-        "pk": 1290272,
-        "model": "movies.Director",
-        "fields": {
-            "name": "Dennis Widmyer",
-            "img": "/wZbN0JZd6kbGAHRglEH8u7CfGJ0.jpg",
-            "movies": 157433
-        }
-    },
-    {
-        "pk": 1154561,
-        "model": "movies.Director",
-        "fields": {
-            "name": "Kevin Kölsch",
-            "img": "/4494wQuVUThEzLBAFkEPhXgpUyS.jpg",
-            "movies": 157433
-        }
-    },
-    {
-        "pk": 1056121,
-        "model": "movies.Director",
-        "fields": {
-            "name": "Ryan Coogler",
-            "img": "/ddGaRFrlDdyR0OBTd1hAMWnfvim.jpg",
-            "movies": 284054
-        }
-    },
-    {
-        "pk": 1481804,
-        "model": "movies.Director",
-        "fields": {
-            "name": "Tomoka Nagaoka",
-            "img": null,
-            "movies": 566555
-        }
-    },
-    {
-        "pk": 19272,
-        "model": "movies.Director",
-        "fields": {
-            "name": "Joe Russo",
-            "img": "/679Os4tbY1YsU01KdLhM1NPXNWu.jpg",
-            "movies": 299534
-        }
-    },
-    {
-        "pk": 19271,
-        "model": "movies.Director",
-        "fields": {
-            "name": "Anthony Russo",
-            "img": "/fIa5wXK7MHAquhefTr3TcnZiYy8.jpg",
-            "movies": 299534
-        }
-    },
-    {
-        "pk": 1302082,
-        "model": "movies.Director",
-        "fields": {
-            "name": "David F. Sandberg",
-            "img": "/10p2i4OW0JWAbnOb7yMLUEGdSqM.jpg",
-            "movies": 287947
-        }
-    },
-    {
-        "pk": 65630,
-        "model": "movies.Director",
-        "fields": {
-            "name": "Rob Letterman",
-            "img": "/v2GPTQ41ZqHtML8W1ft3UJej5xA.jpg",
-            "movies": 447404
-        }
-    },
-    {
-        "pk": 53068,
-        "model": "movies.Director",
-        "fields": {
-            "name": "Ryan Fleck",
-            "img": "/z5EL2oWKEVUgFb6wjoX0BSxthsJ.jpg",
-            "movies": 299537
-        }
-    },
-    {
-        "pk": 53069,
-        "model": "movies.Director",
-        "fields": {
-            "name": "Anna Boden",
-            "img": "/h5YMXdI42zb0uqn5UJHF4fT9AER.jpg",
-            "movies": 299537
-        }
-    },
-    {
-        "pk": 1424064,
-        "model": "movies.Director",
-        "fields": {
-            "name": "Kyouhei Yamaguchi",
-            "img": "/uAFzPnQsnGzkR9KlU260TsGMFI1.jpg",
-            "movies": 543103
-        }
-    },
-    {
-        "pk": 1297518,
-        "model": "movies.Director",
-        "fields": {
-            "name": "Kazuaki Imai",
-            "img": null,
-            "movies": 495925
-        }
-    },
-    {
-        "pk": 95972,
-        "model": "movies.Director",
-        "fields": {
-            "name": "Hans Petter Moland",
-            "img": "/xPUm6zfCrmDZb8fkby2zzF6sp8z.jpg",
-            "movies": 438650
-        }
-    },
-    {
-        "pk": 57581,
-        "model": "movies.Director",
-        "fields": {
-            "name": "Neil Marshall",
-            "img": "/Au5p9cFlj2XVoVIECQ40ruOp1Qz.jpg",
-            "movies": 456740
-        }
-    },
-    {
-        "pk": 11614,
-        "model": "movies.Director",
-        "fields": {
-            "name": "M. Night Shyamalan",
-            "img": "/shV9dGXMj7zt7myRFkR6FR51LYu.jpg",
-            "movies": 450465
-        }
-    },
-    {
-        "pk": 19272,
-        "model": "movies.Director",
-        "fields": {
-            "name": "Joe Russo",
-            "img": "/679Os4tbY1YsU01KdLhM1NPXNWu.jpg",
-            "movies": 299536
-        }
-    },
-    {
-        "pk": 19271,
-        "model": "movies.Director",
-        "fields": {
-            "name": "Anthony Russo",
-            "img": "/fIa5wXK7MHAquhefTr3TcnZiYy8.jpg",
-            "movies": 299536
-        }
-    },
-    {
-        "pk": 1586194,
-        "model": "movies.Director",
-        "fields": {
-            "name": "Jenny Gage",
-            "img": "/wdvHWFssy6KAliSrY89pvszBlmO.jpg",
-            "movies": 537915
-        }
-    },
-    {
-        "pk": 1495940,
-        "model": "movies.Director",
-        "fields": {
-            "name": "Frankie Chen",
-            "img": "/3jfec79vr7xVdgW8qJgTdheYXyt.jpg",
-            "movies": 576393
-        }
-    },
-    {
-        "pk": 1362815,
-        "model": "movies.Director",
-        "fields": {
-            "name": "David Yarovesky",
-            "img": "/fNaQfVEnSrK6ff2bEaatRsEtMO2.jpg",
-            "movies": 531309
-        }
-    },
-    {
-        "pk": 84124,
-        "model": "movies.Director",
-        "fields": {
-            "name": "Tina Gordon Chism",
-            "img": "/2Vho1qUJBLUPlgh3c4bnXTPKZUs.jpg",
-            "movies": 526050
-        }
-    },
-    {
-        "pk": 12891,
-        "model": "movies.Director",
-        "fields": {
-            "name": "Joss Whedon",
-            "img": "/dTiVsuaTVTeGmvkhcyJvKp2A5kr.jpg",
-            "movies": 24428
-        }
-    },
-    {
-        "pk": 20739,
-        "model": "movies.Director",
-        "fields": {
-            "name": "Adam Shankman",
-            "img": "/alYdaxIYDvJZFnVrM2n01jcafKo.jpg",
-            "movies": 487297
-        }
-    },
-    {
-        "pk": 69797,
-        "model": "movies.Director",
-        "fields": {
-            "name": "Dean DeBlois",
-            "img": "/vofzPcdNUzUD1xqaMUwMAJRgFiy.jpg",
-            "movies": 166428
-        }
-    },
-    {
-        "pk": 1290272,
-        "model": "movies.Director",
-        "fields": {
-            "name": "Dennis Widmyer",
-            "img": "/wZbN0JZd6kbGAHRglEH8u7CfGJ0.jpg",
-            "movies": 157433
-        }
-    },
-    {
-        "pk": 1154561,
-        "model": "movies.Director",
-        "fields": {
-            "name": "Kevin Kölsch",
-            "img": "/4494wQuVUThEzLBAFkEPhXgpUyS.jpg",
-            "movies": 157433
-        }
-    },
-    {
-        "pk": 1056121,
-        "model": "movies.Director",
-        "fields": {
-            "name": "Ryan Coogler",
-            "img": "/ddGaRFrlDdyR0OBTd1hAMWnfvim.jpg",
-            "movies": 284054
-        }
-    },
-    {
-        "pk": 1481804,
-        "model": "movies.Director",
-        "fields": {
-            "name": "Tomoka Nagaoka",
-            "img": null,
-            "movies": 566555
-        }
-    },
-    {
-        "pk": 19272,
-        "model": "movies.Director",
-        "fields": {
-            "name": "Joe Russo",
-            "img": "/679Os4tbY1YsU01KdLhM1NPXNWu.jpg",
-            "movies": 299534
-        }
-    },
-    {
-        "pk": 19271,
-        "model": "movies.Director",
-        "fields": {
-            "name": "Anthony Russo",
-            "img": "/fIa5wXK7MHAquhefTr3TcnZiYy8.jpg",
-            "movies": 299534
-        }
-    },
-    {
-        "pk": 1302082,
-        "model": "movies.Director",
-        "fields": {
-            "name": "David F. Sandberg",
-            "img": "/10p2i4OW0JWAbnOb7yMLUEGdSqM.jpg",
-            "movies": 287947
-        }
-    },
-    {
-        "pk": 65630,
-        "model": "movies.Director",
-        "fields": {
-            "name": "Rob Letterman",
-            "img": "/v2GPTQ41ZqHtML8W1ft3UJej5xA.jpg",
-            "movies": 447404
-        }
-    },
-    {
-        "pk": 53068,
-        "model": "movies.Director",
-        "fields": {
-            "name": "Ryan Fleck",
-            "img": "/z5EL2oWKEVUgFb6wjoX0BSxthsJ.jpg",
-            "movies": 299537
-        }
-    },
-    {
-        "pk": 53069,
-        "model": "movies.Director",
-        "fields": {
-            "name": "Anna Boden",
-            "img": "/h5YMXdI42zb0uqn5UJHF4fT9AER.jpg",
-            "movies": 299537
-        }
-    },
-    {
-        "pk": 1424064,
-        "model": "movies.Director",
-        "fields": {
-            "name": "Kyouhei Yamaguchi",
-            "img": "/uAFzPnQsnGzkR9KlU260TsGMFI1.jpg",
-            "movies": 543103
-        }
-    },
-    {
-        "pk": 1297518,
-        "model": "movies.Director",
-        "fields": {
-            "name": "Kazuaki Imai",
-            "img": null,
-            "movies": 495925
-        }
-    },
-    {
-        "pk": 95972,
-        "model": "movies.Director",
-        "fields": {
-            "name": "Hans Petter Moland",
-            "img": "/xPUm6zfCrmDZb8fkby2zzF6sp8z.jpg",
-            "movies": 438650
-        }
-    },
-    {
-        "pk": 57581,
-        "model": "movies.Director",
-        "fields": {
-            "name": "Neil Marshall",
-            "img": "/Au5p9cFlj2XVoVIECQ40ruOp1Qz.jpg",
-            "movies": 456740
-        }
-    },
-    {
-        "pk": 11614,
-        "model": "movies.Director",
-        "fields": {
-            "name": "M. Night Shyamalan",
-            "img": "/shV9dGXMj7zt7myRFkR6FR51LYu.jpg",
-            "movies": 450465
-        }
-    },
-    {
-        "pk": 19272,
-        "model": "movies.Director",
-        "fields": {
-            "name": "Joe Russo",
-            "img": "/679Os4tbY1YsU01KdLhM1NPXNWu.jpg",
-            "movies": 299536
-        }
-    },
-    {
-        "pk": 19271,
-        "model": "movies.Director",
-        "fields": {
-            "name": "Anthony Russo",
-            "img": "/fIa5wXK7MHAquhefTr3TcnZiYy8.jpg",
-            "movies": 299536
-        }
-    },
-    {
-        "pk": 1586194,
-        "model": "movies.Director",
-        "fields": {
-            "name": "Jenny Gage",
-            "img": "/wdvHWFssy6KAliSrY89pvszBlmO.jpg",
-            "movies": 537915
-        }
-    },
-    {
-        "pk": 1495940,
-        "model": "movies.Director",
-        "fields": {
-            "name": "Frankie Chen",
-            "img": "/3jfec79vr7xVdgW8qJgTdheYXyt.jpg",
-            "movies": 576393
-        }
-    },
-    {
-        "pk": 1362815,
-        "model": "movies.Director",
-        "fields": {
-            "name": "David Yarovesky",
-            "img": "/fNaQfVEnSrK6ff2bEaatRsEtMO2.jpg",
-            "movies": 531309
-        }
-    },
-    {
-        "pk": 84124,
-        "model": "movies.Director",
-        "fields": {
-            "name": "Tina Gordon Chism",
-            "img": "/2Vho1qUJBLUPlgh3c4bnXTPKZUs.jpg",
-            "movies": 526050
-        }
-    },
-    {
-        "pk": 12891,
-        "model": "movies.Director",
-        "fields": {
-            "name": "Joss Whedon",
-            "img": "/dTiVsuaTVTeGmvkhcyJvKp2A5kr.jpg",
-            "movies": 24428
-        }
-    },
-    {
-        "pk": 20739,
-        "model": "movies.Director",
-        "fields": {
-            "name": "Adam Shankman",
-            "img": "/alYdaxIYDvJZFnVrM2n01jcafKo.jpg",
-            "movies": 487297
-        }
-    },
-    {
-        "pk": 69797,
-        "model": "movies.Director",
-        "fields": {
-            "name": "Dean DeBlois",
-            "img": "/vofzPcdNUzUD1xqaMUwMAJRgFiy.jpg",
-            "movies": 166428
-        }
-    },
-    {
-        "pk": 1290272,
-        "model": "movies.Director",
-        "fields": {
-            "name": "Dennis Widmyer",
-            "img": "/wZbN0JZd6kbGAHRglEH8u7CfGJ0.jpg",
-            "movies": 157433
-        }
-    },
-    {
-        "pk": 1154561,
-        "model": "movies.Director",
-        "fields": {
-            "name": "Kevin Kölsch",
-            "img": "/4494wQuVUThEzLBAFkEPhXgpUyS.jpg",
-            "movies": 157433
-        }
-    },
-    {
-        "pk": 1056121,
-        "model": "movies.Director",
-        "fields": {
-            "name": "Ryan Coogler",
-            "img": "/ddGaRFrlDdyR0OBTd1hAMWnfvim.jpg",
-            "movies": 284054
-        }
-    },
-    {
-        "pk": 1481804,
-        "model": "movies.Director",
-        "fields": {
-            "name": "Tomoka Nagaoka",
-            "img": null,
-            "movies": 566555
-        }
-    },
-    {
-        "pk": 19272,
-        "model": "movies.Director",
-        "fields": {
-            "name": "Joe Russo",
-            "img": "/679Os4tbY1YsU01KdLhM1NPXNWu.jpg",
-            "movies": 299534
-        }
-    },
-    {
-        "pk": 19271,
-        "model": "movies.Director",
-        "fields": {
-            "name": "Anthony Russo",
-            "img": "/fIa5wXK7MHAquhefTr3TcnZiYy8.jpg",
-            "movies": 299534
-        }
-    },
-    {
-        "pk": 1302082,
-        "model": "movies.Director",
-        "fields": {
-            "name": "David F. Sandberg",
-            "img": "/10p2i4OW0JWAbnOb7yMLUEGdSqM.jpg",
-            "movies": 287947
-        }
-    },
-    {
-        "pk": 65630,
-        "model": "movies.Director",
-        "fields": {
-            "name": "Rob Letterman",
-            "img": "/v2GPTQ41ZqHtML8W1ft3UJej5xA.jpg",
-            "movies": 447404
-        }
-    },
-    {
-        "pk": 53068,
-        "model": "movies.Director",
-        "fields": {
-            "name": "Ryan Fleck",
-            "img": "/z5EL2oWKEVUgFb6wjoX0BSxthsJ.jpg",
-            "movies": 299537
-        }
-    },
-    {
-        "pk": 53069,
-        "model": "movies.Director",
-        "fields": {
-            "name": "Anna Boden",
-            "img": "/h5YMXdI42zb0uqn5UJHF4fT9AER.jpg",
-            "movies": 299537
-        }
-    },
-    {
-        "pk": 1424064,
-        "model": "movies.Director",
-        "fields": {
-            "name": "Kyouhei Yamaguchi",
-            "img": "/uAFzPnQsnGzkR9KlU260TsGMFI1.jpg",
-            "movies": 543103
-        }
-    },
-    {
-        "pk": 1297518,
-        "model": "movies.Director",
-        "fields": {
-            "name": "Kazuaki Imai",
-            "img": null,
-            "movies": 495925
-        }
-    },
-    {
-        "pk": 95972,
-        "model": "movies.Director",
-        "fields": {
-            "name": "Hans Petter Moland",
-            "img": "/xPUm6zfCrmDZb8fkby2zzF6sp8z.jpg",
-            "movies": 438650
-        }
-    },
-    {
-        "pk": 57581,
-        "model": "movies.Director",
-        "fields": {
-            "name": "Neil Marshall",
-            "img": "/Au5p9cFlj2XVoVIECQ40ruOp1Qz.jpg",
-            "movies": 456740
-        }
-    },
-    {
-        "pk": 11614,
-        "model": "movies.Director",
-        "fields": {
-            "name": "M. Night Shyamalan",
-            "img": "/shV9dGXMj7zt7myRFkR6FR51LYu.jpg",
-            "movies": 450465
-        }
-    },
-    {
-        "pk": 19272,
-        "model": "movies.Director",
-        "fields": {
-            "name": "Joe Russo",
-            "img": "/679Os4tbY1YsU01KdLhM1NPXNWu.jpg",
-            "movies": 299536
-        }
-    },
-    {
-        "pk": 19271,
-        "model": "movies.Director",
-        "fields": {
-            "name": "Anthony Russo",
-            "img": "/fIa5wXK7MHAquhefTr3TcnZiYy8.jpg",
-            "movies": 299536
-        }
-    },
-    {
-        "pk": 1586194,
-        "model": "movies.Director",
-        "fields": {
-            "name": "Jenny Gage",
-            "img": "/wdvHWFssy6KAliSrY89pvszBlmO.jpg",
-            "movies": 537915
-        }
-    },
-    {
-        "pk": 1495940,
-        "model": "movies.Director",
-        "fields": {
-            "name": "Frankie Chen",
-            "img": "/3jfec79vr7xVdgW8qJgTdheYXyt.jpg",
-            "movies": 576393
-        }
-    },
-    {
-        "pk": 1362815,
-        "model": "movies.Director",
-        "fields": {
-            "name": "David Yarovesky",
-            "img": "/fNaQfVEnSrK6ff2bEaatRsEtMO2.jpg",
-            "movies": 531309
-        }
-    },
-    {
-        "pk": 84124,
-        "model": "movies.Director",
-        "fields": {
-            "name": "Tina Gordon Chism",
-            "img": "/2Vho1qUJBLUPlgh3c4bnXTPKZUs.jpg",
-            "movies": 526050
-        }
-    },
-    {
-        "pk": 12891,
-        "model": "movies.Director",
-        "fields": {
-            "name": "Joss Whedon",
-            "img": "/dTiVsuaTVTeGmvkhcyJvKp2A5kr.jpg",
-            "movies": 24428
-        }
-    },
-    {
-        "pk": 20739,
-        "model": "movies.Director",
-        "fields": {
-            "name": "Adam Shankman",
-            "img": "/alYdaxIYDvJZFnVrM2n01jcafKo.jpg",
-            "movies": 487297
-        }
-    },
-    {
-        "pk": 69797,
-        "model": "movies.Director",
-        "fields": {
-            "name": "Dean DeBlois",
-            "img": "/vofzPcdNUzUD1xqaMUwMAJRgFiy.jpg",
-            "movies": 166428
-        }
-    },
-    {
-        "pk": 1290272,
-        "model": "movies.Director",
-        "fields": {
-            "name": "Dennis Widmyer",
-            "img": "/wZbN0JZd6kbGAHRglEH8u7CfGJ0.jpg",
-            "movies": 157433
-        }
-    },
-    {
-        "pk": 1154561,
-        "model": "movies.Director",
-        "fields": {
-            "name": "Kevin Kölsch",
-            "img": "/4494wQuVUThEzLBAFkEPhXgpUyS.jpg",
-            "movies": 157433
-        }
-    },
-    {
-        "pk": 1056121,
-        "model": "movies.Director",
-        "fields": {
-            "name": "Ryan Coogler",
-            "img": "/ddGaRFrlDdyR0OBTd1hAMWnfvim.jpg",
-            "movies": 284054
-        }
-    },
-    {
-        "pk": 1481804,
-        "model": "movies.Director",
-        "fields": {
-            "name": "Tomoka Nagaoka",
-            "img": null,
-            "movies": 566555
-        }
-    },
-    {
-        "pk": 19272,
-        "model": "movies.Director",
-        "fields": {
-            "name": "Joe Russo",
-            "img": "/679Os4tbY1YsU01KdLhM1NPXNWu.jpg",
-            "movies": 299534
-        }
-    },
-    {
-        "pk": 19271,
-        "model": "movies.Director",
-        "fields": {
-            "name": "Anthony Russo",
-            "img": "/fIa5wXK7MHAquhefTr3TcnZiYy8.jpg",
-            "movies": 299534
-        }
-    },
-    {
-        "pk": 1302082,
-        "model": "movies.Director",
-        "fields": {
-            "name": "David F. Sandberg",
-            "img": "/10p2i4OW0JWAbnOb7yMLUEGdSqM.jpg",
-            "movies": 287947
-        }
-    },
-    {
-        "pk": 65630,
-        "model": "movies.Director",
-        "fields": {
-            "name": "Rob Letterman",
-            "img": "/v2GPTQ41ZqHtML8W1ft3UJej5xA.jpg",
-            "movies": 447404
-        }
-    },
-    {
-        "pk": 53068,
-        "model": "movies.Director",
-        "fields": {
-            "name": "Ryan Fleck",
-            "img": "/z5EL2oWKEVUgFb6wjoX0BSxthsJ.jpg",
-            "movies": 299537
-        }
-    },
-    {
-        "pk": 53069,
-        "model": "movies.Director",
-        "fields": {
-            "name": "Anna Boden",
-            "img": "/h5YMXdI42zb0uqn5UJHF4fT9AER.jpg",
-            "movies": 299537
-        }
-    },
-    {
-        "pk": 1424064,
-        "model": "movies.Director",
-        "fields": {
-            "name": "Kyouhei Yamaguchi",
-            "img": "/uAFzPnQsnGzkR9KlU260TsGMFI1.jpg",
-            "movies": 543103
-        }
-    },
-    {
-        "pk": 1297518,
-        "model": "movies.Director",
-        "fields": {
-            "name": "Kazuaki Imai",
-            "img": null,
-            "movies": 495925
-        }
-    },
-    {
-        "pk": 95972,
-        "model": "movies.Director",
-        "fields": {
-            "name": "Hans Petter Moland",
-            "img": "/xPUm6zfCrmDZb8fkby2zzF6sp8z.jpg",
-            "movies": 438650
-        }
-    },
-    {
-        "pk": 57581,
-        "model": "movies.Director",
-        "fields": {
-            "name": "Neil Marshall",
-            "img": "/Au5p9cFlj2XVoVIECQ40ruOp1Qz.jpg",
-            "movies": 456740
-        }
-    },
-    {
-        "pk": 11614,
-        "model": "movies.Director",
-        "fields": {
-            "name": "M. Night Shyamalan",
-            "img": "/shV9dGXMj7zt7myRFkR6FR51LYu.jpg",
-            "movies": 450465
-        }
-    },
-    {
-        "pk": 19272,
-        "model": "movies.Director",
-        "fields": {
-            "name": "Joe Russo",
-            "img": "/679Os4tbY1YsU01KdLhM1NPXNWu.jpg",
-            "movies": 299536
-        }
-    },
-    {
-        "pk": 19271,
-        "model": "movies.Director",
-        "fields": {
-            "name": "Anthony Russo",
-            "img": "/fIa5wXK7MHAquhefTr3TcnZiYy8.jpg",
-            "movies": 299536
-        }
-    },
-    {
-        "pk": 1586194,
-        "model": "movies.Director",
-        "fields": {
-            "name": "Jenny Gage",
-            "img": "/wdvHWFssy6KAliSrY89pvszBlmO.jpg",
-            "movies": 537915
-        }
-    },
-    {
-        "pk": 1495940,
-        "model": "movies.Director",
-        "fields": {
-            "name": "Frankie Chen",
-            "img": "/3jfec79vr7xVdgW8qJgTdheYXyt.jpg",
-            "movies": 576393
-        }
-    },
-    {
-        "pk": 1362815,
-        "model": "movies.Director",
-        "fields": {
-            "name": "David Yarovesky",
-            "img": "/fNaQfVEnSrK6ff2bEaatRsEtMO2.jpg",
-            "movies": 531309
-        }
-    },
-    {
-        "pk": 84124,
-        "model": "movies.Director",
-        "fields": {
-            "name": "Tina Gordon Chism",
-            "img": "/2Vho1qUJBLUPlgh3c4bnXTPKZUs.jpg",
-            "movies": 526050
-        }
-    },
-    {
-        "pk": 12891,
-        "model": "movies.Director",
-        "fields": {
-            "name": "Joss Whedon",
-            "img": "/dTiVsuaTVTeGmvkhcyJvKp2A5kr.jpg",
-            "movies": 24428
-        }
-    },
-    {
-        "pk": 20739,
-        "model": "movies.Director",
-        "fields": {
-            "name": "Adam Shankman",
-            "img": "/alYdaxIYDvJZFnVrM2n01jcafKo.jpg",
-            "movies": 487297
-        }
-    },
-    {
-        "pk": 69797,
-        "model": "movies.Director",
-        "fields": {
-            "name": "Dean DeBlois",
-            "img": "/vofzPcdNUzUD1xqaMUwMAJRgFiy.jpg",
-            "movies": 166428
-        }
-    },
-    {
-        "pk": 1290272,
-        "model": "movies.Director",
-        "fields": {
-            "name": "Dennis Widmyer",
-            "img": "/wZbN0JZd6kbGAHRglEH8u7CfGJ0.jpg",
-            "movies": 157433
-        }
-    },
-    {
-        "pk": 1154561,
-        "model": "movies.Director",
-        "fields": {
-            "name": "Kevin Kölsch",
-            "img": "/4494wQuVUThEzLBAFkEPhXgpUyS.jpg",
-            "movies": 157433
-        }
-    },
-    {
-        "pk": 1056121,
-        "model": "movies.Director",
-        "fields": {
-            "name": "Ryan Coogler",
-            "img": "/ddGaRFrlDdyR0OBTd1hAMWnfvim.jpg",
-            "movies": 284054
-        }
-    },
-    {
-        "pk": 1481804,
-        "model": "movies.Director",
-        "fields": {
-            "name": "Tomoka Nagaoka",
-            "img": null,
-            "movies": 566555
-        }
-    },
-    {
-        "pk": 19272,
-        "model": "movies.Director",
-        "fields": {
-            "name": "Joe Russo",
-            "img": "/679Os4tbY1YsU01KdLhM1NPXNWu.jpg",
-            "movies": 299534
-        }
-    },
-    {
-        "pk": 19271,
-        "model": "movies.Director",
-        "fields": {
-            "name": "Anthony Russo",
-            "img": "/fIa5wXK7MHAquhefTr3TcnZiYy8.jpg",
-            "movies": 299534
-        }
-    },
-    {
-        "pk": 1302082,
-        "model": "movies.Director",
-        "fields": {
-            "name": "David F. Sandberg",
-            "img": "/10p2i4OW0JWAbnOb7yMLUEGdSqM.jpg",
-            "movies": 287947
-        }
-    },
-    {
-        "pk": 65630,
-        "model": "movies.Director",
-        "fields": {
-            "name": "Rob Letterman",
-            "img": "/v2GPTQ41ZqHtML8W1ft3UJej5xA.jpg",
-            "movies": 447404
-        }
-    },
-    {
-        "pk": 53068,
-        "model": "movies.Director",
-        "fields": {
-            "name": "Ryan Fleck",
-            "img": "/z5EL2oWKEVUgFb6wjoX0BSxthsJ.jpg",
-            "movies": 299537
-        }
-    },
-    {
-        "pk": 53069,
-        "model": "movies.Director",
-        "fields": {
-            "name": "Anna Boden",
-            "img": "/h5YMXdI42zb0uqn5UJHF4fT9AER.jpg",
-            "movies": 299537
-        }
-    },
-    {
-        "pk": 1424064,
-        "model": "movies.Director",
-        "fields": {
-            "name": "Kyouhei Yamaguchi",
-            "img": "/uAFzPnQsnGzkR9KlU260TsGMFI1.jpg",
-            "movies": 543103
-        }
-    },
-    {
-        "pk": 1297518,
-        "model": "movies.Director",
-        "fields": {
-            "name": "Kazuaki Imai",
-            "img": null,
-            "movies": 495925
-        }
-    },
-    {
-        "pk": 95972,
-        "model": "movies.Director",
-        "fields": {
-            "name": "Hans Petter Moland",
-            "img": "/xPUm6zfCrmDZb8fkby2zzF6sp8z.jpg",
-            "movies": 438650
-        }
-    },
-    {
-        "pk": 57581,
-        "model": "movies.Director",
-        "fields": {
-            "name": "Neil Marshall",
-            "img": "/Au5p9cFlj2XVoVIECQ40ruOp1Qz.jpg",
-            "movies": 456740
-        }
-    },
-    {
-        "pk": 11614,
-        "model": "movies.Director",
-        "fields": {
-            "name": "M. Night Shyamalan",
-            "img": "/shV9dGXMj7zt7myRFkR6FR51LYu.jpg",
-            "movies": 450465
-        }
-    },
-    {
-        "pk": 19272,
-        "model": "movies.Director",
-        "fields": {
-            "name": "Joe Russo",
-            "img": "/679Os4tbY1YsU01KdLhM1NPXNWu.jpg",
-            "movies": 299536
-        }
-    },
-    {
-        "pk": 19271,
-        "model": "movies.Director",
-        "fields": {
-            "name": "Anthony Russo",
-            "img": "/fIa5wXK7MHAquhefTr3TcnZiYy8.jpg",
-            "movies": 299536
-        }
-    },
-    {
-        "pk": 1586194,
-        "model": "movies.Director",
-        "fields": {
-            "name": "Jenny Gage",
-            "img": "/wdvHWFssy6KAliSrY89pvszBlmO.jpg",
-            "movies": 537915
-        }
-    },
-    {
-        "pk": 1495940,
-        "model": "movies.Director",
-        "fields": {
-            "name": "Frankie Chen",
-            "img": "/3jfec79vr7xVdgW8qJgTdheYXyt.jpg",
-            "movies": 576393
-        }
-    },
-    {
-        "pk": 1362815,
-        "model": "movies.Director",
-        "fields": {
-            "name": "David Yarovesky",
-            "img": "/fNaQfVEnSrK6ff2bEaatRsEtMO2.jpg",
-            "movies": 531309
-        }
-    },
-    {
-        "pk": 84124,
-        "model": "movies.Director",
-        "fields": {
-            "name": "Tina Gordon Chism",
-            "img": "/2Vho1qUJBLUPlgh3c4bnXTPKZUs.jpg",
-            "movies": 526050
-        }
-    },
-    {
-        "pk": 12891,
-        "model": "movies.Director",
-        "fields": {
-            "name": "Joss Whedon",
-            "img": "/dTiVsuaTVTeGmvkhcyJvKp2A5kr.jpg",
-            "movies": 24428
-        }
-    },
-    {
-        "pk": 20739,
-        "model": "movies.Director",
-        "fields": {
-            "name": "Adam Shankman",
-            "img": "/alYdaxIYDvJZFnVrM2n01jcafKo.jpg",
-            "movies": 487297
-        }
-    },
-    {
-        "pk": 69797,
-        "model": "movies.Director",
-        "fields": {
-            "name": "Dean DeBlois",
-            "img": "/vofzPcdNUzUD1xqaMUwMAJRgFiy.jpg",
-            "movies": 166428
-        }
-    },
-    {
-        "pk": 1290272,
-        "model": "movies.Director",
-        "fields": {
-            "name": "Dennis Widmyer",
-            "img": "/wZbN0JZd6kbGAHRglEH8u7CfGJ0.jpg",
-            "movies": 157433
-        }
-    },
-    {
-        "pk": 1154561,
-        "model": "movies.Director",
-        "fields": {
-            "name": "Kevin Kölsch",
-            "img": "/4494wQuVUThEzLBAFkEPhXgpUyS.jpg",
-            "movies": 157433
-        }
-    },
-    {
-        "pk": 1056121,
-        "model": "movies.Director",
-        "fields": {
-            "name": "Ryan Coogler",
-            "img": "/ddGaRFrlDdyR0OBTd1hAMWnfvim.jpg",
-            "movies": 284054
-        }
-    },
-    {
-        "pk": 1481804,
-        "model": "movies.Director",
-        "fields": {
-            "name": "Tomoka Nagaoka",
-            "img": null,
-            "movies": 566555
+            "name": "Renny Harlin",
+            "img": "/lOCRZzC1UZfkObWpQtKxga5ZV8F.jpg"
         }
     }
 ]
