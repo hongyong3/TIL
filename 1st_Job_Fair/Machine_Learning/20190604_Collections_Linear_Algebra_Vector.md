@@ -246,7 +246,7 @@ Point(x=11, y=22)
 
 ---
 
-### 선형대수(Linear Algebra) - 선형대수학을 위한 벡터란?
+### 선형대수(Linear Algebra) - 선형대수학을 위한 벡터란?(Vector intro for Linear Algebra)
 
 ##### 선형대수학은 `벡터 공간`, `벡터`, `선형 변환`, `행렬`, `연립 선형 방정식`, 등을 연구하는 대수학의 한 분야이다. 현대 선형대수학은 그중에서도 벡터 공간이 주 연구 대상이다.
 
@@ -264,7 +264,7 @@ Point(x=11, y=22)
 
 ---
 
-### 선형대수(Linear Algebra) - 실좌표공간(Real coordinate space)
+### 선형대수(Linear Algebra) - 실좌표공간(Real Coordinate Space)
 
 
 
@@ -334,7 +334,7 @@ Point(x=11, y=22)
 
 ---
 
-### 선형대수(Linear Algebra) - 벡터와 스칼라의 곱셈(Multiplying a vector by a Scalar)
+### 선형대수(Linear Algebra) - 벡터와 스칼라의 곱셈(Multiplying a Vector by a Scalar)
 
 
 
@@ -358,7 +358,7 @@ Point(x=11, y=22)
 
 ---
 
-### 선형대수(Linear Algebra) - 단위벡터(Unit Vector notation)
+### 선형대수(Linear Algebra) - 단위벡터(Unit Vector Notation)
 
 
 
@@ -380,7 +380,7 @@ Point(x=11, y=22)
 
 ---
 
-### 선형대수(Linear Algebra) - 직선의 매개변수 표현(Parametric representations of lines)
+### 선형대수(Linear Algebra) - 직선의 매개변수 표현(Parametric Representations of Lines)
 
 
 
