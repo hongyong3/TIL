@@ -1,30 +1,41 @@
+import java.util.Scanner;
 
 public class Code13 {
 
 	public static void main(String[] args) {
-		// 지금까지와 동일하게 n개의 정수를 입력받는다.
-		int maxPrime = 0;
+
+		Scanner keyboard = new Scanner(System.in);
+
+		int n = keyboard.nextInt();
+		int [] data = new int [n];
+
+		for (int i = 0; i < n ; i++)
+			data[i] = keyboard.nextInt();
+		keyboard.close();
+		
+		int max = 0;
 		for (int i = 0; i < n; i++) {
 			for (int j = i; j < n; j++) {
-
+				
+				// convert data[i]... data[j] into an integer
 				int val = 0;
 				for (int k = i; k <= j; k++)
 					val = val * 10 + data[k];
 
+				// test if it is a prime
 				boolean isPrime = true;
-				for (int p = 2; p < val / 2 && isPrime; p++) {
-					if (val % p == 0) isPrime = false;
-				}
+				for (int k = 2; k*k <= val && isPrime; k++)
+					if (val % k == 0)
+						isPrime = false;
 
-				if (isPrime && val > 1 && val> maxPrime)
-					maxPrime = val;
+				// if yes, compare to the max
+				if (isPrime && val > 1 && val > max)
+					max = val;
 			}
 		}
-
-		if (maxPrime > 0)
-			System.out.println("The max prime number is " + maxPrime);
+		if (max > 0)
+			System.out.println(max);
 		else
-			System.out.println("No prime number exists.");
+			System.out.println("No prime number");
 	}
-
 }
