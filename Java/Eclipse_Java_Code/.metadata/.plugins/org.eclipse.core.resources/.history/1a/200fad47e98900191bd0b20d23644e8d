@@ -1,0 +1,24 @@
+import java.util.Scanner;
+
+public class Star6 {
+
+	public static void main(String[] args) {
+		Scanner keyboard = new Scanner(System.in);
+		int a = keyboard.nextInt();
+		keyboard.close();
+		int i;
+
+		for (i=0;i<N;i++)  //µÚ·Î ³Ñ¾î°¡±ë
+			for (int j=0;j<=i;j++) { //¿£ÅÍ¶û º°ÀÌ¶û Âï±ë
+				System.out.print("");
+			}
+		for (int k=(2N-1) ; k=(2N-2i-1) ; k-=2){
+			System.out.println("*");
+		}
+		for (int j=0;j<N;j++) { //¿£ÅÍ¶û º°ÀÌ¶û Âï±ë
+			System.out.print("");
+		}
+
+	}
+
+}

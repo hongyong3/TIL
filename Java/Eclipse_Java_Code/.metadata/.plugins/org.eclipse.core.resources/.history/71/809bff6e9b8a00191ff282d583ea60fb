@@ -1,0 +1,28 @@
+package Section2;
+
+import java.util.Scanner;
+
+public class Code16 {
+
+	public static void main(String[] args) {
+		 Scanner keyboard = new Scanner(System.in);
+		 int a = keyboard.nextInt();
+		 int b = keyboard.nextInt();
+		 
+		 int result = power(a, b);
+		 
+		 System.out.println(result);
+		 keyboard.close();
+	}
+	
+	int power( int m, int n );	// return type
+	{
+		int prod = 1;
+		for (int i = 0; i < n; i++)
+			prod = prod * m;
+			// prod *= m; 같은 의미
+		
+		return prod;
+		
+	}
+}

@@ -1,0 +1,15 @@
+import java.util.Scanner;
+
+public class Star3 {
+
+	public static void main(String[] args) {
+		 Scanner keyboard = new Scanner(System.in);
+		 int a = keyboard.nextInt();
+		 keyboard.close();
+		 
+		 for (int i = a; i <= a; i--) {
+			 System.out.print("*");
+		 }
+		 System.out.println();
+	}
+}
