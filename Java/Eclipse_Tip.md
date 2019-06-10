@@ -12,3 +12,30 @@
 
   단축키는 `ctrl+Shift+O`
 
+---
+
+```java
+package arabiannight.tistory.com.java.test;
+ 
+public class TestFor {
+    public static void main(String[] args) {
+         
+        int i = 1;
+         
+        System.out.println(++i); // 먼저 +
+        System.out.println(i++); // 나중 +
+         
+        System.out.println(i--); // 나중 -
+        System.out.println(--i); // 먼저 -
+         
+    }
+}
+
+---
+결과
+++i = 2
+++i = 2
+i-- = 3
+--i = 1
+```
+
