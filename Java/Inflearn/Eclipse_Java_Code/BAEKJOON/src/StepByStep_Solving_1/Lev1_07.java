@@ -2,7 +2,7 @@ package StepByStep_Solving_1;
 
 import java.util.Scanner;
 
-public class Lev1_7 {
+public class Lev1_07 {
 
 	public static void main(String[] args) {
 		 Scanner keyboard = new Scanner(System.in);
