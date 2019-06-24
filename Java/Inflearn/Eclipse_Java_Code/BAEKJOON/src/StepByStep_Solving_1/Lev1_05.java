@@ -1,6 +1,6 @@
 package StepByStep_Solving_1;
 
-public class Lev1_5 {
+public class Lev1_05 {
 
 	public static void main(String[] args) {
 		 System.out.println("|\\_/|");

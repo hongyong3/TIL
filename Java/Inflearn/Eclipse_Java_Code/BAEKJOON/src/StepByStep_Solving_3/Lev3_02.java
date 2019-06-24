@@ -1,15 +1,15 @@
-package StepByStep_Solving_2;
+package StepByStep_Solving_3;
 
 import java.util.Scanner;
 
-public class Lev2_7 {
+public class Lev3_02 {
 
 	public static void main(String[] args) {
 		 Scanner keyboard = new Scanner(System.in);
 		 int a = keyboard.nextInt();
-		 int b = keyboard.nextInt();
-		 System.out.println(a + b);
 		 keyboard.close();
+		 for (int i = a; i > 0; i--)
+			 System.out.println(i);
 
 	}
 
