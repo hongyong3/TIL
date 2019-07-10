@@ -10,89 +10,98 @@
 
 <body>
 
+
     <div id="app">
-        <ul>
-            <li v-for="i in gitCommits.length">
-                {{ gitCommits[i - 1]["commit"]["committed_date"] }}
-            </li>
-            <hr>
-            <li>
-                {{ gitCommitDates }}
-                <br>
-                {{ commits }}
-            </li>
-        </ul>
-        <br>
+
+        <hr>
+
+        <hr>
+        {{ date }}
+
+        <hr>
+        {{ commits }}
+        <hr>
+
+    </div>
+    <h1>hi</h1>
+
+
+    <div id="chart">
 
     </div>
 
-    <!-- create chart -->
-    <div id="chart"></div>
+
 
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="https://unpkg.com/frappe-charts@1.1.0/dist/frappe-charts.min.iife.js"></script>
-
 </body>
 
 </html>
 
-
 <script>
     const app = new Vue({
+
         el: '#app',
 
         data: {
-            gitCommits: [],
-            gitCommitDates: ['2019-07-08', '2019-07-09', '2019-07-10'],
-            commits: [0, 0, 0],
-        },
+            repo: [],
+            date: ['2019-07-08'],
+            commits: [0],
+            // date_2 : []
 
+        },
         methods: {
-            getGitlab: function () {
+
+
+            getRepo: function () {
                 axios.get(
                         'https://lab.ssafy.com/api/v4/projects/6075/repository/branches?private_token='
                     )
                     .then(response => {
-                        this.gitCommits = response.data
+                        this.repo = response.data
                     })
-                    .catch(error => console.log(error))
                     .then(() => {
-                        console.log(this.gitCommits.length)
-                        this.getGitlabDate()
+                        this.getDate()
                     })
             },
-            getGitlabDate: function () {
-                for (var i = 0; i < this.gitCommits.length; i++) {
+
+
+
+            getDate: function () {
+                for (var i = 0; i < this.repo.length; i++) {
                     var flag = 0;
-                    var commitDates = this.gitCommits[i]["commit"]["committed_date"].slice(0, 10)
 
-                    for (var j = 0; j < this.gitCommitDates.length; j++) {
+                    var tempdate = this.repo[i]["commit"]["committed_date"].slice(0, 10)
 
-                        if (commitDates === this.gitCommitDates[j]) {
+                    for (var j = 0; j < this.date.length; j++) {
+
+                        if (tempdate === this.date[j]) {
                             flag = 1;
                             this.commits[j] += 1;
 
                         }
                     }
                     if (flag === 0) {
-                        this.gitCommitDates.push(commitDates);
+                        this.date.push(tempdate);
                         this.commits.push(1);
 
                     }
 
                 }
             }
+
         },
 
         mounted: function () {
-            this.getGitlab()
+            this.getRepo()
         },
 
     })
 
+
     const data = {
-        labels: app.gitCommitDates,
+        labels: app.date,
         datasets: [{
                 name: "Some Data",
                 type: "bar",
