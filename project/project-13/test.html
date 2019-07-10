@@ -14,8 +14,9 @@
         <ul>
             <li v-for="i in gitCommits.length">
                 {{ gitCommits[i - 1]["commit"]["committed_date"] }}
+                <hr>
             </li>
-            <hr>
+            <br>
             <li>
                 {{ gitCommitDates }}
                 <br>
@@ -46,12 +47,13 @@
             gitCommits: [],
             gitCommitDates: ['2019-07-08', '2019-07-09', '2019-07-10'],
             commits: [0, 0, 0],
+            sortedCommitDates: [],
         },
 
         methods: {
             getGitlab: function () {
                 axios.get(
-                        'https://lab.ssafy.com/api/v4/projects/6075/repository/branches?private_token='
+                        'https://lab.ssafy.com/api/v4/projects/6075/repository/branches?private_token=zn-dS5TzxasWDJBpErjh'
                     )
                     .then(response => {
                         this.gitCommits = response.data
@@ -80,7 +82,9 @@
                         this.commits.push(1);
 
                     }
-
+                // gitCommitDates.sort(function(a, b) {
+                //     return a[sortingField] - b[sortingField];
+                // });
                 }
             }
         },
@@ -107,7 +111,7 @@
         title: "My Awesome Chart",
         data: data,
         type: 'axis-mixed', // or 'bar', 'line', 'scatter', 'pie', 'percentage'
-        height: 250,
+        height: 300,
         colors: ['#7cd6fd']
     })
 </script>
