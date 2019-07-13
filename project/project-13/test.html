@@ -53,7 +53,7 @@
         methods: {
             getGitlab: function () {
                 axios.get(
-                        'https://lab.ssafy.com/api/v4/projects/6075/repository/branches?private_token=zn-dS5TzxasWDJBpErjh'
+                        'https://lab.ssafy.com/api/v4/projects/6075/repository/branches?private_token=JqwP6fMQbfkr2sLj9b_R'
                     )
                     .then(response => {
                         this.gitCommits = response.data
@@ -82,9 +82,9 @@
                         this.commits.push(1);
 
                     }
-                // gitCommitDates.sort(function(a, b) {
-                //     return a[sortingField] - b[sortingField];
-                // });
+                    // gitCommitDates.sort(function(a, b) {
+                    //     return a[sortingField] - b[sortingField];
+                    // });
                 }
             }
         },
