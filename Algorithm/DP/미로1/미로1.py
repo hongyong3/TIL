@@ -34,7 +34,6 @@ for tc in range(T):
     no = int(input())
     data = [[int(x) for x in input()] for _ in range(N)]  # 미로를 중첩리스트로 저장
     visit = [[0 for _ in range(N)]for _ in range(N)]
-
     sy, sx = findStart(data)
     maze(sy, sx)
     print("#{} {}".format(tc+1, flag))
