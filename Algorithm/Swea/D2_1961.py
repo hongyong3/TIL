@@ -4,14 +4,19 @@ sys.stdin = open("D2_1961_input.txt", "r")
 T = int(input())
 for test_case in range(T):
     N = int(input())
-    data = [list(map(int, input().split())) for _ in range(N)]
-    data_90, data_180, data_270 = [], [], []
+    data = [[[0 for _ in range(N)] for _ in range(N)] for _ in range(4)]
     for i in range(N):
-        for j in range(N):
+        data[0][i] = list(map(int, input().split()))
+    for k in range(1, 4):
+        for i in range(N):
+            for j in range(N):
+                data[k][j][N - 1- i] = data[k - 1][i][j]
 
-
-    # 90도
-            data_90[i][j] = data[N - 1 - j][i]
-print(data_90)
-    # 180도
-    # 270도
+    print("#{}".format(test_case + 1))
+    for i in range(N):
+        for k in range(1, 4):
+            if k != 1:
+                print(end = " ")
+            for j in range(N):
+                print(data[k][i][j], end="")
+        print()
