@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <title>팝업창열기</title>
+    <script>
+        function nwindow() {
+            var url = "Child.html";
+            window.open(url, "", "width=400,height=400,left=600");
+        }
+    </script>
+</head>
+
+<body>
+    <input type="button" value="자식을 불러라" onclick="nwindow()" />
+    <input type="text" value="뭘주려나..." name="get" id="get" />
+</body>
+
+</html>

@@ -1,0 +1,23 @@
+<HTML>
+
+<HEAD>
+	<TITLE>Son</TITLE>
+</HEAD>
+<SCRIPT language="javaScript">
+	function receiver_onclick() {
+		alert("Send?");
+		document.frm1.txtReceiver.value = window.opener.document.frm1.txtSender.value;
+	}
+</SCRIPT>
+
+<BODY>
+
+	<FORM name=frm1>
+		Son Sender : <input type=text name=txtSender size=10><br>
+		Parent Receiver : <input type=text name=txtReceiver size=10><br>
+		<input type=button value="Load Parent.text" onclick=receiver_onclick()>
+	</FORM>
+
+</BODY>
+
+</HTML>

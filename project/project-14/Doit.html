@@ -1,0 +1,30 @@
+<HTML>
+
+<HEAD>
+	<TITLE>Parent</TITLE>
+</HEAD>
+<SCRIPT language="javaScript">
+	var newWindow;
+
+	function open_Page() {
+		newWindow = window.open("Doit_1.html", "Doit", "height=100,width=200,resizable=yes");
+	}
+
+	function receiver_onclick() {
+		alert("Send?");
+		document.frm1.txtReceiver.value = newWindow.document.frm1.txtSender.value;
+	}
+</SCRIPT>
+
+<BODY>
+
+	<FORM name=frm1>
+		<input type=button value="Open Son" onclick=open_Page()><br>
+		Parent Sender : <input type=text name=txtSender size=10><br>
+		Son Receiver : <input type=text name=txtReceiver size=10><br>
+		<input type=button value="Load Son.text" onclick=receiver_onclick()>
+	</FORM>
+
+</BODY>
+
+</HTML>
