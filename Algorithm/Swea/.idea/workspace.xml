@@ -2,12 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="345902a0-cdce-49d2-87d6-6b3392c39521" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/D2_1940.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/D2_1940_input.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/D2_1945.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/D2_1945_input.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/D2_1204.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/D2_1204_input.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/D2_1284.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/D2_1284_input.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/D2_1285.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/D2_1285_input.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/D2_1288.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/D2_1288_input.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/D2_1928.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/D2_1928_input.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/D2_1946.py" beforeDir="false" afterPath="$PROJECT_DIR$/D2_1946.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/D2_1940.py" beforeDir="false" afterPath="$PROJECT_DIR$/D2_1940.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Personal_Study/evaluation/Course_evaluation/Course_evaluation_20190419/debugging/workspace/debugging" beforeDir="false" afterPath="$PROJECT_DIR$/../../Personal_Study/evaluation/Course_evaluation/Course_evaluation_20190419/debugging/workspace/debugging" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -19,19 +25,19 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/D2_1940.py">
+        <entry file="file://$PROJECT_DIR$/D2_1284.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
+            <state relative-caret-position="266">
+              <caret line="14" column="9" lean-forward="true" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/D2_1940_input.txt">
+        <entry file="file://$PROJECT_DIR$/D2_1284_input.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
-              <caret line="9" column="3" lean-forward="true" selection-start-line="9" selection-start-column="3" selection-end-line="9" selection-end-column="3" />
+            <state relative-caret-position="38">
+              <caret line="2" column="16" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -51,7 +57,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/venv/D2_1859_input.txt" />
         <option value="$PROJECT_DIR$/venv/D2_1859.py" />
         <option value="$PROJECT_DIR$/venv/Scripts/D2_1926.py" />
         <option value="$PROJECT_DIR$/D2_1926_input.txt" />
@@ -93,6 +98,16 @@
         <option value="$PROJECT_DIR$/D2_1945.py" />
         <option value="$PROJECT_DIR$/D2_1940_input.txt" />
         <option value="$PROJECT_DIR$/D2_1940.py" />
+        <option value="$PROJECT_DIR$/D2_1928_input.txt" />
+        <option value="$PROJECT_DIR$/D2_1928.py" />
+        <option value="$PROJECT_DIR$/D2_1288_input.txt" />
+        <option value="$PROJECT_DIR$/D2_1288.py" />
+        <option value="$PROJECT_DIR$/D2_1285_input.txt" />
+        <option value="$PROJECT_DIR$/D2_1285.py" />
+        <option value="$PROJECT_DIR$/D2_1204_input.txt" />
+        <option value="$PROJECT_DIR$/D2_1204.py" />
+        <option value="$PROJECT_DIR$/D2_1284_input.txt" />
+        <option value="$PROJECT_DIR$/D2_1284.py" />
       </list>
     </option>
   </component>
@@ -109,6 +124,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -116,11 +132,14 @@
               <item name="Swea" type="b2602c69:ProjectViewProjectNode" />
               <item name="Swea" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="Swea" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -144,8 +163,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.D2_1940">
-    <configuration name="D2_1940" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.D2_1284">
+    <configuration name="D2_1204" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Swea" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -157,7 +176,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/D2_1940.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/D2_1204.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -166,7 +185,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="D2_1945" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="D2_1284" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Swea" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -178,7 +197,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/D2_1945.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/D2_1284.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -187,7 +206,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="D2_1946" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="D2_1285" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Swea" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -199,7 +218,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/D2_1946.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/D2_1285.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -208,7 +227,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="D2_1961" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="D2_1288" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Swea" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -220,7 +239,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/D2_1961.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/D2_1288.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -229,7 +248,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="D2_1966" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="D2_1928" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Swea" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -241,7 +260,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/D2_1966.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/D2_1928.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -252,11 +271,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.D2_1940" />
-        <item itemvalue="Python.D2_1945" />
-        <item itemvalue="Python.D2_1966" />
-        <item itemvalue="Python.D2_1961" />
-        <item itemvalue="Python.D2_1946" />
+        <item itemvalue="Python.D2_1284" />
+        <item itemvalue="Python.D2_1204" />
+        <item itemvalue="Python.D2_1285" />
+        <item itemvalue="Python.D2_1288" />
+        <item itemvalue="Python.D2_1928" />
       </list>
     </recent_temporary>
   </component>
@@ -275,15 +294,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="847" y="0" width="867" height="1033" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19253911" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24789411" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.4062153" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39511654" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.41065484" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39163917" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -304,68 +322,6 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../D-06/문자열비교.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../D-06/글자수.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="16" column="12" selection-start-line="16" selection-start-column="12" selection-end-line="16" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../D-06/회문.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="379">
-          <caret line="38" column="31" selection-start-line="38" selection-start-column="31" selection-end-line="38" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../D-07/stack.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="16" column="12" selection-start-line="16" selection-start-column="12" selection-end-line="16" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../D-08/반복문자 지우기.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="14" column="40" selection-start-line="14" selection-start-column="40" selection-end-line="14" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../D-08/작업순서2.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/D3_1228_input.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="3" column="11" selection-start-line="3" selection-start-column="11" selection-end-line="3" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../DP/회문1/(1215)회문1_input.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/D2_1989.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="10" column="44" lean-forward="true" selection-start-line="10" selection-start-column="44" selection-end-line="10" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/D2_1989_input.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="5" column="3" lean-forward="true" selection-start-line="5" selection-start-column="3" selection-end-line="5" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/D2_1986_input.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="190">
@@ -503,20 +459,6 @@
     <entry file="file://$PROJECT_DIR$/D2_1961_input.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/pydevd.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="363">
-          <caret line="1740" selection-start-line="1740" selection-end-line="1740" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/_pydev_imps/_pydev_execfile.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36-32/Lib/codecs.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="184">
@@ -616,15 +558,99 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/D2_1940_input.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="9" column="3" lean-forward="true" selection-start-line="9" selection-start-column="3" selection-end-line="9" selection-end-column="3" />
+        <state relative-caret-position="33">
+          <caret line="110" column="2" lean-forward="true" selection-start-line="110" selection-start-column="2" selection-end-line="110" selection-end-column="2" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/D2_1940.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
+        <state relative-caret-position="47">
+          <caret line="3" selection-start-line="3" selection-end-line="20" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/D2_1928.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/D2_1928_input.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/D2_1288_input.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" column="4" lean-forward="true" selection-start-line="4" selection-start-column="4" selection-end-line="5" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/pydevd.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="166">
+          <caret line="1134" selection-start-line="1134" selection-end-line="1134" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/_pydev_imps/_pydev_execfile.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/D2_1288.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" column="26" lean-forward="true" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/D2_1285.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" column="4" lean-forward="true" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/D2_1204_input.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/D2_1204.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="14" column="52" lean-forward="true" selection-start-line="14" selection-start-column="52" selection-end-line="14" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/D2_1285_input.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="3" column="4" lean-forward="true" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/D2_1284_input.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="16" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/D2_1284.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="14" column="9" lean-forward="true" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
         </state>
       </provider>
     </entry>
