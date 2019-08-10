@@ -2,18 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="345902a0-cdce-49d2-87d6-6b3392c39521" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/D2_1204.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/D2_1204_input.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/D2_1284.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/D2_1284_input.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/D2_1285.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/D2_1285_input.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/D2_1288.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/D2_1288_input.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/D2_1928.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/D2_1928_input.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/D2_1940.py" beforeDir="false" afterPath="$PROJECT_DIR$/D2_1940.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/D2_1284.py" beforeDir="false" afterPath="$PROJECT_DIR$/D2_1284.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Personal_Study/evaluation/Course_evaluation/Course_evaluation_20190419/debugging/workspace/debugging" beforeDir="false" afterPath="$PROJECT_DIR$/../../Personal_Study/evaluation/Course_evaluation/Course_evaluation_20190419/debugging/workspace/debugging" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -27,8 +16,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/D2_1284.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="266">
-              <caret line="14" column="9" lean-forward="true" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
+            <state relative-caret-position="152">
+              <caret line="8" column="14" lean-forward="true" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -112,9 +101,9 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1270" />
-    <option name="width" value="1301" />
-    <option name="height" value="1550" />
+    <option name="x" value="1269" />
+    <option name="width" value="1302" />
+    <option name="height" value="1551" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -293,9 +282,9 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="847" y="0" width="867" height="1033" extended-state="0" />
+    <frame x="846" y="0" width="868" height="1034" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24789411" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24759616" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -640,17 +629,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/D2_1284.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="8" column="14" lean-forward="true" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/D2_1284_input.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="38">
           <caret line="2" column="16" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/D2_1284.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="14" column="9" lean-forward="true" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
         </state>
       </provider>
     </entry>
