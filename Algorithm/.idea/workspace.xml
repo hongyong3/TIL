@@ -2,14 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7777be81-0f9b-4bd5-badc-5b2f1a3d89c3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Swea/D2_1961.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Swea/D2_1961_input.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Swea/D2_1966.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Swea/D2_1966_input.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Swea/D2_1970.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Swea/D2_1970_input.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Swea/D2_1979.py" beforeDir="false" afterPath="$PROJECT_DIR$/Swea/D2_1979.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Swea/D3_7675.py" beforeDir="false" afterPath="$PROJECT_DIR$/Swea/D3_7675.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Swea/D3_7675_input.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Swea/D3_7675_input.txt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -55,28 +50,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.D2_1961">
-    <configuration name="미로1" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="Algorithm" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/DP/미로1" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/DP/미로1/미로1.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python.D3_7675">
     <configuration name="D2_1961" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Algorithm" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -140,7 +114,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="D2_1979" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="D3_7675" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Algorithm" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -152,7 +126,28 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Swea/D2_1979.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Swea/D3_7675.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="D3_8104" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Algorithm" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Swea" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Swea/D3_8104.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -163,11 +158,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.D3_7675" />
+        <item itemvalue="Python.D3_8104" />
         <item itemvalue="Python.D2_1961" />
         <item itemvalue="Python.D2_1966" />
         <item itemvalue="Python.D2_1970" />
-        <item itemvalue="Python.D2_1979" />
-        <item itemvalue="Python.미로1" />
       </list>
     </recent_temporary>
   </component>
@@ -196,5 +191,21 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Swea/D3_7675.py</url>
+          <line>9</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Swea/D3_7675.py</url>
+          <line>25</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
