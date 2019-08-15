@@ -40,15 +40,6 @@ sys.stdin = open("D2_1979_input.txt", "r")
 T = int(input())
 for test_case in range(T):
     N, K = map(int, input().split())
-<<<<<<< HEAD
-    data = [list(map(int, input().split())) for _ in range(N)]
-    for i in range(N):
-        for j in range(N):
-            if data[i][j] == 1:
-                x, y = i, j
-                print(x, y)
-    # print("#{} {}".format(test_case + 1, ans))
-=======
     data_row = [''.join(input().split()) for _ in range(N)]
     data_col = [''.join(i) for i in zip(*data_row)]
     total = data_row.copy()
@@ -97,4 +88,3 @@ for test_case in range(T):
 #                DFS(i, j)
 #     print("#{} {}".format(test_case + 1, ans))
 #
->>>>>>> d6d5d5a2fdc7930a159c74468e2e44c0a8056ce3
