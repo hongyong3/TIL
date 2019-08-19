@@ -15,11 +15,13 @@ def prime_list(n):
     return [i for i in range(2, n) if sieve[i] == True]
 
 def myprint(q):
+    global combination_list
     while q != 0:
         q = q - 1
-        print("%d" % (T[q]), end=" ")
-        answer.append(T[q])
-    print()
+        combination_list.append(X[q])
+        if len(combination_list) == 3:
+            answer.append(combination_list)
+            combination_list = []
 
 # 중복조합
 def combination(n, r, q):
@@ -28,21 +30,25 @@ def combination(n, r, q):
     elif n == 0:
         return
     else:
-        T[r - 1] = ans[n - 1]
+        X[r - 1] = ans[n - 1]
         combination(n, r - 1, q)
         combination(n- 1, r, q)
 
+ans = prime_list(999)
 T = int(input())
-for test_case in range(1):
+for test_case in range(T):
     N = int(input())
-    ans, answer, sum, count = [], [], 0, 0
-    ans = prime_list(N)
+    answer, combination_list  = [], []
+    count = 0
 
-    T = [0] * 3
+    X = [0] * 3
     combination(len(ans), 3, 3)
-    for i in range(0, len(answer), 3):
-        sum += i
-        if sum == N:
-            count +=1
-    print(answer)
-    print(count)
+    for i in range(len(answer)):
+        sum, j  = 0, 0
+        while j < 3:
+            sum += answer[i][j]
+            j += 1
+            if j == 3:
+                if sum == N:
+                    count += 1
+    print("#{} {}".format(test_case + 1, count))
