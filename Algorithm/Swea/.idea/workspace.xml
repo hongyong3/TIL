@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="345902a0-cdce-49d2-87d6-6b3392c39521" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/D3_3975.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/D3_3975_input.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/D3_4047.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/D3_4047_input.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/D3_4299.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/D3_4299_input.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/D3_3975.py" beforeDir="false" afterPath="$PROJECT_DIR$/D3_3975.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Personal_Study/evaluation/Course_evaluation/Course_evaluation_20190419/debugging/workspace/debugging" beforeDir="false" afterPath="$PROJECT_DIR$/../../Personal_Study/evaluation/Course_evaluation/Course_evaluation_20190419/debugging/workspace/debugging" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -25,8 +19,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/D3_3975.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="10" column="32" lean-forward="true" selection-start-line="10" selection-start-column="32" selection-end-line="10" selection-end-column="32" />
+            <state relative-caret-position="152">
+              <caret line="8" column="47" selection-start-line="8" selection-start-column="47" selection-end-line="8" selection-end-column="47" />
             </state>
           </provider>
         </entry>
@@ -714,8 +708,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/D3_3975.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="10" column="32" lean-forward="true" selection-start-line="10" selection-start-column="32" selection-end-line="10" selection-end-column="32" />
+        <state relative-caret-position="152">
+          <caret line="8" column="47" selection-start-line="8" selection-start-column="47" selection-end-line="8" selection-end-column="47" />
         </state>
       </provider>
     </entry>
