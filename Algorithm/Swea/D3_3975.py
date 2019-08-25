@@ -5,5 +5,7 @@ T = int(input())
 ans = []
 for test_case in range(T):
     A, B, C, D = map(int, input().split())
-    ans = ("ALICE" if A/B > C/D else "DRAW" if A/B == C/D else "BOB")
-    print("#{} {}".format(test_case + +1, ans))
+    if abs((A / B)-(C / D)) <= 10e-7: ans.append('#{} {}'.format(test_case + 1,'DRAW'))
+    elif A / B > C / D: ans.append('#{} {}'.format(test_case + 1,'ALICE'))
+    else: ans.append('#{} {}'.format(test_case + 1,'BOB'))
+print('\n'.join(ans))
