@@ -17,6 +17,7 @@ for test_case in range(T):
     q = [(R, C, 1)]
     visited[R][C] = 1
     while q:
+
         r, c, t = q.pop(0)
         if t + 1 <= L:
             for i in range(4):

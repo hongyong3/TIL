@@ -1,42 +1,41 @@
 import sys
 sys.stdin = open("2382_input.txt", "r")
 
-
 def combination(union):
-    for i in union.keys():
-        ea = union[i][0]
-        dir = union[i][1]
-        if len(ea) > 1:
-            EA = [sum(ea)]
-            direction = [dir[ea.index(max(ea))]]
-            union[i] = [EA, direction]
-        return union
+    for key in union.keys():
+        ea, dir = union[key][0], union[key][1]
+        nea = [sum(ea)]
+        ndir = [dir[ea.index(max(ea))]]
+        union[key] = [nea, ndir]
+    return union
 
 
-def dfs(mic):
+def dfs(mic, check):
     global ans
-    dx = [0, -1, 1, 0, 0]  # 무 상 하 좌 우
-    dy = [0, 0, 0, -1, 1]  # 무 상 하 좌 우
+    dx = [-1, 1, 0, 0]
+    dy = [0, 0, -1, 1]
+
     for _ in range(M):
-        union, check = {}, 0
-        for i in mic.keys():
-            x, y, ea, dir = i[0], i[1], mic[i][0][0], mic[i][1][0]
+        union = {}
+        for key in mic.keys():
+            x, y, ea, dir = key[0], key[1], mic[key][0][0], mic[key][1][0]
             nx = x + dx[dir]
             ny = y + dy[dir]
-            if nx == 0 or nx == N - 1 or ny == 0 or ny == N - 1:    # 벽을 만나면
-                ea = ea // 2                     # 개수를 절반으로
-                if dir == 1: dir = 2        # 반
-                elif dir == 2: dir = 1      # 대
-                elif dir == 3: dir = 4      # 방
-                elif dir == 4: dir = 3      # 향
 
-            if (nx, ny) in union:   # 이미 cell에 미생물이 존재한다면
-                check = 1
-                union[(nx, ny)][0].append(ea)
+            if nx == 0 or nx == N - 1 or ny == 0 or ny == N - 1:    # 약품을 만나면
+                ea = ea // 2    # 미생물의 수를 절반으로 // 미생물의 수가 1마리면 소멸
+                if dir == 0: dir = 1    # 반대방향
+                elif dir == 1: dir = 0
+                elif dir == 2: dir = 3
+                elif dir == 3: dir = 2
+
+            if (nx, ny) in union:   # cell에 다른 미생물이 있다면
+                union[(nx, ny)][0].append(ea)   # 추가
                 union[(nx, ny)][1].append(dir)
+                check = 1   # combination 함수를 사용하려고
 
             else:   # cell에 다른 미생물이 없다면
-                union[(nx, ny)] = [[ea], [dir]]
+                union[(nx, ny)] = [[ea], [dir]] # 추가
 
         if check == 1:
             mic = combination(union)
@@ -44,18 +43,18 @@ def dfs(mic):
         else:
             mic = union
 
-    for i in mic.keys():
-        ans += mic[i][0][0]
-    return ans
+    for key in mic.keys():
+        ans += mic[key][0][0]
 
+    return ans
 
 
 T = int(input())
 for test_case in range(T):
     N, M, K = map(int, input().split())
-    data = [list(map(int, input().split())) for _ in range(K)]  # x, y, ea, direction
+    data = [list(map(int, input().split())) for _ in range(K)]
     mic, ans = {}, 0
-    for i in range(len(data)):  # dict에 data 담기
-        mic[(data[i][0], data[i][1])] = [[data[i][2]], [data[i][3]]]    # key : x, y // value : ea, direction
-    answer = dfs(mic)
+    for i in range(len(data)):  # dict화
+        mic[(data[i][0], data[i][1])] = [[data[i][2]], [data[i][3] - 1]]
+    answer = dfs(mic, 0)
     print("#{} {}".format(test_case + 1, answer))
