@@ -16,11 +16,11 @@ def dfs(idx, dir):
 
 T = int(input())
 for test_case in range(1):
-    K = int(input())
+    N = int(input())
     data = [list(map(int, input().split())) for _ in range(4)]
-    rotation = [list(map(int, input().split())) for _ in range(K)]
+    rotation = [list(map(int, input().split())) for _ in range(N)]
     visited = [0] * 4
-    for i in range(K):
+    for i in range(N):
         dfs(rotation[i][0] - 1, rotation[i][1])
     score = data[0][0] + data[1][0] * 2 + data[2][0] * 4 + data[3][0] * 8
     print("#{} {}".format(test_case + 1, score))
