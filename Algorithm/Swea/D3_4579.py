@@ -9,4 +9,3 @@ for test_case in range(T):
         if data[i] == "*" or data[len(data) - 1 - i] == "*": result
         elif data[i] != data[len(data) - 1 - i]:result = "Not exist"
     print("#{} {}".format(test_case + 1, result))
-
