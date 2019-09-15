@@ -14,6 +14,7 @@ def dfs(idx, dir):
     else:
         data[idx] = data[idx][1:] + [data[idx][0]]
 
+
 T = int(input())
 for test_case in range(1):
     N = int(input())
