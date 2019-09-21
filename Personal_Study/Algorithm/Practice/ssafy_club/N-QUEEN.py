@@ -28,16 +28,8 @@ count = 0
 for test_case in range(T):
     N = int(input())
     table = [[0 for _ in range(8)] for _ in range(8)]
-    # nqueen([test_case], N)
+    nqueen([test_case], N)
 if count == 0:
     print("No solution")
 else:
     print(count)
-
-# import sys
-# sys.stdin = open("N-QUEEN_input.txt", "r")
-# T = int(input())
-# for test_case in range(T):
-#     N = int(input())
-#     table = [[0 for _ in range(8)] for _ in range(8)]
-#
