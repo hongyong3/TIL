@@ -1,34 +1,47 @@
 import sys
 sys.stdin = open("D3_2806_input.txt", "r")
 
+# 방법 1 permutation 사용
 
-def nQueen(sol, n):
+# from itertools import permutations
+# T = int(input())
+# for test_case in range(T):
+#     N = int(input())
+#     count = 0
+#     cols = range(N)
+#     for combo in permutations(cols):
+#         if N == len(set(combo[i] + i for i in cols)) == len(set(combo[i] - i for i in cols)):
+#             count += 1
+#     print("#{} {}".format(test_case + 1, count))
+
+# 방법 2
+
+def nQueen(sol):
     global count
-
-    if len(sol) == n:  # 정답 배열(sol)의 길이가 n과 같아지면, count 증가
+    if len(sol) == N:
         count += 1
         return 0
-    candidate = list(range(n))  # 0부터 n-1까지를 후보 배열로 만든다.
+    candidate = list(range(N))
     for i in range(len(sol)):
-        if sol[i] in candidate:  # 같은 열에 있는 지 확인
-            candidate.remove(sol[i])  # 같은 열에 있다면 후보에서 제외
         distance = len(sol) - i
-        if sol[i] + distance in candidate:  # 같은 대각성 상(+)에 있는 지 확인
-            candidate.remove(sol[i] + distance)  # 같은 대각선 상에 있다면 후보에서 제외
-        if sol[i] - distance in candidate:  # 같은 대각선 상(-)에 있는 지 확인
-            candidate.remove(sol[i] - distance)  # 같은 대각선 상에 있다면 후보에서 제외
+        if sol[i] in candidate: candidate.remove(sol[i])  # 같은 열에 놓이는지 체크 // 같은 열에 놓이면 후보군에서 제외
+        if sol[i] + distance in candidate: candidate.remove(
+            sol[i] + distance)  # 같은 대각선 상에 놓이는지 체크 // 같은 대각선 상에 놓이면 후보군에서 제외
+        if sol[i] - distance in candidate: candidate.remove(
+            sol[i] - distance)  # 같은 대각선 상에 놓이는지 체크 // 같은 대각선 상에 놓이면 후보군에서 제외
+
     if candidate != []:
         for i in candidate:
-            sol.append(i)  # 후보의 요소를 정답 배열의 i+1로 추가
-            nQueen(sol, n)  # 재귀적으로 다음 행도 확인
+            sol.append(i)
+            nQueen(sol)
+            sol.pop()
     else:
         return 0
-
 
 T = int(input())
 for test_case in range(T):
     N = int(input())
     count = 0
     for i in range(N):
-        nQueen([i], N)
+        nQueen([i])
     print("#{} {}".format(test_case + 1, count))
