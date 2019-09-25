@@ -6,6 +6,7 @@ for test_case in range(10):
     data = list(map(int, input().split()))
     change_N = int(input())
     change_data = list([j.replace("\r", "").split(" ") for j in input().split("I ")[1:]])
+    print(change_data)
 
     for k in range(change_N):
         x = int(change_data[k][0])
