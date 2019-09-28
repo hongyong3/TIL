@@ -1,5 +1,4 @@
 import sys
-
 sys.stdin = open("D3_1244_input.txt", "r")
 
 def solve(data, n, a):
@@ -11,8 +10,6 @@ def solve(data, n, a):
         solve(data, n + 1, a + 1)
     else:
         pass
-
-
 
 T = int(input())
 for test_case in range(T):
