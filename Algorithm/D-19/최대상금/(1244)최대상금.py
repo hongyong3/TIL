@@ -40,7 +40,7 @@ def findMax(prize, num, k):
                 findMax(Swap(prize, i, j), num, k+1)
 
 
-for tc in range(T):
+for tc in range(1):
     memo = [[0] * MAXSIZE for _ in range(N+1)]
     prize, num = map(int, input().split())      # 숫자판, 교환횟수
     numOfcard = 0                               # 숫자판의 숫자수
@@ -49,7 +49,6 @@ for tc in range(T):
     while(t):
         t //=10
         numOfcard += 1
-
     #### Greedy ####
     # if num >= 6 :
     #     if num % 2 == 0 : num = 6
@@ -60,5 +59,3 @@ for tc in range(T):
     print("#{} {}".format(tc+1, ans))
 
 print(time.time() - start_time, 'seconds')
-
-
