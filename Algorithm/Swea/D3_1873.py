@@ -25,14 +25,13 @@ def move(i):
 
     if nx < 0: nx = 0
     if ny < 0: ny = 0
-    if nx >= W: nx = H - 1
-    if ny >= H: ny = W - 1
+    if nx >= H: nx = H - 1
+    if ny >= W: ny = W - 1
 
     if data[nx][ny] == ".":
         data[x][y] = "."
         data[nx][ny] = dir
-        x = nx
-        y = ny
+        x, y = nx, ny
         return
     data[x][y] = dir
 
@@ -59,8 +58,6 @@ for test_case in range(T):
     data = [list(map(str, input())) for _ in range(H)]
     N, cmd = int(input()), str(input())
     x, y, dir = 0, 0, ""
-    for i in data:
-        print(i)
     for i in range(H):
         for j in range(W):
             if data[i][j] == "<" or data[i][j] == ">" or data[i][j] == "v" or data[i][j] == "^":
@@ -69,6 +66,6 @@ for test_case in range(T):
                 break
     for i in cmd:
         start(i)
-    print("#{} ".format(test_case + 1))
+    print("#{} ".format(test_case + 1), end="")
     for i in data:
-        print(i)
+        print(''.join(i))

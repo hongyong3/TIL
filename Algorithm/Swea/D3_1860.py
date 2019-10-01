@@ -1,18 +1,34 @@
 import sys
 sys.stdin = open("D3_1860_input.txt", "r")
 
+# def solve(data):
+#     if min(data) < M: ans = 'Impossible'
+#     else:
+#         if len(data) <= K: return
+#         data = [x - M for x in data[K:]]
+#         solve(data)
+#     return
+#
+# T = int(input())
+# for test_case in range(T):
+#     N, M, K = map(int, input().split())
+#     data = sorted(list(map(int, input().split())))
+#     ans = 'Possible'
+#     if min(data) < M:
+#         ans = 'Impossible'
+#     solve(data)
+#     print("#{} {}".format(test_case + 1, ans))
 
-def solve():
-    T = int(input())
-
-
+T = int(input())
 for test_case in range(T):
     N, M, K = map(int, input().split())
-    data = list(map(int, input().split()))
-    data = sorted(data)
+    data = sorted(list(map(int, input().split())))
     ans = 'Possible'
     if min(data) < M:
-        ans = 'Impossible'
-    else:
-        pass
+        print("#{} {}".format(test_case + 1, ans))
+        break
+    for i in range(N):
+        if (data[i] // M) * K - i <= 0:
+            ans = 'Impossible'
+            break
     print("#{} {}".format(test_case + 1, ans))
