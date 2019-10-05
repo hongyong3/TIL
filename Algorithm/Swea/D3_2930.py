@@ -16,6 +16,7 @@ for test_case in range(T):
                 answer.append(ans.pop(ans.index(max(ans))))
     print("#{}".format(test_case + 1), *answer)
 
+#################
 
 # T = int(input())
 # for test_case in range(T):
