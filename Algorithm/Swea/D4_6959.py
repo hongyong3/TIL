@@ -36,7 +36,6 @@ def solve(data):
         count += 1
         solve(ans)
 
-
 T = int(input())
 for test_case in range(T):
     data = str(input())
