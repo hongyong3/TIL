@@ -111,6 +111,7 @@ for test_case in range(T):
             if data[i][j] == - 1:
                 data[i][j] = 0
 
+
     print("#{}".format(test_case + 1))
     for i in range(int(N)):
         print(' '.join(map(str, data[i])))
