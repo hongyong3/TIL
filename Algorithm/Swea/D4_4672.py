@@ -1,13 +1,6 @@
 import sys
 sys.stdin = open("D4_4672_input.txt", "r")
 
-# def solve(data, n):
-#     global count
-#     for i in range(len(data) - n):
-#         if data[:i + n] == data[:i + n][:: - 1]:
-#             count += 1
-#     if n < len(data):
-#         solve(data, n + 1)
 
 def permute(arr):
     result = [arr[:]]
