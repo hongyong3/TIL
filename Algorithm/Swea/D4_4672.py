@@ -1,7 +1,6 @@
 import sys
 sys.stdin = open("D4_4672_input.txt", "r")
 
-
 def permute(arr):
     result = [arr[:]]
     c = [0] * len(arr)
