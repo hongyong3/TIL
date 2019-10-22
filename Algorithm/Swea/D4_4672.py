@@ -19,14 +19,10 @@ def permute(arr):
             i += 1
     return result
 
-# test = 'abc'
-test1 = ["A", "B", "C"]
-print(permute(test1))
-# print(permute)
 
-# T = int(input())
-# for test_case in range(T):
-#     data = input()
-#     count = 0
-#     solve(data, 0)
-#     print("#{} {}".format(test_case + 1, count))
+T = int(input())
+for test_case in range(T):
+    data = input()
+    count = 0
+    permute(data, 0)
+    print("#{} {}".format(test_case + 1, count))
