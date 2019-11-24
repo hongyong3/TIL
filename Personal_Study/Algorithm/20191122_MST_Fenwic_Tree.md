@@ -148,93 +148,56 @@
 
 
 
+# 20191124
+
+## Algorithm
+
+### 펜윅 트리(Fenwick Tree, Binary Indexed Tree; BIT)
+
+
+
 #### 5) 펜윅 트리 소스코드
 
-```C++
-#include <cstdio>
-#include <vector>
- 
-using namespace std;
- 
-typedef long long ll;
- 
-ll sum(vector<ll> &tree, int i)
-{
-    ll ans = 0;
-    while (i > 0)
-    {
-        ans += tree[i];
-        /*
-        :: 원리 :: 
-        1100이 있다고 생각하자 1100의 2의 보수는 0011에서 + 1을 한 0100이다,
-        결국 1100은 val이고 0100은 -val이다.
-        이 두개를 & 연산을 하게 된다면 0100이 되는데 이때 1은 최하위 비트 위치를 의미하고 있다.
-        위의 예시를 이용하여 일반적인 식을 도출하면 (val & -val)을 이용하면 최하위 비트를 구할 수 있다. 
-    */
+```python
+import sys
+sys.stdin = open("D4_3064_input.txt", "r")
+
+def getSum(i):
+    ans = 0
+    while i > 0:
+        ans += tree[i]
+        # 핵심 코드
+        # :: 원리 ::
+        # 1100이 있다고 생각하면 1100의 2의 보수는 0011에서 + 1을 한 0100
+        # 즉, 1100은 val 0100은 - val
+        # 이 두개를 & 연산을 하게 된다면 0100이 되는데 이때 1은 최하위 비트 위치를 의미.
+        #  위의 예시를 이용하여 일반적인 식을 도출하면 ( i & - i)을 이용하면 최하위 비트를 구할 수 있음.
+        i -= (i & - i)  # 최하위 비트 지우기
+    return ans
+
+def addTree(i, diff):
+    while i <= N:
+        tree[i] += diff
+        i += (i & - i)  # 최하위 비트 더하기
+
+T = int(input())
+for test_case in range(T):
+    N, M = map(int, input().split())
+    data, tree = [0], [0] * (N + 1)
+    data.extend(list(map(int, input().split())))
+    answer = []
+    for i in range(1, N + 1):
+        addTree(i, data[i])
+
+    for i in range(M):
+        c, x, y = map(int, input().split())
+        if c == 1:
+            addTree(x, y)
+        else:
+            answer.append(getSum(y) - getSum(x - 1))
+    print("#{}".format(test_case + 1), *answer)
 
 
-출처: https://www.crocus.co.kr/666 [Crocus]
-        i -= (i & -i); // 최하위 비트 지우기 
-    }
- 
-    return ans;
-}
- 
-void update(vector<ll> &tree, int i, ll diff)
-{
-    while (i < tree.size())
-    {
-        tree[i] += diff;
-        i += (i & -i);
-    }
-}
- 
-int main()
-{
-    int n, m, k;
- 
-    scanf("%d %d %d", &n, &m, &k);
- 
-    vector<ll> arr(n + 1);
-    vector<ll> tree(n + 1);
- 
-    for (int i = 1; i <= n; i++)
-    {
-        scanf("%lld", &arr[i]);
-        update(tree, i, arr[i]);
-    }
- 
-    m += k;
- 
-    while (m--)
-    {
-        int num;
-        scanf("%d", &num);
- 
-        if (num == 1)
-        {
-            int index;
-            ll val;
-            scanf("%d %lld", &index, &val);
- 
-            ll diff = val - arr[index];
-            arr[index] = val;
- 
-            update(tree, index, diff);
-        }
- 
-        else if (num == 2)
-        {
-            int left, right;
-            scanf("%d %d", &left, &right);
- 
-            printf("%lld\n", sum(tree, right) - sum(tree, left - 1));
-        }
-    }
- 
-    return 0;
-}
- 
-출처: https://www.crocus.co.kr/666 [Crocus]
+
 ```
 
