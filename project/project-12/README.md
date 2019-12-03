@@ -303,7 +303,7 @@
   > * language : ko-kr
   > * page 수 설정
 
-* jupyter notebook을 사용
+* jupyter notebook`을 사용
 
   > `pip install jupyter`
 

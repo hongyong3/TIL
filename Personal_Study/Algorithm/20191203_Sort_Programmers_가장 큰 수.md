@@ -6,14 +6,6 @@
 
 
 
-- 가장 큰 수
-
-- darklight
-
-  sublimevimemacs
-
-  Python3 
-
 ###### 문제 설명
 
 0 또는 양의 정수가 주어졌을 때, 정수를 이어 붙여 만들 수 있는 가장 큰 수를 알아내 주세요.
@@ -54,7 +46,9 @@ print(solution(numbers4))
 
 
 
-#### 1번 시도 : 시간초과
+#### 1번 시도
+
+##### 정확성 : 시간 초과
 
 ```python
 def solution(numbers):
@@ -79,7 +73,9 @@ def solution(numbers):
 
 
 
-#### 2번 시도 : 시간초과
+#### 2번 시도
+
+##### 정확성 : 시간 초과
 
 ```python
 def solution(numbers):
@@ -97,7 +93,11 @@ def solution(numbers):
 
 
 
-#### 3번 시도 : 시간초과
+#### 3번 시도
+
+##### 정확성 : 시간 초과
+
+
 
 ##### 힌트
 
@@ -124,7 +124,9 @@ def solution(numbers):
 
 
 
-#### 4번 시도 : 시간초과
+#### 4번 시도
+
+##### 정확성 : 시간 초과
 
 ```python
 def solution(numbers):
@@ -138,7 +140,9 @@ def solution(numbers):
 
 
 
-#### 5번 시도 : 해결
+#### 5번 시도
+
+##### 해결
 
 ```python
 def solution(numbers):
@@ -150,7 +154,9 @@ def solution(numbers):
 
 
 
-#### 6번 시도 : 
+#### 6번 시도
+
+##### 간결화
 
 ```python
 def solution(numbers):
