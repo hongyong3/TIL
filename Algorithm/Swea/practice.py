@@ -168,3 +168,37 @@ sys.stdin = open("practice_input.txt", "r")
 # print(solution(phone_book2))
 # phone_book3 = ["12", "123", "1235", "567", "88"]
 # print(solution(phone_book3))
+
+
+## D4_1861
+
+
+dx = [- 1, 1, 0, 0]
+dy = [0, 0, - 1, 1]
+
+def dfs(x, y, n):
+    global count, ans, number
+    for i in range(4):
+        nx = x + dx[i]
+        ny = y + dy[i]
+        if not (0 <= nx < N and 0 <= ny < N):
+            continue
+        if data[nx][ny] == data[x][y] + 1:
+            count += 1
+            dfs(nx, ny, n)
+            count -= 1
+
+    if count >= ans:
+        ans = count
+        number = min(number, n)
+
+T = int(input())
+for test_case in range(T):
+    N = int(input())
+    data = [list(map(int, input().split())) for _ in range(N)]
+    ans, number = 0, float('inf')
+    for x in range(N):
+        for y in range(N):
+            count = 1
+            dfs(x, y, data[x][y])
+    print("#{} {} {}".format(test_case + 1, number, ans))
