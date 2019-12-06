@@ -170,7 +170,7 @@ sys.stdin = open("practice_input.txt", "r")
 # print(solution(phone_book3))
 
 
-## D4_1861
+## D4_1861 dfs 좀더 공부하기
 
 
 dx = [- 1, 1, 0, 0]
