@@ -173,29 +173,28 @@ sys.stdin = open("D4_1861_input.txt", "r")
 dx = [- 1, 1, 0, 0]
 dy = [0, 0, - 1, 1]
 
-def dfs(x, y, n):
-    global count, ans, number
-    for i in range(4):
-        nx = x + dx[i]
-        ny = y + dy[i]
-        if not (0 <= nx < N and 0 <= ny < N):
-            continue
-        if data[nx][ny] == data[x][y] + 1:
-            count += 1
-            dfs(nx, ny, n)
-            count -= 1
-
-    if count >= ans:
-        ans = count
-        number = min(number, n)
-
 T = int(input())
 for test_case in range(T):
     N = int(input())
     data = [list(map(int, input().split())) for _ in range(N)]
-    ans, number = 0, float('inf')
+    result = [0] * ((N ** 2) + 1)
+
     for x in range(N):
         for y in range(N):
-            count = 1
-            dfs(x, y, data[x][y])
-    print("#{} {} {}".format(test_case + 1, number, ans))
+            for i in range(4):
+                nx = x + dx[i]
+                ny = y + dy[i]
+                if (0 <= nx < N and 0 <= ny < N) and (data[nx][ny] == data[x][y] + 1):
+                    result[data[x][y]] = 1
+
+    for i in range((N ** 2), - 1, - 1):
+        if result[i]:
+            result[i] = result[i + 1] + 1
+        else:
+            result[i] = 1
+
+    answer = max(result)
+    for i in range((N ** 2)):
+        if result[i] == answer:
+            print("#{} {} {}".format(test_case + 1, i, result[i]))
+            break
