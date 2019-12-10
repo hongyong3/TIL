@@ -23,10 +23,6 @@ def solve(x, y):
             ny = y + dy[1]
         solve(nx, ny)
 
-    
-
-
-
 
 T = int(input())
 for test_case in range(T):
