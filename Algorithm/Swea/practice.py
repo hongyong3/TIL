@@ -234,31 +234,47 @@ dy = [0, 0, - 1, 1]
 #     for i in range(N):
 #         for j in range(N):
 #             solve(i, j, data[i][j])
+#
+# dx = [- 1, 1, 0, 0]
+# dy = [0, 0, - 1, 1]
+#
+# T = int(input())
+# for test_case in range(T):
+#     N = int(input())
+#     data = [list(map(int, input().split())) for _ in range(N)]
+#     result = [0] * (N ** 2)
+#     for x in range(N):
+#         for y in range(N):
+#             for i in range(4):
+#                 nx = x + dx[i]
+#                 ny = y + dy[i]
+#                 if (0 <= nx < N and 0 <= ny < N) and (data[nx][ny] == data[x][y] + 1):
+#                     result[data[x][y] - 1] = 1
+#
+#     for i in range((N ** 2) - 1, - 1, - 1):
+#         if result[i]:
+#             result[i] = result[i + 1] + 1
+#         else:
+#             result[i] = 1
+#
+#     answer = max(result)
+#     for i in range((N ** 2) + 1):
+#         if result[i] == answer:
+#             print("#{} {} {}".format(test_case + 1, i + 1, result[i]))
+#             break
 
-dx = [- 1, 1, 0, 0]
-dy = [0, 0, - 1, 1]
+#BAEKJOON star - 11
 
-T = int(input())
-for test_case in range(T):
-    N = int(input())
-    data = [list(map(int, input().split())) for _ in range(N)]
-    result = [0] * (N ** 2)
-    for x in range(N):
-        for y in range(N):
-            for i in range(4):
-                nx = x + dx[i]
-                ny = y + dy[i]
-                if (0 <= nx < N and 0 <= ny < N) and (data[nx][ny] == data[x][y] + 1):
-                    result[data[x][y] - 1] = 1
+import math
+def solve(n):
+    for i in range(len(s)):
+        s.append(s[i] + s[i])
+        s[i] = ("   " * n + s[i] + "   " * n)
 
-    for i in range((N ** 2) - 1, - 1, - 1):
-        if result[i]:
-            result[i] = result[i + 1] + 1
-        else:
-            result[i] = 1
-
-    answer = max(result)
-    for i in range((N ** 2) + 1):
-        if result[i] == answer:
-            print("#{} {} {}".format(test_case + 1, i + 1, result[i]))
-            break
+s = ['  *   ', ' * *  ', '***** ']
+N = int(input())
+K = int(math.log(N // 3, 2))
+for i in range(K):
+    solve(2 ** i)
+for i in range(N):
+    print(s[i])

@@ -66,7 +66,7 @@
 
 ##### 4) Algorithm
 
-```
+```pseudocode
 MST-KRUSKAL(G, w)
 	A <- 0					// 0 : 공집합
 	FOR vertex v in G.V		// G.V : 그래프의 정점 집합
