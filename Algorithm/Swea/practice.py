@@ -204,8 +204,8 @@ sys.stdin = open("practice_input.txt", "r")
 #     print("#{} {} {}".format(test_case + 1, number, ans))
 
 
-dx = [- 1, 1, 0, 0]
-dy = [0, 0, - 1, 1]
+# dx = [- 1, 1, 0, 0]
+# dy = [0, 0, - 1, 1]
 
 # def solve(x, y, subNumber):
 #     global ans, number, count
@@ -262,19 +262,89 @@ dy = [0, 0, - 1, 1]
 #         if result[i] == answer:
 #             print("#{} {} {}".format(test_case + 1, i + 1, result[i]))
 #             break
+#
+# BAEKJOON star - 11
+#
+# import math
+# def solve(n):
+#     for i in range(len(s)):
+#         s.append(s[i] + s[i])
+#         s[i] = ("   " * n + s[i] + "   " * n)
+#
+# s = ['  *   ', ' * *  ', '***** ']
+# N = int(input())
+# K = int(math.log(N // 3, 2))
+# for i in range(K):
+#     solve(2 ** i)
+# for i in range(N):
+#     print(s[i])
 
-#BAEKJOON star - 11
 
-import math
-def solve(n):
-    for i in range(len(s)):
-        s.append(s[i] + s[i])
-        s[i] = ("   " * n + s[i] + "   " * n)
+# BAEKJOON 타임머신
+# from collections import deque
+# inf = 987654321
+#
+# def SPFA(start):
+#     d = [inf for _ in range(N)]             # 최소 비용 거리
+#     on = [False for _ in range(N)]          # 큐에 넣었는지 아닌지
+#     cycle = [0 for _ in range(N)]           # 무한으로 cycle이 도는지 아닌지
+#     d[start] = 0
+#     on[start] = True
+#     q = deque([start])
+#     while q:
+#         now = q.popleft()
+#         on[now] = False
+#         for next, val in edge[now]:         # 다음 간선에 대해
+#             if d[next] > d[now] + val:      # 큐에 넣었는지 아닌지
+#                 d[next] = d[now] + val      # 갱신
+#                 if not on[next]:            # 큐에 넣었는지 아닌지
+#                     cycle[next] += 1        # cycle check
+#                     if cycle[next] >= N:    # Node의 개수만큼 queue에 방문했으면
+#                         print(-1)           # 무한 cycle이므로 답을 구할 수 없음
+#                         return
+#                     on[next] = True
+#                     q.append(next)          # queue에 넣기
+#     for val in d[1 :]:
+#         print(-1) if val == inf else print(val)
+#
+# T = int(input())
+# for test_case in range(T):
+#     N, M = map(int, input().split())
+#     edge = [[] for _ in range(N)]
+#     for _ in range(M):
+#         u, v, w = map(int, input().split())
+#         edge[u - 1].append((v - 1, w))
+#     SPFA(0)
 
-s = ['  *   ', ' * *  ', '***** ']
-N = int(input())
-K = int(math.log(N // 3, 2))
-for i in range(K):
-    solve(2 ** i)
-for i in range(N):
-    print(s[i])
+from collections import deque
+inf = 9876543210
+
+def SPFA(n):
+    d = [inf for _ in range(N)]
+    on = [0 for _ in range(N)]
+    cycle = [0 for _ in range(N)]
+    d[n] = 0
+    on[n] = 1
+    q = deque([n])
+    while q:
+        now = q.popleft()
+        on[now] = 0
+        for next, value in edge[now]:
+            if d[next] > d[now] + value:
+                d[next] = d[now] + value
+                if not on[next]:
+                    cycle[next] += 1
+                    if cycle[next] >= N:
+                        print(-1)
+                        return
+                    on[next] = 1
+                    q.append(next)
+    for value in d[1:]:
+        print(-1) if value == inf else print(value)
+
+N, M = map(int, input().split())
+edge = [[] for _ in range(N)]
+for _ in range(M):
+    u, v, w = map(int, input().split())
+    edge[u - 1].append((v - 1, w))
+SPFA(0)
