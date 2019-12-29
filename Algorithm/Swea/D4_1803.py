@@ -81,6 +81,3 @@ for test_case in range(T):
         graph[u - 1][v - 1] = graph[v - 1][u - 1] = w
         edge[u - 1].append((v - 1, w))
     print("#{} {}".format(test_case + 1, SPFA(0)))
-    for i in graph:
-        print(i)
-    print()
