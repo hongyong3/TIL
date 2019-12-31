@@ -47,6 +47,42 @@ sys.stdin = open("D4_1803_input.txt", "r")
 #     print("#{} {}".format(test_case + 1, ans))
 
 
+# from collections import deque
+# inf = 987654321
+#
+# def SPFA(n):
+#     d = [inf for _ in range(N)]
+#     on = [False for _ in range(N)]
+#     cycle = [0 for _ in range(N)]
+#     d[n] = 0
+#     on[n] = 1
+#     q = deque([n])
+#     while q:
+#         now = q.popleft()
+#         on[now] = 0
+#         for next, value in edge[now]:
+#             if d[next] > d[now] + value:
+#                 d[next] = d[now] + value
+#                 if not on[next]:
+#                     cycle[next] += 1
+#                     on[next] = 1
+#                     q.append(next)
+#     for value in d[1:]:
+#         return value
+#
+# T = int(input())
+# for test_case in range(T):
+#     N, M, s, e = map(int, input().split())
+#     edge = [[] for _ in range(N + 1)]
+#     graph = [[0] * (N) for _ in range(N)]
+#
+#     for _ in range(M):
+#         u, v, w = map(int, input().split())
+#         graph[u - 1][v - 1] = graph[v - 1][u - 1] = w
+#         edge[u - 1].append((v - 1, w))
+#     print("#{} {}".format(test_case + 1, SPFA(0)))
+
+
 from collections import deque
 inf = 987654321
 
@@ -78,6 +114,7 @@ for test_case in range(T):
 
     for _ in range(M):
         u, v, w = map(int, input().split())
-        graph[u - 1][v - 1] = graph[v - 1][u - 1] = w
+        graph[u - 1][v - 1] = w
+        graph[v - 1][u - 1] = w
         edge[u - 1].append((v - 1, w))
     print("#{} {}".format(test_case + 1, SPFA(0)))
