@@ -116,5 +116,8 @@ for test_case in range(T):
         u, v, w = map(int, input().split())
         graph[u - 1][v - 1] = w
         graph[v - 1][u - 1] = w
-        edge[u - 1].append((v - 1, w))
+        if u < v:
+            edge[u - 1].append((v - 1, w))
+        else:
+            edge[v - 1].append((u - 1, w))
     print("#{} {}".format(test_case + 1, SPFA(0)))
