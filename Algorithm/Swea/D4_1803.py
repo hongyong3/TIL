@@ -120,4 +120,4 @@ for test_case in range(T):
             edge[u - 1].append((v - 1, w))
         else:
             edge[v - 1].append((u - 1, w))
-    print("#{} {}".format(test_case + 1, SPFA(0)))
+    SPFA(0)
