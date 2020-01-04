@@ -83,41 +83,72 @@ sys.stdin = open("D4_1803_input.txt", "r")
 #     print("#{} {}".format(test_case + 1, SPFA(0)))
 
 
-from collections import deque
-inf = 987654321
+# from collections import deque
+# inf = 987654321
+#
+# def SPFA(n):
+#     d = [inf for _ in range(N)]
+#     on = [False for _ in range(N)]
+#     cycle = [0 for _ in range(N)]
+#     d[n] = 0
+#     on[n] = 1
+#     q = deque([n])
+#     while q:
+#         now = q.popleft()
+#         on[now] = 0
+#         for next, value in edge[now]:
+#             if d[next] > d[now] + value:
+#                 d[next] = d[now] + value
+#                 if not on[next]:
+#                     cycle[next] += 1
+#                     on[next] = 1
+#                     q.append(next)
+#     for value in d[1:]:
+#         return value
+#
+# T = int(input())
+# for test_case in range(T):
+#     N, M, s, e = map(int, input().split())
+#     edge = [[] for _ in range(N + 1)]
+#     graph = [[0] * (N) for _ in range(N)]
+#
+#     for _ in range(M):
+#         u, v, w = map(int, input().split())
+#         graph[u - 1][v - 1] = w
+#         graph[v - 1][u - 1] = w
+#         if u < v:
+#             edge[u - 1].append((v - 1, w))
+#         else:
+#             edge[v - 1].append((u - 1, w))
+#     SPFA(0)
 
-def SPFA(n):
-    d = [inf for _ in range(N)]
-    on = [False for _ in range(N)]
-    cycle = [0 for _ in range(N)]
-    d[n] = 0
-    on[n] = 1
-    q = deque([n])
-    while q:
-        now = q.popleft()
-        on[now] = 0
-        for next, value in edge[now]:
-            if d[next] > d[now] + value:
-                d[next] = d[now] + value
-                if not on[next]:
-                    cycle[next] += 1
-                    on[next] = 1
-                    q.append(next)
-    for value in d[1:]:
-        return value
+from collections import deque
 
 T = int(input())
 for test_case in range(T):
     N, M, s, e = map(int, input().split())
-    edge = [[] for _ in range(N + 1)]
-    graph = [[0] * (N) for _ in range(N)]
+    graph = [[] for _ in range(N + 1)]
 
     for _ in range(M):
         u, v, w = map(int, input().split())
-        graph[u - 1][v - 1] = w
-        graph[v - 1][u - 1] = w
-        if u < v:
-            edge[u - 1].append((v - 1, w))
-        else:
-            edge[v - 1].append((u - 1, w))
-    SPFA(0)
+        graph[u].append((v, w))
+        graph[v].append((u, w))
+
+    visited = [False for _ in range(N + 1)]
+    d = [float('inf') for _ in range(N + 1)]
+    d[s] =  0
+
+    q = deque()
+    q.append(s)
+    visited[s] = True
+
+    while len(q) > 0:
+        u = q.popleft()
+        visited[u] = False
+        for v, w in graph[u]:
+            if d[v] > d[u] + w:
+                d[v] = d[u] + w
+                if not visited[v]:
+                    q.append(v)
+                    visited[v] = True
+    print("#{} {}".format(test_case + 1, d[e]))
