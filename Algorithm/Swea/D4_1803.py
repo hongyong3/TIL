@@ -128,6 +128,7 @@ T = int(input())
 for test_case in range(T):
     N, M, s, e = map(int, input().split())
     graph = [[] for _ in range(N + 1)]
+    print(graph)
 
     for _ in range(M):
         u, v, w = map(int, input().split())
@@ -150,5 +151,4 @@ for test_case in range(T):
                 d[v] = d[u] + w
                 if not visited[v]:
                     q.append(v)
-                    visited[v] = True
     print("#{} {}".format(test_case + 1, d[e]))

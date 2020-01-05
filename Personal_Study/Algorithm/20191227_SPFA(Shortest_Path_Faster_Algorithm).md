@@ -96,3 +96,40 @@ procedure Shortest-Path-Faster-Algorithm(G, s)
   >
   > 만약, 똑같은 **Node**에 대해 |V|(정점 개수) 만큼 방문한다면, **음수사이클**.
 
+
+
+##### Python code
+
+```python
+from collections import deque
+
+T = int(input())
+for test_case in range(T):
+    N, M, s, e = map(int, input().split())
+    graph = [[] for _ in range(N + 1)]
+    print(graph)
+
+    for _ in range(M):
+        u, v, w = map(int, input().split())
+        graph[u].append((v, w))
+        graph[v].append((u, w))
+
+    visited = [False for _ in range(N + 1)]
+    d = [float('inf') for _ in range(N + 1)]
+    d[s] =  0
+
+    q = deque()
+    q.append(s)
+    visited[s] = True
+
+    while len(q) > 0:
+        u = q.popleft()
+        visited[u] = False
+        for v, w in graph[u]:
+            if d[v] > d[u] + w:
+                d[v] = d[u] + w
+                if not visited[v]:
+                    q.append(v)
+    print("#{} {}".format(test_case + 1, d[e]))
+```
+

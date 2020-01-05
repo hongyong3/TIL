@@ -316,35 +316,66 @@ sys.stdin = open("practice_input.txt", "r")
 #         edge[u - 1].append((v - 1, w))
 #     SPFA(0)
 
-from collections import deque
-inf = 9876543210
+# from collections import deque
+# inf = 9876543210
+#
+# def SPFA(n):
+#     d = [inf for _ in range(N)]
+#     on = [0 for _ in range(N)]
+#     cycle = [0 for _ in range(N)]
+#     d[n] = 0
+#     on[n] = 1
+#     q = deque([n])
+#     while q:
+#         now = q.popleft()
+#         on[now] = 0
+#         for next, value in edge[now]:
+#             if d[next] > d[now] + value:
+#                 d[next] = d[now] + value
+#                 if not on[next]:
+#                     cycle[next] += 1
+#                     if cycle[next] >= N:
+#                         print(-1)
+#                         return
+#                     on[next] = 1
+#                     q.append(next)
+#     for value in d[1:]:
+#         print(-1) if value == inf else print(value)
+#
+# N, M = map(int, input().split())
+# edge = [[] for _ in range(N)]
+# for _ in range(M):
+#     u, v, w = map(int, input().split())
+#     edge[u - 1].append((v - 1, w))
+# SPFA(0)
 
-def SPFA(n):
-    d = [inf for _ in range(N)]
-    on = [0 for _ in range(N)]
-    cycle = [0 for _ in range(N)]
-    d[n] = 0
-    on[n] = 1
-    q = deque([n])
-    while q:
-        now = q.popleft()
-        on[now] = 0
-        for next, value in edge[now]:
-            if d[next] > d[now] + value:
-                d[next] = d[now] + value
-                if not on[next]:
-                    cycle[next] += 1
-                    if cycle[next] >= N:
-                        print(-1)
-                        return
-                    on[next] = 1
-                    q.append(next)
-    for value in d[1:]:
-        print(-1) if value == inf else print(value)
+# def memoize(func):
+#     tempMemo = dict()
+#     def wrapped(n):
+#         if n in tempMemo:
+#             return tempMemo[n]
+#         result = func(n)
+#         tempMemo[n] = result
+#         return result
+#     return wrapped
+#
+# @memoize
+# def fib(n):
+#     if n in (1, 2):
+#         return 1
+#     return fib(n - 1) + fib(n - 2)
+# fib = memoize(fib)
+# print(fib(64))
 
-N, M = map(int, input().split())
-edge = [[] for _ in range(N)]
-for _ in range(M):
-    u, v, w = map(int, input().split())
-    edge[u - 1].append((v - 1, w))
-SPFA(0)
+def fib2(n):
+    if n in memo:
+        return memo[n]
+    if n in (1, 2):
+        memo[n] = 1
+        return 1
+    result = fib2(n - 1) + fib2(n - 2)
+    memo[n] = result
+    return result
+
+memo = dict()
+print(fib2(64))

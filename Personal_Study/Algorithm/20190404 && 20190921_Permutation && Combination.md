@@ -53,7 +53,7 @@ def 함수(idx, start):
 #### 순열(permutation)
 
 - 순열은 서로 다른 n개의 대상에서 r개를 뽑아 일렬로 배열한 것.
-- 경우의 수는 `nPr`로 표현
+- 경우의 수는 **~n~P~r~**로 표현
 
 
 
@@ -125,7 +125,7 @@ permutation('ABCD', 2)
 #### 조합(combination)
 
 - n개 중에 r개를 뽑되, 순서를 고려하지 않음.
-- 경우의 수는 `nCr`로 표현
+- 경우의 수는 **~n~C~r~**로 표현
 
 
 
@@ -139,7 +139,7 @@ def combination(arr, r):
             print(chosen)
             return
         # 3
-        start = arr.index(chosen[-1]) + 1 if chosen else 0
+        start = arr.index(chosen[- 1]) + 1 if chosen else 0
         for i in range(start, len(arr)):
             chosen.append(arr[i])
             generate(chosen)
