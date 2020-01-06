@@ -17,6 +17,7 @@ sys.stdin = open("D4_1486_input.txt", "r")
 #                     answer = sum(ans[i][j])
 #     print("#{} {}".format(test_case + 1, answer - B))
 
+
 def combination(count, height):
     global ans
     if count == N:

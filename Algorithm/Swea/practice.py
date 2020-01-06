@@ -367,15 +367,31 @@ sys.stdin = open("practice_input.txt", "r")
 # fib = memoize(fib)
 # print(fib(64))
 
-def fib2(n):
+# def fib2(n):
+#     if n in memo:
+#         return memo[n]
+#     if n in (1, 2):
+#         memo[n] = 1
+#         return 1
+#     result = fib2(n - 1) + fib2(n - 2)
+#     memo[n] = result
+#     return result
+#
+# memo = dict()
+# print(fib2(64))
+
+def paper(n):
     if n in memo:
         return memo[n]
-    if n in (1, 2):
+    if n in (0, 1):
         memo[n] = 1
         return 1
-    result = fib2(n - 1) + fib2(n - 2)
+    result = 2 ** n - paper(n - 1)
     memo[n] = result
     return result
 
-memo = dict()
-print(fib2(64))
+T = int(input())
+for test_case in range(T):
+    N = int(input())
+    memo = dict()
+    print("#{} {}".format(test_case + 1, paper(N // 10)))
