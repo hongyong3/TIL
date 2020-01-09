@@ -61,10 +61,12 @@ def make_set(v):
     parent[v] = v
     rank[v] = 0
 
+
 def find(v):
     if parent[v] != v:
         parent[v] = find(parent[v])
     return  parent[v]
+
 
 def union(v, u):
     root1 = find(v)
@@ -75,23 +77,20 @@ def union(v, u):
             parent[root2] = root1
         else:
             parent[root1] = root2
-
             if rank[root1] == rank[root2]:
                 rank[root2] += 1
+
 
 def kruskal(edges):
     for v in range(N):
         make_set(v)
-
     mst = []
-
     for  edge in edges:
         distance, v, u = edge
 
         if find(v) != find(u):
             union(v, u)
             mst.append(edge)
-
     return mst
 
 
@@ -102,7 +101,7 @@ for test_case in range(T):
     E = float(input())
     parent = {}
     rank = {}
-    edges = []
+    edges = []  # 거리, 노드1, 노드2
     ans = 0
 
     for i in range(N):
