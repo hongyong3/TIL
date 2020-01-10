@@ -87,7 +87,6 @@ def kruskal(edges):
     mst = []
     for  edge in edges:
         distance, v, u = edge
-
         if find(v) != find(u):
             union(v, u)
             mst.append(edge)
