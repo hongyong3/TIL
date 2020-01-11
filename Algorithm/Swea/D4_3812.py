@@ -10,5 +10,6 @@ for test_case in range(T):
     for x in range(X):
         for y in range(Y):
             for z in range(Z):
+                # ans[(abs(x - A) + abs(y - B) + abs(z - C)) % N] += 1
                 ans[(abs(x - A) + abs(y - B) + abs(z - C)) % N] += 1
     print("#{}".format(test_case + 1), *ans)
