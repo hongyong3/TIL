@@ -380,18 +380,18 @@ sys.stdin = open("practice_input.txt", "r")
 # memo = dict()
 # print(fib2(64))
 
-def paper(n):
-    if n in memo:
-        return memo[n]
-    if n in (0, 1):
-        memo[n] = 1
-        return 1
-    result = 2 ** n - paper(n - 1)
-    memo[n] = result
-    return result
-
-T = int(input())
-for test_case in range(T):
-    N = int(input())
-    memo = dict()
-    print("#{} {}".format(test_case + 1, paper(N // 10)))
+# def paper(n):
+#     if n in memo:
+#         return memo[n]
+#     if n in (0, 1):
+#         memo[n] = 1
+#         return 1
+#     result = 2 ** n - paper(n - 1)
+#     memo[n] = result
+#     return result
+#
+# T = int(input())
+# for test_case in range(T):
+#     N = int(input())
+#     memo = dict()
+#     print("#{} {}".format(test_case + 1, paper(N // 10)))

@@ -113,7 +113,6 @@ for test_case in range(T):
     data = [list(map(int, input().split())) for _ in range(E)]
     for i in range(E):
         data[i] = [data[i][2], data[i][0], data[i][1]]
-    print(data)
     for i in kruskal():
         ans += i[0]
     print("#{} {}".format(test_case + 1, ans))
