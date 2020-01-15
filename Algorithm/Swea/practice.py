@@ -396,37 +396,55 @@ sys.stdin = open("practice_input.txt", "r")
 #     memo = dict()
 #     print("#{} {}".format(test_case + 1, paper(N // 10)))
 
-people = {"A" : 3, "B" : 2, "C" : 1, "D" : 0}
+# people = {"A" : 3, "B" : 2, "C" : 1, "D" : 0}
+#
+# T = int(input())
+# for test_case in range(T):
+#     S = input()
+#     case = [[] for _ in range(len(S))]
+#     answer = 0
+#
+#     if S[0] == "A":
+#         for i in range(1, 16):
+#             if i & (1 << 3):
+#                 case[0].append([i, 1])
+#     else:
+#         for i in range(1, 16):
+#             if i & (1 << 3) and i & (1 << people[S[0]]):
+#                 case[0].append([i, 1])
+#
+#     for i in range(1, len(S)):
+#         temporary = []
+#         for j in range(1, 16):
+#             if j & (1 << people[S[i]]):
+#                 temporary.append([j, 0])
+#
+#         for x in case[i - 1]:
+#             for y in temporary:
+#                 if x[0] & y[0]:
+#                     y[1] = (x[1] + y[1]) % 1000000007
+#         case[i] = temporary[:]
+#
+#     for i in case[- 1]:
+#         answer += i[1]
+#         answer %= 1000000007
+#
+#     print("#{} {}".format(test_case + 1, answer))
 
-T = int(input())
-for test_case in range(T):
-    S = input()
-    case = [[] for _ in range(len(S))]
-    answer = 0
 
-    if S[0] == "A":
-        for i in range(1, 16):
-            if i & (1 << 3):
-                case[0].append([i, 1])
-    else:
-        for i in range(1, 16):
-            if i & (1 << 3) and i & (1 << people[S[0]]):
-                case[0].append([i, 1])
+# T = int(input())
+# for test_case in range(1):
+#     M, N = map(int, input().split())
+#     ans = [1] * M
+#     ans = [N - M + 1] + [1] * (N - M - 2)
 
-    for i in range(1, len(S)):
-        temporary = []
-        for j in range(1, 16):
-            if j & (1 << people[S[i]]):
-                temporary.append([j, 0])
+def partition_memo(n, m):
+    global memo
+    if n == m or m == 1:
+        memo[n][m] = 1
+    if not memo[n][m]:
+        memo[n][m]= partition_memo(n - 1, m) + partition_memo(n - 1, m - 1)
+        return memo[n][m]
 
-        for x in case[i - 1]:
-            for y in temporary:
-                if x[0] & y[0]:
-                    y[1] = (x[1] + y[1]) % 1000000007
-        case[i] = temporary[:]
-
-    for i in case[- 1]:
-        answer += i[1]
-        answer %= 1000000007
-
-    print("#{} {}".format(test_case + 1, answer))
+memo = [[0] * 101 for _ in range(101)]
+partition_memo(5, 3)
