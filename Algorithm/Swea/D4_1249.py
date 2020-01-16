@@ -1,6 +1,8 @@
 import sys
 sys.stdin = open("D4_1249_input.txt", "r")
 
+# BFS
+#
 # dx = [1, 0, - 1, 0] # 하 우 상 좌
 # dy = [0, 1, 0, - 1]
 #
@@ -27,40 +29,30 @@ sys.stdin = open("D4_1249_input.txt", "r")
 #     # bfs(0, 0)
 #     # print("#{} {}".format(test_case + 1, visited[- 1][- 1]))
 
+
+# heapq
+
 import heapq
 
-def minDistacne():
-    minV = 987654321
-    mx, my = -1, -1
-    for i in range(N):
-        for j in range(N):
-            if visited[i][j] == 0 and distance[i][j] < minV:
-                minV = distance[i][j]
-                mx, my = i, j
-    return mx, my
+dx = [1, 0, - 1, 0] # 하 우 상 좌
+dy = [0, 1, 0, - 1]
 
-def check(x, y):
-    if x < 0 or y < 0 or x > N-1 or y > N-1: return False
-    if visited[x][y] : return False
-    return True
-
-def dijkstra(x,y):
-    dx = [0, 0 ,1, -1]
-    dy = [1, -1, 0, 0]
-
+def dijkstra(x, y):
     distance[x][y] = 0
-    heapq.heappush(heap,(distance[x][y], x, y))  # 가중치, x, y
+    heapq.heappush(heap, (distance[x][y], x, y))
 
     while True:
         d, x, y = heapq.heappop(heap)
-        if x == N-1 and y == N-1 : return
+        if x == N - 1 and y == N - 1:
+            return distance[x][y]
         visited[x][y] = 1
+
         for i in range(4):
             nx = x + dx[i]
             ny = y + dy[i]
-            if check(nx, ny) and distance[nx][ny] > distance[x][y] + data[nx][ny]:
+            if (0 <= nx < N) and (0 <= ny < N) and not visited[nx][ny] and distance[nx][ny] > distance[x][y] + data[nx][ny]:
                 distance[nx][ny] = distance[x][y] + data[nx][ny]
-                heapq.heappush(heap, (distance[nx][ny], nx, ny))
+                heapq.heappush(heap, (distance[nx][y], nx, ny))
 
 T = int(input())
 for test_case in range(T):
@@ -69,5 +61,4 @@ for test_case in range(T):
     distance = [[float('inf')] * N for _ in range(N)]
     visited = [[0] * N for _ in range(N)]
     heap = []
-    dijkstra(0, 0)
-    print("#{} {}".format(test_case + 1, distance[N - 1][N - 1]))
+    print("#{} {}".format(test_case + 1, dijkstra(0, 0)))

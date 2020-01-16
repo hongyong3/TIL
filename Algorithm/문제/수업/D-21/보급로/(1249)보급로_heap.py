@@ -23,8 +23,8 @@ def check(x, y):
     return True
 
 def dijkstra(x,y):
-    dx = [0, 0 ,1, -1]
-    dy = [1, -1, 0, 0]
+    dx = [1, 0, - 1, 0]
+    dy = [0, 1, 0, - 1]
 
     dist[x][y] = 0
     heapq.heappush(heap,(dist[x][y], x, y))  # 가중치, x, y
