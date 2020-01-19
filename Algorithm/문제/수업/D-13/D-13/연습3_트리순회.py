@@ -15,7 +15,7 @@ def inorder(node):
         print('{}'.format(node), end=' ')
         inorder(tree[node][1])
 
-# 전위
+# 후위
 def postorder(node):
     if node != 0:
         postorder(tree[node][0])

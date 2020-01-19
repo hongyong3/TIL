@@ -1,29 +1,17 @@
 import sys
 sys.stdin = open("D4_1232_input.txt", "r")
 
-def inorder(n):
+def postorder(n):
     if n:
-        inorder(tree[n][2])
-        formulaAns.append(tree[n][1])
-        # if 48 <= ord(tree[n][1]) <= 57:
-        #     formulaAns.append(int(tree[n][1]))
-        # else:
-        #     formulaAns.append(tree[n][1])
-        inorder(tree[n][3])
-
-def formula(n):
-    for i in range(len(formulaAns)):
-        if 48 <= ord(formulaAns[i]) <= 57:
-            formulaAns.append(int(formulaAns[i]))
-        else:
-            formulaAns.append(formulaAns[i])
+        postorder(tree[n][2])
+        postorder(tree[n][3])
+        postAns.append(tree[n][1])
 
 
-
-for test_case in range(10):
+for test_case in range(2):
     N = int(input())
     tree = [[0] * 4 for _ in range(N + 1)]
-
+    ans = 0
     for _ in range(N):
         data = list(input().split())
         index = int(data[0])
@@ -33,7 +21,10 @@ for test_case in range(10):
             tree[index][2] = int(data[2])
         elif len(data) == 4:
             tree[index][2], tree[index][3] = int(data[2]), int(data[3])
-    formulaAns = []
-    inorder(1)
 
-    formula(0)
+    postAns = []
+    postorder(1)
+
+    # 어떻게 계산을 해야하지..
+
+    print(postAns)
