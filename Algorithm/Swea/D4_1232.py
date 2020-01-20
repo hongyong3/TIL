@@ -1,30 +1,43 @@
 import sys
 sys.stdin = open("D4_1232_input.txt", "r")
 
-def postorder(n):
-    if n:
-        postorder(tree[n][2])
-        postorder(tree[n][3])
-        postAns.append(tree[n][1])
+# def inorder(n):
+#     root = data[int(n)]
+#     if len(root) == 2:
+#         return root[1]
+#     else:
+#         ans = inorder(root[2])
+#         ans = '(' + ans + ')' + root[1]
+#         return ans + '(' + inorder(root[3]) + ')'
+#
+# for test_case in range(10):
+#     N = int(input())
+#     data = {}
+#     for i in range(1, N + 1):
+#         data[i] = input().split()
+#     print(data)
+#
+#     print("#{} {}".format(test_case + 1, int(eval(inorder(1)))))
 
+def inorder(n):
+    root = data[int(n)]
+    if len(root) == 2:
+        return root[1]
+    else:
+        num1 = int(inorder(root[2]))
+        num2 = int(inorder(root[3]))
+        if root[1] == "+":
+            return num1 + num2
+        elif root[1] == '-':
+            return num1 - num2
+        elif root[1] == '*':
+            return num1 * num2
+        else:
+            return num1 // num2
 
-for test_case in range(2):
+for test_case in range(10):
     N = int(input())
-    tree = [[0] * 4 for _ in range(N + 1)]
-    ans = 0
-    for _ in range(N):
-        data = list(input().split())
-        index = int(data[0])
-        tree[index][0] = index
-        tree[index][1] = data[1]
-        if len(data) == 3:
-            tree[index][2] = int(data[2])
-        elif len(data) == 4:
-            tree[index][2], tree[index][3] = int(data[2]), int(data[3])
-
-    postAns = []
-    postorder(1)
-
-    # 어떻게 계산을 해야하지..
-
-    print(postAns)
+    data = {}
+    for i in range(1, N + 1):
+        data[i] = input().split()
+    print("#{} {}".format(test_case + 1, inorder(1)))
