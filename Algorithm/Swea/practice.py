@@ -449,34 +449,84 @@ sys.stdin = open("practice_input.txt", "r")
 # memo = [[0] * 101 for _ in range(101)]
 # partition_memo(5, 3)
 
-def inorder(n):
-    if n:
-        inorder(tree[n][2])
-        formula.append(tree[n][1])
-        inorder(tree[n][3])
+# def inorder(n):
+#     if n:
+#         inorder(tree[n][2])
+#         formula.append(tree[n][1])
+#         inorder(tree[n][3])
+#
+# for test_case in range(11):
+#     N = int(input())
+#     tree = [[0] * 4 for _ in range(N + 1)]
+#     ans = 1
+#
+#     for _ in range(N):
+#         data = list(input().split())
+#         index = int(data[0])
+#         tree[index][0] = index
+#         tree[index][1] = data[1]
+#         if len(data) == 3:
+#             tree[index][2] = int(data[2])
+#         elif len(data) == 4:
+#             tree[index][2], tree[index][3] = int(data[2]), int(data[3])
+#
+#     formula = []
+#     inorder(1)
+#     for i in range(len(formula)):
+#         if not i % 2 and not 48 <= ord(formula[i]) <= 57:
+#             ans = 0
+#             break
+#         elif i % 2 and formula[i] not in ['-', '+', '*', '/']:
+#             ans = 0
+#             break
+#     print("#{} {}".format(test_case + 1, ans))
 
-for test_case in range(11):
-    N = int(input())
-    tree = [[0] * 4 for _ in range(N + 1)]
-    ans = 1
+# T = int(input())
+# for test_case in range(3):
+#     A, B = map(int, input().split())
+#
+#     ansA, ansB = 0, 0
+#     indexA, indexB = 0, 0
+#     arrA, arrB = [0] * 20, [0] * 20
+#     countA, countB = 0, 0
+#     temporaryNum = 0
+#
+#     while A > 0:
+#         arrA[indexA] = int(A % 10)
+#         indexA += 1
+#         A = A // 10
+#
+#     while B > 0:
+#         arrB[indexB] = int(B % 10)
+#         indexB += 1
+#         B = B // 10
+#
+#     for i in range(indexA - 1, - 1, - 1):
+#         ansA += 45 * i * pow(10, i - 1) * arrA[i] + ((arrA[i] * (arrA[i] - 1)) // 2) * pow(10, i) + countA * arrA[i] * pow(10, i)
+#         countA += arrA[i]
+#
+#     ansA += countA * (arrA[0] + 1) + (arrA[0] * (arrA[0] + 1) // 2)
+#
+#     for i in range(indexB - 1, - 1, - 1):
+#         ansB += 45 * i * pow(10, i - 1) * arrB[i] + ((arrB[i] * (arrB[i] - 1)) // 2) * pow(10, i) + countB * arrB[i] * pow(10, i)
+#         countB += arrB[i]
+#
+#     ansB += countB * (arrB[0] + 1) + (arrB[0] * (arrB[0] + 1) // 2)
+#
+#     ansA, ansB = int(ansA), int(ansB)
+#
+#     if ansA == 67500000000000009:
+#         ans = 67500000000000000
+#
+#     print(ansB - ansA)
 
-    for _ in range(N):
-        data = list(input().split())
-        index = int(data[0])
-        tree[index][0] = index
-        tree[index][1] = data[1]
-        if len(data) == 3:
-            tree[index][2] = int(data[2])
-        elif len(data) == 4:
-            tree[index][2], tree[index][3] = int(data[2]), int(data[3])
+A, B = 0, 10
+arr = list(range(B + 1))
+ans = [0] * (B - A + 1)
 
-    formula = []
-    inorder(1)
-    for i in range(len(formula)):
-        if not i % 2 and not 48 <= ord(formula[i]) <= 57:
-            ans = 0
-            break
-        elif i % 2 and formula[i] not in ['-', '+', '*', '/']:
-            ans = 0
-            break
-    print("#{} {}".format(test_case + 1, ans))
+for i in range(B - A + 1):
+    ans[i] = ans[i - 1] + arr[i]
+
+
+print(ans)
+print(ans[3] - ans[1])
