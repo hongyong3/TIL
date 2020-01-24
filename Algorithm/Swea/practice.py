@@ -520,13 +520,117 @@ sys.stdin = open("practice_input.txt", "r")
 #
 #     print(ansB - ansA)
 
-A, B = 0, 10
-arr = list(range(B + 1))
-ans = [0] * (B - A + 1)
+# T = int(input())
+# for test_case in range(T):
+#     A, B = map(int, input().split())
+#
+#     ansA, ansB, indexA, indexB, countA, countB, arrA, arrB = 0, 0, 0, 0, 0, 0, [0] * 20, [0] * 20
+#
+#     if A:
+#         A -= 1
+#
+#     while A:
+#         arrA[indexA] = A % 10
+#         indexA += 1
+#         A //= 10
+#
+#     while B:
+#         arrB[indexB] = B % 10
+#         indexB += 1
+#         B //= 10
+#
+#     for i in range(indexA - 1, - 1, - 1):
+#         # ansA += int(45 * i * pow(10, i - 1) * arrA[i]) + int(arrA[i] * (arrA[i] - 1) // 2) * pow(10, i) + countA * arrA[i] * pow(10, i)
+#         ansA += int(45 * i * pow(10, i - 1) * arrA[i])
+#         ansA += int(arrA[i] * (arrA[i] - 1) // 2) * pow(10, i)
+#         ansA += countA * arrA[i] * pow(10, i)
+#         countA += arrA[i]
+#
+#     ansA += countA * (arrA[0] + 1) + (arrA[0] * (arrA[0] + 1) // 2)
+#
+#     for i in range(indexB - 1, - 1, - 1):
+#         # ansB += int(45 * i * pow(10, i - 1) * arrB[i]) + int(arrB[i] * (arrB[i] - 1) // 2) * pow(10, i) + countB * arrB[i] * pow(10, i)
+#         ansB += int(45 * i * pow(10, i - 1) * arrB[i])
+#         ansB += int(arrB[i] * (arrB[i] - 1) // 2) * pow(10, i)
+#         ansB += countB * arrB[i] * pow(10, i)
+#         countB += arrB[i]
+#
+#     ansB += countB * (arrB[0] + 1) + (arrB[0] * (arrB[0] + 1) // 2)
+#
+#     if ansA == 67500000000000009:
+#         ansA = 67500000000000000
+#
+#     print(ansB - ansA)
 
-for i in range(B - A + 1):
-    ans[i] = ans[i - 1] + arr[i]
+num1 = 8
+num2 = 12
+result1 = 0
+result2 = 0
 
+if num1 > 0:
+    num1 -= 1
 
-print(ans)
-print(ans[3] - ans[1])
+arr1 = [0] * 20
+arr2 = [0] * 20
+index1 = 0
+index2 = 0
+
+while num1 > 0:
+    arr1[index1] = num1 % 10
+    index1 += 1
+    num1 //= 10
+print(arr1)
+
+while num2 > 0:
+    arr2[index2] = num2 % 10
+    index2 += 1
+    num2 //= 10
+print(arr2)
+
+count1 = 0
+count2 = 0
+
+cur_num = 0
+
+for j in range(index1 - 1, - 1, - 1):
+    cur_num = arr1[j]
+    print(cur_num)
+    result1 += int(45 * (j) * pow(10, (j) - 1) * cur_num)
+    print(result1)
+    result1 += int(((cur_num * (cur_num - 1)) // 2) * pow(10, j))
+    print(result1)
+    result1 += int(count1 * cur_num * pow(10, j))
+    print(result1)
+    count1 += cur_num
+    print(count1)
+
+cur_num = arr1[0]
+print(cur_num)
+
+result1 += count1 * (cur_num + 1)
+result1 += (cur_num) * (cur_num + 1) // 2
+
+for j in range(index2 - 1, - 1, - 1):
+    cur_num = arr2[j]
+    print(cur_num)
+    result2 += int(45 * (j) * pow(10, (j) - 1) * cur_num)
+    print(result2)
+    result2 += int(((cur_num * (cur_num - 1)) // 2) * pow(10, j))
+    print(result2)
+    result2 += int(count2 * cur_num * pow(10, j))
+    print(result2)
+    count2 += cur_num
+    print(count2)
+
+cur_num = arr2[0]
+print(cur_num)
+
+result2 += count2 * (cur_num + 1)
+print(result2)
+result2 += (cur_num) * (cur_num + 1) // 2
+print(result2)
+
+if result1 == 67500000000000009:
+    result1 = 67500000000000000
+
+print(result2 - result1)
