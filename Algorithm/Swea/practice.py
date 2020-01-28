@@ -1,8 +1,8 @@
 import sys
 sys.stdin = open("practice_input.txt", "r")
 
-## 가장 큰 수
-
+# # 가장 큰 수
+#
 # def solution(numbers):
 #     answer = ''
 #     number = []
@@ -63,9 +63,9 @@ sys.stdin = open("practice_input.txt", "r")
 # print(solution(numbers3))
 # numbers4 = [21, 212]
 # print(solution(numbers4))
-
-## 주식가격
-
+#
+# # 주식가격
+#
 # def solution(prices):
 #     answer = [0] * len(prices)
 #     for i in range(len(prices)):
@@ -78,9 +78,9 @@ sys.stdin = open("practice_input.txt", "r")
 #                 answer[i] = j - i
 #             j += 1
 #     return answer
-
-###################################################################
-
+#
+# ##################################################################
+#
 # def solution(prices):
 #     answer = [0] * len(prices)
 #     for i in range(len(prices)):
@@ -98,9 +98,9 @@ sys.stdin = open("practice_input.txt", "r")
 # print(solution(prices2))
 # prices3 = [4, 1, 2, 7, 7]
 # print(solution(prices3))
-
-## 완주하지 못한 선수
-
+#
+# # 완주하지 못한 선수
+#
 # def solution(participant, completion):
 #     answer = ''
 #     for i in completion:
@@ -126,10 +126,10 @@ sys.stdin = open("practice_input.txt", "r")
 # participant3 = ["mislav", "stanko", "mislav", "ana"]
 # completion3 = ["stanko", "ana", "mislav"]
 # print(solution(participant3, completion3))
-
-
-## 전화번호 목록
-
+#
+#
+# # 전화번호 목록
+#
 # def solution(phone_book):
 #     answer = True
 #     for i in range(len(phone_book)):
@@ -138,9 +138,9 @@ sys.stdin = open("practice_input.txt", "r")
 #                 answer = False
 #                 break
 #     return answer
-
-###########################################################################
-
+#
+# ##########################################################################
+#
 # def solution(phone_book):
 #     answer = True
 #     phone_book.sort()
@@ -150,9 +150,9 @@ sys.stdin = open("practice_input.txt", "r")
 #                 answer = False
 #                 break
 #     return answer
-
-###########################################################################
-
+#
+# ##########################################################################
+#
 # def solution(phone_book):
 #     answer = True
 #     phone_book.sort()
@@ -168,11 +168,11 @@ sys.stdin = open("practice_input.txt", "r")
 # print(solution(phone_book2))
 # phone_book3 = ["12", "123", "1235", "567", "88"]
 # print(solution(phone_book3))
-
-
-## D4_1861 dfs 좀더 공부하기
-
-
+#
+#
+# # D4_1861 dfs 좀더 공부하기
+#
+#
 # dx = [- 1, 1, 0, 0]
 # dy = [0, 0, - 1, 1]
 #
@@ -202,11 +202,11 @@ sys.stdin = open("practice_input.txt", "r")
 #             count = 1
 #             dfs(x, y, data[x][y])
 #     print("#{} {} {}".format(test_case + 1, number, ans))
-
-
+#
+#
 # dx = [- 1, 1, 0, 0]
 # dy = [0, 0, - 1, 1]
-
+#
 # def solve(x, y, subNumber):
 #     global ans, number, count
 #     for i in range(4):
@@ -278,8 +278,8 @@ sys.stdin = open("practice_input.txt", "r")
 #     solve(2 ** i)
 # for i in range(N):
 #     print(s[i])
-
-
+#
+#
 # BAEKJOON 타임머신
 # from collections import deque
 # inf = 987654321
@@ -315,7 +315,7 @@ sys.stdin = open("practice_input.txt", "r")
 #         u, v, w = map(int, input().split())
 #         edge[u - 1].append((v - 1, w))
 #     SPFA(0)
-
+#
 # from collections import deque
 # inf = 9876543210
 #
@@ -348,7 +348,7 @@ sys.stdin = open("practice_input.txt", "r")
 #     u, v, w = map(int, input().split())
 #     edge[u - 1].append((v - 1, w))
 # SPFA(0)
-
+#
 # def memoize(func):
 #     tempMemo = dict()
 #     def wrapped(n):
@@ -366,7 +366,7 @@ sys.stdin = open("practice_input.txt", "r")
 #     return fib(n - 1) + fib(n - 2)
 # fib = memoize(fib)
 # print(fib(64))
-
+#
 # def fib2(n):
 #     if n in memo:
 #         return memo[n]
@@ -379,7 +379,7 @@ sys.stdin = open("practice_input.txt", "r")
 #
 # memo = dict()
 # print(fib2(64))
-
+#
 # def paper(n):
 #     if n in memo:
 #         return memo[n]
@@ -395,7 +395,7 @@ sys.stdin = open("practice_input.txt", "r")
 #     N = int(input())
 #     memo = dict()
 #     print("#{} {}".format(test_case + 1, paper(N // 10)))
-
+#
 # people = {"A" : 3, "B" : 2, "C" : 1, "D" : 0}
 #
 # T = int(input())
@@ -430,14 +430,14 @@ sys.stdin = open("practice_input.txt", "r")
 #         answer %= 1000000007
 #
 #     print("#{} {}".format(test_case + 1, answer))
-
-
+#
+#
 # T = int(input())
 # for test_case in range(1):
 #     M, N = map(int, input().split())
 #     ans = [1] * M
 #     ans = [N - M + 1] + [1] * (N - M - 2)
-
+#
 # def partition_memo(n, m):
 #     global memo
 #     if n == m or m == 1:
@@ -448,7 +448,7 @@ sys.stdin = open("practice_input.txt", "r")
 #
 # memo = [[0] * 101 for _ in range(101)]
 # partition_memo(5, 3)
-
+#
 # def inorder(n):
 #     if n:
 #         inorder(tree[n][2])
@@ -481,156 +481,29 @@ sys.stdin = open("practice_input.txt", "r")
 #             break
 #     print("#{} {}".format(test_case + 1, ans))
 
-# T = int(input())
-# for test_case in range(3):
-#     A, B = map(int, input().split())
-#
-#     ansA, ansB = 0, 0
-#     indexA, indexB = 0, 0
-#     arrA, arrB = [0] * 20, [0] * 20
-#     countA, countB = 0, 0
-#     temporaryNum = 0
-#
-#     while A > 0:
-#         arrA[indexA] = int(A % 10)
-#         indexA += 1
-#         A = A // 10
-#
-#     while B > 0:
-#         arrB[indexB] = int(B % 10)
-#         indexB += 1
-#         B = B // 10
-#
-#     for i in range(indexA - 1, - 1, - 1):
-#         ansA += 45 * i * pow(10, i - 1) * arrA[i] + ((arrA[i] * (arrA[i] - 1)) // 2) * pow(10, i) + countA * arrA[i] * pow(10, i)
-#         countA += arrA[i]
-#
-#     ansA += countA * (arrA[0] + 1) + (arrA[0] * (arrA[0] + 1) // 2)
-#
-#     for i in range(indexB - 1, - 1, - 1):
-#         ansB += 45 * i * pow(10, i - 1) * arrB[i] + ((arrB[i] * (arrB[i] - 1)) // 2) * pow(10, i) + countB * arrB[i] * pow(10, i)
-#         countB += arrB[i]
-#
-#     ansB += countB * (arrB[0] + 1) + (arrB[0] * (arrB[0] + 1) // 2)
-#
-#     ansA, ansB = int(ansA), int(ansB)
-#
-#     if ansA == 67500000000000009:
-#         ans = 67500000000000000
-#
-#     print(ansB - ansA)
+def solve(num, n):
+    arr, idx, count = [0] * 20, 0, 0
 
-# T = int(input())
-# for test_case in range(T):
-#     A, B = map(int, input().split())
-#
-#     ansA, ansB, indexA, indexB, countA, countB, arrA, arrB = 0, 0, 0, 0, 0, 0, [0] * 20, [0] * 20
-#
-#     if A:
-#         A -= 1
-#
-#     while A:
-#         arrA[indexA] = A % 10
-#         indexA += 1
-#         A //= 10
-#
-#     while B:
-#         arrB[indexB] = B % 10
-#         indexB += 1
-#         B //= 10
-#
-#     for i in range(indexA - 1, - 1, - 1):
-#         # ansA += int(45 * i * pow(10, i - 1) * arrA[i]) + int(arrA[i] * (arrA[i] - 1) // 2) * pow(10, i) + countA * arrA[i] * pow(10, i)
-#         ansA += int(45 * i * pow(10, i - 1) * arrA[i])
-#         ansA += int(arrA[i] * (arrA[i] - 1) // 2) * pow(10, i)
-#         ansA += countA * arrA[i] * pow(10, i)
-#         countA += arrA[i]
-#
-#     ansA += countA * (arrA[0] + 1) + (arrA[0] * (arrA[0] + 1) // 2)
-#
-#     for i in range(indexB - 1, - 1, - 1):
-#         # ansB += int(45 * i * pow(10, i - 1) * arrB[i]) + int(arrB[i] * (arrB[i] - 1) // 2) * pow(10, i) + countB * arrB[i] * pow(10, i)
-#         ansB += int(45 * i * pow(10, i - 1) * arrB[i])
-#         ansB += int(arrB[i] * (arrB[i] - 1) // 2) * pow(10, i)
-#         ansB += countB * arrB[i] * pow(10, i)
-#         countB += arrB[i]
-#
-#     ansB += countB * (arrB[0] + 1) + (arrB[0] * (arrB[0] + 1) // 2)
-#
-#     if ansA == 67500000000000009:
-#         ansA = 67500000000000000
-#
-#     print(ansB - ansA)
+    while num:
+        arr[idx] = num % 10
+        idx += 1
+        num //= 10
 
-num1 = 8
-num2 = 12
-result1 = 0
-result2 = 0
+    for i in range(idx - 1, - 1, - 1):
+        if i:
+            ans[n] += int(45 * (i) * pow(10, (i) - 1) * arr[i]) + int(45 * (i) * pow(10, (i) - 1) * arr[i])
+            ans[n] += int(45 * (i) * pow(10, (i) - 1) * arr[i])
+            ans[n] += int(((arr[i] * (arr[i] - 1)) // 2) * pow(10, i))
+            ans[n] += int(count * arr[i] * pow(10, i))
+            count += arr[i]
 
-if num1 > 0:
-    num1 -= 1
+T = int(input())
+for test_case in range(T):
+    A, B = map(int, input().split())
+    ans = [0, 0]
 
-arr1 = [0] * 20
-arr2 = [0] * 20
-index1 = 0
-index2 = 0
+    if A:
+        A -= 1
 
-while num1 > 0:
-    arr1[index1] = num1 % 10
-    index1 += 1
-    num1 //= 10
-print(arr1)
-
-while num2 > 0:
-    arr2[index2] = num2 % 10
-    index2 += 1
-    num2 //= 10
-print(arr2)
-
-count1 = 0
-count2 = 0
-
-cur_num = 0
-
-for j in range(index1 - 1, - 1, - 1):
-    cur_num = arr1[j]
-    print(cur_num)
-    result1 += int(45 * (j) * pow(10, (j) - 1) * cur_num)
-    print(result1)
-    result1 += int(((cur_num * (cur_num - 1)) // 2) * pow(10, j))
-    print(result1)
-    result1 += int(count1 * cur_num * pow(10, j))
-    print(result1)
-    count1 += cur_num
-    print(count1)
-
-cur_num = arr1[0]
-print(cur_num)
-
-result1 += count1 * (cur_num + 1)
-result1 += (cur_num) * (cur_num + 1) // 2
-
-for j in range(index2 - 1, - 1, - 1):
-    cur_num = arr2[j]
-    print(cur_num)
-    result2 += int(45 * (j) * pow(10, (j) - 1) * cur_num)
-    print(result2)
-    result2 += int(((cur_num * (cur_num - 1)) // 2) * pow(10, j))
-    print(result2)
-    result2 += int(count2 * cur_num * pow(10, j))
-    print(result2)
-    count2 += cur_num
-    print(count2)
-
-cur_num = arr2[0]
-print(cur_num)
-
-result2 += count2 * (cur_num + 1)
-print(result2)
-result2 += (cur_num) * (cur_num + 1) // 2
-print(result2)
-
-if result1 == 67500000000000009:
-    result1 = 67500000000000000
-
-print(result2 - result1)
+    solve(A, 0)
+    solve(B, 1)
