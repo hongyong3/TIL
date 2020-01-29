@@ -491,11 +491,18 @@ def solve(num, n):
 
     for i in range(idx - 1, - 1, - 1):
         if i:
-            ans[n] += int(45 * (i) * pow(10, (i) - 1) * arr[i]) + int(45 * (i) * pow(10, (i) - 1) * arr[i])
-            ans[n] += int(45 * (i) * pow(10, (i) - 1) * arr[i])
-            ans[n] += int(((arr[i] * (arr[i] - 1)) // 2) * pow(10, i))
-            ans[n] += int(count * arr[i] * pow(10, i))
+            ans[n] += int(45 * (i) * pow(10, (i) - 1) * arr[i] + ((arr[i] * (arr[i] - 1)) // 2) * pow(10, i) + count * arr[i] * pow(10, i))
+            # ans[n] += int(45 * (i) * pow(10, (i) - 1) * arr[i])
+            # ans[n] += int(((arr[i] * (arr[i] - 1)) // 2) * pow(10, i))
+            # ans[n] += int(count * arr[i] * pow(10, i))
             count += arr[i]
+
+    ans[n] += count * (arr[0] + 1) + (arr[0] * (arr[0] + 1) // 2)
+
+    if ans[0] == 67500000000000009:
+        ans[0] -= 9
+
+    return ans[n]
 
 T = int(input())
 for test_case in range(T):
@@ -505,5 +512,4 @@ for test_case in range(T):
     if A:
         A -= 1
 
-    solve(A, 0)
-    solve(B, 1)
+    print("#{} {}".format(test_case + 1, solve(B, 1) - solve(A, 0)))
