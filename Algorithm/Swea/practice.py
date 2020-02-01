@@ -481,35 +481,56 @@ sys.stdin = open("practice_input.txt", "r")
 #             break
 #     print("#{} {}".format(test_case + 1, ans))
 
-def solve(num, n):
-    arr, idx, count = [0] * 20, 0, 0
+# def solve(num, n):
+#     arr, idx, count = [0] * 20, 0, 0
+#
+#     while num:
+#         arr[idx] = num % 10
+#         idx += 1
+#         num //= 10
+#
+#     for i in range(idx - 1, - 1, - 1):
+#         if i:
+#             ans[n] += int(45 * (i) * pow(10, (i) - 1) * arr[i] + ((arr[i] * (arr[i] - 1)) // 2) * pow(10, i) + count * arr[i] * pow(10, i))
+#             # ans[n] += int(45 * (i) * pow(10, (i) - 1) * arr[i])
+#             # ans[n] += int(((arr[i] * (arr[i] - 1)) // 2) * pow(10, i))
+#             # ans[n] += int(count * arr[i] * pow(10, i))
+#             count += arr[i]
+#
+#     ans[n] += count * (arr[0] + 1) + (arr[0] * (arr[0] + 1) // 2)
+#
+#     if ans[0] == 67500000000000009:
+#         ans[0] -= 9
+#
+#     return ans[n]
+#
+# T = int(input())
+# for test_case in range(T):
+#     A, B = map(int, input().split())
+#     ans = [0, 0]
+#
+#     if A:
+#         A -= 1
+#
+    # print("#{} {}".format(test_case + 1, solve(B, 1) - solve(A, 0)))
 
-    while num:
-        arr[idx] = num % 10
-        idx += 1
-        num //= 10
+def gcd(a, b):
+    if b == 0:
+        return a
+    return gcd(b, a % b)
 
-    for i in range(idx - 1, - 1, - 1):
-        if i:
-            ans[n] += int(45 * (i) * pow(10, (i) - 1) * arr[i] + ((arr[i] * (arr[i] - 1)) // 2) * pow(10, i) + count * arr[i] * pow(10, i))
-            # ans[n] += int(45 * (i) * pow(10, (i) - 1) * arr[i])
-            # ans[n] += int(((arr[i] * (arr[i] - 1)) // 2) * pow(10, i))
-            # ans[n] += int(count * arr[i] * pow(10, i))
-            count += arr[i]
+# print(gcd(33, 100))
 
-    ans[n] += count * (arr[0] + 1) + (arr[0] * (arr[0] + 1) // 2)
+def diophantine(a, b, c):
+    r1, r2 = a, b
+    s1, s2 = 1, 0
+    t1, t2 = 0, 1
 
-    if ans[0] == 67500000000000009:
-        ans[0] -= 9
+    while r2 != 0:
+        q = r1 // r2
+        r1, r2 = r2, r1 % r2
+        s1, s2 = s2, s1 - q * s2
+        t1, t2 = t2, t1 - q * t2
 
-    return ans[n]
-
-T = int(input())
-for test_case in range(T):
-    A, B = map(int, input().split())
-    ans = [0, 0]
-
-    if A:
-        A -= 1
-
-    print("#{} {}".format(test_case + 1, solve(B, 1) - solve(A, 0)))
+    return (c // r1 * s1, c // r1 * t1)
+print(diophantine(21, 14, 35))
