@@ -64,4 +64,4 @@ for test_case in range(T):
     ans = 0
     for i in range(N):
         visited = [0] * (N)
-        knownPeople = bfs(i, dataT) + bfs(i + dataS) + 1
+        knownPeople = bfs(i, dataT) + bfs(i, dataS) + 1
