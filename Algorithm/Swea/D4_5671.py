@@ -13,7 +13,6 @@ for test_case in range(T):
     for _ in range(M):
         # word = list(set(list(input())))
         word = input()
-        print(word)
         wordList.append(word)
 
-        for i in range(len(word)):
+        # for i in range(len(word)):
