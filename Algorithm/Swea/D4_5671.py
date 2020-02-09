@@ -11,8 +11,8 @@ for test_case in range(T):
     wordList = []
 
     for _ in range(M):
-        # word = list(set(list(input())))
-        word = input()
+        word = list(set(list(input())))
+        # word = input()
         wordList.append(word)
 
         # for i in range(len(word)):
