@@ -48,5 +48,4 @@ for test_case in range(int(T)):
             # if same == False:
             #     if data[subFront] < data[subBack]:
 
-
     print("#{} {}".format(test_case + 1, newData))
