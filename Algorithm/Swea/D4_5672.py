@@ -5,47 +5,53 @@ temporary = input()
 T = ''
 for t in temporary:
     if t.isdigit():
-        T += t
-for test_case in range(int(T)):
+        T = int(t)
+for test_case in range(T):
     temporary = input()
+    newData = ''
     N = ''
     for t in temporary:
         if t.isdigit():
-            N += t
-    data = [ord(input()[0]) for _ in range(int(N))]
-    newData = ''
-    print(data)
+            N = int(t)
+    data = [input()[0] for _ in range(N)]
 
-    front, back = 0, N - 1
-    while front != back:
-        newFront, newBack = front, back
+    start, end = 0, N - 1
+    while start != end:
+        if ord(data[start]) < ord(data[end]):
+            newData += data[start]
+            start += 1
+        elif ord(data[start]) > ord(data[end]):
+            newData += data[end]
+            end -= 1
 
-        if data[front] < data[back]:
-            newData += chr(data[front])
-            newFront += 1
-
-        elif data[front] > data[back]:
-            newData += chr(data[back])
-            newBack -= 1
-
-        elif data[front] == data[back]:
-            subFront = front + 1
-            subBack = back - 1
-            same, different = False, False
+        elif ord(data[start]) == ord(data[end]):
+            nstart, nend = start + 1, end - 1
+            same = False
 
             while True:
-                if data[subFront] != data[subBack]:
-                    different = True
+                if data[nstart] != data[nend]:
                     break
                 else:
-                    if subFront + 1 <= subBack - 1:
-                        subFront += 1
-                        subBack -= 1
+                    if nstart + 1 <= nend - 1:
+                        nstart += 1
+                        nend -= 1
                     else:
                         same = True
                         break
 
-            # if same == False:
-            #     if data[subFront] < data[subBack]:
+            if same:
+                newData += data[start]
+                start += 1
+
+            else:
+                if ord(data[nstart]) < ord(data[nend]):
+                    newData += data[start]
+                    start += 1
+                else:
+                    newData += data[end]
+                    end -= 1
+
+        if start == end:
+            newData += data[start]
 
     print("#{} {}".format(test_case + 1, newData))
