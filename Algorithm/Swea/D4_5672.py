@@ -1,19 +1,11 @@
 import sys
 sys.stdin = open("D4_5672_input.txt", "r")
 
-temporary = input()
-T = ''
-for t in temporary:
-    if t.isdigit():
-        T = int(t)
+T = int(input().replace('혻', ''))
 for test_case in range(T):
-    temporary = input()
     newData = ''
-    N = ''
-    for t in temporary:
-        if t.isdigit():
-            N = int(t)
-    data = [input()[0] for _ in range(N)]
+    N = int(input().replace('혻', ''))
+    data = [input().replace('혻', '') for _ in range(N)]
 
     start, end = 0, N - 1
     while start != end:

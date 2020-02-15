@@ -128,34 +128,16 @@ def check(n):
     return ret
 
 
-temporary = input()
-T = ''
-for t in temporary:
-    if t.isdigit():
-        T += t
-for test_case in range(int(T)):
-    temporaryNM = ['', '']
-    temporary = input()
-    tt = 0
-    for t in temporary:
-        if t.isdigit():
-            temporaryNM[tt] += t
-        if t == ' ':
-            tt += 1
-
-    N, M = int(temporaryNM[0]), int(temporaryNM[1])
-
+T = int(input().replace('혻', ''))
+for test_case in range(T):
+    N, M = map(int, input().replace('혻', '').split())
     wordList = [0] * N
     alphabet = 0
     ans = 0
 
     for _ in range(N):
-        temporary = input()
-        word = ''
+        word = str(input().replace('혻', ''))
         var = 0
-        for t in temporary:
-            if t in 'bcdfghjklnmpqrstvwxyz':
-                word += t
         for i in range(len(word)):
             temp = ord(word[i]) - 97
             var |= (1 << temp)

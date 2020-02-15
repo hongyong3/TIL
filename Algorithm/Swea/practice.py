@@ -514,23 +514,108 @@ sys.stdin = open("practice_input.txt", "r")
 #
     # print("#{} {}".format(test_case + 1, solve(B, 1) - solve(A, 0)))
 
-def gcd(a, b):
-    if b == 0:
-        return a
-    return gcd(b, a % b)
+# def gcd(a, b):
+#     if b == 0:
+#         return a
+#     return gcd(b, a % b)
+#
+# # print(gcd(33, 100))
+#
+# def diophantine(a, b, c):
+#     r1, r2 = a, b
+#     s1, s2 = 1, 0
+#     t1, t2 = 0, 1
+#
+#     while r2 != 0:
+#         q = r1 // r2
+#         r1, r2 = r2, r1 % r2
+#         s1, s2 = s2, s1 - q * s2
+#         t1, t2 = t2, t1 - q * t2
+#
+#     return (c // r1 * s1, c // r1 * t1)
+# print(diophantine(21, 14, 35))
 
-# print(gcd(33, 100))
+# def is_divide_pt(x1, y1, x2, y2, x3, y3, x4,y4):
+#     f1= (x2 - x1) * (y3 - y1) - (y2 - y1) * (x3 - x1)
+#     f2= (x2 - x1) * (y4 - y1) - (y2 - y1) * (x4 - x1)
+#     if f1 * f2 < 0 :
+#       return True
+#     else:
+#       return False
+#
+# def is_cross_pt(x1, y1, x2, y2, x3, y3, x4,y4):
+#     b1 = is_divide_pt(x1, y1, x2, y2, x3, y3, x4, y4)
+#     b2 = is_divide_pt(x3, y3, x4, y4, x1, y1, x2, y2)
+#     if b1 and b2:
+#         return True
+#     return False
+#
+# # ans = []
+# rectangle = [[0, 0, 8, 0], [0, 0, 4, 0], [0, 4, 8, 4], [8, 0, 8, 4]]
+# line = [0, 0, 4, 4]
+# # line = [0, 4, 9, 4]
+# for i in rectangle:
+#     print(is_cross_pt(line[0], line[1], line[2], line[3], i[0], i[1], i[2], i[3]))
+# # print(ans)
 
-def diophantine(a, b, c):
-    r1, r2 = a, b
-    s1, s2 = 1, 0
-    t1, t2 = 0, 1
+def intersection(x1, y1, x2, y2, x3, y3, x4, y4):
+    px = (x1 * y2 - y1 * x2) * (x3 - x4) - (x1 - x2) * (x3 * y4 - y3 * x4)
+    py = (x1 * y2 - y1 * x2) * (y3 - y4) - (y1 - y2) * (x3 * y4 - y3 * x4)
+    p = (x1 - x2) * (y3 - y4) - (y1 - y2) * (x3 - x4)
 
-    while r2 != 0:
-        q = r1 // r2
-        r1, r2 = r2, r1 % r2
-        s1, s2 = s2, s1 - q * s2
-        t1, t2 = t2, t1 - q * t2
+    if not p:
+        # print("parallel")
+        return
 
-    return (c // r1 * s1, c // r1 * t1)
-print(diophantine(21, 14, 35))
+    x, y = px / p, py / p
+    if line[0] <= x <= line[2] and line[1] <= y <= line[3] and [x, y] not in ans:
+        ans.append([x, y])
+    return
+
+ans = []
+rectangleLine = []
+meet = 0
+
+rectangle = [0, 0, 8, 4]
+line = [3, 5, 6, 6]
+
+xmin, ymin, xmax, ymax = int(rectangle[0]), int(rectangle[1]), int(rectangle[2]), int(rectangle[3])
+if xmin > xmax:
+    xmin, ymin, xmax, ymax = xmax, ymax, xmin, ymin
+rectangleLine = [[xmin, ymin, xmax, ymin], [xmin, ymin, xmin, ymax], [xmin, ymax, xmax, ymax], [xmax, ymin, xmax, ymax]]
+
+
+x1, y1, x2, y2 = int(line[0]), int(line[1]), int(line[2]), int(line[3])
+if x1 > x2:
+    x1, y1, x2, y2 = x2, y2, x1, y1
+
+
+if y1 == y2:
+    if ymin < y1 < y2 < ymax:
+        if x1 <= xmin < x2 < xmax or xmin < x1 < xmax <= x2:
+            meet = 1
+        elif xmin <= x1 < x2 <= xmax or x1 <= xmin < xmax <= x2:
+            meet = 2
+    elif ymin == y1 or ymax == y1:
+        if xmin == x2 or xmax == x1:
+            meet = 1
+        elif xmin <= x1 <= xmax or xmin <= x2 <= xmax:
+            meet = 4
+
+elif x1 == x2:
+    if xmin < x1 < x2 < xmax:
+        if ymin <= y1 < y2 < ymax or ymin < y1 < y2 <= ymax or y1 < y2 <= ymin < ymax or ymin < ymax <= y1 < y2:
+            meet = 1
+        elif ymin <= y1 < y2 <= ymax or y1 <= ymin < ymax <= y2:
+            meet = 2
+    elif xmin == x1 or xmax == x2:
+        if ymin == y2 or ymax == y1:
+            meet = 1
+        elif ymin <= y1 <= ymax or ymin <= y2 <= ymax:
+            meet = 4
+
+else:
+    for i in rectangleLine:
+        intersection(i[0], i[1], i[2], i[3], line[0], line[1], line[2], line[3])
+    meet = len(ans)
+print(meet)
