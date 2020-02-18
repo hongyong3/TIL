@@ -556,66 +556,100 @@ sys.stdin = open("practice_input.txt", "r")
 # # line = [0, 4, 9, 4]
 # for i in rectangle:
 #     print(is_cross_pt(line[0], line[1], line[2], line[3], i[0], i[1], i[2], i[3]))
-# # print(ans)
+# print(ans)
 
-def intersection(x1, y1, x2, y2, x3, y3, x4, y4):
-    px = (x1 * y2 - y1 * x2) * (x3 - x4) - (x1 - x2) * (x3 * y4 - y3 * x4)
-    py = (x1 * y2 - y1 * x2) * (y3 - y4) - (y1 - y2) * (x3 * y4 - y3 * x4)
-    p = (x1 - x2) * (y3 - y4) - (y1 - y2) * (x3 - x4)
+# def intersection(x1, y1, x2, y2, x3, y3, x4, y4):
+#     px = (x1 * y2 - y1 * x2) * (x3 - x4) - (x1 - x2) * (x3 * y4 - y3 * x4)
+#     py = (x1 * y2 - y1 * x2) * (y3 - y4) - (y1 - y2) * (x3 * y4 - y3 * x4)
+#     p = (x1 - x2) * (y3 - y4) - (y1 - y2) * (x3 - x4)
+#
+#     if not p:
+#         # print("parallel")
+#         return
+#
+#     x, y = px / p, py / p
+#     if line[0] <= x <= line[2] and line[1] <= y <= line[3] and [x, y] not in ans:
+#         ans.append([x, y])
+#     return
+#
+# ans = []
+# rectangleLine = []
+# meet = 0
+#
+# rectangle = [0, 0, 8, 4]
+# line = [3, 5, 6, 6]
+#
+# xmin, ymin, xmax, ymax = int(rectangle[0]), int(rectangle[1]), int(rectangle[2]), int(rectangle[3])
+# if xmin > xmax:
+#     xmin, ymin, xmax, ymax = xmax, ymax, xmin, ymin
+# rectangleLine = [[xmin, ymin, xmax, ymin], [xmin, ymin, xmin, ymax], [xmin, ymax, xmax, ymax], [xmax, ymin, xmax, ymax]]
+#
+#
+# x1, y1, x2, y2 = int(line[0]), int(line[1]), int(line[2]), int(line[3])
+# if x1 > x2:
+#     x1, y1, x2, y2 = x2, y2, x1, y1
+#
+#
+# if y1 == y2:
+#     if ymin < y1 < y2 < ymax:
+#         if x1 <= xmin < x2 < xmax or xmin < x1 < xmax <= x2:
+#             meet = 1
+#         elif xmin <= x1 < x2 <= xmax or x1 <= xmin < xmax <= x2:
+#             meet = 2
+#     elif ymin == y1 or ymax == y1:
+#         if xmin == x2 or xmax == x1:
+#             meet = 1
+#         elif xmin <= x1 <= xmax or xmin <= x2 <= xmax:
+#             meet = 4
+#
+# elif x1 == x2:
+#     if xmin < x1 < x2 < xmax:
+#         if ymin <= y1 < y2 < ymax or ymin < y1 < y2 <= ymax or y1 < y2 <= ymin < ymax or ymin < ymax <= y1 < y2:
+#             meet = 1
+#         elif ymin <= y1 < y2 <= ymax or y1 <= ymin < ymax <= y2:
+#             meet = 2
+#     elif xmin == x1 or xmax == x2:
+#         if ymin == y2 or ymax == y1:
+#             meet = 1
+#         elif ymin <= y1 <= ymax or ymin <= y2 <= ymax:
+#             meet = 4
+#
+# else:
+#     for i in rectangleLine:
+#         intersection(i[0], i[1], i[2], i[3], line[0], line[1], line[2], line[3])
+#     meet = len(ans)
+# print(meet)
 
-    if not p:
-        # print("parallel")
+def dfs(v):
+    visited[v] = 1
+    nv = s[v]
+    if not visited[nv]:
+        p[nv] = v
+        dfs(nv)
+    else:
+        if not final[nv]:
+            cycle(v, s[v])
+    final[v] = 1
+
+def cycle(v, nv):
+    global count
+    count += 1
+    if v == nv:
         return
-
-    x, y = px / p, py / p
-    if line[0] <= x <= line[2] and line[1] <= y <= line[3] and [x, y] not in ans:
-        ans.append([x, y])
-    return
-
-ans = []
-rectangleLine = []
-meet = 0
-
-rectangle = [0, 0, 8, 4]
-line = [3, 5, 6, 6]
-
-xmin, ymin, xmax, ymax = int(rectangle[0]), int(rectangle[1]), int(rectangle[2]), int(rectangle[3])
-if xmin > xmax:
-    xmin, ymin, xmax, ymax = xmax, ymax, xmin, ymin
-rectangleLine = [[xmin, ymin, xmax, ymin], [xmin, ymin, xmin, ymax], [xmin, ymax, xmax, ymax], [xmax, ymin, xmax, ymax]]
+    cycle(p[v], nv)
 
 
-x1, y1, x2, y2 = int(line[0]), int(line[1]), int(line[2]), int(line[3])
-if x1 > x2:
-    x1, y1, x2, y2 = x2, y2, x1, y1
-
-
-if y1 == y2:
-    if ymin < y1 < y2 < ymax:
-        if x1 <= xmin < x2 < xmax or xmin < x1 < xmax <= x2:
-            meet = 1
-        elif xmin <= x1 < x2 <= xmax or x1 <= xmin < xmax <= x2:
-            meet = 2
-    elif ymin == y1 or ymax == y1:
-        if xmin == x2 or xmax == x1:
-            meet = 1
-        elif xmin <= x1 <= xmax or xmin <= x2 <= xmax:
-            meet = 4
-
-elif x1 == x2:
-    if xmin < x1 < x2 < xmax:
-        if ymin <= y1 < y2 < ymax or ymin < y1 < y2 <= ymax or y1 < y2 <= ymin < ymax or ymin < ymax <= y1 < y2:
-            meet = 1
-        elif ymin <= y1 < y2 <= ymax or y1 <= ymin < ymax <= y2:
-            meet = 2
-    elif xmin == x1 or xmax == x2:
-        if ymin == y2 or ymax == y1:
-            meet = 1
-        elif ymin <= y1 <= ymax or ymin <= y2 <= ymax:
-            meet = 4
-
-else:
-    for i in rectangleLine:
-        intersection(i[0], i[1], i[2], i[3], line[0], line[1], line[2], line[3])
-    meet = len(ans)
-print(meet)
+T = int(input())
+for test_case in range(T):
+    N = int(input())
+    s = list(map(int, input().split()))
+    s = [0] + s
+    p = [0] * (N + 1)
+    print(s)
+    visited = [0] * (N + 1)
+    final = [0] * (N + 1)
+    count = 0
+    for i in range(N):
+        if not visited[i]:
+            dfs(i)
+    print(count)
