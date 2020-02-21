@@ -62,7 +62,7 @@ for test_case in range(T):
     arr1, arr2 = input(), input()
     count, count1, count2, flag, q = 0, 0, 0, 0, [[], []]
 
-    while count <= 20000:
+    while count <= 1000:
         if count1 == count2 == N:
             flag = 1
             break

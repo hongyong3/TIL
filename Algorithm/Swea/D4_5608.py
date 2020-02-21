@@ -88,8 +88,8 @@ sys.stdin = open("D4_5608_input.txt", "r")
 #     print("#{}".format(test_case + 1), *solve(N))
 #     print(memo)
 
-import time
-start = time.time()
+# import time
+# start = time.time()
 
 T = int(input())
 for test_case in range(T):
@@ -117,4 +117,4 @@ for test_case in range(T):
     maxCount = max(arr2)
     maxNum = len(arr2) - 1 - arr2[::-1].index(maxCount)
     print("#{} {} {}".format(test_case + 1, maxCount, maxNum))
-print(time.time() - start)
+# print(time.time() - start)
