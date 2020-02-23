@@ -27,6 +27,7 @@ sys.stdin = open("D4_5684_input.txt", "r")
 #     else:
 #         print("#{} {}".format(test_case + 1, minCycle))
 
+# input runtime error 해결..
 temporary = input()
 T = ''
 for t in temporary:
