@@ -1,0 +1,1 @@
+print(list(filter(lambda x: not x % 2, list(range(1, 11)))))
