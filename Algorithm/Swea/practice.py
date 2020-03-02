@@ -619,37 +619,102 @@ sys.stdin = open("practice_input.txt", "r")
 #         intersection(i[0], i[1], i[2], i[3], line[0], line[1], line[2], line[3])
 #     meet = len(ans)
 # print(meet)
+#
+# def dfs(v):
+#     visited[v] = 1
+#     nv = s[v]
+#     if not visited[nv]:
+#         p[nv] = v
+#         dfs(nv)
+#     else:
+#         if not final[nv]:
+#             cycle(v, s[v])
+#     final[v] = 1
+#
+# def cycle(v, nv):
+#     global count
+#     count += 1
+#     if v == nv:
+#         return
+#     cycle(p[v], nv)
+#
+#
+# T = int(input())
+# for test_case in range(T):
+#     N = int(input())
+#     s = list(map(int, input().split()))
+#     s = [0] + s
+#     p = [0] * (N + 1)
+#     print(s)
+#     visited = [0] * (N + 1)
+#     final = [0] * (N + 1)
+#     count = 0
+#     for i in range(N):
+#         if not visited[i]:
+#             dfs(i)
+#     print(count)
+# data_set = set(range(0, 11, 2))
+# print(data_set)
+#
+# for item in data_set:
+#     print(item, end = " ")
+#
+# print()
+#
+# for key, value in enumerate(data_set):
+#     print(key, value)
 
-def dfs(v):
-    visited[v] = 1
-    nv = s[v]
-    if not visited[nv]:
-        p[nv] = v
-        dfs(nv)
-    else:
-        if not final[nv]:
-            cycle(v, s[v])
-    final[v] = 1
+# data_set = {1, 2, 3, 4, 5}
+#
+# data_set1  = {x * y for x in data_set if x % 2 for y in data_set if not y % 2}
+# print(data_set1)
 
-def cycle(v, nv):
-    global count
-    count += 1
-    if v == nv:
-        return
-    cycle(p[v], nv)
+# data_dict1 = {"홍길동": 20,
+#               "이순신": 45,
+#               "강감찬": 35}
+#
+# # 각 항목의 키는 변수 key에 저장되며, data_dict[key]로 해당 키에 대응하는 값을 읽음.
+# for key in data_dict1:
+#     print("data_dict1 =>", key)
+# print()
+#
+# # 매 반복에서 각 항목의 키가 변수 key에 저장되고, data_dict[key]로 해당 키에 대응하는 값을 읽음.
+# for key in data_dict1.keys():
+#     print("data_dict.keys() =>", key)
+# print()
+#
+# # 반복될 때 각 항목이 변수 item에 저장되고, item[0] : 키, item[1] : 값을 읽어옴.
+# for item in data_dict1.items():
+#     print("data_dict.items() =>", item, item[0], item[1])
+# print()
+#
+# # 매 반복에서 각 항목의 키, 값이 변수 key, value에 저장되어 읽어옴.
+# for key, value in data_dict1.items():
+#     print("data_dict.items() =>", key, value)
+# print()
+#
+# # 매 반복에서 각 항목의 값이 변수 value에 저장되어 읽어옴.
+# for value in data_dict1.values():
+#     print("data_dict.values() =>", value)
+# print()
+#
+# data_set1 = {item for item in data_dict1.items()}
+# print(data_set1)
 
+scores = []
+count = int(input("총 학생의 수를 입력하세요: "))
 
-T = int(input())
-for test_case in range(T):
-    N = int(input())
-    s = list(map(int, input().split()))
-    s = [0] + s
-    p = [0] * (N + 1)
-    print(s)
-    visited = [0] * (N + 1)
-    final = [0] * (N + 1)
-    count = 0
-    for i in range(N):
-        if not visited[i]:
-            dfs(i)
-    print(count)
+for i in range(1, count + 1):
+    score = {}
+    score["name"] = input("학생의 이름을 입력하세요: ")
+    score["kor"] = int(input("{} 학생의 국어 점수를 입력하세요: ".format(score["name"])))
+    score["mat"] = int(input("{} 학생의 수학 점수를 입력하세요: ".format(score["name"])))
+    score["eng"] = int(input("{} 학생의 영어 점수를 입력하세요: ".format(score["name"])))
+    scores.append(score)
+
+for score in scores:
+    total = 0
+    for key in score:
+        if key != "name":
+            total += score[key]
+    print("{} => 총점 : {}, 평균 : {0.2F}".format(score["name"], total, total / 3))
