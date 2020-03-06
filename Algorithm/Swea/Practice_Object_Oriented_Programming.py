@@ -53,12 +53,14 @@
 #                                     # self : 객체공간의 참조 전달
 #                                     # name, age : 매개변수 인자
 #                                     # 즉, self가 가리키는 객체공간에 name, age 필드 생성
+#                                     # 객체를 생성하기 위해 호출하는 생성자 메서드 => __init__ 메서드
 #         self.name = name
 #         self.age = age
 #         print("{} 객체가 생성되었습니다.".format(self.name))
 #
-#     def __del__(self):  # self : 객체공간의 참조 전달
-#         print("{} 객체가 제거되었습니다.".format(self.name))
+#    def __del__(self):  # self : 객체공간의 참조 전달
+#                        # 객체를 소멸하기 위해 호출하는 소멸자 메서드 => __del__ 메서드
+#        print("{} 객체가 제거되었습니다.".format(self.name))
 #
 # member = Person("홍길동", 20)
 #
