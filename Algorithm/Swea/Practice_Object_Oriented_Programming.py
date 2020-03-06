@@ -383,41 +383,165 @@
 #     print(str(member))  # Person 클래스의 객체를 전달하면 __str__메서드 호출
 
 ## 클래스 상속
+#
+# class Parent:
+#     def __init__(self, family_name):
+#         self.__family_name = family_name
+#         print("Parent 클래스의 __init__() ...")
+#
+#     @property
+#     def family_name(self):
+#         return self.__family_name
+#
+# class Child(Parent):
+#     def __init__(self, first_name, last_name):
+#         Parent.__init__(self, last_name)    # 부모 클래스의 __family_name 필드를 매개변수 last_name 으로 초기화
+#         # super().__init__(last_name)       # super() 호출과 생성자 호출을 결합해 동일한 효과 얻음
+#         self.__first_name = first_name
+#         print("Child 클래스의 __init__() ...")
+#
+#     @property
+#     def first_name(self):
+#         return self.__first_name
+#
+#     @first_name.setter
+#     def first_name(self, first_name):
+#         self.__first_name = first_name
+#
+#     @property
+#     def name(self): # Parent 클래스의 family_name 속성의 반환 값과
+#                     # Child 클래스의 first_name 속성의 반환 값을 문자열로 만들어 반환
+#         return "{} {}".format(self.family_name, self.first_name)
+#
+# child = Child("길동", "홍")
+#
+# print(child.family_name)
+# print(child.first_name)
+# print(child.name)
+# print("======>")
+# child.first_name = "길순"
+# print(child.name)
 
-class Parent:
-    def __init__(self, family_name):
-        self.__family_name = family_name
-        print("Parent 클래스의 __init__() ...")
+## 메서드 오버라이딩
+#
+# class Parent:
+#     def __init__(self, family_name):
+#         self.__family_name = family_name
+#         print("Parent 클래스의 __init__() ...")
+#
+#     @property
+#     def family_name(self):
+#         return self.__family_name
+#
+#     def print_info(self):
+#         print("Parent: {}".format(self.family_name))
+#
+# class Child(Parent):
+#     def __init__(self, first_name, last_name):
+#         Parent.__init__(self, last_name)
+#         # super().__init__(last_name)
+#         self.__first_name = first_name
+#         print("Child 클래스의 __init__() ...")
+#
+#     @property
+#     def first_name(self):
+#         return self.__first_name
+#
+#     @first_name.setter
+#     def first_name(self, first_name):
+#         self.__first_name = first_name
+#
+#     @property
+#     def name(self):
+#         return "{} {}".format(self.family_name, self.first_name)
+#
+#     def print_info(self):   # 오버라이딩
+#         Parent.print_info(self)
+#         # super().print_info()
+#         print("Child: {}".format(self.name))
+#
+# child = Child("길동", "홍")
+# child.print_info()
+
+### Python Object_Oriented_Programming 실습
+
+# -*- coding: utf-8 -*-
+
+# Practice_Object_Oriented_Programming.py
+
+# Student 클래스
+# - Private Field를 가지고 있음
+# - 읽기 전용 name, gender Property
+# - 일기, 쓰기 모두 가능한 height Property
+# - 특수함수 __repr__에 대한 정의를 가짐
+#   -> repr 함수는 객체 출력시 주로 사용
+
+class Student:
+    def __init__(self, name, gender, height):   # __init__ 생성자 메서드 정의
+        self.__name = name  # private Field
+        self.__gender = gender
+        self.__height = height
 
     @property
-    def family_name(self):
-        return self.__family_name
-
-class Child(Parent):
-    def __init__(self, first_name, last_name):
-        Parent.__init__(self, last_name)    # 부모 클래스의 __family_name 필드를 매개변수 last_name 으로 초기화
-        # super().__init__(last_name)       # super() 호출과 생성자 호출을 결합해 동일한 효과 얻음
-        self.__first_name = first_name
-        print("Child 클래스의 __init__() ...")
+    def name(self):
+        return self.__name
 
     @property
-    def first_name(self):
-        return self.__first_name
-
-    @first_name.setter
-    def first_name(self, first_name):
-        self.__first_name = first_name
+    def gender(self):
+        return self.__gender
 
     @property
-    def name(self): # Parent 클래스의 family_name 속성의 반환 값과
-                    # Child 클래스의 first_name 속성의 반환 값을 문자열로 만들어 반환
-        return "{} {}".format(self.family_name, self.first_name)
+    def height(self):
+        return self.__height
 
-child = Child("길동", "홍")
+    @height.setter
+    def height(self, height):
+        self.__height = height
 
-print(child.family_name)
-print(child.first_name)
-print(child.name)
-print("======>")
-child.first_name = "길순"
-print(child.name)
+    def __repr__(self): # repr 함수는 객체 출력 시 주로 사용
+                        # __repr__(self) 함수를 __str__(self)로 바꿔도 동작에는 이상 없음.
+        return "{}(name: {}, gender: {}, height: {}"\
+            .format(self.__class__.__name__, self.name, self.gender, self.height )
+
+# s1 = Student("홍길동", "남", 176.5)
+# print(s1)
+
+## students 리스트 객체 생성
+
+students = [
+    Student("홍길동", "남", 176.5),
+    Student("강감찬", "남", 182.2),
+    Student("이순신", "남", 188.5),
+    Student("유관순", "여", 158.4),
+]
+
+for student in students:
+    print(student)
+
+print()
+print("name으로 오름차순 정렬 후 ===>")
+
+# name 기준 오름차순 정렬;
+# sorted 함수는 반복가능한 객체 대상
+# 사용자 정의 객체 사용 시 해당 리스트 객체에 있는 각 항목에서 키를 사용한 정보 전달
+# 함수는 반복되는 객체의 항목을 인자로 받아 수행
+for student in sorted(students, key=lambda x: x.name):
+    print(student)
+
+print()
+print("name으로 내림차순 정렬 후 ===>")
+
+for student in sorted(students, key=lambda x: x.name, reverse = True):
+    print(student)
+
+print()
+print("height로 오름차순 정렬 후 ===>")
+
+for student in sorted(students, key=lambda x: x.height):
+    print(student)
+
+print()
+print("height로 내림차순 정렬 후 ===>")
+
+for student in sorted(students, key=lambda x: x.height, reverse = True):
+    print(student)
