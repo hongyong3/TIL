@@ -33,7 +33,7 @@
 # # members 리스트 객체의 각 항목을 member 변수에 저장
 # for member in members:
 #     print(to_str(member))   # 각 멤버 정보에 대한 문자열 값 출력
-
+#
 ### 클래스 정의 및 객체 생성
 
 # 클래스 정의
@@ -426,44 +426,44 @@
 
 ## 메서드 오버라이딩
 #
-# class Parent:
-#     def __init__(self, family_name):
-#         self.__family_name = family_name
-#         print("Parent 클래스의 __init__() ...")
-#
-#     @property
-#     def family_name(self):
-#         return self.__family_name
-#
-#     def print_info(self):
-#         print("Parent: {}".format(self.family_name))
-#
-# class Child(Parent):
-#     def __init__(self, first_name, last_name):
-#         Parent.__init__(self, last_name)
-#         # super().__init__(last_name)
-#         self.__first_name = first_name
-#         print("Child 클래스의 __init__() ...")
-#
-#     @property
-#     def first_name(self):
-#         return self.__first_name
-#
-#     @first_name.setter
-#     def first_name(self, first_name):
-#         self.__first_name = first_name
-#
-#     @property
-#     def name(self):
-#         return "{} {}".format(self.family_name, self.first_name)
-#
-#     def print_info(self):   # 오버라이딩
-#         Parent.print_info(self)
-#         # super().print_info()
-#         print("Child: {}".format(self.name))
-#
-# child = Child("길동", "홍")
-# child.print_info()
+class Parent:
+    def __init__(self, family_name):
+        self.__family_name = family_name
+        print("Parent 클래스의 __init__() ...")
+
+    @property
+    def family_name(self):
+        return self.__family_name
+
+    def print_info(self):
+        print("Parent: {}".format(self.family_name))
+
+class Child(Parent):
+    def __init__(self, first_name, last_name):
+        Parent.__init__(self, last_name)
+        # super().__init__(last_name)
+        self.__first_name = first_name
+        print("Child 클래스의 __init__() ...")
+
+    @property
+    def first_name(self):
+        return self.__first_name
+
+    @first_name.setter
+    def first_name(self, first_name):
+        self.__first_name = first_name
+
+    @property
+    def name(self):
+        return "{} {}".format(self.family_name, self.first_name)
+
+    def print_info(self):   # 오버라이딩
+        Parent.print_info(self)
+        # super().print_info()
+        print("Child: {}".format(self.name))
+
+child = Child("길동", "홍")
+child.print_info()
 
 ### Python Object_Oriented_Programming 실습
 
@@ -478,72 +478,72 @@
 # - 특수함수 __repr__에 대한 정의를 가짐
 #   -> repr 함수는 객체 출력시 주로 사용
 
-class Student:
-    def __init__(self, name, gender, height):   # __init__ 생성자 메서드 정의
-        self.__name = name  # private Field
-        self.__gender = gender
-        self.__height = height
-
-    @property
-    def name(self):
-        return self.__name
-
-    @property
-    def gender(self):
-        return self.__gender
-
-    @property
-    def height(self):
-        return self.__height
-
-    @height.setter
-    def height(self, height):
-        self.__height = height
-
-    def __repr__(self): # repr 함수는 객체 출력 시 주로 사용
-                        # __repr__(self) 함수를 __str__(self)로 바꿔도 동작에는 이상 없음.
-        return "{}(name: {}, gender: {}, height: {}"\
-            .format(self.__class__.__name__, self.name, self.gender, self.height )
-
-# s1 = Student("홍길동", "남", 176.5)
-# print(s1)
-
-## students 리스트 객체 생성
-
-students = [
-    Student("홍길동", "남", 176.5),
-    Student("강감찬", "남", 182.2),
-    Student("이순신", "남", 188.5),
-    Student("유관순", "여", 158.4),
-]
-
-for student in students:
-    print(student)
-
-print()
-print("name으로 오름차순 정렬 후 ===>")
-
-# name 기준 오름차순 정렬;
-# sorted 함수는 반복가능한 객체 대상
-# 사용자 정의 객체 사용 시 해당 리스트 객체에 있는 각 항목에서 키를 사용한 정보 전달
-# 함수는 반복되는 객체의 항목을 인자로 받아 수행
-for student in sorted(students, key=lambda x: x.name):
-    print(student)
-
-print()
-print("name으로 내림차순 정렬 후 ===>")
-
-for student in sorted(students, key=lambda x: x.name, reverse = True):
-    print(student)
-
-print()
-print("height로 오름차순 정렬 후 ===>")
-
-for student in sorted(students, key=lambda x: x.height):
-    print(student)
-
-print()
-print("height로 내림차순 정렬 후 ===>")
-
-for student in sorted(students, key=lambda x: x.height, reverse = True):
-    print(student)
+# class Student:
+#     def __init__(self, name, gender, height):   # __init__ 생성자 메서드 정의
+#         self.__name = name  # private Field
+#         self.__gender = gender
+#         self.__height = height
+#
+#     @property
+#     def name(self):
+#         return self.__name
+#
+#     @property
+#     def gender(self):
+#         return self.__gender
+#
+#     @property
+#     def height(self):
+#         return self.__height
+#
+#     @height.setter
+#     def height(self, height):
+#         self.__height = height
+#
+#     def __repr__(self): # repr 함수는 객체 출력 시 주로 사용
+#                         # __repr__(self) 함수를 __str__(self)로 바꿔도 동작에는 이상 없음.
+#         return "{}(name: {}, gender: {}, height: {}"\
+#             .format(self.__class__.__name__, self.name, self.gender, self.height )
+#
+# # s1 = Student("홍길동", "남", 176.5)
+# # print(s1)
+#
+# ## students 리스트 객체 생성
+#
+# students = [
+#     Student("홍길동", "남", 176.5),
+#     Student("강감찬", "남", 182.2),
+#     Student("이순신", "남", 188.5),
+#     Student("유관순", "여", 158.4),
+# ]
+#
+# for student in students:
+#     print(student)
+#
+# print()
+# print("name으로 오름차순 정렬 후 ===>")
+#
+# # name 기준 오름차순 정렬;
+# # sorted 함수는 반복가능한 객체 대상
+# # 사용자 정의 객체 사용 시 해당 리스트 객체에 있는 각 항목에서 키를 사용한 정보 전달
+# # 함수는 반복되는 객체의 항목을 인자로 받아 수행
+# for student in sorted(students, key=lambda x: x.name):
+#     print(student)
+#
+# print()
+# print("name으로 내림차순 정렬 후 ===>")
+#
+# for student in sorted(students, key=lambda x: x.name, reverse = True):
+#     print(student)
+#
+# print()
+# print("height로 오름차순 정렬 후 ===>")
+#
+# for student in sorted(students, key=lambda x: x.height):
+#     print(student)
+#
+# print()
+# print("height로 내림차순 정렬 후 ===>")
+#
+# for student in sorted(students, key=lambda x: x.height, reverse = True):
+#     print(student)
