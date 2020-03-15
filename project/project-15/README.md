@@ -2,7 +2,7 @@
 
 ## Project
 
-### Project - Diary App
+### Project - Diary App - [1]
 
 
 
@@ -89,6 +89,14 @@ git version 2.21.0.windows.1
 
 
 
+##### (4) 소스 개발 IDE
+
+* `IntelliJ IDEA Edu`	*Jetbrains*
+
+  > <https://www.jetbrains.com/ko-kr/idea/download/#section=windows>
+
+
+
 ---
 
 
@@ -115,6 +123,12 @@ Logged in as chy66822495@gmail.com
 $ git clone https://github.com/heroku/node-js-getting-started.git
 $ cd node-js-getting-started	# 디렉토리로 이동
 ```
+
+
+
+* 샘플 소스 트리
+
+![1584267262245](C:\Users\yong_\AppData\Roaming\Typora\typora-user-images\1584267262245.png)
 
 
 
@@ -145,3 +159,40 @@ Creating diary-heroku... !
 $ heroku open
 ```
 
+
+
+---
+
+
+
+# 20200315
+
+## Project
+
+### Project - Diary App - [2]
+
+
+
+#### [사전 준비]
+
+##### (1) 모듈 설치
+
+```bash
+# Mongoose 설치 : Node.js와 MongoDB를 연결해주는 모듈
+$ npm install --save --save-exact mongoose
+
+# body-parser 설치 : html 데이터 처리용 모듈
+$ npm install body-parser --save
+```
+
+
+
+##### (2) mLab
+
+* 회원가입 및 생성
+
+  > <https://mlab.com/>
+  >
+  > -> 새로운 회원에게 `mLab`이 더이상 서비스 하지 않음...
+  >
+  > -> 학습 후 다시 진행.
