@@ -719,9 +719,20 @@ sys.stdin = open("practice_input.txt", "r")
 #             total += score[key]
 #     print("{} => 총점 : {}, 평균 : {0.2F}".format(score["name"], total, total / 3))
 
-for i in range(1, 4):
-    for j in range(1, 4):
-        if i != j:
-            for k in range(1, 4):
-                if k != i and k != j:
-                    print(i, j, k)
+# for i in range(1, 4):
+#     for j in range(1, 4):
+#         if i != j:
+#             for k in range(1, 4):
+#                 if k != i and k != j:
+#                     print(i, j, k)
+
+N = int(input())
+textlist = [list(map(str, input().split())) for _ in range(N)]
+
+newdict = {}
+for s in textlist:
+    print()
+    key, value = s.split()
+    # k, v = s[0], s[1]
+    # newdict[k] = v
+print(newdict)
