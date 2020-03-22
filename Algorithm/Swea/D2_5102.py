@@ -17,6 +17,7 @@ def bfs(graph, s):
         ans = visited[G] - 1
     print("#{} {}".format(test_case + 1, ans))
 
+
 T = int(input())
 for test_case in range(T):
     V, E = map(int, input().split())
