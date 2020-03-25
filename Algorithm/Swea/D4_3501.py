@@ -201,7 +201,7 @@ sys.stdin = open("D4_3501_input.txt", "r")
 T = int(input())
 for test_case in range(T):
     p, q = map(int, input().split())
-    w, isCycle, start = 0, False, 0 # isCycle : 순환소수 유무, start : 순환소수 시작점 
+    w, isCycle, start = 0, False, 0 # isCycle : 순환소수 유무, start : 순환소수 시작점
 
     rest = [0] * q
     ans = str(p // q)
