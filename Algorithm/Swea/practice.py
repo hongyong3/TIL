@@ -726,13 +726,18 @@ sys.stdin = open("practice_input.txt", "r")
 #                 if k != i and k != j:
 #                     print(i, j, k)
 
-N = int(input())
-textlist = [list(map(str, input().split())) for _ in range(N)]
+# N = int(input())
+# textlist = [list(map(str, input().split())) for _ in range(N)]
+#
+# newdict = {}
+# for s in textlist:
+#     print()
+#     key, value = s.split()
+#     # k, v = s[0], s[1]
+#     # newdict[k] = v
+# print(newdict)
 
-newdict = {}
-for s in textlist:
-    print()
-    key, value = s.split()
-    # k, v = s[0], s[1]
-    # newdict[k] = v
-print(newdict)
+# 전치행렬 만들기
+data = [list(map(int, input().split())) for _ in range(100)]
+dataT = [[*i] for i in zip(*data)]
+print(dataT)
