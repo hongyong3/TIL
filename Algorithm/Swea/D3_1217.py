@@ -10,7 +10,6 @@ sys.stdin = open("D3_1217_Input.txt", "r")
 
 
 # 방법2 재귀를 이용한 방법
-
 def power(m):
     global ans
     if m == 0:

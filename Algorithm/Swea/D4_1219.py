@@ -2,8 +2,7 @@ import sys
 sys.stdin = open("D4_1219_input.txt", "r")
 
 def dfs(s, order):  # s : 시작 // order : 길 순서
-    ans = 0
-    if graph[s][order] == 0:
+    if not graph[s][order]:
         return 0
     if graph[s][order] == 99:
         return 1

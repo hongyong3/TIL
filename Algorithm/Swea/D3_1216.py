@@ -36,20 +36,17 @@ sys.stdin = open("D3_1216_input.txt", "r")
 #     data = [input() for _ in range(100)]
 #     print("#{} {}".format(test_case + 1, palindrome(100, data)))
 
-for test_case in range(1):
+for test_case in range(10):
     N = int(input())
     data = [input() for _ in range(100)]
     dataT = [[*i] for i in zip(*data)]
 
-    i = 100
-    ans = 0
-    while i:
-        for j in range(100):
-            if data[i - 1][j: j + i - 1] == data[i - 1][j + i - 1: j: - 1]:
-                if ans < len(data[i - 1][j: j + i - 1]):
-                    ans = len(data[i - 1][j: j + i])
-            if dataT[i - 1][j: j + i - 1] == dataT[i - 1][j + i - 1: j: - 1]:
-                if ans < len(dataT[i - 1][j: j + i - 1]):
-                    ans = len(dataT[i - 1][j: j + i])
-        i -= 1
-    print(ans)
+    ans = 1
+    for i in range(100):
+        for k in range(2, 101):
+            for j in range(101 - k):
+                if data[i][j: j + k] == data[i][j: j + k][:: - 1] and ans < len(data[i][j: j + k]):
+                    ans = len(data[i][j: j + k])
+                if dataT[i][j: j + k] == dataT[i][j: j + k][:: - 1] and ans < len(dataT[i][j: j + k]):
+                    ans = len(dataT[i][j: j + k])
+    print("#{} {}".format(test_case + 1, ans))
