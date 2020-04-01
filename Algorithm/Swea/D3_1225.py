@@ -23,6 +23,20 @@ sys.stdin = open("D3_1225_input.txt", "r")
 #     solve(data)
 #     print("#{}".format(test_case + 1), *data)
 
+def solve(data):
+    while True:
+        for i in range(1, 6):
+            data[0] -= i
+            if data[0] < 1:
+                data[0] = 0
+                data.append(data.pop(0))
+                return data
+            data.append(data.pop(0))
+
 for test_case in range(10):
     N = int(input())
     data = list(map(int, input().split()))
+    if min(data) > 15:
+        ans = ((min(data) // 15) - 1) * 15
+        data = [i - ans for i in data]
+    print("#{}".format(test_case + 1), *solve(data))
