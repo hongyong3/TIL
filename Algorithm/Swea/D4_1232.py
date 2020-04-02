@@ -40,4 +40,5 @@ for test_case in range(10):
     data = {}
     for i in range(1, N + 1):
         data[i] = input().split()
+    print(data)
     print("#{} {}".format(test_case + 1, inorder(1)))
