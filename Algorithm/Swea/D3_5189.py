@@ -27,9 +27,26 @@ sys.stdin = open("D3_5189_input.txt", "r")
 #
 #     print("#{} {}".format(test_case+1, ans))
 
+def perm(k, total):
+    global ans
+    if total > ans:
+        return
+
+    if k == N:
+        total += data[road[k - 1]][road[k]]
+        if ans > total:
+            ans = total
+
+    for i in range(k, N):
+        road[i], road[k] = road[k], road[i]
+        perm(k + 1, total + data[road[k - 1]][road[k]])
+        road[i], road[k] = road[k], road[i]
+    return ans
+
 T = int(input())
 for test_case in range(T):
     N = int(input())
     data = [list(map(int, input().split())) for _ in range(N)]
-    visited = [[0] * N for _ in range(N)]
     ans = float('inf')
+    road = list(range(N)) + [0]
+    print("#{} {}".format(test_case + 1, perm(1, 0)))
