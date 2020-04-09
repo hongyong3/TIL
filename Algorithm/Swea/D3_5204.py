@@ -7,5 +7,3 @@ for _test_case in range(T):
     data = list(map(int, input().split()))
     mid = N // 2
     data1, data2 = data[: mid], data[mid:]
-    print(data)
-    print(data1, data2)
