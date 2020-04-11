@@ -1,6 +1,7 @@
 import sys
 sys.stdin = open("D3_5205_input.txt", "r")
 
+# In-Place Sorting
 def quickSort(data):
     def sort(low, high):
         if high <= low:
