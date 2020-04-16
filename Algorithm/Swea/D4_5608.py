@@ -88,8 +88,28 @@ sys.stdin = open("D4_5608_input.txt", "r")
 #     print("#{}".format(test_case + 1), *solve(N))
 #     print(memo)
 
-import time
-now = time.time()
+
+# T = int(input())
+# for test_case in range(T):
+#     N = int(input())
+#     num, ans = 0, 0
+#
+#     numList = []
+#     for i in range(1, N):
+#         if pow(i, 3) < N:
+#             numList = [pow(i, 3)] + numList
+#
+#         else:
+#             break
+#     print(numList)
+#
+#     x = 0
+#     while N:
+#         mok = N // numList[x]
+#         nam = N % numList[x]
+#         N = nam
+#         x += 1
+#         print(mok, nam)
 
 T = int(input())
 for test_case in range(T):
@@ -117,5 +137,3 @@ for test_case in range(T):
     maxCount = max(arr2)
     maxNum = len(arr2) - 1 - arr2[::-1].index(maxCount)
     print("#{} {} {}".format(test_case + 1, maxCount, maxNum))
-
-print(time.time() - now)
