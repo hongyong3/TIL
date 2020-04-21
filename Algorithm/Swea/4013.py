@@ -1,10 +1,11 @@
 import sys
 sys.stdin = open("4013_input.txt", "r")
 
+# 수정 필요 무한루프
 def dfs(idx, dir):
     visited[idx] = 1
 
-    if (idx >= 0):   # 수정 필요 무한루프
+    if (idx >= 0):   # 이부분
         if data[idx][6] != data[idx - 1][2] and visited[idx - 1] == 0:
             dfs(i - 1, - dir)
 
