@@ -1,6 +1,7 @@
 import sys
 sys.stdin = open("D5_4411_input.txt", "r")
 
+# 요세푸스 점화식
 T = int(input())
 for test_case in range(T):
     N, K = map(int, input().split())
