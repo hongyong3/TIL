@@ -10,12 +10,25 @@ for test_case in range(T):
     for i in data:
         if i.isalpha() and i == i.capitalize():
             count += 1
-        if i == '.' or i == '!' or i == '?':
+        if i in '.!?':
             res += str(count) + ' '
             count = 0
     print("#{} {}".format(test_case + 1, res))
 
+T = int(input())
 
+for test_case in range(1, T + 1):
+    num_corpus = int(input())
+    corpus = input() + ' '
+    corpus = corpus.replace('!', '.').replace('?', '.').split('. ')
+    answer = '#{}'.format(test_case)
+    for cor in corpus[:-1]:
+        count = 0
+        for word in cor.split(' '):
+            if (word[0] == min(word)) and (word[0].isupper() == True) and(word[1:].lower() == word[1:]): # idea: 조건
+                count +=1
+        answer += ' {}'.format(count)
+    print(answer)
 # T = int(input())
 # for test_case in range(T):
 #     N = int(input())
