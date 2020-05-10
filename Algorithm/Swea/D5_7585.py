@@ -14,4 +14,4 @@ for test_case in range(T):
                 b = pow(j, B)
                 if not (a + b) % K:
                     count += 1
-    print(count)
+    print("#{} {}".format(test_case + 1, count))

@@ -52,18 +52,23 @@ T = int(input())
 for test_case in range(T):
     N = int(input())
     data = list(map(int, input().split()))
-    ans, chk = 1, 1
-    for i in range(N - 2):
-        if chk and data[i] > data[i + 1]:
+    ans, before, after = 1, 0, 0
+
+    for now in data:
+        if not after:
+            after = now
+            continue
+
+        if not before:
+            before = now
+            continue
+
+        if before == now:
+            continue
+
+        if (before > after and before > now) or (before < after and before < now):
             ans += 1
-            if data[i + 1] >= data[i + 2]:
-                chk = 0
-        elif not chk and data[i] < data[i + 1]:
-            ans += 1
-            if data[i + 1] <= data[i + 2]:
-                chk = 1
-    if chk and data[0] < data[1]:
-        ans += 1
-    if not chk and data[0] > data[1]:
-        ans += 1
+            before, after = 0, now
+        else:
+            before, after = now, before
     print("#{} {}".format(test_case + 1, ans))
