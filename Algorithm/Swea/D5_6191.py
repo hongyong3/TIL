@@ -20,12 +20,13 @@ for test_case in range(T):
     if K > fn:
         ans = ')('
     else:
+        pass
         e = 44722
-        for i in range(e):
-            if N <= arr[i]:
-                e = i
-                break
-        s = arr[e] - N
-        ans = ')' * (e - s) + '(' + ')' * s + '(' * (e - 1)
+        # for i in range(e):
+        #     if N <= arr[i]:
+        #         e = i
+        #         break
+        # s = arr[e] - N
+        # ans = ')' * (e - s) + '(' + ')' * s + '(' * (e - 1)
 
     print(ans)
