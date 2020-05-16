@@ -20,7 +20,6 @@ for test_case in range(T):
     if K > fn:
         ans = ')('
     else:
-        pass
         e = 44722
         # for i in range(e):
         #     if N <= arr[i]:
