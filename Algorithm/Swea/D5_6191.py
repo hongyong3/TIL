@@ -27,5 +27,3 @@ for test_case in range(T):
         #         break
         # s = arr[e] - N
         # ans = ')' * (e - s) + '(' + ')' * s + '(' * (e - 1)
-
-    print(ans)
