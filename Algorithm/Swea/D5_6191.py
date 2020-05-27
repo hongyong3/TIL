@@ -27,5 +27,3 @@ for test_case in range(T):
         # s = arr[e] - N
         # ans = ')' * (e - s) + '(' + ')' * s + '(' * (e - 1)
 
-8+3-2-4+8-7-2-4-0+8=8
-
