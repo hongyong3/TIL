@@ -763,21 +763,25 @@ sys.stdin = open("practice_input.txt", "r")
 #                 if a + b + c == 6:
 #                     print(a, b, c)
 
-a, b, n = map(int, input().split())
-data = list(range(a, b + 1))
-temp = 0
-for i in data[:n]:
-    temp ^= i
-print(temp)
-ans = temp
-i = 0
-while n <= b - a:
-    temp ^= data[i]
-    temp ^= data[n]
-    print(temp)
-    if ans < temp:
-        ans = temp
-    i += 1
-    n += 1
+# a, b, n = map(int, input().split())
+# data = list(range(a, b + 1))
+# temp = 0
+# for i in data[:n]:
+#     temp ^= i
+# print(temp)
+# ans = temp
+# i = 0
+# while n <= b - a:
+#     temp ^= data[i]
+#     temp ^= data[n]
+#     print(temp)
+#     if ans < temp:
+#         ans = temp
+#     i += 1
+#     n += 1
 
 # print(ans)
+
+test1 = 1
+test2 = 1.5
+print(test1.isdigit())
