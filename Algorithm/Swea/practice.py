@@ -782,6 +782,7 @@ sys.stdin = open("practice_input.txt", "r")
 
 # print(ans)
 
-test1 = 1
-test2 = 1.5
-print(test1.isdigit())
+a = 1.5
+
+ans = int(a) if a == int(a) else int(a) + 1
+print(ans)
