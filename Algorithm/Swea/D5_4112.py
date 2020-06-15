@@ -13,7 +13,6 @@ def solve(n):
         m = (l + h) // 2
     return m, m * (m + 1) // 2 - n
 
-
 T = int(input())
 for test_case in range(T):
     a, b = map(int, input().split())
@@ -24,9 +23,6 @@ for test_case in range(T):
     ra, da = solve(a)
     rb, db = solve(b)
 
-    if da > db:
-        ans = (rb - ra) + (da - db)
-    else:
-        ans = max(rb - ra, db - da)
+    ans = (rb - ra) + (da - db) if da > db else max(rb - ra, db - da)
 
     print("#{} {}".format(test_case + 1, ans))
