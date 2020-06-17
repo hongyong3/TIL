@@ -1,20 +1,21 @@
 import sys
 sys.stdin = open("D5_3977_input.txt", "r")
 
-def solve(l, r):
-    check = [True] * r
-    cnt = 0
-    for i in range(2, r):
-        if i <= int(r ** 0.5):
-            if check[i]:
-                for j in range(i+i, r, i):
-                    check[j] = False
-    for i in range(l, r):
-        if i % 4 == 1 and check[i]:
-            cnt += 1
-    return cnt
+decimal = [0] * 1000001
+decimal[0], decimal[1] = 1, 1
+for i in range(2, 1000001):
+    for j in range(i << 1, 1000001, i):
+        decimal[j] = 1
 
 T = int(input())
 for test_case in range(T):
     L, R = map(int, input().split())
-    print("#{} {}".format(test_case + 1, solve(L, R)))
+    ans = 0
+    if L <= 2:
+        ans += 1
+
+    for i in range(L, R + 1):
+        if not decimal[i] and i % 4 == 1:
+            ans += 1
+
+    print("#{} {}".format(test_case + 1, ans))
