@@ -782,7 +782,13 @@ sys.stdin = open("practice_input.txt", "r")
 
 # print(ans)
 
-a = 1.5
+# a = 1.5
+#
+# ans = int(a) if a == int(a) else int(a) + 1
+# print(ans)
 
-ans = int(a) if a == int(a) else int(a) + 1
-print(ans)
+# print(8 & 10)
+# print(8 and 10)
+# print(7 << 1)
+# print(8 | 10)
+print(5 & 7)
