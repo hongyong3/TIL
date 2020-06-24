@@ -791,4 +791,17 @@ sys.stdin = open("practice_input.txt", "r")
 # print(8 and 10)
 # print(7 << 1)
 # print(8 | 10)
-print(5 & 7)
+# print(5 & 7)
+
+data = [[0, 0, 1, 0, 1, 0, 0, 1], [0, 1, 0, 0, 0, 1, 1, 1], [0, 1, 1, 1, 0, 0, 0, 0], [1, 1, 1, 1, 0, 0, 0, 1], [0, 1, 1, 0, 1, 0, 0, 1], [1, 0, 1, 0, 1, 1, 0, 1]]
+
+# for i in data:
+#     print(i)
+#
+# print()
+
+for i in zip(*data):
+    print(i)
+    a = list(i)
+    print(a)
+    print()
