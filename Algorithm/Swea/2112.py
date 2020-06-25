@@ -40,5 +40,4 @@ T = int(input())
 for test_case in range(T):
     D, W, K = map(int, input().split())
     data = [list(map(int, input().split())) for _ in range(D)]
-    print(data)
     print("#{} {}".format(test_case + 1, solve()))
