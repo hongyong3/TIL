@@ -7,3 +7,4 @@ for test_case in range(T):
     adata = list(map(int, input().split()))
     bdata = list(map(int, input().split()))
     tdata = list(map(int, input().split()))
+    print(adata, bdata, tdata)
