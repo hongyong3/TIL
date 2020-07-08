@@ -9,4 +9,4 @@ for test_case in range(5):
     tile = []
     for i in data:
         tile.append(pow(2, i))
-    
+    print(tile)

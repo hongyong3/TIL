@@ -29,22 +29,27 @@ food        0
 
 '''
 
+# 1번 시도
 # T = int(input())
-# for test_case in range(T):
-#     K = int(input())
-#     S = input()
-#     words =[S[i:] for i in range(len(S))]
-#     print(words)
-#
-#     ans = sorted(words)[:K - 1] if K <= len(words) else 'none'
-#     print(ans)
+# for test_case in range(8):
+#     N = int(input())
+#     word = input()
+#     perms = []
+#     for i in range(len(word) + 1):
+#         for j in range(i, len(word) + 1):
+#             if word[i:j] not in perms:
+#                 perms.append(word[i:j])
+#     ans = sorted(perms)[N] if len(perms) > N else 'none'
+#     print("#{} {}".format(test_case + 1, ans))
+
 
 T = int(input())
 for test_case in range(T):
-    N = int(input())
+    K = int(input())
     word = input()
-    ans = []
+    ans = set()
     for i in range(len(word)):
-        ans.append(word[i:])
-    print(sorted(ans))
-    # print("#{} {}".format(test_case + 1, sorted(ans)[N - 1]))
+        for j in range(i + 1, len(word) + 1):
+            ans.add(word[i:j])
+    ans = sorted(ans)[K - 1] if K <= len(ans) else 'none'
+    print("#{} {}".format(test_case + 1, ans))
