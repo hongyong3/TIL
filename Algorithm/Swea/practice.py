@@ -805,6 +805,66 @@ sys.stdin = open("practice_input.txt", "r")
 #     a = list(i)
 #     print(a)
 #     print()
+#
+# print(pow(0.8, 18))
+# print(pow(0.9, 18))
 
-print(pow(0.8, 18))
-print(pow(0.9, 18))
+# copy
+# test1 = 1
+# print("함수 전")
+# print(test1)
+# print(id(test1))
+# print('==========')
+# def returnTwo(num):
+#     test1 = 2
+#     print("함수 안")
+#     print(test1)
+#     print(id(test1))
+#     print('==========')
+# returnTwo(2)
+# print("함수 후")
+# print(test1)
+# print(id(test1))
+# print('==========')
+
+# test2 = [99, 100, 101]
+# print("함수 전")
+# print(test2)
+# print(id(test2))
+# print('==========')
+# def returnTwo2(num):
+#     print("함수 안")
+#     print(test2)
+#     print(id(test2))
+#     test2[0] = 2
+#     print(test2)
+#     print(id(test2))
+#     print('==========')
+# returnTwo2(test2)
+# print("함수 후")
+# print(test2)
+# print(id(test2))
+# print('==========')
+
+a = 1
+b = a
+print("변경 전")
+print(id(a))
+print(id(b))
+print(a)
+print(b)
+if id(a) == id(b):
+    print(True)
+else:
+    print(False)
+
+print("변경 후")
+b = 3
+print(id(a))
+print(id(b))
+print(a)
+print(b)
+if id(a) == id(b):
+    print(True)
+else:
+    print(False)
