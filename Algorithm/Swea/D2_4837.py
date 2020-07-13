@@ -26,11 +26,11 @@ for test_case in range(T):
     N, K = map(int, input().split())
     count = 0
     for i in range(1, 1 << 12):
-        ans, cnt = 0, 0
+        ans, ans = 0, 0
         for j in range(13):
             if i & (1 << j):
                 ans += A[j]
-                cnt += 1
-        if ans == K and cnt == N:
+                ans += 1
+        if ans == K and ans == N:
             count += 1
     print("#{} {}".format(test_case + 1, count))

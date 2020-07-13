@@ -52,7 +52,7 @@ for test_case in range(T):
         for y in range(1, N + 1):
             if not data[x][y]:
                 for i in range(4):
-                    cnt = 0
+                    ans = 0
                     nx = x + dx[i]
                     ny = y + dy[i]
 
@@ -62,7 +62,7 @@ for test_case in range(T):
 
                         elif data[nx][ny] in range(1, 6):
                             i = change[data[nx][ny]][i]
-                            cnt += 1
+                            ans += 1
 
                         elif data[nx][ny] in range(6, 11):
                             nx, ny = wormhole[(nx, ny)]
@@ -70,7 +70,7 @@ for test_case in range(T):
                         nx = nx + dx[i]
                         ny = ny + dy[i]
 
-                    if cnt > ans:
-                        ans = cnt
+                    if ans > ans:
+                        ans = ans
 
     print('#{} {}'.format(test_case + 1, ans))

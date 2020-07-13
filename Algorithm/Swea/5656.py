@@ -49,10 +49,10 @@ for test_case in range(T):
     for i in product(range(W), repeat = N):
         copyData = [data[j][:] for j in range(H)]
         start(i)
-        cnt = 0
+        ans = 0
         for j in copyData:
-            cnt += len(j) - j.count(0)
-        ans = min(ans, cnt)
+            ans += len(j) - j.count(0)
+        ans = min(ans, ans)
         if not ans:
             break
     print("#{} {}".format(test_case + 1, ans))
