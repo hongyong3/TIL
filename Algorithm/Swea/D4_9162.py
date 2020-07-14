@@ -38,7 +38,7 @@ for test_case in range(T):
         for j in range(M):
             if data[i][j] == 2:
                 visited[i][j] = 1
-                dfs(i, j, 0, 0)
+                dfs(j, i, 0, 0)
                 break
 
     if ans == float('inf'):
