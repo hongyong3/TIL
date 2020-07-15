@@ -1,7 +1,7 @@
 import sys
 sys.stdin = open("practice_input.txt", "r")
 
-# # 가장 큰 수
+# 가장 큰 수
 #
 # def solution(numbers):
 #     answer = ''
@@ -480,7 +480,7 @@ sys.stdin = open("practice_input.txt", "r")
 #             ans = 0
 #             break
 #     print("#{} {}".format(test_case + 1, ans))
-
+#
 # def solve(num, n):
 #     arr, idx, count = [0] * 20, 0, 0
 #
@@ -512,8 +512,8 @@ sys.stdin = open("practice_input.txt", "r")
 #     if A:
 #         A -= 1
 #
-    # print("#{} {}".format(test_case + 1, solve(B, 1) - solve(A, 0)))
-
+#     print("#{} {}".format(test_case + 1, solve(B, 1) - solve(A, 0)))
+#
 # def gcd(a, b):
 #     if b == 0:
 #         return a
@@ -534,7 +534,7 @@ sys.stdin = open("practice_input.txt", "r")
 #
 #     return (c // r1 * s1, c // r1 * t1)
 # print(diophantine(21, 14, 35))
-
+#
 # def is_divide_pt(x1, y1, x2, y2, x3, y3, x4,y4):
 #     f1= (x2 - x1) * (y3 - y1) - (y2 - y1) * (x3 - x1)
 #     f2= (x2 - x1) * (y4 - y1) - (y2 - y1) * (x4 - x1)
@@ -557,7 +557,7 @@ sys.stdin = open("practice_input.txt", "r")
 # for i in rectangle:
 #     print(is_cross_pt(line[0], line[1], line[2], line[3], i[0], i[1], i[2], i[3]))
 # print(ans)
-
+#
 # def intersection(x1, y1, x2, y2, x3, y3, x4, y4):
 #     px = (x1 * y2 - y1 * x2) * (x3 - x4) - (x1 - x2) * (x3 * y4 - y3 * x4)
 #     py = (x1 * y2 - y1 * x2) * (y3 - y4) - (y1 - y2) * (x3 * y4 - y3 * x4)
@@ -663,12 +663,12 @@ sys.stdin = open("practice_input.txt", "r")
 #
 # for key, value in enumerate(data_set):
 #     print(key, value)
-
+#
 # data_set = {1, 2, 3, 4, 5}
 #
 # data_set1  = {x * y for x in data_set if x % 2 for y in data_set if not y % 2}
 # print(data_set1)
-
+#
 # data_dict1 = {"홍길동": 20,
 #               "이순신": 45,
 #               "강감찬": 35}
@@ -700,7 +700,7 @@ sys.stdin = open("practice_input.txt", "r")
 #
 # data_set1 = {item for item in data_dict1.items()}
 # print(data_set1)
-
+#
 # scores = []
 # count = int(input("총 학생의 수를 입력하세요: "))
 #
@@ -718,14 +718,14 @@ sys.stdin = open("practice_input.txt", "r")
 #         if key != "name":
 #             total += score[key]
 #     print("{} => 총점 : {}, 평균 : {0.2F}".format(score["name"], total, total / 3))
-
+#
 # for i in range(1, 4):
 #     for j in range(1, 4):
 #         if i != j:
 #             for k in range(1, 4):
 #                 if k != i and k != j:
 #                     print(i, j, k)
-
+#
 # N = int(input())
 # textlist = [list(map(str, input().split())) for _ in range(N)]
 #
@@ -736,11 +736,11 @@ sys.stdin = open("practice_input.txt", "r")
 #     # k, v = s[0], s[1]
 #     # newdict[k] = v
 # print(newdict)
-
+#
 # 전치행렬 만들기
 # data = [input() for _ in range(8)]
 # dataT = [''.join([*i]) for i in zip(*data)]
-
+#
 # def dfs(s, order):
 #     if not graph[s][order]:
 #         return 0
@@ -755,14 +755,14 @@ sys.stdin = open("practice_input.txt", "r")
 #
 # graph = [[1, 2], [4, 3], [9, 5], [7, 7], [8, 3], [6, 7], [10, 10], [99, 9], [0, 0], [8, 10], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0]]
 # print(dfs(0, 0))
-
+#
 # for a in range(1, 5):
 #     for b in range(1, 6 - a):
 #         if a + b < 6:
 #             for c in range(1, 6 - b):
 #                 if a + b + c == 6:
 #                     print(a, b, c)
-
+#
 # a, b, n = map(int, input().split())
 # data = list(range(a, b + 1))
 # temp = 0
@@ -779,27 +779,27 @@ sys.stdin = open("practice_input.txt", "r")
 #         ans = temp
 #     i += 1
 #     n += 1
-
+#
 # print(ans)
-
+#
 # a = 1.5
 #
 # ans = int(a) if a == int(a) else int(a) + 1
 # print(ans)
-
+#
 # print(8 & 10)
 # print(8 and 10)
 # print(7 << 1)
 # print(8 | 10)
 # print(5 & 7)
-
+#
 # data = [[0, 0, 1, 0, 1, 0, 0, 1], [0, 1, 0, 0, 0, 1, 1, 1], [0, 1, 1, 1, 0, 0, 0, 0], [1, 1, 1, 1, 0, 0, 0, 1], [0, 1, 1, 0, 1, 0, 0, 1], [1, 0, 1, 0, 1, 1, 0, 1]]
-
+#
 # for i in data:
 #     print(i)
 #
 # print()
-
+#
 # for i in zip(*data):
 #     print(i)
 #     a = list(i)
@@ -808,7 +808,7 @@ sys.stdin = open("practice_input.txt", "r")
 #
 # print(pow(0.8, 18))
 # print(pow(0.9, 18))
-
+#
 # copy
 # test1 = 1
 # print("함수 전")
@@ -826,7 +826,7 @@ sys.stdin = open("practice_input.txt", "r")
 # print(test1)
 # print(id(test1))
 # print('==========')
-
+#
 # test2 = [99, 100, 101]
 # print("함수 전")
 # print(test2)
@@ -845,26 +845,47 @@ sys.stdin = open("practice_input.txt", "r")
 # print(test2)
 # print(id(test2))
 # print('==========')
+#
+# a = 1
+# b = a
+# print("변경 전")
+# print(id(a))
+# print(id(b))
+# print(a)
+# print(b)
+# if id(a) == id(b):
+#     print(True)
+# else:
+#     print(False)
+#
+# print("변경 후")
+# b = 3
+# print(id(a))
+# print(id(b))
+# print(a)
+# print(b)
+# if id(a) == id(b):
+#     print(True)
+# else:
+#     print(False)
 
-a = 1
-b = a
-print("변경 전")
-print(id(a))
-print(id(b))
-print(a)
-print(b)
-if id(a) == id(b):
-    print(True)
-else:
-    print(False)
+T = int(input())
+for test_case in range(T):
+    N, L = map(int, input().split())
+    cal_info = [[[0, 0]] for _ in range(N + 1)]
+    # cal_info[0].append([0, 0])
+    for i in range(N):
+        T, K = map(int, input().split())
+        # cal_info[원하는 값]의 길이만큼
+        for j in range(len(cal_info[i])):
+            # 메뉴 추가해도 괜찮으면 넣고 아니면 그냥 넘어가자
+            if K + cal_info[i][j][1] <= L:
+                cal_info[i + 1].append([cal_info[i][j][0] + T, K + cal_info[i][j][1]])
 
-print("변경 후")
-b = 3
-print(id(a))
-print(id(b))
-print(a)
-print(b)
-if id(a) == id(b):
-    print(True)
-else:
-    print(False)
+            cal_info[i + 1].append([cal_info[i][j][0], cal_info[i][j][1]])
+
+    result = 0
+    for info in cal_info[-1]:
+        if info[0] > result:
+            result = info[0]
+    # print('#{} {}'.format(test_case + 1, result))
