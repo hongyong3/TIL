@@ -32,9 +32,3 @@ for test_case in range(1):
                     garo[i][k] = 1
                     garoNum[i][int(data[j])] = 1
                     k += 1
-    print()
-    for i in garo:
-        print(*i)
-    print()
-    for i in garoNum:
-        print(*i)
