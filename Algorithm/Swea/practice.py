@@ -869,23 +869,23 @@ sys.stdin = open("practice_input.txt", "r")
 # else:
 #     print(False)
 
-T = int(input())
-for test_case in range(T):
-    N, L = map(int, input().split())
-    cal_info = [[[0, 0]] for _ in range(N + 1)]
-    # cal_info[0].append([0, 0])
-    for i in range(N):
-        T, K = map(int, input().split())
-        # cal_info[원하는 값]의 길이만큼
-        for j in range(len(cal_info[i])):
-            # 메뉴 추가해도 괜찮으면 넣고 아니면 그냥 넘어가자
-            if K + cal_info[i][j][1] <= L:
-                cal_info[i + 1].append([cal_info[i][j][0] + T, K + cal_info[i][j][1]])
-
-            cal_info[i + 1].append([cal_info[i][j][0], cal_info[i][j][1]])
-
-    result = 0
-    for info in cal_info[-1]:
-        if info[0] > result:
-            result = info[0]
+# T = int(input())
+# for test_case in range(T):
+#     N, L = map(int, input().split())
+#     cal_info = [[[0, 0]] for _ in range(N + 1)]
+#     # cal_info[0].append([0, 0])
+#     for i in range(N):
+#         T, K = map(int, input().split())
+#         # cal_info[원하는 값]의 길이만큼
+#         for j in range(len(cal_info[i])):
+#             # 메뉴 추가해도 괜찮으면 넣고 아니면 그냥 넘어가자
+#             if K + cal_info[i][j][1] <= L:
+#                 cal_info[i + 1].append([cal_info[i][j][0] + T, K + cal_info[i][j][1]])
+#
+#             cal_info[i + 1].append([cal_info[i][j][0], cal_info[i][j][1]])
+#
+#     result = 0
+#     for info in cal_info[-1]:
+#         if info[0] > result:
+#             result = info[0]
     # print('#{} {}'.format(test_case + 1, result))
