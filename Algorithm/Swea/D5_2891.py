@@ -2,18 +2,18 @@ import sys
 sys.stdin = open("D5_2891_input.txt", "r")
 
 def printSudoku():
+    print("#{}".format(test_case + 1))
     for i in range(6):
         for j in range(6):
             if ans[i][j][1] == 10:
-                ans[i][j][0] = ' '
+                print(str(ans[i][j][0]), end = ' ')
             else:
-                ans[i][j][0] = '/'
-                ans[i][j][1] = ' '
-        print('\n')
+                print(str(ans[i][j][0]) + '/' + str(ans[i][j][1]), end = ' ')
+        print()
 
 
 def getRow(i):
-    if not i or i == 1:
+    if i == 0 or i == 1:
         return 0
     elif i == 2 or i == 3:
         return 2
@@ -22,7 +22,7 @@ def getRow(i):
 
 
 def getCol(j):
-    if not j or j == 1 or j == 2:
+    if j <= 2:
         return 0
     else:
         return 3
@@ -70,45 +70,46 @@ def dfs(ind, cnt):
     if cnt == len(v):
         printSudoku()
         return
-    # x, y, p = v.pop()
     x, y, p = v[ind][0], v[ind][1], v[ind][2]
 
     for k in range(1, 10):
-        if not p and k == 1:
+        if p == 1 and k == 1:
             continue
 
         if chk(x, y, p, k):
-            if not p:
+            if p == 0:
                 ans[x][y][0] = k
             else:
                 ans[x][y][1] = k
 
             dfs(ind + 1, cnt + 1)
 
-            if not p:
+            if p == 0:
                 ans[x][y][0] = 0
             else:
                 ans[x][y][1] = 0
 
 T = int(input())
-for test_case in range(1):
+for test_case in range(T):
     data = [input().split() for _ in range(6)]
     ans = [[''] * 6 for _ in range(6)]
-
     v = []
+
     for i in range(6):
         for j in range(6):
-            if len(data[i][j]) == 3:    # 분수
-                t, b = 0, 0 # 0은 빈칸
+            if len(data[i][j]) > 1:    # 분수
                 if data[i][j][0] == '-':
+                    t = 0
                     v.append([i, j, 0])
                 else:
                     t = int(data[i][j][0])
 
                 if data[i][j][2] == '-':
-                    v.append([i, j, 0])
+                    b = 0
+                    v.append([i, j, 1])
                 else:
                     b = int(data[i][j][2])
+
                 ans[i][j] = [t, b]
 
             else:   # 정수
