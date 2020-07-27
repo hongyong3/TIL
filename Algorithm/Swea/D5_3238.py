@@ -12,19 +12,23 @@ n_(i)_ < m_(i)_ 이면 결과는 0
 예를 들어
 
 '''
-
-def solve(n, r, p):
-    if arr[n][r] != - 1:
-        return arr[n][r]
-    if r == 0 or r == n:
-        arr[n][r] = 1
-        return arr[n][r]
-    arr[n][r] = (solve(n - 1, r - 1, p) + solve(n - 1, r, p)) % p
-    return arr[n][r]
-
 arr = [0] * 100000
 arr[0] = 1
 T = int(input())
-for test_case in range(1):
+for test_case in range(T):
     n, r, p = map(int, input().split())
-    solve(n, r, p)
+    for i in range(1, p):
+        arr[i] = (arr[i - 1] * i) % p
+    ans = 1
+    while n or r:
+        nn = n % p
+        rr = r % p
+        if nn < rr:
+            ans = 0
+            break
+        ans = (ans * arr[nn]) % p
+        for i in range(p - 2):
+            ans = ((ans * arr[rr]) % p * arr[nn - rr]) % p
+        n //= p
+        r //= p
+    print("#{} {}".format(test_case + 1, ans))
