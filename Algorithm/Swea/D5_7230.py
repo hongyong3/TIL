@@ -1,6 +1,7 @@
 import sys
 sys.stdin = open("D5_7230_input.txt", "r")
 
+# 방법을 생각해보자...
 def perm(arr, n):
     result = []
     if n > len(arr):
