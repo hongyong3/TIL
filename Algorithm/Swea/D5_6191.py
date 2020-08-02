@@ -47,6 +47,7 @@ def bracket(l, r, k):
     if k < arr[l - 1][r]:
         return "(" + bracket(l - 1, r, k)
     else:
+        k -= arr[l - 1][r]
         return ")" + bracket(l, r - 1, k)
 
 T = int(input())
