@@ -1,7 +1,7 @@
 import sys
 sys.stdin = open("D5_1907_input.txt", "r")
 
-dx = [- 1, 1, 0, 0, - 1, - 1, 1, 1]
+dx = [- 1, 1, 0, 0, - 1, - 1, 1, 1] # 상하좌우대각
 dy = [0, 0, - 1, 1, - 1, 1, - 1, 1]
 
 def bfs(x, y):
@@ -42,5 +42,4 @@ for test_case in range(T):
             x, y = q.pop()
             bfs(x, y)
         ans += 1
-
     print("#{} {}".format(test_case + 1, ans))
