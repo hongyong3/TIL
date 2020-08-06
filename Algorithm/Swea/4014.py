@@ -1,10 +1,6 @@
 import sys
 sys.stdin = open("4014_input.txt", "r")
 
-# 높이 차 2 이상 : no
-# 높이 차 1
-# 갯수 < X이면 ans += 1
-
 def solve(arr):
     cnt = 1
     value = arr[0]
