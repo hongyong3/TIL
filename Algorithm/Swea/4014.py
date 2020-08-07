@@ -1,7 +1,7 @@
 import sys
 sys.stdin = open("4014_input.txt", "r")
 
-
+# 39 / 50
 def solve(arr):
     cnt = 1
     value = arr[0]
@@ -29,7 +29,6 @@ def solve(arr):
             cnt += 1
         value = arr[i]
     return 1
-
 
 
 T = int(input())
