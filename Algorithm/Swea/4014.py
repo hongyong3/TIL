@@ -17,6 +17,7 @@ def solve(arr):
                         if arr[j] != arr[i]:
                             return 0
                     cnt = - X + 1
+
         elif arr[i] > value:
             if arr[i] - value > 1:
                 return 0
