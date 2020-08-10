@@ -23,7 +23,7 @@ def solve(arr):
                 return 0
             else:
                 if cnt >= X:
-                    cnt += 1
+                    cnt = 1
                 else:
                     return 0
         else:
