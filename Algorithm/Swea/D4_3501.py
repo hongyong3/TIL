@@ -198,32 +198,96 @@ sys.stdin = open("D4_3501_input.txt", "r")
 #         print(ans)
 
 # runtime error 38 / 50
+# T = int(input())
+# for test_case in range(T):
+#     p, q = map(int, input().split())
+#     w, isCycle, start = 0, False, 0 # isCycle : 순환소수 유무, start : 순환소수 시작점
+#
+#     rest = [0] * q
+#     ans = str(p // q)
+#
+#     while p:
+#         if not w:
+#             if p % q:
+#                 ans += '.'
+#         else:
+#             ans += str(p // q)
+#
+#         w += 1
+#         p %= q
+#
+#         if rest[p]:
+#             isCycle = True
+#             start = rest[p]
+#             break
+#         else:
+#             rest[p] = w
+#         p *= 10
+#
+#     if isCycle:
+#         ans = ans[:start + 1] + '(' + ans[start + 1:] + ')'
+#     print("#{} {}".format(test_case + 1, ans))
+
+def cycleLength():
+    global a, b, idx, q2
+    n1, n2 = 1, 9
+    idx = a if a > b else b
+    while n2 % q2:
+        n1 += 1
+        n2 = n2 * 10 + 9
+    return n1
+
+
+def cycle():
+    global a, b, q2
+    if not p % q:
+        return True
+
+    while (q2 % 2 == 0) or (q2 % 5 == 0):
+        if q2 % 2 == 0:
+            q2, a = q2 / 2, a + 1
+        if q2 % 5 == 0:
+            q2, b = q2 / 5, b + 1
+
+    if q2 == 1:
+        return True
+    else:
+        return False
+
+
+def gcd(x, y):
+    while y:
+        c = x % y
+        x, y = y, c
+    return x
+
+
 T = int(input())
 for test_case in range(T):
     p, q = map(int, input().split())
-    w, isCycle, start = 0, False, 0 # isCycle : 순환소수 유무, start : 순환소수 시작점
-
-    rest = [0] * q
-    ans = str(p // q)
-
-    while p:
-        if not w:
-            if p % q:
-                ans += '.'
-        else:
+    divider = gcd(p, q)
+    p, q = p // divider, q // divider
+    ans = ''
+    a, b, idx, q2 = 0, 0, 0, q
+    if cycle():
+        ans += str(p // q)
+        p = (p % q) * 10
+        if p:
+            ans += '.'
+        while p:
             ans += str(p // q)
+            p = (p % q) * 10
+    else:
+        l = cycleLength()
+        ans += str(p // q) + '.'
 
-        w += 1
-        p %= q
+        for i in range(idx):
+            ans += str(p // q)
+            p = (p % q) * 10
+        ans += '('
 
-        if rest[p]:
-            isCycle = True
-            start = rest[p]
-            break
-        else:
-            rest[p] = w
-        p *= 10
-
-    if isCycle:
-        ans = ans[:start + 1] + '(' + ans[start + 1:] + ')'
+        for i in range(l):
+            p = (p % q) * 10
+            ans += str(p // q)
+        ans += ')'
     print("#{} {}".format(test_case + 1, ans))
