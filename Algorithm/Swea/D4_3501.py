@@ -201,7 +201,7 @@ sys.stdin = open("D4_3501_input.txt", "r")
 # T = int(input())
 # for test_case in range(T):
 #     p, q = map(int, input().split())
-#     w, isCycle, start = 0, False, 0 # isCycle : 순환소수 유무, start : 순환소수 시작점
+#     w, isCycle, start = 0, 0, 0 # isCycle : 순환소수 유무, start : 순환소수 시작점
 #
 #     rest = [0] * q
 #     ans = str(p // q)
@@ -217,7 +217,7 @@ sys.stdin = open("D4_3501_input.txt", "r")
 #         p %= q
 #
 #         if rest[p]:
-#             isCycle = True
+#             isCycle = 1
 #             start = rest[p]
 #             break
 #         else:
@@ -228,66 +228,39 @@ sys.stdin = open("D4_3501_input.txt", "r")
 #         ans = ans[:start + 1] + '(' + ans[start + 1:] + ')'
 #     print("#{} {}".format(test_case + 1, ans))
 
-def cycleLength():
-    global a, b, idx, q2
-    n1, n2 = 1, 9
-    idx = a if a > b else b
-    while n2 % q2:
-        n1 += 1
-        n2 = n2 * 10 + 9
-    return n1
-
-
-def cycle():
-    global a, b, q2
-    if not p % q:
-        return True
-
-    while (q2 % 2 == 0) or (q2 % 5 == 0):
-        if q2 % 2 == 0:
-            q2, a = q2 / 2, a + 1
-        if q2 % 5 == 0:
-            q2, b = q2 / 5, b + 1
-
-    if q2 == 1:
-        return True
-    else:
-        return False
-
-
+# 개똥같은문제...
 def gcd(x, y):
     while y:
         c = x % y
         x, y = y, c
     return x
 
-
 T = int(input())
 for test_case in range(T):
     p, q = map(int, input().split())
     divider = gcd(p, q)
     p, q = p // divider, q // divider
-    ans = ''
-    a, b, idx, q2 = 0, 0, 0, q
-    if cycle():
+    arr, rest = [0] * 100001, [0] * 100001
+    ans = str(p // q)
+    start, cnt = 0, 0
+
+    if p % q:
+        ans += '.'
+    p = (p % q) * 10
+
+    while p:
+        arr[p] = cnt
+        cnt += 1
+        rest[p] = 1
         ans += str(p // q)
         p = (p % q) * 10
-        if p:
-            ans += '.'
-        while p:
-            ans += str(p // q)
-            p = (p % q) * 10
+        if rest[p]:
+            start = cnt - arr[p]
+            break
+    cycle = len(ans)
+
+    if start == 0:
+        print("#{} {}".format(test_case + 1, ans))
     else:
-        l = cycleLength()
-        ans += str(p // q) + '.'
-
-        for i in range(idx):
-            ans += str(p // q)
-            p = (p % q) * 10
-        ans += '('
-
-        for i in range(l):
-            p = (p % q) * 10
-            ans += str(p // q)
-        ans += ')'
-    print("#{} {}".format(test_case + 1, ans))
+        ans = ans[0:cycle - start] + '(' + ans[cycle - start: cycle] + ')'
+        print("#{} {}".format(test_case + 1, ans))
