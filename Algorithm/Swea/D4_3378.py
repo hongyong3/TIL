@@ -46,12 +46,18 @@ for test_case in range(T):
 
     for i in after:
         for j in i:
-            if j == '(':d += 1
-            if j == ')':d -= 1
-            if j == '{':e += 1
-            if j == '}':e -= 1
-            if j == '[':f += 1
-            if j == ']':f -= 1
+            if j == '(':
+                d += 1
+            if j == ')':
+                d -= 1
+            if j == '{':
+                e += 1
+            if j == '}':
+                e -= 1
+            if j == '[':
+                f += 1
+            if j == ']':
+                f -= 1
         afterBracket.append([d, e, f])
 
     for i in range(q):
@@ -59,12 +65,11 @@ for test_case in range(T):
         for j in candidate:
             R2, C2, S2 = j
             afterDot[i].add(R2 * d1 + C2 * e1 + S2 * f1)
-        if candidate == []:
+        if not candidate:
             afterDot[i] = - 1
         elif len(afterDot[i]) == 1:
             afterDot[i] = afterDot[i].pop()
         else:
             afterDot[i] = - 1
-
     afterDot = [0] + afterDot[: - 1]
-    print("#{} ".format(test_case + 1), *afterDot)
+    print("#{}".format(test_case + 1), *afterDot)
