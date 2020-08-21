@@ -55,7 +55,6 @@ for test_case in range(T):
     L, P, C = map(int, input().split())
     start1, start2 = L, L + 1
     end1, end2 = P // C, P // C + 1
-    # end = P // C if P / C == P // C else P // C + 1
     ans = binary(start1, end1)
     ans += binary(start2, end2)
     print("#{} {}".format(test_case + 1, ans))
