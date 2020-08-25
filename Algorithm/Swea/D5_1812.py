@@ -48,17 +48,17 @@ for test_case in range(T):
         kTile.append(pow(2, i))
 
     for i in kTile:
-        chk = True # 타일이 추가로 필요하다면 True
+        check = True # 타일이 추가로 필요하다면 True
         for j in range(len(mTile)):
             if mTile[j][0] >= i and mTile[j][1] >= i:
-                chk = False
+                check = False
                 if mTile[j][0] - i:
                     mTile.append([mTile[j][0] - i, mTile[j][1]])
                 if mTile[j][1] - i:
                     mTile.append([i, mTile[j][1] - i])
                 mTile.pop(j)
                 break
-        if chk:
+        if check:
             ans += 1
             mTile.append([i, M - i])
             mTile.append([M - i, M])

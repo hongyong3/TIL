@@ -39,10 +39,22 @@ sys.stdin = open("D4_10581_input.txt", "r")
 #         ans += 1
 #     print(ans)
 
+# T = int(input())
+# for test_case in range(T):
+#     L, P, C = map(int, input().split())
+#     ans = []
+#     K = P // C if P / C == P // C else P // C + 1
+#     print(K - L)
+
 T = int(input())
 for test_case in range(T):
     L, P, C = map(int, input().split())
-    ans = []
-    K = P // C if P / C == P // C else P // C + 1
-    print(K - L)
-    # # print(ans1)
+    ans = P // C // L
+    # print(ans)
+    if ans <= 1:
+        ans = 0
+    elif len(str(ans)) <= 3:
+        ans = len(str(ans)) + 1
+    else:
+        ans = 5
+    print("#{} {}".format(test_case + 1, ans))

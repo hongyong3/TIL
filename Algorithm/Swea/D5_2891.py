@@ -76,7 +76,7 @@ def dfs(ind, cnt):
         if p == 1 and k == 1:
             continue
 
-        if chk(x, y, p, k):
+        if check(x, y, p, k):
             if p == 0:
                 ans[x][y][0] = k
             else:

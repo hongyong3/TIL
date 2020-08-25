@@ -39,12 +39,12 @@ for test_case in range(T):
     N = int(input())
     data = [list(map(int, input().split())) for _ in range(N)]
     arr = set()
-    chk = False
+    check = False
     for i in range(N):
         for j in range(i + 1, N):
             if data[i][0] == data[j][0]:
-                chk = True
+                check = True
                 continue
             else:
                 arr.add((data[j][1] - data[i][1]) / (data[j][0] - data[i][0]))
-    print("#{} {}".format(test_case + 1, len(arr) + chk))
+    print("#{} {}".format(test_case + 1, len(arr) + check))
