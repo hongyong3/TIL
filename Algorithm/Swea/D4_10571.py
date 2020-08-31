@@ -11,6 +11,7 @@ sys.stdin = open("D4_10571_input.txt", "r")
 #         nx = x + dx[i]
 #         ny = y + dy[i]
 
+# runtime error...
 T = int(input())
 for test_case in range(2):
     N, M = map(int,input().split())
