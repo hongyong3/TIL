@@ -889,3 +889,21 @@ sys.stdin = open("practice_input.txt", "r")
 #         if info[0] > result:
 #             result = info[0]
     # print('#{} {}'.format(test_case + 1, result))
+
+def decimal():
+    global arr
+    for i in range(2, int(1001 ** 0.5) + 1):
+        if arr[i]:
+            for j in range(i + i, 1001, i):
+                arr[j] = 0
+    return
+
+arr = [0, 0] + [1] * 999
+decimal()
+print(arr)
+n = [1, 3, 5, 7, 997]
+cnt = 0
+for i in n:
+    if arr[i]:
+        cnt += 1
+print(cnt)

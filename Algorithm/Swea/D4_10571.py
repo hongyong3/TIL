@@ -71,15 +71,30 @@ sys.stdin = open("D4_10571_input.txt", "r")
 
 
 # 1 / 100...
+# T = int(input())
+# for test_case in range(T):
+#     N, M = map(int, input().split())
+#     data = [list(map(int, input().split())) for _ in range(M)]
+#     print(data)
+#     ans = "YES"
+#     for i in range(1, M - 1):
+#         for j in range(1, N - 1):
+#             if data[i][j] > data[i][0] and data[i][j] > data[i][- 1] and \
+#                     data[i][j] > data[j][0] and data[i][j] > data[j][- 1]:
+#                 ans = "NO"
+#                 break
+#     print("#{} {}".format(test_case + 1, ans))
+
 T = int(input())
-for test_case in range(T):
-    N, M = map(int,input().split())
+for test_case in range(1):
+    N, M = map(int, input().split())
     data = [list(map(int, input().split())) for _ in range(M)]
-    ans = "YES"
-    for i in range(1, M - 1):
-        for j in range(1, N - 1):
-            if data[i][j] > data[i][0] and data[i][j] > data[i][- 1] and \
-                    data[i][j] > data[j][0] and data[i][j] > data[j][- 1]:
-                ans = "NO"
-                break
-    print("#{} {}".format(test_case + 1, ans))
+    dataT = [[j for j in i] for i in zip(*data)]
+    # 1 N = M인 경우
+    if N == M:
+        for i in range(N):
+            data[i][i] == max(data[i], dataT[i])
+    # elif N > M:
+    #     pass
+    # elif N < M:
+    #     pass
