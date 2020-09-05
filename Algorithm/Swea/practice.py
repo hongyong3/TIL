@@ -890,20 +890,45 @@ sys.stdin = open("practice_input.txt", "r")
 #             result = info[0]
     # print('#{} {}'.format(test_case + 1, result))
 
-def decimal():
-    global arr
-    for i in range(2, int(1001 ** 0.5) + 1):
-        if arr[i]:
-            for j in range(i + i, 1001, i):
-                arr[j] = 0
-    return
+# def decimal():
+#     global arr
+#     for i in range(2, int(1001 ** 0.5) + 1):
+#         if arr[i]:
+#             for j in range(i + i, 1001, i):
+#                 arr[j] = 0
+#     return
+#
+# arr = [0, 0] + [1] * 999
+# decimal()
+# print(arr)
+# n = [1, 3, 5, 7, 997]
+# cnt = 0
+# for i in n:
+#     if arr[i]:
+#         cnt += 1
+# print(cnt)
 
-arr = [0, 0] + [1] * 999
-decimal()
-print(arr)
-n = [1, 3, 5, 7, 997]
-cnt = 0
-for i in n:
-    if arr[i]:
-        cnt += 1
-print(cnt)
+# N = int(input())
+# data = list(map(int, input().split()))
+# ans = 0
+# for i in range(N - 2):
+#     for j in range(i + 1, N - 1):
+#         for k in range(j + 1, N):
+#             if data[j] - data[i] == data[k] - data[j]:
+#                 ans += 1
+#                 arr.append((i, j, k))
+# print(ans)
+
+number = 1513
+n = 23
+
+answer = ""
+
+while number // n >= 1:
+    remain = number % n
+    number = number // n
+    answer = str(remain) + answer
+    if number < n :
+        answer = str(number) + answer
+
+print("변환 값: %s(%s)" % (answer, n))

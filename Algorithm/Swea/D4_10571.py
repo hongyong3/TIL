@@ -63,16 +63,37 @@ sys.stdin = open("D4_10571_input.txt", "r")
 #                 break
 #     print("#{} {}".format(test_case + 1, ans))
 
+# T = int(input())
+# for test_case in range(1):
+#     N, M = map(int, input().split())
+#     data = [list(map(int, input().split())) for _ in range(M)]
+#     dataT = [[j for j in i] for i in zip(*data)]
+#     # 1 N = M인 경우
+#     if N == M:
+#         for i in range(N):
+#             data[i][i] == max(data[i], dataT[i])
+#     elif N > M:
+#         pass
+#     elif N < M:
+#         pass
+
+'''
+하.. n, m을 반대라고 생각함..
+문제좀 잘 읽자..
+'''
 T = int(input())
-for test_case in range(1):
+for test_case in range(T):
     N, M = map(int, input().split())
-    data = [list(map(int, input().split())) for _ in range(M)]
-    dataT = [[j for j in i] for i in zip(*data)]
-    # 1 N = M인 경우
-    if N == M:
-        for i in range(N):
-            data[i][i] == max(data[i], dataT[i])
-    # elif N > M:
-    #     pass
-    # elif N < M:
-    #     pass
+    data = [list(map(int, input().split())) for _ in range(N)]
+    ans = "YES"
+    for i in range(N):
+        for j in range(M):
+            val = data[i][j]
+            for k in range(M):
+                if data[i][k] <= val:
+                    continue
+                for l in range(N):
+                    if data[l][j] > val:
+                        ans = "NO"
+                        break
+    print("#{} {}".format(test_case + 1, ans))
