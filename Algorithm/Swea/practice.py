@@ -919,8 +919,9 @@ sys.stdin = open("practice_input.txt", "r")
 #                 arr.append((i, j, k))
 # print(ans)
 
-number = 1513
-n = 23
+# 진수변환
+number = 36
+n = 8
 
 answer = ""
 
