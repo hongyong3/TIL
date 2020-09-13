@@ -6,7 +6,7 @@ T = int(input())
 for test_case in range(T):
     N = int(input())
     atom = [list(map(int, input().split())) for _ in range(N)]
-    atoms, ans, count = {}, 0, 0
+    atoms, mat, count = {}, 0, 0
 
     for i in range(len(atom)):
         atoms[(atom[i][0] * 2, atom[i][1] * 2)] = [[atom[i][2]], [atom[i][3]]]  # 0.5초이므로 * 2
@@ -32,8 +32,8 @@ for test_case in range(T):
 
         for i in new.keys():
             if len(new[i][1]) > 1:
-                ans += sum(new[i][1])
+                mat += sum(new[i][1])
                 new[i] = 0
         atoms = new
         count += 1
-    print("#{} {}".format(test_case + 1, ans))
+    print("#{} {}".format(test_case + 1, mat))

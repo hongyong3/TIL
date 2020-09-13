@@ -6,8 +6,8 @@ for test_case in range(T):
     N = int(input())
     data = list(map(int, input().split()))
     avg = sum(data) / N
-    ans = 0
+    mat = 0
     for i in data:
         if i <= avg:
-            ans += 1
-    print("#{} {}".format(test_case + 1, ans))
+            mat += 1
+    print("#{} {}".format(test_case + 1, mat))

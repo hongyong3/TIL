@@ -48,7 +48,7 @@ sys.stdin = open("D4_1231_input.txt", "r")
 #     print("#{} {}".format(test_case + 1, ans))
 
 def inorder(n):
-    global ans
+    global mat
     if n:
         inorder(tree[n][2])
         ans += tree[n][1]
@@ -58,7 +58,7 @@ def inorder(n):
 for test_case in range(10):
     N = int(input())
     tree = [[0] * 4 for _ in range(N + 1)]
-    ans = ''
+    mat = ''
 
     for i in range(N):
         data = input().split()

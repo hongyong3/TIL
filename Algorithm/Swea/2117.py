@@ -9,9 +9,9 @@ def dfs(max_K):
             for j in range(N):
                 total = k * k + (k - 1) * (k - 1)
                 count = 0
-                for l in range(len(ans)):
-                    x = ans[l][0]
-                    y = ans[l][1]
+                for l in range(len(mat)):
+                    x = mat[l][0]
+                    y = mat[l][1]
                     if abs(i - x) + abs(j - y) < k:
                         total -= M
                         count += 1
@@ -26,10 +26,10 @@ T = int(input())
 for test_case in range(T):
     N, M = map(int, input().split())
     data = [list(map(int, input().split())) for _ in range(N)]
-    ans, max_K, answer = [], 2 * N - 1, -float('inf')
+    mat, max_K, answer = [], 2 * N - 1, -float('inf')
     for i in range(N):
         for j in range(N):
             if data[i][j] == 1:
-                ans.append([i, j])
+                mat.append([i, j])
     dfs(max_K)
     print("#{} {}".format(test_case + 1, answer))

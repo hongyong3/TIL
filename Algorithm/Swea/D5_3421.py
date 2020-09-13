@@ -4,7 +4,7 @@ sys.stdin = open("D5_3421_input.txt", "r")
 T = int(input())
 for test_case in range(T):
     N, M = map(int, input().split())
-    ans = 1
+    mat = 1
     menu = set()
     for _ in range(M):
         a, b = map(int, input().split())
@@ -16,6 +16,6 @@ for test_case in range(T):
             if i & m == m:
                 break
         else:
-            ans += 1
+            mat += 1
             
-    print("#{} {}".format(test_case + 1, ans))
+    print("#{} {}".format(test_case + 1, mat))

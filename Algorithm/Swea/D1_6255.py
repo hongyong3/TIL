@@ -6,6 +6,6 @@ data = {
     "가스레인지": 200000,
     "세탁기": 1000000,
     }
-ans = sorted(data.items(), key = lambda k: k[1], reverse = True)
-for i in ans:
+mat = sorted(data.items(), key = lambda k: k[1], reverse = True)
+for i in mat:
     print("{}: {}".format(i[0], i[1]))

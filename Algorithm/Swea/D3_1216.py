@@ -41,12 +41,12 @@ for test_case in range(10):
     data = [input() for _ in range(100)]
     dataT = [[*i] for i in zip(*data)]
 
-    ans = 1
+    mat = 1
     for i in range(100):
         for k in range(2, 101):
             for j in range(101 - k):
-                if data[i][j: j + k] == data[i][j: j + k][:: - 1] and ans < len(data[i][j: j + k]):
-                    ans = len(data[i][j: j + k])
-                if dataT[i][j: j + k] == dataT[i][j: j + k][:: - 1] and ans < len(dataT[i][j: j + k]):
-                    ans = len(dataT[i][j: j + k])
-    print("#{} {}".format(test_case + 1, ans))
+                if data[i][j: j + k] == data[i][j: j + k][:: - 1] and mat < len(data[i][j: j + k]):
+                    mat = len(data[i][j: j + k])
+                if dataT[i][j: j + k] == dataT[i][j: j + k][:: - 1] and mat < len(dataT[i][j: j + k]):
+                    mat = len(dataT[i][j: j + k])
+    print("#{} {}".format(test_case + 1, mat))

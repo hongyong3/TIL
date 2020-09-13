@@ -18,7 +18,7 @@ T = int(input())
 for test_case in range(T):
     A, B = map(int, input().split())
     if A < 0 and B > 0:
-        ans = solve(abs(A)) + solve(abs(B)) + 1
+        mat = solve(abs(A)) + solve(abs(B)) + 1
     else:
-        ans = solve(abs(B)) - solve(abs(A))
-    print("#{} {}".format(test_case + 1, abs(ans)))
+        mat = solve(abs(B)) - solve(abs(A))
+    print("#{} {}".format(test_case + 1, abs(mat)))

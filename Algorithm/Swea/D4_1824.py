@@ -7,7 +7,7 @@ dx = [- 1, 1, 0, 0]
 dy = [0, 0, - 1, 1]
 
 def solve(x, y, memory, dir):
-    global ans
+    global mat
     if ans == "YES":
         return
 
@@ -65,6 +65,6 @@ for test_case in range(T):
     R, C = map(int, input().split())
     data = list(input() for _ in range(R))
     visited = collections.defaultdict(set)
-    ans = "NO"
+    mat = "NO"
     solve(0, 0, 0, 3)
-    print("#{} {}".format(test_case + 1, ans))
+    print("#{} {}".format(test_case + 1, mat))

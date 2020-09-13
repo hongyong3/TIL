@@ -81,7 +81,7 @@ for test_case in range(T):
         graph[0][x].append([y, c])    # add y and time in graph's x index
         graph[1][y].append([x, c])    # add x and time in graph's y index
     djikstra(0)
-    ans = 0
+    mat = 0
     for i in range(1, N + 1):
-        ans = max(ans, time[0][i] + time[1][i])
-    print("#{} {}".format(test_case + 1, ans))
+        mat = max(mat, time[0][i] + time[1][i])
+    print("#{} {}".format(test_case + 1, mat))

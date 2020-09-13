@@ -12,7 +12,7 @@ T = int(input())
 for test_case in range(T):
     N, M = map(int, input().split())
     data = [list(map(int, input().split())) for _ in range(M)]
-    visited, graph, ans = [0] * (N + 1), [[0] * (N + 1) for _ in range(N + 1)], 0
+    visited, graph, mat = [0] * (N + 1), [[0] * (N + 1) for _ in range(N + 1)], 0
     print(data)
     for i in range(len(data)):
         graph[data[i][0]][data[i][1]] = graph[data[i][1]][data[i][0]] = 1
@@ -21,6 +21,6 @@ for test_case in range(T):
             dfs(j)
             for k in range(N + 1):
                 if not visited[k]:
-                    ans += 1
+                    mat += 1
                     break
-    print("#{} {}".format(test_case + 1, ans))
+    print("#{} {}".format(test_case + 1, mat))

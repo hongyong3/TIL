@@ -58,7 +58,7 @@ sys.stdin = open("D4_1227_input.txt", "r")
 
 # 
 def dfs(x, y):
-    global ans
+    global mat
     for i in range(4):
         nx = x + dx[i]
         ny = y + dy[i]
@@ -75,7 +75,7 @@ dy = [0, 0, - 1, 1]
 for test_case in range(10):
     N = int(input())
     data = [list(map(int, input())) for _ in range(100)]
-    ans = 0
+    mat = 0
     q = [(i, data[i].index(3)) for i in range(100) if 3 in data[i]]
     x, y = q.pop()
     print("#{} {}".format(test_case + 1, dfs(x, y)))

@@ -5,12 +5,12 @@ T = int(input())
 for test_case in range(T):
     N = int(input())
     num = input()
-    arr = [0] * 10
+    mat = [0] * 10
     maxNum = 0
     maxIndex = 0
     for i in num:
-        arr[int(i)] += 1
-    for k, v in enumerate(arr):
+        mat[int(i)] += 1
+    for k, v in enumerate(mat):
         if maxIndex <= v:
             maxIndex = v
             if maxNum < k:

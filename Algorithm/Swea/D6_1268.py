@@ -9,7 +9,7 @@ for test_case in range(T):
     A = [0] * (2 * N + 1)
     B = [0] * (2 * N + 1)
     C = [0] * (N + 1)
-    ans = 0
+    mat = 0
 
     for i in range(N):
         x1, y1 = item[i]
@@ -34,7 +34,7 @@ for test_case in range(T):
 
     for i in range(N):
         p = len(data[i])
-        ans += p
+        mat += p
         A[i + 1] = p
 
     for i in range(1, N + 1):
@@ -47,4 +47,4 @@ for test_case in range(T):
             B[j] = ((B[j - 1] * A[j] + j) % N) + 1
         C[i] = B[2 * N]
 
-    print("#{} {} {}".format(test_case + 1, ans, sum(C)))
+    print("#{} {} {}".format(test_case + 1, mat, sum(C)))

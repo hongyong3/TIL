@@ -10,7 +10,7 @@ encoding = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/'
 T = int(input())
 for test_case in range(T):
     data = input()
-    ans = ''
+    mat = ''
     for i in range(0, len(data), 4):
         idx1 = encoding.index(data[i])              # base64_encoding
         idx2 = encoding.index(data[i + 1])
@@ -19,5 +19,5 @@ for test_case in range(T):
         a = int(idx1 * 4) + int(idx2 / 16)          # base64_decoder
         b = int(idx2 % 16) * 16 + int(idx3 / 4)
         c = int(idx3 % 4) * 64 + int(idx4)
-        ans +=  chr(a) + chr(b) + chr(c)        # combination
-    print("#{} {}".format(test_case + 1, ans))
+        mat += chr(a) + chr(b) + chr(c)        # combination
+    print("#{} {}".format(test_case + 1, mat))

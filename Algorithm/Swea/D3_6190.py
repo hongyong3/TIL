@@ -14,13 +14,13 @@ T = int(input())
 for test_case in range(T):
     N = int(input())
     data = list(map(int, input().split()))
-    ans = -1
+    mat = -1
     for i in range(N):
         for j in range(i + 1, N):
-            if ans < data[i] * data[j]:
+            if mat < data[i] * data[j]:
                 if solve(data[i] * data[j]):
-                    ans = data[i] * data[j]
-    print("#{} {}".format(test_case + 1, ans))
+                    mat = data[i] * data[j]
+    print("#{} {}".format(test_case + 1, mat))
 
 # import sys
 # sys.stdin = open("D3_6190_input.txt", "r")

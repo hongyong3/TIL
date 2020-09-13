@@ -5,7 +5,7 @@ dx = [0, 0, 1, 0, - 1]  # 무상우하좌
 dy = [0, - 1, 0, 1, 0]
 
 def solve(ax, ay, bx, by):
-    global ans
+    global mat
     ac, bc = [], []
 
     for i in range(A):
@@ -49,10 +49,10 @@ for test_case in range(T):
     AP = [list(map(int, input().split())) for _ in range(A)]
     Ax, Ay = 1, 1
     Bx, By = 10, 10
-    ans = 0
+    mat = 0
     solve(Ax, Ay, Bx, By)
     for i in range(M):
         Ax, Ay = Ax + dx[ad[i]], Ay + dy[ad[i]]
         Bx, By = Bx + dx[bd[i]], By + dy[bd[i]]
         solve(Ax, Ay, Bx, By)
-    print("#{} {}".format(test_case + 1, ans))
+    print("#{} {}".format(test_case + 1, mat))

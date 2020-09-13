@@ -28,7 +28,7 @@ sys.stdin = open("D3_5189_input.txt", "r")
 #     print("#{} {}".format(test_case+1, ans))
 
 def perm(k, total):
-    global ans
+    global mat
     if total > ans:
         return
 
@@ -47,6 +47,6 @@ T = int(input())
 for test_case in range(T):
     N = int(input())
     data = [list(map(int, input().split())) for _ in range(N)]
-    ans = float('inf')
+    mat = float('inf')
     road = list(range(N)) + [0]
     print("#{} {}".format(test_case + 1, perm(1, 0)))

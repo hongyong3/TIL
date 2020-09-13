@@ -23,12 +23,12 @@ T = int(input())
 for test_case in range(T):
     N, M, K = map(int, input().split())
     data = sorted(list(map(int, input().split())))
-    ans = 'Possible'
+    mat = 'Possible'
     if min(data) < M:
-        print("#{} {}".format(test_case + 1, ans))
+        print("#{} {}".format(test_case + 1, mat))
         break
     for i in range(N):
         if (data[i] // M) * K - i <= 0:
-            ans = 'Impossible'
+            mat = 'Impossible'
             break
-    print("#{} {}".format(test_case + 1, ans))
+    print("#{} {}".format(test_case + 1, mat))

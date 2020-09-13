@@ -5,7 +5,7 @@ T = int(input())
 for test_case in range(T):
     N, K = map(int, input().split())
     temp = [[0] * K for _ in range(N)]
-    ans = [0] * K
+    mat = [0] * K
     k = 0
 
     while k <= N * K - 1:
@@ -19,7 +19,7 @@ for test_case in range(T):
 
     for i in range(K):
         for j in range(N):
-            ans[i] += temp[j][i]
+            mat[i] += temp[j][i]
 
     print("#{} ".format(test_case + 1), end="")
-    print(*ans)
+    print(*mat)

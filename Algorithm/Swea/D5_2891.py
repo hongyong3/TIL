@@ -5,10 +5,10 @@ def printSudoku():
     print("#{}".format(test_case + 1))
     for i in range(6):
         for j in range(6):
-            if ans[i][j][1] == 10:
-                print(str(ans[i][j][0]), end = ' ')
+            if mat[i][j][1] == 10:
+                print(str(mat[i][j][0]), end =' ')
             else:
-                print(str(ans[i][j][0]) + '/' + str(ans[i][j][1]), end = ' ')
+                print(str(mat[i][j][0]) + '/' + str(mat[i][j][1]), end =' ')
         print()
 
 
@@ -32,12 +32,12 @@ def chk(r, c, p, number):
     row, col, box, dist = 1, 1, 1, 1
 
     for i in range(6):
-        if ans[i][c][0] == number or ans[i][c][1] == number:
+        if mat[i][c][0] == number or mat[i][c][1] == number:
             row = 0
             break
 
     for j in range(6):
-        if ans[r][j][0] == number or ans[r][j][1] == number:
+        if mat[r][j][0] == number or mat[r][j][1] == number:
             col = 0
             break
 
@@ -46,18 +46,18 @@ def chk(r, c, p, number):
 
     for i in range(rr, rr + 2):
         for j in range(cc, cc  + 3):
-            if ans[i][j][0] == number or ans[i][j][1] == number:
+            if mat[i][j][0] == number or mat[i][j][1] == number:
                 box = 0
                 break
         if not box:
             break
 
-    if not p and ans[r][c][1] != 0:
-        if number > ans[r][c][1]:
+    if not p and mat[r][c][1] != 0:
+        if number > mat[r][c][1]:
             dist = 0
 
     if p == 1:
-        if ans[r][c][0] > number:
+        if mat[r][c][0] > number:
             dist = 0
 
     if row and col and box and dist:
@@ -78,21 +78,21 @@ def dfs(ind, cnt):
 
         if check(x, y, p, k):
             if p == 0:
-                ans[x][y][0] = k
+                mat[x][y][0] = k
             else:
-                ans[x][y][1] = k
+                mat[x][y][1] = k
 
             dfs(ind + 1, cnt + 1)
 
             if p == 0:
-                ans[x][y][0] = 0
+                mat[x][y][0] = 0
             else:
-                ans[x][y][1] = 0
+                mat[x][y][1] = 0
 
 T = int(input())
 for test_case in range(T):
     data = [input().split() for _ in range(6)]
-    ans = [[''] * 6 for _ in range(6)]
+    mat = [[''] * 6 for _ in range(6)]
     v = []
 
     for i in range(6):
@@ -110,12 +110,12 @@ for test_case in range(T):
                 else:
                     b = int(data[i][j][2])
 
-                ans[i][j] = [t, b]
+                mat[i][j] = [t, b]
 
             else:   # 정수
                 if data[i][j] == '-':
-                    ans[i][j] = [0, 10] # 10은 정수
+                    mat[i][j] = [0, 10] # 10은 정수
                     v.append([i, j, 0])
                 else:
-                    ans[i][j] = [int(data[i][j]), 10]
+                    mat[i][j] = [int(data[i][j]), 10]
     dfs(0, 0)

@@ -23,7 +23,7 @@ sys.stdin = open("D3_6057_input.txt", "r")
 T = int(input())
 for test_case in range(T):
     N, M = map(int, input().split())
-    temp, ans = {}, 0
+    temp, mat = {}, 0
     for i in range(N):
         temp[i+1] = []
     for _ in range(M):
@@ -34,5 +34,5 @@ for test_case in range(T):
         for y in temp[x]:
             for z in temp[y]:
                 if x in temp[z]:
-                    ans += 1
-    print('#{} {}'.format(test_case + 1, ans//6))
+                    mat += 1
+    print('#{} {}'.format(test_case + 1, mat // 6))

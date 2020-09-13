@@ -2,7 +2,7 @@ import sys
 sys.stdin = open("D3_1289_input.txt", "r")
 
 def solve(data, n):
-    global count, ans
+    global count, mat
     if data == ans:
         return count
     for i in range(n, len(ans)):
@@ -17,6 +17,6 @@ def solve(data, n):
 T = int(input())
 for test_case in range(T):
     data = str(input())
-    ans, count = '0' * len(data), 0
+    mat, count = '0' * len(data), 0
     solve(data, 0)
     print("#{} {}".format(test_case + 1, count))

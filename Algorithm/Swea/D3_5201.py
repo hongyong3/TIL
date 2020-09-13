@@ -24,12 +24,12 @@ for test_case in range(T):
     N, M = map(int, input().split())
     dataN = sorted(list(map(int, input().split())))
     dataM = sorted(list(map(int, input().split())))
-    ans = 0
+    mat = 0
 
     while dataN and dataM:
         if dataN[- 1] <= dataM[- 1]:
-            ans += dataN[- 1]
+            mat += dataN[- 1]
             dataN.pop(), dataM.pop()
         else:
             dataN.pop()
-    print("#{} {}".format(test_case + 1, ans))
+    print("#{} {}".format(test_case + 1, mat))

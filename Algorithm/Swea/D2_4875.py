@@ -33,7 +33,7 @@ sys.stdin = open("D2_4875_input.txt", "r")
 #     print(f'#{test_case+1} {search(start_x, start_y)}')
 
 def dfs(x, y):
-    global ans
+    global mat
     for i in range(4):
         nx = x + dx[i]
         ny = y + dy[i]
@@ -51,7 +51,7 @@ T = int(input())
 for test_case in range(T):
     N = int(input())
     data = [list(map(int, input())) for _ in range(N)]
-    ans = 0
+    mat = 0
     for x in range(N):
         for y in range(N):
             if data[x][y] == 2:

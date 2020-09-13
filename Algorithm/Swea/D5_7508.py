@@ -19,9 +19,9 @@ for test_case in range(T):
         visited[idx] += 1
 
     if sum(visited) < len(W):
-        ans = - 1
+        mat = - 1
     else:
-        ans, idx, work = 0, 0, 0
+        mat, idx, work = 0, 0, 0
         visited.reverse()
         for i in range(len(visited)):
             visited[i] -= work
@@ -30,12 +30,12 @@ for test_case in range(T):
                 idx += 1
                 if visited[i] % idx == 0:
                     temp = visited[i] // idx
-                    ans += temp
+                    mat += temp
                     visited = list(map(lambda x : x - temp, visited))
                     work = 0
                 else:
                     temp = visited[i] // idx + 1
-                    ans += temp
+                    mat += temp
                     work = idx - visited[i] % idx
                     visited = list(map(lambda x : x - temp, visited))
 
@@ -45,4 +45,4 @@ for test_case in range(T):
 
             else:
                 idx += 1
-    print("#{} {}".format(test_case + 1, ans))
+    print("#{} {}".format(test_case + 1, mat))

@@ -28,26 +28,26 @@ sys.stdin = open("D5_6191_input.txt", "r")
 #         # ans = ')' * (e - s) + '(' + ')' * s + '(' * (e - 1)
 #
 
-arr = [[0 for _ in range(101)] for _ in range(101)]
-arr[0][0] = 1
+mat = [[0 for _ in range(101)] for _ in range(101)]
+mat[0][0] = 1
 
 for r in range(0, 101):
-    arr[0][r] = 1
+    mat[0][r] = 1
 for l in range(1, 101):
     for i in range(0, l):
-        arr[l][l] += arr[i][l - 1]
+        mat[l][l] += mat[i][l - 1]
     for r in range(l + 1, 101):
-        arr[l][r] = arr[l][r - 1] + arr[l - 1][r]
+        mat[l][r] = mat[l][r - 1] + mat[l - 1][r]
 
 def bracket(l, r, k):
-    if arr[l][r] <= k:
+    if mat[l][r] <= k:
         return ")("
     if l == 0:
         return ")" * r
-    if k < arr[l - 1][r]:
+    if k < mat[l - 1][r]:
         return "(" + bracket(l - 1, r, k)
     else:
-        k -= arr[l - 1][r]
+        k -= mat[l - 1][r]
         return ")" + bracket(l, r - 1, k)
 
 T = int(input())

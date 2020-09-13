@@ -28,7 +28,7 @@ T = int(input())
 for test_case in range(1):
     l = int(input())
     a = input()
-    cnt, ans = 0, []
+    cnt, mat = 0, []
 
     if l % 2:
         print("#{} {}".format(test_case + 1, - 1))
@@ -85,11 +85,11 @@ for test_case in range(1):
                     temp += 1
                 else:
                     if k + temp < 0:
-                        ans.append((k, k))
-                        ans.append((i, i))
+                        mat.append((k, k))
+                        mat.append((i, i))
                         cnt += 2
                     else:
-                        ans.append((i, k + temp))
+                        mat.append((i, k + temp))
                         cnt += 1
             else:
                 if not chk:

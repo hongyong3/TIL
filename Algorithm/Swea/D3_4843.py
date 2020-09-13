@@ -29,8 +29,8 @@ T = int(input())
 for test_case in range(T):
     N = int(input())
     data = sorted(list(map(int, input().split())))
-    ans = []
-    while len(ans) <= 8:
-        ans.append(data.pop(- 1))
-        ans.append(data.pop(0))
-    print("#{}".format(test_case + 1), *ans)
+    mat = []
+    while len(mat) <= 8:
+        mat.append(data.pop(- 1))
+        mat.append(data.pop(0))
+    print("#{}".format(test_case + 1), *mat)

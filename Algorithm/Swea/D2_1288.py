@@ -7,9 +7,9 @@ for test_case in range(T):
     num, K = [], 0
     while len(num) <= 9:
         K += 1
-        ans = str(K * N)
-        for i in range(len(ans)):
-            if ans[i] not in num:
-                num.append(ans[i])
+        mat = str(K * N)
+        for i in range(len(mat)):
+            if mat[i] not in num:
+                num.append(mat[i])
                 if len(num) == 10:
-                    print("#{} {}".format(test_case + 1, ans))
+                    print("#{} {}".format(test_case + 1, mat))

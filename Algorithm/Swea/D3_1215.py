@@ -47,13 +47,13 @@ for test_case in range(10):
     data = [input() for _ in range(8)]
     dataT = [''.join([*i]) for i in zip(*data)]
 
-    ans = 0
+    mat = 0
     for i in range(8):
         for j in range(9 - N):
             if data[i][j : j + N] == data[i][j : j + N][:: - 1]:
-                ans += 1
+                mat += 1
             if dataT[i][j: j + N] == dataT[i][j: j + N][::- 1]:
-                ans += 1
-    print("#{} {}".format(test_case + 1, ans))
+                mat += 1
+    print("#{} {}".format(test_case + 1, mat))
 
 print(time.time() - start)

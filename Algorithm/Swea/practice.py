@@ -920,16 +920,29 @@ sys.stdin = open("practice_input.txt", "r")
 # print(ans)
 
 # 진수변환
-number = 36
-n = 8
+# number = 36
+# n = 8
+#
+# answer = ""
+#
+# while number // n >= 1:
+#     remain = number % n
+#     number = number // n
+#     answer = str(remain) + answer
+#     if number < n :
+#         answer = str(number) + answer
+#
+# print("변환 값: %s(%s)" % (answer, n))
 
-answer = ""
-
-while number // n >= 1:
-    remain = number % n
-    number = number // n
-    answer = str(remain) + answer
-    if number < n :
-        answer = str(number) + answer
-
-print("변환 값: %s(%s)" % (answer, n))
+n = int(input())
+s = [list(map(int, input().split())) for _ in range(n)]
+dp = [[0] * n for _ in range(n)]
+print(s)
+print(dp)
+for i in range(1, n):
+    for j in range(n - i):
+        x = i + j
+        dp[j][x] = float('inf')
+        for k in range(j, x):
+            dp[j][x] = min(dp[j][x], dp[j][k] + dp[k + 1][x] + s[j][0] * s[k][1] * s[x][1])
+print(dp[0][n - 1])

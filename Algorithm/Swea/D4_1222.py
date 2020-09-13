@@ -37,8 +37,8 @@ sys.stdin = open("D4_1222_input.txt", "r")
 for test_case in range(10):
     N = input()
     data = input()
-    ans = 0
+    mat = 0
     for i in data:
         if i.isdigit():
-            ans += int(i)
-    print("#{} {}".format(test_case + 1, ans))
+            mat += int(i)
+    print("#{} {}".format(test_case + 1, mat))

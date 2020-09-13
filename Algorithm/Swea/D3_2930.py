@@ -58,11 +58,11 @@ T = int(input())
 for test_case in range(T):
     N = int(input())
     heapArr = []
-    ans = []
+    mat = []
     for i in range(N):
         data = list(map(int, input().split()))
         if len(data) == 2:
             heapPush(data[1])
         else:
-            ans.append(heapPop())
-    print("#{}".format(test_case + 1), *ans)
+            mat.append(heapPop())
+    print("#{}".format(test_case + 1), *mat)

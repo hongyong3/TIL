@@ -25,14 +25,14 @@ sys.stdin = open("D4_4301_input.txt", "r")
 T = int(input())
 for test_case in range(T):
     N, M = map(int, input().split())
-    ans = 0
+    mat = 0
     a = N // 4 * 2 + min(N % 4, 2)
     b = N // 4 * 2 + max(N - (N // 4) * 4 - 2, 0)
-    ans += (M // 4) * 2 * (a + b)
+    mat += (M // 4) * 2 * (a + b)
     M = M - (M // 4) * 4
-    if M: ans += a
-    if M > 1: ans += a
-    if M > 2: ans += b
-    if M > 3: ans += b
-    print("#{} {}".format(test_case + 1, ans))
+    if M: mat += a
+    if M > 1: mat += a
+    if M > 2: mat += b
+    if M > 3: mat += b
+    print("#{} {}".format(test_case + 1, mat))
 print("time :", time.time() - start)

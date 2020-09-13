@@ -2,7 +2,7 @@ import sys
 sys.stdin = open("2383_input.txt", "r")
 
 def dfs():
-    global ans
+    global mat
     stair1_r, stair1_c, stair1_m = S[0][0], S[0][1], S[0][2]
     stair2_r, stair2_c, stair2_m = S[1][0], S[1][1], S[1][2]
     stair1, stair2, q1, q2, minute = [], [], [], [], 1
@@ -59,7 +59,7 @@ T = int(input())
 for test_case in range(T):
     N = int(input())
     data = [list(map(int, input().split())) for _ in range(N)]
-    S, P, ans = [], [], float('inf')
+    S, P, mat = [], [], float('inf')
 
     for i in range(N):
         for j in range(N):
@@ -70,4 +70,4 @@ for test_case in range(T):
     sel_stair = [0] * len(P)
     select(0)
 
-    print("#{} {}".format(test_case + 1, ans))
+    print("#{} {}".format(test_case + 1, mat))

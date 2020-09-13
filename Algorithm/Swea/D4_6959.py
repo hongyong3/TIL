@@ -29,12 +29,12 @@ sys.stdin = open("D4_6959_input.txt", "r")
 T = int(input())
 for test_case in range(T):
     data = str(input())
-    ans, count = 0, 0
+    mat, count = 0, 0
     for i in range(len(data)):
-        ans += int(data[i])
+        mat += int(data[i])
         count += 1
-        if ans >= 10:
-            ans = ans // 10 + ans % 10
+        if mat >= 10:
+            mat = mat // 10 + mat % 10
             count += 1
     if count % 2:
         print("#{} {}".format(test_case + 1, "B"))

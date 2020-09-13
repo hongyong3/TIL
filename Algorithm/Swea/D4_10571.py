@@ -85,7 +85,7 @@ T = int(input())
 for test_case in range(T):
     N, M = map(int, input().split())
     data = [list(map(int, input().split())) for _ in range(N)]
-    ans = "YES"
+    mat = "YES"
     for i in range(N):
         for j in range(M):
             val = data[i][j]
@@ -94,6 +94,6 @@ for test_case in range(T):
                     continue
                 for l in range(N):
                     if data[l][j] > val:
-                        ans = "NO"
+                        mat = "NO"
                         break
-    print("#{} {}".format(test_case + 1, ans))
+    print("#{} {}".format(test_case + 1, mat))

@@ -109,10 +109,10 @@ def kruskal():
 T = int(input())
 for test_case in range(T):
     V, E = map(int, input().split())
-    graph, parent, rank, ans = list(range(1, V + 1)), {}, {}, 0
+    graph, parent, rank, mat = list(range(1, V + 1)), {}, {}, 0
     data = [list(map(int, input().split())) for _ in range(E)]
     for i in range(E):
         data[i] = [data[i][2], data[i][0], data[i][1]]
     for i in kruskal():
-        ans += i[0]
-    print("#{} {}".format(test_case + 1, ans))
+        mat += i[0]
+    print("#{} {}".format(test_case + 1, mat))

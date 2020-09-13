@@ -23,15 +23,15 @@ for test_case in range(T):
     N, Q = map(int, input().split())
     data = list(map(int, input().split()))
     disk = list(map(int, input().split()))
-    ans = 0
+    mat = 0
     visited = [0 for _ in range(N)]
 
     solve(- 1)
     for i in range(len(visited)):
         if len(visited) == 1:
-            ans = 0
+            mat = 0
             break
         elif visited[i] == 1:
-            ans = i + 1
+            mat = i + 1
             break
-    print("#{} {}".format(test_case + 1, ans))
+    print("#{} {}".format(test_case + 1, mat))

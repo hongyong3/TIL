@@ -6,11 +6,11 @@ T = int(input())
 for test_case in range(T):
     N = int(input())
     data = list(map(int, input().split()))
-    ans, DP = N, [0] * (N + 1)
+    mat, DP = N, [0] * (N + 1)
     for i in data:
         DP[i] = DP[i - 1] + 1
-        ans = min(ans, N - DP[i])
-    print("#{} {}".format(test_case + 1, ans))
+        mat = min(mat, N - DP[i])
+    print("#{} {}".format(test_case + 1, mat))
 
 ############################################# O(N^2) 시간초과
 # T = int(input())

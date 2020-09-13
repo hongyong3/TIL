@@ -73,8 +73,8 @@ def binary(n):
 T = int(input())
 for test_case in range(T):
     N, data = map(str, input().split())
-    ans = ''
+    mat = ''
 
     for i in data:
-        ans += binary(conversion[i])
-    print("#{} {}".format(test_case + 1, ans))
+        mat += binary(conversion[i])
+    print("#{} {}".format(test_case + 1, mat))

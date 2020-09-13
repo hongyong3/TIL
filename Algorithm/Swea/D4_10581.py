@@ -60,12 +60,12 @@ l명이 접속이 가능하고 p명이 접속이 불가능한것을 알지만 �
 T = int(input())
 for test_case in range(T):
     L, P, C = map(int, input().split())
-    ans = P // C // L
+    mat = P // C // L
     # print(ans)
-    if ans <= 1:
-        ans = 0
-    elif len(str(ans)) <= 3:
-        ans = len(str(ans)) + 1
+    if mat <= 1:
+        mat = 0
+    elif len(str(mat)) <= 3:
+        mat = len(str(mat)) + 1
     else:
-        ans = 5
-    print("#{} {}".format(test_case + 1, ans))
+        mat = 5
+    print("#{} {}".format(test_case + 1, mat))

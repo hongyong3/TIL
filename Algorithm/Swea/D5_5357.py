@@ -7,17 +7,17 @@ for test_case in range(T):
     A = list(map(int, input().split()))
     O = list(map(int, input().split()))
     off = 0
-    ans = 0 if O[0] else 1
+    mat = 0 if O[0] else 1
     for i in range(1, N):
         if O[i]:
             off = 0
         else:
             off += A[i]
             if off >= H:
-                ans += 1
+                mat += 1
                 off = 0
                 O[i] = 1
 
     if N > 1 and not O[- 1]:
-        ans += 1
-    print("#{} {}".format(test_case + 1, ans))
+        mat += 1
+    print("#{} {}".format(test_case + 1, mat))

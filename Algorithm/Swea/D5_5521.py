@@ -14,11 +14,11 @@ for test_case in range(T):
         if a == 1:
             visited[b] = 1
 
-    ans = len(data[1])
+    mat = len(data[1])
     for i in range(len(data[1])):
         for j in range(len(data[data[1][i]])):
             if not visited[data[data[1][i]][j]]:
-                ans += 1
+                mat += 1
                 visited[data[data[1][i]][j]] = 1
 
-    print("#{} {}".format(test_case + 1, ans))
+    print("#{} {}".format(test_case + 1, mat))

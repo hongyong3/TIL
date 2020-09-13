@@ -42,19 +42,19 @@ for test_case in range(10):
     N = input()
     data = input()
     stack = []
-    ans = 1
+    mat = 1
 
     for i in data:
         if i in '([{<':
             stack.append(i)
         else:
             if not stack:
-                ans = 0
+                mat = 0
                 break
             else:
                 if ord(stack[- 1]) // 10 == ord(i) // 10:
                     stack.pop()
                 else:
-                    ans = 0
+                    mat = 0
                     break
-    print("#{} {}".format(test_case + 1, ans))
+    print("#{} {}".format(test_case + 1, mat))

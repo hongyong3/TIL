@@ -19,7 +19,7 @@ sys.stdin = open("D4_1486_input.txt", "r")
 
 
 def combination(count, height):
-    global ans
+    global mat
     if count == N:
         if height >= B:
             ans = min(ans, height)
@@ -31,6 +31,6 @@ T = int(input())
 for test_case in range(T):
     N, B = map(int, input().split())
     data = list(map(int, input().split()))
-    ans = float('inf')
+    mat = float('inf')
     combination(0, 0)
-    print("#{} {}".format(test_case + 1, ans - B))
+    print("#{} {}".format(test_case + 1, mat - B))

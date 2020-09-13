@@ -26,7 +26,7 @@ sys.stdin = open("1952_input.txt", "r")
 # 다른사람 코드 고치지
 t = int(input())
 def dfs(i, count, add):
-    global ans
+    global mat
     if count == 12:
         ans = min(ans, add)
         return
@@ -45,12 +45,12 @@ def dfs(i, count, add):
 
 
 for i in range(t):
-    ans = 99999999
+    mat = 99999999
     cost = list(map(int, input().split()))
     plan = list(map(int, input().split()))
     # for j in range(12):
     check = [0]*12
     dfs(0, 0, 0)
 
-    result = min(ans, cost[3])
+    result = min(mat, cost[3])
     print('#%s %s' %(str(i+1), result))

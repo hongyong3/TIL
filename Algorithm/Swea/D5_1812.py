@@ -40,7 +40,7 @@ sys.stdin = open("D5_1812_input.txt", "r")
 T = int(input())
 for test_case in range(T):
     N, M = map(int, input().split())
-    ans = 1
+    mat = 1
     mTile = [[M, M]]    # w, h
     data = sorted(list(map(int, input().split())), reverse = True)
     kTile = []
@@ -59,8 +59,8 @@ for test_case in range(T):
                 mTile.pop(j)
                 break
         if check:
-            ans += 1
+            mat += 1
             mTile.append([i, M - i])
             mTile.append([M - i, M])
 
-    print("#{} {}".format(test_case + 1, ans))
+    print("#{} {}".format(test_case + 1, mat))

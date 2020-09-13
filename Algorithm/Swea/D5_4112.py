@@ -23,6 +23,6 @@ for test_case in range(T):
     ra, da = solve(a)
     rb, db = solve(b)
 
-    ans = (rb - ra) + (da - db) if da > db else max(rb - ra, db - da)
+    mat = (rb - ra) + (da - db) if da > db else max(rb - ra, db - da)
 
-    print("#{} {}".format(test_case + 1, ans))
+    print("#{} {}".format(test_case + 1, mat))

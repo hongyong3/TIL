@@ -46,5 +46,5 @@ for test_case in range(T):
     D = (- 1 + (1 + 8 * N) ** 0.5) * 0.5    # 판별식
     D = int(D) + 1 if int(D) < D else int(D)
     s = D * (D + 1) // 2 - N    # sigma
-    ans = ')' * (D - s) + '(' + ')' * s + '(' * (D - 1)
-    print("#{} {}".format(test_case + 1, ans))
+    mat = ')' * (D - s) + '(' + ')' * s + '(' * (D - 1)
+    print("#{} {}".format(test_case + 1, mat))

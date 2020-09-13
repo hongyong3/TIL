@@ -11,23 +11,23 @@ def solve(num, n):
 
     for i in range(idx - 1, - 1, - 1):
         if i:
-            ans[n] += int(45 * (i) * pow(10, (i) - 1) * arr[i] + ((arr[i] * (arr[i] - 1)) // 2) * pow(10, i) + count * arr[i] * pow(10, i))
+            arr[n] += int(45 * (i) * pow(10, (i) - 1) * arr[i] + ((arr[i] * (arr[i] - 1)) // 2) * pow(10, i) + count * arr[i] * pow(10, i))
             # ans[n] += int(45 * (i) * pow(10, (i) - 1) * arr[i])
             # ans[n] += int(((arr[i] * (arr[i] - 1)) // 2) * pow(10, i))
             # ans[n] += int(count * arr[i] * pow(10, i))
             count += arr[i]
 
-    ans[n] += count * (arr[0] + 1) + (arr[0] * (arr[0] + 1) // 2)
+    arr[n] += count * (arr[0] + 1) + (arr[0] * (arr[0] + 1) // 2)
 
-    if ans[0] == 67500000000000009:
-        ans[0] -= 9
+    if arr[0] == 67500000000000009:
+        arr[0] -= 9
 
-    return ans[n]
+    return arr[n]
 
 T = int(input())
 for test_case in range(T):
     A, B = map(int, input().split())
-    ans = [0, 0]
+    mat = [0, 0]
 
     if A:
         A -= 1

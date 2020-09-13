@@ -22,13 +22,13 @@ sys.stdin = open("D3_1209_input.txt", "r")
 
 for test_case in range(10):
     N = int(input())
-    ans = 0
+    mat = 0
     data = [list(map(int, input().split())) for _ in range(100)]
     dataT = [[*i] for i in zip(*data)]
     a, b = 0, 0
     for i in range(100):
         a += data[i][i]
         b += dataT[i][i]
-        if ans < max(sum(data[i]), sum(dataT[i]), a, b):
-            ans = max(sum(data[i]), sum(dataT[i]), a, b)
-    print("#{} {}".format(test_case + 1, ans))
+        if mat < max(sum(data[i]), sum(dataT[i]), a, b):
+            mat = max(sum(data[i]), sum(dataT[i]), a, b)
+    print("#{} {}".format(test_case + 1, mat))

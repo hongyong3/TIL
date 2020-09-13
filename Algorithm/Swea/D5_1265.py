@@ -24,5 +24,5 @@ T = int(input())
 for test_case in range(T):
     N, P = map(int, input().split())
     s, r = N // P, N % P
-    ans = s ** (P - r) * (s + 1) ** r
-    print("#{} {}".format(test_case + 1, ans))
+    mat = s ** (P - r) * (s + 1) ** r
+    print("#{} {}".format(test_case + 1, mat))

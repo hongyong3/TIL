@@ -129,7 +129,7 @@ for test_case in range(T):
     E = float(input())
     parent = list(range(N))
     edges = []
-    ans = 0
+    mat = 0
 
     for i in range(N):
         for j in range(i + 1, N):
@@ -140,5 +140,5 @@ for test_case in range(T):
     for distance, v, e in edges:
         if not union(v, e):
             continue
-        ans += distance
-    print("#{} {}".format(test_case + 1, round(ans * E)))
+        mat += distance
+    print("#{} {}".format(test_case + 1, round(mat * E)))

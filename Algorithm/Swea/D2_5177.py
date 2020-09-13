@@ -80,8 +80,8 @@ for test_case in range(T):
             r //= 2
             i //= 2
 
-    ans = 0
+    mat = 0
     while N >= 1:
         N //= 2
-        ans += tree[N]
-    print("#{} {}".format(test_case + 1, ans))
+        mat += tree[N]
+    print("#{} {}".format(test_case + 1, mat))

@@ -14,7 +14,7 @@ dice = [
 ]
 
 def dfs(x, y, deep, loc):
-    global ans
+    global mat
     if data[y][x] == 3:
         if not loc:
             ans = min(ans, deep)
@@ -32,7 +32,7 @@ for test_case in range(T):
     N, M = map(int, input().split())
     data = [list(map(int, input().split())) for _ in range(M)]
     visited = [[0] * N for _ in range(M)]
-    ans = float('inf')
+    mat = float('inf')
 
     for i in range(N):
         for j in range(M):
@@ -41,6 +41,6 @@ for test_case in range(T):
                 dfs(j, i, 0, 0)
                 break
 
-    if ans == float('inf'):
-        ans = - 1
-    print('#{} {}'.format(test_case + 1, ans))
+    if mat == float('inf'):
+        mat = - 1
+    print('#{} {}'.format(test_case + 1, mat))

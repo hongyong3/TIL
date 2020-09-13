@@ -240,27 +240,27 @@ for test_case in range(T):
     p, q = map(int, input().split())
     divider = gcd(p, q)
     p, q = p // divider, q // divider
-    arr, rest = [0] * 100001, [0] * 100001
-    ans = str(p // q)
+    mat, rest = [0] * 100001, [0] * 100001
+    mat = str(p // q)
     start, cnt = 0, 0
 
     if p % q:
-        ans += '.'
+        mat += '.'
     p = (p % q) * 10
 
     while p:
-        arr[p] = cnt
+        mat[p] = cnt
         cnt += 1
         rest[p] = 1
-        ans += str(p // q)
+        mat += str(p // q)
         p = (p % q) * 10
         if rest[p]:
-            start = cnt - arr[p]
+            start = cnt - mat[p]
             break
-    cycle = len(ans)
+    cycle = len(mat)
 
     if start == 0:
-        print("#{} {}".format(test_case + 1, ans))
+        print("#{} {}".format(test_case + 1, mat))
     else:
-        ans = ans[0:cycle - start] + '(' + ans[cycle - start: cycle] + ')'
-        print("#{} {}".format(test_case + 1, ans))
+        mat = mat[0:cycle - start] + '(' + mat[cycle - start: cycle] + ')'
+        print("#{} {}".format(test_case + 1, mat))

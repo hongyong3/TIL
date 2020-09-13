@@ -23,5 +23,5 @@ for test_case in range(T):
     N = int(input())
     data = list(map(int, input().split()))
     K = int(input())
-    arr = []
+    mat = []
     print(len(perm(data, N)))

@@ -42,12 +42,12 @@ for test_case in range(T):
     data_col = [''.join(i) for i in zip(*data_row)]
     total = data_row.copy()
     total.extend(data_col)
-    ans = 0
+    mat = 0
     for i in total:
         result = i.split('0')
         if '1' * K in result:
-            ans += result.count('1' * K)
-    print("#{} {}".format(test_case + 1, ans))
+            mat += result.count('1' * K)
+    print("#{} {}".format(test_case + 1, mat))
 
 
 # version 1

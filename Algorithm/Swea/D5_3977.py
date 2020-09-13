@@ -10,12 +10,12 @@ for i in range(2, 1000001):
 T = int(input())
 for test_case in range(T):
     L, R = map(int, input().split())
-    ans = 0
+    mat = 0
     if L <= 2:
-        ans += 1
+        mat += 1
 
     for i in range(L, R + 1):
         if not decimal[i] and i % 4 == 1:
-            ans += 1
+            mat += 1
 
-    print("#{} {}".format(test_case + 1, ans))
+    print("#{} {}".format(test_case + 1, mat))

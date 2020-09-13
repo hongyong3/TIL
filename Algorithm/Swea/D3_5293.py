@@ -2,7 +2,7 @@ import sys
 sys.stdin = open("D3_5293_input.txt", "r")
 
 def solve(x, a, b, c, d):
-    global ans
+    global mat
     if ans is not None: return
     if b - c > 1 or c - b > 1: return
     if a < 0 or b < 0 or c < 0 or d < 0: return
@@ -19,9 +19,9 @@ def solve(x, a, b, c, d):
 T = int(input())
 for test_case in range(T):
     A, B, C, D = map(int, input().split())
-    total, ans = A + B + C + D, None
+    total, mat = A + B + C + D, None
     solve("0", A, B, C, D)
     solve("1", A, B, C, D)
-    if ans is None:
-        ans = "impossible"
-    print("#{} {}".format(test_case + 1, ans))
+    if mat is None:
+        mat = "impossible"
+    print("#{} {}".format(test_case + 1, mat))

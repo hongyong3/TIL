@@ -36,11 +36,11 @@ for test_case in range(T):
     N = int(input())
     data = list(map(int, input().split()))
     visited = [0] * N
-    ans = 1
+    mat = 1
     visited[0] = data[0]
     for i in range(1, N):
-        idx = solve(ans, data[i])
+        idx = solve(mat, data[i])
         visited[idx] = data[i]
-        if ans <= idx:
-            ans += 1
-    print("#{} {}".format(test_case + 1, ans))
+        if mat <= idx:
+            mat += 1
+    print("#{} {}".format(test_case + 1, mat))

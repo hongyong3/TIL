@@ -25,9 +25,9 @@ def dfs(day, time, satis, v):
                     dfs(day - 1, 540, satis, i)
                     path.pop()
         else:
-            if time >= distance[v][airport] and ans[0] < satis:
-                ans[0] = satis
-                ans[1] = path[1:] + [airport]
+            if time >= distance[v][airport] and mat[0] < satis:
+                mat[0] = satis
+                mat[1] = path[1:] + [airport]
 
 
 T = int(input())
@@ -37,7 +37,7 @@ for test_case in range(T):
     hotels = []
     points = {} # 관광포인트는 dict로 해야할 듯.
     visited = [0] * (N + 1)
-    ans = [0, []]
+    mat = [0, []]
 
     for i in range(1, N):
         data = list(map(int, input().split()))
@@ -55,4 +55,4 @@ for test_case in range(T):
 
     path = [airport]
     dfs(M, 540, 0, airport)
-    print('#{} {}'.format(test_case + 1, ans[0]), *ans[1])
+    print('#{} {}'.format(test_case + 1, mat[0]), *mat[1])

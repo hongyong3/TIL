@@ -2,7 +2,7 @@ import sys
 sys.stdin = open("D5_5670_input.txt", "r")
 
 def solve(n):
-    global check, ans
+    global check, mat
     if chk:
         chk = False
         n *= 2
@@ -20,7 +20,7 @@ for test_case in range(T):
     funxy = set()
     funa = set()
     check = True
-    ans = 0
+    mat = 0
 
     for i in range(N):
         x1, y1, x2, y2 = map(int, input().replace('혻', '').split())
@@ -44,4 +44,4 @@ for test_case in range(T):
         fence = 2 * len(funxy)
     while fence < G:
         fence = solve(fence)
-    print("#{} {}".format(test_case + 1, ans))
+    print("#{} {}".format(test_case + 1, mat))

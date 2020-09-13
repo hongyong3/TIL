@@ -4,7 +4,7 @@ sys.stdin = open("D4_4408_input.txt", "r")
 T = int(input())
 for test_case in range(T):
     N = int(input())
-    room, ans = [0] * 201, 0
+    room, mat = [0] * 201, 0
     for i in range(N):
         a, b = map(int, input().split())
         if a % 2: a += 1

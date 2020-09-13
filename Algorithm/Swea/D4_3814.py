@@ -44,7 +44,7 @@ T = int(input())
 for test_case in range(T):
     N, K = map(int, input().split())
     data = list(map(int, input().split()))
-    ans = 0
+    mat = 0
     s, e = 0, pow(10, 9)
 
     while s < e:
@@ -70,7 +70,7 @@ for test_case in range(T):
 
         if not chk:
             s = m + 1
-            ans = s
+            mat = s
         else:
             e = m
-    print("#{} {}".format(test_case + 1, ans))
+    print("#{} {}".format(test_case + 1, mat))

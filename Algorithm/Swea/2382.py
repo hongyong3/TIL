@@ -11,7 +11,7 @@ def combination(union):
 
 
 def dfs(mic, check):
-    global ans
+    global mat
     dx = [-1, 1, 0, 0]
     dy = [0, 0, -1, 1]
 
@@ -53,7 +53,7 @@ T = int(input())
 for test_case in range(T):
     N, M, K = map(int, input().split())
     data = [list(map(int, input().split())) for _ in range(K)]
-    mic, ans = {}, 0
+    mic, mat = {}, 0
     for i in range(len(data)):  # dict화
         mic[(data[i][0], data[i][1])] = [[data[i][2]], [data[i][3] - 1]]
     answer = dfs(mic, 0)

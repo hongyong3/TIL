@@ -1,7 +1,7 @@
 word = 'abcdef'
-ans = {}
+mat = {}
 for i in range(len(word)):
-    ans[word[i]] = i
+    mat[word[i]] = i
 
-for k, v in ans.items():
+for k, v in mat.items():
     print("{}: {}".format(k, v))

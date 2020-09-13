@@ -28,7 +28,7 @@ sys.stdin = open("D2_5186_input.txt", "r")
 #             break
 
 def binary(n):
-    global ans
+    global mat
     if len(ans) >= 13:
         ans = 'overflow'
         return
@@ -46,6 +46,6 @@ def binary(n):
 T = int(input())
 for test_case in range(T):
     N = float(input())
-    ans = ''
+    mat = ''
     binary(N)
-    print("#{} {}".format(test_case + 1, ans))
+    print("#{} {}".format(test_case + 1, mat))

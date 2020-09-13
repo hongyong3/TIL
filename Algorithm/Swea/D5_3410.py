@@ -7,7 +7,7 @@ for test_case in range(T):
     minn = float('inf')
     wList = [0] * (N + 2)
     eList = [0] * (N + 2)
-    ans = 0
+    mat = 0
 
     for _ in range(M):
         data = input()
@@ -24,6 +24,6 @@ for test_case in range(T):
     for i in range(N + 1):
         if minn > eList[i] + wList[i + 1]:
             minn = eList[i] + wList[i + 1]
-            ans = i
+            mat = i
 
-    print("#{} {} {}".format(test_case + 1, ans, ans + 1))
+    print("#{} {} {}".format(test_case + 1, mat, mat + 1))

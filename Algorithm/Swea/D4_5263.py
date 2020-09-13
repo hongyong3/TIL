@@ -5,7 +5,7 @@ T = int(input())
 for test_case in range(T):
     N = int(input())
     data = [list(map(int, input().split())) for _ in range(N)]
-    ans = 0
+    mat = 0
 
     for i in range(N):
         for j in range(N):
@@ -20,6 +20,6 @@ for test_case in range(T):
 
     for i in range(N):
         for j in range(N):
-            if i != j and data[i][j] > ans:
-                ans = data[i][j]
-    print("#{} {}".format(test_case + 1, ans))
+            if i != j and data[i][j] > mat:
+                mat = data[i][j]
+    print("#{} {}".format(test_case + 1, mat))

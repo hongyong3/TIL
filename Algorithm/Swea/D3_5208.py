@@ -55,7 +55,7 @@ sys.stdin = open("D3_5208_input.txt", "r")
 #     print("#{} {}".format(test_case + 1, ans))
 
 def dfs(n):
-    global ans, temp
+    global mat, temp
     if n >= N - 1:
         if ans > temp:
             ans = temp
@@ -73,6 +73,6 @@ T = int(input())
 for test_case in range(T):
     data = list(map(int, input().split()))
     N = data.pop(0)
-    ans, temp = float('inf'), - 1
+    mat, temp = float('inf'), - 1
     dfs(0)
-    print("#{} {}".format(test_case + 1, ans))
+    print("#{} {}".format(test_case + 1, mat))

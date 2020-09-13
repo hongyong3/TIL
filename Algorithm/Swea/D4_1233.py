@@ -57,13 +57,13 @@ for test_case in range(10):
 
     formula = []
     inorder(1)
-    ans = 1
+    mat = 1
 
     for i in range(len(formula)):
         if i % 2 and formula[i] not in '+-*/':
-            ans = 0
+            mat = 0
             break
         elif not i % 2 and not formula[i].isdigit():
-            ans = 0
+            mat = 0
             break
-    print("#{} {}".format(test_case + 1, ans))
+    print("#{} {}".format(test_case + 1, mat))

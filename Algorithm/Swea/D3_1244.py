@@ -13,7 +13,7 @@ def swap(data, i, j):
     return data
 
 def findMax(data, N, k):
-    global ans
+    global mat
     for i in range(720):
         if memo[k][i] == 0:
             memo[k][i] = data
@@ -33,9 +33,9 @@ T = int(input())
 for test_case in range(T):
     memo = [[0] * 720 for _ in range(11)]
     data, N = map(int, input().split())
-    numCard, ans, t = 0, 0, data
+    numCard, mat, t = 0, 0, data
     while(t):
         t //= 10
         numCard += 1
     findMax(data, N, 0)
-    print("#{} {}".format(test_case + 1, ans))
+    print("#{} {}".format(test_case + 1, mat))

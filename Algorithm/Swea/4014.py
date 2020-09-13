@@ -37,9 +37,9 @@ for test_case in range(T):
     N, X = map(int, input().split())
     dataRow = [list(map(int, input().split())) for _ in range(N)]
     dataCol = [[element for element in t] for t in zip(*dataRow)]
-    ans = 0
+    mat = 0
 
     for i in range(N):
-        ans += solve(dataRow[i])
-        ans += solve(dataCol[i])
-    print("#{} {}".format(test_case + 1, ans))
+        mat += solve(dataRow[i])
+        mat += solve(dataCol[i])
+    print("#{} {}".format(test_case + 1, mat))

@@ -8,23 +8,23 @@ for test_case in range(T):
     B = list(map(int, input().split()))
 
     if M > N:
-        ans = [0] * (M - N + 1)
+        mat = [0] * (M - N + 1)
         j = -1
-        for k in range(len(ans)):
+        for k in range(len(mat)):
             sum = 0
             j += 1
             for i in range(N):
                 sum += A[i] * B[i + j]
-            ans[k] = sum
-        print("#{} {}".format(test_case + 1, max(ans)))
+            mat[k] = sum
+        print("#{} {}".format(test_case + 1, max(mat)))
 
     else:
-        ans = [0] * (N - M + 1)
+        mat = [0] * (N - M + 1)
         j = -1
-        for k in range(len(ans)):
+        for k in range(len(mat)):
             sum = 0
             j += 1
             for i in range(M):
                 sum += A[i + j] * B[i]
-            ans[k] = sum
-        print("#{} {}".format(test_case + 1, max(ans)))
+            mat[k] = sum
+        print("#{} {}".format(test_case + 1, max(mat)))

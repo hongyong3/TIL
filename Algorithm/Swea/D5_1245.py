@@ -6,7 +6,7 @@ for test_case in range(T):
     N = int(input())
     data = list(map(int, input().split()))
     x, m = data[:N], data[N:]
-    ans = []
+    mat = []
 
     for i in range(1, N):
         low, high = x[i - 1], x[i]
@@ -23,8 +23,8 @@ for test_case in range(T):
                 high = mid
             else:
                 low = mid
-        ans.append('%.10f' % mid)
-    print("#{}".format(test_case + 1), *ans)
+        mat.append('%.10f' % mid)
+    print("#{}".format(test_case + 1), *mat)
 
 # T = int(input())
 # for test_case in range(T):

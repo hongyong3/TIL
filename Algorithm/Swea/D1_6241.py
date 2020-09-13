@@ -2,10 +2,10 @@ import sys
 sys.stdin = open("D1_6241_input.txt", "r")
 
 data = list(map(str, input().split('/')))
-ans = []
+mat = []
 for i in data:
     if i:
-        ans.append(i)
-print("protocol: {}".format(ans[0][:- 1]))
-print("host: {}".format(ans[1]))
-print("others: {}".format(ans[2]))
+        mat.append(i)
+print("protocol: {}".format(mat[0][:- 1]))
+print("host: {}".format(mat[1]))
+print("others: {}".format(mat[2]))

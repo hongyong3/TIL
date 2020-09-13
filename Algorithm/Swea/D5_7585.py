@@ -29,8 +29,8 @@ for test_case in range(T):
         if not (a + b) % K:
             m = (m + c) % MOD
 
-    ans = iarr[0] * jarr[0] % MOD
+    mat = iarr[0] * jarr[0] % MOD
 
     for i in range(1, K):
-        ans += iarr[i] * jarr[K - i] % MOD
-    print("#{} {}".format(test_case + 1, (ans - m) % MOD))
+        mat += iarr[i] * jarr[K - i] % MOD
+    print("#{} {}".format(test_case + 1, (mat - m) % MOD))

@@ -22,7 +22,7 @@ for test_case in range(T):
     # str1 = set(input())
     str1 = input()
     str2 = input()
-    ans = 0
+    mat = 0
     for i in str1:
-        ans = max(ans, str2.count(i))
-    print("#{} {}".format(test_case + 1, ans))
+        mat = max(mat, str2.count(i))
+    print("#{} {}".format(test_case + 1, mat))

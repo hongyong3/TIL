@@ -48,16 +48,16 @@ for test_case in range(T):
     data = list(map(int, input().split()))
     a = [0] * 12
     b = [0] * 12
-    ans = 0
+    mat = 0
 
     for i in range(6):
         a[data[2 * i]] += 1
         b[data[2 * i + 1]] += 1
         if i >= 2:
             if a[data[2 * i]] == 3 or (a[data[2 * i] - 2] != 0 and a[data[2 * i] - 1] != 0 and a[data[2 * i]] != 0) or (a[data[2 * i] - 1] != 0 and a[data[2 * i]] != 0 and a[data[2 * i] + 1] != 0) or (a[data[2 * i]] != 0 and a[data[2 * i] + 1] != 0 and a[data[2 * i] + 2] != 0):
-                ans = 1
+                mat = 1
                 break
             if b[data[2 * i + 1]] == 3 or (b[data[2 * i + 1] - 2] != 0 and b[data[2 * i + 1] - 1] != 0 and b[data[2 * i + 1]] != 0) or (b[data[2 * i + 1] - 1] != 0 and b[data[2 * i + 1]] != 0 and b[data[2 * i + 1] + 1] != 0) or (b[data[2 * i + 1]] != 0 and b[data[2 * i + 1] + 1] != 0 and b[data[2 * i + 1] + 2] != 0):
-                ans = 2
+                mat = 2
                 break
-    print("#{} {}".format(test_case + 1, ans))
+    print("#{} {}".format(test_case + 1, mat))

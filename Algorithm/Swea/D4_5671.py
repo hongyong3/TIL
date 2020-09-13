@@ -104,7 +104,7 @@ sys.stdin = open("D4_5671_input.txt", "r")
 
 # 3번
 def solve(n, idx, count):
-    global ans
+    global mat
     if (26 - idx < count):
         return
 
@@ -133,7 +133,7 @@ for test_case in range(T):
     N, M = map(int, input().replace('혻', '').split())
     wordList = [0] * N
     alphabet = 0
-    ans = 0
+    mat = 0
 
     for _ in range(N):
         word = str(input().replace('혻', ''))
@@ -147,4 +147,4 @@ for test_case in range(T):
     wordCount = bin(alphabet).count('1')
 
     solve(0, 0, min(M, wordCount))
-    print("#{} {}".format(test_case + 1, ans))
+    print("#{} {}".format(test_case + 1, mat))

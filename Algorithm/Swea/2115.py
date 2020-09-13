@@ -10,7 +10,7 @@ T = int(input())
 for test_case in range(1):
     N, M, C = map(int, input().split())
     data = [list(map(int, input().split())) for _ in range(N)]
-    worker1, worker2, ans = 0, 0, 0
+    worker1, worker2, mat = 0, 0, 0
     for i in range(N):  # worker1
         for j in range(N - M + 1):
             worker1 = dfs(i, j, 0, 0, 0)  # x, y, honey, money, n
@@ -20,5 +20,5 @@ for test_case in range(1):
                     k = j + M
                 for y in range(k, N - M + 1):
                     worker2 = dfs(x, y, 0, 0, 0)
-                    ans = max(ans, worker1 + worker2)
-    print("#{} {}".format(test_case + 1, ans))
+                    mat = max(mat, worker1 + worker2)
+    print("#{} {}".format(test_case + 1, mat))

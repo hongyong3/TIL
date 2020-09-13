@@ -40,7 +40,7 @@ for test_case in range(T):
     data = [input() for _ in range(N)]
     binaryList = [''] * N   # 변환된 2진수를 담는 list
     temp = []   # 해독한 코드를 담는 list
-    ans = 0
+    mat = 0
     visited = []    # 중복방지
 
     # data 16진수 -> 2진수 변환
@@ -68,9 +68,9 @@ for test_case in range(T):
                 value = (temp[0] + temp[2] + temp[4] + temp[6]) * 3 + temp[1] + temp[3] + temp[5] + temp[7]
 
                 if value % 10 == 0 and temp not in visited:
-                    ans += sum(temp)
+                    mat += sum(temp)
                 visited.append(temp)
                 temp = []
                 break
 
-    print("#{} {}".format(test_case + 1, ans))
+    print("#{} {}".format(test_case + 1, mat))

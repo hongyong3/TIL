@@ -2,7 +2,7 @@ import sys
 sys.stdin = open("D4_1865_input.txt", "r")
 
 def solve(n):
-    global percentage, ans
+    global percentage, mat
     if percentage <= ans:
         return
 
@@ -27,6 +27,6 @@ for test_case in range(T):
     N = int(input())
     data = [list(map(int, input().split())) for _ in range(N)]
     visited = [0] * N
-    percentage, ans = 1, 0
+    percentage, mat = 1, 0
     solve(0)
-    print("#{} {}".format(test_case + 1, '%.6f' % (ans * 100)))
+    print("#{} {}".format(test_case + 1, '%.6f' % (mat * 100)))

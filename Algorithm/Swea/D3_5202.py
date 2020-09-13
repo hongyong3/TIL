@@ -27,13 +27,13 @@ for test_case in range(T):
     data = [list(map(int, input().split())) for _ in range(N)]
     data.sort(key = lambda x: x[1])
 
-    ans = 0
+    mat = 0
     time = [0] * 24
     for i in data:
         if 1 in time[i[0]:i[1]]:
             pass
         else:
-            ans += 1
+            mat += 1
             for j in range(i[0], i[1]):
                 time[j] += 1
-    print("#{} {}".format(test_case + 1, ans))
+    print("#{} {}".format(test_case + 1, mat))

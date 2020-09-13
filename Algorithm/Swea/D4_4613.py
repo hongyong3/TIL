@@ -5,7 +5,7 @@ T = int(input())
 for test_case in range(T):
     N, M = map(int, input().split())
     data = [input() for _ in range(N)]
-    W, B, R, ans = [0] * N, [0] * N, [0] * N, 0
+    W, B, R, mat = [0] * N, [0] * N, [0] * N, 0
 
     for i in range(N):
         W[i], B[i], R[i] = data[i].count('W'), data[i].count('B'), data[i].count('R')
@@ -19,6 +19,6 @@ for test_case in range(T):
                 count[1] += B[k]
             for k in range(j + 1, N):
                 count[2] += R[k]
-            ans = max(ans, sum(count))
-    ans = (N * M) - ans
-    print("#{} {}".format(test_case + 1, ans))
+            mat = max(mat, sum(count))
+    mat = (N * M) - mat
+    print("#{} {}".format(test_case + 1, mat))

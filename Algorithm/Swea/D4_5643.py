@@ -8,7 +8,7 @@ for test_case in range(T):
     N = int(input())
     M = int(input())
     data = [[0] * N for _ in range(N)]
-    ans = 0
+    mat = 0
 
     for _ in range(M):
         a, b = map(int, input().split())
@@ -25,8 +25,8 @@ for test_case in range(T):
         for e in range(N):
             known_people += data[s][e] + data[e][s]
         if known_people == N - 1:
-            ans += 1
-    print("#{} {}".format(test_case + 1, ans))
+            mat += 1
+    print("#{} {}".format(test_case + 1, mat))
 
 # BFS로도 가능할 듯
 

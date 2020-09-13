@@ -52,7 +52,7 @@ T = int(input())
 for test_case in range(T):
     N = int(input())
     data = list(map(int, input().split()))
-    ans, before, after = 1, 0, 0
+    mat, before, after = 1, 0, 0
 
     for now in data:
         if not after:
@@ -67,8 +67,8 @@ for test_case in range(T):
             continue
 
         if (before > after and before > now) or (before < after and before < now):
-            ans += 1
+            mat += 1
             before, after = 0, now
         else:
             before, after = now, before
-    print("#{} {}".format(test_case + 1, ans))
+    print("#{} {}".format(test_case + 1, mat))

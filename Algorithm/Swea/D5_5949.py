@@ -12,7 +12,7 @@ T = int(input())
 for test_case in range(T):
     S = input()
     T = input()
-    ans, aCount, bCount = 0, 0, 0
+    mat, aCount, bCount = 0, 0, 0
     a, b = [0] * len(S), [0] * len(T)
     for i in range(len(S)):
         if S[i] == T[i]:
@@ -25,5 +25,5 @@ for test_case in range(T):
             bCount += 1
 
     for i in range(aCount):
-        ans += (a[i] - b[i] if a[i] > b[i] else b[i] - a[i])
-    print("#{} {}".format(test_case + 1, ans))
+        mat += (a[i] - b[i] if a[i] > b[i] else b[i] - a[i])
+    print("#{} {}".format(test_case + 1, mat))

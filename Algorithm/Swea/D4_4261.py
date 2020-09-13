@@ -6,7 +6,7 @@ T = int(input())
 for test_case in range(T):
     S, N = map(str, input().split())
     data = list(map(str, input().split()))
-    ans, j = 0, 0
+    mat, j = 0, 0
     for i in range(int(N)):
         check = 1
         for k in data[i]:
@@ -14,9 +14,9 @@ for test_case in range(T):
                 check = 0
                 break
             else: j += 1
-        if check: ans += 1
+        if check: mat += 1
         j = 0
-    print("#{} {}".format(test_case + 1, ans))
+    print("#{} {}".format(test_case + 1, mat))
 
 
 # def s(l,a,c=0):

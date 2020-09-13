@@ -7,10 +7,10 @@ for test_case in range(T):
     data = [int(input()) for _ in range(N)]
     time1, time2, minTime = 0, max(data) * M, max(data) * M
     while time1 <= time2:
-        mid, ans = (time1 + time2) // 2, 0
+        mid, mat = (time1 + time2) // 2, 0
         for i in data:
-            ans += mid // i
-        if ans < M:
+            mat += mid // i
+        if mat < M:
             time1 = mid + 1
         else:
             if minTime > mid:

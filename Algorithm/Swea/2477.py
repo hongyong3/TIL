@@ -13,7 +13,7 @@ for test_case in range(T):
     AA, BB = [None] * N, [None] * N
     AA_num = 0
     subAns = [0] * (K + 1)
-    ans = 0
+    mat = 0
     time = 0
 
     idx = 1
@@ -50,11 +50,11 @@ for test_case in range(T):
                     num = w2.pop(0)
                     BB[i] = [num, b[i]]
                     if i == B and subAns[num]:
-                        ans += num
+                        mat += num
 
         time += 1
 
-    if not ans:
-        ans = - 1
+    if not mat:
+        mat = - 1
 
-    print("#{} {}".format(test_case + 1, ans))
+    print("#{} {}".format(test_case + 1, mat))

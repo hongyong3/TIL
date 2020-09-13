@@ -31,7 +31,7 @@ T = int(input())
 for test_case in range(T):
     N = int(input())
     data = [[5] * (N + 2)] + [[5] + list(map(int, input().split())) + [5] for _ in range(N)] + [[5] * (N + 2)]
-    ans = 0
+    mat = 0
     wormStack = ['block'] * 6 + [0] * 5
     wormhole = {}
 
@@ -52,7 +52,7 @@ for test_case in range(T):
         for y in range(1, N + 1):
             if not data[x][y]:
                 for i in range(4):
-                    ans = 0
+                    mat = 0
                     nx = x + dx[i]
                     ny = y + dy[i]
 
@@ -62,7 +62,7 @@ for test_case in range(T):
 
                         elif data[nx][ny] in range(1, 6):
                             i = change[data[nx][ny]][i]
-                            ans += 1
+                            mat += 1
 
                         elif data[nx][ny] in range(6, 11):
                             nx, ny = wormhole[(nx, ny)]
@@ -70,7 +70,7 @@ for test_case in range(T):
                         nx = nx + dx[i]
                         ny = ny + dy[i]
 
-                    if ans > ans:
-                        ans = ans
+                    if mat > mat:
+                        mat = mat
 
-    print('#{} {}'.format(test_case + 1, ans))
+    print('#{} {}'.format(test_case + 1, mat))

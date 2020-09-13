@@ -11,7 +11,7 @@ sys.stdin = open("D3_1217_Input.txt", "r")
 
 # 방법2 재귀를 이용한 방법
 def power(m):
-    global ans
+    global mat
     if m == 0:
         return ans
     ans *= N
@@ -20,6 +20,6 @@ def power(m):
 for test_case in range(10):
     T = int(input())
     N, M = map(int, input().split())
-    ans = 1
+    mat = 1
     power(M)
-    print("#{} {}".format(test_case + 1, ans))
+    print("#{} {}".format(test_case + 1, mat))

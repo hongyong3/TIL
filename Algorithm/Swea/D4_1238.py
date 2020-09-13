@@ -37,7 +37,7 @@ def bfs(s):
     while q:
         s = q.pop(0)
         for ns in range(1, N):
-            if arr[s][ns] and not visited[ns]:
+            if mat[s][ns] and not visited[ns]:
                 visited[ns] = 1
                 q.append(ns)
                 distance[ns] = distance[s] + 1
@@ -53,9 +53,9 @@ for test_case in range(10):
 
     N = max(data) + 1
     distance, visited = [0] * N, [0] * N
-    arr = [[0] * N for _ in range(N)]
+    mat = [[0] * N for _ in range(N)]
 
     for i in range(length // 2):
-        arr[data[2 * i]][data[2 * i + 1]] = 1
+        mat[data[2 * i]][data[2 * i + 1]] = 1
 
     print("#{} {}".format(test_case + 1, bfs(start)))

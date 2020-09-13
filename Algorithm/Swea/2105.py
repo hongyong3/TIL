@@ -2,7 +2,7 @@ import sys
 sys.stdin = open("2105_input.txt", "r")
 
 def solve(x, y):
-    global ans
+    global mat
     choice = []
     dx = [- 1, - 1, 1, 1]   # 우상향대각 자상향대각 좌하향대각 우하향대각 if : 1 3  % 2 // else: 2 4 % 2
     dy = [1, - 1, - 1, 1]   # 좌상향대각 우상향대각 좌하향대각 우하향대각
@@ -29,25 +29,25 @@ def solve(x, y):
 def check(x, y, chk, n):
     if n == 2:
         chk = 1
-        for i in arr:
+        for i in mat:
             chk *= i
-        if chk <= ans:
+        if chk <= mat:
             return
         else:
             solve(x, y)
     else:
         for i in range(2, N):
-            arr[n] = i
+            mat[n] = i
             check(x, y, chk, n + 1)
 
 T = int(input())
 for test_case in range(T):
     N = int(input())
     data = [list(map(int, input().split())) for _ in range(N)]
-    ans, arr = - 1, [0] * 2
+    mat, mat = - 1, [0] * 2
 
     for i in range(N):
         for j in range(N):
             if (i == j == 0) or (i == j == N - 1) or (i == 0 and j == N - 1) or (i == N - 1 and j == 0): continue
             check(i, j, 0, 0)
-    print("#{} {}".format(test_case + 1, ans))
+    print("#{} {}".format(test_case + 1, mat))

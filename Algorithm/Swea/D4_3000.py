@@ -88,7 +88,7 @@ for test_case in range(T):
     N, A = map(int, input().split())
     minHeap, maxHeap = [], []
     mid = A
-    ans = 0
+    mat = 0
 
     for _ in range(N):
         x, y = map(int, input().split())
@@ -115,5 +115,5 @@ for test_case in range(T):
             minPush(x)
             maxPush(y)
 
-        ans = (ans + mid) % 20171109
-    print("#{} {}".format(test_case + 1, ans))
+        mat = (mat + mid) % 20171109
+    print("#{} {}".format(test_case + 1, mat))

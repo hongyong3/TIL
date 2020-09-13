@@ -5,7 +5,7 @@ T = int(input())
 for test_case in range(T):
     N = int(input())
     data = [list(map(float, input().split())) for _ in range(N)]
-    ans = 0
+    mat = 0
     for i in range(N):
-        ans += data[i][0] * data[i][1]
-    print("#{} {}".format(test_case + 1, format(ans, "6f")))
+        mat += data[i][0] * data[i][1]
+    print("#{} {}".format(test_case + 1, format(mat, "6f")))

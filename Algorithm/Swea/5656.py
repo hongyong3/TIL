@@ -44,18 +44,18 @@ T = int(input())
 for test_case in range(T):
     N, W, H = map(int, input().split())
     data = [list(map(int, input().split())) for _ in range(H)]
-    ans = float('inf')
+    mat = float('inf')
 
     for i in product(range(W), repeat = N):
         copyData = [data[j][:] for j in range(H)]
         start(i)
-        ans = 0
+        mat = 0
         for j in copyData:
-            ans += len(j) - j.count(0)
-        ans = min(ans, ans)
-        if not ans:
+            mat += len(j) - j.count(0)
+        mat = min(mat, mat)
+        if not mat:
             break
-    print("#{} {}".format(test_case + 1, ans))
+    print("#{} {}".format(test_case + 1, mat))
 
 # test = [[0, 1, 2, 3, 4, 0, 0], [0, 1, 2, 3]]
 # cnt = 0

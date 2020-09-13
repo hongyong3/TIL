@@ -2,7 +2,7 @@ import sys
 sys.stdin = open("D5_1247_input.txt", "r")
 
 def solve(n, k, total):
-    global ans
+    global mat
     if total > ans:
         return
     if n == k:
@@ -24,6 +24,6 @@ for test_case in range(10):
     home = [data.pop(0), data.pop(0)]
     data2 = [[data[i], data[i + 1]] for i in range(0, len(data), 2)]
     data3 = [company] + data2 + [home]
-    ans = float('inf')
+    mat = float('inf')
     solve(N + 1, 1, 0)
-    print('#{} {}'.format(test_case + 1, ans))
+    print('#{} {}'.format(test_case + 1, mat))

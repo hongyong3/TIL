@@ -13,7 +13,7 @@ for test_case in range(T):
     N, M, R, C, L = map(int, input().split())
     data = [list(map(int, input().split())) for _ in range(N)]
     visited = [[0] * M for _ in range(N)]
-    ans = 0
+    mat = 0
     q = [(R, C, 1)]
     visited[R][C] = 1
     while q:
@@ -47,5 +47,5 @@ for test_case in range(T):
     for i in range(N):
         for j in range(M):
             if visited[i][j] == 1:
-                ans += 1
-    print("#{} {}".format(test_case + 1, ans))
+                mat += 1
+    print("#{} {}".format(test_case + 1, mat))

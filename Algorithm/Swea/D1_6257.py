@@ -1,5 +1,5 @@
 fruit = ['   apple    ','banana','  melon']
-ans = {}
+mat = {}
 for i in fruit:
-    ans[i.strip()] = len(i.strip())
-print(ans)
+    mat[i.strip()] = len(i.strip())
+print(mat)

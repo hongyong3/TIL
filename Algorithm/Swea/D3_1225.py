@@ -37,6 +37,6 @@ for test_case in range(10):
     N = int(input())
     data = list(map(int, input().split()))
     if min(data) > 15:
-        ans = ((min(data) // 15) - 1) * 15
-        data = [i - ans for i in data]
+        mat = ((min(data) // 15) - 1) * 15
+        data = [i - mat for i in data]
     print("#{}".format(test_case + 1), *solve(data))

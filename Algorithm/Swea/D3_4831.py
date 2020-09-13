@@ -6,16 +6,16 @@ for test_case in range(T):
     K, N, M = map(int, input().split())
     data = list(map(int, input().split()))
 
-    arr = [0] * (N + 1)
+    mat = [0] * (N + 1)
     for i in data:
-        arr[i] = 1
+        mat[i] = 1
 
     start, end, count = 0, K, 0
 
     while True:
         distance = K
         for i in range(start + 1, end + 1):
-            if arr[i]:
+            if mat[i]:
                 start = i
             else:
                 distance -= 1

@@ -27,7 +27,7 @@ sys.stdin = open("D3_5188_input.txt", "r")
 #     print("#{} {}".format(test_case + 1, min))
 
 def dfs(x, y, total):
-    global ans
+    global mat
 
     if ans <= total:
         return
@@ -51,6 +51,6 @@ for test_case in range(T):
     N = int(input())
     data = [list(map(int, input().split())) for _ in range(N)]
     visited = [[0] * N for _ in range(N)]
-    ans = float('inf')
+    mat = float('inf')
     dfs(0, 0, data[0][0])
-    print("#{} {}".format(test_case + 1, ans))
+    print("#{} {}".format(test_case + 1, mat))

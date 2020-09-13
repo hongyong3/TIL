@@ -7,10 +7,10 @@ for test_case in range(T):
     data = list(map(int, input().split()))
     cnt, maxCount = [0] * N, 0
     for i in range(N):
-        ans = data[i]
+        mat = data[i]
         count = cnt[i]
         for j in range(i + 1, N):
-            if ans > data[j]: continue
+            if mat > data[j]: continue
             if count + 1 <= cnt[j]: continue
             cnt[j] = count + 1
             if count + 1 > maxCount:

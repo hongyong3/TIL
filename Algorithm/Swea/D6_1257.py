@@ -47,9 +47,9 @@ T = int(input())
 for test_case in range(T):
     K = int(input())
     word = input()
-    ans = set()
+    mat = set()
     for i in range(len(word)):
         for j in range(i + 1, len(word) + 1):
-            ans.add(word[i:j])
-    ans = sorted(ans)[K - 1] if K <= len(ans) else 'none'
-    print("#{} {}".format(test_case + 1, ans))
+            mat.add(word[i:j])
+    mat = sorted(mat)[K - 1] if K <= len(mat) else 'none'
+    print("#{} {}".format(test_case + 1, mat))

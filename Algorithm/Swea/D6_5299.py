@@ -5,7 +5,7 @@ sys.stdin = open("D6_5299_input.txt", "r")
 T = int(input())
 for test_case in range(T):
     N = int(input())
-    ans = 0
+    mat = 0
 
     for b in range(2, N + 1):
         num = N % b
@@ -17,10 +17,10 @@ for test_case in range(T):
                 break
             x //= b
         if chk:
-            ans = b
+            mat = b
             break
 
-    if not ans:
+    if not mat:
         for i in range(1, N + 1):
             if i * i <= N:
                 if N % i:
@@ -28,6 +28,6 @@ for test_case in range(T):
                 x = i
                 base = N // x - 1
                 if base > x:
-                    ans = base
-        ans = N + 1
-    print("#{} {}".format(test_case + 1, ans))
+                    mat = base
+        mat = N + 1
+    print("#{} {}".format(test_case + 1, mat))

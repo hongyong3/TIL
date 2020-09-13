@@ -5,7 +5,7 @@ sys.stdin = open("D5_5295_input.txt", "r")
 # 2. 중복된 수를 지운 후 모두 포함되지 않은 수 지우기
 
 def xQ(q):
-    global ans
+    global mat
     while q:
         num = q.pop()
         if not erase[num]:
@@ -26,7 +26,7 @@ for test_case in range(T):
     arr2 = list(map(int, input().split()))
     arr3 = list(map(int, input().split()))
 
-    ans = 0
+    mat = 0
     erase = [0] * (N + 1)
     arr1Cnt = [0] * (N + 1) # index별로 순서
     arr2Cnt = [0] * (N + 1) # 각 숫자별로 몇개가 있는지
@@ -46,4 +46,4 @@ for test_case in range(T):
 
     xQ(sQ), xQ(tQ)
 
-    print("#{} {}".format(test_case + 1, ans))
+    print("#{} {}".format(test_case + 1, mat))

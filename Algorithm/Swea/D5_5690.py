@@ -2,7 +2,7 @@ import sys
 sys.stdin = open("D5_5690_input.txt", "r")
 
 def solve():
-    global ans
+    global mat
     before, mod, cnt, chk = 0, 0, 0, False
     for i in range(N):
         mod = ((10 * before) + int(num[i])) % M
@@ -23,6 +23,6 @@ T = int(input())
 for test_case in range(T):
     N, M = map(int, input().split())
     num = str(input())
-    ans = 1
+    mat = 1
     solve()
-    print("#{} {}".format(test_case + 1, ans))
+    print("#{} {}".format(test_case + 1, mat))

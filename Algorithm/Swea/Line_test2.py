@@ -2,7 +2,7 @@ import sys
 sys.stdin = open("Line_test2_input.txt", "r")
 
 def permute(arr):
-    global ans
+    global mat
     ans = [arr[:]]
     c = [0] * len(arr)
     i = 0
@@ -21,9 +21,9 @@ def permute(arr):
 
 data = list(map(int, input().split()))
 N = int(input())
-ans, answer, total, j = [], [], 0, 1
+mat, answer, total, j = [], [], 0, 1
 permute(data)
-for i in ans[N]:
+for i in mat[N]:
     total += i * 10 ** (len(data) - j)
     j += 1
 print(total)

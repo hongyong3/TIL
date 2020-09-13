@@ -38,7 +38,7 @@ T = int(input())
 for test_case in range(T):
     N = int(input())
     data = [list(map(int, input().split())) for _ in range(N)]
-    arr = set()
+    mat = set()
     check = False
     for i in range(N):
         for j in range(i + 1, N):
@@ -46,5 +46,5 @@ for test_case in range(T):
                 check = True
                 continue
             else:
-                arr.add((data[j][1] - data[i][1]) / (data[j][0] - data[i][0]))
-    print("#{} {}".format(test_case + 1, len(arr) + check))
+                mat.add((data[j][1] - data[i][1]) / (data[j][0] - data[i][0]))
+    print("#{} {}".format(test_case + 1, len(mat) + check))

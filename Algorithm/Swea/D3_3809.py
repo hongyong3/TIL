@@ -43,11 +43,11 @@ sys.stdin = open("D3_3809_input.txt", "r")
 T = int(input())
 for test_case in range(T):
     N = int(input())
-    number, ans, data = "", 0, []
+    number, mat, data = "", 0, []
     while len(data) != N:
         data.extend(input().split())
     for i in data:
         number += i
-    while str(ans) in number:
-        ans += 1
-    print("#{} {}".format(test_case + 1, ans))
+    while str(mat) in number:
+        mat += 1
+    print("#{} {}".format(test_case + 1, mat))

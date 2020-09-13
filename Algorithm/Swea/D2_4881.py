@@ -29,7 +29,7 @@ sys.stdin = open("D2_4881_input.txt", "r")
 #     print('#{} {}'.format(test_case+1, min))
 
 def arr(n):
-    global ans, subAns, visited
+    global arr, subAns, visited
     if n == N:
         if ans > subAns:
             ans = subAns
@@ -47,7 +47,7 @@ T = int(input())
 for test_case in range(T):
     N = int(input())
     data = [list(map(int, input().split())) for _ in range(N)]
-    ans, subAns = float('inf'), 0
+    mat, subAns = float('inf'), 0
     visited = [0] * N
-    arr(0)
-    print("#{} {}".format(test_case + 1, ans))
+    mat(0)
+    print("#{} {}".format(test_case + 1, mat))
