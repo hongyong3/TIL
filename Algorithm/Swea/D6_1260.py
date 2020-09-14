@@ -29,22 +29,22 @@ for test_case in range(T):
             if data[i][j]:
                 search(i, j)
 
-    arr = []
+    s = []
+    n = 0
     while mat:
         for i in range(len(mat) // 2):
             if mat.count(mat[2 * i]) == 1:
-                arr.append(mat.pop(2 * i))
-                arr.append(mat.pop(2 * i))
+                a = mat.pop(2 * i)
+                b = mat.pop(2 * i)
+                s.append([a, b])
+                n += 1
                 break
 
-    print(arr)
-    n = len(arr) // 2
-
-    for l in range(2, n + 1):
-        for i in range(1, n - l + 2):
-            j = i + l - 1
-            m[i][j] = float('inf')
-            for k in range(i, j):
-                cost = m[i][k] + m[k + 1][j] + arr[i - 1] * arr[k] * arr[j]
-                m[i][j] = min(m[i][j], cost)
-    print(m[1][n])
+    dp = [[0] * n for i in range(n)]
+    for i in range(1, n):
+        for j in range(n - i):
+            x = j + i
+            dp[j][x] = 2 ** 32
+            for k in range(j, x):
+                dp[j][x] = min(dp[j][x], dp[j][k] + dp[k + 1][x] + s[j][0] * s[k][1] * s[x][1])
+    print("#{} {}".format(test_case + 1, dp[0][n - 1]))
