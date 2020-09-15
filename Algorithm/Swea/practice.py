@@ -934,15 +934,26 @@ sys.stdin = open("practice_input.txt", "r")
 #
 # print("변환 값: %s(%s)" % (answer, n))
 
-n = int(input())
-s = [list(map(int, input().split())) for _ in range(n)]
-dp = [[0] * n for _ in range(n)]
-print(s)
-print(dp)
-for i in range(1, n):
-    for j in range(n - i):
-        x = i + j
-        dp[j][x] = float('inf')
-        for k in range(j, x):
-            dp[j][x] = min(dp[j][x], dp[j][k] + dp[k + 1][x] + s[j][0] * s[k][1] * s[x][1])
-print(dp[0][n - 1])
+# n = int(input())
+# s = [list(map(int, input().split())) for _ in range(n)]
+# dp = [[0] * n for _ in range(n)]
+# print(s)
+# print(dp)
+# for i in range(1, n):
+#     for j in range(n - i):
+#         x = i + j
+#         dp[j][x] = float('inf')
+#         for k in range(j, x):
+#             dp[j][x] = min(dp[j][x], dp[j][k] + dp[k + 1][x] + s[j][0] * s[k][1] * s[x][1])
+# print(dp[0][n - 1])
+T = int(input())
+for test_case in range(T):
+    N = int(input())
+    data = list(map(int, input().split()))
+    dd = {}
+    # for i in range(1, N + 1):
+    #     dd[i] = 0
+    for idx, val in enumerate(data):
+        dd[val] = idx + 1
+        # dd[idx + 1] += val
+    print(dd)
