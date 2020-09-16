@@ -57,15 +57,27 @@ l명이 접속이 가능하고 p명이 접속이 불가능한것을 알지만 �
 #     K = P // C if P / C == P // C else P // C + 1
 #     print(K - L)
 
+# T = int(input())
+# for test_case in range(T):
+#     L, P, C = map(int, input().split())
+#     mat = P // C // L
+#     # print(ans)
+#     if mat <= 1:
+#         mat = 0
+#     elif len(str(mat)) <= 3:
+#         mat = len(str(mat)) + 1
+#     else:
+#         mat = 5
+#     print("#{} {}".format(test_case + 1, mat))
+
 T = int(input())
 for test_case in range(T):
     L, P, C = map(int, input().split())
-    mat = P // C // L
-    # print(ans)
-    if mat <= 1:
-        mat = 0
-    elif len(str(mat)) <= 3:
-        mat = len(str(mat)) + 1
-    else:
-        mat = 5
-    print("#{} {}".format(test_case + 1, mat))
+    ans, n = 0, 0
+    while L * C < P:
+        L *= C
+        n += 1
+    while n:
+        n //= 2
+        ans += 1
+    print("#{} {}".format(test_case + 1, ans))
