@@ -959,117 +959,123 @@ sys.stdin = open("practice_input.txt", "r")
 #         # dd[idx + 1] += val
 #     print(dd)
 
-# 문제 12
-class Employee:
-    name = 'Kim'
-    idNum = 17001
-    salary = 4500000
-    sex = True
-a = Employee()
-print(a.name)
-print(a.idNum)
-print(a.salary)
-print(a.sex)
+# # 문제 12
+# class Employee:
+#     name = 'Kim'
+#     idNum = 17001
+#     salary = 4500000
+#     sex = True
+# a = Employee()
+# print(a.name)
+# print(a.idNum)
+# print(a.salary)
+# print(a.sex)
+#
+# '''
+# Kim
+# 17001
+# 4500000
+# True
+# '''
+#
+# # 문제 27
+# hap1 = 10 + 10 % 4 - 10 % 9
+# hap2 = 10 * 10 % 4 - 10 % 9 + 5
+# print("%d, %d" % (hap1, hap2))
+# '''
+# 11, 4
+# '''
+#
+# # 문제 30
+# a, c = 32, -3
+# b = a << 2
+# a >>= 3
+# c = c << 2  # 음수 shift 연산 공부하기..
+# print(a, b, c)
+# '''
+# 4, 128, -12
+# '''
+#
+# # 문제 34
+# i, hap = 0, 0
+# while 1:
+#     i += 1
+#     hap += i
+#     if i >= 100:
+#         break
+# print(hap)
+# '''
+# 5050
+# hap = 100 * 101 // 2
+# '''
+#
+# # 문제 35
+# def change():
+#     global i, j
+#     temp = i
+#     i = j
+#     j = temp
+# i, j = 10, 20
+# change()
+# print(f"i={i}, j={j}")
+# '''
+# swap
+# i=20, j=10
+# '''
+#
+# # 문제 40
+# str = 'Sinagong'
+# n = len(str)
+# st = list()
+# for k in range(n):
+#     st.append(str[k])
+# for k in range(n-1, -1, -1):
+#     print(st[k], end = '')
+# '''
+# gnoganiS
+# '''
+#
+# # 문제 41
+# i, hap = 1, 0
+# while i <= 6:
+#     hap += i
+#     i += 2
+# print(f"i={i}, hap={hap}")
+# '''
+# i=7, hap=9
+# '''
+#
+# # 문제 43
+# a = [[1, 1, 0, 1, 0],
+#      [1, 0, 1, 0]]
+# tot, totsu = 0, 0
+# for i in a:
+#     for j in i:
+#         tot += j
+#     totsu = totsu + len(i)
+# print(totsu, tot)
+# '''
+# 9, 5
+# '''
+#
+# # 문제 49
+# a, b = 1, 1
+# y = a + b
+# n = int(input())
+# for k in range(3, n + 1):
+#     c = a + b
+#     y = y + c
+#     a = b
+#     b = c
+# print(y)
+# '''
+# if n = 8:
+#     y = (4, 7, 12, 20, 33, 54) 순
+# 54
+# '''
 
-'''
-Kim
-17001
-4500000
-True
-'''
-
-# 문제 27
-hap1 = 10 + 10 % 4 - 10 % 9
-hap2 = 10 * 10 % 4 - 10 % 9 + 5
-print("%d, %d" % (hap1, hap2))
-'''
-11, 4
-'''
-
-# 문제 30
-a, c = 32, -3
-b = a << 2
-a >>= 3
-c = c << 2  # 음수 shift 연산 공부하기..
-print(a, b, c)
-'''
-4, 128, -12
-'''
-
-# 문제 34
-i, hap = 0, 0
-while 1:
-    i += 1
-    hap += i
-    if i >= 100:
-        break
-print(hap)
-'''
-5050
-hap = 100 * 101 // 2
-'''
-
-# 문제 35
-def change():
-    global i, j
-    temp = i
-    i = j
-    j = temp
-i, j = 10, 20
-change()
-print(f"i={i}, j={j}")
-'''
-swap
-i=20, j=10
-'''
-
-# 문제 40
-str = 'Sinagong'
-n = len(str)
-st = list()
-for k in range(n):
-    st.append(str[k])
-for k in range(n-1, -1, -1):
-    print(st[k], end = '')
-'''
-gnoganiS
-'''
-
-# 문제 41
-i, hap = 1, 0
-while i <= 6:
-    hap += i
-    i += 2
-print(f"i={i}, hap={hap}")
-'''
-i=7, hap=9
-'''
-
-# 문제 43
-a = [[1, 1, 0, 1, 0],
-     [1, 0, 1, 0]]
-tot, totsu = 0, 0
-for i in a:
-    for j in i:
-        tot += j
-    totsu = totsu + len(i)
-print(totsu, tot)
-'''
-9, 5
-'''
-
-# 문제 49
-a, b = 1, 1
-y = a + b
-n = int(input())
-for k in range(3, n + 1):
-    c = a + b
-    y = y + c
-    a = b
-    b = c
-print(y)
-'''
-if n = 8:
-    y = (4, 7, 12, 20, 33, 54) 순
-54
-'''
+T = int(input())
+for test_case in range(T):
+    w = input()
+    s = input()
+    print("#{} {}".format(test_case + 1, 1 if w in s else 0))
