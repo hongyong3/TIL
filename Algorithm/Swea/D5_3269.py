@@ -42,8 +42,6 @@ DFS 트리란?
         - 이 경우 dt[u] > ft[v]
 
 - 모든 방향성 그래프의 간선들은 이 4가지 중 하나에 속하게 됨. 
-
-
 '''
 
 def GDfs(n):
@@ -85,4 +83,3 @@ for test_case in range(T):
         if not visited[ft2vtx[i]]:
             TDfs(ft2vtx[i], scc)
             scc = sorted(scc)
-    print(scc)
