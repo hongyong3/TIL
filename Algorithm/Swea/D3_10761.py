@@ -1,6 +1,11 @@
 import sys
 sys.stdin = open("D3_10761_input.txt", "r")
 
+def solve1(a, b, ad, bd):
+    if a[0][2] > ad:
+        ad += 1
+
+
 T = int(input())
 for test_case in range(T):
     data = input().split()[1:]
