@@ -16,4 +16,3 @@ for test_case in range(T):
     ans = "NO"
     data = list(map(int, input().split()))
     A, B = [], []
-    for i in range()
