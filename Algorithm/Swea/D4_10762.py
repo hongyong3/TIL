@@ -16,6 +16,7 @@ sys.stdin = open("D4_10762_input.txt", "r")
     An = 2 ** (n - 1) - 1
 
 '''
+# 3 / 100 runtime error
 from itertools import combinations
 T = int(input())
 for test_case in range(T):
