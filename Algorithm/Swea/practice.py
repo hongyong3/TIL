@@ -1112,4 +1112,3 @@ for test_case in range(T):
     ans = "NO"
     data = list(map(int, input().split()))
     a = list(itertools.combinations(data, 1))
-    print(a)
