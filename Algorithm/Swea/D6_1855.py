@@ -24,6 +24,8 @@ for test_case in range(T):
     for i in range(1, N):
         graph[data[n] - 1].append(i)
         n += 1
-
+    print(graph)
+    # 수정...
     for i in range(N):
         sorted(graph[i][0], graph[i][1])
+    print(graph)
