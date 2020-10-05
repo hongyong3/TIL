@@ -14,18 +14,31 @@ LCA Algorithm(Lowest Common Ancestor)
     * depth와 조상을 가지는 트리를 생성
 
 '''
+
 T = int(input())
 for test_case in range(T):
     N = int(input())
     data = list(map(int, input().split()))
-    # graph = [[0] * (N + 1) for _ in range(N + 1)]
     graph = [[] for _ in range(N + 3)]
-    n = 0
-    for i in range(1, N):
-        graph[data[n] - 1].append(i)
-        n += 1
-    print(graph)
-    # 수정...
-    for i in range(N):
-        sorted(graph[i][0], graph[i][1])
-    print(graph)
+    chk = [0] * N
+    d = [0] * N
+    p = [[0] * 23 for _ in range(N + 3)]
+
+    j = 1
+    for i in data:
+        graph[i - 1].append(j)
+        j += 1
+
+    chk[0] = 1
+    q = [(0, 0)]
+
+    while q:
+        node, depth = q.pop(0)
+        d[node] = depth
+
+        for i in graph[node]:
+            nnode = i
+            if not chk[nnode]:
+                chk[nnode] = 1
+                p[nnode][0] = node
+                q.append((nnode, depth + 1))
