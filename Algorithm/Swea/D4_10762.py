@@ -25,10 +25,10 @@ for test_case in range(T):
     data = list(map(int, input().split()))
     ss = sum(data)
     k = 1
-    while k < N // 2 + 1:
+    while k < (N // 2) + 1:
         a = list(combinations(data, k))
         for i in a:
-            x = abs(ss - 2 * sum(i))
+            x = abs(ss - (2 * sum(i)))
             c = not (x & (x - 1))
             if c and x > 1:
                 if ans < ss - sum(i):
