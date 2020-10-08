@@ -7,6 +7,7 @@ for test_case in range(T):
     num = ['0', '1', '2', '3', '4', '5', '6']
     arr = ['0123456']
     data = [list(map(int, input().split())) for _ in range(M)]
+
     c = True
     while c:
         for a, b in data:
