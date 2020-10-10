@@ -37,3 +37,4 @@ for test_case in range(T):
         atoms = new
         count += 1
     print("#{} {}".format(test_case + 1, mat))
+    
