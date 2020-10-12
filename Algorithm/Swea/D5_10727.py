@@ -5,17 +5,25 @@ sys.stdin = open("D5_10727_input.txt", "r")
 시간초과 조심하자 
 '''
 
+# 20 / 29 runtime error
 T = int(input())
 for test_case in range(T):
-    n, m, q = map(int, input().split())
+    N, M, Q = map(int, input().split())
     ans = 0
-    data = [list(map(int, input().split())) for _ in range(n)]
-    maxArr = [[0] * m for _ in range(n)]
+    data = [list(map(int, input().split())) for _ in range(N)]
 
-    for i in range(n):
-        gm = max(data[i])
-        k = 0
-        for j in range(m):
-            maxArr[i][j] = gm
-
-    pass
+    for _ in range(Q):
+        r, c, x = map(int, input().split())
+        data[r - 1][c - 1] = x
+        # 여기에서 가지치기 필요?
+        for i in range(N):
+            chk = True
+            idx = data[i].index(max(data[i]))
+            temp = data[i][idx]
+            for j in range(N):
+                if temp < data[j][idx]:
+                    chk = False
+                    break
+            if chk:
+                ans += 1
+    print("#{} {}".format(test_case + 1, ans))
