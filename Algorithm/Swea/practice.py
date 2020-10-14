@@ -1104,11 +1104,15 @@ sys.stdin = open("practice_input.txt", "r")
 #         mat = N + 1
 #     print("#{} {}".format(test_case + 1, mat))
 
-import itertools
+# import itertools
+#
+# T = int(input())
+# for test_case in range(T):
+#     N = int(input())
+#     ans = "NO"
+#     data = list(map(int, input().split()))
+#     a = list(itertools.combinations(data, 1))
 
-T = int(input())
-for test_case in range(T):
-    N = int(input())
-    ans = "NO"
-    data = list(map(int, input().split()))
-    a = list(itertools.combinations(data, 1))
+for _ in range(3):
+    A, B = map(int, input().split())
+    print(abs(A - B))
