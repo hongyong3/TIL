@@ -1,6 +1,7 @@
 import sys
 sys.stdin = open("D8_3748_input.txt", "r")
 
+# ..? 뭐가 문제인가..
 def takeover(n, m, a, b, k):
     if not n:
         return 0
