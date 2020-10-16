@@ -1113,6 +1113,13 @@ sys.stdin = open("practice_input.txt", "r")
 #     data = list(map(int, input().split()))
 #     a = list(itertools.combinations(data, 1))
 
-for _ in range(3):
-    A, B = map(int, input().split())
-    print(abs(A - B))
+# for _ in range(3):
+#     A, B = map(int, input().split())
+#     print(abs(A - B))
+
+def fib(n):
+    if n in (1, 2):
+        return 1
+    return fib(n - 1) + fib(n - 2)
+fib = memoize(fib)
+print(fib(64))
