@@ -1116,10 +1116,3 @@ sys.stdin = open("practice_input.txt", "r")
 # for _ in range(3):
 #     A, B = map(int, input().split())
 #     print(abs(A - B))
-
-def fib(n):
-    if n in (1, 2):
-        return 1
-    return fib(n - 1) + fib(n - 2)
-fib = memoize(fib)
-print(fib(64))
