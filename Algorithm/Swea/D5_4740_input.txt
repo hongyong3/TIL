@@ -1,4 +1,4 @@
-2
+3
 5 5 5
 #RG#P
 #BR#B
@@ -10,6 +10,14 @@ L
 D
 R
 U RG#GG
+5 5 2
+#RG#P
+#BR#B
+BGY#G
+PRG#G
+GGB#P
+L
+R
 3 7 4
 YBRBB#R
 GRBPB#G
