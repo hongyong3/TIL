@@ -1,4 +1,11 @@
-3
+4
+5 5 1
+#RG#P
+#BR#B
+BGY#G
+PRG#G
+GGB#P
+D
 5 5 5
 #RG#P
 #BR#B
