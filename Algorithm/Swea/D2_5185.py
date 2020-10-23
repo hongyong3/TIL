@@ -72,7 +72,8 @@ def binary(n):
 
 T = int(input())
 for test_case in range(T):
-    N, data = map(str, input().split())
+    # N, data = map(str, input().split())
+    N, data = input().split()
     mat = ''
 
     for i in data:

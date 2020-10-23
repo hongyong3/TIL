@@ -3,6 +3,7 @@ sys.stdin = open("D5_4740_input.txt", "r")
 
 dx = [- 1, 1, 0, 0] # 상 하 좌 우
 dy = [0, 0, - 1, 1]
+visited = [[0] * 30 for _ in range(30)]
 
 def bfs(x, y, c, num):
     q = [(x, y)]
@@ -44,11 +45,16 @@ def delete():
 
 
 def drop():
-    for i in range(N - 1, - 1, - 1):
+    for i in range(N):
         for j in range(M):
-            if data[i][j] == '#':
-                for i in range(N - 1, 0, - 1):
-                    data[i][j], data[i - 1][j] = data[i - 1][j], data[i][j]
+            visited[i][j] = 0
+    for i in range(M):
+        k = 0
+        for j in range(N - 1, - 1, - 1):
+            if data[j][i] == '#':
+                k += 1
+            elif k:
+                data[j + k][i], data[j][i] = data[j][i], data[j + k][i]
 
 
 def up(arr):
@@ -87,26 +93,23 @@ def right():
 
 
 T = int(input())
-for test_case in range(1):
+for test_case in range(T):
     N, M, Q = map(int, input().split())
     data = [list(map(str, input())) for _ in range(N)]
-    visited = [[0] * M for _ in range(N)]
-
-    for i in data:
-        print(''.join(i))
-    print()
 
     for _ in range(Q):
         q = list(map(str, input()))
         if q[0] == 'D':
             delete()
         elif q[0] == 'L':
-            print(1)
             left()
         elif q[0] == 'R':
             right()
         else:
             up(q[2:])
 
+    print("#{}".format(test_case + 1))
+
     for i in data:
         print(''.join(i))
+    print()
