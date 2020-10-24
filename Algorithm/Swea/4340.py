@@ -1,10 +1,9 @@
 import sys
 sys.stdin = open("4340_input.txt", "r")
 
-# dx = [1, 0, - 1, 0]  # 회전; 하, 우, 상, 좌
-# dy = [0, 1, 0, - 1]
-#
-#
+dx = [1, 0, - 1, 0]  # 회전; 하, 우, 상, 좌
+dy = [0, 1, 0, - 1]
+
 # def dfs(x, y, d, cnt):  # 행, 열, 방향, 횟수
 #     global ans
 #     nx = x + dx[d]
@@ -38,9 +37,12 @@ sys.stdin = open("4340_input.txt", "r")
 #     print(f"#{test_case + 1} {ans + 2}")
 
 # 22 / 50 runtime error
-dx = [1, 0, - 1, 0]  # 회전; 하, 우, 상, 좌
-dy = [0, 1, 0, - 1]
 
+'''
+1. 시간 줄이기
+2. 메모리 줄이기,,
+
+'''
 
 def dfs(x, y, d, cnt):  # 행, 열, 방향, 횟수
     global ans
