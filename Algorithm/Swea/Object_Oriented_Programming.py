@@ -469,7 +469,7 @@ child.print_info()
 
 # -*- coding: utf-8 -*-
 
-# Practice_Object_Oriented_Programming.py
+# Object_Oriented_Programming.py
 
 # Student 클래스
 # - Private Field를 가지고 있음
