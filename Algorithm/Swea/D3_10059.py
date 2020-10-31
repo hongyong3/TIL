@@ -3,16 +3,15 @@ sys.stdin = open("D3_10059_input.txt", "r")
 
 T = int(input())
 for test_case in range(T):
-    # N = list(map(str, input()))
     N = input()
     x, y = int(N[:2]), int(N[2:])
-    ans = 'AMBIGUOUS'
-    if x > 12:
-        if y > 12:
-            ans = 'NA'
-        else:
-            ans = 'YYMM'
+
+    if 0 < x < 13 and 0 < y < 13:
+        ans = "AMBIGUOUS"
+    elif 0 < x < 13 and not (0 < y < 13):
+        ans = "MMYY"
+    elif not (0 < x < 13) and 0 < y < 13:
+        ans = "YYMM"
     else:
-        if y > 12:
-            ans = 'MMYY'
+        ans = "NA"
     print("#{} {}".format(test_case + 1, ans))
