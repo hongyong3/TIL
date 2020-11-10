@@ -15,4 +15,4 @@ for test_case in range(T):
     tree = [pow(2, i) for i in range(11)]
     for i in range(tree[N] - 1):
         tree[i] = data[i]
-    print(tree)
+    
