@@ -18,4 +18,4 @@ for test_case in range(T):
                 chk[i] += 1
                 if chk[i] == 1:
                     ans += int(Ndata[i][1])
-    print(ans)
+    print("#{} {}".format(test_case + 1, ans))
