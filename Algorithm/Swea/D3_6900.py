@@ -1,7 +1,6 @@
 import sys
 sys.stdin = open("D3_6900_input.txt", "r")
 
-# c++ 공부좀 더하자..ㅠ
 T = int(input())
 for test_case in range(T):
     N, M = map(int, input().split())

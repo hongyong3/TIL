@@ -1,5 +1,5 @@
 import sys
-sys.stdin = open("D3_6913_input.txt", "r")
+sys.stdin = open("D3_6958_input.txt", "r")
 
 T = int(input())
 for test_case in range(T):
