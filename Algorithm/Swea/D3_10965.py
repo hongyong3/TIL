@@ -30,4 +30,3 @@ for test_case in range(T):
         if (i + 1) * (i + 1) > N and (i + 1) * (i + 1) % N == 0:
             ans = (i + 1) * (i + 1) // N
             break
-    print(ans)
