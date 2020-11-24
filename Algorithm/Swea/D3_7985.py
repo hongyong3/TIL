@@ -1,20 +1,17 @@
 import sys
 sys.stdin = open("D3_7985_input.txt", "r")
 
-def solve(s, e, depth):
-    global N
-    if depth > N:
-        return
-    m = (e - s) // 2
-    tree[depth].append(data[m])
-    solve(m - s, m, depth + 1)
-    solve(m, e, depth + 1)
-
-
 T = int(input())
 for test_case in range(T):
     N = int(input())
     data = list(map(int, input().split()))
-    tree = [[] for _ in range(N)]
-    print(data)
-    # solve(0, 2 ** N - 1, 0)
+    k = 2 << N - 1
+
+    for i in range(N):
+        for j in range(pow(2, i)):
+            idx = (k - 1) // pow(2, i + 1) + (j * pow(2, N - i))
+            if i == 0:
+                print("#{} {}".format(test_case + 1, data[idx]), end = "")
+            else:
+                print(data[idx], end=" ")
+        print()

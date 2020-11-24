@@ -55,7 +55,6 @@ T = int(input())
 for test_case in range(2):
     N = int(input())
     data = [list(map(int, input().split())) for _ in range(N)]
-    print(data)
     answer = float('inf')
     check = [0] * 20
     solve(0, 0)
