@@ -17,24 +17,36 @@ sys.stdin = open("D4_10762_input.txt", "r")
 
 '''
 # 3 / 100 runtime error
-from itertools import combinations
+# from itertools import combinations
+# T = int(input())
+# for test_case in range(T):
+#     N = int(input())
+#     ans = - 1
+#     data = list(map(int, input().split()))
+#     ss = sum(data)
+#     k = 1
+#     while k < (N // 2) + 1:
+#         a = list(combinations(data, k))
+#         for i in a:
+#             x = abs(ss - (2 * sum(i)))
+#             c = not (x & (x - 1))
+#             if c and x > 1:
+#                 if ans < ss - sum(i):
+#                     ans = ss - sum(i)
+#         k += 1
+#     if ans == - 1:
+#         ans = "NO"
+#
+#     print("#{} {}".format(test_case + 1, ans))
+
 T = int(input())
 for test_case in range(T):
     N = int(input())
-    ans = - 1
     data = list(map(int, input().split()))
-    ss = sum(data)
-    k = 1
-    while k < (N // 2) + 1:
-        a = list(combinations(data, k))
-        for i in a:
-            x = abs(ss - (2 * sum(i)))
-            c = not (x & (x - 1))
-            if c and x > 1:
-                if ans < ss - sum(i):
-                    ans = ss - sum(i)
-        k += 1
-    if ans == - 1:
-        ans = "NO"
-
+    a = 0
+    ans = "NO"
+    for i in data:
+        a ^= i
+    if not a:
+        ans = sum(data) - min(data)
     print("#{} {}".format(test_case + 1, ans))
