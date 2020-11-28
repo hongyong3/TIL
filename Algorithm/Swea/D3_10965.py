@@ -23,7 +23,6 @@ sys.stdin = open("D3_10965_input.txt", "r")
 #     print("#{} {}".format(test_case + 1, ans))
 
 # Runtime Error 15002 // 100000
-# ..??
 T = int(input())
 for test_case in range(1):
     N = int(input())
