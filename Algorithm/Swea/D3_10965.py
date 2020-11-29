@@ -27,6 +27,7 @@ T = int(input())
 for test_case in range(1):
     N = int(input())
     a, b = 4, 2
+
     while a <= N:
         if not N % a:
             N //= a
