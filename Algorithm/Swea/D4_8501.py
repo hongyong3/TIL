@@ -7,8 +7,8 @@ z = 1
 for i in range(3, 1001):
     z *= (i - 1)
     arr[i] = (i * arr[i - 1] + (i // 2) * z) % 1000000007
-    print(arr[i])
-# T = int(input())
-# for test_case in range(T):
-#     N = int(input())
-#     print("#{} {}".format(test_case + 1, arr[N]))
+
+T = int(input())
+for test_case in range(T):
+    N = int(input())
+    print("#{} {}".format(test_case + 1, arr[N]))
