@@ -5,3 +5,5 @@ T = int(input())
 for test_case in range(T):
     p, q, r = map(int, input().split())
     a, b, c, d = map(int, input().split())
+    print(p, q, r)
+    print(a, b, c, d)
