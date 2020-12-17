@@ -1136,12 +1136,42 @@ sys.stdin = open("practice_input.txt", "r")
 #         print("#{} {}".format(test_case + 1, 'Good'))
 
 
-T = int(input())
-for test_case in range(T):
-    N = int(input())
-    data = list(map(int, input().split()))
-    ans = []
-    for i in data:
-        ans.append(abs(i))
-    ans.sort()
-    print("#{} {} {}".format(test_case + 1, ans[0], ans.count(ans[0])))
+# T = int(input())
+# for test_case in range(T):
+#     N = int(input())
+#     data = list(map(int, input().split()))
+#     ans = []
+#     for i in data:
+#         ans.append(abs(i))
+#     ans.sort()
+#     print("#{} {} {}".format(test_case + 1, ans[0], ans.count(ans[0])))
+
+# Dynamic Programming
+
+# def cutRod(n):
+#     for j in range(1, n + 1):
+#         q = - 1
+#         for i in range(1, j + 1):
+#             q = max(q, p[i] + r[j - i])
+#         r[j] = q
+#     return r[n]
+#
+# p = [0, 1, 5, 8, 9, 10, 17, 17, 20, 24, 30]
+# r = [0] * 11
+# cutRod(10)
+# print(r[3])
+
+def zerooneknapsack(item, cap):
+    memo = [[0] * (cap + 1) for _ in range(len(item))]
+    for i in range(len(item)):
+        for j in range(cap + 1):
+            if i == 0 or j == 0:
+                memo[i][j] = 0
+            elif item[i - 1][2] > j:
+                memo[i][j] = memo[i - 1][j]
+            else:
+                memo[i][j] = max(memo[i - 1][j], memo[i - 1][j - item[i - 1][2]] + item[i - 1][1])
+    return memo[len(item)][cap + 1]
+
+item = [[1, 60, 1], [2, 100, 2], [3, 120, 3]]
+zerooneknapsack(item, 5)
