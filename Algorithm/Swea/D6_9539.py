@@ -1,6 +1,7 @@
 import sys
 sys.stdin = open("D6_9539_input.txt", "r")
 
+# Runtime Error...
 def solve(week, day, total):
     global ans
     if day > 6:
