@@ -7,4 +7,3 @@ for test_case in range(T):
     for _ in range(N):
         x, y = map(int, input().split())
         distance = (x ** 2 + y ** 2) ** 0.5
-        print(distance)
