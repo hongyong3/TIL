@@ -8,5 +8,5 @@ for test_case in range(T):
     ans = 0
     for _ in range(N):
         x, y = map(int, input().split())
-        ans += int(220 - pow(x ** 2 + y ** 2, 0.5)) // 20
+        ans += int(220 - (x ** 2 + y ** 2) ** 0.5) // 20
     print("#{} {}".format(test_case + 1, ans))
