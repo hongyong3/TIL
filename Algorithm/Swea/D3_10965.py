@@ -23,15 +23,30 @@ sys.stdin = open("D3_10965_input.txt", "r")
 #     print("#{} {}".format(test_case + 1, ans))
 
 # Runtime Error 15002 // 100000
-T = int(input())
-for test_case in range(1):
-    N = int(input())
-    a, b = 4, 2
+# T = int(input())
+# for test_case in range(1):
+#     N = int(input())
+#     a, b = 4, 2
+#
+#     while a <= N:
+#         if not N % a:
+#             N //= a
+#         else:
+#             b += 1
+#             a = b * b
+#     print("#{} {}".format(test_case + 1, N))
 
-    while a <= N:
-        if not N % a:
-            N //= a
-        else:
-            b += 1
-            a = b * b
-    print("#{} {}".format(test_case + 1, N))
+num = []
+k = 1
+while k * k <= 10000000:
+    num.append(k * k)
+    k += 1
+print(num)
+# T = int(input())
+# for test_case in range(T):
+#     N = int(input())
+#     for i in num:
+#         if not i % N:
+#             ans = i // N
+#             break
+#     print("#{} {}".format(test_case + 1, ans))
