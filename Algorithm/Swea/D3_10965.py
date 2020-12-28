@@ -41,12 +41,12 @@ k = 1
 while k * k <= 10000000:
     num.append(k * k)
     k += 1
-print(num)
-# T = int(input())
-# for test_case in range(T):
-#     N = int(input())
-#     for i in num:
-#         if not i % N:
-#             ans = i // N
-#             break
-#     print("#{} {}".format(test_case + 1, ans))
+
+T = int(input())
+for test_case in range(T):
+    N = int(input())
+    for i in num:
+        if not i % N:
+            ans = i // N
+            break
+    print("#{} {}".format(test_case + 1, ans))
