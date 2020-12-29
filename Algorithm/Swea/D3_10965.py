@@ -36,17 +36,31 @@ sys.stdin = open("D3_10965_input.txt", "r")
 #             a = b * b
 #     print("#{} {}".format(test_case + 1, N))
 
-num = []
-k = 1
-while k * k <= 10000000:
-    num.append(k * k)
-    k += 1
+num = [2]
+for i in range(3, int(10000000 ** (0.5)), 2):
+    for j in num:
+        if not i % j:
+            break
+    else:
+        num.append(i)
 
+ans = []
 T = int(input())
 for test_case in range(T):
     N = int(input())
-    for i in num:
-        if not i % N:
-            ans = i // N
-            break
-    print("#{} {}".format(test_case + 1, ans))
+    res = 1
+    if N ** 0.5 != int(N ** 0.5):
+        for i in num:
+            cnt = 0
+            while not N % i:
+                N //= i
+                cnt += 1
+            if cnt % 2:
+                res *= i
+            if N == 1 or i > N:
+                break
+        if N > 1:
+            res *= N
+    ans.append("#{} {}".format(test_case + 1, res))
+for i in ans:
+    print(i)
