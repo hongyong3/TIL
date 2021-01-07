@@ -64,17 +64,16 @@ for test_case in range(T):
                 water.add(i + j)
             else:
                 land.append(i + j)
-    water = sorted(list(water))
-    land = sorted(land)
-    for i in land:
+
+    for i in sorted(land):
         d = float('inf')
-        for j in water:
+        for j in sorted(water):
             temp = abs(i - j)
-            if not temp:
-                d = 1
-                break
-            else:
+            if temp:
                 if d >= temp:
                     d = temp
+            else:
+                d = 1
+                break
         ans += d
     print("#{} {}".format(test_case + 1, ans))
