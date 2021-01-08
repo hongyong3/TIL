@@ -7,11 +7,10 @@ for test_case in range(T):
     data = [list(map(int, input().split())) for _ in range(N)]
     P = int(input())
     C = [int(input()) for _ in range(P)]
-    mat = [0] * P
+    ans = [0] * P
 
-    for i in range(N):
+    for i in data:
         for j in range(P):
-            if data[i][0] <= C[j] <= data[i][1]:
-                mat[j] += 1
-    print("#{} ".format(test_case + 1), end = "")
-    print(*mat)
+            if i[0] <= C[j] <= i[1]:
+                ans[j] += 1
+    print("#{}".format(test_case + 1), *ans)
