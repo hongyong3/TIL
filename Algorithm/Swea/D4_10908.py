@@ -18,5 +18,6 @@ for test_case in range(T):
             cnt += 1
         N //= 2
     ans.append(M + 1 - int(pow(2, cnt)))
+    
 for i in range(T):
     print("#{} {}".format(i + 1, ans[i]))
