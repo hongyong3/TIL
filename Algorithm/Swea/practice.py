@@ -1161,17 +1161,39 @@ sys.stdin = open("practice_input.txt", "r")
 # cutRod(10)
 # print(r[3])
 
-def zerooneknapsack(item, cap):
-    memo = [[0] * (cap + 1) for _ in range(len(item))]
-    for i in range(len(item)):
-        for j in range(cap + 1):
-            if i == 0 or j == 0:
-                memo[i][j] = 0
-            elif item[i - 1][2] > j:
-                memo[i][j] = memo[i - 1][j]
-            else:
-                memo[i][j] = max(memo[i - 1][j], memo[i - 1][j - item[i - 1][2]] + item[i - 1][1])
-    return memo[len(item)][cap + 1]
+# def zerooneknapsack(item, cap):
+#     memo = [[0] * (cap + 1) for _ in range(len(item))]
+#     for i in range(len(item)):
+#         for j in range(cap + 1):
+#             if i == 0 or j == 0:
+#                 memo[i][j] = 0
+#             elif item[i - 1][2] > j:
+#                 memo[i][j] = memo[i - 1][j]
+#             else:
+#                 memo[i][j] = max(memo[i - 1][j], memo[i - 1][j - item[i - 1][2]] + item[i - 1][1])
+#     return memo[len(item)][cap + 1]
+#
+# item = [[1, 60, 1], [2, 100, 2], [3, 120, 3]]
+# zerooneknapsack(item, 5)
 
-item = [[1, 60, 1], [2, 100, 2], [3, 120, 3]]
-zerooneknapsack(item, 5)
+
+T = int(input())
+for test_case in range(T):
+    x1, y1, r1, x2, y2, r2 = map(int, input().split())
+
+    d = (x1 - x2) ** 2 + (y1 - y2) ** 2
+
+    if r1 == r2 and x1 == x2 and y1 == y2:
+        ans = - 1
+    elif d > (r1 + r2) ** 2:
+        ans = 0
+    elif d == (r1 + r2) ** 2:
+        ans = 1
+    else:
+        if d > (r2 - r1) ** 2:
+            ans = 2
+        elif d == (r2 - r1) ** 2:
+            ans = 1
+        else:
+            ans = 0
+    print(ans)

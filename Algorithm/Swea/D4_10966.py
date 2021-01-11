@@ -66,7 +66,7 @@ for test_case in range(T):
                 land.append(i + j)
 
     for i in sorted(land):
-        d = float('inf')
+        d = 2001
         for j in sorted(water):
             temp = abs(i - j)
             if temp:

@@ -1,11 +1,11 @@
 import sys
 sys.stdin = open("D4_10908_input.txt", "r")
 
-def pow(a, n):
+def solve(a, n):
     if n == 0:
         return 1
     else:
-        return a * pow(a, n - 1)
+        return a * solve(a, n - 1)
 
 T = int(input())
 ans = []
@@ -17,7 +17,7 @@ for test_case in range(T):
         if N % 2:
             cnt += 1
         N //= 2
-    ans.append(M + 1 - int(pow(2, cnt)))
+    ans.append(M + 1 - int(solve(2, cnt)))
     
 for i in range(T):
     print("#{} {}".format(i + 1, ans[i]))
