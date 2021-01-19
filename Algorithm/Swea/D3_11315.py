@@ -16,7 +16,7 @@ def dfs(x, y, cnt):
         if 0 <= nx < N and 0 <= ny < N and data[nx][ny] == 'o':
             # 한 방향으로만 갈 수 있도록 ex) while이라던가 방향을 고정하기...
             # 가로, 세로, 우상, 우하
-            pass
+
 
 
 
