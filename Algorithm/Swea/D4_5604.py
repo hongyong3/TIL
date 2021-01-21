@@ -11,7 +11,7 @@ def solve(num, n):
 
     for i in range(idx - 1, - 1, - 1):
         if i:
-            arr[n] += int(45 * (i) * pow(10, (i) - 1) * arr[i] + ((arr[i] * (arr[i] - 1)) // 2) * pow(10, i) + count * arr[i] * pow(10, i))
+            arr[n] += int(45 * i * pow(10, i - 1) * arr[i] + ((arr[i] * (arr[i] - 1)) // 2) * pow(10, i) + count * arr[i] * pow(10, i))
             # ans[n] += int(45 * (i) * pow(10, (i) - 1) * arr[i])
             # ans[n] += int(((arr[i] * (arr[i] - 1)) // 2) * pow(10, i))
             # ans[n] += int(count * arr[i] * pow(10, i))
