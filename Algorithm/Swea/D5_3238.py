@@ -12,23 +12,44 @@ n_(i)_ < m_(i)_ 이면 결과는 0
 예를 들어
 
 '''
-mat = [0] * 100000
-mat[0] = 1
+# mat = [0] * 100000
+# mat[0] = 1
+# T = int(input())
+# for test_case in range(T):
+#     n, r, p = map(int, input().split())
+#     for i in range(1, p):
+#         mat[i] = (mat[i - 1] * i) % p
+#     mat = 1
+#     while n or r:
+#         nn = n % p
+#         rr = r % p
+#         if nn < rr:
+#             mat = 0
+#             break
+#         mat = (mat * mat[nn]) % p
+#         for i in range(p - 2):
+#             mat = ((mat * mat[rr]) % p * mat[nn - rr]) % p
+#         n //= p
+#         r //= p
+#     print("#{} {}".format(test_case + 1, mat))
+
+arr = [0] * 100000
+arr[0] = 1
 T = int(input())
 for test_case in range(T):
     n, r, p = map(int, input().split())
     for i in range(1, p):
-        mat[i] = (mat[i - 1] * i) % p
-    mat = 1
+        arr[i] = (arr[i - 1] * i) % p
+    ans = 1
     while n or r:
         nn = n % p
         rr = r % p
         if nn < rr:
-            mat = 0
+            ans = 0
             break
-        mat = (mat * mat[nn]) % p
+        ans = (ans * arr[nn]) % p
         for i in range(p - 2):
-            mat = ((mat * mat[rr]) % p * mat[nn - rr]) % p
+            ans = ((ans * arr[rr]) % p * arr[nn - rr]) % p
         n //= p
         r //= p
-    print("#{} {}".format(test_case + 1, mat))
+    print("#{} {}".format(test_case + 1, ans))
