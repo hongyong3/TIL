@@ -103,8 +103,8 @@ for test_case in range(T):
     chk = [0] * N
     d = [0] * N
     p = [[0] * 23 for _ in range(N + 3)]
-
     j = 1
+    
     for i in data:
         graph[i - 1].append(j)
         j += 1
