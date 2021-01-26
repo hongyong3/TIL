@@ -1179,21 +1179,8 @@ sys.stdin = open("practice_input.txt", "r")
 
 T = int(input())
 for test_case in range(T):
-    x1, y1, r1, x2, y2, r2 = map(int, input().split())
-
-    d = (x1 - x2) ** 2 + (y1 - y2) ** 2
-
-    if r1 == r2 and x1 == x2 and y1 == y2:
-        ans = - 1
-    elif d > (r1 + r2) ** 2:
-        ans = 0
-    elif d == (r1 + r2) ** 2:
-        ans = 1
-    else:
-        if d > (r2 - r1) ** 2:
-            ans = 2
-        elif d == (r2 - r1) ** 2:
-            ans = 1
-        else:
-            ans = 0
-    print(ans)
+    D, L, N = map(int, input().split())
+    i,ans = 0, 0
+    for i in range(N):
+        ans += D * (1 + i * L * 0.01) * N
+    print(int(ans))
