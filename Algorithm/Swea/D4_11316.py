@@ -17,6 +17,6 @@ for test_case in range(T):
         idx += 1
     for j in range(idx):
         if num == A[j]:
-            jdx = j
+            idx -= j
             break
-    print("#{} {}".format(test_case + 1, idx - jdx))
+    print("#{} {}".format(test_case + 1, idx))
