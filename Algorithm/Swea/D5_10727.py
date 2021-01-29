@@ -29,32 +29,105 @@ sys.stdin = open("D5_10727_input.txt", "r")
 #                 ans += 1
 #     print("#{} {}".format(test_case + 1, ans))
 
+# T = int(input())
+# for test_case in range(1):
+#     N, M, Q = map(int, input().split())
+#     data = [list(map(int, input().split())) for _ in range(N)]
+#     col, row = [0] * N, [0] * M
+#     ans = 0
+#
+#     for i in range(N):
+#         col[i] = max(data[i])
+#
+#     for j in range(M):
+#         maxRow = 0
+#         for i in range(N):
+#             if maxRow < data[i][j]:
+#                 maxRow = data[i][j]
+#         row[j] = maxRow
+#
+#     for _ in range(Q):
+#         r, c, x = map(int, input().split())
+#         data[r - 1][c - 1] = x
+#         if x > col[r - 1] and x > row[c - 1]:
+#             ans += 1
+#         if col[r - 1] < x:
+#             col[r - 1] = x
+#         if row[c - 1] < x:
+#             row[c - 1] = x
+
+def argmax(l):
+    f = lambda x: l[x]
+    return max(range(len(l)), key=f)
+
+
+def checker(ridx, cidx, n, m):
+    count = 0
+
+    if n < m:
+        fidx = ridx
+        lidx = cidx
+        it = n
+    else:
+        fidx = cidx
+        lidx = ridx
+        it = m
+    for k in range(it):
+        count += (lidx[fidx[k]] == k)
+    return count
+
+
+def updateToCarry(nr, nc, nx, rv, cv, ra, ca, init):
+    rM = rv[nr - 1]
+    cM = cv[nc - 1]
+    if rM == cM:
+        rv[nr - 1] = nx
+        cv[nc - 1] = nx
+        return init
+
+    prev_1 = ca[ra[nr - 1]] == nr - 1
+    prev_2 = ra[ca[nc - 1]] == nc - 1
+    is_rn = rM < nx
+    is_cn = cM < nx
+
+    if nx < rM and nx < cM:
+        return init
+
+    if is_rn:
+        rv[nr - 1] = nx
+        ra[nr - 1] = nc - 1
+
+    if is_cn:
+        cv[nc - 1] = nx
+        ca[nc - 1] = nr - 1
+
+    return init - prev_1 * is_rn - prev_2 * is_cn + is_rn * is_cn
+
+
 T = int(input())
 for test_case in range(1):
     N, M, Q = map(int, input().split())
-    data = [list(map(int, input().split())) for _ in range(N)]
-    col, row = [0] * N, [0] * M
-    ans = 0
-
+    ra = [0] * N
+    ca = [0] * M
+    rv = [0] * N
     for i in range(N):
-        col[i] = max(data[i])
+        row = list(map(int, input().split()))
+        ra[i] = argmax(row)
+        rv[i] = max(row)
+        if i == 0:
+            cv = row
+        else:
+            for j in range(M):
+                if row[j] > cv[j]:
+                    cv[j] = row[j]
+                    ca[j] = i
 
-    for j in range(M):
-        maxRow = 0
-        for i in range(N):
-            if maxRow < data[i][j]:
-                maxRow = data[i][j]
-        row[j] = maxRow
-
+    init_carry = checker(ra, ca, N, M)
+    ans = 0
     for _ in range(Q):
         r, c, x = map(int, input().split())
-        data[r - 1][c - 1] = x
-        if x > col[r - 1] and x > row[c - 1]:
-            ans += 1
-        if col[r - 1] < x:
-            col[r - 1] = x
-        if row[c - 1] < x:
-            row[c - 1] = x
+        init = updateToCarry(r, c, x, rv, cv, ra, ca, init_carry)
+        ans += init
+        init_carry = init
 
-    print(row)
-    print(col)
+    print("#{} {}".format(test_case + 1, ans))
