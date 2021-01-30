@@ -56,6 +56,10 @@ sys.stdin = open("D5_10727_input.txt", "r")
 #         if row[c - 1] < x:
 #             row[c - 1] = x
 
+
+# chk님의 풀이
+# 아직 이해를 못함..
+# 즉 내가 풀은게 아님...
 def argmax(l):
     f = lambda x: l[x]
     return max(range(len(l)), key=f)
