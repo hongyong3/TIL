@@ -58,8 +58,8 @@ sys.stdin = open("D5_10727_input.txt", "r")
 
 
 # chk님의 풀이
-# 아직 이해를 못함..
-# 즉 내가 풀은게 아님...
+# 아직 이해를 못함..ㅠㅠ
+
 def argmax(l):
     f = lambda x: l[x]
     return max(range(len(l)), key=f)
