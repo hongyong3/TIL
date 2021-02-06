@@ -1177,10 +1177,14 @@ sys.stdin = open("practice_input.txt", "r")
 # zerooneknapsack(item, 5)
 
 
-T = int(input())
-for test_case in range(T):
-    D, L, N = map(int, input().split())
-    i,ans = 0, 0
-    for i in range(N):
-        ans += D * (1 + i * L * 0.01) * N
-    print(int(ans))
+# T = int(input())
+# for test_case in range(T):
+#     D, L, N = map(int, input().split())
+#     i,ans = 0, 0
+#     for i in range(N):
+#         ans += D * (1 + i * L * 0.01) * N
+#     print(int(ans))
+
+n, m = 3, 5
+a, b, c = (1, 2, 3) if n > m else (3, 2, 1)
+print(a, b, c)

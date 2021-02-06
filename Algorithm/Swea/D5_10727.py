@@ -58,23 +58,16 @@ sys.stdin = open("D5_10727_input.txt", "r")
 
 
 # chk님의 풀이
-# 아직 이해를 못함..ㅠㅠ
 def argmax(l):
     f = lambda x: l[x]
     return max(range(len(l)), key=f)
 
 
-def checker(ridx, cidx, n, m):
+def checker(ridx, cidx):
     count = 0
 
-    if n < m:
-        fidx = ridx
-        lidx = cidx
-        it = n
-    else:
-        fidx = cidx
-        lidx = ridx
-        it = m
+    fidx, lidx, it = (cidx, ridx, M) if N > M else (ridx, cidx, N)
+
     for k in range(it):
         count += (lidx[fidx[k]] == k)
     return count
@@ -108,7 +101,7 @@ def updateToCarry(nr, nc, nx, rv, cv, ra, ca, init):
 
 
 T = int(input())
-for test_case in range(1):
+for test_case in range(T):
     N, M, Q = map(int, input().split())
     ra = [0] * N
     ca = [0] * M
@@ -125,7 +118,7 @@ for test_case in range(1):
                     cv[j] = row[j]
                     ca[j] = i
 
-    init_carry = checker(ra, ca, N, M)
+    init_carry = checker(ra, ca)
     ans = 0
     for _ in range(Q):
         r, c, x = map(int, input().split())
