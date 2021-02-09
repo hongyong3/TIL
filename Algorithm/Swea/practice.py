@@ -1185,6 +1185,7 @@ sys.stdin = open("practice_input.txt", "r")
 #         ans += D * (1 + i * L * 0.01) * N
 #     print(int(ans))
 
-n, m = 3, 5
-a, b, c = (1, 2, 3) if n > m else (3, 2, 1)
-print(a, b, c)
+T = int(input())
+for test_case in range(T):
+    P = input()
+    Q = input()
