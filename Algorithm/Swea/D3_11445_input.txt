@@ -1,0 +1,15 @@
+7
+aaa
+aa
+aa
+aab
+aaa
+ab
+a
+aa
+dog
+cat
+cat
+dog
+man
+mana
