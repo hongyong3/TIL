@@ -1185,7 +1185,7 @@ sys.stdin = open("practice_input.txt", "r")
 #         ans += D * (1 + i * L * 0.01) * N
 #     print(int(ans))
 
-T = int(input())
-for test_case in range(T):
-    P = input()
-    Q = input()
+# T = int(input())
+# for test_case in range(T):
+#     P = input()
+#     Q = input()

@@ -1,20 +1,7 @@
 import sys
 sys.stdin = open("D3_11445_input.txt", "r")
 
-T = int(input())
-for test_case in range(T):
-    P, Q = input(), input()
-    data = sorted([Q, P])
-    ans = 'Y'
-    if data[0] == Q:
-        ans = 'N'
-    else:
-        if len(P) < len(Q):
-            i = len(P)
-            if P == Q[: i] and Q[i] == 'a' and len(Q) == i + 1:
-                ans = 'N'
-    print("#{} {}".format(test_case + 1, ans))
-
+# 76 / 100
 # T = int(input())
 # for test_case in range(3):
 #     P = input()
@@ -36,3 +23,32 @@ for test_case in range(T):
 #         if j < len(Q) and Q[j] == 'a':
 #             ans = 'N'
 #     print("#{} {}".format(test_case + 1, ans))
+
+# 76 / 100
+# T = int(input())
+# for test_case in range(T):
+#     p, q = input().replace(" ", ""), input().replace(" ", "")
+#     ans = 'Y'
+#     chk = True
+#     i, j = 0, 0
+#
+#     while chk and i < len(p):
+#         if p[i] < q[j]:
+#             chk = False
+#         else:
+#             i += 1
+#             j += 1
+#     if len(q) - len(p) == 1 and q[- 1] == 'a':
+#         ans = 'N'
+#     print("#{} {}".format(test_case + 1, ans))
+
+# 76 / 100
+T = int(input())
+for test_case in range(T):
+    p, q = input().replace(" ", ""), input().replace(" ", "")
+    if len(q) - len(p) == 1:
+        if q[- 1] == 'a':
+            ans = 'N'
+    else:
+        ans = 'Y'
+    print("#{} {}".format(test_case + 1, ans))
