@@ -1189,3 +1189,38 @@ sys.stdin = open("practice_input.txt", "r")
 # for test_case in range(T):
 #     P = input()
 #     Q = input()
+
+# 프로그래머스 문제
+def build(arr):
+    for x, y, a in arr:
+        if a:  # 보
+            if (x, y - 1, 0) not in arr:
+                if (x + 1, y - 1, 0) not in arr:
+                    if (x - 1, y, 1) not in arr:
+                        if (x + 1, y, 1) not in arr:
+                            return True
+        else:  # 기둥
+            if y:
+                if (x, y - 1, 0) not in arr:
+                    if (x - 1, y, 1) not in arr:
+                        if (x, y, 1) not in arr:
+                            return True
+    return False
+
+
+def solution(n, build_frame):
+    arr = set()
+    for x, y, a, b in build_frame:
+        val = (x, y, a)
+        if b:  # 설치
+            arr.add(val)
+            if build(arr):
+                arr.remove(arr)
+        else:  # 삭제
+            if val in arr:  # 만약 있다면 삭제
+                arr.remove(val)
+                if build(arr):
+                    arr.add(val)
+
+    ans = map(list, arr)
+    return sorted(ans, key=lambda x: (x[0], x[1], x[2]))
