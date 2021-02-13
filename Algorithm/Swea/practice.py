@@ -1191,36 +1191,114 @@ sys.stdin = open("practice_input.txt", "r")
 #     Q = input()
 
 # 프로그래머스 문제
-def build(arr):
-    for x, y, a in arr:
-        if a:  # 보
-            if (x, y - 1, 0) not in arr:
-                if (x + 1, y - 1, 0) not in arr:
-                    if (x - 1, y, 1) not in arr:
-                        if (x + 1, y, 1) not in arr:
-                            return True
-        else:  # 기둥
-            if y:
-                if (x, y - 1, 0) not in arr:
-                    if (x - 1, y, 1) not in arr:
-                        if (x, y, 1) not in arr:
-                            return True
-    return False
+# def build(arr):
+#     for x, y, a in arr:
+#         if a:  # 보
+#             if (x, y - 1, 0) not in arr:
+#                 if (x + 1, y - 1, 0) not in arr:
+#                     if (x - 1, y, 1) not in arr:
+#                         if (x + 1, y, 1) not in arr:
+#                             return True
+#         else:  # 기둥
+#             if y:
+#                 if (x, y - 1, 0) not in arr:
+#                     if (x - 1, y, 1) not in arr:
+#                         if (x, y, 1) not in arr:
+#                             return True
+#     return False
+#
+#
+# def solution(n, build_frame):
+#     arr = set()
+#     for x, y, a, b in build_frame:
+#         val = (x, y, a)
+#         if b:  # 설치
+#             arr.add(val)
+#             if build(arr):
+#                 arr.remove(arr)
+#         else:  # 삭제
+#             if val in arr:  # 만약 있다면 삭제
+#                 arr.remove(val)
+#                 if build(arr):
+#                     arr.add(val)
+#
+#     ans = map(list, arr)
+#     return sorted(ans, key=lambda x: (x[0], x[1], x[2]))
 
+# 프로그래머스 문제 베스트앨범
+# def solution(genres, plays):
+#     arr = {}  # 각 장르별 재생 횟수
+#     for genre, play in zip(genres, plays):
+#         if genre not in arr:
+#             arr[genre] = play
+#         else:
+#             arr[genre] += play
+#
+#     idxDicts = {}
+#     for idx, data in enumerate(zip(genres, plays)):
+#         genre, play = data[0], data[1]
+#         genre_cnt = arr[genre]
+#         if genre in idxDicts:
+#             idxDicts[genre].append([genre_cnt, play, idx])
+#             idxDicts[genre] = sorted(idxDicts[genre], key=lambda x: -x[1])[:2]
+#         else:
+#             idxDicts[genre] = [[genre_cnt, play, idx]]
+#
+#     answer = sum(idxDicts.values(), [])
+#     answer = sorted(answer, key=lambda x: (-x[0], -x[1], x[2]))
+#
+#     return [i[2] for i in answer]
+#
+#
+# genres = list(map(str, input().split()))
+# plays = list(map(int, input().split()))
+# solution(genres, plays)
 
-def solution(n, build_frame):
-    arr = set()
-    for x, y, a, b in build_frame:
-        val = (x, y, a)
-        if b:  # 설치
-            arr.add(val)
-            if build(arr):
-                arr.remove(arr)
-        else:  # 삭제
-            if val in arr:  # 만약 있다면 삭제
-                arr.remove(val)
-                if build(arr):
-                    arr.add(val)
+# 프로그래머스 문제 기능개발
+# def solution(progresses, speeds):
+#     answer = []
+#     idx = 0
+#     while progresses:
+#         if progresses[0] < 100:
+#             cnt = (100 - progresses[0]) // speeds[0]
+#         for i in range(len(speeds)):
+#             progresses[i] += speeds[i] * cnt
+#         answer.append(0)
+#         while True and progresses:
+#             if progresses[0] >= 100:
+#                 answer[idx] += 1
+#                 progresses.pop(0)
+#                 speeds.pop(0)
+#             else:
+#                 break
+#         idx += 1
+#     return answer
+#
+# T = int(input())
+# for test_case in range(T):
+#     progresses = list(map(int, input().split()))
+#     speeds = list(map(int, input().split()))
+#     print(solution(progresses, speeds))
 
-    ans = map(list, arr)
-    return sorted(ans, key=lambda x: (x[0], x[1], x[2]))
+# def solution(progresses, speeds):
+#     answer = []
+#     for progresse, speed in zip(progresses, speeds):
+#         if len(answer) == 0 or answer[- 1][0] < - ((progresse - 100) // speed):
+#             answer.append([-((progresse - 100) // speed), 1])
+#         else:
+#             answer[- 1][1] += 1
+#     return [i[1] for i in answer]
+# 
+# T = int(input())
+# for test_case in range(T):
+#     progresses = list(map(int, input().split()))
+#     speeds = list(map(int, input().split()))
+#     print(solution(progresses, speeds))
+
+T = int(input())
+for test_case in range(T):
+    bridge_length = int(input())
+    weight = int(input())
+    truck_weight = list(map(int, input().split()))
+    time = 0
+    while truck_weight:
