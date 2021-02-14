@@ -1288,17 +1288,21 @@ sys.stdin = open("practice_input.txt", "r")
 #         else:
 #             answer[- 1][1] += 1
 #     return [i[1] for i in answer]
-# 
+#
 # T = int(input())
 # for test_case in range(T):
 #     progresses = list(map(int, input().split()))
 #     speeds = list(map(int, input().split()))
 #     print(solution(progresses, speeds))
 
+def solution(bridge_length, weight, truck_weights):
+    answer = 0
+    return answer
+
 T = int(input())
 for test_case in range(T):
     bridge_length = int(input())
     weight = int(input())
     truck_weight = list(map(int, input().split()))
-    time = 0
-    while truck_weight:
+    solution(bridge_length, weight, truck_weight)
+
