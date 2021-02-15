@@ -1295,6 +1295,7 @@ sys.stdin = open("practice_input.txt", "r")
 #     speeds = list(map(int, input().split()))
 #     print(solution(progresses, speeds))
 
+# ????..
 def solution(bridge_length, weight, truck_weights):
     answer = 0
     return answer
