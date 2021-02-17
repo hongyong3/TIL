@@ -1296,14 +1296,35 @@ sys.stdin = open("practice_input.txt", "r")
 #     print(solution(progresses, speeds))
 
 # ????..
-def solution(bridge_length, weight, truck_weights):
-    answer = 0
+# def solution(bridge_length, weight, truck_weights):
+#     answer = 0
+#     return answer
+#
+# T = int(input())
+# for test_case in range(T):
+#     bridge_length = int(input())
+#     weight = int(input())
+#     truck_weight = list(map(int, input().split()))
+#     solution(bridge_length, weight, truck_weight)
+
+# 프로그래머스 모의고사
+def solution(answers):
+    answer = []
+    student1, cnt1 = [1, 2, 3, 4, 5], 0
+    student2, cnt2 = [2, 1, 2, 3, 2, 4, 2, 5], 0
+    student3, cnt3 = [3, 3, 1, 1, 2, 2, 4, 4, 5, 5], 0
+    for i in range(len(answers)):
+        if answers[i] == student1[i % 5]:
+            cnt1 += 1
+        if answers[i] == student2[i % 8]:
+            cnt2 += 1
+        if answers[i] == student3[i % 10]:
+            cnt3 += 1
+    cnt = max(cnt1, cnt2, cnt3)
+    if cnt == cnt1:
+        answer.append(1)
+    if cnt == cnt2:
+        answer.append(2)
+    if cnt == cnt3:
+        answer.append(3)
     return answer
-
-T = int(input())
-for test_case in range(T):
-    bridge_length = int(input())
-    weight = int(input())
-    truck_weight = list(map(int, input().split()))
-    solution(bridge_length, weight, truck_weight)
-
