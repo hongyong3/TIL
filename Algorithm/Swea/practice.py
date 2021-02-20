@@ -1330,12 +1330,107 @@ sys.stdin = open("practice_input.txt", "r")
 #     return answer
 
 # 프로그래머스 카펫
-def solution(brown, yellow):
-    x = int((brown + 4 + ((brown + 4) ** 2 - 16 * (brown + yellow)) ** 0.5)) // 4
-    y = (brown + yellow) // x
-    return [max(x, y), min(x, y)]
+# def solution(brown, yellow):
+#     x = int((brown + 4 + ((brown + 4) ** 2 - 16 * (brown + yellow)) ** 0.5)) // 4
+#     y = (brown + yellow) // x
+#     return [max(x, y), min(x, y)]
+#
+# T = int(input())
+# for test_case in range(T):
+#     B, Y = map(int, input().split())
+#     print(solution(B, Y))
 
-T = int(input())
-for test_case in range(T):
-    B, Y = map(int, input().split())
-    print(solution(B, Y))
+# boj 소수 찾기
+# def prime():
+#     sieve = [True] * 1001
+#     for i in range(2, int(1001 ** 0.5) + 1):
+#         if sieve[i]:
+#             for j in range(2 * i, 1001, i):
+#                 sieve[j] = False
+#     return [i for i in range(2, 1001) if sieve[i]]
+#
+# N = int(input())
+# data = list(map(int, input().split()))
+# num = prime()
+# ans = 0
+# for i in data:
+#     if i in num:
+#         ans += 1
+# print(ans)
+
+# A, B = map(int, input().split())
+# print(A + B)
+
+# def prime():
+#     sieve = [True] * 10001
+#     for i in range(2, int(10001 ** 0.5) + 1):
+#         if sieve[i]:
+#             for j in range(2 * i, 10001, i):
+#                 sieve[j] = False
+#     return [i for i in range(2, 10001) if sieve[i]]
+#
+# N, M = int(input()), int(input())
+# num = prime()
+# ans = float('inf')
+# total = 0
+# for i in range(N, M + 1):
+#     if i in num:
+#         total += i
+#         if ans > i:
+#             ans = i
+# if total:
+#     print(total)
+#     print(ans)
+# else:
+#     print(- 1)
+
+# N = int(input())
+#
+# while N > 1:
+#     for i in range(2, N + 1):
+#         if (N / i) == int(N / i):
+#             print(i)
+#             N //= i
+#             break
+
+# xlist, ylist = [], []
+# for i in range(3):
+#     x, y = map(int, input().split())
+#     xlist.append(x) if x not in xlist else xlist.pop(xlist.index(x))
+#     ylist.append(y) if y not in ylist else ylist.pop(ylist.index(y))
+# print(xlist[0], ylist[0])
+
+# while True:
+#     data = sorted(list(map(int, input().split())))
+#     if sum(data) == 0:
+#         break
+#     else:
+#         x, y, z = data
+#         if x * x + y * y == z * z:
+#             print("right")
+#         else:
+#             print("wrong")
+
+# x, y, w, h = map(int, input().split())
+# print(min(x, y, w - x, h - y))
+
+def prime():
+    # sieve = [1] * 10001
+    for i in range(2, int(10001 ** 0.5) + 1):
+        if sieve[i]:
+            for j in range(2 * i, 10001, i):
+                sieve[j] = 0
+    # return [i for i in range(2, 10001) if sieve[i]]
+
+
+sieve = [1] * 10001
+prime()
+for _ in range(int(input())):
+    N = int(input())
+    idx = 0
+
+    while True:
+        if sieve[N // 2 - idx] and sieve[N // 2 + idx]:
+            print(N // 2 - idx, N // 2 + idx)
+            break
+        idx += 1
