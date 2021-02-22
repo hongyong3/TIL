@@ -44,12 +44,31 @@ sys.stdin = open("D3_11445_input.txt", "r")
 
 # 76 / 100
 # ..? 뭐지..
+# T = int(input())
+# for test_case in range(T):
+#     p, q = input().replace(" ", ""), input().replace(" ", "")
+#     if len(q) - len(p) == 1:
+#         if q[- 1] == 'a':
+#             ans = 'N'
+#     else:
+#         ans = 'Y'
+#     print("#{} {}".format(test_case + 1, ans))
+
+# 93 / 100
 T = int(input())
 for test_case in range(T):
-    p, q = input().replace(" ", ""), input().replace(" ", "")
+    p, q = input().strip().replace(" ", ""), input().strip().replace(" ", "")
     if len(q) - len(p) == 1:
         if q[- 1] == 'a':
             ans = 'N'
     else:
         ans = 'Y'
     print("#{} {}".format(test_case + 1, ans))
+
+#1 Y
+#2 Y
+#3 N
+#4 Y
+#5 N
+#6 Y
+#7 Y
