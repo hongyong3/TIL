@@ -64,11 +64,3 @@ for test_case in range(T):
     else:
         ans = 'Y'
     print("#{} {}".format(test_case + 1, ans))
-
-#1 Y
-#2 Y
-#3 N
-#4 Y
-#5 N
-#6 Y
-#7 Y
