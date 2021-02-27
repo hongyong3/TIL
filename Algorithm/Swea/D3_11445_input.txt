@@ -1,8 +1,10 @@
-8
+9
+ac
+ada
 bz
 zad
 a a
-a  a
+a  aa
 aa
 aab
 a
