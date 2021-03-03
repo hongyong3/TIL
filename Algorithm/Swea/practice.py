@@ -1414,23 +1414,23 @@ sys.stdin = open("practice_input.txt", "r")
 # x, y, w, h = map(int, input().split())
 # print(min(x, y, w - x, h - y))
 
-def prime():
-    # sieve = [1] * 10001
-    for i in range(2, int(10001 ** 0.5) + 1):
-        if sieve[i]:
-            for j in range(2 * i, 10001, i):
-                sieve[j] = 0
-    # return [i for i in range(2, 10001) if sieve[i]]
-
-
-sieve = [1] * 10001
-prime()
-for _ in range(int(input())):
-    N = int(input())
-    idx = 0
-
-    while True:
-        if sieve[N // 2 - idx] and sieve[N // 2 + idx]:
-            print(N // 2 - idx, N // 2 + idx)
-            break
-        idx += 1
+# def prime():
+#     # sieve = [1] * 10001
+#     for i in range(2, int(10001 ** 0.5) + 1):
+#         if sieve[i]:
+#             for j in range(2 * i, 10001, i):
+#                 sieve[j] = 0
+#     # return [i for i in range(2, 10001) if sieve[i]]
+#
+#
+# sieve = [1] * 10001
+# prime()
+# for _ in range(int(input())):
+#     N = int(input())
+#     idx = 0
+#
+#     while True:
+#         if sieve[N // 2 - idx] and sieve[N // 2 + idx]:
+#             print(N // 2 - idx, N // 2 + idx)
+#             break
+#         idx += 1

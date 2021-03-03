@@ -57,7 +57,7 @@ def bfs(v,h):
     visited= [0] * (N+1)
     q.append((v,h))
     while q:
-        n , depth = q.pop(0)
+        n, depth = q.pop(0)
         visited[n] = 1
         if maxV < depth:
             maxV = depth
