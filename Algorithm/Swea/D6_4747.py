@@ -36,25 +36,20 @@ sys.stdin = open("D6_4747_input.txt", "r")
 #             break
 
 # 201 / 300 Runtime Error
-# 재귀루프를 해결해야 할 듯.
 def solve(idx, total, start):
     global ans, chk
     if chk:
         return
-    if idx == 2:
+    if idx == 3:
         print("#{}".format(test_case + 1))
         for i in ans:
             print(*i)
-        print(*data)
         chk = True
-        return
     if total == avg:
         solve(idx + 1, 0, 0)
     else:
         for i in range(start, len(data)):
-            if chk:
-                return
-            if total + data[i] > avg:
+            if chk or total + data[i] > avg:
                 return
             temp = data.pop(i)
             ans[idx].append(temp)
@@ -68,5 +63,5 @@ for test_case in range(T):
     data = sorted(list(map(int, input().split())))
     avg = sum(data) // 3
     chk = False
-    ans = [[], []]
+    ans = [[], [], []]
     solve(0, 0, 0)
