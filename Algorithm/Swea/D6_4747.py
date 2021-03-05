@@ -36,31 +36,60 @@ sys.stdin = open("D6_4747_input.txt", "r")
 #             break
 
 # 201 / 300 Runtime Error
+# def solve(idx, total, start):
+#     global ans, chk
+#     if chk:
+#         return
+#     if idx == 3:
+#         print("#{}".format(test_case + 1))
+#         for i in ans:
+#             print(*i)
+#         chk = True
+#     if total == avg:
+#         solve(idx + 1, 0, 0)
+#     for i in range(start, len(data)):
+#         if chk or total + data[i] > avg:
+#             return
+#         temp = data.pop(i)
+#         ans[idx].append(temp)
+#         solve(idx, total + temp, i)
+#         data.insert(i, ans[idx].pop())
+#
+#
+# T = int(input())
+# for test_case in range(T):
+#     N = int(input())
+#     data = sorted(list(map(int, input().split())))
+#     avg = sum(data) // 3
+#     chk = False
+#     ans = [[], [], []]
+#     solve(0, 0, 0)
+
+# reverse하닌까 풀림..
 def solve(idx, total, start):
     global ans, chk
     if chk:
         return
     if idx == 3:
         print("#{}".format(test_case + 1))
-        for i in ans:
-            print(*i)
+        for i in ans[:: - 1]:
+            print(*i[:: - 1])
         chk = True
     if total == avg:
         solve(idx + 1, 0, 0)
-    else:
-        for i in range(start, len(data)):
-            if chk or total + data[i] > avg:
-                return
-            temp = data.pop(i)
-            ans[idx].append(temp)
-            solve(idx, total + temp, i)
-            data.insert(i, ans[idx].pop())
+    for i in range(start, len(data)):
+        if chk or total + data[i] > avg:
+            return
+        temp = data.pop(i)
+        ans[idx].append(temp)
+        solve(idx, total + temp, i)
+        data.insert(i, ans[idx].pop())
 
 
 T = int(input())
 for test_case in range(T):
     N = int(input())
-    data = sorted(list(map(int, input().split())))
+    data = sorted(list(map(int, input().split())), reverse = True)
     avg = sum(data) // 3
     chk = False
     ans = [[], [], []]

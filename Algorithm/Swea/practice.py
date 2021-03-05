@@ -1434,3 +1434,10 @@ sys.stdin = open("practice_input.txt", "r")
 #             print(N // 2 - idx, N // 2 + idx)
 #             break
 #         idx += 1
+
+n, m = 2, 10
+a = n ** 0.5
+a = int(a) if a == int(a) else int(a) + 1
+b = int(m ** 0.5)
+c = b - a + 1
+print(m - n - b + a)
