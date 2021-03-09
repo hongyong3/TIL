@@ -1435,9 +1435,38 @@ sys.stdin = open("practice_input.txt", "r")
 #             break
 #         idx += 1
 
-n, m = 2, 10
-a = n ** 0.5
-a = int(a) if a == int(a) else int(a) + 1
-b = int(m ** 0.5)
-c = b - a + 1
-print(m - n - b + a)
+# n, m = 2, 10
+# a = n ** 0.5
+# a = int(a) if a == int(a) else int(a) + 1
+# b = int(m ** 0.5)
+# c = b - a + 1
+# print(m - n - b + a)
+
+# T = int(input())
+# for test_case in range(T):
+#     D, N = map(int, input().split())
+#     time = 0
+#     for _ in range(N):
+#         K, S = map(int, input().split())
+#         if time < (D - K) / S:
+#             time = (D - K) / S
+#     print("#{} {}".format(test_case + 1, D / time))
+
+fact = [1, 2, 6, 24, 120, 720, 5040, 40320, 362880, 3628800, 39916800, 479001600, 6227020800, 87178291200, 1307674368000, 20922789888000, 355687428096000, 6402373705728000, 121645100408832000, 2432902008176640000]
+
+import itertools
+T = int(input())
+for test_case in range(T):
+    S = input()
+    arr = sorted(list(set(map(''.join, itertools.permutations(list(S))))))
+    for i in arr:
+        print(i)
+    # print(len(arr))
+    # print("#{} {}".format(test_case + 1, arr.index(S)))
+
+    # print(S)
+    # S = input()
+    # a = [0] * 26
+    # for i in S:
+    #     a[ord(i) - 65] += 1
+    # print(a)
