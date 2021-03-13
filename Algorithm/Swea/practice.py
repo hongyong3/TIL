@@ -1453,13 +1453,13 @@ sys.stdin = open("practice_input.txt", "r")
 #     print("#{} {}".format(test_case + 1, D / time))
 
 
-import itertools
-T = int(input())
-for test_case in range(T):
-    S = input()
-    arr = sorted(list(set(map(''.join, itertools.permutations(list(S))))))
-    for i in arr:
-        print(i)
+# import itertools
+# T = int(input())
+# for test_case in range(T):
+#     S = input()
+#     arr = sorted(list(set(map(''.join, itertools.permutations(list(S))))))
+#     for i in arr:
+#         print(i)
     # print(len(arr))
     # print("#{} {}".format(test_case + 1, arr.index(S)))
 
@@ -1469,3 +1469,27 @@ for test_case in range(T):
     # for i in S:
     #     a[ord(i) - 65] += 1
     # print(a)
+
+T = int(input())
+for test_case in range(1, T+1):
+    K, N, M = list(map(int, input().split()))
+    station = list(map(int, input().split()))
+    charge = 0
+    position = 0
+
+    while position < N:
+        if position + K >= N:
+            print('#{} {}'.format(test_case, charge))
+            break
+
+        for i in range(position + K, position, - 1):
+            found_station = False
+            if i in station:
+                position = i
+                charge += 1
+                found_station = True
+                break
+
+        if found_station == False:
+            print('#{} 0'.format(test_case))
+            break
