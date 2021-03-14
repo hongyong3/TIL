@@ -32,7 +32,7 @@ for test_case in range(T):
     ans, chk = 0, False
 
     while True:
-        if not len(vir) and not len(sam):
+        if not vir and not sam:
             break
         # 삼성이
         for _ in range(len(sam)):
