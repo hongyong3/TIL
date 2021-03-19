@@ -88,10 +88,10 @@ LCA Algorithm(Lowest Common Ancestor)
 #
 #     for i in range(N - 1):
 #         temp = lca(vt[i], vt[i + 1])
-#         print(temp)
 #         a = d[vt[i]] - d[temp]
 #         b = d[vt[i + 1]] - d[temp]
 #         ans += (a + b)
+#     print(ans)
 
 
 
@@ -104,7 +104,7 @@ for test_case in range(T):
     d = [0] * N
     p = [[0] * 23 for _ in range(N + 3)]
     j = 1
-    
+
     for i in data:
         graph[i - 1].append(j)
         j += 1
