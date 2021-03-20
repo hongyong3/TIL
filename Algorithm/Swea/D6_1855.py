@@ -91,8 +91,6 @@ LCA Algorithm(Lowest Common Ancestor)
 #         a = d[vt[i]] - d[temp]
 #         b = d[vt[i + 1]] - d[temp]
 #         ans += (a + b)
-#     print(ans)
-
 
 
 T = int(input())
