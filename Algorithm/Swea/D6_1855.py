@@ -93,30 +93,30 @@ LCA Algorithm(Lowest Common Ancestor)
 #         ans += (a + b)
 
 
-# T = int(input())
-# for test_case in range(T):
-#     N = int(input())
-#     data = list(map(int, input().split()))
-#     graph = [[] for _ in range(N + 3)]  # 마지막 node의 자식까지 생각
-#     chk = [0] * N
-#     d = [0] * N
-#     p = [[0] * 23 for _ in range(N + 3)]
-#     j = 1
-#
-#     for i in data:
-#         graph[i - 1].append(j)
-#         j += 1
-#
-#     chk[0] = 1
-#     q = [(0, 0)]
-#
-#     while q:
-#         node, depth = q.pop(0)
-#         d[node] = depth
-#
-#         for i in graph[node]:
-#             v = i
-#             if not chk[v]:
-#                 chk[v] = 1
-#                 p[v][0] = node
-#                 q.append((v, depth + 1))
+T = int(input())
+for test_case in range(T):
+    N = int(input())
+    data = list(map(int, input().split()))
+    graph = [[] for _ in range(N + 3)]  # 마지막 node의 자식까지 생각
+    chk = [0] * N
+    d = [0] * N
+    p = [[0] * 23 for _ in range(N + 3)]
+    j = 1
+
+    for i in data:
+        graph[i - 1].append(j)
+        j += 1
+
+    chk[0] = 1
+    q = [(0, 0)]
+
+    while q:
+        node, depth = q.pop(0)
+        d[node] = depth
+
+        for i in graph[node]:
+            v = i
+            if not chk[v]:
+                chk[v] = 1
+                p[v][0] = node
+                q.append((v, depth + 1))
