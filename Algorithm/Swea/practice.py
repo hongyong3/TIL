@@ -1470,26 +1470,55 @@ sys.stdin = open("practice_input.txt", "r")
     #     a[ord(i) - 65] += 1
     # print(a)
 
+# T = int(input())
+# for test_case in range(1, T+1):
+#     K, N, M = list(map(int, input().split()))
+#     station = list(map(int, input().split()))
+#     charge = 0
+#     position = 0
+#
+#     while position < N:
+#         if position + K >= N:
+#             print('#{} {}'.format(test_case, charge))
+#             break
+#
+#         for i in range(position + K, position, - 1):
+#             found_station = False
+#             if i in station:
+#                 position = i
+#                 charge += 1
+#                 found_station = True
+#                 break
+#
+#         if found_station == False:
+#             print('#{} 0'.format(test_case))
+#             break
+
+# T = int(input())
+# for test_case in range(T):
+#     s = input()
+#     a, b = 1, 1
+#     for i in s:
+#         if i == 'L':
+#             b += a
+#         else:
+#             a += b
+#     print("#{} {} {}".format(test_case + 1, a, b))
+
 T = int(input())
-for test_case in range(1, T+1):
-    K, N, M = list(map(int, input().split()))
-    station = list(map(int, input().split()))
-    charge = 0
-    position = 0
-
-    while position < N:
-        if position + K >= N:
-            print('#{} {}'.format(test_case, charge))
-            break
-
-        for i in range(position + K, position, - 1):
-            found_station = False
-            if i in station:
-                position = i
-                charge += 1
-                found_station = True
+for test_case in range(T):
+    a, b = map(int, input().split())
+    ans = 0
+    if a == 1 or b == 1:
+        ans = max(a, b) - 1
+    else:
+        while a != b:
+            if a == 1 or b == 1:
+                ans += max(a, b) - 1
                 break
-
-        if found_station == False:
-            print('#{} 0'.format(test_case))
-            break
+            if a > b:
+                a -= b
+            else:
+                b -= a
+            ans += 1
+    print("#{} {}".format(test_case + 1, ans))
