@@ -1505,20 +1505,17 @@ sys.stdin = open("practice_input.txt", "r")
 #             a += b
 #     print("#{} {} {}".format(test_case + 1, a, b))
 
-T = int(input())
-for test_case in range(T):
-    a, b = map(int, input().split())
-    ans = 0
-    if a == 1 or b == 1:
-        ans = max(a, b) - 1
-    else:
-        while a != b:
-            if a == 1 or b == 1:
-                ans += max(a, b) - 1
-                break
-            if a > b:
-                a -= b
-            else:
-                b -= a
-            ans += 1
-    print("#{} {}".format(test_case + 1, ans))
+def calkinWilfSequence(number):
+    def fractions():
+        a = b = 1
+        while True:
+            yield [a, b]
+            a, b = b, 2 * (a - a % b) + b - a
+
+    gen = fractions()
+    res = 0
+    while next(gen) != number:
+        res += 1
+    return res
+
+print(calkinWilfSequence([6, 5]))
