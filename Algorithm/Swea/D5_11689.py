@@ -2,7 +2,7 @@ import sys
 sys.stdin = open("D5_11689_input.txt", "r")
 
 # Runtime Error..?
-# arr = []
+arr = []
 T = int(input())
 for test_case in range(T):
     a, b = map(int, input().split())
@@ -23,7 +23,7 @@ for test_case in range(T):
                 b -= a
             ans += 1
 
-    print("#{} {}".format(test_case + 1, ans))
-    # arr.append("#{} {}".format(test_case + 1, ans))
-# for i in arr:
-#     print(i)
+    # print("#{} {}".format(test_case + 1, ans))
+    arr.append("#{} {}".format(test_case + 1, ans))
+for i in arr:
+    print(i)
