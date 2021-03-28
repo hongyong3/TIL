@@ -1505,17 +1505,43 @@ sys.stdin = open("practice_input.txt", "r")
 #             a += b
 #     print("#{} {} {}".format(test_case + 1, a, b))
 
-def calkinWilfSequence(number):
-    def fractions():
-        a = b = 1
-        while True:
-            yield [a, b]
-            a, b = b, 2 * (a - a % b) + b - a
+# def calkinWilfSequence(number):
+#     def fractions():
+#         a = b = 1
+#         while True:
+#             yield [a, b]
+#             a, b = b, 2 * (a - a % b) + b - a
+#
+#     gen = fractions()
+#     res = 0
+#     while next(gen) != number:
+#         res += 1
+#     return res
+#
+# print(calkinWilfSequence([6, 5]))
 
-    gen = fractions()
-    res = 0
-    while next(gen) != number:
-        res += 1
-    return res
+from collections import Counter
 
-print(calkinWilfSequence([6, 5]))
+def permutation(arr, r):
+    arr = sorted(arr)
+    used = [0 for _ in range(len(arr))]
+
+    def generate(chosen, used):
+        if len(chosen) == r:
+            print(''.join(chosen))
+            return
+
+        for i in range(len(arr)):
+            if not used[i]:
+                chosen.append(arr[i])
+                used[i] = 1
+                generate(chosen, used)
+                used[i] = 0
+                chosen.pop()
+    generate([], used)
+
+T = int(input())
+for test_case in range(1):
+    s = input()
+    cnt = Counter
+    permutation(s, len(s))

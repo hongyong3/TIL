@@ -52,28 +52,62 @@ sys.stdin = open("D4_10966_input.txt", "r")
 #     print("#{} {}".format(test_case + 1, ans))
 
 # Runtime Error......
+# T = int(input())
+# for test_case in range(T):
+#     N, M = map(int, input().split())
+#     ans, water, land = 0, set(), []
+#
+#     for i in range(N):
+#         data = input()
+#         for j in range(M):
+#             if data[j] == 'W':
+#                 water.add(i + j)
+#             else:
+#                 land.append(i + j)
+#
+#     for i in sorted(land):
+#         d = 2001
+#         for j in sorted(water):
+#             temp = abs(i - j)
+#             if temp:
+#                 if d >= temp:
+#                     d = temp
+#             else:
+#                 d = 1
+#                 break
+#         ans += d
+#     print("#{} {}".format(test_case + 1, ans))
+
+from collections import deque
+
+dx = [- 1, 1, 0, 0] # 상 하 좌 우
+dy = [0, 0, - 1, 1]
+
 T = int(input())
 for test_case in range(T):
     N, M = map(int, input().split())
-    ans, water, land = 0, set(), []
+    arr = [[- 1] * M for _ in range(N)]
+    ans, q = 0, deque()
 
     for i in range(N):
         data = input()
         for j in range(M):
             if data[j] == 'W':
-                water.add(i + j)
-            else:
-                land.append(i + j)
+                q.append((i, j))
+                arr[i][j] = 0
 
-    for i in sorted(land):
-        d = 2001
-        for j in sorted(water):
-            temp = abs(i - j)
-            if temp:
-                if d >= temp:
-                    d = temp
-            else:
-                d = 1
-                break
-        ans += d
+    while q:
+        x, y = q.popleft()
+        for k in range(4):
+            nx = x + dx[k]
+            ny = y + dy[k]
+            if not (0 <= nx < N and 0 <= ny < M):
+                continue
+            if arr[nx][ny] != - 1:
+                continue
+            q.append((nx, ny))
+            arr[nx][ny] = arr[x][y] + 1
+
+    for i in arr:
+        ans += sum(i)
     print("#{} {}".format(test_case + 1, ans))
