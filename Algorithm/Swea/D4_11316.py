@@ -28,22 +28,41 @@ while문 끝--------------------------------------------------------------------
 '''
 
 # ...?
+# T = int(input())
+# for test_case in range(T):
+#     s, p, q, m = map(int, input().split())
+#
+#     A, chk = [s], True
+#     num, idx = s, 1
+#     while chk:
+#         num = (p * num + q) % m
+#
+#         if num in A:
+#             chk = False
+#             break
+#         A.append(num)
+#         idx += 1
+#     for j in range(idx):
+#         if num == A[j]:
+#             idx -= j
+#             break
+#     print("#{} {}".format(test_case + 1, idx))
+
 T = int(input())
 for test_case in range(T):
     s, p, q, m = map(int, input().split())
+    visited, chk = [0] * m, [0] * m
 
-    A, chk = [s], True
-    num, idx = s, 1
-    while chk:
-        num = (p * num + q) % m
+    a = s
+    visited[a] = 1
+    chk[0] = a
 
-        if num in A:
-            chk = False
+    for i in range(1, m + 1):
+        total = (p * a + q) % m
+        a = total
+        if not visited[a]:
+            visited[a] = 1
+            chk[i] = a
+        else:
+            print("#{} {}".format(test_case + 1, i - chk.index(a)))
             break
-        A.append(num)
-        idx += 1
-    for j in range(idx):
-        if num == A[j]:
-            idx -= j
-            break
-    print("#{} {}".format(test_case + 1, idx))

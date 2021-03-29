@@ -1520,28 +1520,23 @@ sys.stdin = open("practice_input.txt", "r")
 #
 # print(calkinWilfSequence([6, 5]))
 
-from collections import Counter
+from collections import Counter as Multiset
 
-def permutation(arr, r):
-    arr = sorted(arr)
-    used = [0 for _ in range(len(arr))]
 
-    def generate(chosen, used):
-        if len(chosen) == r:
-            print(''.join(chosen))
-            return
+def multiset_combinations(ms, n):
+    assert sum(ms.values()) >= n
+    def f(ms_res, curr_val, ms_rem):
+        nonlocal n
+        if sum(ms_res.values()) == n:  #ideally len would return the number of total elements
+            yield ms_res
+        else:
+            for val in set(ms_rem):
+                if val >= curr_val:
+                    val_ms = Multiset((val,))  # ideally I wouldn't need to wrap a singleton multiset
+                    # add that value to the result multiset and remove it from remaining multiset
+                    yield from f(ms_res + val_ms, val, ms_rem - val_ms)
+                    # recurse
+    yield from f(Multiset(), sorted(ms.keys())[0], ms)
 
-        for i in range(len(arr)):
-            if not used[i]:
-                chosen.append(arr[i])
-                used[i] = 1
-                generate(chosen, used)
-                used[i] = 0
-                chosen.pop()
-    generate([], used)
-
-T = int(input())
-for test_case in range(1):
-    s = input()
-    cnt = Counter
-    permutation(s, len(s))
+for m in multiset_combinations(Multiset((3, 3, 4, 4, 4, 5)), 3):
+    print(list(m.elements()))
