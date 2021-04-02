@@ -1,4 +1,4 @@
 3
-DCBA
-ABC
-BANANA
+18 2
+15 3
+15 8

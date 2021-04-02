@@ -1520,23 +1520,46 @@ sys.stdin = open("practice_input.txt", "r")
 #
 # print(calkinWilfSequence([6, 5]))
 
-from collections import Counter as Multiset
-
-
-def multiset_combinations(ms, n):
-    assert sum(ms.values()) >= n
-    def f(ms_res, curr_val, ms_rem):
-        nonlocal n
-        if sum(ms_res.values()) == n:  #ideally len would return the number of total elements
-            yield ms_res
+# from collections import Counter as Multiset
+#
+#
+# def multiset_combinations(ms, n):
+#     assert sum(ms.values()) >= n
+#     def f(ms_res, curr_val, ms_rem):
+#         nonlocal n
+#         if sum(ms_res.values()) == n:  #ideally len would return the number of total elements
+#             yield ms_res
+#         else:
+#             for val in set(ms_rem):
+#                 if val >= curr_val:
+#                     val_ms = Multiset((val,))  # ideally I wouldn't need to wrap a singleton multiset
+#                     # add that value to the result multiset and remove it from remaining multiset
+#                     yield from f(ms_res + val_ms, val, ms_rem - val_ms)
+#                     # recurse
+#     yield from f(Multiset(), sorted(ms.keys())[0], ms)
+#
+# for m in multiset_combinations(Multiset((3, 3, 4, 4, 4, 5)), 3):
+#     print(list(m.elements()))
+for _ in range(int(input())):
+    n, l = map(int, input().split())
+    if n % 2 == 0 and l == 2:
+        l = 3
+    for i in range(l, 101):
+        if i % 2:
+            k = n // i
+            if n % i:
+                continue
+            c = k - i // 2
         else:
-            for val in set(ms_rem):
-                if val >= curr_val:
-                    val_ms = Multiset((val,))  # ideally I wouldn't need to wrap a singleton multiset
-                    # add that value to the result multiset and remove it from remaining multiset
-                    yield from f(ms_res + val_ms, val, ms_rem - val_ms)
-                    # recurse
-    yield from f(Multiset(), sorted(ms.keys())[0], ms)
+            k = n // i
+            if n % i != i // 2:
+                continue
+            c = k - (i - 1) // 2
 
-for m in multiset_combinations(Multiset((3, 3, 4, 4, 4, 5)), 3):
-    print(list(m.elements()))
+        if c >= 0:
+            for j in range(i):
+                print(c + j, end = ' ')
+            print()
+            break
+    else:
+        print( - 1)
