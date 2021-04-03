@@ -1540,26 +1540,53 @@ sys.stdin = open("practice_input.txt", "r")
 #
 # for m in multiset_combinations(Multiset((3, 3, 4, 4, 4, 5)), 3):
 #     print(list(m.elements()))
-for _ in range(int(input())):
-    n, l = map(int, input().split())
-    if n % 2 == 0 and l == 2:
-        l = 3
-    for i in range(l, 101):
-        if i % 2:
-            k = n // i
-            if n % i:
-                continue
-            c = k - i // 2
-        else:
-            k = n // i
-            if n % i != i // 2:
-                continue
-            c = k - (i - 1) // 2
+# for _ in range(int(input())):
+#     n, l = map(int, input().split())
+#     if n % 2 == 0 and l == 2:
+#         l = 3
+#     for i in range(l, 101):
+#         if i % 2:
+#             k = n // i
+#             if n % i:
+#                 continue
+#             c = k - i // 2
+#         else:
+#             k = n // i
+#             if n % i != i // 2:
+#                 continue
+#             c = k - (i - 1) // 2
+#
+#         if c >= 0:
+#             for j in range(i):
+#                 print(c + j, end = ' ')
+#             print()
+#             break
+#     else:
+#         print( - 1)
 
-        if c >= 0:
-            for j in range(i):
-                print(c + j, end = ' ')
-            print()
-            break
-    else:
-        print( - 1)
+def dfs(y, x):
+    if not (0 <= y < N and 0 <= x < M) or not arr[y][x]:
+        return
+    arr[y][x] = 0
+    dfs(y + 1, x)
+    dfs(y - 1, x)
+    dfs(y, x + 1)
+    dfs(y, x + 1)
+
+T = int(input())
+for test_case in range(T):
+    M, N, K = map(int, input().split())
+    arr = [[0] * M for _ in range(N)]
+
+    for _ in range(K):
+        x, y = map(int, input().split())
+        arr[y][x] = 1
+
+    ans = 0
+
+    for y in range(N):
+        for x in range(M):
+            if arr[y][x]:
+                dfs(y, x)
+                ans += 1
+    print(ans)
