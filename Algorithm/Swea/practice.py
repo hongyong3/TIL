@@ -1564,29 +1564,68 @@ sys.stdin = open("practice_input.txt", "r")
 #     else:
 #         print( - 1)
 
-def dfs(y, x):
-    if not (0 <= y < N and 0 <= x < M) or not arr[y][x]:
-        return
-    arr[y][x] = 0
-    dfs(y + 1, x)
-    dfs(y - 1, x)
-    dfs(y, x + 1)
-    dfs(y, x + 1)
+# def dfs(y, x):
+#     if not (0 <= y < N and 0 <= x < M) or not arr[y][x]:
+#         return
+#     arr[y][x] = 0
+#     dfs(y + 1, x)
+#     dfs(y - 1, x)
+#     dfs(y, x + 1)
+#     dfs(y, x + 1)
+#
+# T = int(input())
+# for test_case in range(T):
+#     M, N, K = map(int, input().split())
+#     arr = [[0] * M for _ in range(N)]
+#
+#     for _ in range(K):
+#         x, y = map(int, input().split())
+#         arr[y][x] = 1
+#
+#     ans = 0
+#
+#     for y in range(N):
+#         for x in range(M):
+#             if arr[y][x]:
+#                 dfs(y, x)
+#                 ans += 1
+#     print(ans)
 
-T = int(input())
-for test_case in range(T):
-    M, N, K = map(int, input().split())
-    arr = [[0] * M for _ in range(N)]
+# n = int(input())
+# a = sorted(list(map(int, input().split())))
+# b = sorted(list(map(int, input().split())), reverse = True)
+# ans = 0
+# for x, y in zip(a, b):
+#     ans += x * y
+# print(ans)
 
-    for _ in range(K):
-        x, y = map(int, input().split())
-        arr[y][x] = 1
+# for _ in range(int(input())):
+#     n = int(input())
+#     f = int(input())
+#     n -= n % 100
+#     ans = 0
+#     while True:
+#         if not (n + ans) % f:
+#             break
+#         ans += 1
+#     print('0' + str(ans)) if ans < 10 else print(ans)
 
-    ans = 0
+# color = ["black", "brown", "red", "orange", "yellow", "green", "blue", "violet", "grey", "white"]
+# ohm = str(color.index(input())) + str(color.index(input()))
+# ohm = int(ohm) * pow(10, color.index(input()))
+# print(ohm)
 
-    for y in range(N):
-        for x in range(M):
-            if arr[y][x]:
-                dfs(y, x)
-                ans += 1
-    print(ans)
+ans = 0
+for i in range(8):
+    data = input()
+    if i % 2:
+        for j in range(8):
+            if j % 2:
+                if data[j] == 'F':
+                    ans += 1
+    else:
+        for j in range(8):
+            if not j % 2:
+                if data[j] == 'F':
+                    ans += 1
+print(ans)
