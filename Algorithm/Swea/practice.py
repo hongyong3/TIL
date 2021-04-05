@@ -1615,17 +1615,49 @@ sys.stdin = open("practice_input.txt", "r")
 # ohm = int(ohm) * pow(10, color.index(input()))
 # print(ohm)
 
-ans = 0
-for i in range(8):
-    data = input()
-    if i % 2:
-        for j in range(8):
-            if j % 2:
-                if data[j] == 'F':
-                    ans += 1
-    else:
-        for j in range(8):
-            if not j % 2:
-                if data[j] == 'F':
-                    ans += 1
-print(ans)
+# ans = 0
+# for i in range(8):
+#     data = input()
+#     if i % 2:
+#         for j in range(8):
+#             if j % 2:
+#                 if data[j] == 'F':
+#                     ans += 1
+#     else:
+#         for j in range(8):
+#             if not j % 2:
+#                 if data[j] == 'F':
+#                     ans += 1
+# print(ans)
+
+# a, b = input().split()
+#
+# ans = 0
+# if len(a) == len(b):
+#     for i in range(len(a)):
+#         if a[i] == b[i]:
+#             ans += 1
+# print(ans)
+
+# n, k = map(int, input().split())
+# coin = list(int(input()) for _ in range(n))
+# dp = [0] * (k + 1)
+# dp[0] = 1
+#
+# for i in coin:
+#     for j in range(i, k + 1):
+#         if j >= i:
+#             dp[j] += dp[j - i]
+# print(dp[k])
+
+for _ in range(int(input())):
+    n = int(input())
+    num = sorted(list(int(input()) for _ in range(n)))
+    ans = 0
+    for i in range(n - 2):
+        for j in range(i + 1, n - 1):
+            for k in range(j + 1, n):
+                if num[i] + num[j] + num[k] in num[k + 1:]:
+                    if num[i] + num[j] + num[k] > ans:
+                        ans = num[i] + num[j] + num[k]
+    print(ans)
