@@ -3,6 +3,14 @@ sys.stdin = open("D5_11689_input.txt", "r")
 
 # Runtime Error..?
 # arr = []
+'''
+분모/분자를 한번씩 빼면 연산량이 많이 들어가게 됩니다.
+
+어차피 계속 빼고 빼다보면 분모 or 분자 중 큰 수 = a, 작은 수 = b라고 치면
+a <= a/b
+b <= b
+
+'''
 T = int(input())
 for test_case in range(T):
     a, b = map(int, input().split())
