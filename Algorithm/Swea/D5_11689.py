@@ -11,27 +11,50 @@ a <= a/b
 b <= b
 
 '''
-T = int(input())
-for test_case in range(T):
-    a, b = map(int, input().split())
-    ans = 0
-
-    if a == 1 or b == 1:
-        ans = max(a, b) - 1
-
-    else:
-        while a != b:
-            if a == 1 or b == 1:
-                ans += max(a, b) - 1
-                break
-
-            if a > b:
-                a -= b
-            else:
-                b -= a
-            ans += 1
-
-    # print("#{} {}".format(test_case + 1, ans))
+# T = int(input())
+# for test_case in range(T):
+#     a, b = map(int, input().split())
+#     ans = 0
+#
+#     if a == 1 or b == 1:
+#         ans = max(a, b) - 1
+#
+#     else:
+#         while a != b:
+#             if a == 1 or b == 1:
+#                 ans += max(a, b) - 1
+#                 break
+#
+#             if a > b:
+#                 a -= b
+#             else:
+#                 b -= a
+#             ans += 1
+#
+#     print("#{} {}".format(test_case + 1, ans))
 #     arr.append("#{} {}".format(test_case + 1, ans))
 # for i in arr:
 #     print(i)
+
+T = int(input())
+arr = []
+for test_case in range(T):
+    a, b = map(int, input().split())
+    ans = 0
+    if b > a:
+        a, b = b, a
+
+    while b > 1:
+        cnt, a = divmod(a, b)
+        ans += cnt
+        a, b = b, a
+
+    else:
+        if b == 1:
+            ans += a - 1
+        else:
+            ans -= 1
+    arr.append("#{} {}".format(test_case + 1, ans))
+
+for i in arr:
+    print(i)
