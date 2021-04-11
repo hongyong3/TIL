@@ -1650,14 +1650,28 @@ sys.stdin = open("practice_input.txt", "r")
 #             dp[j] += dp[j - i]
 # print(dp[k])
 
-for _ in range(int(input())):
-    n = int(input())
-    num = sorted(list(int(input()) for _ in range(n)))
-    ans = 0
-    for i in range(n - 2):
-        for j in range(i + 1, n - 1):
-            for k in range(j + 1, n):
-                if num[i] + num[j] + num[k] in num[k + 1:]:
-                    if num[i] + num[j] + num[k] > ans:
-                        ans = num[i] + num[j] + num[k]
-    print(ans)
+# for _ in range(int(input())):
+#     n = int(input())
+#     num = sorted(list(int(input()) for _ in range(n)))
+#     ans = 0
+#     for i in range(n - 2):
+#         for j in range(i + 1, n - 1):
+#             for k in range(j + 1, n):
+#                 if num[i] + num[j] + num[k] in num[k + 1:]:
+#                     if num[i] + num[j] + num[k] > ans:
+#                         ans = num[i] + num[j] + num[k]
+#     print(ans)
+
+n = int(input())
+word = input()
+
+for _ in range(n - 1):
+    s = ''
+    file = input()
+    for i in range(len(word)):
+        if word[i] == file[i]:
+            s += word[i]
+        else:
+            s += '?'
+    word = s
+print(word)
