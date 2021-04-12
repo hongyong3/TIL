@@ -176,3 +176,39 @@ combination([1, 2, 3, 4, 5], 3)
 > start가 chosen이 비어있을 경우 0이 되는 것도 참고.
 >
 > 빈 값일 때는 그냥 0을 넣어야 함.
+
+
+
+
+
+---
+
+# 20210412
+
+## Algorithm
+
+### 조합
+
+
+
+```python
+def combi(arr, m):
+    ret = []
+    if m > len(arr):
+        return ret
+    if m == 1:
+        for i in arr:
+            ret.append([i])
+    else:
+        for i in range(len(arr) - m + 1):
+            for j in combi(arr[i + 1:], m - 1):
+                ret.append([arr[i]] + j)
+    return ret
+
+arr = [i for i in range(1, n + 1)]
+ans = combi(arr, m)
+
+for i in ans:
+    print(*i)
+```
+

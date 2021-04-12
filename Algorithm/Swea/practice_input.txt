@@ -1,4 +1,2 @@
-3
-config.sys
-config.inf
-configures
+4 6
+a t c i s w

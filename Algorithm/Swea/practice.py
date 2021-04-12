@@ -1662,16 +1662,137 @@ sys.stdin = open("practice_input.txt", "r")
 #                         ans = num[i] + num[j] + num[k]
 #     print(ans)
 
-n = int(input())
-word = input()
+# n = int(input())
+# word = input()
+#
+# for _ in range(n - 1):
+#     s = ''
+#     file = input()
+#     for i in range(len(word)):
+#         if word[i] == file[i]:
+#             s += word[i]
+#         else:
+#             s += '?'
+#     word = s
+# print(word)
 
-for _ in range(n - 1):
-    s = ''
-    file = input()
-    for i in range(len(word)):
-        if word[i] == file[i]:
-            s += word[i]
-        else:
-            s += '?'
-    word = s
-print(word)
+# x = bin(int(input()))[2:]
+# print(x.count('1'))
+# stick, ans = 64, 0
+# x = int(input())
+#
+# while x:
+#     if stick > x:
+#         stick //= 2
+#     else:
+#         ans += 1
+#         x -= stick
+# print(bin(int(input()))[2:].count('1'))
+
+# num = 100
+# total = 0
+# for _ in range(7):
+#     n = int(input())
+#     if n % 2:
+#         total += n
+#         if n < num:
+#             num = n
+# if num == 100:
+#     print(- 1)
+# else:
+#     print(total)
+#     print(num)
+#
+#
+# from collections import deque
+# dz = [- 1, 1, 0, 0, 0, 0]
+# dx = [0, 0, - 1, 1, 0, 0]
+# dy = [0, 0, 0, 0, - 1, 1]
+#
+# def bfs():
+#     q = deque()
+#     q.append([sz, sx, sy])
+#     visited[sz][sx][sy] = 1
+#
+#     while q:
+#         z, x, y = q.popleft()
+#         for k in range(6):
+#             nz = z + dz[k]
+#             nx = x + dx[k]
+#             ny = y + dy[k]
+#             if not (0 <= nz < l and 0 <= nx < r and 0 <= ny < c):
+#                 continue
+#             if visited[nz][nx][ny]:
+#                 continue
+#             if arr[nz][nx][ny] == '.' or arr[nz][nx][ny] == 'E':
+#                 dp[nz][nx][ny] = dp[z][x][y] + 1
+#                 visited[nz][nx][ny] = 1
+#                 q.append([nz, nx, ny])
+#
+# while True:
+#     l, r, c = map(int, input().split()) # 층, 행, 열
+#     if not l:
+#         break
+#     arr = [[[] for _ in range(r)] for _ in range(l)]
+#     dp = [[[0] * c for _ in range(r)] for _ in range(l)]
+#     visited = [[[0] * c for _ in range(r)] for _ in range(l)]
+#     for i in range(l):
+#         for j in range(r):
+#             arr[i][j] = input()
+#         input()
+#
+#     for z in range(l):
+#         for x in range(r):
+#             for y in range(c):
+#                 if arr[z][x][y] == 'S':
+#                     sz, sx, sy = z, x, y
+#                 elif arr[z][x][y] == 'E':
+#                     ez, ex, ey = z, x, y
+#     bfs()
+#     if dp[ez][ex][ey]:
+#         print("Escaped in {} minute(s).".format(dp[ez][ex][ey]))
+#     else:
+#         print("Trapped!")
+
+# n, l = map(int, input().split())
+# hole = sorted(list(map(int, input().split())))
+# ans, r = 0, 0
+# for i in hole:
+#     if i <= r:
+#         continue
+#     ans += 1
+#     r = i + l - 1
+# print(ans)
+#
+# from itertools import combinations
+#
+# n, m = map(int, input().split())
+# num = [i for i in range(1, n + 1)]
+# for i in list(combinations(num, m)):
+#     print(*i)
+#
+# def combi(arr, m):
+#     ret = []
+#     if m > len(arr):
+#         return ret
+#     if m == 1:
+#         for i in arr:
+#             ret.append([i])
+#     else:
+#         for i in range(len(arr) - m + 1):
+#             for j in combi(arr[i + 1:], m - 1):
+#                 ret.append([arr[i]] + j)
+#     return ret
+#
+# n, m = map(int, input().split())
+# arr = [i for i in range(1, n + 1)]
+# for i in combi(arr, m):
+#     print(*i)
+#
+# a = [sum(map(int, x.split('+'))) for x in input().split('-')]
+# print(a[0] - sum(a[1:]))
+# a = input().split('-')
+# n = eval(a[0])
+# for i in a[1:]:
+#     n -= eval(i)
+# print(n)
