@@ -1796,3 +1796,86 @@ sys.stdin = open("practice_input.txt", "r")
 # for i in a[1:]:
 #     n -= eval(i)
 # print(n)
+# def S(N):
+#     s = 0
+#     while N > 0:
+#         s += N % 10
+#         N //= 10
+#     return s
+#
+# while True:
+#     N = int(input())
+#     if not N:
+#         break
+#     A, p = S(N), 11
+#
+#     while S(N * p) != A:
+#         p += 1
+#     print(p)
+#
+# n = int(input())
+# memo = [0, 1, 1]
+# i = 3
+# while i <= n:
+#     memo.append(memo[i - 1] + memo[i - 2])
+#     i += 1
+# print(memo[n])
+
+# while True:
+#     a, b, c = map(int, input().split())
+#     if a == b == c == 0:
+#         break
+#     ans, idx = 'X', 1
+#     for i in range(a, c + b, b):
+#         if i == c:
+#             ans = idx
+#             break
+#         idx += 1
+#     print(ans)
+
+# while True:
+#     a, b, c = map(int, input().split())
+#     if a == b == c == 0:
+#         break
+#     x = (c - a) // b
+#     y = (c - a) % b
+#     print('X' if y or x < 0 else x + 1)
+
+# print("Leading the Way to the Future" if int(input()) else "YONSEI")
+# dx = [- 1, 1, 0, 0, - 1, - 1, 1, 1]
+# dy = [0, 0, - 1, 1, - 1, 1, - 1, 1]
+# def bfs(x, y):
+#     q = [(x, y)]
+#     while q:
+#         x, y = q.pop(0)
+#         for k in range(8):
+#             nx = x + dx[k]
+#             ny = y + dy[k]
+#             if not (0 <= nx < H and 0 <= ny < W):
+#                 continue
+#             if not arr[nx][ny]:
+#                 continue
+#             arr[nx][ny] = 0
+#             q.append((nx, ny))
+#
+# while True:
+#     W, H = map(int, input().split())
+#     if W == H == 0:
+#         break
+#     arr = [list(map(int, input().split())) for _ in range(H)]
+#     ans = 0
+#     for x in range(H):
+#         for y in range(W):
+#             if arr[x][y]:
+#                 bfs(x, y)
+#                 ans += 1
+#     print(ans)
+
+n = int(input())
+p = [list(map(int, input().split())) for _ in range(n)]
+p.append(p[0])
+
+ans = 0
+for i in range(n):
+    ans += p[i][0] * p[i + 1][1] - p[i][1] * p[i + 1][0]
+print(ans / 2 if ans > 0 else - ans / 2)
