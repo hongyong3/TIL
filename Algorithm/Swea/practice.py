@@ -1871,11 +1871,22 @@ sys.stdin = open("practice_input.txt", "r")
 #                 ans += 1
 #     print(ans)
 
-n = int(input())
-p = [list(map(int, input().split())) for _ in range(n)]
-p.append(p[0])
+# n = int(input())
+# p = [list(map(int, input().split())) for _ in range(n)]
+# p.append(p[0])
+#
+# ans = 0
+# for i in range(n):
+#     ans += p[i][0] * p[i + 1][1] - p[i][1] * p[i + 1][0]
+# print(ans / 2 if ans > 0 else - ans / 2)
 
-ans = 0
-for i in range(n):
-    ans += p[i][0] * p[i + 1][1] - p[i][1] * p[i + 1][0]
-print(ans / 2 if ans > 0 else - ans / 2)
+
+T = int(input())
+for test_case in range(T):
+    N = int(input())
+    arr = list(map(int, input().split()))
+    ans = 0
+    for i in range(N - 2):
+        if arr[i] < arr[i + 1] < arr[i + 2] or arr[i] > arr[i + 1] > arr[i + 2]:
+            ans += 1
+    print("#{} {}".format(test_case + 1, ans))
