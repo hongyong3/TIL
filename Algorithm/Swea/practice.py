@@ -1881,12 +1881,86 @@ sys.stdin = open("practice_input.txt", "r")
 # print(ans / 2 if ans > 0 else - ans / 2)
 
 
+# K = int(input())
+# arr = []
+# for _ in range(K):
+#     n = int(input())
+#     arr.append(n) if n else arr.pop()
+# print(sum(arr))
+
+# n = int(input())
+# memo = [0, 1, 1]
+# for i in range(3, 21):
+#     memo.append(memo[i - 1] + memo[i - 2])
+# print(memo[n])
+
+# N = int(input())
+# for i in range(N):
+#     K = int(input())
+#     print("odd") if K % 2 else print("even")
+
+# from itertools import permutations
+# n = int(input())
+# arr = permutations(sorted(list(map(int, input().split()))))
+# ans = 0
+# for a in arr:
+#     temp = 0
+#     for i in range(n - 1):
+#         temp += abs(a[i] - a[i + 1])
+#     if ans < temp:
+#         ans = temp
+# print(ans)
+
+# print(max(map(int, input().split())))
+
+# T = int(input())
+# for _ in range(T):
+#     n = int(input())
+#     memo = [0, 1, 1]
+#     for i in range(2, n + 1):
+#         memo.append(memo[i - 2] + memo[i - 1] + memo[i])
+#     print(memo[- 1])
+
+# n = int(input())
+# arr = sorted(list(map(int, input().split())))
+# ans = 0
+# for i in range(1, n + 1):
+#     ans += sum(arr[:i])
+# print(ans)
+
+# n = int(input())
+# arr = sorted(list(map(int, input().split())) for _ in range(n))
+# for i in arr:
+#     print(*i)
+
+# arr = ["6 = 1 + 2 + 3", "28 = 1 + 2 + 4 + 7 + 14", "496 = 1 + 2 + 4 + 8 + 16 + 31 + 62 + 124 + 248", "8128 = 1 + 2 + 4 + 8 + 16 + 32 + 64 + 127 + 254 + 508 + 1016 + 2032 + 4064"]
+# while True:
+#     n = int(input())
+#     if n == - 1:
+#         break
+#     if n == 6:
+#         print(arr[0])
+#     elif n == 28:
+#         print(arr[1])
+#     elif n == 496:
+#         print(arr[2])
+#     elif n == 8128:
+#         print(arr[3])
+#     else:
+#         print("{} is NOT perfect.".format(n))
+
+# from collections import deque
+# n = int(input())
+# q = deque(range(1, n + 1))
+# while len(q) != 1:
+#     q.popleft()
+#     q.append(q.popleft())
+# print(q[0])
+
 T = int(input())
-for test_case in range(T):
-    N = int(input())
-    arr = list(map(int, input().split()))
-    ans = 0
-    for i in range(N - 2):
-        if arr[i] < arr[i + 1] < arr[i + 2] or arr[i] > arr[i + 1] > arr[i + 2]:
-            ans += 1
-    print("#{} {}".format(test_case + 1, ans))
+for _ in range(T):
+    n = int(input())
+    memo = [1, 1, 1]
+    for i in range(2, n - 1):
+        memo.append(memo[i - 2] + memo[i - 1])
+    print(memo[- 1])
