@@ -1957,10 +1957,39 @@ sys.stdin = open("practice_input.txt", "r")
 #     q.append(q.popleft())
 # print(q[0])
 
-T = int(input())
-for _ in range(T):
-    n = int(input())
-    memo = [1, 1, 1]
-    for i in range(2, n - 1):
-        memo.append(memo[i - 2] + memo[i - 1])
-    print(memo[- 1])
+# T = int(input())
+# for _ in range(T):
+#     n = int(input())
+#     memo = [1, 1, 1]
+#     for i in range(2, n - 1):
+#         memo.append(memo[i - 2] + memo[i - 1])
+#     print(memo[- 1])
+
+# N = int(input())
+# for i in range(1, N + 1):
+#     print("Hello World, Judge {}!".format(i))
+
+def dfs(n):
+    global ans
+    if visited[n]:
+        return
+    visited[n] = True
+    ans += 1
+    for i in range(1, N + 1):
+        if arr[n][i]:
+            dfs(arr[n][i])
+
+
+N = int(input())
+k = int(input())
+arr = [[0] * (N + 1) for _ in range(N + 1)]
+
+visited = [False] * (N + 1)
+ans = 0
+for _ in range(k):
+    n, v = map(int, input().split())
+    arr[n][v] = arr[v][n] = 1
+print(arr)
+dfs(1)
+print(ans)
+print(visited)
