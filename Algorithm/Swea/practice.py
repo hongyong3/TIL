@@ -1969,27 +1969,156 @@ sys.stdin = open("practice_input.txt", "r")
 # for i in range(1, N + 1):
 #     print("Hello World, Judge {}!".format(i))
 
-def dfs(n):
-    global ans
-    if visited[n]:
-        return
-    visited[n] = True
-    ans += 1
-    for i in range(1, N + 1):
-        if arr[n][i]:
-            dfs(arr[n][i])
+# def dfs(n):
+#     global ans
+#     if visited[n]:
+#         return
+#     visited[n] = True
+#     ans += 1
+#     for i in range(1, N + 1):
+#         if arr[n][i]:
+#             dfs(arr[n][i])
+#
+#
+# N = int(input())
+# k = int(input())
+# arr = [[0] * (N + 1) for _ in range(N + 1)]
+#
+# visited = [False] * (N + 1)
+# ans = 0
+# for _ in range(k):
+#     n, v = map(int, input().split())
+#     arr[n][v] = arr[v][n] = 1
+# print(arr)
+# dfs(1)
+# print(ans)
+# print(visited)
 
+# r, b = map(int, input().split())
+# p = (r + 4) // 2
+# for w in range(1, p + 1):
+#     l = p - w
+#     if l * w == r + b:
+#         break
+# print(l, w)
 
+# N, b = input().split()
+# ans, idx = 0, 0
+# for i in N[:: - 1]:
+#     if i.isalpha():
+#         ans += (ord(i) - 55) * pow(int(b), idx)
+#     else:
+#         ans += int(i) * pow(int(b), idx)
+#     idx += 1
+# print(ans)
+
+# s = input()
+# ans = ''
+# for i in s:
+#     if ord(i) >= 97:
+#         ans += i.upper()
+#     else:
+#         ans += i.lower()
+# print(ans)
+
+# N = int(input())
+# A = list(map(int, input().split()))
+# B, C = map(int, input().split())
+# ans = N
+# for i in A:
+#     if i > B:
+#         temp = (i - B) / C
+#         if temp == int(temp):
+#             ans += int(temp)
+#         else:
+#             ans += int(temp) + 1
+# print(ans)
+# from itertools import combinations
+# n, m = map(int, input().split())
+# arr = sorted(list(map(int, input().split())))
+# for i in combinations(arr, m):
+#     print(*i)
+
+# def game(batting):
+#     score, batter, out = 0, 0, 0
+#     for i in range(N):
+#         out = 0
+#         runner = [0] * 3
+#         while out < 3:
+#             if data[i][batting[batter]] == 0:
+#                 out += 1
+#             else:
+#                 for j in range(2, - 1, - 1):
+#                     if runner[j]:
+#                         if j + data[i][batting[batter]] >= 3:
+#                             score += 1
+#                         else:
+#                             runner[j + data[i][batting[batter]]] = 1
+#                         runner[j] = 0
+#                 if data[i][batting[batter]] == 4:
+#                     score += 1
+#                 else:
+#                     runner[data[i][batting[batter]] - 1] = 1
+#             batter = (batter + 1) % 9
+#     return score
+#
+# def backTraking(batting, chk):
+#     global ans
+#     if len(batting) == 9:
+#         if batting[3] == 0:
+#             ans = max(ans, game(batting))
+#         return
+#     for i in range(9):
+#         if not chk[i]:
+#             batting.append(i)
+#             chk[i] = 1
+#             backTraking(batting, chk)
+#             chk[i] = 0
+#             batting.pop()
+#
+# N = int(input())
+# data = [list(map(int, input().split())) for _ in range(N)]
+# ans = - 1
+# chk = [0] * 9
+# batting = []
+# for i in range(9):
+#     batting.append(i)
+#     chk[i] = 1
+#     backTraking(batting, chk)
+#     batting.pop(- 1)
+#     chk[i] = 0
+# print(ans)
+
+from itertools import permutations
 N = int(input())
-k = int(input())
-arr = [[0] * (N + 1) for _ in range(N + 1)]
+data = [list(map(int, input().split())) for _ in range(N)]
 
-visited = [False] * (N + 1)
 ans = 0
-for _ in range(k):
-    n, v = map(int, input().split())
-    arr[n][v] = arr[v][n] = 1
-print(arr)
-dfs(1)
+for perm in permutations(range(1, 9)):
+    batting = list(perm)[:3] + [0] + list(perm)[3:]
+    batter, score = 0, 0
+    for inning in data:
+        b1, b2, b3, out = 0, 0, 0, 0
+        while True:
+            hit = inning[batting[batter]]
+            if hit == 0:
+                out += 1
+            elif hit == 1:
+                score += b3
+                b1, b2, b3 = 1, b1, b2
+            elif hit == 2:
+                score += b2 + b3
+                b1, b2, b3 = 0, 1, b1
+            elif hit == 3:
+                score += b1 + b2 + b3
+                b1, b2, b3 = 0, 0, 1
+            elif hit == 4:
+                score += b1 + b2 + b3 + 1
+                b1, b2, b3 = 0, 0, 0
+
+            batter = (batter + 1) % 9
+            if out >= 3:
+                break
+    if score > ans:
+        ans = score
 print(ans)
-print(visited)
