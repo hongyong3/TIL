@@ -2092,8 +2092,8 @@ sys.stdin = open("practice_input.txt", "r")
 from itertools import permutations
 N = int(input())
 data = [list(map(int, input().split())) for _ in range(N)]
-
 ans = 0
+
 for perm in permutations(range(1, 9)):
     batting = list(perm)[:3] + [0] + list(perm)[3:]
     batter, score = 0, 0
