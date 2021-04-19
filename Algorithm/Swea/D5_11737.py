@@ -17,7 +17,7 @@ def solve(N, i):
     if x == 1:
         return ar_1, 2 ** (N - 1) + ar_2
     if x == 2:
-        return 2 ** (N - 1) + ar_2, 2 ** (N - 1) + ar_2
+        return 2 ** (N - 1) + ar_1, 2 ** (N - 1) + ar_2
     if x == 3:
         return 2 ** N + 1 - ar_2, 2 ** (N - 1) + 1 - ar_1
 

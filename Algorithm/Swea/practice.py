@@ -2089,36 +2089,89 @@ sys.stdin = open("practice_input.txt", "r")
 #     chk[i] = 0
 # print(ans)
 
-from itertools import permutations
-N = int(input())
-data = [list(map(int, input().split())) for _ in range(N)]
-ans = 0
+# from itertools import permutations
+# N = int(input())
+# data = [list(map(int, input().split())) for _ in range(N)]
+# ans = 0
+#
+# for perm in permutations(range(1, 9)):
+#     batting = list(perm)[:3] + [0] + list(perm)[3:]
+#     batter, score = 0, 0
+#     for inning in data:
+#         b1, b2, b3, out = 0, 0, 0, 0
+#         while True:
+#             hit = inning[batting[batter]]
+#             if hit == 0:
+#                 out += 1
+#             elif hit == 1:
+#                 score += b3
+#                 b1, b2, b3 = 1, b1, b2
+#             elif hit == 2:
+#                 score += b2 + b3
+#                 b1, b2, b3 = 0, 1, b1
+#             elif hit == 3:
+#                 score += b1 + b2 + b3
+#                 b1, b2, b3 = 0, 0, 1
+#             elif hit == 4:
+#                 score += b1 + b2 + b3 + 1
+#                 b1, b2, b3 = 0, 0, 0
+#
+#             batter = (batter + 1) % 9
+#             if out >= 3:
+#                 break
+#     if score > ans:
+#         ans = score
+# print(ans)
 
-for perm in permutations(range(1, 9)):
-    batting = list(perm)[:3] + [0] + list(perm)[3:]
-    batter, score = 0, 0
-    for inning in data:
-        b1, b2, b3, out = 0, 0, 0, 0
-        while True:
-            hit = inning[batting[batter]]
-            if hit == 0:
-                out += 1
-            elif hit == 1:
-                score += b3
-                b1, b2, b3 = 1, b1, b2
-            elif hit == 2:
-                score += b2 + b3
-                b1, b2, b3 = 0, 1, b1
-            elif hit == 3:
-                score += b1 + b2 + b3
-                b1, b2, b3 = 0, 0, 1
-            elif hit == 4:
-                score += b1 + b2 + b3 + 1
-                b1, b2, b3 = 0, 0, 0
+# t = int(input())
+# for _ in range(t):
+#     n, m = map(int, input().split())
+#     nf, mf, mnf = 1, 1, 1,
+#     for i in range(2, n + 1):
+#         nf *= i
+#     for i in range(2, m + 1):
+#         mf *= i
+#     for i in range(2, m - n + 1):
+#         mnf *= i
+#     print(mf // nf // mnf)
 
-            batter = (batter + 1) % 9
-            if out >= 3:
-                break
-    if score > ans:
-        ans = score
-print(ans)
+# t = int(input())
+# memo0 = [1, 0]
+# memo1 = [0, 1]
+# for i in range(2, 41):
+#     memo0.append(memo0[i - 1] + memo0[i - 2])
+#     memo1.append(memo1[i - 1] + memo1[i - 2])
+# for _ in range(t):
+#     n = int(input())
+#     print(memo0[n], memo1[n])
+
+# t = int(input())
+# for _ in range(t):
+#     x1, y1, x2, y2 = map(int, input().split())
+#     n = int(input())
+#     ans = 0
+#     for _ in range(n):
+#         cx, cy, r = map(int, input().split())
+#         d1 = ((cx - x1) ** 2 + (cy - y1) ** 2) ** 0.5
+#         d2 = ((cx - x2) ** 2 + (cy - y2) ** 2) ** 0.5
+#         if d1 < r and d2 < r:
+#             pass
+#         elif d1 < r:
+#             ans += 1
+#         elif d2 < r:
+#             ans += 1
+#     print(ans)
+
+t = int(input())
+for _ in range(t):
+    a, b = map(int, input().split())
+    a %= 10
+    if a in [1, 5, 6, 0]:
+        if a == 0:
+            print(10)
+        else:
+            print(a)
+    else:
+        b = 4 + b % 4
+        a = str(a ** b)
+        print(a[- 1])
