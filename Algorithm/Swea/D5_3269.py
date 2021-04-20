@@ -82,4 +82,4 @@ for test_case in range(T):
     for i in range(V, 0, - 1):
         if not visited[ft2vtx[i]]:
             TDfs(ft2vtx[i], scc)
-            scc = sorted(scc)
+            scc = sorted(scc)zz

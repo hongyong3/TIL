@@ -2162,16 +2162,330 @@ sys.stdin = open("practice_input.txt", "r")
 #             ans += 1
 #     print(ans)
 
-t = int(input())
-for _ in range(t):
-    a, b = map(int, input().split())
-    a %= 10
-    if a in [1, 5, 6, 0]:
-        if a == 0:
-            print(10)
-        else:
-            print(a)
-    else:
-        b = 4 + b % 4
-        a = str(a ** b)
-        print(a[- 1])
+# t = int(input())
+# for _ in range(t):
+#     a, b = map(int, input().split())
+#     a %= 10
+#     if a in [1, 5, 6, 0]:
+#         if a == 0:
+#             print(10)
+#         else:
+#             print(a)
+#     else:
+#         b = 4 + b % 4
+#         a = str(a ** b)
+#         print(a[- 1])
+
+# from itertools import permutations
+# n, m = map(int, input().split())
+# arr = list(range(1, n + 1))
+# for i in permutations(arr, m):
+#     print(*i)
+
+# n = int(input())
+# for _ in range(n):
+#     print(sorted(list(map(int, input().split())))[- 3])
+
+# import sys
+# n = int(input())
+# for _ in range(n):
+#     n = int(sys.stdin.readline())
+#     ans = "YES"
+#     num = []
+#     for _ in range(n):
+#         num
+#         .append(sys.stdin.readline().strip('\n'))
+#     num.sort()
+#     for i, j in zip(num, num[1:]):
+#         if i == j[:len(i)]:
+#             ans = "NO"
+#             break
+#     print(ans)
+
+# n = int(input())
+# for _ in range(n):
+#     s = input()
+#     s = s[0].upper() + s[1:]
+#     print(s)
+
+# def solve(n):
+#     end = 666
+#     while n != 0:
+#         if '666' in str(end):
+#             n -= 1
+#         end += 1
+#     return end
+# n = int(input())
+# ans = 666
+# print(solve(n) - 1)
+
+# import sys
+# from collections import deque
+# n = int(input())
+# q = deque()
+# for _ in range(n):
+#     cmd = list(sys.stdin.readline().split())
+#     if cmd[0] == "push_front":
+#         q.appendleft(cmd[1])
+#     elif cmd[0] == "push_back":
+#         q.append(cmd[1])
+#     elif cmd[0] == "pop_front":
+#         if not q:
+#             print(- 1)
+#         else:
+#             print(q.popleft())
+#     elif cmd[0] == "pop_back":
+#         if not q:
+#             print(- 1)
+#         else:
+#             print(q.pop())
+#     elif cmd[0] == "size":
+#         print(len(q))
+#     elif cmd[0] == "empty":
+#         if not q:
+#             print(1)
+#         else:
+#             print(0)
+#     elif cmd[0] == "front":
+#         if not q:
+#             print(- 1)
+#         else:
+#             print(q[0])
+#     elif cmd[0] == "back":
+#         if not q:
+#             print(- 1)
+#         else:
+#             print(q[- 1])
+
+# import sys
+# s = sys.stdin.readline()
+# a, b = 0, 0
+# for i in range(len(s) - 2):
+#     if s[i] == 'J':
+#         if s[i + 1] == 'O' and s[i + 2] == 'I':
+#             a += 1
+#     if s[i] == 'I':
+#         if s[i + 1] == 'O' and s[i + 2] == 'I':
+#             b += 1
+# print(a)
+# print(b)
+
+# n, k = map(int, input().split())
+# nf = 1
+# kf = 1
+# nkf = 1
+# for i in range(2, n + 1):
+#     nf *= i
+# for i in range(2, k + 1):
+#     kf *= i
+# for i in range(2, n - k + 1):
+#     nkf *= i
+#
+# print(nf // kf // nkf)
+
+# n = int(input())
+# ans = 0
+# for _ in range(n):
+#     n, k = map(int, input().split())
+#     ans += k % n
+# print(ans)
+
+# x, y = map(int, input().split())
+# ans = 1
+# while True:
+#     if (y - x) * ans < y:
+#         ans += 1
+#     else:
+#         break
+# print(ans)
+
+# t = int(input())
+# for _ in range(t):
+#     n, m = map(int, input().split())
+#     arr = list(map(int, input().split()))
+#     chk = [0] * n
+#     chk[m] = 1
+#     cnt = 0
+#
+#     while arr:
+#         if arr[0] == max(arr):
+#             if chk[0]:
+#                 print(cnt + 1)
+#                 break
+#             else:
+#                 arr.pop(0)
+#                 chk.pop(0)
+#                 cnt += 1
+#         else:
+#             arr.append(arr.pop(0))
+#             chk.append(chk.pop(0))
+
+# n, m = map(int, input().split())
+# arr = list(map(int, input().split()))
+# ans = 0
+# l, r, total = 0, 0, 0
+# while True:
+#     if total >= m:
+#         total -= arr[l]
+#         l += 1
+#     else:
+#         if r == n:
+#             break
+#         total += arr[r]
+#         r += 1
+#     if total == m:
+#         ans += 1
+# print(ans)
+# from collections import deque
+#
+# def solve(cnt):
+#     global ans, arr
+#     if cnt == 5:
+#         for i in range(n):
+#             ans = max(ans, max(arr[i]))
+#         return
+#     temp = [x[:] for x in arr]
+#     for k in range(4):
+#         move(k)
+#         solve(cnt + 1)
+#         arr = [x[:] for x in temp]
+#
+#
+# def move(k):
+#     if k == 0:  # 상
+#         for x in range(n):
+#             for y in range(n):
+#                 get(y, x)
+#             merge(0, x, 1, 0)
+#
+#     elif k == 1:    # 하
+#         for x in range(n):
+#             for y in range(n - 1, - 1, - 1):
+#                 get(y, x)
+#             merge(n - 1, x, - 1, 0)
+#
+#     elif k == 2:    # 좌
+#         for x in range(n):
+#             for y in range(n):
+#                 get(x, y)
+#             merge(x, 0, 0, 1)
+#
+#     else:   # 우
+#         for x in range(n):
+#             for y in range(n - 1, - 1, - 1):
+#                 get(x, y)
+#             merge(x, n - 1, 0, - 1)
+#
+#
+# def get(x, y):
+#     if arr[x][y]:
+#         q.append(arr[x][y])
+#         arr[x][y] = 0
+#
+#
+# def merge(x, y, dx, dy):
+#     while q:
+#         val = q.popleft()
+#
+#         if not arr[x][y]:
+#             arr[x][y] = val
+#
+#         elif arr[x][y] == val:
+#             arr[x][y] *= 2
+#             x += dx
+#             y += dy
+#
+#         else:
+#             x += dx
+#             y += dy
+#             arr[x][y] = val
+#
+#
+# n = int(input())
+# arr = [list(map(int, input().split())) for _ in range(n)]
+# q = deque()
+# ans = 0
+# solve(0)
+# print(ans)
+
+# arr = [(idx, int(input())) for idx in range(1, 9)]
+# arr = sorted(sorted(arr, key = lambda x : x[1])[3:])
+# print(sum(i[1] for i in arr))
+# for i in arr:
+#     print(i[0], end = ' ')
+# print()
+
+# n, k = map(int, input().split())
+# coin = [int(input()) for _ in range(n)]
+# ans = 0
+# while k:
+#     for i in range(n):
+#         if coin[i] > k:
+#             ans += k // coin[i - 1]
+#             k %= coin[i - 1]
+#             break
+#     else:
+#         ans += k // coin[i]
+#         k %= coin[i]
+# print(ans)
+
+# n, k = map(int, input().split())
+# coin = sorted([int(input()) for _ in range(n)])
+# dp = [0] * (k + 1)
+#
+# for i in range(1, k + 1):
+#     a = []
+#     for j in coin:
+#         if j <= i and dp[i - j] != - 1:
+#             a.append(dp[i - j])
+#     if a:
+#         dp[i] = min(a) + 1
+#     else:
+#         dp[i] = - 1
+# print(dp[k])
+# from itertools import permutations
+# num = list(permutations(range(1, 10), 3))
+# n = int(input())
+# for _ in range(n):
+#     base, s, b = map(int, input().split())
+#     base = list(str(base))
+#     removeCnt = 0
+#     lenNum = len(num)
+#
+#     for i in range(lenNum):
+#         scnt, bcnt = 0, 0
+#         i -= removeCnt
+#
+#         for j in range(3):
+#             base[j] = int(base[j])
+#             if base[j] in num[i]:
+#                 if j == num[i].index(base[j]):
+#                     scnt += 1
+#                 else:
+#                     bcnt += 1
+#         if scnt != s or bcnt != b:
+#             num.remove(num[i])
+#             removeCnt += 1
+# print(len(num))
+
+# import hashlib
+# s = input()
+# sha = hashlib.sha256(s.encode()).hexdigest()
+# print(sha)
+
+# n = int(input())
+# ans = 1
+# for i in range(1, n + 1):
+#     ans *= i
+# print(ans)
+
+# n = int(input())
+# memo = [1, 1]
+# for i in range(2, n + 1):
+#     memo.append(memo[i - 1] + 2 * memo[i - 2])
+# print(memo[n] % 10007)
+
+n, m = map(int, input().split())
+a = list(map(int, input().split()))
+b = list(map(int, input().split()))
+print(*sorted(a + b))
