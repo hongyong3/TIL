@@ -2485,7 +2485,157 @@ sys.stdin = open("practice_input.txt", "r")
 #     memo.append(memo[i - 1] + 2 * memo[i - 2])
 # print(memo[n] % 10007)
 
-n, m = map(int, input().split())
-a = list(map(int, input().split()))
-b = list(map(int, input().split()))
-print(*sorted(a + b))
+# n, m = map(int, input().split())
+# a = list(map(int, input().split()))
+# b = list(map(int, input().split()))
+# print(*sorted(a + b))
+
+# n = int(input())
+# for i in range(1, n + 1):
+#     print(' ' * (n - i) + '*' * i)
+# def ccw(x1, y1, x2, y2, x3, y3):
+#     res = (x1 * y2 + x2 * y3 + x3 * y1) - (y1 * x2 + y2 * x3 + y3 * x1)
+#     if res < 0:
+#         return - 1
+#     elif res > 0:
+#         return 1
+#     else:
+#         return 0
+#
+#
+# x1, y1, x2, y2 = map(int, input().split())
+# x3, y3, x4, y4 = map(int, input().split())
+# ans, chk = 0, 0
+# abc = ccw(x1, y1, x2, y2, x3, y3)
+# abd = ccw(x1, y1, x2, y2, x4, y4)
+# cda = ccw(x3, y3, x4, y4, x1, y1)
+# cdb = ccw(x3, y3, x4, y4, x2, y2)
+#
+# if abc * abd == 0 and cda * cdb == 0:
+#     chk = 1
+#     if min(x1, x2) <= max(x3, x4) and min(x3, x4) <= max(x1, x2) and min(y1, y2) <= max(y3, y4) and min(y3, y4) <= max(y1, y2):
+#         ans = 1
+# if abc * abd <= 0 and cda * cdb <= 0:
+#     if not chk:
+#         ans = 1
+# print(ans)
+
+# n = int(input())
+# memo = [1, 1]
+# for i in range(2, n + 1):
+#     memo.append((memo[i - 1] + memo[i - 2]) % 15746)
+# print(memo[n])
+
+# n = int(input())
+# arr = sorted(int(input()) for _ in range(n))[:: - 1]
+# ans = 0
+# for i in range(n):
+#     temp = arr[i] * (i + 1)
+#     if ans < temp:
+#         ans = temp
+# print(ans)
+
+# s1, s2, s3 = map(int, input().split())
+# arr = [0] * (s1 + s2 + s3 + 1)
+#
+# for i in range(1, s1 + 1):
+#     for j in range(1, s2 + 1):
+#         for k in range(1, s3 + 1):
+#             arr[i + j + k] += 1
+# for i in range(4, s1 + s2 + s3):
+#     if arr[i] == max(arr):
+#         print(i)
+#         break
+# from collections import deque
+# n, k = map(int, input().split())
+# q = deque(range(1, n + 1))
+# print('<', end = '')
+# while q:
+#     for i in range(k - 1):
+#         q.append(q.popleft())
+#     if len(q) != 1:
+#         print(q.popleft(), end = ', ')
+#     else:
+#         print(q.popleft(), end = '>')
+# s = 0
+# for _ in range(4):
+#     s += int(input())
+# print(s // 60)
+# print(s % 60)
+
+# c3 = int(input())
+# c2 = int(input())
+# c1 = c2 + (c2 - c3)
+# print(c1)
+
+# import sys
+# n = int(input())
+# q = []
+# for _ in range(n):
+#     cmd = list(sys.stdin.readline().split())
+#     if cmd[0] == "push":
+#         q.append(cmd[1])
+#     elif cmd[0] == "pop":
+#         if not q:
+#             print(- 1)
+#         else:
+#             print(q.pop(0))
+#     elif cmd[0] == "size":
+#         print(len(q))
+#     elif cmd[0] == "empty":
+#         if not q:
+#             print(1)
+#         else:
+#             print(0)
+#     elif cmd[0] == "front":
+#         if not q:
+#             print(- 1)
+#         else:
+#             print(q[0])
+#     elif cmd[0] == "back":
+#         if not q:
+#             print(- 1)
+#         else:
+#             print(q[- 1])
+
+# n = int(input())
+# arr = sorted(int(input()) for _ in range(n))
+# for i in arr:
+#     print(i)
+
+# n = int(input())
+# dp = [[0] * 10 for _ in range(n + 1)]
+# for i in range(1, 10):
+#     dp[1][i] = 1
+#
+# for i in range(2, n + 1):
+#     for j in range(10):
+#         if j == 0:
+#             dp[i][j] = dp[i - 1][1]
+#         elif j == 9:
+#             dp[i][j] = dp[i - 1][8]
+#         else:
+#             dp[i][j] = dp[i - 1][j - 1] + dp[i - 1][j + 1]
+#
+# print(sum(dp[n]) % 1000000000)
+
+# s = input()
+# if s == s[:: - 1]:
+#     print(1)
+# else:
+#     print(0)
+
+# laser = input()
+# stack = []
+# ans = 0
+# for i in range(len(laser)):
+#     if laser[i] == '(':
+#         stack.append(i)
+#     else:
+#         if stack[- 1] + 1 == i:
+#             stack.pop()
+#             ans += len(stack)
+#         else:
+#             stack.pop()
+#             ans += 1
+# print(ans)
