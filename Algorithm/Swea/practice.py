@@ -2639,3 +2639,154 @@ sys.stdin = open("practice_input.txt", "r")
 #             stack.pop()
 #             ans += 1
 # print(ans)
+
+# n, m = map(int, input().split())
+# arr = sorted(list(map(int, input().split())))
+# minNum = m
+# chk = False
+#
+# for i in range(n - 2):
+#     if chk:
+#         break
+#     for j in range(i + 1, n - 1):
+#         if chk:
+#             break
+#         for k in range(j + 1, n):
+#             num = arr[i] + arr[j] + arr[k]
+#             if num <= m:
+#                 if minNum > m - num:
+#                     minNum = m - num
+#                     ans = num
+#                 if minNum == 0:
+#                     chk = True
+# print(ans)
+
+# n = int(input())
+# for _ in range(n):
+#     a, b = map(int, input().split(','))
+#     print(a + b)
+
+# bracket = input()
+# stack = []
+#
+# for i in bracket:
+#     if i in "([":
+#         stack.append(i)
+#
+#     elif i == ')':
+#         temp = 0
+#         while stack:
+#             val = stack.pop()
+#             if val == '[':
+#                 print(0)
+#                 exit(0)
+#             elif val == '(':
+#                 if temp == 0:
+#                     stack.append(2)
+#                 else:
+#                     stack.append(2 * temp)
+#                 break
+#             else:
+#                 temp += val
+#
+#     else:
+#         temp = 0
+#         while stack:
+#             val = stack.pop()
+#             if val == '(':
+#                 print(0)
+#                 exit(0)
+#             elif val == '[':
+#                 if temp == 0:
+#                     stack.append(3)
+#                 else:
+#                     stack.append(3 * temp)
+#                 break
+#             else:
+#                 temp += val
+#
+# ans = 0
+# for i in stack:
+#     if i == '(' or i == '[':
+#         ans = 0
+#         break
+#     else:
+#         ans += i
+# print(ans)
+
+# print(int((- 1 + (1 + 8 * int(input())) ** 0.5) * 0.5))
+
+# import sys
+# sys.setrecursionlimit(10000)
+#
+# dx = [- 1, 1, 0, 0]
+# dy = [0, 0, - 1, 1]
+#
+# def dfs(y, x):
+#     for k in range(4):
+#         ny = y + dy[k]
+#         nx = x + dx[k]
+#         if not (0 <= ny < N and 0 <= nx < M) or not arr[ny][nx]:
+#             continue
+#         if arr[ny][nx]:
+#             arr[ny][nx] = 0
+#             dfs(ny, nx)
+#
+# T = int(input())
+# for _ in range(T):
+#     M, N, K = map(int, input().split())
+#     arr = [[0] * M for _ in range(N)]
+#
+#     for _ in range(K):
+#         x, y = map(int, input().split())
+#         arr[y][x] = 1
+#
+#     ans = 0
+#     for y in range(N):
+#         for x in range(M):
+#             if arr[y][x]:
+#                 arr[y][x] = 0
+#                 dfs(y, x)
+#                 ans += 1
+#     print(ans)
+
+# import sys
+# sys.setrecursionlimit(10000)
+#
+# dx = [- 1, 1, 0, 0]
+# dy = [0, 0, - 1, 1]
+#
+# def game(x, y):
+#     global chk
+#     if not (0 <= x < n and 0 <= y < m) or arr[x][y] == 10:
+#         return 0
+#     if visited[x][y]:
+#         chk = True
+#         return - 1
+#     if memo[x][y] != - 1:
+#         return memo[x][y]
+#
+#     visited[x][y] = 1
+#     move = arr[x][y]
+#     for k in range(4):
+#         nx = x + dx[k] * move
+#         ny = y + dy[k] * move
+#         memo[x][y] = max(memo[x][y], game(nx, ny) + 1)
+#         if chk:
+#             return - 1
+#     visited[x][y] = 0
+#
+#     return memo[x][y]
+#
+# n, m = map(int, input().split())
+# arr = [[10] * m for _ in range(n)]
+# visited = [[0] * m for _ in range(n)]
+# memo = [[- 1] * m for _ in range(n)]
+# chk = False
+#
+# for i in range(n):
+#     data = input()
+#     for j in range(m):
+#         if data[j] != 'H':
+#             arr[i][j] = int(data[j])
+# print(game(0, 0))
