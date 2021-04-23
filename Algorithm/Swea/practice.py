@@ -2790,3 +2790,79 @@ sys.stdin = open("practice_input.txt", "r")
 #         if data[j] != 'H':
 #             arr[i][j] = int(data[j])
 # print(game(0, 0))
+
+# a = ['c=', 'c-', 'dz=', 'd-', 'lj', 'nj', 's=', 'z=']
+# s = input()
+# for i in a:
+#     s = s.replace(i, '*')
+# print(len(s))
+
+# import sys
+# n = int(sys.stdin.readline())
+# arr = [list(map(int, sys.stdin.readline().split())) for _ in range(n)]
+# arr = sorted(arr, key = lambda x : (x[1], x[0]))
+# for i in arr:
+#     print(*i)
+
+# n = int(input())
+# memo = [0, 1]
+# for i in range(2, n + 1):
+#     memo.append(memo[i - 1] + memo[i - 2])
+# print(memo[n])
+
+# a, b, c = map(int, input().split())
+# ans = pow(a, b, c)
+# print(ans)
+
+# fact = [1]
+# for i in range(1, 101):
+#     fact.append(fact[i - 1] * i)
+# n, m = map(int, input().split())
+# print(fact[n] // fact[m] // fact[n - m])
+
+# n = int(input())
+# arr = list(map(int, input().split()))
+# ans, temp = 0, 0
+# for i in range(1, n):
+#     if arr[i] > arr[i - 1]:
+#         temp += arr[i] - arr[i - 1]
+#     else:
+#         temp = 0
+#     if ans < temp:
+#         ans = temp
+# print(ans)
+
+# n = int(input())
+# data = list(map(int, input().split()))
+# delNode = int(input())
+# tree = {}
+# for i in range(n):
+#     if i == delNode or data[i] == delNode:
+#         continue
+#     if data[i] in tree:
+#         tree[data[i]].append(i)
+#     else:
+#         tree[data[i]] = [i]
+#
+# if - 1 in tree:
+#     q = [- 1]
+# else:
+#     q = []
+# ans = 0
+# while q:
+#     node = q.pop()
+#     if node not in tree:
+#         ans += 1
+#     else:
+#         q += tree[node]
+# print(ans)
+
+# n = int(input())
+# for _ in range(n):
+#     s = input()
+#     if s[: 11] == 'Simon says ':
+#         print(s[10:])
+
+n = int(input())
+for i in range(n):
+    print(' ' * i + '*' * )
