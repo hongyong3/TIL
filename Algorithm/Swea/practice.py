@@ -2863,7 +2863,7 @@ sys.stdin = open("practice_input.txt", "r")
 #     if s[: 11] == 'Simon says ':
 #         print(s[10:])
 
-from itertools import permutations
-n = int(input())
-for i in permutations(range(1, n + 1)):
-    print(*i)
+# from itertools import permutations
+# n = int(input())
+# for i in permutations(range(1, n + 1)):
+#     print(*i)
