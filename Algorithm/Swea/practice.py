@@ -2867,3 +2867,100 @@ sys.stdin = open("practice_input.txt", "r")
 # n = int(input())
 # for i in permutations(range(1, n + 1)):
 #     print(*i)
+
+
+# t = int(input())
+# for _ in range(t):
+#     a, b = map(int, input().split())
+#     ans = 0
+#     if 1 <= a <= 21:
+#         if a <= 1:
+#             ans += 500
+#         elif a <= 3:
+#             ans += 300
+#         elif a <= 6:
+#             ans += 200
+#         elif a <= 10:
+#             ans += 50
+#         elif a <= 15:
+#             ans += 30
+#         else:
+#             ans += 10
+#
+#     if 1 <= b <= 31:
+#         if b <= 1:
+#             ans += 512
+#         elif b <= 3:
+#             ans += 256
+#         elif b <= 7:
+#             ans += 128
+#         elif b <= 15:
+#             ans += 64
+#         else:
+#             ans += 32
+#     print(ans * 10000)
+# import math, sys
+# def solve(arr):
+#     m = sum(arr) / len(arr)
+#     sigma = 0
+#     for i in arr:
+#         sigma += (i - m) ** 2
+#     return sigma / len(arr)
+#
+# n, k = map(int, input().split())
+# data = list(map(int, input().split()))
+# ans = []
+# for i in range(n - k + 1):
+#     for j in range(n - k - i + 1):
+#         temp = data[i: i + j + k]
+#         ans.append(solve(temp))
+# print(math.sqrt(min(ans)))
+# s, ans, idx, j = [], '', 0, 0
+#
+# for _ in range(5):
+#     temp = input()
+#     idx = max(idx, len(temp))
+#     s.append(temp)
+#
+# while j < idx:
+#     for i in range(5):
+#         if j < len(s[i]):
+#             ans += s[i][j]
+#     j += 1
+# print(ans)
+
+# n = int(input())
+# dp = [0] * (n + 1)
+# for i in range(2, n + 1):
+#     dp[i] = dp[i - 1] + 1
+#     if not i % 2:
+#         dp[i] = min(dp[i], dp[i // 2] + 1)
+#     if not i % 3:
+#         dp[i] = min(dp[i], dp[i // 3] + 1)
+# print(dp[n])
+
+# n, k = map(int, input().split())
+# idx = 0
+# for i in range(1, n + 1):
+#     if not n % i:
+#         idx += 1
+#     if idx == k:
+#         print(i)
+#         break
+# else:
+#     print(0)
+# print("""     /~\\
+#     ( oo|
+#     _\=/_
+#    /  _  \\
+#   //|/.\|\\\\
+#  ||  \ /  ||
+# ============
+# |          |
+# |          |
+# |          |""")
+a = int(input())
+b = int(input())
+print(a + b)
+print(a - b)
+print(a * b)
