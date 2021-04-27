@@ -2959,8 +2959,16 @@ sys.stdin = open("practice_input.txt", "r")
 # |          |
 # |          |
 # |          |""")
-a = int(input())
-b = int(input())
-print(a + b)
-print(a - b)
-print(a * b)
+# a = int(input())
+# b = int(input())
+# print(a + b)
+# print(a - b)
+# print(a * b)
+
+T = int(input())
+for test_case in range(T):
+    S = sorted(list(input()))
+    ans = "No"
+    if S[0] == S[1] and S[1] != S[2] and S[2] == S[3]:
+        ans = "Yes"
+    print("#{} {}".format(test_case +1, ans))
