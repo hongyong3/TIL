@@ -2965,10 +2965,48 @@ sys.stdin = open("practice_input.txt", "r")
 # print(a - b)
 # print(a * b)
 
-T = int(input())
-for test_case in range(T):
-    S = sorted(list(input()))
-    ans = "No"
-    if S[0] == S[1] and S[1] != S[2] and S[2] == S[3]:
-        ans = "Yes"
-    print("#{} {}".format(test_case +1, ans))
+# T = int(input())
+# for test_case in range(T):
+#     S = sorted(list(input()))
+#     ans = "No"
+#     if S[0] == S[1] and S[1] != S[2] and S[2] == S[3]:
+#         ans = "Yes"
+#     print("#{} {}".format(test_case +1, ans))
+
+# nums = {'c': 26, 'd': 10}
+# s = input()
+# ans = nums[s[0]]
+# for i in range(1, len(s)):
+#     val = nums[s[i]]
+#     if s[i] == s[i - 1]:
+#         val -= 1
+#     ans *= val
+# print(ans)
+
+# a, b = map(int, input().split())
+# print(b - a, b)
+# print(*sorted(list(map(int, input().split()))))
+
+# a, b, c = map(int, input().split())
+# print(a + b + c)
+# import sys
+# n = int(sys.stdin.readline())
+# arr = sorted([int(sys.stdin.readline()) for _ in range(n)])
+# for i in arr:
+#     print(i)
+
+# from itertools import permutations
+# n, m = map(int, input().split())
+# arr = sorted(list(map(int, input().split())))
+#
+# for i in permutations(arr, m):
+#     print(*i)
+
+# a, b = map(int, input().split())
+# print(a + b)
+arr = [0] * 31
+for i in range(28):
+    arr[int(input())] = 1
+for i in range(1, 31):
+    if not arr[i]:
+        print(i)
