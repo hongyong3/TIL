@@ -3011,8 +3011,41 @@ sys.stdin = open("practice_input.txt", "r")
 #     if not arr[i]:
 #         print(i)
 
-n = int(input())
-for _ in range(n):
-    aArr = list(map(int, input().split()))
-    bArr = list(map(int, input().split()))
-    
+# n = int(input())
+# for _ in range(n):
+#     temp = list(map(int, input().split()))
+#     a = [0] * 5
+#
+#     for i in temp[1:]:
+#         a[i] += 1
+#
+#     temp = list(map(int, input().split()))
+#     b = [0] * 5
+#     for i in temp[1:]:
+#         b[i] += 1
+#     for i in range(4, 0, - 1):
+#         if a[i] != b[i]:
+#             if a[i] > b[i]:
+#                 print("A")
+#             else:
+#                 print("B")
+#             break
+#     else:
+#         print("D")
+
+# n = int(input())
+# for _ in range(n):
+#     s = input().split()
+#     ans = 'god'
+#     for i in s[1:]:
+#         ans += i
+#     print(ans)
+
+# a, b = map(int, input().split())
+# print(a ** 2 - b ** 2)
+
+k, n, m = map(int, input().split())
+if k * n < m:
+    print(0)
+else:
+    print(k * n - m)
