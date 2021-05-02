@@ -3044,8 +3044,44 @@ sys.stdin = open("practice_input.txt", "r")
 # a, b = map(int, input().split())
 # print(a ** 2 - b ** 2)
 
-k, n, m = map(int, input().split())
-if k * n < m:
-    print(0)
-else:
-    print(k * n - m)
+# k, n, m = map(int, input().split())
+# if k * n < m:
+#     print(0)
+# else:
+#     print(k * n - m)
+
+# from itertools import combinations
+#
+# while True:
+#     data = list(map(int, input().split()))
+#     if len(data) == 1:
+#         break
+#     k, s = data[0], data[1:]
+#     for i in combinations(s, 6):
+#         print(*i)
+#     print()
+
+# t = int(input())
+# # dp = [0] * 100001
+# # dp[1], dp[2], dp[3], dp[4], dp[5], dp[6] = 1, 2, 2, 3, 3, 6
+# dp = [0] + [1, 2, 2, 3, 3, 6] + [0] * 99994
+# for i in range(7, 100001):
+#     dp[i] = ((dp[i - 2] + dp[i - 4]) % 1000000009 + dp[i - 6]) % 1000000009
+# for _ in range(t):
+#     n = int(input())
+#     print(dp[n])
+
+# from itertools import product
+# n, m = map(int, input().split())
+#
+# for i in product(range(1, n + 1), repeat = m):
+#     print(*i)
+
+from itertools import product
+n, m = map(int, input().split())
+
+for i in product(range(1, n + 1), repeat = m):
+    for j in i[: - 2]:
+        if i[j] < i[j + 1]:
+            break
+    # print(*i)
