@@ -3077,11 +3077,82 @@ sys.stdin = open("practice_input.txt", "r")
 # for i in product(range(1, n + 1), repeat = m):
 #     print(*i)
 
-from itertools import product
-n, m = map(int, input().split())
+# people, ans = 0, 0
+# for _ in range(4):
+#     a, b = map(int, input().split())
+#     people += b - a
+#     if ans < people:
+#         ans = people
+# print(ans)
 
-for i in product(range(1, n + 1), repeat = m):
-    for j in i[: - 2]:
-        if i[j] < i[j + 1]:
-            break
-    # print(*i)
+# ay, am, ad = map(int, input().split())
+# by, bm, bd = map(int, input().split())
+# if ay == by:
+#     ans1 = 0
+# else:
+#     if am == bm:
+#         if ad <= bd:
+#             ans1 = by - ay
+#         else:
+#             ans1 = by - ay - 1
+#     elif am < bm:
+#         ans1 = by - ay
+#     else:
+#         ans1 = by - ay - 1
+# ans2 = by - ay + 1
+# ans3 = by - ay
+# print(ans1)
+# print(ans2)
+# print(ans3)
+
+# n = int(input())
+# c, nc = 0, 0
+# for _ in range(n):
+#     a = int(input())
+#     if a:
+#         c += 1
+#     else:
+#         nc += 1
+# if c > nc:
+#     print("Junhee is cute!")
+# else:
+#     print("Junhee is not cute!")
+
+# n = int(input())
+# arr = list(map(int, input().split()))
+# print(arr.count(int(input())))
+
+# n = int(input())
+# ans, idx = 0, 1
+#
+# while n:
+#     if n >= idx:
+#         n -= idx
+#         idx += 1
+#     else:
+#         n -= 1
+#         idx = 2
+#     ans += 1
+# print(ans)
+
+# a, b, c = map(int, input().split())
+# x = a * b / c
+# y = a / b * c
+# if x > y:
+#     print(int(x))
+# else:
+#     print(int(y))
+
+# pi = 3.14159265358979323846
+# r = int(input())
+# ans1 = pi * r ** 2
+# ans2 = r ** 2 * 2
+# print("%6f" % ans1)
+# print("%6f" % ans2)
+
+c = [1, 1, 2, 2, 2, 8]
+arr = list(map(int, input().split()))
+ans = [0, 0, 0, 0, 0, 0]
+for i in range(6):
+    ans[i] = c[i] - arr[i]
+print(*ans)
