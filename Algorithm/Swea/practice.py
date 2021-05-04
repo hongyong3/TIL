@@ -3150,9 +3150,75 @@ sys.stdin = open("practice_input.txt", "r")
 # print("%6f" % ans1)
 # print("%6f" % ans2)
 
-c = [1, 1, 2, 2, 2, 8]
-arr = list(map(int, input().split()))
-ans = [0, 0, 0, 0, 0, 0]
-for i in range(6):
-    ans[i] = c[i] - arr[i]
-print(*ans)
+# c = [1, 1, 2, 2, 2, 8]
+# arr = list(map(int, input().split()))
+# ans = [0, 0, 0, 0, 0, 0]
+# for i in range(6):
+#     ans[i] = c[i] - arr[i]
+# print(*ans)
+
+# n = int(input())
+# arr = sorted(list(map(int, input().split())))
+# x = int(input())
+# ans = 0
+# l, r, ans = 0, n - 1, 0
+# while l < r:
+#     if arr[l] + arr[r] > x:
+#         r -= 1
+#     elif arr[l] + arr[r] < x:
+#         l += 1
+#     else:
+#         l += 1
+#         r -= 1
+#         ans += 1
+# print(ans)
+
+# t = int(input())
+# for _ in range(t):
+#     arr = input()
+#     ans = 0
+#     for i in range(16):
+#         n = int(arr[i])
+#         if not i % 2:
+#             n *= 2
+#             if n > 9:
+#                 ans += n // 10
+#                 ans += n % 10
+#             else:
+#                 ans += n
+#         else:
+#             ans += n
+#     if ans % 10:
+#         print('F')
+#     else:
+#         print('T')
+
+# arr = list(map(int, input().split()))
+# ans = 0
+# for i in arr:
+#     ans += i ** 2
+# print(ans % 10)
+
+# n, m = map(int, input().split())
+# print(1 if n == m else 0)
+
+# n = int(input())
+# sx, sy = map(int, input().split())
+# ans = 0
+# x, y = sx, sy
+# for _ in range(n - 1):
+#     nx, ny = map(int, input().split())
+#     ans += abs(nx + ny - x - y)
+#     x, y = nx, ny
+# ans += abs(x + y - sx - sy)
+# print(ans)
+
+b = int(input())
+ans1 = 5 * b - 400
+ans2 = 0
+if b > 100:
+    ans2 = - 1
+elif b < 100:
+    ans2 = 1
+print(ans1)
+print(ans2)
