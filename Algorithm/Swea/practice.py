@@ -3213,12 +3213,46 @@ sys.stdin = open("practice_input.txt", "r")
 # ans += abs(x + y - sx - sy)
 # print(ans)
 
-b = int(input())
-ans1 = 5 * b - 400
-ans2 = 0
-if b > 100:
-    ans2 = - 1
-elif b < 100:
-    ans2 = 1
-print(ans1)
-print(ans2)
+# b = int(input())
+# ans1 = 5 * b - 400
+# ans2 = 0
+# if b > 100:
+#     ans2 = - 1
+# elif b < 100:
+#     ans2 = 1
+# print(ans1)
+# print(ans2)
+
+dx = [- 1, 1, 0, 0]
+dy = [0, 0, - 1, 1]
+
+T = int(input())
+for test_case in range(1):
+    N, M = map(int, input().split())
+    arr = [list(map(int, input().split())) for _ in range(N)]
+
+    visited = [[0] * M for _ in range(N)]
+    sea = [[0] * M for _ in range(N)]
+    zone = 1
+
+    for i in range(N):
+        for j in range(M):
+            if arr[i][j] and not visited[i][j]:
+                visited[i][j] = 1
+                arr[i][j] = zone
+                s = [(i, j)]
+                while s:
+                    x, y = s.pop()
+                    for k in range(4):
+                        nx = x + dx[k]
+                        ny = y + dy[k]
+                        if 0 <= nx < N and 0 <= ny < M and not visited[nx][ny]:
+                            if arr[nx][ny]:
+                                visited[nx][ny] = 1
+                                arr[nx][ny] = zone
+                                s.append((nx, ny))
+                            else:
+                                sea[x][y] = 1
+                zone += 1
+for i in sea:
+    print(*i)
