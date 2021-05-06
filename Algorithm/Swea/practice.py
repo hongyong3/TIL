@@ -3233,13 +3233,13 @@ for test_case in range(1):
 
     visited = [[0] * M for _ in range(N)]
     sea = [[0] * M for _ in range(N)]
-    zone = 1
+    z = 1
 
     for i in range(N):
         for j in range(M):
             if arr[i][j] and not visited[i][j]:
                 visited[i][j] = 1
-                arr[i][j] = zone
+                arr[i][j] = z
                 s = [(i, j)]
                 while s:
                     x, y = s.pop()
@@ -3249,10 +3249,58 @@ for test_case in range(1):
                         if 0 <= nx < N and 0 <= ny < M and not visited[nx][ny]:
                             if arr[nx][ny]:
                                 visited[nx][ny] = 1
-                                arr[nx][ny] = zone
+                                arr[nx][ny] = z
                                 s.append((nx, ny))
                             else:
                                 sea[x][y] = 1
-                zone += 1
-for i in sea:
-    print(*i)
+                z += 1
+
+    cost = [[float('inf')] * z for _ in range(z)]
+
+    for i in range(N):
+        for j in range(M):
+            if sea[i][j]:
+                z = arr[i][j]
+                for k in range(4):
+                    cnt = 0
+                    x, y = i, j
+                    while True:
+                        x = x + dx[k]
+                        y = y + dy[k]
+                        if 0 <= x < N and 0 <= y < M and not arr[x][y]:
+                            cnt += 1
+                        else:
+                            break
+                    if 0 <= x < N and 0 <= y < M and arr[x][y] != z and cnt >= 2:
+                        nz = arr[x][y]
+                        cost[z][nz] = cost[nz][z] = min(cnt, cost[z][nz])
+
+    for i in range(1, z):
+        if cost[i] == [float('inf')] * z:
+            ans = - 1
+            break
+    else:
+        visited = [0] * z
+        key = [float('inf')] * z
+        key[1] = 0
+        ans = 0
+        for _ in range(1, z):
+            minKey = float('inf')
+            idx = - 1
+
+            for n in range(1, z):
+                if not visited[n] and key[n] < minKey:
+                    minKey = key[n]
+                    idx = n
+
+            visited[minKey] = 1
+            ans += minKey
+
+            for i in range(1, z):
+                if not visited[i] and cost[minKey][i] < key[i]:
+                    key[i] = cost[idx][i]
+
+    if ans == float('inf'):
+        ans = - 1
+
+    print(ans)
