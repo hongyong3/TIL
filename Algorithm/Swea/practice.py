@@ -3297,7 +3297,7 @@ for test_case in range(1):
             ans += minKey
 
             for i in range(1, z):
-                if not visited[i] and cost[minKey][i] < key[i]:
+                if not visited[i] and cost[idx][i] < key[i]:
                     key[i] = cost[idx][i]
 
     if ans == float('inf'):
