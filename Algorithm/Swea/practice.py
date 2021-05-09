@@ -3223,84 +3223,109 @@ sys.stdin = open("practice_input.txt", "r")
 # print(ans1)
 # print(ans2)
 
-dx = [- 1, 1, 0, 0]
-dy = [0, 0, - 1, 1]
+# dx = [- 1, 1, 0, 0]
+# dy = [0, 0, - 1, 1]
+#
+# N, M = map(int, input().split())
+# arr = [list(map(int, input().split())) for _ in range(N)]
+#
+# visited = [[0] * M for _ in range(N)]
+# sea = [[0] * M for _ in range(N)]
+# zone = 1
+#
+# for i in range(N):
+#     for j in range(M):
+#         if arr[i][j] and not visited[i][j]:
+#             visited[i][j] = 1
+#             arr[i][j] = zone
+#             stack = [(i, j)]
+#             while stack:
+#                 x, y = stack.pop()
+#                 for k in range(4):
+#                     nx = x + dx[k]
+#                     ny = y + dy[k]
+#                     if 0 <= nx < N and 0 <= ny < M and not visited[nx][ny]:
+#                         if arr[nx][ny]:
+#                             visited[nx][ny] = 1
+#                             arr[nx][ny] = zone
+#                             stack.append((nx, ny))
+#                         else:
+#                             sea[x][y] = 1
+#             zone += 1
+#
+# cost = [[float('inf')] * zone for _ in range(zone)]
+# for i in range(N):
+#     for j in range(M):
+#         if sea[i][j]:
+#             z = arr[i][j]
+#             for k in range(4):
+#                 cnt = 0
+#                 x, y = i, j
+#                 while True:
+#                     x = x + dx[k]
+#                     y = y + dy[k]
+#                     if 0 <= x < N and 0 <= y < M and not arr[x][y]:
+#                         cnt += 1
+#                     else:
+#                         break
+#                 if 0 <= x < N and 0 <= y < M and arr[x][y] != z and cnt >= 2:
+#                     nz = arr[x][y]
+#                     cost[z][nz] = cost[nz][z] = min(cnt, cost[z][nz])
+#
+# for i in range(1, zone):
+#     if cost[i] == [float('inf')] * zone:
+#         ans = - 1
+#         break
+# else:
+#     visited = [False] * zone
+#     key = [float('inf')] * zone
+#     key[1] = 0
+#     ans = 0
+#     for _ in range(1, zone):
+#         minKey = float('inf')
+#         minIdx = - 1
+#
+#         for n in range(1, zone):
+#             if not visited[n] and key[n] < minKey:
+#                 minKey = key[n]
+#                 minIdx = n
+#
+#         visited[minIdx] = 1
+#         ans += minKey
+#
+#         for i in range(1, zone):
+#             if not visited[i] and cost[minIdx][i] < key[i]:
+#                 key[i] = cost[minIdx][i]
+#
+# if ans == float('inf'):
+#     ans = -1
+#
+# print(ans)
 
-T = int(input())
-for test_case in range(1):
-    N, M = map(int, input().split())
-    arr = [list(map(int, input().split())) for _ in range(N)]
+# t = int(input())
+# for _ in range(t):
+#     arr = list(map(int, input().split()))
+#     ans = 0
+#     num = float('inf')
+#     for i in arr:
+#         if not i % 2:
+#             ans += i
+#             if i < num:
+#                 num = i
+#     print(ans, num)
+# n = int(input())
+# ans = 0
+# for i in range(1, n):
+#     ans += (n * i) + i
+# print(ans)
 
-    visited = [[0] * M for _ in range(N)]
-    sea = [[0] * M for _ in range(N)]
-    z = 1
+# arr1 = sorted([int(input()) for _ in range(10)])
+# arr2 = sorted([int(input()) for _ in range(10)])
+# print(sum(arr1[7:]), sum(arr2[7:]))
 
-    for i in range(N):
-        for j in range(M):
-            if arr[i][j] and not visited[i][j]:
-                visited[i][j] = 1
-                arr[i][j] = z
-                s = [(i, j)]
-                while s:
-                    x, y = s.pop()
-                    for k in range(4):
-                        nx = x + dx[k]
-                        ny = y + dy[k]
-                        if 0 <= nx < N and 0 <= ny < M and not visited[nx][ny]:
-                            if arr[nx][ny]:
-                                visited[nx][ny] = 1
-                                arr[nx][ny] = z
-                                s.append((nx, ny))
-                            else:
-                                sea[x][y] = 1
-                z += 1
+n, m = map(int, input().split())
+arr1 = [list(map(int, input().split())) for _ in range(n)]
+a, b = map(int, input().split())
+arr2 = [list(map(int, input().split())) for _ in range(a)]
 
-    cost = [[float('inf')] * z for _ in range(z)]
-
-    for i in range(N):
-        for j in range(M):
-            if sea[i][j]:
-                z = arr[i][j]
-                for k in range(4):
-                    cnt = 0
-                    x, y = i, j
-                    while True:
-                        x = x + dx[k]
-                        y = y + dy[k]
-                        if 0 <= x < N and 0 <= y < M and not arr[x][y]:
-                            cnt += 1
-                        else:
-                            break
-                    if 0 <= x < N and 0 <= y < M and arr[x][y] != z and cnt >= 2:
-                        nz = arr[x][y]
-                        cost[z][nz] = cost[nz][z] = min(cnt, cost[z][nz])
-
-    for i in range(1, z):
-        if cost[i] == [float('inf')] * z:
-            ans = - 1
-            break
-    else:
-        visited = [0] * z
-        key = [float('inf')] * z
-        key[1] = 0
-        ans = 0
-        for _ in range(1, z):
-            minKey = float('inf')
-            idx = - 1
-
-            for n in range(1, z):
-                if not visited[n] and key[n] < minKey:
-                    minKey = key[n]
-                    idx = n
-
-            visited[minKey] = 1
-            ans += minKey
-
-            for i in range(1, z):
-                if not visited[i] and cost[idx][i] < key[i]:
-                    key[i] = cost[idx][i]
-
-    if ans == float('inf'):
-        ans = - 1
-
-    print(ans)
+ans = [[0] * n for _ in range(b)]
