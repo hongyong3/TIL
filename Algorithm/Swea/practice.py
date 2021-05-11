@@ -3329,8 +3329,10 @@ sys.stdin = open("practice_input.txt", "r")
 [5, 6]       [d, e, f]          [5a + 6d, 5b + 6e, 5c + 6f]
 '''
 
-n, m = map(int, input().split())
-arr1 = [list(map(int, input().split())) for _ in range(n)]
-a, b = map(int, input().split())
-arr2 = [list(map(int, input().split())) for _ in range(a)]
-ans = [[0] * n for _ in range(b)]
+N, M = map(int, input().split())
+A = [list(map(int, input().split())) for _ in range(N)]
+M, K = map(int, input().split())
+B = list(zip(*[list(map(int, input().split())) for _ in range(M)]))
+C = [[sum(map(lambda x: x[0] * x[1], zip(A[i], B[j]))) for j in range(K)] for i in range(N)]
+for i in C:
+    print(*i)
