@@ -3322,17 +3322,27 @@ sys.stdin = open("practice_input.txt", "r")
 # arr1 = sorted([int(input()) for _ in range(10)])
 # arr2 = sorted([int(input()) for _ in range(10)])
 # print(sum(arr1[7:]), sum(arr2[7:]))
+#
+# '''
+# [1, 2]                          [1a + 2d, 1b + 2e, 1c + 2f]
+# [3, 4]   *   [a, b, c]     =    [3a + 4d, 3b + 4e, 3c + 4f]
+# [5, 6]       [d, e, f]          [5a + 6d, 5b + 6e, 5c + 6f]
+# '''
+#
+# N, M = map(int, input().split())
+# A = [list(map(int, input().split())) for _ in range(N)]
+# M, K = map(int, input().split())
+# B = list(zip(*[list(map(int, input().split())) for _ in range(M)]))
+# C = [[sum(map(lambda x: x[0] * x[1], zip(A[i], B[j]))) for j in range(K)] for i in range(N)]
+# for i in C:
+#     print(*i)
 
 '''
-[1, 2]                          [1a + 2d, 1b + 2e, 1c + 2f]
-[3, 4]   *   [a, b, c]     =    [3a + 4d, 3b + 4e, 3c + 4f]
-[5, 6]       [d, e, f]          [5a + 6d, 5b + 6e, 5c + 6f]
+dfs?
+or
+각 행의 0인 것,
+각 열의 0인 것을 계산 후 구하기?
 '''
-
-N, M = map(int, input().split())
-A = [list(map(int, input().split())) for _ in range(N)]
-M, K = map(int, input().split())
-B = list(zip(*[list(map(int, input().split())) for _ in range(M)]))
-C = [[sum(map(lambda x: x[0] * x[1], zip(A[i], B[j]))) for j in range(K)] for i in range(N)]
-for i in C:
-    print(*i)
+n, m = map(int, input().split())
+arr = [input() for _ in range(n)]
+maxAns = 0
