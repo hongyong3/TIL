@@ -3337,12 +3337,6 @@ sys.stdin = open("practice_input.txt", "r")
 # for i in C:
 #     print(*i)
 
-'''
-dfs?
-or
-각 행의 0인 것,
-각 열의 0인 것을 계산 후 구하기?
-'''
 n, m = map(int, input().split())
 arr = [input() for _ in range(n)]
 maxAns = 0
