@@ -3337,6 +3337,5 @@ sys.stdin = open("practice_input.txt", "r")
 # for i in C:
 #     print(*i)
 
-n, m = map(int, input().split())
-arr = [input() for _ in range(n)]
-maxAns = 0
+n = int(input())
+data = [list(map(int, input().split())) for _ in range(n)]
