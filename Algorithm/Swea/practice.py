@@ -3337,6 +3337,11 @@ sys.stdin = open("practice_input.txt", "r")
 # for i in C:
 #     print(*i)
 
-d1 = int(input())
-d2 = int(input())
-print(d1 * 2 + 2 * 3.141592 * d2)
+# d1 = int(input())
+# d2 = int(input())
+# print(d1 * 2 + 2 * 3.141592 * d2)
+
+
+T = int(input())
+for t in range(1, T + 1):
+    p, q = map(int, input().split())
