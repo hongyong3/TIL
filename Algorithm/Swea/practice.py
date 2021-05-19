@@ -3341,7 +3341,22 @@ sys.stdin = open("practice_input.txt", "r")
 # d2 = int(input())
 # print(d1 * 2 + 2 * 3.141592 * d2)
 
+# fibo = [1, 1, 2]
+# for i in range(3, 10001):
+#     fibo.append(fibo[i - 2] + fibo[i - 1])
+# T = int(input())
+# for t in range(1, T + 1):
+#     p, q = map(int, input().split())
+#     print("Case #{}: {}".format(t, fibo[p - 1] % q))
+# n, w, h, l = map(int, input().split())
+# print(min((w // l) * (h // l), n))
 
-T = int(input())
-for t in range(1, T + 1):
-    p, q = map(int, input().split())
+# n = int(input())
+# data = list(map(int, input().split()))
+# print(data.count(n))
+
+n = int(input())
+memo = [1, 2]
+for i in range(2, 1001):
+    memo.append(memo[i - 1] + memo[i - 2])
+print(memo[n - 1] % 10007)
