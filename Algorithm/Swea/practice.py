@@ -3355,8 +3355,15 @@ sys.stdin = open("practice_input.txt", "r")
 # data = list(map(int, input().split()))
 # print(data.count(n))
 
-n = int(input())
-memo = [1, 2]
-for i in range(2, 1001):
-    memo.append(memo[i - 1] + memo[i - 2])
-print(memo[n - 1] % 10007)
+# n = int(input())
+# memo = [1, 2]
+# for i in range(2, 1001):
+#     memo.append(memo[i - 1] + memo[i - 2])
+# print(memo[n - 1] % 10007)
+
+import sys
+n = int(sys.stdin.readline())
+ans = 1
+for _ in range(n):
+    ans += int(sys.stdin.readline()) - 1
+print(ans)
