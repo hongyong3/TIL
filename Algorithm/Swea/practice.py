@@ -3361,9 +3361,15 @@ sys.stdin = open("practice_input.txt", "r")
 #     memo.append(memo[i - 1] + memo[i - 2])
 # print(memo[n - 1] % 10007)
 
-import sys
-n = int(sys.stdin.readline())
-ans = 1
-for _ in range(n):
-    ans += int(sys.stdin.readline()) - 1
-print(ans)
+# import sys
+# n = int(sys.stdin.readline())
+# ans = 1
+# for _ in range(n):
+#     ans += int(sys.stdin.readline()) - 1
+# print(ans)
+
+X = int(input())
+y = int(input())
+c = int(input())
+d = int(input())
+p = int(input())
