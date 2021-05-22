@@ -3368,8 +3368,11 @@ sys.stdin = open("practice_input.txt", "r")
 #     ans += int(sys.stdin.readline()) - 1
 # print(ans)
 
-X = int(input())
-y = int(input())
+a = int(input())
+b = int(input())
 c = int(input())
 d = int(input())
 p = int(input())
+x = a * p
+y = b + ((p - c) * d) if c < p else b
+print(x) if x < y else print(y)
