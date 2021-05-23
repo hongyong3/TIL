@@ -3368,11 +3368,105 @@ sys.stdin = open("practice_input.txt", "r")
 #     ans += int(sys.stdin.readline()) - 1
 # print(ans)
 
-a = int(input())
-b = int(input())
-c = int(input())
-d = int(input())
-p = int(input())
-x = a * p
-y = b + ((p - c) * d) if c < p else b
-print(x) if x < y else print(y)
+# a = int(input())
+# b = int(input())
+# c = int(input())
+# d = int(input())
+# p = int(input())
+# x = a * p
+# y = b + ((p - c) * d) if c < p else b
+# print(x) if x < y else print(y)
+
+# word = 'CAMBRIDGE'
+# s = list(input())
+# ans = ''
+# for i in s:
+#     if not i in word:
+#         ans += i
+# print(ans)
+
+# while True:
+#     data = list(map(int, input().split()))
+#     if 0 in data:
+#         break
+#     if sum(data) - 2 * max(data) < 1:
+#         print("Invalid")
+#         continue
+#     arr = set(data)
+#     if len(arr) == 3:
+#         print("Scalene")
+#     elif len(arr) == 2:
+#         print("Isosceles")
+#     else:
+#         print("Equilateral")
+
+# print("       _.-;;-._\n'-..-'|   ||   |\n'-..-'|_.-;;-._|\n'-..-'|   ||   |\n'-..-'|_.-''-._|")
+
+# ans, temp = 0, 0
+# for _ in range(10):
+#     x, y = map(int, input().split())
+#     temp += y - x
+#     if ans < temp:
+#         ans = temp
+# print(ans)
+
+# n, m = map(int, input().split())
+# arr = list(range(1, n + 1))
+# for _ in range(m):
+#     i, j = map(int, input().split())
+#     arr[i - 1], arr[j - 1] = arr[j - 1], arr[i - 1]
+# print(*arr)
+
+# t = int(input())
+# for _ in range(t):
+#     arr = list(map(int, input().split()))
+#     hp = arr[0] + arr[4]
+#     mp = arr[1] + arr[5]
+#     at = arr[2] + arr[6]
+#     de = arr[3] + arr[7]
+#     if hp < 1:
+#         hp = 1
+#     if mp < 1:
+#         mp = 1
+#     if at < 0:
+#         at = 0
+#     print(hp + 5 * mp + 2 * at + 2 * de)
+
+# a, b = map(int, input().split())
+# if a != b:
+#     if a > b:
+#         a, b = b, a
+#     arr = list(range(a + 1, b))
+#     print(len(arr))
+#     print(*arr)
+# else:
+#     print(0)
+
+# n = int(input())
+# ans = float('inf')
+# temp = 0
+# for i in range(1, n + 1):
+#     temp = j = i
+#     while True:
+#         temp += i % 10
+#         i //= 10
+#         if i == 0:
+#             break
+#     if temp == n:
+#         if temp < ans:
+#             ans = j
+#             break
+# else:
+#     ans = 0
+# print(ans)
+
+def gcd(a, b):
+    while a % b:
+        a, b = b, a % b
+    return b
+
+n = int(input())
+arr = list(map(int, input().split()))
+a = arr[0]
+for i in range()
+c = gcd(13, 4)
