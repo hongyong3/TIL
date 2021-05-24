@@ -3460,13 +3460,33 @@ sys.stdin = open("practice_input.txt", "r")
 #     ans = 0
 # print(ans)
 
-def gcd(a, b):
-    while a % b:
-        a, b = b, a % b
-    return b
+# def gcd(a, b):
+#     while a % b:
+#         a, b = b, a % b
+#     return b
+#
+# n = int(input())
+# arr = list(map(int, input().split()))
+# a = arr[0]
+# for i in arr[1:]:
+#     g = gcd(a, i)
+#     print("{}/{}".format(a // g, i // g))
 
-n = int(input())
-arr = list(map(int, input().split()))
-a = arr[0]
-for i in range()
-c = gcd(13, 4)
+# t = int(input())
+# for _ in range(t):
+#     c = int(input())
+#     arr = [0] * 4
+#     arr[0] = c // 25
+#     c %= 25
+#     arr[1] = c // 10
+#     c %= 10
+#     arr[2] = c // 5
+#     c %= 5
+#     arr[3] = c
+#     print(*arr)
+
+k = int(input())
+a, b = 1, 0
+for _ in range(k):
+    a, b = b, a + b
+print(a, b)
