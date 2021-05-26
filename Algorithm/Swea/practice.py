@@ -3485,8 +3485,19 @@ sys.stdin = open("practice_input.txt", "r")
 #     arr[3] = c
 #     print(*arr)
 
-k = int(input())
-a, b = 1, 0
-for _ in range(k):
-    a, b = b, a + b
-print(a, b)
+# k = int(input())
+# a, b = 1, 0
+# for _ in range(k):
+#     a, b = b, a + b
+# print(a, b)
+
+def gcd(a, b):
+    while a % b:
+        a, b = b, a % b
+    return b
+
+t = int(input())
+for _ in range(t):
+    a, b = map(int, input().split())
+    c = gcd(a, b)
+    print(a * b // c)
