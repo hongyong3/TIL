@@ -3502,11 +3502,16 @@ sys.stdin = open("practice_input.txt", "r")
 #     c = gcd(a, b)
 #     print(a * b // c)
 
-total = 0
-arr = []
-for _ in range(5):
+# total = 0
+# arr = []
+# for _ in range(5):
+#     n = int(input())
+#     arr.append(n)
+#     total += n
+# print(total // 5)
+# print(sorted(arr)[2])
+
+t = int(input())
+for _ in range(t):
     n = int(input())
-    arr.append(n)
-    total += n
-print(total // 5)
-print(sorted(arr)[2])
+    print(n * (n + 1) * (2 * n + 1) // 6)
