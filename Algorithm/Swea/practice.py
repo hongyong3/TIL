@@ -3511,7 +3511,10 @@ sys.stdin = open("practice_input.txt", "r")
 # print(total // 5)
 # print(sorted(arr)[2])
 
-t = int(input())
-for _ in range(t):
-    n = int(input())
-    print(n * (n + 1) * (2 * n + 1) // 6)
+# t = int(input())
+# for _ in range(t):
+#     n = int(input())
+#     print(n * (n + 1) * (2 * n + 1) // 6)
+
+w, h, x, y, p = map(int, input().split())
+arr = [list(map(int, input().split())) for _ in range(p)]
