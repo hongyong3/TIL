@@ -3516,5 +3516,10 @@ sys.stdin = open("practice_input.txt", "r")
 #     n = int(input())
 #     print(n * (n + 1) * (2 * n + 1) // 6)
 
+'''
+디지털카메라가 링크의 사진을 매 1초마다 찍는다.
+디지털카메라가 찍은 사진에서 각 선수의 위치를 뽑아낸다.
+하키 링크 안에 같은 팀 선수가 총 몇 명인지 계산한다.
+'''
 w, h, x, y, p = map(int, input().split())
 arr = [list(map(int, input().split())) for _ in range(p)]
