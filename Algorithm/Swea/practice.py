@@ -3521,5 +3521,31 @@ sys.stdin = open("practice_input.txt", "r")
 디지털카메라가 찍은 사진에서 각 선수의 위치를 뽑아낸다.
 하키 링크 안에 같은 팀 선수가 총 몇 명인지 계산한다.
 '''
-w, h, x, y, p = map(int, input().split())
-arr = [list(map(int, input().split())) for _ in range(p)]
+
+def rectangle(x, y):
+    if X <= x <= X + W and Y <= y <= Y + H:
+        return True
+    return False
+
+
+def circle(x, y):
+    if dist(X, Y + H / 2, x, y) <= H / 2:
+        return True
+    if dist(X + W, Y + H / 2, x, y) <= H / 2:
+        return True
+    return False
+
+
+def dist(a1, b1, a2, b2):
+    return ((a1 - a2) ** 2 + (b1 - b2) ** 2) ** 0.5
+
+
+W, H, X, Y, P = map(int, input().split())
+ans = 0
+for _ in range(P):
+    x, y = map(int, input().split())
+    if rectangle(x, y):
+        ans += 1
+    elif circle(x, y):
+        ans += 1
+print(ans)
