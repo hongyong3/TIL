@@ -3550,13 +3550,30 @@ sys.stdin = open("practice_input.txt", "r")
 #         ans += 1
 # print(ans)
 
-n, m, k = map(int, input().split())
-for _ in range(k):
-    if n >= m * 2:
-        n -= 1
-    else:
-        m -= 1
+# n, m, k = map(int, input().split())
+# for _ in range(k):
+#     if n >= m * 2:
+#         n -= 1
+#     else:
+#         m -= 1
+#
+# if n // 2 < m:
+#     m = n // 2
+# print(m)
 
-if n // 2 < m:
-    m = n // 2
-print(m)
+# print(int(input()) % 20000303)
+
+# n = int(input())
+# print(n // 5 + 1) if n % 5 else print(n // 5)
+
+for t in range(3):
+    n = int(input())
+    ans = 0
+    for _ in range(n):
+        ans += int(input())
+    if ans > 0:
+        print('+')
+    elif ans < 0:
+        print('-')
+    else:
+        print(0)
