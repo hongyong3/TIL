@@ -3566,14 +3566,146 @@ sys.stdin = open("practice_input.txt", "r")
 # n = int(input())
 # print(n // 5 + 1) if n % 5 else print(n // 5)
 
-for t in range(3):
-    n = int(input())
-    ans = 0
-    for _ in range(n):
-        ans += int(input())
-    if ans > 0:
-        print('+')
-    elif ans < 0:
-        print('-')
+# import sys
+# for t in range(3):
+#     n = int(sys.stdin.readline())
+#     ans = 0
+#     for _ in range(n):
+#         ans += int(sys.stdin.readline())
+#     if ans > 0:
+#         print('+')
+#     elif ans < 0:
+#         print('-')
+#     else:
+#         print(0)
+
+# import sys
+# s, t, d = map(int, sys.stdin.readline().split())
+# print(d // s // 2 * t)
+
+# import sys
+# while True:
+#     m, f = map(int, sys.stdin.readline().split())
+#     if m == f == 0:
+#         break
+#     print(m + f)
+
+# import sys
+# t = int(sys.stdin.readline())
+# for _ in range(t):
+#     n, c = map(int, sys.stdin.readline().split())
+#     print(n // c + 1) if n % c else print(n // c)
+
+# import sys
+# n, m = map(int, sys.stdin.readline().split())
+# print(n * m - 1)
+
+# while True:
+#     n = int(input())
+#     if n == - 1:
+#         break
+#     arr, total, ans = [], 0, str(n)
+#     for i in range(1, n // 2 + 1):
+#         if not n % i:
+#             total += i
+#             arr.append(i)
+#
+#     if total != n:
+#         print(ans, 'is NOT perfect.')
+#     else:
+#         ans += ' = '
+#         for i in arr[: - 1]:
+#             ans += str(i) + ' + '
+#         ans += str(arr[- 1])
+#         print(ans)
+
+# n = int(input())
+# memo = [0, 1]
+# for i in range(2, n + 1):
+#     memo.append(memo[i - 1] + memo[i - 2])
+# print(memo[n])
+
+# a, b = map(int, input().split())
+# c = int(input())
+# a += c // 60
+# b += c % 60
+# if b > 59:
+#     b -= 60
+#     a += 1
+# if a > 23:
+#     a -= 24
+# print(a, b)
+
+# a, b = map(int, input().split())
+# i = 0
+# ans = (str(a // b) + '.')
+# d = a % b
+# while i < 1000:
+#     d *= 10
+#     m = d // b
+#     ans += str(m)
+#     d %= b
+#     if d == 0:
+#         break
+#     i += 1
+# print(ans)
+
+# a = input()
+# b = input()
+# print("go") if b in a else print("no")
+
+# import sys
+# n, m = map(int, sys.stdin.readline().split())
+# arr = list(map(int, sys.stdin.readline().split()))
+# for _ in range(m):
+#     a, b, c = map(int, sys.stdin.readline().split())
+#     if a == 1:
+#         arr[b - 1] = c
+#     elif a == 2:
+#         for i in range(b - 1, c):
+#             if arr[i] == 1:
+#                 arr[i] = 0
+#             else:
+#                 arr[i] = 1
+#     elif a == 3:
+#         for i in range(b - 1, c):
+#             arr[i] = 0
+#     else:
+#         for i in range(b - 1, c):
+#             arr[i] = 1
+# print(*arr)
+
+# import sys
+# n = int(sys.stdin.readline())
+# s = []
+# for _ in range(n):
+#     a = sys.stdin.readline().split()
+#     if a[0] == "push":
+#         s.append(int(a[1]))
+#     elif a[0] == "pop":
+#         print(s.pop()) if len(s) else print(- 1)
+#     elif a[0] == "size":
+#         print(len(s))
+#     elif a[0] == "empty":
+#         print(0) if len(s) else print(1)
+#     else:
+#         print(s[- 1]) if len(s) else print(- 1)
+
+# arr = set()
+# for _ in range(4):
+#     x1, y1, x2, y2 = map(int, input().split())
+#     for i in range(x1, x2):
+#         for j in range(y1, y2):
+#             arr.add((i, j))
+# print(len(arr))
+
+n = int(input())
+arr = list(int(input()) for _ in range(n))
+idx = 0
+s = []
+for i in range(1, n + 1):
+    if i != arr[idx]:
+        s.append(i)
+        print("+")
     else:
-        print(0)
+
