@@ -3699,13 +3699,68 @@ sys.stdin = open("practice_input.txt", "r")
 #             arr.add((i, j))
 # print(len(arr))
 
-n = int(input())
-arr = list(int(input()) for _ in range(n))
-idx = 0
-s = []
-for i in range(1, n + 1):
-    if i != arr[idx]:
-        s.append(i)
-        print("+")
-    else:
+# n = 1000 - int(input())
+# arr = [500, 100, 50, 10, 5, 1]
+# ans, i = 0, 0
+#
+# while n:
+#     if n >= arr[i]:
+#         n -= arr[i]
+#         ans += 1
+#     else:
+#         i += 1
+# print(ans)
 
+# while True:
+#     n = int(input())
+#     if n == - 1:
+#         break
+#     ans, bt = 0, 0
+#     for _ in range(n):
+#         s, t = map(int, input().split())
+#         ans += s * (t - bt)
+#         bt = t
+#     print(ans, "miles")
+
+# while True:
+#     a, b = map(int, input().split())
+#     if a == 0:
+#         break
+#     if a > b:
+#         print("neither") if a % b else print("multiple")
+#     else:
+#         print("neither") if b % a else print("factor")
+
+# ans = ['D', 'C', 'B', 'A', 'E']
+# for _ in range(3):
+#     print(ans[sum(list(map(int, input().split())))])
+
+# def rev(n):
+#     s = str(n)[:: - 1]
+#     return int(s)
+#
+# a, b = map(int, input().split())
+# ans = rev(rev(a) + rev(b))
+# print(ans)
+
+import sys
+t = int(sys.stdin.readline())
+for _ in range(t):
+    a, b = map(int, sys.stdin.readline().split())
+    x, y = bin(a)[2:], bin(b)[2:]
+    num, idx = '', 0
+
+    while idx < len(x) and idx < len(y):
+        if x[idx] == y[idx]:
+            num += x[idx]
+            idx += 1
+        else:
+            break
+
+
+    ans, k = 0, 10
+    num = num[:: - 1]
+    for i in num:
+        ans += int(i) * k
+        k *= 2
+    print(ans)
