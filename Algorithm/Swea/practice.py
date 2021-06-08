@@ -3743,24 +3743,57 @@ sys.stdin = open("practice_input.txt", "r")
 # ans = rev(rev(a) + rev(b))
 # print(ans)
 
-import sys
-t = int(sys.stdin.readline())
-for _ in range(t):
-    a, b = map(int, sys.stdin.readline().split())
-    x, y = bin(a)[2:], bin(b)[2:]
-    num, idx = '', 0
+# import sys
+# t = int(sys.stdin.readline())
+# for _ in range(t):
+#     a, b = map(int, sys.stdin.readline().split())
+#     x, y = bin(a)[2:], bin(b)[2:]
+#     num, idx = '', 0
+#
+#     while idx < len(x) and idx < len(y):
+#         if x[idx] == y[idx]:
+#             num += x[idx]
+#             idx += 1
+#         else:
+#             break
+#
+#
+#     ans, k = 0, 10
+#     num = num[:: - 1]
+#     for i in num:
+#         ans += int(i) * k
+#         k *= 2
+#     print(ans)
 
-    while idx < len(x) and idx < len(y):
-        if x[idx] == y[idx]:
-            num += x[idx]
-            idx += 1
-        else:
-            break
+# for _ in range(3):
+#     h1, m1, s1, h2, m2, s2 = map(int, input().split())
+#     h = h2 - h1
+#     if m1 > m2:
+#         m = m2 - m1 + 60
+#         h -= 1
+#     else:
+#         m = m2 - m1
+#
+#     if s1 > s2:
+#         s = s2 - s1 + 60
+#         if m == 0:
+#             m = 59
+#             h -= 1
+#         else:
+#             m -= 1
+#     else:
+#         s = s2 - s1
+#
+#     print(h, m, s)
 
-
-    ans, k = 0, 10
-    num = num[:: - 1]
-    for i in num:
-        ans += int(i) * k
-        k *= 2
-    print(ans)
+n = int(input())
+if n % 10:
+    print(- 1)
+else:
+    a, b, c = 0, 0, 0
+    a = n // 300
+    n %= 300
+    b = n // 60
+    n %= 60
+    c = n // 10
+    print(a, b, c)
