@@ -3786,14 +3786,16 @@ sys.stdin = open("practice_input.txt", "r")
 #
 #     print(h, m, s)
 
-n = int(input())
-if n % 10:
-    print(- 1)
-else:
-    a, b, c = 0, 0, 0
-    a = n // 300
-    n %= 300
-    b = n // 60
-    n %= 60
-    c = n // 10
-    print(a, b, c)
+# n = int(input())
+# if n % 10:
+#     print(- 1)
+# else:
+#     a, b, c = 0, 0, 0
+#     a = n // 300
+#     n %= 300
+#     b = n // 60
+#     n %= 60
+#     c = n // 10
+#     print(a, b, c)
+
+# boj 10820
