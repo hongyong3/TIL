@@ -3799,3 +3799,38 @@ sys.stdin = open("practice_input.txt", "r")
 #     print(a, b, c)
 
 # boj 10820
+# while True:
+#     try:
+#         s = input()
+#         a, b, c, d = 0, 0, 0, 0 # 소문자, 대문자, 숫자, 공백
+#         for i in s:
+#             if i.islower():
+#                 a += 1
+#             elif i.isupper():
+#                 b += 1
+#             elif i.isdigit():
+#                 c += 1
+#             else:
+#                 d += 1
+#         print(a, b, c, d)
+#     except:
+#         break
+
+# n = 1
+# arr = [0] * 10
+# for _ in range(3):
+#     n *= int(input())
+# for i in str(n):
+#     arr[int(i)] += 1
+# for i in arr:
+#     print(i)
+
+# print(sum([int(input()) for _ in range(5)]))
+
+import sys
+a, b = map(str, sys.stdin.readline().split())
+ans = 0
+for i in a:
+    for j in b:
+        ans += int(i) * int(j)
+print(ans)
