@@ -1,7 +1,6 @@
 import sys
 sys.stdin = open("D3_12051_input.txt", "r")
 
-# 1493 / 2000
 T = int(input())
 for test_case in range(T):
     N, pd, pg = map(int, input().split())

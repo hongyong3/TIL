@@ -3827,10 +3827,54 @@ sys.stdin = open("practice_input.txt", "r")
 
 # print(sum([int(input()) for _ in range(5)]))
 
+
+# t = int(input())
+# for _ in range(t):
+#     c, v = map(int, input().split())
+#     print("You get {} piece(s) and your dad gets {} piece(s).".format(c // v, c % v))
+
+# while True:
+#     n = input()
+#     if n == '0':
+#         break
+#     print("yes") if n == n[:: - 1] else print("no")
+
+# x, y = map(int, input().split())
+# if x == y:
+#     print(0)
+# else:
+#     n = int((y - x) ** 0.5)
+#     if n ** 2 == y - x:
+#         print(2 * n - 1)
+#     else:
+#         z = (y - x) - n ** 2
+#         if z <= n:
+#             print(2 * n)
+#         else:
+#             print(2 * n + 1)
+
+# import sys
+# input = sys.stdin.readline
+# n = int(input())
+# dist = list(map(int, input().split()))
+# oil = list(map(int, input().split()))
+# price = oil[0]
+# ans = price * dist[0]
+# for i in range(1, n - 1):
+#     if price > oil[i]:
+#         price = oil[i]
+#         ans += price * dist[i]
+#     else:
+#         ans += price * dist[i]
+# print(ans)
+
 import sys
-a, b = map(str, sys.stdin.readline().split())
-ans = 0
-for i in a:
-    for j in b:
-        ans += int(i) * int(j)
-print(ans)
+input = sys.stdin.readline
+a = int(input())
+x = input()
+b = int(input())
+if x == '+':
+    a += b
+else:
+    a *= b
+print(a)
