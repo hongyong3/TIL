@@ -3868,13 +3868,23 @@ sys.stdin = open("practice_input.txt", "r")
 #         ans += price * dist[i]
 # print(ans)
 
-import sys
-input = sys.stdin.readline
-a = int(input())
-x = input()
-b = int(input())
-if x == '+':
-    a += b
-else:
-    a *= b
-print(a)
+# import sys
+# input = sys.stdin.readline
+# a = int(input())
+# x = input()
+# b = int(input())
+# if x == '+':
+#     a += b
+# else:
+#     a *= b
+# print(a)
+
+n = int(input())
+for _ in range(n):
+    r, e, c = map(int, input().split)
+    if r > e - c:
+        print("do not advertise")
+    elif r == e - c:
+        print("dose not matter")
+    else:
+        print("advertise")
