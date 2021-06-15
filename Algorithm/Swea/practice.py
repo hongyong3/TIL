@@ -3879,12 +3879,51 @@ sys.stdin = open("practice_input.txt", "r")
 #     a *= b
 # print(a)
 
-n = int(input())
-for _ in range(n):
-    r, e, c = map(int, input().split())
-    if r > e - c:
-        print("do not advertise")
-    elif r == e - c:
-        print("dose not matter")
-    else:
-        print("advertise")
+# n = int(input())
+# for _ in range(n):
+#     r, e, c = map(int, input().split())
+#     if r > e - c:
+#         print("do not advertise")
+#     elif r == e - c:
+#         print("dose not matter")
+#     else:
+#         print("advertise")
+
+# import sys
+# input = sys.stdin.readline
+#
+# def prime(n):
+#     sieve = [1] * (n + 1)
+#     for i in range(2, int(n ** 0.5) + 1):
+#         if sieve[i]:
+#             for j in range(i * 2, n + 1, i):
+#                 sieve[j] = 0
+#     return sum([1 for i in range(2, n + 1) if sieve[i] and i > n / 2])
+#
+# while True:
+#     n = int(input())
+#     if not n:
+#         break
+#     print(prime(2 * n))
+
+
+# from itertools import combinations
+# arr = sorted([int(input()) for _ in range(9)])
+#
+# for i in combinations(arr, 7):
+#     if sum(i) == 100:
+#         for j in i:
+#             print(j)
+#         break
+
+def gcd(a, b):
+    while b:
+        a, b = b, a % b
+    return a
+
+a, b = map(int, input().split())
+if a < b:
+    a, b = b, a
+g = gcd(a, b)
+print(g)
+print(a * b // g)
