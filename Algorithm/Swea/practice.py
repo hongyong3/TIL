@@ -3916,14 +3916,19 @@ sys.stdin = open("practice_input.txt", "r")
 #             print(j)
 #         break
 
-def gcd(a, b):
-    while b:
-        a, b = b, a % b
-    return a
+# def gcd(a, b):
+#     while b:
+#         a, b = b, a % b
+#     return a
+#
+# a, b = map(int, input().split())
+# if a < b:
+#     a, b = b, a
+# g = gcd(a, b)
+# print(g)
+# print(a * b // g)
 
-a, b = map(int, input().split())
-if a < b:
-    a, b = b, a
-g = gcd(a, b)
-print(g)
-print(a * b // g)
+n = int(input())
+for _ in range(9):
+    n -= int(input())
+print(n)
