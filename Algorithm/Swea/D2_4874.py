@@ -57,7 +57,7 @@ def Forth(data):
                 stack.append(stack.pop(- 2) * stack.pop(- 1))
             elif i == '/':
                 stack.append(stack.pop(- 2) // stack.pop(- 1))
-        if i == '.':
+        else:
             if len(stack) > 1:
                 return 'error'
             return stack[- 1]

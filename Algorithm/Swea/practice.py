@@ -3928,7 +3928,110 @@ sys.stdin = open("practice_input.txt", "r")
 # print(g)
 # print(a * b // g)
 
-n = int(input())
-for _ in range(9):
-    n -= int(input())
-print(n)
+# n = int(input())
+# for _ in range(9):
+#     n -= int(input())
+# print(n)
+
+# def forth(x):
+#     stack = []
+#     for i in range(len(x)):
+#         if x[i].isdigit():
+#             stack.append(x[i])
+#         elif x[i] != '.':
+#             if len(stack) < 2:
+#                 return 'error'
+#             else:
+#                 value = str(eval(stack[- 2] + x[i] + stack[- 1]))
+#                 stack.pop()
+#                 stack.pop()
+#                 stack.append(value)
+#         else:
+#             if len(stack) > 1:
+#                 return 'error'
+#             else:
+#                 return stack[0]
+#
+# T = int(input())
+# for test_case in range(T):
+#     data = list(map(str, input().split()))
+#     stack = []
+#     print("#{} {}".format(test_case + 1, forth(data)))
+
+# def Forth(data):
+#     for i in data:
+#         if i.isdigit():
+#             stack.append(i)
+#         elif i in '+-*/':
+#             if len(stack) < 2:
+#                 return 'error'
+#             elif i == '+':
+#                 stack.append(str(eval(stack.pop(- 2) + i + stack.pop(- 1))))
+#             elif i == '-':
+#                 stack.append(str(eval(stack.pop(- 2) + i + stack.pop(- 1))))
+#             elif i == '*':
+#                 stack.append(str(eval(stack.pop(- 2) + i + stack.pop(- 1))))
+#             elif i == '/':
+#                 stack.append(str(eval(stack.pop(- 2) + i + stack.pop(- 1))))
+#         else:
+#             if len(stack) > 1:
+#                 return 'error'
+#             return stack[- 1]
+#
+# T = int(input())
+# for test_case in range(T):
+#     data = list(map(str, input().split()))
+#     stack = []
+#     print("#{} {}".format(test_case + 1, Forth(data)))
+
+# import sys
+# input = sys.stdin.readline
+# n = int(input())
+# print(input()[n - 5:])
+
+# import sys
+# input = sys.stdin.readline
+# n = sum(list(map(int, input().split())))
+# print(1 if n < 5 else 2)
+
+# c, a, b = map(int, input().split())
+# x = c / (a ** 2 + b ** 2) ** 0.5
+# print(int(x * a), int(x * b))
+
+# import sys
+# input = sys.stdin.readline
+# n = int(input())
+# arr = set()
+# for _ in range(n):
+#     arr.add(input().split()[0])
+# ans = []
+# for i in arr:
+#    ans.append([len(i), i])
+# for idx, i in sorted(ans):
+#     print(i)
+
+# import sys
+# input = sys.stdin.readline
+# n = int(input())
+# arr = list(input().split()[0] for _ in range(n))
+# for i in arr:
+#     if i == i[:: - 1] or i[:: - 1] in arr:
+#         print(len(i), i[len(i) // 2])
+#         break
+
+def prime(n, m):
+    sieve = [True] * 1000001
+    sieve[0] = sieve[1] = 0
+    for i in range(2, int(1000001 ** 0.5) + 1):
+        if sieve[i]:
+            for j in range(2 * i, 1000001, i):
+                sieve[j] = False
+
+    for i in range(n, m + 1):
+        if sieve[i]:
+            print(i)
+
+import sys
+input = sys.stdin.readline
+n, m = map(int, input().split())
+prime(n, m)
