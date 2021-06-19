@@ -4019,19 +4019,97 @@ sys.stdin = open("practice_input.txt", "r")
 #         print(len(i), i[len(i) // 2])
 #         break
 
-def prime(n, m):
-    sieve = [True] * 1000001
-    sieve[0] = sieve[1] = 0
-    for i in range(2, int(1000001 ** 0.5) + 1):
-        if sieve[i]:
-            for j in range(2 * i, 1000001, i):
-                sieve[j] = False
+# def prime(n, m):
+#     sieve = [True] * 1000001
+#     sieve[0] = sieve[1] = 0
+#     for i in range(2, int(1000001 ** 0.5) + 1):
+#         if sieve[i]:
+#             for j in range(2 * i, 1000001, i):
+#                 sieve[j] = False
+#
+#     for i in range(n, m + 1):
+#         if sieve[i]:
+#             print(i)
+#
+# import sys
+# input = sys.stdin.readline
+# n, m = map(int, input().split())
+# prime(n, m)
 
-    for i in range(n, m + 1):
-        if sieve[i]:
-            print(i)
+# n = int(input())
+# arr = list(map(int, input().split()))
+# print(len(arr) - len(set(arr)))
 
+# while True:
+#     a, b = map(int, input().split())
+#     if a == b == 0:
+#         break
+#     print("Yes" if a > b else "No")
+
+# from collections import deque
+# dx = [- 1, 1, 0, 0]
+# dy = [0, 0, - 1, 1]
+#
+# def bfs():
+#     q = deque()
+#     q.append((0, 0))
+#     visited = [[0] * m for _ in range(n)]
+#     visited[0][0] = 1
+#     while q:
+#         x, y = q.popleft()
+#         for k in range(4):
+#             nx = x + dx[k]
+#             ny = y + dy[k]
+#             if not (0 <= nx < n and 0 <= ny < m):
+#                 continue
+#             if arr[nx][ny] == '1' and not visited[nx][ny]:
+#                 visited[nx][ny] = visited[x][y] + 1
+#                 q.append((nx, ny))
+#     return visited[n - 1][m - 1]
+#
+# n, m = map(int, input().split())
+# arr = [input() for _ in range(n)]
+# print(bfs())
+
+# from collections import deque
+# N, K = map(int, input().split())
+# q = deque([i for i in range(1, N + 1)])
+# ans = []
+# while q:
+#     q.rotate(- K + 1)
+#     ans.append(str(q.popleft()))
+# print("<" + ", ".join(ans) + ">")
+
+# import sys
+# input = sys.stdin.readline
+# from collections import deque
+#
+# N, K = map(int, input().split())
+# q = deque([i for i in range(1, N + 1)])
+# ans = []
+# while q:
+#     q.rotate(- K + 1)
+#     ans.append(str(q.popleft()))
+# print("<" + ", ".join(ans) + ">")
+
+# a, b = map(int, input().split())
+# print(a * b)
+
+# boj 1915
+# 우, 하, 우하대각
+# dp
 import sys
 input = sys.stdin.readline
 n, m = map(int, input().split())
-prime(n, m)
+arr = [list(map(int, input().rstrip())) for _ in range(n)]
+
+for i in range(1, n):
+    for j in range(1, m):
+        if arr[i][j]:
+            arr[i][j] += min(arr[i - 1][j - 1], arr[i - 1][j], arr[i][j - 1])
+
+ans = 0
+for i in arr:
+    if ans < max(i):
+        ans = max(i)
+print(ans * ans)
