@@ -4098,18 +4098,71 @@ sys.stdin = open("practice_input.txt", "r")
 # boj 1915
 # 우, 하, 우하대각
 # dp
+# import sys
+# input = sys.stdin.readline
+# n, m = map(int, input().split())
+# arr = [list(map(int, input().rstrip())) for _ in range(n)]
+#
+# for i in range(1, n):
+#     for j in range(1, m):
+#         if arr[i][j]:
+#             arr[i][j] += min(arr[i - 1][j - 1], arr[i - 1][j], arr[i][j - 1])
+#
+# ans = 0
+# for i in arr:
+#     if ans < max(i):
+#         ans = max(i)
+# print(ans * ans)
+
+# import sys
+# input = sys.stdin.readline
+# N = int(input())
+# A = B = 0
+# for _ in range(N):
+#     a, b = map(int, input().split())
+#     if a > b:
+#         A += 1
+#     elif a < b:
+#         B += 1
+# print(A, B)
+
+# import sys
+# from collections import Counter
+# input = sys.stdin.readline
+# N = int(input())
+# arr = sorted([int(input()) for _ in range(N)])
+# num = Counter(arr).most_common()
+#
+# print("%.f"%(sum(arr) / N))
+# print(arr[N // 2])
+# if len(arr) > 1:
+#     print(num[1][0]) if num[0][1] == num[1][1] else print(num[0][0])
+# else:
+#     print(arr[0])
+# print(arr[- 1] - arr[0])
+
+# import sys
+# input = sys.stdin.readline
+# n = int(input())
+# arr = {}
+# for i in range(n):
+#     s = input().rstrip().split('.')[1]
+#     if s not in arr:
+#         arr[s] = 1
+#     else:
+#         arr[s] += 1
+# for key, val in sorted(arr.items()):
+#     print(key, val)
+
+# a, b = map(int, input().split())
+# if a == 1 or b == 1:
+#     print(a * b)
+# else:
+#     print(a * (b - 1) + 1)
+
 import sys
 input = sys.stdin.readline
-n, m = map(int, input().split())
-arr = [list(map(int, input().rstrip())) for _ in range(n)]
-
-for i in range(1, n):
-    for j in range(1, m):
-        if arr[i][j]:
-            arr[i][j] += min(arr[i - 1][j - 1], arr[i - 1][j], arr[i][j - 1])
-
-ans = 0
-for i in arr:
-    if ans < max(i):
-        ans = max(i)
-print(ans * ans)
+n = int(input())
+arr = [list(map(int, input().rstrip().split())) for _ in range(n)]
+white = blue = 0
+print(arr)
