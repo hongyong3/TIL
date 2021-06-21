@@ -4160,6 +4160,9 @@ sys.stdin = open("practice_input.txt", "r")
 # else:
 #     print(a * (b - 1) + 1)
 
+# 범위 2, 4, 8, 16, 32, 64, 128
+# 대각선만 검사하면 될듯..
+
 import sys
 input = sys.stdin.readline
 n = int(input())
