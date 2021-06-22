@@ -4165,7 +4165,33 @@ sys.stdin = open("practice_input.txt", "r")
 
 import sys
 input = sys.stdin.readline
+
+def chk(i, j, d):
+    val = arr[i][j]
+    for x in range(i, i + d):
+        for y in range(j, j + d):
+            if arr[x][y] != val:
+                return False
+    return True
+
+def solve(i, j, d):
+    global white, blue
+    if chk(i, j, d):
+        if arr[i][j]:
+            blue += 1
+        else:
+            white += 1
+    else:
+        d //= 2
+        solve(i, j, d)
+        solve(i, j + d, d)
+        solve(i + d, j, d)
+        solve(i + d, j + d, d)
+
+
 n = int(input())
 arr = [list(map(int, input().rstrip().split())) for _ in range(n)]
 white = blue = 0
-print(arr)
+solve(0, 0, n)
+print(white)
+print(blue)
