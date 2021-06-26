@@ -4163,35 +4163,78 @@ sys.stdin = open("practice_input.txt", "r")
 # 범위 2, 4, 8, 16, 32, 64, 128
 # 대각선만 검사하면 될듯..
 
-import sys
-input = sys.stdin.readline
+# import sys
+# input = sys.stdin.readline
+#
+# def chk(i, j, d):
+#     val = arr[i][j]
+#     for x in range(i, i + d):
+#         for y in range(j, j + d):
+#             if arr[x][y] != val:
+#                 return False
+#     return True
+#
+# def solve(i, j, d):
+#     global white, blue
+#     if chk(i, j, d):
+#         if arr[i][j]:
+#             blue += 1
+#         else:
+#             white += 1
+#     else:
+#         d //= 2
+#         solve(i, j, d)
+#         solve(i, j + d, d)
+#         solve(i + d, j, d)
+#         solve(i + d, j + d, d)
+#
+#
+# n = int(input())
+# arr = [list(map(int, input().rstrip().split())) for _ in range(n)]
+# white = blue = 0
+# solve(0, 0, n)
+# print(white)
+# print(blue)
 
-def chk(i, j, d):
-    val = arr[i][j]
-    for x in range(i, i + d):
-        for y in range(j, j + d):
-            if arr[x][y] != val:
-                return False
-    return True
+# print(int(input()) * 4)
 
-def solve(i, j, d):
-    global white, blue
-    if chk(i, j, d):
-        if arr[i][j]:
-            blue += 1
-        else:
-            white += 1
-    else:
-        d //= 2
-        solve(i, j, d)
-        solve(i, j + d, d)
-        solve(i + d, j, d)
-        solve(i + d, j + d, d)
+# n, m = map(int, input().split())
+# for _ in range(n):
+#     print(input()[:: - 1])
 
+# t = int(input())
+# for _ in range(t):
+#     n = int(input())
+#     ans, arr = 1, {}
+#     for _ in range(n):
+#         data = input().split()[1]
+#         if data not in arr:
+#             arr[data] = 1
+#         else:
+#             arr[data] += 1
+#     for val in arr.values():
+#         ans *= (val + 1)
+#     print(ans - 1)
 
-n = int(input())
-arr = [list(map(int, input().rstrip().split())) for _ in range(n)]
-white = blue = 0
-solve(0, 0, n)
-print(white)
-print(blue)
+# n = pow(2, int(input())) - 1
+# num = n * (n + 1) // 2
+# print(bin(num)[2:])
+
+# boj 7569
+'''
+1은 익은 토마토
+0은 안익은 토마토
+- 1은 토마토 X
+'''
+
+dx = [0, 0, 0, 0, - 1, 1]   # 위 아래 왼쪽 오른쪽 앞 뒤
+dy = [0, 0, - 1, 1, 0, 0]
+dz = [- 1, 1, 0, 0, 0, 0]
+
+m, n, h = map(int, input().split())
+arr = [[list(map(int, input().split())) for _ in range(n)] for _ in range(h)]
+
+for i in arr:
+    for j in i:
+        print(j)
+    print()
