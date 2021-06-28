@@ -4221,15 +4221,23 @@ sys.stdin = open("practice_input.txt", "r")
 # print(bin(num)[2:])
 
 # boj 7569
+a, b = map(int, input().split())
+print(1 / (1 + 10 ** ((b - a) / 400)))
+
 '''
+# boj 7569
 1은 익은 토마토
 0은 안익은 토마토
 - 1은 토마토 X
+5 3 1
+0 -1 0 0 0
+-1 -1 0 1 1
+0 0 0 1 1
 '''
 
-dx = [0, 0, 0, 0, - 1, 1]   # 위 아래 왼쪽 오른쪽 앞 뒤
-dy = [0, 0, - 1, 1, 0, 0]
-dz = [- 1, 1, 0, 0, 0, 0]
-
-m, n, h = map(int, input().split())
-arr = [[list(map(int, input().split())) for _ in range(n)] for _ in range(h)]
+# dx = [0, 0, 0, 0, - 1, 1]   # 위 아래 왼쪽 오른쪽 앞 뒤
+# dy = [0, 0, - 1, 1, 0, 0]
+# dz = [- 1, 1, 0, 0, 0, 0]
+#
+# m, n, h = map(int, input().split())
+# arr = [[list(map(int, input().split())) for _ in range(n)] for _ in range(h)]
