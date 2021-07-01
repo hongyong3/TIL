@@ -4225,47 +4225,49 @@ sys.stdin = open("practice_input.txt", "r")
 
 # boj 7569
 '''
-1은 익은 토마토
-0은 안익은 토마토
-- 1은 토마토 X
-'''
-import sys
-from collections import deque
-input = sys.stdin.readline
-def chk(day):
-    for z in range(h):
-        for x in range(n):
-            for y in range(m):
-                if not arr[z][x][y]:
-                    return - 1
-    return day
+# 1은 익은 토마토
+# 0은 안익은 토마토
+# - 1은 토마토 X
+# '''
+# import sys
+# from collections import deque
+# input = sys.stdin.readline
+# def chk(day):
+#     for z in range(h):
+#         for x in range(n):
+#             for y in range(m):
+#                 if not arr[z][x][y]:
+#                     return - 1
+#     return day
+#
+#
+# dx = [0, 0, 0, 0, - 1, 1]   # 위 아래 왼쪽 오른쪽 앞 뒤
+# dy = [0, 0, - 1, 1, 0, 0]
+# dz = [- 1, 1, 0, 0, 0, 0]
+#
+# m, n, h = map(int, input().split())
+# arr = [[[0] * m for _ in range(n)] for _ in range(h)]
+# q = deque() # 익은 토마토
+# ans = 0
+# for z in range(h):
+#     for x in range(n):
+#         data = list(map(int, input().split()))
+#         for y, i in enumerate(data):
+#             arr[z][x][y] = i
+#             if i == 1:
+#                 q.append((z, x, y, 0))
+#
+# while q:
+#     z, x, y, cnt = q.popleft()
+#     for k in range(6):
+#         nz = z + dz[k]
+#         nx = x + dx[k]
+#         ny = y + dy[k]
+#         if 0 <= nz < h and 0 <= nx < n and 0 <= ny < m:
+#             if not arr[nz][nx][ny]:
+#                 arr[nz][nx][ny] = 1
+#                 q.append((nz, nx, ny, cnt + 1))
+#                 ans = cnt + 1
+# print(chk(ans))
 
-
-dx = [0, 0, 0, 0, - 1, 1]   # 위 아래 왼쪽 오른쪽 앞 뒤
-dy = [0, 0, - 1, 1, 0, 0]
-dz = [- 1, 1, 0, 0, 0, 0]
-
-m, n, h = map(int, input().split())
-arr = [[[0] * m for _ in range(n)] for _ in range(h)]
-q = deque() # 익은 토마토
-ans = 0
-for z in range(h):
-    for x in range(n):
-        data = list(map(int, input().split()))
-        for y, i in enumerate(data):
-            arr[z][x][y] = i
-            if i == 1:
-                q.append((z, x, y, 0))
-
-while q:
-    z, x, y, cnt = q.popleft()
-    for k in range(6):
-        nz = z + dz[k]
-        nx = x + dx[k]
-        ny = y + dy[k]
-        if 0 <= nz < h and 0 <= nx < n and 0 <= ny < m:
-            if not arr[nz][nx][ny]:
-                arr[nz][nx][ny] = 1
-                q.append((nz, nx, ny, cnt + 1))
-                ans = cnt + 1
-print(chk(ans))
+print(input() + "??!")
