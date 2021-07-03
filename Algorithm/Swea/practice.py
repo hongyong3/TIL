@@ -4271,3 +4271,15 @@ sys.stdin = open("practice_input.txt", "r")
 # print(chk(ans))
 
 # print(input() + "??!")
+
+score = [100, 100, 200, 200, 300, 300, 400, 400, 500]
+arr = list(map(int, input().split()))
+if sum(arr) < 100:
+    print("none")
+else:
+    for i in range(9):
+        if arr[i] > score[i]:
+            print("hacker")
+            break
+    else:
+        print("draw")
