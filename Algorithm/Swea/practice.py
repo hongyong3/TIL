@@ -4272,14 +4272,46 @@ sys.stdin = open("practice_input.txt", "r")
 
 # print(input() + "??!")
 
-score = [100, 100, 200, 200, 300, 300, 400, 400, 500]
-arr = list(map(int, input().split()))
-if sum(arr) < 100:
-    print("none")
-else:
-    for i in range(9):
-        if arr[i] > score[i]:
-            print("hacker")
-            break
-    else:
-        print("draw")
+# score = [100, 100, 200, 200, 300, 300, 400, 400, 500]
+# arr = list(map(int, input().split()))
+# if sum(arr) < 100:
+#     print("none")
+# else:
+#     for i in range(9):
+#         if arr[i] > score[i]:
+#             print("hacker")
+#             break
+#     else:
+#         print("draw")
+
+# T = int(input())
+# for _ in range(T):
+#     N = int(input())
+#     print(sum(list(map(int, input().split()))))
+
+# import sys
+# input = sys.stdin.readline
+# N, K, L = map(int, input().split())
+# ans, arr = 0, []
+# for _ in range(N):
+#     x1, x2, x3 = map(int, input().split())
+#     if x1 + x2 + x3 >= K and min(x1, x2, x3) >= L:
+#         ans += 1
+#         arr.append(x1)
+#         arr.append(x2)
+#         arr.append(x3)
+# print(ans)
+# print(*arr)
+
+import sys
+input = sys.stdin.readline
+n, m = map(int, input().split())
+arr = [list(map(int, input().split())) for _ in range(n)]
+k = int(input())
+for _ in range(k):
+    i, j, x, y = map(int, input().split())
+    ans = 0
+    for a in range(i - 1, x):
+        for b in range(j - 1, y):
+            ans += arr[a][b]
+    print(ans)
