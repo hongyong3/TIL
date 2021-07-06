@@ -4303,15 +4303,27 @@ sys.stdin = open("practice_input.txt", "r")
 # print(ans)
 # print(*arr)
 
-import sys
-input = sys.stdin.readline
-n, m = map(int, input().split())
-arr = [list(map(int, input().split())) for _ in range(n)]
-k = int(input())
-for _ in range(k):
-    i, j, x, y = map(int, input().split())
-    ans = 0
-    for a in range(i - 1, x):
-        for b in range(j - 1, y):
-            ans += arr[a][b]
-    print(ans)
+# import sys
+# input = sys.stdin.readline
+# n, m = map(int, input().split())
+# arr = [list(map(int, input().split())) for _ in range(n)]
+# k = int(input())
+# for _ in range(k):
+#     i, j, x, y = map(int, input().split())
+#     ans = 0
+#     for a in range(i - 1, x):
+#         for b in range(j - 1, y):
+#             ans += arr[a][b]
+#     print(ans)
+
+# n, k = map(int, input().split())
+# ans = 0
+# for i in list(map(int, input().split())):
+#     ans += i // 2 + i % 2
+# print("YES") if ans >= n else print("NO")
+
+# boj 1965
+n = int(input())
+ans = 0
+idx = n - 1
+for i in range(n):
