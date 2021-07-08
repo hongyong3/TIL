@@ -100,13 +100,13 @@ sys.stdin = open("practice_input.txt", "r")
 #     ans += i // 2 + i % 2
 # print("YES") if ans >= n else print("NO")
 
-a, b, c, d = input().split()
-s1 = a + b
-s2 = c + d
-print(int(s1) + int(s2))
+# a, b, c, d = input().split()
+# s1 = a + b
+# s2 = c + d
+# print(int(s1) + int(s2))
 
 # boj 1965
-# n = int(input())
-# ans = 0
-# idx = n - 1
-# # for i in range(n):
+n = int(input())
+ans = 0
+idx = n - 1
+# for i in range(n):
