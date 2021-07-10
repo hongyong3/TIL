@@ -64,5 +64,4 @@ for test_case in range(T):
                     reverse = True
                 else:
                     reverse = False
-
     print(ans)
