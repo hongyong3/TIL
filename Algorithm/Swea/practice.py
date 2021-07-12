@@ -106,11 +106,17 @@ sys.stdin = open("practice_input.txt", "r")
 # print(int(s1) + int(s2))
 
 # boj 1965
-n = int(input())
-arr = list(map(int, input().split()))
-dp = [1] * n
-for i in range(1, n):
-    for j in range(i):
-        if arr[i] > arr[j]:
-            dp[i] = max(dp[i], dp[j] + 1)
-print(max(dp))
+# n = int(input())
+# arr = list(map(int, input().split()))
+# dp = [1] * n
+# for i in range(1, n):
+#     for j in range(i):
+#         if arr[i] > arr[j]:
+#             dp[i] = max(dp[i], dp[j] + 1)
+# print(max(dp))
+
+# boj 13300
+
+N, K = map(int, input().split())
+for _ in range(N):
+    S, Y = map(int, input().split())
