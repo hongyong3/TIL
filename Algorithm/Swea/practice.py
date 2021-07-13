@@ -117,6 +117,14 @@ sys.stdin = open("practice_input.txt", "r")
 
 # boj 13300
 
-N, K = map(int, input().split())
-for _ in range(N):
-    S, Y = map(int, input().split())
+# N, K = map(int, input().split())
+# for _ in range(N):
+#     S, Y = map(int, input().split())
+
+T = int(input())
+for test_case in range(T):
+    A, B = map(int, input().split())
+    ans = A * B
+    if A > 9 or B > 9:
+        ans = - 1
+    print("#{} {}".format(test_case + 1, ans))
