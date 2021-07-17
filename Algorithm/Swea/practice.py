@@ -121,10 +121,48 @@ sys.stdin = open("practice_input.txt", "r")
 # for _ in range(N):
 #     S, Y = map(int, input().split())
 
-T = int(input())
-for test_case in range(T):
-    A, B = map(int, input().split())
-    ans = A * B
-    if A > 9 or B > 9:
-        ans = - 1
-    print("#{} {}".format(test_case + 1, ans))
+# T = int(input())
+# for test_case in range(T):
+#     A, B = map(int, input().split())
+#     ans = A * B
+#     if A > 9 or B > 9:
+#         ans = - 1
+#     print("#{} {}".format(test_case + 1, ans))
+
+# import sys
+# input = sys.stdin.readline
+# n, m = map(int, input().split())
+# arr = list(map(int, input().split()))
+# sumList = [0]
+# num = 0
+# for i in arr:
+#     num += i
+#     sumList.append(num)
+# for _ in range(m):
+#     i, j = map(int, input().split())
+#     print(sumList[j] - sumList[i - 1])
+
+# import sys
+# input = sys.stdin.readline
+# t = int(input())
+# arr = list(map(int, input().split()))
+#
+# for i in arr:
+#     ans = 0
+#     x = i // 3
+#     y = i // 7
+#     z = i // 21
+#     ans += 3 * x * (x + 1) // 2
+#     ans += 7 * y * (y + 1) // 2
+#     ans -= 21 * z * (z + 1) // 2
+#     print(ans)
+
+import sys
+input = sys.stdin.readline
+n = int(input())
+if n < 100:
+    print(n // 10 + n % 10)
+elif n % 10:
+    print(n % 100 + 10)
+else:
+    print(n // 100 + 10)

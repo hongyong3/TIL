@@ -1,4 +1,4 @@
 3
-abaaa
-aabbaa
 abcdef
+aabbaa
+abaaa
