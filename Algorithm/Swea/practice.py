@@ -71,9 +71,32 @@ input = sys.stdin.readline
 #     else:
 #         print("wrong answer")
 
+# n = int(input())
+# for i in range(1, n):
+#     print((n - i) * ' ' + i * '*')
+# print(n * '*')
+# for i in range(n - 1, 0, - 1):
+#     print((n - i) * ' ' + i * '*')
+
+# boj 19532
+# a, b, c, d, e, f = map(int, input().split())
+# print((c * e - b * f) // (a * e - b * d), (c * d - a * f) // (b * d - a * e))\
+
+# boj 13558
 n = int(input())
-for i in range(1, n):
-    print((n - i) * ' ' + i * '*')
-print(n * '*')
-for i in range(n - 1, 0, - 1):
-    print((n - i) * ' ' + i * '*')
+presum = [0] * 60100
+sufsum = [0] * 60100
+arr = [1] * 101010
+ans = [0] * 101010
+res = 0
+arr[0] = arr[1] = arr[2] = 0
+presum[arr[1]] = 1
+data = list(map(int, input().split()))
+for i in range(2, n):
+    for j in range(1, 2 * arr[i] + 1):
+        ans[i] += presum[j] * sufsum[2 * arr[i] - j]
+
+    presum[arr[i]] += 1
+    sufsum[arr[i + 1]] -= 1
+    res += ans[i]
+print(res)
