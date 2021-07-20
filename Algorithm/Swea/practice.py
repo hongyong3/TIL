@@ -83,20 +83,37 @@ input = sys.stdin.readline
 # print((c * e - b * f) // (a * e - b * d), (c * d - a * f) // (b * d - a * e))\
 
 # boj 13558
-n = int(input())
-presum = [0] * 60100
-sufsum = [0] * 60100
-arr = [1] * 101010
-ans = [0] * 101010
-res = 0
-arr[0] = arr[1] = arr[2] = 0
-presum[arr[1]] = 1
-data = list(map(int, input().split()))
-for i in range(2, n):
-    for j in range(1, 2 * arr[i] + 1):
-        ans[i] += presum[j] * sufsum[2 * arr[i] - j]
+# n = int(input())
+# presum = [0] * 60100
+# sufsum = [0] * 60100
+# arr = [1] * 101010
+# ans = [0] * 101010
+# res = 0
+# arr[0] = arr[1] = arr[2] = 0
+# presum[arr[1]] = 1
+# data = list(map(int, input().split()))
+# for i in range(2, n):
+#     for j in range(1, 2 * arr[i] + 1):
+#         ans[i] += presum[j] * sufsum[2 * arr[i] - j]
+#
+#     presum[arr[i]] += 1
+#     sufsum[arr[i + 1]] -= 1
+#     res += ans[i]
+# print(res)
 
-    presum[arr[i]] += 1
-    sufsum[arr[i + 1]] -= 1
-    res += ans[i]
-print(res)
+# boj 10610
+n = input()
+arr = [0] * 10
+num, ans = 0, ''
+for i in n:
+    arr[int(i)] += 1
+    num += int(i)
+
+if not arr[0] or num % 3:
+    print(- 1)
+else:
+    for i in range(10):
+        if arr[i]:
+            ans += str(i) * arr[i]
+    else:
+        print(ans[:: - 1])
