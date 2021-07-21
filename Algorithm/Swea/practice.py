@@ -102,18 +102,27 @@ input = sys.stdin.readline
 # print(res)
 
 # boj 10610
-n = input()
-arr = [0] * 10
-num, ans = 0, ''
-for i in n:
-    arr[int(i)] += 1
-    num += int(i)
+# n = input()
+# arr = [0] * 10
+# num, ans = 0, ''
+# for i in n:
+#     arr[int(i)] += 1
+#     num += int(i)
+#
+# if not arr[0] or num % 3:
+#     print(- 1)
+# else:
+#     for i in range(10):
+#         if arr[i]:
+#             ans += str(i) * arr[i]
+#     else:
+#         print(ans[:: - 1])
 
-if not arr[0] or num % 3:
-    print(- 1)
-else:
-    for i in range(10):
-        if arr[i]:
-            ans += str(i) * arr[i]
-    else:
-        print(ans[:: - 1])
+# boj 2953
+ans = score = 0
+for i in range(1, 6):
+    temp = sum(list(map(int, input().split())))
+    if score < temp:
+        score = temp
+        ans = i
+print(ans, score)
