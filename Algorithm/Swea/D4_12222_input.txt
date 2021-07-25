@@ -1,4 +1,6 @@
-3
-aabbaa
+5
 abcdef
-abaaa
+abccdef
+aaabb
+aaabbb
+aabbaa
