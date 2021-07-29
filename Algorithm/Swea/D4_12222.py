@@ -34,7 +34,6 @@ def same(x):
         x += x
     return x
 
-# 7 // 15
 '''
     몫 = x // 3
     나머지 = x % 3
