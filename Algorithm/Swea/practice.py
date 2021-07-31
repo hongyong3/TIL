@@ -119,10 +119,78 @@ input = sys.stdin.readline
 #         print(ans[:: - 1])
 
 # boj 2953
-ans = score = 0
-for i in range(1, 6):
-    temp = sum(list(map(int, input().split())))
-    if score < temp:
-        score = temp
-        ans = i
-print(ans, score)
+# ans = score = 0
+# for i in range(1, 6):
+#     temp = sum(list(map(int, input().split())))
+#     if score < temp:
+#         score = temp
+#         ans = i
+# print(ans, score)
+
+# boj 3943
+# import sys
+# input = sys.stdin.readline
+# t = int(input())
+# for _ in range(t):
+#     n = int(input())
+#     ans = n
+#     while True:
+#         if n == 1:
+#             break
+#         if n % 2:
+#             n = n * 3 + 1
+#         else:
+#             n //= 2
+#         if n > ans:
+#             ans = n
+#     print(ans)
+
+# print(".  .   .\n|  | _ | _. _ ._ _  _\n|/\|(/.|(_.(_)[ | )(/.")
+
+# v = int(input())
+# s = input()
+# a, b = s.count('A'), s.count('B')
+# if a > b:
+#     print('A')
+# elif a < b:
+#     print('B')
+# else:
+#     print("Tie")
+
+# boj 2921
+# memo = [0, 3]
+# num = 3
+# for i in range(2, 1001):
+#     num += (2 * i) * (2 * i + 1) // 2 - i * (i - 1) // 2
+#     memo.append(num)
+# n = int(input())
+# print(memo[n])
+
+# boj 3046
+# r1, s = map(int, input().split())
+# print(2 * s - r1)
+
+# print(len(input()))
+
+# alpha = [0] * 26
+# s = input()
+# for i in s:
+#     alpha[ord(i) - 97] += 1
+# print(*alpha)
+
+# n, m = map(int, input().split())
+# print(n // m)
+# print(n % m)
+
+# boj 2783
+# x, y = map(int, input().split())
+# z = 1000 / y
+# ans = x * z
+# n = int(input())
+# for _ in range(n):
+#     a, b = map(int, input().split())
+#     c = 1000 / b
+#     temp = a * c
+#     if ans > temp:
+#         ans = temp
+# print(round(ans, 2))
