@@ -194,3 +194,179 @@ input = sys.stdin.readline
 #     if ans > temp:
 #         ans = temp
 # print(round(ans, 2))
+
+# boj 9086
+# t = int(input())
+# for _ in range(t):
+#     s = input().rstrip()
+#     print(s[0] + s[- 1])
+
+# boj 22341
+# n, c = map(int, input().split())
+# a, b = n, n
+# for _ in range(c):
+#     x, y = map(int, input().split())
+#     if x >= a or y >= b:
+#         continue
+#     garo = x * b
+#     sero = a * y
+#     if garo >= sero:
+#         a = x
+#         ans = garo
+#     else:
+#         b = y
+#         ans = sero
+# print(ans)
+
+# boj 9437
+# while True:
+#     data = input().split()
+#     if len(data) == 2:
+#         n, p = int(data[0]), int(data[1])
+#         mid = n // 2
+#         arr = []
+#         if p > mid:
+#             diff = p - mid
+#             if p % 2:
+#                 arr.append(mid - diff)
+#                 arr.append(mid - diff + 1)
+#                 arr.append(p + 1)
+#             else:
+#                 arr.append(mid - diff + 1)
+#                 arr.append(mid - diff + 2)
+#                 arr.append(p - 1)
+#         else:
+#             diff = mid - p
+#             if p % 2:
+#                 arr.append(p + 1)
+#                 arr.append(mid + diff)
+#                 arr.append(mid + diff + 1)
+#             else:
+#                 arr.append(p - 1)
+#                 arr.append(mid + diff + 1)
+#                 arr.append(mid + diff + 2)
+#     else:
+#         break
+#     print(*arr)
+
+# boj 17502
+# n = int(input())
+# s = list(input())
+# for i in range(n):
+#     if s[i] == '?':
+#         if s[:: - 1][i] != '?':
+#             s[i] = s[:: - 1][i]
+#         else:
+#             s[i] = 'a'
+# print(''.join(s))
+
+# boj 15829
+# l = int(input())
+# s = input()
+# ans, r, m = 0, 31, 1234567891
+# for i in range(l):
+#     ans += (ord(s[i]) - 96) * pow(r, i) % m
+# print(ans % m)
+
+# boj 5235
+# t = int(input())
+# for _ in range(t):
+#     arr = list(map(int, input().split()))
+#     even, odd = 0, 0
+#     for i in arr[1:]:
+#         if i % 2:
+#             odd += i
+#         else:
+#             even += i
+#     if even > odd:
+#         print("EVEN")
+#     elif even < odd:
+#         print("ODD")
+#     else:
+#         print("TIE")
+
+# boj 16195
+# mod = 1000000009
+# dp = [[0] * 1002 for _ in range(1002)]
+# dp[1][1] = dp[2][1] = dp[3][1] = 1
+#
+# for i in range(1, 1001):
+#     for j in range(2, 1001):
+#         if i - 1 > 0 and j <= i:
+#             dp[i][j] = (dp[i][j] + dp[i - 1][j - 1]) % mod
+#         if i - 2 > 0 and j <= i - 1:
+#             dp[i][j] = (dp[i][j] + dp[i - 2][j - 1]) % mod
+#         if i - 3 > 0 and j <= i - 2:
+#             dp[i][j] = (dp[i][j] + dp[i - 3][j - 1]) % mod
+#
+# t = int(input())
+# for _ in range(t):
+#     n, m = map(int, input().split())
+#     ans = 0
+#     for i in range(1, m + 1):
+#         ans = (ans + dp[n][i]) % mod
+#     print(ans)
+
+# boj 18258
+# import sys
+# input = sys.stdin.readline
+# from collections import deque
+# n = int(input())
+# q = deque()
+# for _ in range(n):
+#     com = input().split()
+#     if com[0] == "push":
+#         q.append(com[1])
+#     elif com[0] == "pop":
+#         print(q.popleft()) if q else print(- 1)
+#     elif com[0] == "size":
+#         print(len(q))
+#     elif com[0] == "empty":
+#         print(0) if q else print(1)
+#     elif com[0] == "front":
+#         print(q[0]) if q else print(- 1)
+#     elif com[0] == "back":
+#         print(q[- 1]) if q else print(- 1)
+
+# boj 15724
+# import sys
+# input = sys.stdin.readline
+# n, m = map(int, input().split())
+# arr = [list(map(int, input().split())) for _ in range(n)]
+# dp = [[0] * (m + 1) for _ in range(n + 1)]
+# for i in range(1, n + 1):
+#     for j in range(1, m + 1):
+#         dp[i][j] = dp[i][j - 1] + dp[i - 1][j] - dp[i - 1][j - 1] + arr[i - 1][j - 1]
+# k = int(input())
+# for _ in range(k):
+#     x1, y1, x2, y2 = map(int, input().split())
+#     print(dp[x2][y2] - dp[x2][y1 - 1] - dp[x1 - 1][y2] + dp[x1 - 1][y1 - 1])
+
+# boj 11648
+# n = input()
+# ans = 0
+# while int(n) > 9:
+#     temp = 1
+#     for i in n:
+#         temp *= int(i)
+#     n = str(temp)
+#     ans += 1
+# print(ans)
+# boj 10815
+# import sys
+# input = sys.stdin.readline
+# n = int(input())
+# num = set(map(int, input().split()))
+# m = int(input())
+# card = list(map(int, input().split()))
+# for i in card:
+#     print(1, end = ' ') if i in num else print(0, end = ' ')
+
+# boj 10810
+n, m = map(int, input().split())
+arr = [0] * n
+for _ in range(m):
+    i, j, k = map(int, input().split())
+    for idx in range(i - 1, j):
+        arr[idx] = k
+print(*arr)
