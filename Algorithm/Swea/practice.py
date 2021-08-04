@@ -363,28 +363,43 @@ input = sys.stdin.readline
 #     print(1, end = ' ') if i in num else print(0, end = ' ')
 
 # boj 10810
-n, m = map(int, input().split())
-arr = [0] * n
-for _ in range(m):
-    i, j, k = map(int, input().split())
-    for idx in range(i - 1, j):
-        arr[idx] = k
-print(*arr)
+# n, m = map(int, input().split())
+# arr = [0] * n
+# for _ in range(m):
+#     i, j, k = map(int, input().split())
+#     for idx in range(i - 1, j):
+#         arr[idx] = k
+# print(*arr)
 
 # boj 4375
-while True:
-    try:
-        x = int(input())
-    except EOFError:
-        break
-    if x == 1:
-        print('1')
-        continue
-    num = 1
-    cnt = 1
-    while True:
-        num = num * 10 + 1
-        cnt += 1
-        if (num % x) == 0:
-            print(cnt)
-            break
+# while True:
+#     try:
+#         x = int(input())
+#     except EOFError:
+#         break
+#     if x == 1:
+#         print('1')
+#         continue
+#     num = 1
+#     cnt = 1
+#     while True:
+#         num = num * 10 + 1
+#         cnt += 1
+#         if (num % x) == 0:
+#             print(cnt)
+#             break
+
+# boj 2776
+import sys
+input = sys.stdin.readline
+t = int(input())
+for _ in range(t):
+    n = int(input())
+    narr = set(map(int, input().split()))
+    m = int(input())
+    marr = list(map(int, input().split()))
+    for i in marr:
+        if i in narr:
+            print(1)
+        else:
+            print(0)
