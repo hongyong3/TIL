@@ -390,17 +390,27 @@ input = sys.stdin.readline
 #             break
 
 # boj 2776
-import sys
-input = sys.stdin.readline
-t = int(input())
-for _ in range(t):
-    n = int(input())
-    narr = set(map(int, input().split()))
-    m = int(input())
-    marr = list(map(int, input().split()))
-    for i in marr:
-        if i in narr:
-            print(1)
-        else:
-            print(0)
+# import sys
+# input = sys.stdin.readline
+# t = int(input())
+# for _ in range(t):
+#     n = int(input())
+#     narr = set(map(int, input().split()))
+#     m = int(input())
+#     marr = list(map(int, input().split()))
+#     for i in marr:
+#         if i in narr:
+#             print(1)
+#         else:
+#             print(0)
 
+# boj 5032
+e, f, c = map(int, input().split())
+e += f
+ans = 0
+while True:
+    ans += e // c
+    e = e // c + e % c
+    if e < c:
+        break
+print(ans)
