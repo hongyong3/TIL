@@ -405,12 +405,69 @@ input = sys.stdin.readline
 #             print(0)
 
 # boj 5032
-e, f, c = map(int, input().split())
-e += f
-ans = 0
-while True:
-    ans += e // c
-    e = e // c + e % c
-    if e < c:
-        break
-print(ans)
+# e, f, c = map(int, input().split())
+# e += f
+# ans = 0
+# while True:
+#     ans += e // c
+#     e = e // c + e % c
+#     if e < c:
+#         break
+# print(ans)
+
+# boj 1652
+# n = int(input())
+# arr = [input().rstrip() for _ in range(n)]
+# ans1, ans2 = 0, 0
+# for i in range(n):
+#     cnt = 0
+#     for j in range(n):
+#         if arr[i][j] == '.':
+#             cnt += 1
+#         else:
+#             if cnt >= 2:
+#                 ans1 += 1
+#                 cnt = 0
+#             else:
+#                 cnt = 0
+#     if cnt >= 2:
+#         ans1 += 1
+#
+# for i in range(n):
+#     cnt = 0
+#     for j in range(n):
+#         if arr[j][i] == '.':
+#             cnt += 1
+#         else:
+#             if cnt >= 2:
+#                 ans2 += 1
+#                 cnt = 0
+#             else:
+#                 cnt = 0
+#     if cnt >= 2:
+#         ans2 += 1
+# print(ans1, ans2)
+
+# boj 9655
+# print("SK" if int(input()) % 2 else "CY")
+
+# boj 1550
+# num = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'A', 'B', 'C', 'D', 'E', 'F']
+# s = input().rstrip()[:: - 1]
+# ans = 0
+# temp = 1
+# for i in s:
+#     ans += temp * num.index(i)
+#     temp *= 16
+# print(ans)
+
+# boj 11466
+# h, w = map(int, input().split())    # w < h로
+# if h < w:
+#     w, h = h, w
+# if h >= 3 * w:
+#     print(w)
+# elif h >= 1.5 * w:
+#     print(h / 3)
+# else:
+#     print(w / 2)
