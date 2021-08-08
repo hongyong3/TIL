@@ -471,3 +471,46 @@ input = sys.stdin.readline
 #     print(h / 3)
 # else:
 #     print(w / 2)
+
+# boj 1264
+# while True:
+#     s = input().rstrip().lower()
+#     if s == '#':
+#         break
+#     print(s.count('a') + s.count('e') + s.count('i') + s.count('o') + s.count('u'))
+
+# boj 17103
+# import sys
+# input = sys.stdin.readline
+# prime = [1] * 1000001
+# prime[0] = prime[1] = 0
+# for i in range(2, int(1000000 ** 0.5) + 1):
+#     if prime[i]:
+#         for j in range(i + i, 1000001, i):
+#             if prime[j]:
+#                 prime[j] = 0
+# t = int(input())
+# for _ in range(t):
+#     n = int(input())
+#     ans = 0
+#     for i in range(n // 2 + 1):
+#         if prime[i] and prime[n - i]:
+#             ans += 1
+#     print(ans)
+
+# boj 2480
+# arr = sorted(list(map(int, input().split())))
+# setArr = set(arr)
+# if len(setArr) == 3:
+#     print(100 * arr[2])
+# elif len(setArr) == 2:
+#     if arr[0] == arr[1]:
+#         print(1000 + 100 * arr[0])
+#     else:
+#         print(1000 + 100 * arr[2])
+# else:
+#     print(10000 + 1000 * arr[0])
+
+# boj 14264
+l = int(input())
+print(pow(3, 0.5) * pow(l, 2) / 4)
