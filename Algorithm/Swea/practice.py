@@ -512,5 +512,69 @@ input = sys.stdin.readline
 #     print(10000 + 1000 * arr[0])
 
 # boj 14264
-l = int(input())
-print(pow(3, 0.5) * pow(l, 2) / 4)
+# l = int(input())
+# print(pow(3, 0.5) * pow(l, 2) / 4)
+
+# boj 17413
+# s = input()
+# ans, temp, chk = '', '', False
+#
+# for i in s:
+#     if i == ' ':
+#         if not chk:
+#             ans += temp[:: - 1] + i
+#             temp = ''
+#         else:
+#             ans += i
+#     elif i == '<':
+#         chk = True
+#         ans += temp[:: - 1] + i
+#         temp = ''
+#     elif i == '>':
+#         chk = False
+#         ans += i
+#     else:
+#         if chk:
+#             ans += i
+#         else:
+#             temp += i
+# ans += temp[:: - 1]
+# print(ans)
+
+# boj 9012
+# t = int(input())
+# for _ in range(t):
+#     S = input()
+#     ans = "NO"
+#     if len(S) % 2:
+#         print(ans)
+#     else:
+#         s, chk = [], True
+#         for i in S:
+#             if i == '(':
+#                 s.append(i)
+#             else:
+#                 if s:
+#                     s.pop()
+#                 else:
+#                     chk = False
+#                     break
+#         if not s and chk:
+#             ans = "YES"
+#         print(ans)
+
+# boj 18141
+def chk():
+    for i in range(n - 2):
+        for j in range(i + 1, n - 1):
+            for k in range(j + 1, n):
+                x = (arr[i] - arr[j]) / arr[k]
+                y = (arr[i] - arr[k]) / arr[j]
+                z = (arr[j] - arr[k]) / arr[i]
+                if not(x == int(x) and y == int(y) and z == int(z)):
+                    return False
+    return True
+
+n = int(input())
+arr = list(map(int, input().split()))
+print("yes" if chk() else "no")
