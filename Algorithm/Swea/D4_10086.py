@@ -10,4 +10,8 @@ for test_case in range(T):
     while True:
         if arr[idx + K]:
             idx = K
-            
+        else:
+            if arr[idx + K - 1]:
+                pass
+            elif arr[idx + K - 1]:
+                pass
