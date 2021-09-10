@@ -627,13 +627,3 @@ input = sys.stdin.readline
 #             if len(ans) != idx:
 #                 ans += S[diff - 1]
 #     print("#{} {}".format(test_case + 1, ans))
-
-T = int(input())
-for test_case in range(T):
-    A, B, C, D = map(int, input().split())
-    ans = 0
-    if B >= D:
-        ans = D - C
-    elif B < D and B >= C:
-        ans = B - C
-    print("#{} {}".format(test_case + 1, ans))
