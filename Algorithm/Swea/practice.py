@@ -627,3 +627,41 @@ input = sys.stdin.readline
 #             if len(ans) != idx:
 #                 ans += S[diff - 1]
 #     print("#{} {}".format(test_case + 1, ans))
+
+# T = int(input())
+# for test_case in range(T):
+#     A, B, C, D = map(int, input().split())
+#     ans = 0
+#     if B <= C:
+#         ans = 0
+#     elif A <= C and C < B and B <= D:
+#         ans = B - C
+#     elif A <= C and D <= B:
+#         ans = D - C
+#
+#     elif D <= A:
+#         ans = 0
+#     elif C <= A and A < D and D <= B:
+#         ans = A - D
+#     elif C <= A and B <= D:
+#         ans = B - A
+#     print("#{} {}".format(test_case + 1, ans))
+
+T = int(input())
+ans = []
+for test_case in range(T):
+    A, B, C, D = map(int, input().split())
+    if B <= C:
+        ans.append("#{} {}".format(test_case + 1, 0))
+    elif A <= C and C < B and B <= D:
+        ans.append("#{} {}".format(test_case + 1, B - C))
+    elif A <= C and D <= B:
+        ans.append("#{} {}".format(test_case + 1, D - C))
+    elif D <= A:
+        ans.append("#{} {}".format(test_case + 1, 0))
+    elif C <= A and A < D and D <= B:
+        ans.append("#{} {}".format(test_case + 1, A - D))
+    elif C <= A and B <= D:
+        ans.append("#{} {}".format(test_case + 1, B - A))
+for i in ans:
+    print(i)
