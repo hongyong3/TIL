@@ -647,21 +647,96 @@ input = sys.stdin.readline
 #         ans = B - A
 #     print("#{} {}".format(test_case + 1, ans))
 
-T = int(input())
-ans = []
-for test_case in range(T):
-    A, B, C, D = map(int, input().split())
-    if B <= C:
-        ans.append("#{} {}".format(test_case + 1, 0))
-    elif A <= C and C < B and B <= D:
-        ans.append("#{} {}".format(test_case + 1, B - C))
-    elif A <= C and D <= B:
-        ans.append("#{} {}".format(test_case + 1, D - C))
-    elif D <= A:
-        ans.append("#{} {}".format(test_case + 1, 0))
-    elif C <= A and A < D and D <= B:
-        ans.append("#{} {}".format(test_case + 1, A - D))
-    elif C <= A and B <= D:
-        ans.append("#{} {}".format(test_case + 1, B - A))
-for i in ans:
-    print(i)
+# T = int(input())
+# ans = []
+# for test_case in range(T):
+#     A, B, C, D = map(int, input().split())
+#     if B <= C:
+#         ans.append("#{} {}".format(test_case + 1, 0))
+#     elif A <= C and C < B and B <= D:
+#         ans.append("#{} {}".format(test_case + 1, B - C))
+#     elif A <= C and D <= B:
+#         ans.append("#{} {}".format(test_case + 1, D - C))
+#     elif D <= A:
+#         ans.append("#{} {}".format(test_case + 1, 0))
+#     elif C <= A and A < D and D <= B:
+#         ans.append("#{} {}".format(test_case + 1, A - D))
+#     elif C <= A and B <= D:
+#         ans.append("#{} {}".format(test_case + 1, B - A))
+# for i in ans:
+#     print(i)
+
+# T = int(input())
+# for _ in range(T):
+#     A, B, C, X, Y = map(int, input().split())
+#     ans = 0
+#     if A + B >= C * 2:
+#         temp = min(X, Y)
+#         ans += temp * C * 2
+#         X -= temp
+#         Y -= temp
+#         if X:
+#             if A >= C * 2:
+#                 ans += C * X * 2
+#             else:
+#                 ans += A * X
+#         if Y:
+#             if B >= C * 2:
+#                 ans += C * Y * 2
+#             else:
+#                 ans += B * Y
+#     else:
+#         ans += A * X + B * Y
+#     print(ans)
+
+# R, C = map(int, input().split())
+# arr = [[0] * C for _ in range(R)]
+# flag = True
+# for i in range(C - 1, - 1, - 1):
+#     temp1 = list(map(int, input().split()))
+#     for j in range(R):
+#         arr[j][i] = temp1[j]
+#
+# for x in range(R):
+#     temp2 = list(map(int, input().split()))
+#     if arr[x] != temp2:
+#         flag = False
+#
+# if flag:
+#     print('''|>___/|        /}
+# | O < |       / }
+# (==0==)------/ }
+# | ^  _____    |
+# |_|_/     ||__|''')
+# else:
+#     print('''|>___/|     /}
+# | O O |    / }
+# ( =0= )""""  \\
+# | ^  ____    |
+# |_|_/    ||__|''')
+
+# T = int(input())
+# for _ in range(T):
+#     N = int(input())
+#     arr = [list(map(int, input().split())) for _ in range(N)]
+#     arr.sort(reverse = True, key = lambda x: (x[0] / x[1], - x[1]))
+#     print(arr[0][1])
+
+# n = input()
+# ans = 0
+# for i in n:
+#     i = int(i)
+#     ans += i ** 5
+# print(ans)
+n = int(input())
+arr = [0] * (n + 1)
+data = list(map(int, input().split()))
+for i in data:
+    arr[i] += 1
+for i in range(n - 1, - 1, - 1):
+    if arr[i] == i:
+        ans = i
+        break
+else:
+    ans = - 1
+print(ans)
