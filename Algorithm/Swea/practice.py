@@ -728,15 +728,27 @@ input = sys.stdin.readline
 #     i = int(i)
 #     ans += i ** 5
 # print(ans)
-n = int(input())
-arr = [0] * (n + 1)
-data = list(map(int, input().split()))
-for i in data:
-    arr[i] += 1
-for i in range(n - 1, - 1, - 1):
-    if arr[i] == i:
-        ans = i
-        break
-else:
-    ans = - 1
-print(ans)
+# n = int(input())
+# arr = [0] * (n + 1)
+# data = list(map(int, input().split()))
+# for i in data:
+#     arr[i] += 1
+# for i in range(n - 1, - 1, - 1):
+#     if arr[i] == i:
+#         ans = i
+#         break
+# else:
+#     ans = - 1
+# print(ans)
+
+A, B, C, M = map(int, input().split())
+work, tired = 0, 0
+for i in range(1, 25):
+    if tired + A <= M:
+        tired += A
+        work += B
+    else:
+        tired -= C
+        if tired < 0:
+            tired = 0
+print(work)
