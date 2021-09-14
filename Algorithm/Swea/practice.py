@@ -741,14 +741,14 @@ input = sys.stdin.readline
 #     ans = - 1
 # print(ans)
 
-A, B, C, M = map(int, input().split())
-work, tired = 0, 0
-for i in range(1, 25):
-    if tired + A <= M:
-        tired += A
-        work += B
-    else:
-        tired -= C
-        if tired < 0:
-            tired = 0
-print(work)
+# A, B, C, M = map(int, input().split())
+# work, tired = 0, 0
+# for i in range(1, 25):
+#     if tired + A <= M:
+#         tired += A
+#         work += B
+#     else:
+#         tired -= C
+#         if tired < 0:
+#             tired = 0
+# print(work)
