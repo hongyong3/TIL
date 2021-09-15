@@ -752,3 +752,67 @@ input = sys.stdin.readline
 #         if tired < 0:
 #             tired = 0
 # print(work)
+
+# a : 1, b : 2, c : 1, d : 2
+# a, b, c, d = 1, 2, 1, 2
+# if a <= c < b <= d:
+#     print(True)
+
+# boj 1292
+# arr = []
+# n = 1
+# while n < 45:
+#     arr += [n] * n
+#     n += 1
+# arr += [45] * 11
+# A, B = map(int, input().split())
+# print(sum(arr[A - 1 : B]))
+
+# boj 10992
+# n = int(input())
+# for i in range(n):
+#     if i == 0:
+#         print(' ' * (n - 1) + '*')
+#     elif i == n - 1:
+#         print('*' * (2 * n - 1))
+#     else:
+#         print(' ' * (n - 1 - i) + '*' + ' ' * (2 * i - 1) + '*')
+
+# boj 14487
+# n = int(input())
+# arr = list(map(int, input().split()))
+# ans = sum(arr) - max(arr)
+# print(ans)
+
+# boj 5532
+# l = int(input())
+# a = int(input())
+# b = int(input())
+# c = int(input())
+# d = int(input())
+# x = a // c if a / c == a // c else a // c + 1
+# y = b // d if b / d == b // d else b // d + 1
+# print(l - max(x, y))
+
+# boj 9654
+# print('''SHIP NAME      CLASS          DEPLOYMENT IN SERVICE
+# N2 Bomber      Heavy Fighter  Limited    21
+# J-Type 327     Light Combat   Unlimited  1
+# NX Cruiser     Medium Fighter Limited    18
+# N1 Starfighter Medium Fighter Unlimited  25
+# Royal Cruiser  Light Combat   Limited    4  ''')
+
+# boj 1459
+# x, y, w, s = map(int, input().split())
+# temp1 = (x + y) * w
+# temp2 = max(x, y) * s if (x + y) % 2 == 0 else (max(x, y) - 1) * s + w
+# temp3 = min(x, y) * s + abs(x - y) * w
+# print(min(temp1, temp2, temp3))
+
+# boj 1439
+s = input()
+ans = 0
+for i in range(1, len(s)):
+    if s[i] != s[i - 1]:
+        ans += 1
+print((ans + 1) // 2)
