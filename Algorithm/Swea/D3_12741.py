@@ -20,6 +20,20 @@ sys.stdin = open("D3_12741_input.txt", "r")
 #         ans = B - A
 #     print("#{} {}".format(test_case + 1, ans))
 
+# Runtime Error
+# T = int(input())
+# ans = []
+# for test_case in range(T):
+#     A, B, C, D = map(int, input().split())
+#     arr = [0] * max(A, B, C, D)
+#     for i in range(A, B):
+#         arr[i] += 1
+#     for j in range(C, D):
+#         arr[j] += 1
+#     ans.append("#{} {}".format(test_case + 1, arr.count(2)))
+# for i in ans:
+#     print(i)
+
 # Runtime Error..
 T = int(input())
 ans = []
