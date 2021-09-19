@@ -810,9 +810,103 @@ input = sys.stdin.readline
 # print(min(temp1, temp2, temp3))
 
 # boj 1439
-s = input()
-ans = 0
-for i in range(1, len(s)):
-    if s[i] != s[i - 1]:
-        ans += 1
-print((ans + 1) // 2)
+# s = input()
+# ans = 0
+# for i in range(1, len(s)):
+#     if s[i] != s[i - 1]:
+#         ans += 1
+# print((ans + 1) // 2)
+
+# boj 1977
+# arr = []
+# for i in range(1, 101):
+#     if i ** 2 <= 10000:
+#         arr.append(i ** 2)
+#
+# M = int(input())
+# N = int(input())
+# total = 0
+# ans = float('inf')
+# for i in arr:
+#     if M <= i <= N:
+#         total += i
+#         if ans > i:
+#             ans = i
+#     if i > N:
+#         break
+# if not total:
+#     print(- 1)
+# else:
+#     print(total)
+#     print(ans)
+
+# boj 11004
+# N, K = map(int, input().split())
+# arr = list(map(int, input().split()))
+# arr.sort()
+# print(arr[K - 1])
+
+# boj 10991
+# n = int(input())
+# for i in range(n):
+#     print(' ' * (n - 1 - i) + '* ' * i + '*')
+
+# boj 2985
+# A, B, C = map(int, input().split())
+# if A + B == C:
+#     print(str(A) + '+' + str(B) + '=' + str(C))
+# elif A - B == C:
+#     print(str(A) + '-' + str(B) + '=' + str(C))
+# elif A * B == C:
+#     print(str(A) + '*' + str(B) + '=' + str(C))
+# elif A // B == C:
+#     print(str(A) + '/' + str(B) + '=' + str(C))
+# elif A == B + C:
+#     print(str(A) + '=' + str(B) + '+' + str(C))
+# elif A == B - C:
+#     print(str(A) + '=' + str(B) + '-' + str(C))
+# elif A == B * C:
+#     print(str(A) + '=' + str(B) + '*' + str(C))
+# elif A == B / C:
+#     print(str(A) + '=' + str(B) + '/' + str(C))
+
+# boj 2530
+# H, M, S = map(int, input().split())
+# D = int(input())
+# S += D % 60
+# D //= 60
+# if S >= 60:
+#     S -= 60
+#     M += 1
+# M += D % 60
+# D //= 60
+# if M >= 60:
+#     M -= 60
+#     H += 1
+# H += D % 24
+# if H >= 24:
+#     H -= 24
+# print(H, M, S)
+
+# boj 1668
+# n = int(input())
+# arr = [int(input()) for _ in range(n)]
+# ans1, ans2 = 1, 1
+# tro1, tro2 = arr[0], arr[- 1]
+# for i in range(1, n):
+#     temp = arr[i]
+#     if tro1 < temp:
+#         tro1 = temp
+#         ans1 += 1
+# for j in range(n - 2, - 1, - 1):
+#     temp = arr[j]
+#     if tro2 < temp:
+#         tro2 = temp
+#         ans2 += 1
+# print(ans1)
+# print(ans2)
+
+# boj 11943
+# A, B = map(int, input().split())
+# C, D = map(int, input().split())
+# print(min(A + D, B + C))
