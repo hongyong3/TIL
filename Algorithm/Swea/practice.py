@@ -910,3 +910,7 @@ input = sys.stdin.readline
 # A, B = map(int, input().split())
 # C, D = map(int, input().split())
 # print(min(A + D, B + C))
+
+# boj 1932
+n = int(input())
+arr = [list(map(int, input().split())) for _ in range(n)]
