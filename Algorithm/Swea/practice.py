@@ -912,5 +912,123 @@ input = sys.stdin.readline
 # print(min(A + D, B + C))
 
 # boj 1932
+# n = int(input())
+# arr = [list(map(int, input().split())) for _ in range(n)]
+# k = 2
+# for i in range(1, n):
+#     for j in range(k):
+#         if j == 0:
+#             arr[i][j] += arr[i - 1][j]
+#         elif i == j:
+#             arr[i][j] += arr[i - 1][j - 1]
+#         else:
+#             arr[i][j] += max(arr[i - 1][j - 1], arr[i - 1][j])
+#     k += 1
+# print(max(arr[n - 1]))
+
+# boj 16395
+# n, k = map(int, input().split())
+# arr = []
+# for i in range(1, n + 1):
+#     arr.append([1] * i)
+#
+# for i in range(2, n):
+#     for j in range(1, i):
+#         arr[i][j] = arr[i - 1][j - 1] + arr[i - 1][j]
+# print(arr[n - 1][k - 1])
+
+# boj 3184
+# from collections import deque
+# import sys
+# input = sys.stdin.readline
+# dx = [- 1, 1, 0, 0] # 상하좌우
+# dy = [0, 0, - 1, 1]
+#
+# def bfs(x, y):
+#     global o, v
+#     q = deque()
+#     q.append((x, y))
+#     to, tv = 0, 0
+#     if arr[x][y] == 'o':
+#         to += 1
+#     elif arr[x][y] == 'v':
+#         tv += 1
+#
+#     while q:
+#         x, y = q.popleft()
+#         for k in range(4):
+#             nx = x + dx[k]
+#             ny = y + dy[k]
+#             if 0 <= nx < r and 0 <= ny < c and visited[nx][ny] == 0 and arr[nx][ny] != '#':
+#                 if arr[nx][ny] == 'o':
+#                     to += 1
+#                 if arr[nx][ny] == 'v':
+#                     tv += 1
+#                 visited[nx][ny] = 1
+#                 q.append((nx, ny))
+#     if to and tv:
+#         if to > tv:
+#             v -= tv
+#         else:
+#             o -= to
+#
+# r, c = map(int, input().split())
+# arr = []
+# o, v = 0, 0
+# visited = [[0] * c for _ in range(r)]
+# for i in range(r):
+#     temp = list(input().rstrip())
+#     o += temp.count('o')
+#     v += temp.count('v')
+#     arr.append(temp)
+#
+# for i in range(r):
+#     for j in range(c):
+#         if arr[i][j] in 'ov' and visited[i][j] == 0:
+#             visited[i][j] = 1
+#             bfs(i, j)
+# print(o, v)
+
+# boj 11320
+# t = int(input())
+# for _ in range(t):
+#     a, b = map(int, input().split())
+#     print((a // b) ** 2)
+
+# boj 20112
+# n = int(input())
+# arr = [input() for _ in range(n)]
+# ans = "YES"
+# for i in range(n):
+#     if ans == "NO":
+#         break
+#     for j in range(i, n):
+#         if i != j:
+#             if arr[i][j] != arr[j][i]:
+#                 ans = "NO"
+#                 break
+# print(ans)
+
+# boj 20352
+# n = int(input())
+# pi = 3.14159265359
+# r = (n / pi) ** 0.5
+# print(2 * pi * r)
+
+# boj 18398
+# t = int(input())
+# for _ in range(t):
+#     n = int(input())
+#     for _ in range(n):
+#         a, b = map(int, input().split())
+#         print(a + b, a * b)
+
+# boj 11235
 n = int(input())
-arr = [list(map(int, input().split())) for _ in range(n)]
+arr = {}
+for _ in range(n):
+    s = input().rstrip()
+    if s not in arr:
+        arr[s] = 1
+    else:
+        arr[s] += 1
