@@ -1023,12 +1023,50 @@ input = sys.stdin.readline
 #         a, b = map(int, input().split())
 #         print(a + b, a * b)
 
-# boj 11235
-n = int(input())
-arr = {}
-for _ in range(n):
-    s = input().rstrip()
-    if s not in arr:
-        arr[s] = 1
-    else:
-        arr[s] += 1
+# boj 11170
+# t = int(input())
+# for _ in range(t):
+#     n, m = map(int, input().split())
+#     ans = 0
+#     for i in range(n, m + 1):
+#         ans += str(i).count('0')
+#     print(ans)
+
+# boj 5361
+# price = [350.34, 230.90, 190.55, 125.30, 180.90]
+# t = int(input())
+# for _ in range(t):
+#     arr = list(map(int, input().split()))
+#     ans = 0
+#     for i in range(5):
+#         ans += price[i] * arr[i]
+#     print("${}".format(format(ans, ".2f")))
+
+# boj 1225
+# a, b = input().split()
+# A, B = 0, 0
+# for i in a:
+#     A += int(i)
+# for j in b:
+#     B += int(j)
+# print(A * B)
+
+# boj 15813
+# n = int(input())
+# s = input()
+# ans = 0
+# for i in s:
+#     ans += ord(i) - 64
+# print(ans)
+
+# boj 4766
+arr = []
+while True:
+    s = float(input().rstrip())
+    if s == 999:
+        break
+    arr.append(s)
+a = arr[0]
+for i in arr[1:]:
+    print(format(i - a, ".2f"))
+    a = i
