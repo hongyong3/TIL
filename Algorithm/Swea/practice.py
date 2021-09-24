@@ -1118,26 +1118,64 @@ input = sys.stdin.readline
 #     x = str(x)
 # print("{}:{}:{}".format(x, y, z))
 
+# boj 6131
+# n = int(input())
+# ans = 0
+# for b in range(1, 500):
+#     for a in range(b + 1, 501):
+#         if a ** 2 == b ** 2 + n:
+#             ans += 1
+#         elif a ** 2 > b ** 2 + n:
+#             break
+# print(ans)
 
-# swea no.1
-'''
-두 사람 A와 B는 ‘오늘 점심 값을 누가 내야 하는가’라는 주제로 열띤 토론을 펼칠 예정이다. 두 사람은 승자를 가리기 위해 N명의 방청객을 섭외하였으나, 토론자가 직접 섭외했다는 한계가 있어 공정하지는 않다. 각각의 방청객에는 1 이상 N 이하의 서로 다른 자연수 번호가 붙어 있으며, i (1 ≤ i ≤ N)번 방청객은 토론자 Si (Si ∈ {'A', 'B'})의 편이다.
+# boj 10599
+# while True:
+#     a, b, c, d = map(int, input().split())
+#     if a == b == c == d == 0:
+#         break
+#     print(abs(b - c), abs(d - a))
 
-  방청객의 재미를 위해 토론의 승자는 아래와 같이 결정된다.
+# boj 17388
+# arr = list(map(int, input().split()))
+# score = sum(arr)
+# uni = ["Soongsil", "Korea", "Hanyang"]
+# if score >= 100:
+#     print("OK")
+# else:
+#     print(uni[arr.index(min(arr))])
 
-  · 1 ≤ l ≤ r ≤ N을 만족하는 두 개의 정수 (l, r)을 무작위로 선택한다. 이 과정은 주사위를 굴려서 하기 때문에 공정성이 보장된다.
-  · 번호가 l 이상 r 이하인 r – l + 1명 방청객에 대해서만 선호도 조사를 한다. 각 방청객은 자기 편의 토론자에게 한 표씩 행사할 것이다.
-  · 토론자 A를 선호하는 방청객 수를 VA, 토론자 B를 선호하는 방청객 수를 VB라고 하자.
-    ■ VA – VB > K이면 A의 승리이다.
-    ■ VB – VA > K이면 B의 승리이다.
-    ■ 그 외 (즉, |VA – VB| ≤ K)에는 무승부로 처리한다.
+# boj 3986
+# import sys
+# input = sys.stdin.readline
+# n = int(input())
+# words = [list(input().rstrip()) for _ in range(n)]
+# ans = 0
+# for word in words:
+#     stack = []
+#     while word:
+#         w = word.pop()
+#         if not stack:
+#             stack.append(w)
+#         else:
+#             if stack[- 1] == w:
+#                 stack.pop()
+#             else:
+#                 stack.append(w)
+#     if not stack:
+#         ans += 1
+# print(ans)
 
-  토론자 A는 어떻게든 토론자 B가 이기는 것만은 막고 싶다. (즉, A가 이기는 상황 또는 무승부인 상황만 용인한다.) 이를 위해 A는 방청객의 선호도 S를 아는 상황에서 몇 명의 방청객을 골라 뇌물을 줘 자신의 편으로 만들고자 한다. 모든 방청객을 A의 편으로 만들면 B가 이길 일은 없을 것이므로, 이 방식으로 A는 패배하지 않을 수 있다.
-  토론자 A가 방청객 i를 포섭하기 위해서는 2^i원을 지불해야 한다. A는 최소한의 방청객 섭외 비용으로, 어떤 (l, r)이 선택되든 자신이 승리하거나 무승부가 되도록 하고자 한다. 이를 위해 필요한 최소 비용을 구하는 프로그램을 작성하라.
-'''
-T = int(input())
-for test_case in range(T):
-    n, k = map(int, input().split())
-    s = input()
-    idx = 1
-    for i in range(n):
+# boj 2167
+import sys
+input = sys.stdin.readline
+n, m = map(int, input().split())
+arr = [list(map(int, input().split())) for _ in range(n)]
+dp = [[0] * (m + 1) for _ in range(n + 1)]
+for i in range(1, n + 1):
+    for j in range(1, m + 1):
+        dp[i][j] = arr[i - 1][j - 1] + dp[i - 1][j] + dp[i][j - 1] - dp[i - 1][j - 1]
+k = int(input())
+for _ in range(k):
+    i, j, x, y = map(int, input().split())
+    print(dp[x][y] - dp[x][j - 1] - dp[i - 1][y] + dp[i - 1][j - 1])
