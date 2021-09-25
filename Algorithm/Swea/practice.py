@@ -1167,15 +1167,61 @@ input = sys.stdin.readline
 # print(ans)
 
 # boj 2167
-import sys
-input = sys.stdin.readline
+# import sys
+# input = sys.stdin.readline
+# n, m = map(int, input().split())
+# arr = [list(map(int, input().split())) for _ in range(n)]
+# dp = [[0] * (m + 1) for _ in range(n + 1)]
+# for i in range(1, n + 1):
+#     for j in range(1, m + 1):
+#         dp[i][j] = arr[i - 1][j - 1] + dp[i - 1][j] + dp[i][j - 1] - dp[i - 1][j - 1]
+# k = int(input())
+# for _ in range(k):
+#     i, j, x, y = map(int, input().split())
+#     print(dp[x][y] - dp[x][j - 1] - dp[i - 1][y] + dp[i - 1][j - 1])
+
+# boj 8595#
+# import sys
+# input = sys.stdin.readline
+# n = int(input())
+# s = input().rstrip()
+# num = [str(i) for i in range(10)]
+# ans, cnt, hidden = 0, 0, 0
+#
+# for i in s[:: - 1]:
+#     if hidden >= 1000000:
+#         hidden = 0
+#         cnt = 0
+#     elif i in num:
+#         ans += int(i) * (10 ** cnt)
+#         cnt += 1
+#     else:
+#         cnt = 0
+#         hidden = 0
+# print(ans)
+
+# boj 9325
+# t = int(input())
+# for _ in range(t):
+#     ans = int(input())
+#     n = int(input())
+#     for _ in range(n):
+#         q, p = map(int, input().split())
+#         ans += q * p
+#     print(ans)
+
+# boj 21735
 n, m = map(int, input().split())
-arr = [list(map(int, input().split())) for _ in range(n)]
-dp = [[0] * (m + 1) for _ in range(n + 1)]
-for i in range(1, n + 1):
-    for j in range(1, m + 1):
-        dp[i][j] = arr[i - 1][j - 1] + dp[i - 1][j] + dp[i][j - 1] - dp[i - 1][j - 1]
-k = int(input())
-for _ in range(k):
-    i, j, x, y = map(int, input().split())
-    print(dp[x][y] - dp[x][j - 1] - dp[i - 1][y] + dp[i - 1][j - 1])
+arr = list(map(int, input().split()))
+ans = 0
+for i in range(1 << m):
+    x, b = 1, 0
+    for j in range(m):
+        if i & (1 << j):
+            b += 1
+            x >>= 1
+        if j + b >= n:
+            break
+        x += arr[j + b]
+    ans = max(ans, x)
+print(ans)
