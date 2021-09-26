@@ -1211,17 +1211,17 @@ input = sys.stdin.readline
 #     print(ans)
 
 # boj 21735
-n, m = map(int, input().split())
-arr = list(map(int, input().split()))
-ans = 0
-for i in range(1 << m):
-    x, b = 1, 0
-    for j in range(m):
-        if i & (1 << j):
-            b += 1
-            x >>= 1
-        if j + b >= n:
-            break
-        x += arr[j + b]
-    ans = max(ans, x)
-print(ans)
+# n, m = map(int, input().split())
+# arr = list(map(int, input().split()))
+# ans = 0
+# for i in range(1 << m):
+#     x, b = 1, 0
+#     for j in range(m):
+#         if i & (1 << j):
+#             b += 1
+#             x >>= 1
+#         if j + b >= n:
+#             break
+#         x += arr[j + b]
+#     ans = max(ans, x)
+# print(ans)
