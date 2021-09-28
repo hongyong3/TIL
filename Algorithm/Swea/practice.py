@@ -1227,5 +1227,95 @@ input = sys.stdin.readline
 # print(ans)
 
 # boj 14652
-n, m, k = map(int, input().split())
-print(k // m, k % m)
+# n, m, k = map(int, input().split())
+# print(k // m, k % m)
+
+# boj 5692
+# import sys
+# while True:
+#     n = sys.stdin.readline().rstrip()[:: - 1]
+#     ans = 0
+#     fact = [1, 2, 6, 24, 120]
+#     if n == '0':
+#         break
+#     for i in range(len(n)):
+#         ans += int(n[i]) * fact[i]
+#     print(ans)
+
+# boj 20499
+# K, D, A = map(int, input().split('/'))
+# print("hasu") if K + A <D or D == 0 else print("gosu")
+
+# boj 14470
+# A = int(input())
+# B = int(input())
+# C = int(input())
+# D = int(input())
+# E = int(input())
+# ans = 0
+# if A <= 0:
+#     ans += abs(A) * C + D
+#     A = 0
+# ans += (B - A) * E
+# print(ans)
+
+# boj 3460
+# t = int(input())
+# for _ in range(t):
+#     n = int(input())
+#     a = bin(n)[2:][:: - 1]
+#     for i in range(len(a)):
+#         if a[i] == '1':
+#             print(i, end = ' ')
+
+# boj 1676
+# n = int(input())
+# num = 1
+# for i in range(1, n + 1):
+#     num *= i
+# num = str(num)[:: - 1]
+# ans = 0
+# for i in num:
+#     if i == '0':
+#         ans += 1
+#     else:
+#         break
+# print(ans)
+
+# boj 23027
+# s = input()
+# A, B, C = s.count('A'), s.count('B'), s.count('C')
+# ans = ''
+# if A:
+#     for i in s:
+#         if i in 'BCDF':
+#             ans += 'A'
+#         else:
+#             ans += i
+# elif not A and B:
+#     for i in s:
+#         if i in 'CDF':
+#             ans += 'B'
+#         else:
+#             ans += i
+# elif not A and not B and C:
+#     for i in s:
+#         if i in 'DF':
+#             ans += 'C'
+#         else:
+#             ans += i
+# else:
+#     ans = 'A' * len(s)
+# print(ans)
+
+# boj 2004
+# memory and runtime 생각하기
+n, m = map(int, input().split())
+arr = [1]
+fact = 1
+for i in range(1, 26):
+    fact *= i
+    arr.append(fact)
+print(arr)
+print(len(arr))
+print(arr[25] // arr[13] // arr[12])
