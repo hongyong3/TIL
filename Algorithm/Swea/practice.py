@@ -1308,14 +1308,47 @@ input = sys.stdin.readline
 #     ans = 'A' * len(s)
 # print(ans)
 
-# boj 2004
-# memory and runtime 생각하기
-n, m = map(int, input().split())
-arr = [1]
-fact = 1
-for i in range(1, 26):
-    fact *= i
-    arr.append(fact)
-print(arr)
-print(len(arr))
-print(arr[25] // arr[13] // arr[12])
+# boj 2935
+# a = int(input())
+# col = input()
+# b = int(input())
+# if col == '+':
+#     print(a + b)
+# else:
+#     print(a * b)
+
+# boj 14712
+# import sys
+# input = sys.stdin.readline
+# def dfs(cnt):
+#     global ans
+#     if cnt == n * m:
+#         ans += 1
+#         return
+#     x = cnt // m + 1
+#     y = cnt % m + 1
+#     dfs(cnt + 1)
+#     if arr[x - 1][y] == 0 or arr[x][y - 1] == 0 or arr[x - 1][y - 1] == 0:
+#         arr[x][y] = 1
+#         dfs(cnt + 1)
+#         arr[x][y] = 0
+# n, m = map(int, input().rstrip().split())
+# arr = [[0] * (m + 1) for _ in range(n + 1)]
+# ans = 0
+# dfs(0)
+# print(ans)
+
+# boj 2615
+dx = [- 1, 1, 0, 0, - 1, - 1, 1, 1] # 상 하 좌 우 좌상 좌하 우상 우하
+dy = [0, 0, - 1, 1, - 1, 1, - 1, 1]
+def dfs(x, y, val):
+    while True:
+        # 범위랑 계속
+        pass
+
+
+arr = [list(map(int, input().split())) for _ in range(19)]
+for i in range(19):
+    for j in range(19):
+        if arr[i][j]:
+            dfs(i, j, arr[i][j])
