@@ -1339,16 +1339,40 @@ input = sys.stdin.readline
 # print(ans)
 
 # boj 2615
-dx = [- 1, 1, 0, 0, - 1, - 1, 1, 1] # 상 하 좌 우 좌상 좌하 우상 우하
-dy = [0, 0, - 1, 1, - 1, 1, - 1, 1]
-def dfs(x, y, val):
-    while True:
-        # 범위랑 계속
-        pass
+dx = [1, 1, 0, - 1] # 하 우하 우 우상
+dy = [0, 1, 1, 1]
+def dfs():
+    for x in range(19):
+        for y in range(19):
+            if arr[x][y]:
+                for k in range(4):
+                    nx = x + dx[k]
+                    ny = y + dy[k]
+                    cnt = 1
+
+                    if not (0 <= nx < 19 and 0 <= ny < 19):
+                        continue
+
+                    while 0 <= nx < 19 and 0 <= ny < 19 and arr[x][y] == arr[nx][ny]:
+                        cnt += 1
+
+                        if cnt == 5:
+                            if 0 <= nx + dx[k] < 19 and 0 <= ny + dy[k] < 19 and arr[nx][ny] == arr[nx + dx[k]][ny + dy[k]]:
+                                break
+                            if 0 <= x - dx[k] < 19 and 0 <= y - dy[k] < 19 and arr[x][y] == arr[x - dx[k]][y - dy[k]]:
+                                break
+                            return arr[x][y], x + 1, y + 1
+
+                        nx += dx[k]
+                        ny += dy[k]
+
+    return 0, - 1, - 1
 
 
 arr = [list(map(int, input().split())) for _ in range(19)]
-for i in range(19):
-    for j in range(19):
-        if arr[i][j]:
-            dfs(i, j, arr[i][j])
+color, x, y = dfs()
+if not color:
+    print(color)
+else:
+    print(color)
+    print(x, y)
