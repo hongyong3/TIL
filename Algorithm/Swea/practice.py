@@ -1378,5 +1378,116 @@ input = sys.stdin.readline
 #     print(x, y)
 
 # boj 18108
-n = int(input())
-print(n - 543)
+# n = int(input())
+# print(n - 543)
+
+# boj 4564
+# while True:
+#     n = int(input())
+#     if n == 0:
+#         break
+#     ans = [n]
+#     while len(str(n)) > 1:
+#         temp = 1
+#         for i in str(n):
+#             temp *= int(i)
+#         ans.append(temp)
+#         n = temp
+#     print(*ans)
+
+# boj 1236
+# def sol(n, q):
+#     ans = ''
+#     while n:
+#         n, mod = divmod(n, q)
+#         ans += str(mod)
+#     return ans[:: - 1]
+# t = int(input())
+# print(sol(t, 9))
+
+# boj 1373
+# print(oct(int(input(), 2))[2:])
+
+# boj 20492
+# n = int(input())
+# print(int(0.78 * n), int(0.8 * n + 0.2 * 0.78 * n))
+
+# boj 5217
+# t = int(input())
+# for _ in range(t):
+#     n = int(input())
+#     ans = []
+#     for i in range(1, n // 2 + 1):
+#         if i == n - i or n - i == 0:
+#             pass
+#         else:
+#             ans.append((i, n - i))
+#     if not ans:
+#         print("Pairs for {}: ".format(n))
+#     else:
+#         print("Pairs for {}: ".format(n), end='')
+#         for i in ans[: - 1]:
+#             print(*i, end = ', ')
+#         if ans:
+#             print(*ans[- 1])
+
+# boj 17173
+# n, m = map(int, input().split())
+# arr = list(map(int, input().split()))
+# ans = set()
+# for i in range(2, n + 1):
+#     for j in arr:
+#         if not i % j:
+#             ans.add(i)
+# print(sum(ans))
+
+# boj 2506
+# n = int(input())
+# arr = list(map(int, input().split()))
+# ans = 0
+# score = 1
+# for i in arr:
+#     if i:
+#         ans += score
+#         score += 1
+#     else:
+#         score = 1
+# print(ans)
+
+# boj 14909
+# arr = list(map(int, input().split()))
+# ans = 0
+# for i in arr:
+#     if i > 0:
+#         ans += 1
+# print(ans)
+
+# boj 23080
+# k = int(input())
+# s = input()
+# ans = ''
+# for i in range(0, len(s), k):
+#     ans += s[i]
+# print(ans)
+
+# boj 6588
+import sys
+input = sys.stdin.readline
+num = 100001
+arr = [1] * num
+for i in range(2, int((num - 1) ** 0.5) + 1):
+    if arr[i]:
+        for k in range(i + i, num, i):
+            arr[k] = 0
+while True:
+    n = int(input())
+    if n == 0:
+        break
+    chk = 0
+    for i in range(3, len(arr) + 1):
+        if arr[i] and arr[n - i]:
+            print("{} = {} + {}".format(n, i, n - i))
+            chk = 1
+            break
+    if chk == 0:
+        print("Goldbach's conjecture is wrong.")
