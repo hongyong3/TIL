@@ -1471,23 +1471,38 @@ input = sys.stdin.readline
 # print(ans)
 
 # boj 6588
-import sys
-input = sys.stdin.readline
-num = 100001
-arr = [1] * num
-for i in range(2, int((num - 1) ** 0.5) + 1):
-    if arr[i]:
-        for k in range(i + i, num, i):
-            arr[k] = 0
-while True:
-    n = int(input())
-    if n == 0:
-        break
-    chk = 0
-    for i in range(3, len(arr) + 1):
-        if arr[i] and arr[n - i]:
-            print("{} = {} + {}".format(n, i, n - i))
-            chk = 1
-            break
-    if chk == 0:
-        print("Goldbach's conjecture is wrong.")
+# import sys
+# input = sys.stdin.readline
+# num = 100001
+# arr = [1] * num
+# for i in range(2, int((num - 1) ** 0.5) + 1):
+#     if arr[i]:
+#         for k in range(i + i, num, i):
+#             arr[k] = 0
+# while True:
+#     n = int(input())
+#     if n == 0:
+#         break
+#     chk = 0
+#     for i in range(3, len(arr) + 1):
+#         if arr[i] and arr[n - i]:
+#             print("{} = {} + {}".format(n, i, n - i))
+#             chk = 1
+#             break
+#     if chk == 0:
+#         print("Goldbach's conjecture is wrong.")
+
+# boj 13301
+n = int(input())
+a1, a2 = 4, 6
+ans = 0
+if n == 1:
+    ans = a1
+elif n == 2:
+    ans = a2
+else:
+    for i in range(2, n):
+        ans = a1 + a2
+        a1 = a2
+        a2 = ans
+print(ans)
