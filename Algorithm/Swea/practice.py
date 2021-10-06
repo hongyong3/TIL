@@ -1493,16 +1493,16 @@ input = sys.stdin.readline
 #         print("Goldbach's conjecture is wrong.")
 
 # boj 13301
-n = int(input())
-a1, a2 = 4, 6
-ans = 0
-if n == 1:
-    ans = a1
-elif n == 2:
-    ans = a2
-else:
-    for i in range(2, n):
-        ans = a1 + a2
-        a1 = a2
-        a2 = ans
-print(ans)
+# n = int(input())
+# a1, a2 = 4, 6
+# ans = 0
+# if n == 1:
+#     ans = a1
+# elif n == 2:
+#     ans = a2
+# else:
+#     for i in range(2, n):
+#         ans = a1 + a2
+#         a1 = a2
+#         a2 = ans
+# print(ans)
