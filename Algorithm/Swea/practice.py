@@ -1508,10 +1508,12 @@ input = sys.stdin.readline
 # print(ans)
 
 # boj 17614
-import sys
-input = sys.stdin.readline
-n = int(input())
-ans = 0
-for i in range(1, n + 1):
-    ans += str(i).count('3') + str(i).count('6') + str(i).count('9')
-print(ans)
+# import sys
+# input = sys.stdin.readline
+# n = int(input())
+# ans = 0
+# for i in range(1, n + 1):
+#     ans += str(i).count('3') + str(i).count('6') + str(i).count('9')
+# print(ans)
+
+# boj
