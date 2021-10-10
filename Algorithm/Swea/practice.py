@@ -1516,4 +1516,68 @@ input = sys.stdin.readline
 #     ans += str(i).count('3') + str(i).count('6') + str(i).count('9')
 # print(ans)
 
-# boj
+# boj 10179
+# t = int(input())
+# for _ in range(t):
+#     n = float(input())
+#     print("${}".format(format(0.8 * n, ".2f")))
+
+# boj 10214
+# t = int(input())
+# for _ in range(t):
+#     scoreY, scoreK = 0, 0
+#     for i in range(9):
+#         y, k = map(int, input().split())
+#         scoreY += y
+#         scoreK += k
+#     if scoreY > scoreK:
+#         print("Yonsei")
+#     elif scoreY < scoreK:
+#         print("Korea")
+#     else:
+#         print("Draw")
+
+# boj 2580
+import sys
+input = sys.stdin.readline
+def dfs(n):
+    global flag
+    if flag:
+        return
+    if n == len(chk):
+        for i in arr:
+            print(*i)
+        flag = 1
+        return
+    r, c = chk[n]
+    cases = makeCases(r, c)
+
+    for case in cases:
+        arr[r][c] = case
+        dfs(n + 1)
+        arr[r][c] = 0
+
+
+def makeCases(x, y):
+    num = [i for i in range(1, 10)]
+
+    for k in range(9):
+        if arr[x][k] in num:
+            num.remove(arr[x][k])
+        if arr[k][y] in num:
+            num.remove(arr[k][y])
+
+    x1 = (x // 3) * 3
+    y1 = (y // 3) * 3
+
+    for r in range(x1, x1 + 3):
+        for c in range(y1, y1 + 3):
+            if arr[r][c] in num:
+                num.remove(arr[r][c])
+    return num
+
+
+arr = [list(map(int, input().split())) for _ in range(9)]
+chk = [(x, y) for x in range(9) for y in range(9) if arr[x][y] == 0]
+flag = 0
+dfs(0)
