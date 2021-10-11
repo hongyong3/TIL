@@ -1538,46 +1538,105 @@ input = sys.stdin.readline
 #         print("Draw")
 
 # boj 2580
+# import sys
+# input = sys.stdin.readline
+# def dfs(n):
+#     global flag
+#     if flag:
+#         return
+#     if n == len(chk):
+#         for i in arr:
+#             print(*i)
+#         flag = 1
+#         return
+#     r, c = chk[n]
+#     cases = makeCases(r, c)
+#
+#     for case in cases:
+#         arr[r][c] = case
+#         dfs(n + 1)
+#         arr[r][c] = 0
+#
+#
+# def makeCases(x, y):
+#     num = [i for i in range(1, 10)]
+#
+#     for k in range(9):
+#         if arr[x][k] in num:
+#             num.remove(arr[x][k])
+#         if arr[k][y] in num:
+#             num.remove(arr[k][y])
+#
+#     x1 = (x // 3) * 3
+#     y1 = (y // 3) * 3
+#
+#     for r in range(x1, x1 + 3):
+#         for c in range(y1, y1 + 3):
+#             if arr[r][c] in num:
+#                 num.remove(arr[r][c])
+#     return num
+#
+#
+# arr = [list(map(int, input().split())) for _ in range(9)]
+# chk = [(x, y) for x in range(9) for y in range(9) if arr[x][y] == 0]
+# flag = 0
+# dfs(0)
+
+# boj 1926
+# import sys
+# input = sys.stdin.readline
+#
+# dx = [- 1, 1, 0, 0] # 상하좌우
+# dy = [0, 0, - 1, 1]
+#
+# def bfs(x, y):
+#     temp = 1
+#     q = [(x, y)]
+#     while q:
+#         x, y = q.pop()
+#         for k in range(4):
+#             nx = x + dx[k]
+#             ny = y + dy[k]
+#             if 0 <= nx < n and 0 <= ny < m:
+#                 if arr[nx][ny] and not visited[nx][ny]:
+#                     temp += 1
+#                     visited[nx][ny] = 1
+#                     q.append((nx,ny))
+#     return temp
+#
+# n, m = map(int, input().split())
+# arr = [list(map(int, input().split())) for _ in range(n)]
+# visited = [[0] * m for _ in range(n)]
+# cnt, ans = 0, 0
+# for i in range(n):
+#     for j in range(m):
+#         if arr[i][j] and not visited[i][j]:
+#             cnt += 1
+#             visited[i][j] = 1
+#             ans = max(ans, bfs(i, j))
+# print(cnt)
+# print(ans)
+
+# boj 9663
 import sys
 input = sys.stdin.readline
-def dfs(n):
-    global flag
-    if flag:
-        return
-    if n == len(chk):
-        for i in arr:
-            print(*i)
-        flag = 1
-        return
-    r, c = chk[n]
-    cases = makeCases(r, c)
+def chk(x):
+    for i in range(1, x):
+        if arr[x] == arr[i] or abs(arr[x] - arr[i]) == x - i:
+            return False
+    return True
 
-    for case in cases:
-        arr[r][c] = case
-        dfs(n + 1)
-        arr[r][c] = 0
-
-
-def makeCases(x, y):
-    num = [i for i in range(1, 10)]
-
-    for k in range(9):
-        if arr[x][k] in num:
-            num.remove(arr[x][k])
-        if arr[k][y] in num:
-            num.remove(arr[k][y])
-
-    x1 = (x // 3) * 3
-    y1 = (y // 3) * 3
-
-    for r in range(x1, x1 + 3):
-        for c in range(y1, y1 + 3):
-            if arr[r][c] in num:
-                num.remove(arr[r][c])
-    return num
-
-
-arr = [list(map(int, input().split())) for _ in range(9)]
-chk = [(x, y) for x in range(9) for y in range(9) if arr[x][y] == 0]
-flag = 0
-dfs(0)
+def dfs(idx):
+    global ans
+    if idx > n:
+        ans += 1
+    else:
+        for i in range(1, n + 1):
+            arr[idx] = i
+            if chk(idx):
+                dfs(idx + 1)
+n = int(input())
+arr = [[0] * 16 for _ in range(16)]
+ans = 0
+dfs(1)
+print(ans)
