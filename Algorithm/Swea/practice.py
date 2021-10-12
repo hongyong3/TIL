@@ -1618,6 +1618,7 @@ input = sys.stdin.readline
 # print(ans)
 
 # boj 9663
+# 백트레킹 필요할듯...
 import sys
 input = sys.stdin.readline
 def chk(x):
