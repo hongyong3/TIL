@@ -1619,25 +1619,42 @@ input = sys.stdin.readline
 
 # boj 9663
 # 백트레킹 필요할듯...
-import sys
-input = sys.stdin.readline
-def chk(x):
-    for i in range(1, x):
-        if arr[x] == arr[i] or abs(arr[x] - arr[i]) == x - i:
-            return False
-    return True
+# import sys
+# input = sys.stdin.readline
+# def chk(x):
+#     for i in range(1, x):
+#         if arr[x] == arr[i] or abs(arr[x] - arr[i]) == x - i:
+#             return False
+#     return True
+#
+# def dfs(idx):
+#     global ans
+#     if idx > n:
+#         ans += 1
+#     else:
+#         for i in range(1, n + 1):
+#             arr[idx] = i
+#             if chk(idx):
+#                 dfs(idx + 1)
+# n = int(input())
+# arr = [[0] * 16 for _ in range(16)]
+# ans = 0
+# dfs(1)
+# print(ans)
 
-def dfs(idx):
-    global ans
-    if idx > n:
-        ans += 1
-    else:
-        for i in range(1, n + 1):
-            arr[idx] = i
-            if chk(idx):
-                dfs(idx + 1)
-n = int(input())
-arr = [[0] * 16 for _ in range(16)]
-ans = 0
-dfs(1)
-print(ans)
+# T = int(input())
+# for test_case in range(T):
+#     n = int(input())
+#     arr = list(map(int, input().split()))
+#     while True:
+#         if not arr[0]:
+#             arr.append(arr.pop(0))
+#         else:
+#             break
+#     ans = (n - 1) // sum(arr) * 7 + 1
+#     if n <= sum(arr):
+#         while n:
+#             for i in arr:
+#                 if i:
+#                     n -= 1
+#     print("#{} {}".format(test_case + 1, ans))
