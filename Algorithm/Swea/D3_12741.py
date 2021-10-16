@@ -53,3 +53,14 @@ sys.stdin = open("D3_12741_input.txt", "r")
 #         ans.append("#{} {}".format(test_case + 1, B - A))
 # for i in ans:
 #     print(i)
+
+T = int(input())
+ans = []
+for test_case in range(T):
+    A, B, C, D = map(int, input().split())
+    time = min(B, D) - max(A, C)
+    if time < 0:
+        time = 0
+    ans.append(("#{} {}".format(test_case + 1, time)))
+for i in ans:
+    print(i)
