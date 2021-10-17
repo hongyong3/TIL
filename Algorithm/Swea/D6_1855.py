@@ -15,94 +15,41 @@ LCA Algorithm(Lowest Common Ancestor)
 
 '''
 
-# def sparse():
-#     for i in range(1, 21):
-#         for j in range(N):
-#             p[j][i] = p[p[j][i - 1]][i - 1]
-#
-#
-# def lca(x, y):
-#     if d[x] < d[y]:
-#         d[x], d[y] = d[y], d[x]
-#
-#     for i in range(19, - 1, - 1):
-#         if d[x] - d[y] >= (1 << i):
-#             x = p[x][i]
-#
-#     if x == y:
-#         return x
-#
-#     for i in range(19, - 1, - 1):
-#         if p[x][i] != p[y][i]:
-#             x = p[x][i]
-#             y = p[y][i]
-#
-#     return p[x][0]
-#
-#
-# T = int(input())
-# for test_case in range(T):
-#     N = int(input())
-#     data = list(map(int, input().split()))
-#     graph = [[] for _ in range(N + 3)]
-#     chk = [0] * (N + 1)
-#     d = [0] * (N + 1)
-#     p = [[0] * 23 for _ in range(N + 3)]
-#
-#     j = 1
-#     for i in data:
-#         graph[i - 1].append(j)
-#         j += 1
-#
-#     chk[0] = 1
-#     q = [(0, 0)]
-#
-#     while q:
-#         x, dep = q.pop(0)
-#         d[x] = dep
-#
-#         for i in graph[x]:
-#             nx = i
-#             if not chk[nx]:
-#                 chk[nx] = 1
-#                 p[nx][0] = x
-#                 q.append((nx, dep + 1))
-#
-#     sparse()
-#
-#     ans = 0
-#     chk = [0] * (N + 1)
-#     chk[0] = 1
-#     q = [0]
-#     vt = []
-#
-#     while q:
-#         x = q.pop(0)
-#         vt.append(x)
-#
-#         for i in graph[x]:
-#             nx = i
-#             if not chk[nx]:
-#                 chk[nx] = 1
-#                 q.append(nx)
-#
-#     for i in range(N - 1):
-#         temp = lca(vt[i], vt[i + 1])
-#         a = d[vt[i]] - d[temp]
-#         b = d[vt[i + 1]] - d[temp]
-#         ans += (a + b)
+def sparse():
+    for i in range(1, 21):
+        for j in range(N):
+            p[j][i] = p[p[j][i - 1]][i - 1]
+
+
+def lca(x, y):
+    if d[x] < d[y]:
+        d[x], d[y] = d[y], d[x]
+
+    for i in range(19, - 1, - 1):
+        if d[x] - d[y] >= (1 << i):
+            x = p[x][i]
+
+    if x == y:
+        return x
+
+    for i in range(19, - 1, - 1):
+        if p[x][i] != p[y][i]:
+            x = p[x][i]
+            y = p[y][i]
+
+    return p[x][0]
 
 
 T = int(input())
 for test_case in range(T):
     N = int(input())
     data = list(map(int, input().split()))
-    graph = [[] for _ in range(N + 3)]  # 마지막 node의 자식까지 생각
-    chk = [0] * N
-    d = [0] * N
+    graph = [[] for _ in range(N + 3)]
+    chk = [0] * (N + 1)
+    d = [0] * (N + 1)
     p = [[0] * 23 for _ in range(N + 3)]
-    j = 1
 
+    j = 1
     for i in data:
         graph[i - 1].append(j)
         j += 1
@@ -111,12 +58,65 @@ for test_case in range(T):
     q = [(0, 0)]
 
     while q:
-        node, depth = q.pop(0)
-        d[node] = depth
+        x, dep = q.pop(0)
+        d[x] = dep
 
-        for i in graph[node]:
-            v = i
-            if not chk[v]:
-                chk[v] = 1
-                p[v][0] = node
-                q.append((v, depth + 1))
+        for i in graph[x]:
+            nx = i
+            if not chk[nx]:
+                chk[nx] = 1
+                p[nx][0] = x
+                q.append((nx, dep + 1))
+
+    sparse()
+
+    ans = 0
+    chk = [0] * (N + 1)
+    chk[0] = 1
+    q = [0]
+    vt = []
+
+    while q:
+        x = q.pop(0)
+        vt.append(x)
+
+        for i in graph[x]:
+            nx = i
+            if not chk[nx]:
+                chk[nx] = 1
+                q.append(nx)
+
+    for i in range(N - 1):
+        temp = lca(vt[i], vt[i + 1])
+        a = d[vt[i]] - d[temp]
+        b = d[vt[i + 1]] - d[temp]
+        ans += (a + b)
+
+
+# T = int(input())
+# for test_case in range(T):
+#     N = int(input())
+#     data = list(map(int, input().split()))
+#     graph = [[] for _ in range(N + 3)]  # 마지막 node의 자식까지 생각
+#     chk = [0] * N
+#     d = [0] * N
+#     p = [[0] * 23 for _ in range(N + 3)]
+#     j = 1
+#
+#     for i in data:
+#         graph[i - 1].append(j)
+#         j += 1
+#
+#     chk[0] = 1
+#     q = [(0, 0)]
+#
+#     while q:
+#         node, depth = q.pop(0)
+#         d[node] = depth
+#
+#         for i in graph[node]:
+#             v = i
+#             if not chk[v]:
+#                 chk[v] = 1
+#                 p[v][0] = node
+#                 q.append((v, depth + 1))
