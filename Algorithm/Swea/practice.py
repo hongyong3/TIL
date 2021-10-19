@@ -1641,3 +1641,9 @@ input = sys.stdin.readline
 # ans = 0
 # dfs(1)
 # print(ans)
+
+# boj 15781
+n, m = map(int, input().split())
+a = max(list(map(int, input().split())))
+b = max(list(map(int, input().split())))
+print(a + b)

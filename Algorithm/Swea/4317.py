@@ -40,6 +40,7 @@ dp = [[- 1] * 24 for _ in range(1024)]
 for test_case in range(T):
     H, W = map(int, input().split())
     arr = [list(map(int, input().split())) for _ in range(H)]
+
     for i in range(H):
         for j in range(W):
             dp[i][j] = - 1
