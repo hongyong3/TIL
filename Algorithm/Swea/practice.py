@@ -1647,3 +1647,17 @@ input = sys.stdin.readline
 # a = max(list(map(int, input().split())))
 # b = max(list(map(int, input().split())))
 # print(a + b)
+
+# boj 17256
+# ax, ay, az = map(int, input().split())
+# cx, cy, cz = map(int, input().split())
+# print(cx - az, cy // ay, cz - ax)
+
+# boj 9093
+t = int(input())
+for _ in range(t):
+    s = input().split()
+    ans = ''
+    for i in s:
+        ans += i[:: - 1] + ' '
+    print(ans[: - 1])
