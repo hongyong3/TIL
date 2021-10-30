@@ -1654,10 +1654,10 @@ input = sys.stdin.readline
 # print(cx - az, cy // ay, cz - ax)
 
 # boj 9093
-t = int(input())
-for _ in range(t):
-    s = input().split()
-    ans = ''
-    for i in s:
-        ans += i[:: - 1] + ' '
-    print(ans[: - 1])
+# t = int(input())
+# for _ in range(t):
+#     s = input().split()
+#     ans = ''
+#     for i in s:
+#         ans += i[:: - 1] + ' '
+#     print(ans[: - 1])
