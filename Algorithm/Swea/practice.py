@@ -1661,3 +1661,54 @@ input = sys.stdin.readline
 #     for i in s:
 #         ans += i[:: - 1] + ' '
 #     print(ans[: - 1])
+
+# boj 11123
+# import sys
+# sys.setrecursionlimit(10000)
+#
+# dx = [- 1, 1, 0, 0] # 상하좌우
+# dy = [0, 0, - 1, 1]
+# def dfs(x, y):
+#     arr[x][y] = '.'
+#     for k in range(4):
+#         nx = x + dx[k]
+#         ny = y + dy[k]
+#         if 0 <= nx < h and 0 <= ny < w and arr[nx][ny] == '#':
+#             dfs(nx, ny)
+#
+# t = int(input())
+# for _ in range(t):
+#     h, w = map(int, input().split())
+#     arr = [list(input()) for _ in range(h)]
+#     ans = 0
+#     for i in range(h):
+#         for j in range(w):
+#             if arr[i][j] == '#':
+#                 dfs(i, j)
+#                 ans += 1
+#     print(ans)
+
+# boj 13275
+# A = [0] * 200002
+# def solve(word, n):
+#     r, p = 0, 0
+#     for i in range(n):
+#         if i <= r:
+#             A[i] = min(A[2 * p - i], r - i)
+#         else:
+#             A[i] = 0
+#         while (i - A[i] - 1 >= 0 and i + A[i] + 1 < n and word[i - A[i] - 1] == word[i + A[i] + 1]):
+#             A[i] += 1
+#         if r < i + A[i]:
+#             r = i + A[i]
+#             p = i
+#
+# s = input()
+# words = ''
+# for i in s:
+#     words += '#'
+#     words += i
+# words += '#'
+# solve(words, len(words))
+# ans = max(A[: len(words)])
+# print(ans)
