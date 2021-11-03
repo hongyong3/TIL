@@ -44,3 +44,31 @@ for m in multiset_combinations(Multiset((3, 3, 4, 4, 4, 5)), 3):
 #             if alpha[i]:
 #                 if ord(s[idx]) - 65 > alpha[i]:
 #                     temp = fact[k - 1]
+
+fact = [1]
+idx = 1
+for i in range(1, 21):
+    fact.append(fact[i - 1] * idx)
+    idx += 1
+
+T = int(input())
+for test_case in range(T):
+    s = input()
+    n = len(s)
+    alpha = [0] * 26
+    ans = 0
+    for i in s:
+        alpha[ord(i) - 65] += 1
+
+    for i in range(n):
+        c = ord(s[i]) - 65
+        for j in range(c):
+            if alpha[j]:
+                temp = fact[n - 1 - i]
+                alpha[j] -= 1
+                for k in range(26):
+                    temp //= fact[alpha[k]]
+                ans += temp
+                alpha[j] += 1
+        alpha[c] -= 1
+    print("#{} {}".format(test_case + 1, ans))
