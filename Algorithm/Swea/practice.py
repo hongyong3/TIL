@@ -1712,3 +1712,29 @@ input = sys.stdin.readline
 # solve(words, len(words))
 # ans = max(A[: len(words)])
 # print(ans)
+
+# boj 1235
+# n = int(input())
+# arr = [input().rstrip()[:: - 1] for _ in range(n)]
+# ans = 0
+# while True:
+#     temp = set()
+#     for i in arr:
+#         temp.add(i[:ans])
+#     if len(temp) == n:
+#         break
+#     ans += 1
+# print(ans)
+
+# boj 13699
+# def solve():
+#     arr[0] = 1
+#     for i in range(1, 36):
+#         for j in range(0, i):
+#             arr[i] += arr[j] * arr[i - 1 - j]
+#
+# n = int(input())
+# arr = [0] * 36
+# arr[0] = 1
+# solve()
+# print(arr[n])
