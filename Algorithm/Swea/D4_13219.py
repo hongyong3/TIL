@@ -7,7 +7,6 @@ T = int(input())
 for test_case in range(T):
     p, x, y = map(int, input().split())
 
-    # 내가 생각했던 조건은 틀린 조건 같음.
     flag = 1 if (x - 50) ** 2 + (y - 50) ** 2 <= 2500 else 0
     if 50 <= x <= 100 and 50 <= y <= 100:   # 1사분면
         theta = 0
