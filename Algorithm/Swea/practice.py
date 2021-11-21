@@ -1738,3 +1738,36 @@ input = sys.stdin.readline
 # arr[0] = 1
 # solve()
 # print(arr[n])
+
+# boj 15814
+# s = list(input())
+# t = int(input())
+# for _ in range(t):
+#     a, b = map(int, input().split())
+#     s[a], s[b] = s[b], s[a]
+# ans = ''
+# for i in s:
+#     ans += i
+# print(ans)
+
+# boj 16170
+# from datetime import date
+# today = date.today()
+# print(today.year)
+# print(today.month)
+# print(today.day)
+
+# boj 14563
+t = int(input())
+arr = list(map(int, input().split()))
+for i in arr:
+    num = 0
+    for j in range(1, i // 2 + 1):
+        if not i % j:
+            num += j
+    if num == i:
+        print("Perfect")
+    elif num > i:
+        print("Abundant")
+    else:
+        print("Deficient")
