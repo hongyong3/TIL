@@ -1758,16 +1758,16 @@ input = sys.stdin.readline
 # print(today.day)
 
 # boj 14563
-t = int(input())
-arr = list(map(int, input().split()))
-for i in arr:
-    num = 0
-    for j in range(1, i // 2 + 1):
-        if not i % j:
-            num += j
-    if num == i:
-        print("Perfect")
-    elif num > i:
-        print("Abundant")
-    else:
-        print("Deficient")
+# t = int(input())
+# arr = list(map(int, input().split()))
+# for i in arr:
+#     num = 0
+#     for j in range(1, i // 2 + 1):
+#         if not i % j:
+#             num += j
+#     if num == i:
+#         print("Perfect")
+#     elif num > i:
+#         print("Abundant")
+#     else:
+#         print("Deficient")
