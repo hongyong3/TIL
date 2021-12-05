@@ -1773,10 +1773,129 @@ input = sys.stdin.readline
 #         print("Deficient")
 
 # boj 16561
-n = int(input())
-ans = 1
-temp = 2
-for i in range(9, n, 3):
-    ans += temp
-    temp += 1
-print(ans)
+# n = int(input())
+# ans = 1
+# temp = 2
+# for i in range(9, n, 3):
+#     ans += temp
+#     temp += 1
+# print(ans)
+
+# boj 11328
+# t = int(input())
+# for _ in range(t):
+#     a, b = input().split()
+#     if sorted(a) == sorted(b):
+#         print("Possible")
+#     else:
+#         print("Impossible")
+
+# boj 2133
+# n = int(input())
+# dp = [0] * 50
+# arr = [0] * 50
+# dp[0] = 1
+# dp[2] = 3
+# for i in range(4, 31, 2):
+#     arr[i] = arr[i - 2] + dp[i - 4]
+#     dp[i] = dp[i - 2] * 3 + arr[i] * 2
+# print(dp[n])
+
+# boj 1964
+# import sys
+# input = sys.stdin.readline
+# n = int(input())
+# dp = [0] * (n + 1)
+# dp[0] = 5
+# idx = 3
+# for i in range(1, n + 1):
+#     dp[i] = dp[i - 1] + idx * 3 - 2
+#     idx += 1
+# print(dp[n - 1] % 45678)
+
+# boj 10989
+# import sys
+# input = sys.stdin.readline
+# arr = [0 for x in range(10001)]
+# n = int(input())
+# for _ in range(n):
+#     arr[int(input())] += 1
+# for i in range(10001):
+#     print('%s\n' % i * arr[i], end='')
+
+# boj 7576
+# from collections import deque
+# dx = [- 1, 1, 0, 0]
+# dy = [0, 0, - 1, 1]
+# m, n = map(int, input().split())
+# arr = [list(map(int, input().split())) for _ in range(n)]
+# q = deque()
+# for i in range(n):
+#     for j in range(m):
+#         if arr[i][j] == 1:
+#             q.append((i, j, 0))
+# while q:
+#     x, y, cnt = q.popleft()
+#     for k in range(4):
+#         nx = x + dx[k]
+#         ny = y + dy[k]
+#         ncnt = cnt + 1
+#
+#         if 0 <= nx < n and 0 <= ny < m:
+#             if arr[nx][ny] == 0:
+#                 arr[nx][ny] = 1
+#                 q.append((nx, ny, ncnt))
+#
+# for i in range(n):
+#     for j in range(m):
+#         if arr[i][j] == 0:
+#             cnt = - 1
+#             break
+# print(cnt)
+
+# boj 3187
+import sys
+from collections import deque
+input = sys.stdin.readline
+dx = [- 1, 1, 0, 0]
+dy = [0, 0, - 1, 1]
+
+def bfs(x, y):
+    sheep, wolf = 0, 0
+    if arr[i][j] == 'v':
+        wolf = 1
+    elif arr[i][j] == 'k':
+        sheep = 1
+
+    visited[i][j] = 1
+    q.append((i, j))
+
+    while q:
+        x, y = q.popleft()
+        for k in range(4):
+            nx = x + dx[k]
+            ny = y + dy[k]
+            if 0 <= nx < r and 0 <= ny < c and not visited[nx][ny] and arr[nx][ny] != '#':
+                visited[nx][ny] = 1
+                if arr[nx][ny] == 'v':
+                    wolf += 1
+                elif arr[nx][ny] == 'k':
+                    sheep += 1
+                q.append((nx, ny))
+
+    if sheep > wolf:
+        ans[0] += sheep
+    else:
+        ans[1] += wolf
+
+r, c = map(int, input().split())
+arr = [input().rstrip() for _ in range(r)]  # . 빈공간, # 울타리, v 늑대, k 양
+visited = [[0] * c for _ in range(r)]
+q = deque()
+ans = [0, 0]
+
+for i in range(r):
+    for j in range(c):
+        if arr[i][j] != '#' and not visited[i][j]:
+            bfs(i, j)
+print(*ans)
