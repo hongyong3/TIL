@@ -1854,48 +1854,56 @@ input = sys.stdin.readline
 # print(cnt)
 
 # boj 3187
-import sys
-from collections import deque
-input = sys.stdin.readline
-dx = [- 1, 1, 0, 0]
-dy = [0, 0, - 1, 1]
+# import sys
+# from collections import deque
+# input = sys.stdin.readline
+# dx = [- 1, 1, 0, 0]
+# dy = [0, 0, - 1, 1]
+#
+# def bfs(x, y):
+#     sheep, wolf = 0, 0
+#     if arr[i][j] == 'v':
+#         wolf = 1
+#     elif arr[i][j] == 'k':
+#         sheep = 1
+#
+#     visited[i][j] = 1
+#     q.append((i, j))
+#
+#     while q:
+#         x, y = q.popleft()
+#         for k in range(4):
+#             nx = x + dx[k]
+#             ny = y + dy[k]
+#             if 0 <= nx < r and 0 <= ny < c and not visited[nx][ny] and arr[nx][ny] != '#':
+#                 visited[nx][ny] = 1
+#                 if arr[nx][ny] == 'v':
+#                     wolf += 1
+#                 elif arr[nx][ny] == 'k':
+#                     sheep += 1
+#                 q.append((nx, ny))
+#
+#     if sheep > wolf:
+#         ans[0] += sheep
+#     else:
+#         ans[1] += wolf
+#
+# r, c = map(int, input().split())
+# arr = [input().rstrip() for _ in range(r)]  # . 빈공간, # 울타리, v 늑대, k 양
+# visited = [[0] * c for _ in range(r)]
+# q = deque()
+# ans = [0, 0]
+#
+# for i in range(r):
+#     for j in range(c):
+#         if arr[i][j] != '#' and not visited[i][j]:
+#             bfs(i, j)
+# print(*ans)
 
-def bfs(x, y):
-    sheep, wolf = 0, 0
-    if arr[i][j] == 'v':
-        wolf = 1
-    elif arr[i][j] == 'k':
-        sheep = 1
-
-    visited[i][j] = 1
-    q.append((i, j))
-
-    while q:
-        x, y = q.popleft()
-        for k in range(4):
-            nx = x + dx[k]
-            ny = y + dy[k]
-            if 0 <= nx < r and 0 <= ny < c and not visited[nx][ny] and arr[nx][ny] != '#':
-                visited[nx][ny] = 1
-                if arr[nx][ny] == 'v':
-                    wolf += 1
-                elif arr[nx][ny] == 'k':
-                    sheep += 1
-                q.append((nx, ny))
-
-    if sheep > wolf:
-        ans[0] += sheep
-    else:
-        ans[1] += wolf
-
-r, c = map(int, input().split())
-arr = [input().rstrip() for _ in range(r)]  # . 빈공간, # 울타리, v 늑대, k 양
-visited = [[0] * c for _ in range(r)]
-q = deque()
-ans = [0, 0]
-
-for i in range(r):
-    for j in range(c):
-        if arr[i][j] != '#' and not visited[i][j]:
-            bfs(i, j)
-print(*ans)
+# boj 10987
+s = input()
+ans = 0
+for i in s:
+    if i in 'aeiou':
+        ans += 1
+print(ans)
