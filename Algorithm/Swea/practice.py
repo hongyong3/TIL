@@ -1901,9 +1901,33 @@ input = sys.stdin.readline
 # print(*ans)
 
 # boj 10987
-s = input()
-ans = 0
-for i in s:
-    if i in 'aeiou':
-        ans += 1
-print(ans)
+# s = input()
+# ans = 0
+# for i in s:
+#     if i in 'aeiou':
+#         ans += 1
+# print(ans)
+
+# boj 21919
+import sys
+input = sys.stdin.readline
+def findPrime(n):
+    sieve = [True] * n
+    m = int(n ** 0.5)
+    for i in range(2, m + 1):
+        if sieve[i]:
+            for j in range(i + i, n, i):
+                sieve[j] = False
+    return [i for i in range(2, n) if sieve[i] == True]
+
+n = int(input())
+arr = set(map(int, input().split()))
+prime = findPrime(1000000)
+ans = 1
+for i in arr:
+    if i in prime:
+        ans *= i
+if ans == 1:
+    print(- 1)
+else:
+    print(ans)
