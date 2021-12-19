@@ -13,4 +13,3 @@ for test_case in range(T):
     #         garo = minGaro
     # print(garo)
     # for i in range(len(arr), - 1, - 1):
-    #
