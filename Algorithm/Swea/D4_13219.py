@@ -18,4 +18,4 @@ for test_case in range(T):
         theta = 270
     deg = p / 100 * 360
     ans = 1 if deg >= 90 - math.atan(y / x) * 100 + theta and flag else 0
-    # print("#{} {}".format(test_case + 1, ans))
+    print("#{} {}".format(test_case + 1, ans))
