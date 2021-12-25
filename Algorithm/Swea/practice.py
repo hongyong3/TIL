@@ -1931,3 +1931,158 @@ input = sys.stdin.readline
 #     print(- 1)
 # else:
 #     print(ans)
+
+# boj 2578
+# def chk():
+#     bingo = 0
+#     # 가로
+#     for i in visited:
+#         if 0 not in i:
+#             bingo += 1
+#
+#     # 세로
+#     colVisited = list(map(list, zip(*visited)))
+#     for i in colVisited:
+#         if 0 not in i:
+#             bingo += 1
+#
+#     # 대각선
+#     l, r = 1, 1
+#     for i in range(5):
+#         if not visited[i][i]:
+#              l = 0
+#         if not visited[i][4 - i]:
+#             r = 0
+#     if l:
+#         bingo += 1
+#     if r:
+#         bingo += 1
+#
+#     if bingo >= 3:
+#         return True
+#     return False
+#
+#
+# arr = [list(map(int, input().split())) for _ in range(5)]
+# mc = [list(map(int, input().split())) for _ in range(5)]
+# visited = [[0] * 5 for _ in range(5)]
+# ans = 0
+#
+# for call in mc:
+#     while call:
+#         num = call.pop(0)
+#         flag = True
+#         ans += 1
+#         for i in range(5):
+#             if not flag:
+#                 break
+#             for j in range(5):
+#                 if arr[i][j] == num:
+#                     visited[i][j] = 1
+#                     flag = False
+#                     break
+#         if ans >= 5 and chk():
+#             print(ans)
+#             exit()
+
+# boj 6996
+# t = int(input())
+# for _ in range(t):
+#     a, b = input().split()
+#     aAlpha = [0] * 26
+#     bAlpha = [0] * 26
+#     if len(a) != len(b):
+#         print("{} & {} are NOT anagrams.".format(a, b))
+#     else:
+#         for i in range(len(a)):
+#             aAlpha[ord(a[i]) - 97] += 1
+#             bAlpha[ord(b[i]) - 97] += 1
+#         if aAlpha == bAlpha:
+#             print("{} & {} are anagrams.".format(a, b))
+#         else:
+#             print("{} & {} are NOT anagrams.".format(a, b))
+
+# boj 21603
+# import sys
+# input = sys.stdin.readline
+# N, K = map(int, input().split())
+# fk, fk2 = K % 10, (2 * K) % 10
+# arr = []
+# for i in range(1, N + 1):
+#     fx = i % 10
+#     if fx != fk and fx != fk2:
+#         arr.append(i)
+# print(len(arr))
+# print(*arr)
+
+# boj 23803
+# n = int(input())
+# for i in range(4 * n):
+#     print('@' * n)
+# for i in range(n):
+#     print('@' * 5 * n)
+
+# boj 23794
+# n = int(input())
+# print('@' * (2 + n))
+# for i in range(n):
+#     print('@' + ' ' * n + '@')
+# print('@' * (2 + n))
+
+# boj 23802
+# n = int(input())
+# for i in range(n):
+#     print('@' * 5 * n)
+# for i in range(4 * n):
+#     print('@' * n)
+
+# boj 23804
+# n = int(input())
+# for i in range(n):
+#     print('@' * 5 * n)
+# for i in range(3 * n):
+#     print('@' * n)
+# for i in range(n):
+#     print('@' * 5 * n)
+
+# boj 23805
+# n = int(input())
+# for _ in range(n):
+#     print('@' * 3 * n + ' ' * n + '@' * n)
+# for _ in range(3 * n):
+#     print(('@' * n + ' ' * n) * 2 + '@' * n)
+# for _ in range(n):
+#     print('@' * n + ' ' * n + '@' * 3 * n)
+
+# boj 23806
+# n = int(input())
+# for _ in range(n):
+#     print('@' * 5 * n)
+# for i in range(3 * n):
+#     print('@' * n + ' ' * 3 * n + '@' * n)
+# for _ in range(n):
+#     print('@' * 5 * n)
+
+# boj 23808
+# n = int(input())
+# for _ in range(2 * n):
+#     print('@' * n + ' ' * 3 * n + '@' * n)
+# for _ in range(n):
+#     print('@' * 5 * n)
+# for i in range(n):
+#     print('@' * n + ' ' * 3 * n + '@' * n)
+# for _ in range(n):
+#     print('@' * 5 * n)
+
+# boj 23809
+n = int(input())
+for _ in range(n):
+    print('@' * n + ' ' * 3 * n + '@' * n)
+for _ in range(n):
+    print('@' * n + ' ' * 2 * n + '@' * n + ' ' * n)
+for _ in range(n):
+    print('@' * 3 * n)
+for _ in range(n):
+    print('@' * n + ' ' * 2 * n + '@' * n + ' ' * n)
+for _ in range(n):
+    print('@' * n + ' ' * 3 * n + '@' * n)
