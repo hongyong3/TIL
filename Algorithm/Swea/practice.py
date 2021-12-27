@@ -2075,14 +2075,94 @@ input = sys.stdin.readline
 #     print('@' * 5 * n)
 
 # boj 23809
-n = int(input())
-for _ in range(n):
-    print('@' * n + ' ' * 3 * n + '@' * n)
-for _ in range(n):
-    print('@' * n + ' ' * 2 * n + '@' * n + ' ' * n)
-for _ in range(n):
-    print('@' * 3 * n)
-for _ in range(n):
-    print('@' * n + ' ' * 2 * n + '@' * n + ' ' * n)
-for _ in range(n):
-    print('@' * n + ' ' * 3 * n + '@' * n)
+# n = int(input())
+# for _ in range(n):
+#     print('@' * n + ' ' * 3 * n + '@' * n)
+# for _ in range(n):
+#     print('@' * n + ' ' * 2 * n + '@' * n)
+# for _ in range(n):
+#     print('@' * 3 * n)
+# for _ in range(n):
+#     print('@' * n + ' ' * 2 * n + '@' * n)
+# for _ in range(n):
+#     print('@' * n + ' ' * 3 * n + '@' * n)
+
+# boj 23810
+# n = int(input())
+# for _ in range(n):
+#     print('@' * 5 * n)
+# for _ in range(n):
+#     print('@' * n)
+# for _ in range(n):
+#     print('@' * 5 * n)
+# for _ in range(2 * n):
+#     print('@' * n)
+
+# boj 23811
+# n = int(input())
+# cnt = 2
+# while cnt:
+#     for _ in range(n):
+#         print('@' * 5 * n)
+#     for _ in range(n):
+#         print('@' * n)
+#     cnt -= 1
+# for _ in range(n):
+#     print('@' * 5 * n)
+
+# boj 23812
+# n = int(input())
+# for _ in range(2):
+#     for _ in range(n):
+#         print('@' * n + ' ' * 3 * n + '@' * n)
+#     for _ in range(n):
+#         print('@' * 5 * n)
+# for _ in range(n):
+#     print('@' * n + ' ' * 3 * n + '@' * n)
+
+# boj 2667
+# dx = [- 1, 1, 0, 0]
+# dy = [0, 0, - 1, 1]
+# def bfs(x, y):
+#     cnt = 1
+#     q = [(x, y)]
+#     while q:
+#         x, y = q.pop(0)
+#         for k in range(4):
+#             nx = x + dx[k]
+#             ny = y + dy[k]
+#             if 0 <= nx < n and 0 <= ny < n and arr[nx][ny] == '1' and not visited[nx][ny]:
+#                 arr[nx][ny] = '0'
+#                 cnt += 1
+#                 visited[nx][ny] = 1
+#                 q.append((nx, ny))
+#     ans.append(cnt)
+#
+# n = int(input())
+# arr = [list(input().rstrip()) for _ in range(n)]
+# visited = [[0] * n for _ in range(n)]
+# ans = []
+# for i in range(n):
+#     for j in range(n):
+#         if arr[i][j] == '1':
+#             arr[i][j] = '0'
+#             visited[i][j] = 1
+#             bfs(i, j)
+# print(len(ans))
+# for i in sorted(ans):
+#     print(i)
+
+# boj 5426
+t = int(input())
+for _ in range(t):
+    s = input().rstrip()
+    n = int(len(s) ** 0.5)
+    arr = [[] for _ in range(n)]
+    for i in range(n):
+        for j in range(n):
+            arr[i].append(s[n * i + j])
+    ans = ''
+    for i in range(n - 1, - 1, - 1):
+        for j in range(n):
+            ans += arr[j][i]
+    print(ans)
