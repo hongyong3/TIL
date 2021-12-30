@@ -2153,16 +2153,16 @@ input = sys.stdin.readline
 #     print(i)
 
 # boj 5426
-t = int(input())
-for _ in range(t):
-    s = input().rstrip()
-    n = int(len(s) ** 0.5)
-    arr = [[] for _ in range(n)]
-    for i in range(n):
-        for j in range(n):
-            arr[i].append(s[n * i + j])
-    ans = ''
-    for i in range(n - 1, - 1, - 1):
-        for j in range(n):
-            ans += arr[j][i]
-    print(ans)
+# t = int(input())
+# for _ in range(t):
+#     s = input().rstrip()
+#     n = int(len(s) ** 0.5)
+#     arr = [[] for _ in range(n)]
+#     for i in range(n):
+#         for j in range(n):
+#             arr[i].append(s[n * i + j])
+#     ans = ''
+#     for i in range(n - 1, - 1, - 1):
+#         for j in range(n):
+#             ans += arr[j][i]
+#     print(ans)
