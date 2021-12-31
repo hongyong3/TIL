@@ -2166,3 +2166,97 @@ input = sys.stdin.readline
 #         for j in range(n):
 #             ans += arr[j][i]
 #     print(ans)
+
+# boj 16675
+# ML, MR, TL, TR = input().split()
+#
+# if ML != MR and TL != TR:
+#     print("?")
+#
+# elif ML == MR and TL != TR:
+#     if ML == 'S' and (TL == 'R' or TR == 'R'):
+#         print("TK")
+#     elif ML == 'P' and (TL == 'S' or TR == 'S'):
+#         print("TK")
+#     elif ML == 'R' and (TL == 'P' or TR == 'P'):
+#         print("TK")
+#     else:
+#         print("?")
+#
+# elif ML != MR and TL == TR:
+#     if TL == 'S' and (ML == 'R' or MR == 'R'):
+#         print("MS")
+#     elif TL == 'P' and (ML == 'S' or MR == 'S'):
+#         print("MS")
+#     elif TL == 'R' and (ML == 'P' or MR == 'P'):
+#         print("MS")
+#     else:
+#         print("?")
+#
+# else:
+#     if ML == 'S':
+#         if TL == 'P':
+#             print("MS")
+#         if TL == 'S':
+#             print("?")
+#         if TL == 'R':
+#             print("TK")
+#     if ML == 'R':
+#         if TL == 'P':
+#             print("TK")
+#         if TL == 'S':
+#             print("MS")
+#         if TL == 'R':
+#             print("?")
+#     if ML == 'P':
+#         if TL == 'P':
+#             print("?")
+#         if TL == 'S':
+#             print("TK")
+#         if TL == 'R':
+#             print("MS")
+
+# boj 10569
+# t = int(input())
+# for _ in range(t):
+#     v, e = map(int, input().split())
+#     print(2 - v + e)
+
+# boj 16953
+# a, b = map(int, input().split())
+# q = [(a, 0)]
+# ans = 0
+# while q:
+#     x, cnt = q.pop(0)
+#     if x == b:
+#         ans = cnt + 1
+#         break
+#     if x * 2 <= b:
+#         q.append((x * 2, cnt + 1))
+#     if x * 10 + 1 <= b:
+#         q.append((x * 10 + 1, cnt + 1))
+# if ans:
+#     print(ans)
+# else:
+#     print(- 1)
+
+# boj 1086
+import sys, math
+input = sys.stdin.readline
+n = int(input())
+arr = [int(input()) for _ in range(n)]
+k = int(input())
+nums = [[(j * 10 ** len(str(arr[i])) + arr[i]) % k for j in range(k)] for i in range(n)]
+dp = [[0] * k for _ in range(1 << n)]
+dp[0][0] = 1
+
+for b in range(1 << n):
+    for i in range(n):
+        if b & (1 << i):
+            continue
+        for j in range(k):
+            dp[b | (1 << i)][nums[i][j]] += dp[b][j]
+p = dp[(1 << n) - 1][0]
+q = sum(dp[(1 << n) - 1])
+g = math.gcd(p, q)
+print("{}/{}".format(p // g, q // g))
