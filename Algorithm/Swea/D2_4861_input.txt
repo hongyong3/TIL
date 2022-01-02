@@ -1,4 +1,10 @@
-3
+4
+5 5
+abcde
+bcdea
+adada
+bkbkr
+esadf
 10 10
 GOFFAKWFSM
 OYECRSLDLQ

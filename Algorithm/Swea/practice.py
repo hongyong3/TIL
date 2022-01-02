@@ -2241,22 +2241,57 @@ input = sys.stdin.readline
 #     print(- 1)
 
 # boj 1086
-import sys, math
-input = sys.stdin.readline
-n = int(input())
-arr = [int(input()) for _ in range(n)]
-k = int(input())
-nums = [[(j * 10 ** len(str(arr[i])) + arr[i]) % k for j in range(k)] for i in range(n)]
-dp = [[0] * k for _ in range(1 << n)]
-dp[0][0] = 1
+# import sys, math
+# input = sys.stdin.readline
+# n = int(input())
+# arr = [int(input()) for _ in range(n)]
+# k = int(input())
+# nums = [[(j * 10 ** len(str(arr[i])) + arr[i]) % k for j in range(k)] for i in range(n)]
+# dp = [[0] * k for _ in range(1 << n)]
+# dp[0][0] = 1
+#
+# for b in range(1 << n):
+#     for i in range(n):
+#         if b & (1 << i):
+#             continue
+#         for j in range(k):
+#             dp[b | (1 << i)][nums[i][j]] += dp[b][j]
+# p = dp[(1 << n) - 1][0]
+# q = sum(dp[(1 << n) - 1])
+# g = math.gcd(p, q)
+# print("{}/{}".format(p // g, q // g))
 
-for b in range(1 << n):
-    for i in range(n):
-        if b & (1 << i):
-            continue
-        for j in range(k):
-            dp[b | (1 << i)][nums[i][j]] += dp[b][j]
-p = dp[(1 << n) - 1][0]
-q = sum(dp[(1 << n) - 1])
-g = math.gcd(p, q)
-print("{}/{}".format(p // g, q // g))
+# boj 7572
+# arr1, arr2 = "ABCDEFGHIJKL", "0123456789"
+# n = int(input()) - 4
+# print(arr1[n % 12] + arr2[n % 10])
+
+# boj 16165
+# n, m = map(int, input().split())
+# dic = {}
+# for _ in range(n):
+#     girl = input().rstrip()
+#     number = int(input())
+#     if girl not in dic:
+#         dic[girl] = []
+#     for _ in range(number):
+#         member = input().rstrip()
+#         dic[girl].append(member)
+#     dic[girl].sort()
+#
+# for _ in range(m):
+#     name = input().rstrip()
+#     quiz = int(input())
+#     if quiz:
+#         for k, val in dic.items():
+#             if name in val:
+#                 print(k)
+#                 break
+#     else:
+#         for k, val in dic.items():
+#             if name == k:
+#                 for val in dic[k]:
+#                     print(val)
+#                 break
+
+# boj
