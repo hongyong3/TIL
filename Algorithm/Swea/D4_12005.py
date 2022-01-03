@@ -71,8 +71,6 @@ sys.stdin = open("D4_12005_input.txt", "r")
 #         n = - 1
 #     print("#{} {}".format(test_case + 1, n))
 
-
-# 와... 못 풀겠다...
 # Runtime Error
 T = int(input())
 for test_case in range(T):
