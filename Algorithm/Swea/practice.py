@@ -2308,3 +2308,15 @@ input = sys.stdin.readline
 #         print("Before")
 #     else:
 #         print("Special")
+
+T = int(input())
+for test_case in range(T):
+    num = []
+    N = int(input())
+    l = len(str(N))
+    minNum = maxNum = N
+    for i in str(N):
+        num.append(int(i))
+    for i in range(l):
+        for j in range(i + 1, l):
+            
