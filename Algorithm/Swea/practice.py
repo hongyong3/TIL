@@ -2335,10 +2335,44 @@ input = sys.stdin.readline
 #                 minNum = num
 #     print("#{} {} {}".format(test_case + 1, minNum, maxNum))
 
-T = int(input())
-for test_case in range(T):
-    n, s, t = map(int, input().split())
-    arr = [[0] * (n + 1) for _ in range(n + 1)]
-    for _ in arr:
-        print(*_)
-    print()
+# boj 4949
+# while True:
+#     words = input()
+#     ans = 'yes'
+#     if words[0] == '.':
+#         break
+#     s = []
+#     for i in words:
+#         if i in '([':
+#             s.append(i)
+#         elif i in ')]':
+#             if i == ')':
+#                 if not s or s[- 1] != '(':
+#                     ans = 'no'
+#                     break
+#                 else:
+#                     s.pop(- 1)
+#             else:
+#                 if not s or s[- 1] != '[':
+#                     ans = 'no'
+#                     break
+#                 else:
+#                     s.pop(- 1)
+#     if s:
+#         ans = 'no'
+#     print(ans)
+
+# boj 2553
+import sys
+input = sys.stdin.readline
+n = int(input())
+num = 1
+for i in range(2, n + 1):
+    num *= i
+
+while True:
+    if num % 10:
+        ans = num % 10
+        break
+    num //= 10
+print(ans)
