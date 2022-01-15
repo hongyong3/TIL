@@ -1,19 +1,32 @@
 import sys
 sys.stdin = open("D4_13432_input.txt", "r")
+Num = 10 ** 9
 
 # def findPrimes():
-#     arr = [1] * 1000000009
-#     for i in range(2, int(pow(1000000000, 0.5)) + 1):
+#     arr = [1] * (Num + 1)
+#     for i in range(2, int(pow(Num, 0.5)) + 1):
 #         if arr[i]:
 #             j = 2
-#             while i * j <= 1000000000:
+#             while i * j <= Num:
 #                 arr[i * j] = 0
 #                 j += 1
-#     return [i for i in range(2, 1000000001) if arr[i]]
+#     return [i for i in range(2, Num + 1) if arr[i]]
 #
 # primeNum = findPrimes()
 
+def factorization(x):
+    arr = set()
+    d = 2
+    while d <= x:
+        if x % d:
+            d += 1
+        else:
+            arr.add(d)
+            x //= d
+    return sorted(list(arr))
+
 # 66 / 106 Runtime Error
+# 10^9..
 T = int(input())
 for test_case in range(T):
     n, s, t = map(int, input().split())
