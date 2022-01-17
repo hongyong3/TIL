@@ -26,7 +26,7 @@ def factorization(x):
     return sorted(list(arr))
 
 # 66 / 106 Runtime Error
-# 10^9..
+# 109 -> 10^9..
 T = int(input())
 for test_case in range(T):
     n, s, t = map(int, input().split())
