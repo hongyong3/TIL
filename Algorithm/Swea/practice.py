@@ -2363,16 +2363,65 @@ input = sys.stdin.readline
 #     print(ans)
 
 # boj 2553
-import sys
-input = sys.stdin.readline
-n = int(input())
-num = 1
-for i in range(2, n + 1):
-    num *= i
+# import sys
+# input = sys.stdin.readline
+# n = int(input())
+# num = 1
+# for i in range(2, n + 1):
+#     num *= i
+#
+# while True:
+#     if num % 10:
+#         ans = num % 10
+#         break
+#     num //= 10
+# print(ans)
 
+# boj 13171
+# mod = 1000000007
+# a = int(input()) % mod
+# x = int(input())
+# ans = 1
+# while x:
+#     if x % 2:
+#         ans = (ans * a) % mod
+#     a = (a * a) % mod
+#     x >>= 1
+# print(ans)
+
+# boj 2447
+# def makeStar():
+#     l = len(stars)
+#     arr = []
+#     for i in range(l * 3):
+#         if i // l == 1:
+#             arr.append(stars[i % l] + " " * l + stars[i % l])
+#         else:
+#             arr.append(stars[i % l] * 3)
+#     return arr
+#
+# n = int(input())
+# stars = ["***", "* *", "***"]
+# cnt = 0
+# while n > 3:
+#     n //= 3
+#     cnt += 1
+#
+# for i in range(cnt):
+#     stars = makeStar()
+#
+# for star in stars:
+#     print(star)
+
+# boj 5596
+# s = sum(list(map(int, input().split())))
+# t = sum(list(map(int, input().split())))
+# print(max(s, t))
+
+# boj 9184
 while True:
-    if num % 10:
-        ans = num % 10
+    a, b, c = map(int, input().split())
+    if a == b == c == - 1:
         break
-    num //= 10
-print(ans)
+    ans = 0
+    print("w({}, {}, {}) = {}".format(a, b, c, ans))
