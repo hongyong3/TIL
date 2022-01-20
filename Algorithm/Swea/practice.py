@@ -2419,9 +2419,9 @@ input = sys.stdin.readline
 # print(max(s, t))
 
 # boj 9184
-while True:
-    a, b, c = map(int, input().split())
-    if a == b == c == - 1:
-        break
-    ans = 0
-    print("w({}, {}, {}) = {}".format(a, b, c, ans))
+# while True:
+#     a, b, c = map(int, input().split())
+#     if a == b == c == - 1:
+#         break
+#     ans = 0
+#     print("w({}, {}, {}) = {}".format(a, b, c, ans))
