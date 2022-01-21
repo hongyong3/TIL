@@ -2419,9 +2419,101 @@ input = sys.stdin.readline
 # print(max(s, t))
 
 # boj 9184
+# import sys
+# input = sys.stdin.readline
+# arr = [[[0] * 21 for _ in range(21)] for _ in range(21)]
+# def w(a, b, c):
+#     if a <= 0 or b <= 0 or c <= 0:
+#         return 1
+#     if a > 20 or b > 20 or c > 20:
+#         return w(20, 20, 20)
+#     if arr[a][b][c]:
+#         return arr[a][b][c]
+#     if a < b < c:
+#         arr[a][b][c] = w(a, b, c - 1) + w(a, b - 1, c - 1) - w(a, b - 1, c)
+#         return arr[a][b][c]
+#     arr[a][b][c] = w(a - 1, b, c) + w(a - 1, b - 1, c) + w(a - 1, b, c - 1) - w(a - 1, b- 1, c - 1)
+#     return arr[a][b][c]
+#
 # while True:
 #     a, b, c = map(int, input().split())
 #     if a == b == c == - 1:
 #         break
-#     ans = 0
+#     ans = w(a, b, c)
 #     print("w({}, {}, {}) = {}".format(a, b, c, ans))
+
+# boj 16918
+# dx = [- 1, 1, 0, 0]
+# dy = [0, 0, - 1, 1]
+# def dfs():
+#     bomb = []
+#     for i in range(R):
+#         for j in range(C):
+#             arr[i][j] += 1
+#             if arr[i][j] == 3:
+#                 arr[i][j] = - 1
+#                 bomb.append([i, j])
+#     for x, y in bomb:
+#         for k in range(4):
+#             nx = x + dx[k]
+#             ny = y + dy[k]
+#             if 0 <= nx < R and 0 <= ny < C:
+#                 arr[nx][ny] = - 1
+#
+# import sys
+# input = sys.stdin.readline
+# R, C, N = map(int, input().split())
+# arr = [[- 1] * C for _ in range(R)]
+#
+# for i in range(R):
+#     data = input().rstrip()
+#     for j in range(len(data)):
+#         if data[j] == 'O':
+#             arr[i][j] = 1
+#
+# if N != 1:
+#     time = 1
+#     while True:
+#         dfs()
+#         time += 1
+#         if time == N:
+#             break
+#
+# for i in arr:
+#     s = ''
+#     for j in i:
+#         if j == - 1:
+#             s += '.'
+#         else:
+#             s += 'O'
+#     print(s)
+
+# boj11444
+# import sys
+# input = sys.stdin.readline
+# n = int(input())
+# arr = [0, 1]
+# for i in range(2, n + 1):
+#     arr.append(arr[i - 2] + arr[i - 1])
+# print(arr[n] % 1000000007)
+
+# boj 24086
+# a = int(input())
+# b = int(input())
+# print(b - a)
+
+# boj 14716
+dx = [- 1, 1, 0, 0, - 1, - 1, 1, 1]   # 상하좌우대각
+dy = [0, 0, - 1, 1, - 1, 1, - 1, 1]
+
+def bfs(x, y):
+    
+
+m, n = map(int, input().split())
+arr = [list(map(int, input().split())) for _ in range(m)]
+visited = [[0] * n for _ in range(m)]
+ans = 0
+for i in range(m):
+    for j in range(n):
+        if arr[i][j]:
+            visited[i][j] = 1
