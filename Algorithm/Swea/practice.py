@@ -1,8 +1,8 @@
 import sys
 sys.stdin = open("practice_input.txt", "r")
 
-import sys
-input = sys.stdin.readline
+# import sys
+# input = sys.stdin.readline
 
 # boj 11365
 # while True:
@@ -1357,8 +1357,9 @@ input = sys.stdin.readline
 #                         cnt += 1
 #
 #                         if cnt == 5:
-#                             if 0 <= nx + dx[k] < 19 and 0 <= ny + dy[k] < 19 and arr[nx][ny] == arr[nx + dx[k]][ny + dy[k]]:
-#                                 break
+#                             if 0 <= nx + dx[k] < 19 and 0 <= ny + dy[k] < 19:
+#                                 if arr[nx][ny] == arr[nx + dx[k]][ny + dy[k]]:
+#                                     break
 #                             if 0 <= x - dx[k] < 19 and 0 <= y - dy[k] < 19 and arr[x][y] == arr[x - dx[k]][y - dy[k]]:
 #                                 break
 #                             return arr[x][y], x + 1, y + 1
@@ -2503,17 +2504,123 @@ input = sys.stdin.readline
 # print(b - a)
 
 # boj 14716
-dx = [- 1, 1, 0, 0, - 1, - 1, 1, 1]   # 상하좌우대각
-dy = [0, 0, - 1, 1, - 1, 1, - 1, 1]
+# dx = [- 1, 1, 0, 0, - 1, - 1, 1, 1] # 상하좌우대각
+# dy = [0, 0, - 1, 1, - 1, 1, - 1, 1]
+#
+# def bfs(x, y):
+#     q = [[x, y]]
+#     while q:
+#         x, y = q.pop()
+#         for k in range(8):
+#             nx = x + dx[k]
+#             ny = y + dy[k]
+#             if 0 <= nx < m and 0 <= ny < n:
+#                 if arr[nx][ny] and not visited[nx][ny]:
+#                     visited[nx][ny] = 1
+#                     q.append((nx, ny))
+#
+#
+# m, n = map(int, input().split())
+# arr = [list(map(int, input().split())) for _ in range(m)]
+# visited = [[False] * n for _ in range(m)]
+# ans = 0
+# for i in range(m):
+#     for j in range(n):
+#         if arr[i][j] and not visited[i][j]:
+#             ans += 1
+#             visited[i][j] = True
+#             bfs(i, j)
+# print(ans)
 
-def bfs(x, y):
-    
+# boj 10995
+# n = int(input())
+# for i in range(n):
+#     print(' *' * n) if i % 2 else print('* ' * n)
 
-m, n = map(int, input().split())
-arr = [list(map(int, input().split())) for _ in range(m)]
-visited = [[0] * n for _ in range(m)]
-ans = 0
-for i in range(m):
-    for j in range(n):
-        if arr[i][j]:
-            visited[i][j] = 1
+# boj 2556
+# n = int(input())
+# for _ in range(n):
+#     print('*' * n)
+
+# boj 10990
+# n = int(input())
+# print(' ' * (n - 1) + '*')
+# for i in range(1, n):
+#     print(' ' * (n - 1 - i) + '*' + ' ' * (2 * i - 1) + '*')
+
+# boj 10993
+# def star(x, y, n):
+#     r, c = 2 ** n - 1, 2 ** (n + 1) - 3 # 행, 열
+#     if n == 1:
+#         arr[x][y] = '*'
+#         return
+#     if n % 2:   # add
+#         for i in range(r - 1, - 1, - 1):
+#             arr[x + r - 1 - i][y + i] = '*'
+#             arr[x + r - 1 - i][y + c - 1 - i] = '*'
+#             if i == 0:
+#                 for j in range(1, c - 1):
+#                     arr[x + r - 1][y + j] = '*'
+#         star(x + 2 ** (n - 1) - 1, y + 2 ** (n - 1), n - 1)
+#     else:   # even
+#         for i in range(r):
+#             arr[x + i][y + i] = '*'
+#             arr[x + i][y + c - 1 - i] = '*'
+#             if i == 0:
+#                 for j in range(1, c - 1):
+#                     arr[x][y + j] = '*'
+#         star(x + 1, y + 2 ** (n - 1), n - 1)
+#
+# n = int(input())
+# r, c = 2 ** n - 1, 2 ** (n + 1) - 3  # 행, 열
+# arr = [[' '] * c for _ in range(r)]
+# star(0, 0, n)
+# for i in arr:
+#     print(''.join(i).rstrip())
+
+# boj 10994
+# def star(x, n):
+#     if n == 1:
+#         arr[x][x] = '*'
+#         return
+#     l = 4 * n - 3
+#     for i in range(l):
+#         arr[x + i][x] = '*'
+#         arr[x + i][l - 1 + x] = '*'
+#         if i == 0 or i == l - 1:
+#             for j in range(1, l):
+#                 arr[x + i][x + j] = '*'
+#     star(x + 2, n - 1)
+#
+# n = int(input())
+# l = 4 * n - 3
+# arr = [[' '] * l for _ in range(l)]
+# star(0, n)
+# for i in arr:
+#     print(''.join(i).rstrip())
+
+# boj 10997
+def star(x, y, n):
+    if n == 1:
+        arr[x][y] = 'x'
+        return
+    r, c = 4 * n - 1, 4 * n - 3
+    for i in range(r):
+        if i == 0 or i == y - 1:
+            for j in range(1, c - 1):
+                arr[x + i][y + j] = '*'
+        if i == 1:
+            arr[x + i][y] = '*'
+        else:
+            arr[x + i][c - 1 - y] = '*'
+    star(x + 2, y + 2, n - 1)
+
+n = int(input())
+if n == 1:
+    print("*")
+else:
+    r, c = 4 * n - 1, 4 * n - 3
+    arr = [[' '] * c for _ in range(r)]
+    star(0, 0, n)
+    for i in arr:
+        print(''.join(i).rstrip())
