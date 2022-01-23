@@ -2600,27 +2600,136 @@ sys.stdin = open("practice_input.txt", "r")
 #     print(''.join(i).rstrip())
 
 # boj 10997
-def star(x, y, n):
-    if n == 1:
-        arr[x][y] = 'x'
-        return
-    r, c = 4 * n - 1, 4 * n - 3
-    for i in range(r):
-        if i == 0 or i == y - 1:
-            for j in range(1, c - 1):
-                arr[x + i][y + j] = '*'
-        if i == 1:
-            arr[x + i][y] = '*'
-        else:
-            arr[x + i][c - 1 - y] = '*'
-    star(x + 2, y + 2, n - 1)
+# def star(x, y, cnt):
+#     if cnt == 1:
+#         arr[x][y], arr[x + 1][y], arr[x + 2][y] = '*', '*', '*'
+#         return
+#     r, c = 4 * cnt - 1, 4 * cnt - 3
+#     for i in range(r):
+#         if i == 0 or i == r - 1:
+#             for j in range(c):
+#                 arr[x + i][j + y] = '*'
+#         else:
+#             arr[x + i][y] = '*'
+#             arr[x + i][c + y - 1] = '*'
+#     star(x + 2, y + 2, cnt - 1)
+#
+# def relocation(x, y, cnt):
+#     if cnt == 1:
+#         return
+#     arr[x][y], arr[x + 1][y - 1] = arr[x + 1][y - 1], arr[x][y]
+#     relocation(x + 2, y - 2, cnt - 1)
+#
+#
+# n = int(input())
+# if n == 1:
+#     print("*")
+# else:
+#     r, c = 4 * n - 1, 4 * n - 3
+#     arr = [[' '] * c for _ in range(r)]
+#     star(0, 0, n)
+#     relocation(1, - 1, n)
+#     for i in arr:
+#         print(''.join(i).rstrip())
 
-n = int(input())
-if n == 1:
-    print("*")
-else:
-    r, c = 4 * n - 1, 4 * n - 3
-    arr = [[' '] * c for _ in range(r)]
-    star(0, 0, n)
-    for i in arr:
-        print(''.join(i).rstrip())
+# boj 13015
+# n = int(input())
+# r, c = 2 * n - 1, 4 * n - 3
+# arr = [[' '] * c for _ in range(r)]
+# for i in range(n):
+#     arr[0][i] = arr[0][- 1 - i] = arr[- 1][i] = arr[- 1][- 1 - i] = '*'
+# x = 1
+# for i in range(1, r - 1):
+#     arr[i][x] = arr[i][x + n - 1] = arr[i][- x - 1] = arr[i][- x - n] = '*'
+#     if i < r // 2:
+#         x += 1
+#     else:
+#         x -= 1
+# for i in arr:
+#     print(''.join(i).rstrip())
+
+# boj 18883
+# import sys
+# input = sys.stdin.readline
+# n, m = map(int, input().split())
+# num = 1
+# for _ in range(n):
+#     for _ in range(m):
+#         if num % m:
+#             print(num, end = ' ')
+#         else:
+#             print(num, end= '')
+#         num += 1
+#     print()
+
+# boj 17247
+# n, m = map(int, input().split())
+# ax, ay, bx, by = 0, 0, 0, 0
+# chk = False
+# for i in range(n):
+#     data = list(map(int, input().split()))
+#     for j in range(m):
+#         if data[j] and not chk:
+#             ax, ay = i, j
+#             chk = True
+#         if data[j] and chk:
+#             bx, by = i, j
+# print(abs(bx - ax) + abs(by - ay))
+
+# boj 2628
+# c, r = map(int, input().split())
+# n = int(input())
+# garo, sero = [0, c], [0, r]
+# ans = 0
+# for _ in range(n):
+#     div, num = map(int, input().split())    # div == 0 가로 div == 1 세로
+#     if div: # 세로
+#         garo.append(num)
+#     else:   # 가로
+#         sero.append(num)
+#
+# garo, sero = sorted(garo), sorted(sero)
+# for i in range(1, len(garo)):
+#     garoLen = garo[i] - garo[i - 1]
+#     for j in range(1, len(sero)):
+#         seroLen = sero[j] - sero[j - 1]
+#         if ans < garoLen * seroLen:
+#             ans = garoLen * seroLen
+# print(ans)
+
+# boj 4358
+# from collections import defaultdict
+# import sys
+# input = sys.stdin.readline
+# dic = defaultdict(int)
+# cnt = 0
+# while True:
+#     s = input().rstrip()
+#     if not s:
+#         break
+#     dic[s] += 1
+#     cnt += 1
+#
+# for i in sorted(list(dic.keys())):
+#     print('%s %.4f' % (i, dic[i] / cnt * 100))
+
+# boj 4779
+def solve(s, e):
+    temp = e // 3
+    if temp == 0:
+        return
+
+    for i in range(s + temp, s + temp * 2):
+        arr[i] = ' '
+
+    solve(s, temp)
+    solve(s + temp * 2, temp)
+
+while True:
+    try:
+        n = int(input())
+        arr = ['-'] * pow(3, n)
+        solve(0, pow(3, n))
+        print(''.join(arr))
+    except EOFError:
+        break
