@@ -2714,22 +2714,108 @@ sys.stdin = open("practice_input.txt", "r")
 #     print('%s %.4f' % (i, dic[i] / cnt * 100))
 
 # boj 4779
-def solve(s, e):
-    temp = e // 3
-    if temp == 0:
-        return
+# def solve(s, e):
+#     temp = e // 3
+#     if temp == 0:
+#         return
+#
+#     for i in range(s + temp, s + temp * 2):
+#         arr[i] = ' '
+#
+#     solve(s, temp)
+#     solve(s + temp * 2, temp)
+#
+# while True:
+#     try:
+#         n = int(input())
+#         arr = ['-'] * pow(3, n)
+#         solve(0, pow(3, n))
+#         print(''.join(arr))
+#     except EOFError:
+#         break
 
-    for i in range(s + temp, s + temp * 2):
-        arr[i] = ' '
+# boj 1072
+# x, y = map(int, input().split())
+# if x == y == 0:
+#     print(1)
+# elif x == y:
+#     print(- 1)
+# else:
+#     z = int((100 * y) / x)
+#     if 99 - z == 0:
+#         print(- 1)
+#     else:
+#         k = ((z + 1) * x - 100 * y) / (99 - z)
+#         k = int(k) if k == int(k) else int(k) + 1
+#         print(k)
 
-    solve(s, temp)
-    solve(s + temp * 2, temp)
+# boj 1543
+# words = input()
+# s = input()
+# l = len(s)
+# i, ans = 0, 0
+# while True:
+#     if words[i : i + l] == s:
+#         ans += 1
+#         i += l
+#     else:
+#         i += 1
+#     if i > len(words) - l:
+#         break
+# print(ans)
 
-while True:
-    try:
-        n = int(input())
-        arr = ['-'] * pow(3, n)
-        solve(0, pow(3, n))
-        print(''.join(arr))
-    except EOFError:
-        break
+# boj 1476
+# E, S, M = map(int, input().split())
+# e = s = m = 1
+# ans = 1
+# while True:
+#     if e == E and s == S and m == M:
+#         break
+#     else:
+#         e += 1
+#         s += 1
+#         m += 1
+#         if e == 16:
+#             e = 1
+#         if s == 29:
+#             s = 1
+#         if m == 20:
+#             m = 1
+#         ans += 1
+# print(ans)
+
+# boj 15903
+# import sys
+# input = sys.stdin.readline
+# n, m = map(int, input().split())
+# arr = sorted(list(map(int, input().split())))
+# while m:
+#     arr[0] = arr[1] = arr[0] + arr[1]
+#     arr = sorted(arr)
+#     m -= 1
+# print(sum(arr))
+
+# boj 2563
+# n = int(input())
+# arr = [[0] * 100 for _ in range(100)]
+# ans = 0
+# for _ in range(n):
+#     x, y = map(int, input().split())
+#     for i in range(x, x + 10):
+#         for j in range(y, y + 10):
+#             if arr[i][j] == 0:
+#                 arr[i][j] = 1
+#                 ans += 1
+# print(ans)
+
+# boj 10769
+s = input()
+h, s = s.count(":-)"), s.count(":-(")
+if h > s:
+    print("happy")
+elif h < s:
+    print("sad")
+elif h == s == 0:
+    print("none")
+else:
+    print("none")
