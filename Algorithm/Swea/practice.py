@@ -2809,13 +2809,71 @@ sys.stdin = open("practice_input.txt", "r")
 # print(ans)
 
 # boj 10769
-s = input()
-h, s = s.count(":-)"), s.count(":-(")
-if h > s:
-    print("happy")
-elif h < s:
-    print("sad")
-elif h == s == 0:
-    print("none")
-else:
-    print("none")
+# s = input()
+# h, s = s.count(":-)"), s.count(":-(")
+# if h > s:
+#     print("happy")
+# elif h < s:
+#     print("sad")
+# elif h == s == 0:
+#     print("none")
+# else:
+#     print("unsure")
+
+# boj 6359
+# t = int(input())
+# for _ in range(t):
+#     n = int(input())
+#     arr = [0] * (n + 1)
+#     for i in range(2, n + 1):
+#         for j in range(i, n + 1, i):
+#             if arr[j]:
+#                 arr[j] = 0
+#             else:
+#                 arr[j] = 1
+#     print(arr[1:].count(0))
+
+# boj 4562
+# t = int(input())
+# for _ in range(t):
+#     x, y = map(int, input().split())
+#     print("MMM BRAINS") if x >= y else print("NO BRAINS")
+
+# boj 15312
+# alpha = [3, 2, 1, 2, 3, 3, 2, 3, 3, 2, 2, 1, 2, 2, 1, 2, 2, 2, 1, 2, 1, 1, 1, 2, 2, 1]
+# a = input()
+# b = input()
+# arr = []
+# for x, y in zip(a, b):
+#     arr.append(alpha[ord(x) - 65])
+#     arr.append(alpha[ord(y) - 65])
+# temp = []
+# while len(arr) > 2:
+#     temp = []
+#     for i in range(len(arr) - 1):
+#         tot = (arr[i] + arr[i + 1]) % 10
+#         temp.append(tot)
+#     arr = temp
+# ans = arr[0] * 10 + arr[1]
+# if ans < 10:
+#     print('0' + str(ans))
+# else:
+#     print(ans)
+
+# boj 2422
+n, m = map(int, input().split())
+graph = [[1] * (n + 1) for _ in range(n + 1)]
+ans = 0
+
+for _ in range(m):
+    x, y = map(int, input().split())
+    graph[x][y] = graph[y][x] = 0
+
+for i in range(1, n - 1):
+    for j in range(i + 1, n):
+        if graph[i][j]:
+            for k in range(j + 1, n + 1):
+                if graph[i][k] == 0 or graph[j][k] == 0:
+                    continue
+                ans += 1
+print(ans)
