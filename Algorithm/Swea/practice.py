@@ -2861,19 +2861,19 @@ sys.stdin = open("practice_input.txt", "r")
 #     print(ans)
 
 # boj 2422
-n, m = map(int, input().split())
-graph = [[1] * (n + 1) for _ in range(n + 1)]
-ans = 0
-
-for _ in range(m):
-    x, y = map(int, input().split())
-    graph[x][y] = graph[y][x] = 0
-
-for i in range(1, n - 1):
-    for j in range(i + 1, n):
-        if graph[i][j]:
-            for k in range(j + 1, n + 1):
-                if graph[i][k] == 0 or graph[j][k] == 0:
-                    continue
-                ans += 1
-print(ans)
+# n, m = map(int, input().split())
+# graph = [[1] * (n + 1) for _ in range(n + 1)]
+# ans = 0
+#
+# for _ in range(m):
+#     x, y = map(int, input().split())
+#     graph[x][y] = graph[y][x] = 0
+#
+# for i in range(1, n - 1):
+#     for j in range(i + 1, n):
+#         if graph[i][j]:
+#             for k in range(j + 1, n + 1):
+#                 if graph[i][k] == 0 or graph[j][k] == 0:
+#                     continue
+#                 ans += 1
+# print(ans)
