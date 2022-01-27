@@ -2877,3 +2877,80 @@ sys.stdin = open("practice_input.txt", "r")
 #                     continue
 #                 ans += 1
 # print(ans)
+
+# boj 14561
+# t = int(input())
+# for _ in range(t):
+#     a, n = map(int, input().split())
+#     s = ''
+#     while a > 0:
+#         s = str(hex(a % n)[2:]) + s
+#         a //= n
+#     print(1) if s == s[:: - 1] else print(0)
+
+# boj 15969
+# # 방법 1
+# n = int(input())
+# arr = list(map(int, input().split()))
+# print(max(arr) - min(arr))
+#
+# # 방법 2
+# n = int(input())
+# arr = list(map(int, input().split()))
+# maxNum, minNum = - 1, 1001
+# for i in arr:
+#     if maxNum < i:
+#         maxNum = i
+#     if minNum > i:
+#         minNum = i
+# print(maxNum - minNum)
+
+# boj 1759
+# def chk(password):
+#     mo, ja = 0, 0
+#     for i in password:
+#         if i in "aeiou":
+#             mo += 1
+#         else:
+#             ja += 1
+#     return ja >= 2 and mo >= 1
+#
+# def solve(n, arr, password, idx):
+#     if len(password) == n:
+#         if chk(password):
+#             print(password)
+#         return
+#     if idx == len(arr):
+#         return
+#     solve(n, arr, password + arr[idx], idx + 1)
+#     solve(n, arr, password, idx + 1)
+#
+# l, c = map(int, input().split())
+# arr = sorted(input().split())
+# solve(l, arr, "", 0)
+
+# boj 1212
+# num = input()
+# ans = ''
+# for i in num:
+#     n = int(i)
+#     temp = ''
+#
+#     while n:
+#         temp += str(n % 2)
+#         n //= 2
+#     if ans:
+#         while len(temp) < 3:
+#             temp = temp + '0'
+#     ans += temp[:: - 1]
+#
+# print(ans) if ans else print(0)
+
+# boj 2239
+arr = [[0] * 9 for _ in range(9)]
+for i in range(9):
+    temp = input()
+    for j in range(9):
+        arr[i][j] = int(temp[j])
+for i in arr:
+    print(i)
