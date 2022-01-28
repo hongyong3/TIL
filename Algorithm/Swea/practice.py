@@ -2945,12 +2945,3 @@ sys.stdin = open("practice_input.txt", "r")
 #     ans += temp[:: - 1]
 #
 # print(ans) if ans else print(0)
-
-# boj 2239
-arr = [[0] * 9 for _ in range(9)]
-for i in range(9):
-    temp = input()
-    for j in range(9):
-        arr[i][j] = int(temp[j])
-for i in arr:
-    print(i)
