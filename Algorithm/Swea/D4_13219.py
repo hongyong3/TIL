@@ -37,7 +37,7 @@ for test_case in range(T):
             chk = 1
         elif Y < 50:    # 4 사분면
             chk = 4
-    elif X < 50 and
+    elif X < 50 and #
     # if flag:
     #     if P == 0:
     #         if X == 50 and 50 <= Y <= 100:
