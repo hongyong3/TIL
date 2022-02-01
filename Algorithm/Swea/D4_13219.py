@@ -21,7 +21,8 @@ for test_case in range(T):
                 ans = 0
         if x > 50 and y >= 50:  # 1사분면
             theta = 0
-        elif x > 50
+        elif x > 50:
+            theta = 90
         # elif x >= 50 and y <= 50:   # 2사분면
         #     theta = 90
         # elif x <= 50 and y <= 50:   # 3사분면
