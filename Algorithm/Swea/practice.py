@@ -2945,3 +2945,4 @@ sys.stdin = open("practice_input.txt", "r")
 #     ans += temp[:: - 1]
 #
 # print(ans) if ans else print(0)
+
