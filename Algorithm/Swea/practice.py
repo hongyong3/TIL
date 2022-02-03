@@ -2946,3 +2946,121 @@ sys.stdin = open("practice_input.txt", "r")
 #
 # print(ans) if ans else print(0)
 
+# boj 11005
+# notation = '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ'
+# n, b = map(int, input().split())
+# ans = ''
+# while n:
+#     ans += notation[n % b]
+#     n //= b
+# print(ans[::- 1])
+
+# boj 9610
+# arr = [0] * 5
+# n = int(input())
+# for _ in range(n):
+#     x, y = map(int, input().split())
+#     if x > 0:
+#         if y > 0:
+#             arr[0] += 1
+#         elif y < 0:
+#             arr[3] += 1
+#         else:
+#             arr[4] += 1
+#     elif x < 0:
+#         if y > 0:
+#             arr[1] += 1
+#         elif y < 0:
+#             arr[2] += 1
+#         else:
+#             arr[4] += 1
+#     else:
+#         arr[4] += 1
+#
+# for i in range(4):
+#     print("Q{}: {}".format(i + 1, arr[i]))
+# print("AXIS: {}".format(arr[4]))
+
+# boj 1783
+# n, m = map(int, input().split())
+# if n == 1:
+#     ans = 1
+# elif n == 2:
+#     ans = min(4, (m - 1) // 2 + 1)
+# else:
+#     ans = m - 2 if m >= 7 else min(4, m)
+# print(ans)
+
+# oneline
+# n, m = map(int, input().split())
+# print(1 if n == 1 else min(4, (m - 1) // 2 + 1) if n == 2 else m - 2 if m >= 7 else min(4, m))
+
+# boj 1598
+# a, b = map(int, input().split())
+# a -= 1
+# b -= 1
+# print(abs(a // 4 - b // 4) + abs(a % 4 - b % 4))
+
+# boj 10101
+# a = int(input())
+# b = int(input())
+# c = int(input())
+# l = set([a, b, c])
+# if a + b + c == 180:
+#     l = set([a, b, c])
+#     print("Equilateral") if len(l) == 1 else print("Isosceles") if len(l) == 2 else print("Scalene")
+# else:
+#     print("Error")
+
+# boj 5176
+# t = int(input())
+# for _ in range(t):
+#     p, m = map(int, input().split())
+#     visited = [0] * (m + 1)
+#     ans = 0
+#     for _ in range(p):
+#         n = int(input())
+#         if visited[n]:
+#             ans += 1
+#         else:
+#             visited[n] = 1
+#     print(ans)
+
+# boj 4880
+# while True:
+#     a, b, c = map(int, input().split())
+#     if a == b == c == 0:
+#         break
+#     if b - a == c - b:
+#         print("AP {}".format(c + b - a))
+#     else:
+#         print("GP {}".format(c * (b // a)))
+
+# boj 14920
+# n = int(input())
+# cnt = 1
+# while n != 1:
+#     if n % 2:
+#         n = 3 * n + 1
+#     else:
+#         n //= 2
+#     cnt += 1
+# print(cnt)
+
+# boj 13241
+# def gcd(x, y):
+#     while y:
+#         x, y = y, x % y
+#     return x
+#
+# a, b = map(int, input().split())
+# gcd = gcd(a, b)
+# print(a * b // gcd)
+
+# boj 17285
+# s = input()
+# ans = ''
+# key = ord(s[0]) ^ ord("C")
+# for i in s:
+#     ans += chr(ord(i) ^ key)
+# print(ans)
