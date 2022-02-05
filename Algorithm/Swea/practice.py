@@ -3064,3 +3064,127 @@ sys.stdin = open("practice_input.txt", "r")
 # for i in s:
 #     ans += chr(ord(i) ^ key)
 # print(ans)
+
+# boj 2511
+# A = list(map(int, input().split()))
+# B = list(map(int, input().split()))
+# Ascore, Bscore = 0, 0
+# chk = 3
+# for i, j in zip(A, B):
+#     if i > j:
+#         Ascore += 3
+#         chk = 1
+#     elif i < j:
+#         Bscore += 3
+#         chk = 2
+#     else:
+#         Ascore += 1
+#         Bscore += 1
+#
+# print(Ascore, Bscore)
+# if Ascore > Bscore:
+#     print("A")
+# elif Ascore < Bscore:
+#     print("B")
+# else:
+#     if chk == 1:
+#         print("A")
+#     elif chk == 2:
+#         print("B")
+#     else:
+#         print("D")
+
+# boj 2622
+# n = int(input())
+# ans = 0
+# for i in range(1, n):
+#     if (3 * i >= n) and 2 * i < n:
+#         ans += i - (n - i - 1) // 2
+# print(ans)
+
+# boj 11729
+# def hanoi(n, a, b, c):
+#     if n == 1:
+#         print(a, c)
+#     else:
+#         hanoi(n - 1, a, c, b)
+#         print(a, c)
+#         hanoi(n - 1, b, a, c)
+#
+# n = int(input())
+# print(2 ** n - 1)
+# hanoi(n, 1, 2, 3)
+
+# boj 14620
+# dx = [0, - 1, 1, 0, 0]
+# dy = [0, 0, 0, - 1, 1]
+# def chk(x, y, flag):
+#     if flag:
+#         price = 0
+#         for k in range(5):
+#             nx = x + dx[k]
+#             ny = y + dy[k]
+#             price += arr[nx][ny]
+#         return price
+#     else:
+#         for k in range(5):
+#             nx = x + dx[k]
+#             ny = y + dy[k]
+#             if visited[nx][ny]:
+#                 return False
+#         return True
+#
+# def dfs(idx, cnt, cost):
+#     global ans
+#     if cnt == 3:
+#         if ans > cost:
+#             ans = cost
+#             return
+#     for x in range(idx, n - 1):
+#         for y in range(1, n - 1):
+#             if chk(x, y, 0):
+#                 for k in range(5):
+#                     nx = x + dx[k]
+#                     ny = y + dy[k]
+#                     visited[nx][ny] = 1
+#                 price = chk(x, y, 1)
+#                 if ans > cost + price:
+#                     dfs(idx, cnt + 1, cost + price)
+#                 for k in range(5):
+#                     nx = x + dx[k]
+#                     ny = y + dy[k]
+#                     visited[nx][ny] = 0
+#
+#
+# n = int(input())
+# arr = [list(map(int, input().split())) for _ in range(n)]
+# visited = [[0] * n for _ in range(n)]
+# ans = float('inf')
+# dfs(1, 0, 0)
+# print(ans)
+
+# boj 1236
+def chk(i, j):
+    for x in range(n):
+        visited[x][j] = 1
+    for y in range(m):
+        visited[i][y] = 1
+n, m = map(int, input().split())
+arr = [list(input()) for _ in range(n)]
+arrT = list(zip(*arr))
+visited = [[0] * m for _ in range(n)]
+ans = 0
+
+for i in range(n):
+    if 'X' not in arr[i]:
+        for j in range(m):
+            visited[i][j] += 1
+for j in range(m):
+    if 'X' not in arrT[j]:
+        for i in range(n):
+            visited[i][j] += 1
+for i in range(n):
+    for j in range(m):
+        if visited[i][j] == 2:
+            ans += 1
+print(ans)
