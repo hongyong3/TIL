@@ -44,14 +44,45 @@ sys.stdin = open("D3_5254_input.txt", "r")
 #     N = int(N)
 #     getSA(S)
 
+def LCP(a, b):
+    minlen = min(len(a), len(b))
+    cnt = 0
+    for i in range(minlen):
+        if a[i] == b[i]:
+            cnt += 1
+        else:
+            break
+    return cnt
+
+
 T = int(input())
-for test_case in range(1):
+for test_case in range(3):
     N, S = input().split()  # 순서, 단어
     N = int(N)
     Slen = len(S)
     arr = []
+
+    # 접미어 배열 생성
     for i in range(Slen):
-        arr.append((i, S[i:]))
-    print(arr)
-    newArr = sorted(arr, key = lambda x: x[1])
-    print(newArr)
+        arr.append((i, S[i:]))  # (index, s[i])
+    # 접미어 배열 정렬
+    arr = sorted(arr, key = lambda x: x[1])
+
+    tail = N
+    lcp = 0
+    idx = 0
+
+    while idx < Slen - 1:
+        suffix_idx = arr[idx][0]    # 접미사 인덱스
+        curS = arr[idx][1]  # 현재 S
+        nextS = arr[idx + 1][1] # 다음 S
+        curSlen = len(curS) # 현재 S의 길이
+
+        if curSlen >= tail:
+            break
+        else:
+            lcp = LCP(curS, nextS)  # 만약 lcp가 존재한다면?
+            tail -= curSlen
+        idx += 1
+
+    print("#{} {} {}".format(test_case + 1, curS[0], len(curS[:lcp + tail])))
