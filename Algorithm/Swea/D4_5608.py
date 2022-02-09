@@ -112,7 +112,7 @@ sys.stdin = open("D4_5608_input.txt", "r")
 #         print(mok, nam)
 
 T = int(input())
-for test_case in range(T):
+for test_case in range(1):
     N = int(input())
 
     idx = 0

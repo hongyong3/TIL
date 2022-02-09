@@ -3208,79 +3208,55 @@ sys.stdin = open("practice_input.txt", "r")
 #                 break
 #     print("#{} {}".format(test_case + 1, ans))
 
-# swea 2
 # def gcd(x, y):
 #     while y:
 #         x, y = y, x % y
 #     return x
 #
+# def sol(arr):
+#     global chk
+#     g1, g2, g3 = gcd(arr[0], arr[1]), gcd(arr[0], arr[2]), gcd(arr[1], arr[2])
+#     if g1 == 1:
+#         if g2 == 1:
+#             if g3 == 1:
+#                 res = 1
+#             else:
+#                 res = g3
+#         else:
+#             if g3 == 1:
+#                 res = g2
+#             else:
+#                 res = g3
+#     else:
+#         if g2 == 1:
+#             if g3 == 1:
+#                 res = g1
+#             else:
+#                 res = max(g1, g3)
+#         else:
+#             res = max(g1, g2, g3)
+#             chk = 1
+#     return res
+#
 # T = int(input())
-# for test_case in range(1):
+# for test_case in range(T):
 #     n = int(input())
 #     arr = sorted(list(map(int, input().split())))
-#     ans = 1
-#     idx = 0
-#     jdx = 1
-#     val = []
-#     while True:
-#         temp = gcd(arr[idx], arr[jdx])
-#         if temp == 1:
-#             temp1 = gcd(arr[idx], arr[jdx + 1])
-#             temp2 = gcd(arr[jdx], arr[jdx + 1])
-#             if temp1 < temp2:
-#                 val.append(arr[idx])
-#             elif temp1 > temp2:
-#                 val.append(arr[idx])
+#     ans = arr[1]
+#     chk = 0
+#     if n > 2:
+#         ans = sol(arr)
+#         for i in arr[3:]:
+#             if gcd(ans, i) == 1:
+#                 if chk:
+#                     chk = 0
+#                 else:
+#                     ans = 1
+#                     break
 #             else:
-#                 ans = 1
-#                 break
-#
-#             val.append((arr[idx], arr[jdx]))
+#                 if ans > gcd(ans, i):
+#                     ans = gcd(ans, i)
+#     print("#{} {}".format(test_case + 1, ans))
 
-
-# 12 / 16
-def gcd(x, y):
-    while y:
-        x, y = y, x % y
-    return x
-
-def sol(arr):
-    g1, g2, g3 = gcd(arr[0], arr[1]), gcd(arr[0], arr[2]), gcd(arr[1], arr[2])
-    if g1 == 1:
-        if g2 == 1:
-            if g3 == 1:  # ex) 3, 4, 7
-                res = 1
-            else:  # ex) 3, 4, 8
-                res = g3
-        else:
-            if g3 == 1:  # ex) 3, 4, 9
-                res = g2
-            else:
-                res = g3
-    else:
-        if g2 == 1:
-            if g3 == 1:  # ex) 3, 6, 11
-                res = g1
-            else:  # ex) 3, 6, 8
-                res = max(g1, g3)
-        else:
-            res = max(g1, g2, g3)
-    return res
-
-T = int(input())
-for test_case in range(T):
-    n = int(input())
-    arr = sorted(list(map(int, input().split())))
-    if n == 2:
-        ans = arr[1]
-    else:
-        ans = sol(arr)
-        if n > 3:
-            for i in arr[3:]:
-                if gcd(ans, i) == 1:
-                    ans = 1
-                    break
-                else:
-                    if ans > gcd(ans, i):
-                        ans = gcd(ans, i)
-    print("#{} {}".format(test_case + 1, ans))
+# boj 14215
+print(pow(pow(41, 2) + pow(16, 2), 0.5))
