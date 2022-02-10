@@ -3258,5 +3258,8 @@ sys.stdin = open("practice_input.txt", "r")
 #                     ans = gcd(ans, i)
 #     print("#{} {}".format(test_case + 1, ans))
 
-# boj 14215
-print(pow(pow(41, 2) + pow(16, 2), 0.5))
+# boj 11931
+n = int(input())
+arr = sorted([int(input()) for _ in range(n)])[:: - 1]
+for i in arr:
+    print(i)
