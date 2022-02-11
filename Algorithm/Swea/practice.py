@@ -3259,7 +3259,48 @@ sys.stdin = open("practice_input.txt", "r")
 #     print("#{} {}".format(test_case + 1, ans))
 
 # boj 11931
+# n = int(input())
+# arr = sorted([int(input()) for _ in range(n)])[:: - 1]
+# for i in arr:
+#     print(i)
+
+# boj 17608
+# import sys
+# input = sys.stdin.readline
+# n = int(input())
+# arr = [int(input()) for _ in range(n)][:: - 1]
+# ans = 1
+# num = arr[0]
+# for i in arr[1:]:
+#     if i > num:
+#         ans += 1
+#         num = i
+# print(ans)
+
+# boj 9656
+# print('CY' if int(input()) % 2 else 'SK')
+
+# boj 2605
+# n = int(input())
+# data = list(map(int, input().split()))
+# arr = []
+# idx = 1
+# for i in data:
+#     if i == 0:
+#         arr.append(idx)
+#     else:
+#         arr.insert(- i, idx)
+#     idx += 1
+# print(*arr)
+
+# boj 19539
 n = int(input())
-arr = sorted([int(input()) for _ in range(n)])[:: - 1]
-for i in arr:
-    print(i)
+arr = list(map(int, input().split()))
+total = sum(arr)
+apple = sum(arr) // 3
+ans = 'NO'
+if not total % 3:
+    for i in arr:
+        apple -= i // 2
+    ans = 'NO' if apple > 0 else 'YES'
+print(ans)
