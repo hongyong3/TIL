@@ -3294,13 +3294,125 @@ sys.stdin = open("practice_input.txt", "r")
 # print(*arr)
 
 # boj 19539
-n = int(input())
-arr = list(map(int, input().split()))
-total = sum(arr)
-apple = sum(arr) // 3
-ans = 'NO'
-if not total % 3:
-    for i in arr:
-        apple -= i // 2
-    ans = 'NO' if apple > 0 else 'YES'
-print(ans)
+# n = int(input())
+# arr = list(map(int, input().split()))
+# total = sum(arr)
+# apple = sum(arr) // 3
+# ans = 'NO'
+# if not total % 3:
+#     for i in arr:
+#         apple -= i // 2
+#     ans = 'NO' if apple > 0 else 'YES'
+# print(ans)
+
+# boj 1063
+# d = {'R': (1, 0), 'L': (- 1, 0), 'B': (0, - 1), 'T': (0, 1),
+#      'RT': (1, 1), 'LT': (- 1, 1), 'RB': (1, - 1), 'LB': (- 1, - 1)}
+#
+# def chk(x, y):
+#     if 0 < x <= 8 and 0 < y <= 8:
+#         return True
+#     return False
+#
+# x, y, n = input().split()
+# kx, ky, sx, sy = ord(x[0]) - 64, int(x[1]), ord(y[0]) - 64, int(y[1])
+# s, y = '', ''
+# for _ in range(int(n)):
+#     val = input()
+#     nkx, nky = kx + d[val][0], ky + d[val][1]
+#     if chk(nkx, nky):
+#         if (nkx, nky) == (sx, sy):
+#             nsx, nsy = sx + d[val][0], sy + d[val][1]
+#             if chk(nsx, nsy):
+#                 kx, ky, sx, sy = nkx, nky, nsx, nsy
+#         else:
+#             kx, ky = nkx, nky
+# k = chr(kx + 64) + str(ky)
+# s = chr(sx + 64) + str(sy)
+# print(k)
+# print(s)
+
+# boj 14720
+# n = int(input())
+# arr = list(map(int, input().split()))
+# ans = 0
+# milk = 0
+# for i in arr:
+#     if milk == 0:
+#         if i == 0:
+#             ans += 1
+#             milk += 1
+#     elif milk == 1:
+#         if i == 1:
+#             ans += 1
+#             milk += 1
+#     else:
+#         if i == 2:
+#             ans += 1
+#             milk = 0
+# print(ans)
+
+# boj 2742
+# n = int(input())
+# for i in range(n, 0, - 1):
+#     print(i)
+
+# boj 1300
+# n = int(input())
+# k = int(input())
+# l, r = 1, n * n
+#
+# while l <= r:
+#     m = (l + r) // 2
+#
+#     cnt = 0
+#     for i in range(1, n + 1):
+#         cnt += min(m // i, n)
+#
+#     if cnt >= k:
+#         r = m - 1
+#     else:
+#         l = m + 1
+# print(l)
+
+# boj 10814
+# import sys
+# input = sys.stdin.readline
+# n = int(input())
+# arr = []
+# for i in range(n):
+#     age, name = input().split()
+#     arr.append([int(age), name, i])
+# arr.sort(key= lambda x: (x[0], x[2]))
+# for i in arr:
+#     print(i[0], i[1])
+
+# boj 14697
+# a, b, c, n = map(int, input().split())
+# dp = [0] * (301)
+# dp[a] = dp[b] = dp[c] = 1
+# for i in range(a, n + 1):
+#     for j in [a, b, c]:
+#         if i >= j and dp[i - j]:
+#             dp[i] = 1
+# print(dp[n])
+
+# boj 12833
+# a, b, c = map(int, input().split())
+# for _ in range(c % 2):
+#     a ^= b
+# print(a)
+
+# boj 2022
+x, y, c = map(float, input().split())
+l, r = 0, min(x, y)
+while abs(l - r) > pow(10, - 6):
+    d = (l + r) / 2
+    h1 = (x * x - d * d) ** 0.5
+    h2 = (y * y - d * d) ** 0.5
+    h = (h1 * h2) / (h1 + h2)
+    if h > c:
+        l = d
+    else:
+        r = d
+print(format(d, ".3f"))
