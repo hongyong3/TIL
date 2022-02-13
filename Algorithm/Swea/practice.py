@@ -3404,15 +3404,15 @@ sys.stdin = open("practice_input.txt", "r")
 # print(a)
 
 # boj 2022
-x, y, c = map(float, input().split())
-l, r = 0, min(x, y)
-while abs(l - r) > pow(10, - 6):
-    d = (l + r) / 2
-    h1 = (x * x - d * d) ** 0.5
-    h2 = (y * y - d * d) ** 0.5
-    h = (h1 * h2) / (h1 + h2)
-    if h > c:
-        l = d
-    else:
-        r = d
-print(format(d, ".3f"))
+# x, y, c = map(float, input().split())
+# l, r = 0, min(x, y)
+# while abs(l - r) > pow(10, - 6):
+#     d = (l + r) / 2
+#     h1 = (x * x - d * d) ** 0.5
+#     h2 = (y * y - d * d) ** 0.5
+#     h = (h1 * h2) / (h1 + h2)
+#     if h > c:
+#         l = d
+#     else:
+#         r = d
+# print(format(d, ".3f"))
