@@ -3416,3 +3416,37 @@ sys.stdin = open("practice_input.txt", "r")
 #     else:
 #         r = d
 # print(format(d, ".3f"))
+
+# boj 1864
+# octopus = '-\(@?>&%'
+# while True:
+#     s = input()
+#     if s == '#':
+#         break
+#     slen = len(s) - 1
+#     ans = 0
+#     for i in s:
+#         if i in octopus:
+#             temp = octopus.index(i)
+#         else:
+#             temp = - 1
+#         ans += temp * (8 ** slen)
+#         slen -= 1
+#     print(ans)
+
+# boj 10822
+# print(sum(list(map(int, input().split(',')))))
+
+# boj 22950
+n = int(input())
+m = input()
+k = int(input())
+cnt = 0
+if '1' not in m or k == 0:
+    print("YES")
+    exit(0)
+for i in m[:: - 1]:
+    if i == '1':
+        break
+    cnt += 1
+print("YES" if cnt >= k else "NO")
