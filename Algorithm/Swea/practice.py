@@ -3438,15 +3438,74 @@ sys.stdin = open("practice_input.txt", "r")
 # print(sum(list(map(int, input().split(',')))))
 
 # boj 22950
-n = int(input())
-m = input()
-k = int(input())
-cnt = 0
-if '1' not in m or k == 0:
-    print("YES")
-    exit(0)
-for i in m[:: - 1]:
-    if i == '1':
-        break
-    cnt += 1
-print("YES" if cnt >= k else "NO")
+# n = int(input())
+# m = input()
+# k = int(input())
+# cnt = 0
+# if '1' not in m or k == 0:
+#     print("YES")
+#     exit(0)
+# for i in m[:: - 1]:
+#     if i == '1':
+#         break
+#     cnt += 1
+# print("YES" if cnt >= k else "NO")
+
+# boj 2346
+# from collections import deque
+# n = int(input())
+# arr = list(map(int, input().split()))
+# dq = deque()
+# for idx, num in enumerate(arr, 1):
+#     dq.append([idx, num])
+# ans = []
+# while dq:
+#     idx, move = dq.popleft()
+#     ans.append(idx)
+#     if len(dq) == 1:
+#         ans.append(dq.pop()[0])
+#     else:
+#         if move > 0:
+#             for _ in range(move - 1):
+#                 dq.append(dq.popleft())
+#         else:
+#             for _ in range(abs(move)):
+#                 dq.appendleft(dq.pop())
+# print(*ans)
+
+# boj 1388
+def dfs(x, y, c):
+    if c == '-':
+        while True:
+            y += 1
+            if y == m:
+                break
+            if arr[x][y] == c:
+                visited[x][y] = 1
+            else:
+                break
+    else:
+        while True:
+            x += 1
+            if x == n:
+                break
+            if arr[x][y] == c:
+                visited[x][y] = 1
+            else:
+                break
+
+n, m = map(int, input().split())
+arr = [input() for _ in range(n)]
+visited = [[0] * m for _ in range(n)]
+ans = 0
+for i in range(n):
+    for j in range(m):
+        if arr[i][j] == '-' and not visited[i][j]:
+            ans += 1
+            dfs(i, j, '-')
+            visited[i][j] = 1
+        elif arr[i][j] == '|' and not visited[i][j]:
+            ans += 1
+            dfs(i, j, '|')
+            visited[i][j] = 1
+print(ans)
