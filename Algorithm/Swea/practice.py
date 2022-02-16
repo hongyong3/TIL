@@ -3474,38 +3474,105 @@ sys.stdin = open("practice_input.txt", "r")
 # print(*ans)
 
 # boj 1388
-def dfs(x, y, c):
-    if c == '-':
-        while True:
-            y += 1
-            if y == m:
-                break
-            if arr[x][y] == c:
-                visited[x][y] = 1
-            else:
-                break
-    else:
-        while True:
-            x += 1
-            if x == n:
-                break
-            if arr[x][y] == c:
-                visited[x][y] = 1
-            else:
-                break
+# def dfs(x, y, c):
+#     if c == '-':
+#         while True:
+#             y += 1
+#             if y == m:
+#                 break
+#             if arr[x][y] == c:
+#                 visited[x][y] = 1
+#             else:
+#                 break
+#     else:
+#         while True:
+#             x += 1
+#             if x == n:
+#                 break
+#             if arr[x][y] == c:
+#                 visited[x][y] = 1
+#             else:
+#                 break
+#
+# n, m = map(int, input().split())
+# arr = [input() for _ in range(n)]
+# visited = [[0] * m for _ in range(n)]
+# ans = 0
+# for i in range(n):
+#     for j in range(m):
+#         if arr[i][j] == '-' and not visited[i][j]:
+#             ans += 1
+#             dfs(i, j, '-')
+#             visited[i][j] = 1
+#         elif arr[i][j] == '|' and not visited[i][j]:
+#             ans += 1
+#             dfs(i, j, '|')
+#             visited[i][j] = 1
+# print(ans)
 
-n, m = map(int, input().split())
-arr = [input() for _ in range(n)]
-visited = [[0] * m for _ in range(n)]
+# boj 7567
+# s = input()
+# ans = 10
+# temp = s[0]
+# for i in s[1:]:
+#     if temp == i:
+#         ans += 5
+#     else:
+#         temp = i
+#         ans += 10
+# print(ans)
+
+# boj 4677
+# dx = [- 1, 1, 0, 0, 1, 1, - 1, - 1]
+# dy = [0, 0, - 1, 1, - 1, 1, - 1, 1]
+# def dfs(x, y):
+#     for k in range(8):
+#         nx = x + dx[k]
+#         ny = y + dy[k]
+#         if 0 <= nx < n and 0 <= ny < m:
+#             if arr[nx][ny] == '@' and not visited[nx][ny]:
+#                 visited[nx][ny] = 1
+#                 dfs(nx, ny)
+#
+# while True:
+#     n, m = map(int, input().split())
+#     if n == m == 0:
+#         break
+#     arr = [input() for _ in range(n)]
+#     ans = 0
+#     visited = [[0] * m for _ in range(n)]
+#     for i in range(n):
+#         for j in range(m):
+#             if arr[i][j] == '@' and not visited[i][j]:
+#                 visited[i][j] = 1
+#                 dfs(i, j)
+#                 ans += 1
+#     print(ans)
+
+# boj 1937
+import sys
+input = sys.stdin.readline
+sys.setrecursionlimit(10**6)
+dx = [- 1, 1, 0, 0]
+dy = [0, 0, - 1, 1]
+def dfs(x, y):
+    if dp[x][y]:
+        return dp[x][y]
+    dp[x][y] = 1
+    for k in range(4):
+        nx = x + dx[k]
+        ny = y + dy[k]
+        if 0 <= nx < n and 0 <= ny < n:
+            if arr[x][y] < arr[nx][ny]:
+                dp[x][y] = max(dp[x][y], dfs(nx, ny) + 1)
+    return dp[x][y]
+
+n = int(input())
+arr = [list(map(int, input().split())) for _ in range(n)]
+dp = [[0] * n for _ in range(n)]
 ans = 0
+
 for i in range(n):
-    for j in range(m):
-        if arr[i][j] == '-' and not visited[i][j]:
-            ans += 1
-            dfs(i, j, '-')
-            visited[i][j] = 1
-        elif arr[i][j] == '|' and not visited[i][j]:
-            ans += 1
-            dfs(i, j, '|')
-            visited[i][j] = 1
+    for j in range(n):
+        ans = max(ans, dfs(i, j))
 print(ans)
