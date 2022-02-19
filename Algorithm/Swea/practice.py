@@ -3576,3 +3576,84 @@ sys.stdin = open("practice_input.txt", "r")
 #     for j in range(n):
 #         ans = max(ans, dfs(i, j))
 # print(ans)
+
+# boj 2636
+# import sys
+# from collections import deque
+#
+# input = sys.stdin.readline
+# dx = [- 1, 1, 0, 0]
+# dy = [0, 0, - 1, 1]
+#
+# def bfs():
+#     visited = [[0] * m for _ in range(n)]
+#     dq = deque()
+#     dq.append((0, 0))
+#     visited[0][0] = 1
+#     cheese = 0
+#
+#     while dq:
+#         x, y = dq.popleft()
+#         for k in range(4):
+#             nx = x + dx[k]
+#             ny = y + dy[k]
+#             if 0 <= nx < n and 0 <= ny < m:
+#                 if not visited[nx][ny]:
+#                     if arr[nx][ny] == 0:
+#                         dq.append((nx, ny))
+#                         visited[nx][ny] = 1
+#                     else:
+#                         visited[nx][ny] = 1
+#                         arr[nx][ny] = 0
+#                         cheese += 1
+#     ans.append(cheese)
+#     return cheese
+#
+#
+# n, m = map(int, input().split())
+# arr = [list(map(int, input().split())) for _ in range(n)]
+# ans = []
+# while True:
+#     cnt = bfs()
+#     if cnt == 0:
+#         break
+# print(len(ans) - 1)
+# print(ans[- 2])
+
+# boj 23348
+# a, b, c = map(int, input().split())
+# n = int(input())
+# idx = 0
+# arr = [0] * n
+# while idx < n:
+#     for i in range(3):
+#         x, y, z = map(int, input().split())
+#         arr[idx] += x * a + y * b + z * c
+#     idx += 1
+# print(max(arr))
+
+# t = int(input())
+# for _ in range(t):
+#     n, d = map(int, input().split())
+#     ans = 0
+#     for _ in range(n):
+#         v, f, c = map(int, input().split())
+#         if v * (f / c) >= d:
+#             ans += 1
+#     print(ans)
+
+# boj 2754
+# credit = {'A+': 4.3, 'A0': 4.0, 'A-': 3.7,
+#           'B+': 3.3, 'B0': 3.0, 'B-': 2.7,
+#           'C+': 2.3, 'C0': 2.0, 'C-': 1.7,
+#           'D+': 1.3, 'D0': 1.0, 'D-': 0.7,
+#           'F': 0.0}
+# print(credit[input()])
+
+# boj 13022
+s = list(input())
+ans = 1
+if len(s) % 4 or not (s.count('w') == s.count('o') == s.count('l') == s.count('f')):
+    ans = 0
+else:
+    
