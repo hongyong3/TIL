@@ -3651,9 +3651,13 @@ sys.stdin = open("practice_input.txt", "r")
 # print(credit[input()])
 
 # boj 13022
-s = list(input())
+word = list(input())
 ans = 1
-if len(s) % 4 or not (s.count('w') == s.count('o') == s.count('l') == s.count('f')):
+if len(word) % 4 or not (word.count('w') == word.count('o') == word.count('l') == word.count('f')):
     ans = 0
 else:
-    
+    s = word[0]
+    if s != 'w':
+        ans = 0
+    while True:
+        
