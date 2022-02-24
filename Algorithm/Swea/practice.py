@@ -3680,3 +3680,75 @@ sys.stdin = open("practice_input.txt", "r")
 #             s = i + s
 #             l = c
 #     print(s)
+
+# boj 1051
+# n, m = map(int, input().split())
+# arr = [list(input()) for _ in range(n)]
+# ans = 1
+# idx = 1
+# for i in range(n):
+#     for j in range(m):
+#         temp = arr[i][j]
+#         k = idx
+#         while i + k < n and j + k < m:
+#             if arr[i + k][j + k] == temp:
+#                 if arr[i][j + k] == arr[i + k][j] == temp:
+#                     if ans < (k + 1) ** 2:
+#                         ans = (k + 1) ** 2
+#                         idx = k
+#             k += 1
+# print(ans)
+
+# boj 1780
+# import sys
+# input = sys.stdin.readline
+# def dfs(x, y, n):
+#     global ans
+#     val = arr[x][y]
+#     for nx in range(x, x + n):
+#         for ny in range(y, y + n):
+#             if arr[nx][ny] != val:
+#                 for i in range(3):
+#                     for j in range(3):
+#                         dfs(x + i * n // 3, y + j * n // 3, n // 3)
+#                 return
+#
+#     if val == - 1:
+#         ans[0] += 1
+#     elif val == 0:
+#         ans[1] += 1
+#     else:
+#         ans[2] += 1
+#
+# N = int(input())
+# arr = [list(map(int, input().split())) for _ in range(N)]
+# ans = [0, 0, 0]
+# dfs(0, 0, N)
+# for i in ans:
+#     print(i)
+
+# boj 1145
+# arr = sorted(list(map(int, input().split())))
+# ans = arr[0]
+# while True:
+#     cnt = 0
+#     for i in range(5):
+#         if ans % arr[i] == 0:
+#             cnt += 1
+#     if cnt > 2:
+#         break
+#     ans += 1
+# print(ans)
+
+# boj 24510
+# n = int(input())
+# ans = 0
+# for _ in range(n):
+#     data = input()
+#     cnt = data.count('for') + data.count('while')
+#     if ans < cnt:
+#         ans = cnt
+# print(ans)
+n = int(input())
+for _ in range(n):
+    print(input().lower())
