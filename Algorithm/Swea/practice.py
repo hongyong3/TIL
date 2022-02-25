@@ -3749,6 +3749,8 @@ sys.stdin = open("practice_input.txt", "r")
 #     if ans < cnt:
 #         ans = cnt
 # print(ans)
+
+# boj 5524
 n = int(input())
 for _ in range(n):
     print(input().lower())
