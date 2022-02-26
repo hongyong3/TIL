@@ -3751,6 +3751,99 @@ sys.stdin = open("practice_input.txt", "r")
 # print(ans)
 
 # boj 5524
-n = int(input())
-for _ in range(n):
-    print(input().lower())
+# n = int(input())
+# for _ in range(n):
+#     print(input().lower())
+
+# boj 15624
+# def fib(n):
+#     if n >= 2:
+#         for i in range(2, n):
+#             memo.append((memo[i - 1] + memo[i]) % 1000000007)
+#     return memo[n]
+#
+# n = int(input())
+# memo = [0, 1, 1]
+# f1 ,f2, f3 = 0, 1, 1
+# print(fib(n))
+
+# boj 1526
+# n = int(input())
+# while True:
+#     chk = True
+#     for i in str(n):
+#         if i not in '47':
+#             chk = False
+#             n -= 1
+#     if chk:
+#         print(n)
+#         break
+
+# boj 6322
+# test_case = 0
+# while True:
+#     test_case += 1
+#     chk = False
+#
+#     a, b, c = map(int, input().split())
+#     if a == b == c == 0:
+#         break
+#     if test_case != 1:
+#         print()
+#     print("Triangle #{}".format(test_case))
+#     if a == - 1:
+#         temp = (c ** 2 - b ** 2)
+#         if temp > 0:
+#             ans1 = 'a'
+#             ans2 = temp ** 0.5
+#             ans = True
+#             chk = True
+#     if b == - 1:
+#         temp = (c ** 2 - a ** 2)
+#         if temp > 0:
+#             ans1 = 'b'
+#             ans2 = temp ** 0.5
+#             chk = True
+#     if c == - 1:
+#         temp = (a ** 2 + b ** 2)
+#         if temp > 0:
+#             ans1 = 'c'
+#             ans2 = temp ** 0.5
+#             chk = True
+#     if chk:
+#         print("{} = {}".format(ans1, format(ans2, ".3f")))
+#     else:
+#         print("Impossible.")
+
+# boj 1309
+# n = int(input())
+# dp = [1] * (n + 1)
+# dp[1] = 3
+# for i in range(2, n + 1):
+#     dp[i] = (dp[i - 1] * 2 + dp[i - 2]) % 9901
+# print(dp[n])
+
+# boj 3029
+h1, m1, s1 = map(int, input().split(':'))
+h2, m2, s2 = map(int, input().split(':'))
+h = h2 - h1
+m = m2 - m1
+s = s2 - s1
+if s < 0:
+    s += 60
+    m -= 1
+if m < 0:
+    m += 60
+    h -= 1
+if h < 0:
+    h += 24
+if h == m == s == 0:
+    print("24:00:00")
+else:
+    if h < 10:
+        h = '0' + str(h)
+    if m < 10:
+        m = '0' + str(m)
+    if s < 10:
+        s = '0' + str(s)
+    print("{}:{}:{}".format(h, m, s))
