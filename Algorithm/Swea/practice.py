@@ -3824,26 +3824,41 @@ sys.stdin = open("practice_input.txt", "r")
 # print(dp[n])
 
 # boj 3029
-h1, m1, s1 = map(int, input().split(':'))
-h2, m2, s2 = map(int, input().split(':'))
-h = h2 - h1
-m = m2 - m1
-s = s2 - s1
-if s < 0:
-    s += 60
-    m -= 1
-if m < 0:
-    m += 60
-    h -= 1
-if h < 0:
-    h += 24
-if h == m == s == 0:
-    print("24:00:00")
-else:
-    if h < 10:
-        h = '0' + str(h)
-    if m < 10:
-        m = '0' + str(m)
-    if s < 10:
-        s = '0' + str(s)
-    print("{}:{}:{}".format(h, m, s))
+# h1, m1, s1 = map(int, input().split(':'))
+# h2, m2, s2 = map(int, input().split(':'))
+# h = h2 - h1
+# m = m2 - m1
+# s = s2 - s1
+# if s < 0:
+#     s += 60
+#     m -= 1
+# if m < 0:
+#     m += 60
+#     h -= 1
+# if h < 0:
+#     h += 24
+# if h == m == s == 0:
+#     print("24:00:00")
+# else:
+#     if h < 10:
+#         h = '0' + str(h)
+#     if m < 10:
+#         m = '0' + str(m)
+#     if s < 10:
+#         s = '0' + str(s)
+#     print("{}:{}:{}".format(h, m, s))
+
+# boj 2851
+# ans = int(input())
+# arr = [int(input()) for _ in range(9)]
+# for i in arr:
+#     ans += i
+#     if ans >= 100:
+#         if ans - 100 > 100 - ans + i:
+#             ans -= i
+#         break
+# print(ans)
+
+for _ in range(4):
+    x1, y1, p1, q1, x2, y2, p2, q2 = map(int, input().split())
+    
