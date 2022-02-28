@@ -7,9 +7,12 @@ for test_case in range(T):
     room, mat = [0] * 201, 0
     for i in range(N):
         a, b = map(int, input().split())
-        if a % 2: a += 1
-        if b % 2: b += 1
-        if a > b: a, b = b, a
+        if a % 2:
+            a += 1
+        if b % 2:
+            b += 1
+        if a > b:
+            a, b = b, a
         for j in range((a // 2), (b // 2) + 1):
             room[j] += 1
     print("#{} {}".format(test_case + 1, max(room)))

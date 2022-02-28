@@ -3859,6 +3859,56 @@ sys.stdin = open("practice_input.txt", "r")
 #         break
 # print(ans)
 
-for _ in range(4):
-    x1, y1, p1, q1, x2, y2, p2, q2 = map(int, input().split())
-    
+# boj 2527
+# for _ in range(4):
+#     x1, y1, p1, q1, x2, y2, p2, q2 = map(int, input().split())
+#     rec1 = [abs(x1 + p1) / 2, abs(y1 + q1) / 2]
+#     rec2 = [abs(x2 + p2) / 2, abs(y2 + q2) / 2]
+#
+#     dx1, dy1 = abs(rec1[0] - x1), abs(rec1[1] - y1)
+#     dx2, dy2 = abs(rec2[0] - x2), abs(rec2[1] - y2)
+#     xd, yd = abs(rec1[0] - rec2[0]), abs(rec1[1] - rec2[1])
+#
+#     if dx1 + dx2 == xd:
+#         if dy1 + dy2 == yd:
+#             print('c')
+#         elif dy1 + dy2 < yd:
+#             print('d')
+#         else:
+#             print('b')
+#     elif dx1 + dx2 < xd:
+#         print('d')
+#     else:
+#         if dy1 + dy2 == yd:
+#             print('b')
+#         elif dy1 + dy2 < yd:
+#             print('d')
+#         else:
+#             print('a')
+
+# boj 10867
+# n = int(input())
+# arr = sorted(set(map(int, input().split())))
+# print(*arr)
+
+# boj 14912
+# n, d = input().split()
+# ans = 0
+# for i in range(1, int(n) + 1):
+#     ans += str(i).count(d)
+# print(ans)
+
+# boj 14916
+n = int(input())
+if n == (1 or 3):
+    print(- 1)
+else:
+    ans = n // 5
+    n %= 5
+    if n == (1 or 4):
+        ans += 2
+    elif n == 2:
+        ans += 1
+    else:
+        ans += 3
+    print(ans)
