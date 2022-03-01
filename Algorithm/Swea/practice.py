@@ -3899,16 +3899,124 @@ sys.stdin = open("practice_input.txt", "r")
 # print(ans)
 
 # boj 14916
+# n = int(input())
+# if n == 1 or n == 3:
+#     print(- 1)
+# else:
+#     ans = n // 5
+#     n %= 5
+#     if n == 1 or n == 4:
+#         ans += 2
+#     elif n == 2:
+#         ans += 1
+#     elif n == 3:
+#         ans += 3
+#     print(ans)
+
+# boj 21919
+# import sys
+# input = sys.stdin.readline
+# def findPrime(n):
+#     for i in range(2, n):
+#         if i * i > n:
+#             break
+#         if n % i == 0:
+#             return False
+#     return True
+#
+# n = int(input())
+# arr = set(map(int, input().split()))
+# ans = 1
+# for i in arr:
+#     if findPrime(i):
+#         ans *= i
+#
+# if ans == 1:
+#     print(- 1)
+# else:
+#     print(ans)
+
+# boj 16173
+# from collections import deque
+#
+# dx = [1, 0]
+# dy = [0, 1]
+#
+# def bfs(x, y, val):
+#     q = deque()
+#     q.append((x, y, val))
+#     while q:
+#         x, y, val = q.popleft()
+#         if arr[x][y] == - 1:
+#             return True
+#         for k in range(2):
+#             nx = x + dx[k] * val
+#             ny = y + dy[k] * val
+#             if nx < n and ny < n:
+#                 if not visited[nx][ny]:
+#                     visited[nx][ny] = 1
+#                     q.append((nx, ny, arr[nx][ny]))
+#
+# n = int(input())
+# arr = [list(map(int, input().split())) for _ in range(n)]
+# visited = [[0] * n for _ in range(n)]
+# print("HaruHaru" if bfs(0, 0, arr[0][0]) else "Hing")
+
+# boj 17212
+# n = int(input())
+# dp = [float('inf')] * (n + 1)
+# dp[0] = 0
+# for i in range(1, n + 1):
+#     for coin in (7, 5, 2, 1):
+#         if i - coin >= 0 and dp[i - coin] + 1 < dp[i]:
+#             dp[i] = dp[i - coin] + 1
+# print(dp[n])
+
+# boj 4328
+# def solve(num, b):
+#     res = ''
+#     while num >= b:
+#         res += str(num % b)
+#         num //= b
+#     res += str(num)
+#     return res[:: - 1]
+#
+# while True:
+#     data = input()
+#     if data == '0':
+#         break
+#     b, p, m = data.split()
+#     b = int(b)
+#     num1 = int(p, b)
+#     print(solve(int(p, b) % int(m, b), b))
+
+# boj 11723
+# import sys
+# input = sys.stdin.readline
+# n = int(input())
+# s = set()
+# for _ in range(n):
+#     data = input().split()
+#     if len(data) == 1:
+#         if data[0] == 'all':
+#             s = set(i for i in range(1, 21))
+#         else:
+#             s = set()
+#     else:
+#         f, x = data[0], int(data[1])
+#         if f == 'add':
+#             s.add(x)
+#         elif f == 'remove':
+#             s.discard(x)
+#         elif f == 'check':
+#             print(1 if x in s else 0)
+#         elif f == 'toggle':
+#             s.discard(x) if x in s else s.add(x)
+
+# boj 1748
 n = int(input())
-if n == (1 or 3):
-    print(- 1)
-else:
-    ans = n // 5
-    n %= 5
-    if n == (1 or 4):
-        ans += 2
-    elif n == 2:
-        ans += 1
-    else:
-        ans += 3
-    print(ans)
+ans, i = 0, 1
+while i <= n:
+    ans += (n - i + 1)
+    i *= 10
+print(ans)
