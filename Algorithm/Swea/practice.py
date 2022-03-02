@@ -4014,9 +4014,49 @@ sys.stdin = open("practice_input.txt", "r")
 #             s.discard(x) if x in s else s.add(x)
 
 # boj 1748
-n = int(input())
-ans, i = 0, 1
-while i <= n:
-    ans += (n - i + 1)
-    i *= 10
-print(ans)
+# n = int(input())
+# ans, i = 0, 1
+# while i <= n:
+#     ans += (n - i + 1)
+#     i *= 10
+
+# boj 2154
+# n = int(input())
+# s = ''
+# for i in range(1, n + 1):
+#     s += str(i)
+# print(s.index(str(n)) + 1)
+
+# boj 1194
+from collections import deque
+dx = [- 1, 1, 0, 0]
+dy = [0, 0, - 1, 1]
+def bfs(x, y):
+    q = deque()
+    q.append((x, y))
+    while q:
+        x, y = q.popleft()
+        for k in range(4):
+            nx = x + dx[k]
+            ny = y + dy[k]
+            if arr[nx][ny] == '#':
+                continue
+            if 0 <= nx < n and 0 <= ny < m:
+                if arr[nx][ny] in 'ABCDEF':
+                    pass
+                if arr[nx][ny] in 'abcdef':
+                    Key[arr[nx][ny]] += 1
+                    q.append((nx, ny))
+
+t = int(input())
+for _ in range(1):
+    n, m = map(int, input().split())
+    arr = [list(input()) for _ in range(n)]
+    Key = {'a': 0, 'b': 0, 'c': 0, 'd': 0, 'e': 0, 'f': 0}
+
+    for i in range(n):
+        for j in range(m):
+            if arr[i][j] == '0':
+                dfs(i, j)
+    print(Key)
+    print(arr)
