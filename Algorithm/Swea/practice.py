@@ -4057,6 +4057,4 @@ for _ in range(1):
     for i in range(n):
         for j in range(m):
             if arr[i][j] == '0':
-                dfs(i, j)
-    print(Key)
-    print(arr)
+                bfs(i, j)    
