@@ -4028,33 +4028,110 @@ sys.stdin = open("practice_input.txt", "r")
 # print(s.index(str(n)) + 1)
 
 # boj 1194
+# from collections import deque
+# dx = [- 1, 1, 0, 0]
+# dy = [0, 0, - 1, 1]
+# def bfs(x, y, c, cnt):
+#     cnt = 0
+#     q = deque()
+#     q.append((x, y, c, cnt))
+#     while q:
+#         x, y, c, cnt = q.popleft()
+#         for k in range(4):
+#             nx = x + dx[k]
+#             ny = y + dy[k]
+#             if 0 <= nx < n and 0 <= ny < m and arr[nx][ny] != '#' and not visited[nx][ny][c]:
+#                 if arr[nx][ny] == '.':
+#                     visited[nx][ny][c] = 1
+#                     q.append((nx, ny, c, cnt + 1))
+#                 elif arr[nx][ny] == '1':
+#                     return cnt + 1
+#                 else:
+#                     if arr[nx][ny] in 'ABCDEF':
+#                         if c & 1 << (ord(arr[nx][ny]) - 65):
+#                             visited[nx][ny][c] = 1
+#                             q.append((nx, ny, c, cnt + 1))
+#                     else:
+#                     # elif arr[nx][ny] in 'abcdef':
+#                         nc = c | (1 << ord(arr[nx][ny]) - 97)
+#                         if not visited[nx][ny][nc]:
+#                             visited[nx][ny][nc] = 1
+#                             q.append((nx, ny, nc, cnt + 1))
+#     return - 1
+#
+# n, m = map(int, input().split())
+# arr = [list(input()) for _ in range(n)]
+# visited = [[[0] * 64 for _ in range(m)] for _ in range(n)]
+#
+# for i in range(n):
+#     for j in range(m):
+#         if arr[i][j] == '0':
+#             visited[i][j][0] = 1
+#             arr[i][j] = '.'
+#             print(bfs(i, j, 0, 0))
+#             break
+
+# boj 2665
+# from collections import deque
+# dx = [- 1, 1, 0, 0]
+# dy = [0, 0, - 1, 1]
+# def bfs():
+#     visited[0][0] = 0
+#     q = deque()
+#     q.append((0, 0, 0))
+#     while q:
+#         x, y, c = q.popleft()
+#         for k in range(4):
+#             nx = x + dx[k]
+#             ny = y + dy[k]
+#             if 0 <= nx < n and 0 <= ny < n:
+#                 if arr[nx][ny] == '0':
+#                     if visited[nx][ny] > visited[x][y] + 1:
+#                         visited[nx][ny] = visited[x][y] + 1
+#                         q.append((nx, ny, visited[nx][ny]))
+#                 else:
+#                     if visited[nx][ny] > visited[x][y]:
+#                         visited[nx][ny] = visited[x][y]
+#                         q.append((nx, ny, visited[nx][ny]))
+#
+# n = int(input())
+# arr = [list(input()) for _ in range(n)]
+# visited = [[float('inf')] * n for _ in range(n)]
+# bfs()
+# print(visited[n - 1][n - 1])
+
+# boj 2206
+import sys
+input = sys.stdin.readline
 from collections import deque
+
 dx = [- 1, 1, 0, 0]
 dy = [0, 0, - 1, 1]
-def bfs(x, y):
+def bfs():
     q = deque()
-    q.append((x, y))
+    visited[0][0][0] = 1
+    q.append((0, 0, 0))
     while q:
-        x, y = q.popleft()
+        x, y, c = q.popleft()
         for k in range(4):
             nx = x + dx[k]
             ny = y + dy[k]
-            if arr[nx][ny] == '#':
-                continue
             if 0 <= nx < n and 0 <= ny < m:
-                if arr[nx][ny] in 'ABCDEF':
-                    pass
-                if arr[nx][ny] in 'abcdef':
-                    Key[arr[nx][ny]] += 1
-                    q.append((nx, ny))
+                if arr[nx][ny] == '1':
+                    if not visited[x][y][1]:
+                        if visited[nx][ny][0] > visited[x][y][0] + 1:
+                            visited[nx][ny][0] = visited[x][y][0] + 1
+                            visited[nx][ny][1] = 1
+                            q.append((nx, ny, visited[nx][ny][0]))
+                else:
+                    if visited[x][y][1] == 1:
+                        visited[nx][ny][1] = 1
+                    if visited[nx][ny][0] > visited[x][y][0] + 1:
+                        visited[nx][ny][0] = visited[x][y][0] + 1
+                        q.append((nx, ny, visited[nx][ny][0]))
 
-t = int(input())
-for _ in range(1):
-    n, m = map(int, input().split())
-    arr = [list(input()) for _ in range(n)]
-    Key = {'a': 0, 'b': 0, 'c': 0, 'd': 0, 'e': 0, 'f': 0}
-
-    for i in range(n):
-        for j in range(m):
-            if arr[i][j] == '0':
-                bfs(i, j)    
+n, m = map(int, input().split())
+arr = [list(input()) for _ in range(n)]
+visited = [[[float('inf'), 0] for _ in range(m)] for _ in range(n)]
+bfs()
+print(- 1 if visited[n - 1][m - 1][0] == float('inf') else visited[n - 1][m - 1][0])
