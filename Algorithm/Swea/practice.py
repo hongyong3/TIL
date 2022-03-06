@@ -4101,37 +4101,103 @@ sys.stdin = open("practice_input.txt", "r")
 # print(visited[n - 1][n - 1])
 
 # boj 2206
-import sys
-input = sys.stdin.readline
-from collections import deque
+# import sys
+# input = sys.stdin.readline
+# from collections import deque
+#
+# dx = [- 1, 1, 0, 0]
+# dy = [0, 0, - 1, 1]
+# def bfs():
+#     q = deque()
+#     q.append((0, 0, 0))
+#     visited[0][0][0] = 1
+#     while q:
+#         x, y, c = q.popleft()
+#         if x == n - 1 and y == m - 1:
+#             return visited[x][y][c]
+#
+#         for k in range(4):
+#             nx = x + dx[k]
+#             ny = y + dy[k]
+#
+#             if 0 <= nx < n and 0 <= ny < m and not visited[nx][ny][c]:
+#                 if arr[nx][ny] == '0':
+#                     q.append((nx, ny, c))
+#                     visited[nx][ny][c] = visited[x][y][c] + 1
+#
+#                 if c == 0 and arr[nx][ny] == '1':
+#                     q.append((nx, ny, 1))
+#                     visited[nx][ny][1] = visited[x][y][c] + 1
+#     return - 1
+#
+# n, m = map(int, input().split())
+# arr = [list(input()) for _ in range(n)]
+# visited = [[[0, 0] for _ in range(m)] for _ in range(n)]
+# print(bfs())
 
-dx = [- 1, 1, 0, 0]
-dy = [0, 0, - 1, 1]
-def bfs():
-    q = deque()
-    visited[0][0][0] = 1
-    q.append((0, 0, 0))
-    while q:
-        x, y, c = q.popleft()
-        for k in range(4):
-            nx = x + dx[k]
-            ny = y + dy[k]
-            if 0 <= nx < n and 0 <= ny < m:
-                if arr[nx][ny] == '1':
-                    if not visited[x][y][1]:
-                        if visited[nx][ny][0] > visited[x][y][0] + 1:
-                            visited[nx][ny][0] = visited[x][y][0] + 1
-                            visited[nx][ny][1] = 1
-                            q.append((nx, ny, visited[nx][ny][0]))
-                else:
-                    if visited[x][y][1] == 1:
-                        visited[nx][ny][1] = 1
-                    if visited[nx][ny][0] > visited[x][y][0] + 1:
-                        visited[nx][ny][0] = visited[x][y][0] + 1
-                        q.append((nx, ny, visited[nx][ny][0]))
+# boj 1343
+# s = input()
+# arr = []
+# ans = ''
+# temp = 0
+# chk = 1
+# for i in s:
+#     if i != '.':
+#         temp += 1
+#     else:
+#         if temp:
+#             if temp % 2:
+#                 print(- 1)
+#                 chk = 0
+#                 break
+#             arr.append(temp)
+#         arr.append(i)
+#         temp = 0
+# else:
+#     if temp:
+#         if temp % 2:
+#             print(- 1)
+#             chk = 0
+#         arr.append(temp)
+#
+# if chk:
+#     for i in arr:
+#         if i == '.':
+#             ans += i
+#         else:
+#             m, n = i // 4, i % 4
+#             if n:
+#                 ans += "AAAA" * m + "BB"
+#             else:
+#                 ans += "AAAA" * m
+#     print(ans)
 
-n, m = map(int, input().split())
-arr = [list(input()) for _ in range(n)]
-visited = [[[float('inf'), 0] for _ in range(m)] for _ in range(n)]
-bfs()
-print(- 1 if visited[n - 1][m - 1][0] == float('inf') else visited[n - 1][m - 1][0])
+# boj 10159
+# n = int(input())
+# m = int(input())
+# arr = [[0] * n for _ in range(n)]
+# for _ in range(m):
+#     a, b = map(int, input().split())
+#     arr[a - 1][b - 1] = 1
+#
+# for k in range(n):
+#     for i in range(n):
+#         for j in range(n):
+#             if arr[i][k] and arr[k][j]:
+#                 arr[i][j] = 1
+#
+# for i in range(n):
+#     ans = - 1
+#     for j in range(n):
+#         if not arr[i][j] and not arr[j][i]:
+#             ans += 1
+#     print(ans)
+
+# boj 23825
+# n, m = map(int, input().split())
+# print(min(n // 2, m // 2))
+
+# boj 1431
+n = int(input())
+arr = [input() for _ in range(n)]
+print(arr)
