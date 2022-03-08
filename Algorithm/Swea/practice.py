@@ -3659,7 +3659,10 @@ sys.stdin = open("practice_input.txt", "r")
 #         if idx + i * 4 > len(s):
 #             print(0)
 #             sys.exit(0)
-#         if s[idx : idx + i] == 'w' * i and s[idx + i : idx + i * 2] == 'o'* i and s[idx + i * 2: idx + i * 3] == 'l'* i and s[idx + i * 3 : idx + i * 4] == 'f' * i:
+#         if s[idx : idx + i] == 'w' * i:
+#             if s[idx + i : idx + i * 2] == 'o'* i:
+#                 if s[idx + i * 2: idx + i * 3] == 'l'* i:
+#                     if s[idx + i * 3 : idx + i * 4] == 'f' * i:
 #             idx += i * 4
 #             break
 # print(1)
@@ -4198,6 +4201,84 @@ sys.stdin = open("practice_input.txt", "r")
 # print(min(n // 2, m // 2))
 
 # boj 1431
-n = int(input())
-arr = [input() for _ in range(n)]
-print(arr)
+# n = int(input())
+# arr = []
+# for _ in range(n):
+#     data = input()
+#     num = 0
+#     for i in data:
+#         if i in '123456789':
+#             num += int(i)
+#     arr.append((data, num))
+# arr.sort(key= lambda x : (len(x[0]), x[1], x[0]))
+# for i in arr:
+#     print(i[0])
+
+# boj 16435
+# n, l = map(int, input().split())
+# arr = sorted(list(map(int, input().split())))
+# for i in arr:
+#     if l >= i:
+#         l += 1
+#     else:
+#         break
+# print(l)
+
+# boj 11053
+# n = int(input())
+# arr = list(map(int, input().split()))
+# dp = [1] * n
+# for i in range(n):
+#     for j in range(i):
+#         if arr[i] > arr[j]:
+#             dp[i] = max(dp[i], dp[j] + 1)
+# print(max(dp))
+
+# boj 2965
+# a, b, c = map(int, input().split())
+# print(max(b - a, c - b) - 1)
+
+# boj 1037
+# n = int(input())
+# arr = sorted(list(map(int, input().split())))
+# print(arr[0] * arr[- 1])
+
+# boj 13300
+# n, k = map(int, input().split())
+# arr = [[0] * 6 for _ in range(2)]
+# ans = 0
+# for i in range(n):
+#     x, y = map(int, input().split())
+#     arr[x][y - 1] += 1
+#
+# for i, j in zip(arr[0], arr[1]):
+#     ans += i // k
+#     if i % k:
+#         ans += 1
+#     ans += j // k
+#     if j % k:
+#         ans += 1
+# print(ans)
+
+# boj 11023
+# print(sum(list(map(int, input().split()))))
+
+# boj 2502
+# d, k = map(int, input().split())
+# f = [1, 0]
+# s = [0, 1]
+# p, q, ans = 0, 0, 1
+# for i in range(3, d + 1):
+#     p = f[0] + s[0]
+#     q = f[1] + s[1]
+#     f = s
+#     s = [p, q]
+#
+# while True:
+#     x = p * ans
+#     y = k - x
+#     if not y % q:
+#         print(ans)
+#         print(y // q)
+#         break
+#     ans += 1
