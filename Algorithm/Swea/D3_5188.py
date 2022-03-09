@@ -27,7 +27,7 @@ sys.stdin = open("D3_5188_input.txt", "r")
 #     print("#{} {}".format(test_case + 1, min))
 
 def dfs(x, y, total):
-    global mat
+    global ans
 
     if ans <= total:
         return
@@ -51,6 +51,32 @@ for test_case in range(T):
     N = int(input())
     data = [list(map(int, input().split())) for _ in range(N)]
     visited = [[0] * N for _ in range(N)]
-    mat = float('inf')
+    ans = float('inf')
     dfs(0, 0, data[0][0])
-    print("#{} {}".format(test_case + 1, mat))
+    print("#{} {}".format(test_case + 1, ans))
+
+# T = int(input())
+# dx = [1, 0]
+# dy = [0, 1]
+# def mydfs(x, y):
+#     global cost, Min
+#     if Min <= cost:
+#         return
+#     if x == n - 1 and y == n - 1:
+#         Min = min(Min, cost)
+#         return
+#     for i in range(2):
+#         nx = x + dx[i]
+#         ny = y + dy[i]
+#         if 0 <= nx < n and 0 <= ny < n:
+#             cost += graph[nx][ny]
+#             mydfs(nx, ny)
+#             cost -= graph[nx][ny]
+#
+# for case in range(1, T + 1):
+#     n = int(input())
+#     graph = [list(map(int, input().split())) for _ in range(n)]
+#     Min = 10000
+#     cost = graph[0][0]
+#     mydfs(0, 0)
+#     print("#{} {}".format(case, Min))
