@@ -4352,6 +4352,88 @@ sys.stdin = open("practice_input.txt", "r")
 #     print("#{} {}".format(test_case + 1, arr[K % idx - 1]))
 
 # boj 5525
-n = int(input())
-m = int(input())
-s = input()
+# n = int(input())
+# m = int(input())
+# s = input()
+# idx, ans, pattern = 1, 0, 0
+#
+# while idx < m - 1:
+#     if s[idx - 1] == 'I' and s[idx] == 'O' and s[idx + 1] == 'I':
+#         pattern += 1
+#         if pattern == n:
+#             ans += 1
+#             pattern -= 1
+#         idx += 1
+#     else:
+#         pattern = 0
+#     idx += 1
+# print(ans)
+
+# boj 10823
+# s = ''
+# while True:
+#     try:
+#         s += input()
+#     except:
+#         break
+# arr = list(map(int, s.split(',')))
+# print(sum(arr))
+
+# boj 1302
+# n = int(input())
+# arr, books = [], dict()
+# for _ in range(n):
+#     data = input()
+#     if data not in books:
+#         books[data] = 1
+#     else:
+#         books[data] += 1
+# for k, v in books.items():
+#     arr.append([k, v])
+# arr.sort(key = lambda x: (-x[1], x[0]))
+# print(arr[0][0])
+
+# boj 14430
+# n, m = map(int, input().split())
+# arr = [list(map(int, input().split())) for _ in range(n)]
+# dp = [[0] * m for _ in range(n)]
+#
+# for i in range(n):
+#     for j in range(m):
+#         dp[i][j] = max(dp[i - 1][j], dp[i][j - 1]) + arr[i][j]
+# print(dp[n - 1][m - 1])
+
+# boj 2028
+# t = int(input())
+# for _ in range(t):
+#     n = int(input())
+#     num = (n * n) % pow(10, len(str(n)))
+#     print("YES" if n == num else "NO")
+
+# boj 11655
+# s = list(input())
+# alphal = "abcdefghijklmnopqrstuvwxyz"
+# alphau = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
+# ans = ''
+#
+# for i in s:
+#     if i.isupper():
+#         ans += alphau[(alphau.index(i) + 13) % 26]
+#     elif i.islower():
+#         ans += alphal[(alphal.index(i) + 13) % 26]
+#     else:
+#         ans += i
+# print(ans)
+
+# boj 15474
+# n, a, b, c, d = map(int, input().split())
+# x = n // a if n / a == n // a else n // a + 1
+# y = n // c if n / c == n // c else n // c + 1
+# print(min(x * b, y * d))
+
+# boj 5054
+t = int(input())
+for _ in range(t):
+    n = int(input())
+    arr = sorted(list(map(int, input().split())))
+    print((arr[- 1] - arr[0]) * 2)
