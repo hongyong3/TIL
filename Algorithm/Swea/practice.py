@@ -4432,8 +4432,39 @@ sys.stdin = open("practice_input.txt", "r")
 # print(min(x * b, y * d))
 
 # boj 5054
-t = int(input())
-for _ in range(t):
-    n = int(input())
-    arr = sorted(list(map(int, input().split())))
-    print((arr[- 1] - arr[0]) * 2)
+# t = int(input())
+# for _ in range(t):
+#     n = int(input())
+#     arr = sorted(list(map(int, input().split())))
+#     print((arr[- 1] - arr[0]) * 2)
+
+# boj 12756
+# ap, al = map(int, input().split())
+# bp, bl = map(int, input().split())
+# while True:
+#     al -= bp
+#     bl -= ap
+#     if al < 1 or bl < 1:
+#         break
+# if al < 1 and bl < 1:
+#     print("DRAW")
+# else:
+#     print("PLAYER A" if al > bl else "PLAYER B")
+
+# boj 14914
+# b, a = map(int, input().split())
+# x = min(b, a)
+# for i in range(1, x + 1):
+#     if b % i == a % i == 0:
+#         print(i, b // i, a // i)
+
+# boj 9063
+# n = int(input())
+# a, b = [], []
+# for _ in range(n):
+#     x, y = map(int, input().split())
+#     a.append(x)
+#     b.append(y)
+# a.sort()
+# b.sort()
+# print((a[- 1] - a[0]) * (b[- 1] - b[0]))
