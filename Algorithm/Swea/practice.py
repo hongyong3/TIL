@@ -4468,3 +4468,137 @@ sys.stdin = open("practice_input.txt", "r")
 # a.sort()
 # b.sort()
 # print((a[- 1] - a[0]) * (b[- 1] - b[0]))
+
+# boj 1092
+# import sys
+# input = sys.stdin.readline
+# n = int(input())
+# crane = list(map(int, input().split()))
+# m = int(input())
+# box = list(map(int, input().split()))
+# crane.sort(reverse = True)
+# box.sort(reverse = True)
+#
+# if crane[0] < box[0]:
+#     print(- 1)
+#     sys.exit()
+# else:
+#     ans = 0
+#     while True:
+#         if not box:
+#             break
+#         for i in range(len(crane)):
+#             for j in range(len(box)):
+#                 if crane[i] >= box[j]:
+#                     del box[j]
+#                     break
+#         ans += 1
+# print(ans)
+
+# boj 5212
+# dx = [- 1, 1, 0, 0]
+# dy = [0, 0, - 1, 1]
+#
+# n, m = map(int, input().split())
+# arr = [list(input()) for _ in range(n)]
+# for x in range(n):
+#     for y in range(m):
+#         if arr[x][y] == 'X':
+#             temp = 0
+#             for k in range(4):
+#                 nx = x + dx[k]
+#                 ny = y + dy[k]
+#                 if not (0 <= nx < n and 0 <= ny < m) or arr[nx][ny] == '.':
+#                     temp += 1
+#             if temp >= 3:
+#                 arr[x][y] = '0'
+#
+# while True:
+#     if 'X' not in arr[0]:
+#         arr.pop(0)
+#     else:
+#         break
+# while True:
+#     if 'X' not in arr[- 1]:
+#         arr.pop(- 1)
+#     else:
+#         break
+#
+# chk = True
+# while True:
+#     for i in range(len(arr)):
+#         if arr[i][0] == 'X':
+#             chk = False
+#             break
+#     if chk:
+#         for i in range(len(arr)):
+#             arr[i].pop(0)
+#     else:
+#         break
+#
+# chk = True
+# while True:
+#     for i in range(len(arr)):
+#         if arr[i][- 1] == 'X':
+#             chk = False
+#             break
+#     if chk:
+#         for i in range(len(arr)):
+#             arr[i].pop(- 1)
+#     else:
+#         break
+#
+# for i in range(len(arr)):
+#     for j in range(len(arr[i])):
+#         if arr[i][j] == '0':
+#             arr[i][j] = '.'
+# for a in arr:
+#     s = ''
+#     for b in a:
+#         s += b
+#     print(s)
+
+# boj 2303
+# n = int(input())
+# arr = []
+# for i in range(1, n + 1):
+#     data = list(map(int, input().split()))
+#     temp = 0
+#     for x in range(3):
+#         for y in range(x + 1, 4):
+#             for z in range(y + 1, 5):
+#                 if temp < (data[x] + data[y] + data[z]) % 10:
+#                     temp = (data[x] + data[y] + data[z]) % 10
+#     arr.append([i, temp])
+#
+# arr.sort(key = lambda x : (- x[1], - x[0]))
+# print(arr[0][0])
+
+# boj 3059
+# t = int(input())
+# for _ in range(t):
+#     alpha = [0] * 26
+#     ans = sum(list(range(65, 91)))
+#     s = input()
+#     for i in s:
+#         if not alpha[ord(i) - 65]:
+#             alpha[ord(i) - 65] += 1
+#             ans -= ord(i)
+#     print(ans)
+
+# boj 1940
+n = int(input())
+m = int(input())
+arr = sorted(list(map(int, input().split())))
+ans = 0
+l, r = 0, n - 1
+while l < r:
+    if arr[l] + arr[r] > m:
+        r -= 1
+    elif arr[l] + arr[r] < m:
+        l += 1
+    else:
+        l += 1
+        r -= 1
+        ans += 1
+print(ans)
