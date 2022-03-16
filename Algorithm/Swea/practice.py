@@ -4587,18 +4587,60 @@ sys.stdin = open("practice_input.txt", "r")
 #     print(ans)
 
 # boj 1940
-n = int(input())
-m = int(input())
-arr = sorted(list(map(int, input().split())))
-ans = 0
-l, r = 0, n - 1
-while l < r:
-    if arr[l] + arr[r] > m:
-        r -= 1
-    elif arr[l] + arr[r] < m:
-        l += 1
-    else:
-        l += 1
-        r -= 1
-        ans += 1
-print(ans)
+# n = int(input())
+# m = int(input())
+# arr = sorted(list(map(int, input().split())))
+# ans = 0
+# l, r = 0, n - 1
+# while l < r:
+#     if arr[l] + arr[r] > m:
+#         r -= 1
+#     elif arr[l] + arr[r] < m:
+#         l += 1
+#     else:
+#         l += 1
+#         r -= 1
+#         ans += 1
+# print(ans)
+
+# boj 5355
+# t = int(input())
+# for _ in range(t):
+#     arr = list(input().split())
+#     num = float(arr[0])
+#     for i in arr[1:]:
+#         if i == '@':
+#             num *= 3
+#         elif i == '%':
+#             num += 5
+#         else:
+#             num -= 7
+#     print(format(num, ".2f"))
+
+# boj 2476
+# n = int(input())
+# ans = 0
+# for _ in range(n):
+#     a, b, c = map(int, input().split())
+#     if a == b == c:
+#         money = 10000 + a * 1000
+#     elif a == b != c:
+#         money = 1000 + a * 100
+#     elif b == c != a:
+#         money = 1000 + b * 100
+#     elif a == c != b:
+#         money = 1000 + c * 100
+#     else:
+#         money = max(a, b, c) * 100
+#     ans = max(money, ans)
+# print(ans)
+
+# boj 11557
+t = int(input())
+for _ in range(t):
+    n = int(input())
+    arr = [list(input().split()) for _ in range(n)]
+    for i in range(n):
+        arr[i][1] = int(arr[i][1])
+    arr.sort(key = lambda x : (- x[1]))
+    print(arr[0][0])
