@@ -4636,11 +4636,11 @@ sys.stdin = open("practice_input.txt", "r")
 # print(ans)
 
 # boj 11557
-t = int(input())
-for _ in range(t):
-    n = int(input())
-    arr = [list(input().split()) for _ in range(n)]
-    for i in range(n):
-        arr[i][1] = int(arr[i][1])
-    arr.sort(key = lambda x : (- x[1]))
-    print(arr[0][0])
+# t = int(input())
+# for _ in range(t):
+#     n = int(input())
+#     arr = [list(input().split()) for _ in range(n)]
+#     for i in range(n):
+#         arr[i][1] = int(arr[i][1])
+#     arr.sort(key = lambda x : (- x[1]))
+#     print(arr[0][0])
