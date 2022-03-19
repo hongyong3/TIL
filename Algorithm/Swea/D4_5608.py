@@ -111,29 +111,57 @@ sys.stdin = open("D4_5608_input.txt", "r")
 #         x += 1
 #         print(mok, nam)
 
-T = int(input())
-for test_case in range(1):
-    N = int(input())
+# T = int(input())
+# for test_case in range(1):
+#     N = int(input())
+#
+#     idx = 0
+#     arr1 = [0]
+#     arr2 = [0] * (N + 1)
+#     maxCount, maxNum = 0, 0
+#
+#     for i in range(1, N):
+#         if pow(i, 3) < N:
+#             arr1.append(pow(i, 3))
+#             arr2[pow(i, 3)] = 1
+#         else:
+#             break
+#     arr1.append(0)
+#
+#     for i in range(N + 1):
+#         if i == arr1[idx]:
+#             idx += 1
+#         else:
+#             arr2[i] = arr2[i - arr1[idx - 1]] + 1
+#
+#     maxCount = max(arr2)
+#     maxNum = len(arr2) - 1 - arr2[::-1].index(maxCount)
+#     print("#{} {} {}".format(test_case + 1, maxCount, maxNum))
 
-    idx = 0
-    arr1 = [0]
-    arr2 = [0] * (N + 1)
-    maxCount, maxNum = 0, 0
-
-    for i in range(1, N):
-        if pow(i, 3) < N:
-            arr1.append(pow(i, 3))
-            arr2[pow(i, 3)] = 1
+'''
+# boj 1699
+# 제곱수의 합
+import sys
+input = sys.stdin.readline
+n = int(input())
+dp = list(range(n + 1))
+for i in range(1, n + 1):
+    for j in range(1, i + 1):
+        if j * j <= i:
+            dp[i] = min(dp[i], dp[i - j * j] + 1)
         else:
             break
-    arr1.append(0)
+print(dp[n])
+'''
 
-    for i in range(N + 1):
-        if i == arr1[idx]:
-            idx += 1
-        else:
-            arr2[i] = arr2[i - arr1[idx - 1]] + 1
-
-    maxCount = max(arr2)
-    maxNum = len(arr2) - 1 - arr2[::-1].index(maxCount)
-    print("#{} {} {}".format(test_case + 1, maxCount, maxNum))
+# T = int(input())
+# dp = list(range(45))
+# for i in range(1, 45):
+#     for j in range(1, i + 1):
+#         if j ** 3 <= i:
+#             dp[i] = min(dp[i], dp[i - j * j * j] + 1)
+#         else:
+#             break
+# print(dp)
+# for test_case in range(T):
+#     M = int(input())

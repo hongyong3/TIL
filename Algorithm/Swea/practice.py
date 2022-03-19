@@ -4646,7 +4646,82 @@ sys.stdin = open("practice_input.txt", "r")
 #     print(arr[0][0])
 
 # boj 2477
-k = int(input())
-for _ in range(6):
-    d, x = map(int, input().split())
-    
+# k = int(input())
+# arr = [list(map(int, input().split())) for _ in range(6)]
+# maxW = maxH = maxWidx = maxHidx = 0
+# for i in range(6):
+#     if arr[i][0] == 1 or arr[i][0] == 2:
+#         if arr[i][1] > maxW:
+#             maxW = arr[i][1]
+#             maxWidx = i
+#     else:
+#         if arr[i][1] > maxH:
+#             maxH = arr[i][1]
+#             maxHidx = i
+#
+# minW = abs(arr[(maxWidx - 1) % 6][1] - arr[(maxWidx + 1) % 6][1])
+# minH = abs(arr[(maxHidx - 1) % 6][1] - arr[(maxHidx + 1) % 6][1])
+# ans = (maxW * maxH - minW * minH) * k
+# print(ans)
+
+# boj 15973
+# px1, py1, px2, py2 = map(int, input().split())
+# qx1, qy1, qx2, qy2 = map(int, input().split())
+#
+# x1 = px1 if px1 > qx1 else qx1
+# x2 = px2 if px2 < qx2 else qx2
+# y1 = py1 if py1 > qy1 else qy1
+# y2 = py2 if py2 < qy2 else qy2
+# x = x2 - x1
+# y = y2 - y1
+# if x > 0 and y > 0:
+#     print("FACE")
+# elif x > 0 and y == 0 or x == 0 and y > 0:
+#     print("LINE")
+# elif x < 0 or y < 0:
+#     print("NULL")
+# elif x == 0 and y == 0:
+#     print("POINT")
+
+# boj 1699
+# import sys
+# input = sys.stdin.readline
+# n = int(input())
+# dp = list(range(n + 1))
+# for i in range(1, n + 1):
+#     for j in range(1, i + 1):
+#         if j * j <= i:
+#             dp[i] = min(dp[i], dp[i - j * j] + 1)
+#         else:
+#             break
+# print(dp[n])
+
+# boj 9613
+# def gcd(x, y):
+#     while y:
+#         x, y = y, x % y
+#     return x
+#
+# t = int(input())
+# for _ in range(t):
+#     arr = list(map(int, input().split()))
+#     ans = 0
+#     for i in range(arr[0]):
+#         for j in range(i + 1, arr[0]):
+#             ans += gcd(arr[i + 1], arr[j + 1])
+#     print(ans)
+
+# boj 23795
+# ans = 0
+# while True:
+#     n = int(input())
+#     if n == - 1:
+#         break
+#     ans += n
+# print(ans)
+
+# boj 1018
+n, m = map(int, input().split())
+arr = [list(input()) for _ in range(n)]
+for i in arr:
+    print(i)
