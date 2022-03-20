@@ -4721,7 +4721,23 @@ sys.stdin = open("practice_input.txt", "r")
 # print(ans)
 
 # boj 1018
+BW = ['BWBWBWBW', 'WBWBWBWB', 'BWBWBWBW', 'WBWBWBWB', 'BWBWBWBW', 'WBWBWBWB', 'BWBWBWBW', 'WBWBWBWB']
+WB = ['WBWBWBWB', 'BWBWBWBW', 'WBWBWBWB', 'BWBWBWBW', 'WBWBWBWB', 'BWBWBWBW', 'WBWBWBWB', 'BWBWBWBW']
+
+def Wfirst(i, j):
+    for x in range(i, i + 8):
+        for y in range(j, j + 8):
+            pass
+
+def Bfirst(i, j):
+    for x in range(i, i + 8):
+        for y in range(j, j + 8):
+            pass
+
 n, m = map(int, input().split())
 arr = [list(input()) for _ in range(n)]
-for i in arr:
-    print(i)
+ans = 0
+for i in range(n - 7):
+    for j in range(m - 7):
+        if arr[i][j] == 'W':
+            pass
