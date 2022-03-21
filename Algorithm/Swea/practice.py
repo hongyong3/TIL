@@ -4721,23 +4721,56 @@ sys.stdin = open("practice_input.txt", "r")
 # print(ans)
 
 # boj 1018
-BW = ['BWBWBWBW', 'WBWBWBWB', 'BWBWBWBW', 'WBWBWBWB', 'BWBWBWBW', 'WBWBWBWB', 'BWBWBWBW', 'WBWBWBWB']
-WB = ['WBWBWBWB', 'BWBWBWBW', 'WBWBWBWB', 'BWBWBWBW', 'WBWBWBWB', 'BWBWBWBW', 'WBWBWBWB', 'BWBWBWBW']
+# BW = ["BWBWBWBW", "WBWBWBWB", "BWBWBWBW", "WBWBWBWB", "BWBWBWBW", "WBWBWBWB", "BWBWBWBW", "WBWBWBWB"]
+# WB = ["WBWBWBWB", "BWBWBWBW", "WBWBWBWB", "BWBWBWBW", "WBWBWBWB", "BWBWBWBW", "WBWBWBWB", "BWBWBWBW"]
+#
+# def chess(x, y, wcnt, bcnt):
+#     for i in range(8):
+#         for j in range(8):
+#             if arr[x + i][y + j] != WB[i][j]:
+#                 wcnt += 1
+#             if arr[x + i][y + j] != BW[i][j]:
+#                 bcnt += 1
+#     return min(wcnt, bcnt)
+#
+# n, m = map(int, input().split())
+# arr = [list(input()) for _ in range(n)]
+# ans = float('inf')
+# for i in range(n - 7):
+#     for j in range(m - 7):
+#         temp = chess(i, j, 0, 0)
+#         if ans > temp:
+#             ans = temp
+# print(ans)
 
-def Wfirst(i, j):
-    for x in range(i, i + 8):
-        for y in range(j, j + 8):
-            pass
+# boj 19572
+# d1, d2, d3 = map(int, input().split())
+# a = (d1 + d2 - d3) / 2
+# b = (d1 - d2 + d3) / 2
+# c = (- d1 + d2 + d3) / 2
+# if min(a, b, c) <= 0:
+#     print(- 1)
+# else:
+#     print(1)
+#     print(a, b, c)
 
-def Bfirst(i, j):
-    for x in range(i, i + 8):
-        for y in range(j, j + 8):
-            pass
+# boj 14490
+# def gcd(x, y):
+#     while y:
+#         x, y = y, x % y
+#     return x
+#
+# a, b = map(int, input().split(':'))
+# g = gcd(a, b)
+# print("{}:{}".format(a // g, b // g))
 
-n, m = map(int, input().split())
-arr = [list(input()) for _ in range(n)]
-ans = 0
-for i in range(n - 7):
-    for j in range(m - 7):
-        if arr[i][j] == 'W':
-            pass
+# boj 2168
+# def gcd(x, y):
+#     while y:
+#         x, y = y, x % y
+#     return x
+#
+# a, b = map(int, input().split())
+# g = gcd(a, b)
+# print(a + b - g)
+
