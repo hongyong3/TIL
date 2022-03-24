@@ -4774,3 +4774,161 @@ sys.stdin = open("practice_input.txt", "r")
 # g = gcd(a, b)
 # print(a + b - g)
 
+# boj 23251
+# import sys
+# input = sys.stdin.readline
+# t = int(input())
+# for _ in range(t):
+#     k = int(input())
+#     print(k * 23)
+
+# boj 20205
+# n, k = map(int, input().split())
+# for i in range(n):
+#     arr = list(map(int, input().split()))
+#     ans = []
+#     for j in arr:
+#         ans += [j] * k
+#     for _ in range(k):
+#         print(*ans)
+
+# boj 10474
+# while True:
+#     x, y = map(int, input().split())
+#     if x == y == 0:
+#         break
+#     print("{} {} / {}".format(x // y, x % y, y))
+
+# boj 1337
+# n = int(input())
+# arr = sorted([int(input()) for _ in range(n)])
+# ans, cnt, idx = 0, 0, 0
+# for i in range(n):
+#     cnt += 1
+#     while arr[i] - arr[idx] > 4:
+#         idx += 1
+#         cnt -= 1
+#     ans = max(ans, cnt)
+#
+# if ans > 5:
+#     ans = 5
+# print(5 - ans)
+
+# boj 10821
+# arr = list(map(int, input().split(',')))
+# print(len(arr))
+
+# boj 1456
+# import sys
+# input = sys.stdin.readline
+# A, B = map(int, input().split())
+# C = int(B ** 0.5) + 1
+# arr = [1] * C
+# arr[1] = 0
+# for i in range(2, C):
+#     if i * i > C:
+#         break
+#     if not arr[i]:
+#         continue
+#     for j in range(i * i, C, i):
+#         arr[j] = 0
+#
+# ans = 0
+# for i in range(1, C):
+#     if arr[i]:
+#         j = i * i
+#         while True:
+#             if j < A:
+#                 j *= i
+#                 continue
+#             if j > B:
+#                 break
+#             j *= i
+#             ans += 1
+# print(ans)
+
+# boj 4504
+# n = int(input())
+# while True:
+#     num = int(input())
+#     if num == 0:
+#         break
+#     if num % n:
+#         print("{} is NOT a multiple of {}.".format(num, n))
+#     else:
+#         print("{} is a multiple of {}.".format(num, n))
+
+# boj 12605
+# T = int(input())
+# for test_case in range(T):
+#     s = input().split()[:: - 1]
+#     print("Case #{}:".format(test_case + 1), *s)
+
+# boj 2596
+# alpha = ['000000', '001111', '010011', '011100', '100110', '101001', '110101', '111010']
+# n = int(input())
+# s = input()
+# words = []
+# for i in range(0, n * 6, 6):
+#     w = s[i : i + 6]
+#     words.append(w)
+#
+# ans = ''
+# for i in words:
+#     chk = 0
+#     for j in alpha:
+#         cnt = 0
+#         for k in range(6):
+#             if i[k] == j[k]:
+#                 cnt += 1
+#         if cnt >= 5:
+#             ans += chr(alpha.index(j) + 65)
+#             break
+#         else:
+#             chk += 1
+#     if chk == len(alpha):
+#         print(words.index(i) + 1)
+#         quit()
+# print(ans)
+
+# boj 16483
+# T = int(input())
+# print(round((0.5 * T) ** 2))
+
+# boj 1284
+# while True:
+#     s = input()
+#     if s == '0':
+#         break
+#     ans = len(s) + 1
+#     for i in s:
+#         if i == '0':
+#             ans += 4
+#         elif i == '1':
+#             ans += 2
+#         else:
+#             ans += 3
+#     print(ans)
+
+# boj 1417
+# n, p = map(int, input().split())
+# num = n
+# arr = [n]
+# while True:
+#     num = (num * n) % p
+#     if num not in arr:
+#         arr.append(num)
+#     else:
+#         break
+#
+# ans = 1
+# for i in arr[:: - 1]:
+#     if i == num:
+#         break
+#     else:
+#         ans += 1
+# print(ans)
+
+#boj 3004
+n = int(input())
+print((n // 2 + 1) * (n // 2 + 2) if n % 2 else (n // 2 + 1) ** 2)
