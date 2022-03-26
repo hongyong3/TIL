@@ -4929,6 +4929,10 @@ sys.stdin = open("practice_input.txt", "r")
 #         ans += 1
 # print(ans)
 
-#boj 3004
+# boj 3004
+# n = int(input())
+# print((n // 2 + 1) * (n // 2 + 2) if n % 2 else (n // 2 + 1) ** 2)
+
+# boj 18187
 n = int(input())
-print((n // 2 + 1) * (n // 2 + 2) if n % 2 else (n // 2 + 1) ** 2)
+arr = [1, 2, 4, 7, 10]
