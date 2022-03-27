@@ -4935,4 +4935,3 @@ sys.stdin = open("practice_input.txt", "r")
 
 # boj 18187
 n = int(input())
-arr = [1, 2, 4, 7, 10]
