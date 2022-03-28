@@ -4934,4 +4934,60 @@ sys.stdin = open("practice_input.txt", "r")
 # print((n // 2 + 1) * (n // 2 + 2) if n % 2 else (n // 2 + 1) ** 2)
 
 # boj 18187
-n = int(input())
+# n = int(input())
+# ans = 0
+# idx = 1
+# for j in range(n + 1):
+#     ans += idx
+#     if j % 3:
+#         idx += 1
+# print(ans)
+
+# boj 18111
+# import sys
+# input = sys.stdin.readline
+# n, m, b = map(int, input().split())
+# arr = [list(map(int, input().split())) for _ in range(n)]
+# ans = float('inf')
+# height = 0
+# for i in range(257):
+#     maxB, minB = 0, 0
+#     for j in range(n):
+#         for k in range(m):
+#             if arr[j][k] < i:
+#                 minB += (i - arr[j][k])
+#             else:
+#                 maxB += (arr[j][k] - i)
+#     item = maxB + b
+#     if item < minB:
+#         continue
+#     time = 2 * maxB + minB
+#     if time <= ans:
+#         ans = time
+#         height = i
+# print(ans, height)
+
+# boj 1769
+# n = input()
+# if len(n) > 1:
+#     cnt, num = 0, 0
+#     while len(n) > 1:
+#         cnt += 1
+#         for i in n:
+#             num += int(i)
+#         if num < 10:
+#             print(cnt)
+#             if num % 3:
+#                 print("NO")
+#             else:
+#                 print("YES")
+#             break
+#         n = str(num)
+#         num = 0
+# else:
+#     print(0)
+#     if int(n) % 3:
+#         print("NO")
+#     else:
+#         print("YES")
+
