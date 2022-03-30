@@ -4992,15 +4992,15 @@ sys.stdin = open("practice_input.txt", "r")
 #         print("YES")
 
 # boj 10698
-T = int(input())
-for test_case in range(T):
-    s = input().split()
-    ans = "YES"
-    a, cal, b, c = int(s[0]), s[1], int(s[2]), int(s[4])
-    if cal == '+':
-        if a + b != c:
-            ans = "NO"
-    else:
-        if a - b != c:
-            ans = "NO"
-    print("Case {}: {}".format(test_case + 1, ans))
+# T = int(input())
+# for test_case in range(T):
+#     s = input().split()
+#     ans = "YES"
+#     a, cal, b, c = int(s[0]), s[1], int(s[2]), int(s[4])
+#     if cal == '+':
+#         if a + b != c:
+#             ans = "NO"
+#     else:
+#         if a - b != c:
+#             ans = "NO"
+#     print("Case {}: {}".format(test_case + 1, ans))
