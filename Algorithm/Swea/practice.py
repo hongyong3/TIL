@@ -5004,3 +5004,5 @@ sys.stdin = open("practice_input.txt", "r")
 #         if a - b != c:
 #             ans = "NO"
 #     print("Case {}: {}".format(test_case + 1, ans))
+
+# boj 
