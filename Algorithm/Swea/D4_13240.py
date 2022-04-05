@@ -6,6 +6,9 @@ for test_case in range(T):
     H, W, N = map(int, input().split())
     arr = input().split()
     wordLen = len(max(arr))
+    ans = 0
+    # if wordLen <= W:
+
     # garo, sero = float('inf'), float('inf')
     # for i in arr:
     #     minGaro = W // len(i)

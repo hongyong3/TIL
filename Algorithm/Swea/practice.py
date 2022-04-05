@@ -5005,4 +5005,118 @@ sys.stdin = open("practice_input.txt", "r")
 #             ans = "NO"
 #     print("Case {}: {}".format(test_case + 1, ans))
 
-# boj 
+# boj 5618
+# import sys
+# input = sys.stdin.readline
+# def gcd(x, y):
+#     while y:
+#         x, y = y, x % y
+#     return x
+#
+# n = int(input())
+# num = list(map(int, input().split()))
+# g = gcd(num[0], gcd(num[1], num[- 1]))
+# for i in range(1, (g // 2) + 1):
+#     if g % i == 0:
+#         print(i)
+# print(g)
+
+# boj 21212
+# n = int(input())
+# ans = float('inf')
+# for _ in range(n):
+#     a, b = map(int, input().split())
+#     ans = min(ans, b // a)
+# print(ans)
+
+# boj 17219
+# import sys
+# input = sys.stdin.readline
+# n, m = map(int, input().split())
+# data = dict()
+# for _ in range(n):
+#     site, password = input().split()
+#     data[site] = password
+#
+# for _ in range(m):
+#     find = input().rstrip()
+#     print(data[find])
+
+# boj 2468
+# from collections import deque
+# dx = [- 1, 1, 0, 0]
+# dy = [0, 0, - 1, 1]
+# def bfs(x, y, val):
+#     q = deque()
+#     q.append((x, y))
+#     visited[x][y] = val
+#     while q:
+#         x, y = q.popleft()
+#         for k in range(4):
+#             nx = x + dx[k]
+#             ny = y + dy[k]
+#             if 0 <= nx < n and 0 <= ny < n:
+#                 if arr[nx][ny] <= val:
+#                     continue
+#                 if visited[nx][ny] == val:
+#                     continue
+#                 visited[nx][ny] = val
+#                 q.append((nx, ny))
+#     return 1
+#
+#
+# n = int(input())
+# arr = [list(map(int, input().split())) for _ in range(n)]
+# visited = [[- 1] * n for _ in range(n)]
+# minB, maxB = float('inf'), - float('inf')
+# ans = 1
+#
+# for i in range(n):
+#     for j in range(n):
+#         if arr[i][j] < minB:
+#             minB = arr[i][j]
+#         if arr[i][j] > maxB:
+#             maxB = arr[i][j]
+#
+# for r in range(minB, maxB):
+#     temp = 0
+#     for i in range(n):
+#         for j in range(n):
+#             if arr[i][j] > r and visited[i][j] != r:
+#                 temp += bfs(i, j, r)
+#     ans = max(ans, temp)
+# print(ans)
+
+# boj 15652
+# def solve(d, idx, n, m):
+#     if d == m:
+#         print(*arr)
+#         return
+#     for i in range(idx, n):
+#         arr.append(i + 1)
+#         solve(d + 1, i, n, m)
+#         arr.pop()
+#
+# n, m = map(int, input().split())
+# arr = []
+# solve(0, 0, n, m)
+
+# boj 11279
+# import sys, heapq
+# input = sys.stdin.readline
+# n = int(input())
+# q = []
+# for _ in range(n):
+#     x = int(input())
+#     if x:
+#         heapq.heappush(q, - x)
+#     else:
+#         if q:
+#             print(abs(heapq.heappop(q)))
+#         else:
+#             print(0)
+
+# boj 1252
+# a, b = input().split()
+# print(bin(int(a, 2) + int(b, 2))[2 :])
+
