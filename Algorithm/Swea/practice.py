@@ -5120,4 +5120,18 @@ sys.stdin = open("practice_input.txt", "r")
 # a, b = input().split()
 # print(bin(int(a, 2) + int(b, 2))[2 :])
 
-# boj
+# boj 2153
+def prime(n):
+    for i in range(2, n):
+        if not n % i:
+            return False
+    return True
+
+s = input()
+ans = 0
+for i in s:
+    if i.isupper():
+        ans += ord(i) - 64
+    else:
+        ans += ord(i) - 96
+print('It is a prime word.' if prime(ans) else 'It is not a prime word.')
