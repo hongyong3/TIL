@@ -5135,3 +5135,16 @@ sys.stdin = open("practice_input.txt", "r")
 #     else:
 #         ans += ord(i) - 96
 # print('It is a prime word.' if prime(ans) else 'It is not a prime word.')
+
+# boj 6502
+test_case = 1
+while True:
+    data = list(map(int, input().split()))
+    ans = 'does not fit on the table.'
+    if len(data) == 1:
+        break
+    r, w, l = data[0], data[1], data[2]
+    if (2 * r) ** 2 >= w ** 2 + l ** 2:
+        ans = 'fits on the table.'
+    print("Pizza {} {}".format(test_case, ans))
+    test_case += 1
