@@ -5137,14 +5137,138 @@ sys.stdin = open("practice_input.txt", "r")
 # print('It is a prime word.' if prime(ans) else 'It is not a prime word.')
 
 # boj 6502
-test_case = 1
-while True:
-    data = list(map(int, input().split()))
-    ans = 'does not fit on the table.'
-    if len(data) == 1:
-        break
-    r, w, l = data[0], data[1], data[2]
-    if (2 * r) ** 2 >= w ** 2 + l ** 2:
-        ans = 'fits on the table.'
-    print("Pizza {} {}".format(test_case, ans))
-    test_case += 1
+# test_case = 1
+# while True:
+#     data = list(map(int, input().split()))
+#     ans = 'does not fit on the table.'
+#     if len(data) == 1:
+#         break
+#     r, w, l = data[0], data[1], data[2]
+#     if (2 * r) ** 2 >= w ** 2 + l ** 2:
+#         ans = 'fits on the table.'
+#     print("Pizza {} {}".format(test_case, ans))
+#     test_case += 1
+
+# boj 10174
+# t = int(input())
+# for _ in range(t):
+#     s = input().lower()
+#     print("Yes" if s == s[:: - 1] else "No")
+
+# boj 15128
+# p1, q1, p2, q2 = map(int, input().split())
+# area = p1 * p2 / (q1 * q2 * 2)
+# print(1 if area == int(area) else 0)
+
+# boj 11561
+# import sys
+# input = sys.stdin.readline
+# for _ in range(int(input())):
+#     print(int((1 + (8 * int(input()) + 1) ** 0.5) / 2) - 1)
+
+# boj 1371
+# alpha = [0] * 26
+# while True:
+#     try:
+#         s = input()
+#         for i in s:
+#             if i != ' ':
+#                 alpha[ord(i) - 97] += 1
+#     except:
+#         break
+# ans = ''
+# cnt = max(alpha)
+# for i in range(26):
+#     if alpha[i] == cnt:
+#         ans += chr(i + 97)
+# print(ans)
+
+# boj 7510
+# T = int(input())
+# for test_case in range(1, T + 1):
+#     a, b, c = sorted(map(int, input().split()))
+#     print("Scenario #{}:".format(test_case))
+#     if a ** 2 + b ** 2 == c ** 2:
+#         print("yes")
+#     else:
+#         print("no")
+#     if test_case != T:
+#         print()
+
+# boj 18406
+# n = input()
+# lenN = len(n) // 2
+# a, b = 0, 0
+# for i in range(lenN):
+#     a += int(n[i])
+#     b += int(n[i + lenN])
+# print("LUCKY" if a == b else "READY")
+
+# boj 20053
+# import sys
+# input = sys.stdin.readline
+# t = int(input())
+# for _ in range(t):
+#     n = int(input())
+#     arr = list(map(int, input().split()))
+#     print(min(arr), max(arr))
+
+# boj 1517
+# import sys
+# input = lambda: sys.stdin.readline().rstrip()
+#
+# def merge_sort(s, e):
+#     global ans, arr
+#
+#     if s < e:
+#         m = (s + e) // 2
+#         merge_sort(s, m)
+#         merge_sort(m + 1, e)
+#
+#         a, b = s, m + 1
+#         temp = []
+#
+#         while a <= m and b <= e:
+#             if arr[a] <= arr[b]:
+#                 temp.append(arr[a])
+#                 a += 1
+#             else:
+#                 temp.append(arr[b])
+#                 b += 1
+#                 ans += (m - a + 1)
+#
+#         if a <= m:
+#             temp = temp + arr[a : m + 1]
+#         if b <= e:
+#             temp = temp + arr[b : e + 1]
+#
+#         for i in range(len(temp)):
+#             arr[s + i] = temp[i]
+#
+# n = int(input())
+# arr = list(map(int, input().split()))
+# ans = 0
+# merge_sort(0, n - 1)
+# print(ans)
+
+# boj 10972
+# import sys
+# input = sys.stdin.readline
+# n = int(input())
+# arr = list(map(int, input().split()))
+# idx = - 1
+# for i in range(n - 1, 0, - 1):
+#     if arr[i - 1] < arr[i]:
+#         idx = i - 1
+#         break
+#
+# if idx == - 1:
+#     print(- 1)
+# else:
+#     for i in range(n - 1, 0, - 1):
+#         if arr[idx] < arr[i]:
+#             arr[idx], arr[i] = arr[i], arr[idx]
+#             arr = arr[: idx + 1] + sorted(arr[idx + 1 :])
+#             print(*arr)
+#             break
+
