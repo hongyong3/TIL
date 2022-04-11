@@ -5272,3 +5272,74 @@ sys.stdin = open("practice_input.txt", "r")
 #             print(*arr)
 #             break
 
+# boj 2573
+# import sys
+# from copy import deepcopy
+# from collections import deque
+# sys.setrecursionlimit(10000)
+# input = sys.stdin.readline
+#
+# dx = [- 1, 1, 0, 0]
+# dy = [0, 0, - 1, 1]
+#
+# def findSea(x, y):
+#     res = 0
+#     for k in range(4):
+#         nx = x + dx[k]
+#         ny = y + dy[k]
+#         if 0 <= nx < n and 0 <= ny < m and not temp[nx][ny]:
+#             res += 1
+#     return res
+#
+#
+# def bfs(x, y):
+#     q = deque()
+#     q.append((x, y))
+#
+#     while q:
+#         x, y = q.popleft()
+#         for k in range(4):
+#             nx = x + dx[k]
+#             ny = y + dy[k]
+#             if 0 <= nx < n and 0 <= ny < m and arr[nx][ny] and not visited[nx][ny]:
+#                 visited[nx][ny] = 1
+#                 q.append((nx, ny))
+#
+#
+# n, m = map(int, input().split())
+# arr = [list(map(int, input().split())) for _ in range(n)]
+# ans = 1
+#
+# while True:
+#     visited = [[0] * m for _ in range(n)]
+#     temp = deepcopy(arr)
+#     cnt, chk = 0, True
+#
+#     for i in range(1, n - 1):
+#         if not chk:
+#             break
+#         for j in range(1, m - 1):
+#             if arr[i][j]:
+#                 chk = False
+#                 break
+#     if chk:
+#         print(0)
+#         break
+#
+#     for i in range(1, n - 1):
+#         for j in range(1, m - 1):
+#             if temp[i][j]:
+#                 arr[i][j] = max(0, arr[i][j] - findSea(i, j))
+#
+#     for i in range(1, n - 1):
+#         for j in range(1, m - 1):
+#             if not visited[i][j] and arr[i][j]:
+#                 bfs(i, j)
+#                 visited[i][j] = 1
+#                 cnt += 1
+#
+#     if cnt >= 2:
+#         print(ans)
+#         break
+#
+#     ans += 1
