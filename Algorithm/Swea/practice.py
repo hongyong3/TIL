@@ -5343,3 +5343,47 @@ sys.stdin = open("practice_input.txt", "r")
 #         break
 #
 #     ans += 1
+
+# boj 2979
+# import sys
+# input = sys.stdin.readline
+# A, B, C = map(int, input().split())
+# arr = [0] * 101
+# ans = 0
+# for _ in range(3):
+#     a, b = map(int, input().split())
+#     for i in range(a, b):
+#         arr[i] += 1
+# for i in range(101):
+#     if arr[i] == 1:
+#         ans += A
+#     elif arr[i] == 2:
+#         ans += 2 * B
+#     elif arr[i] == 3:
+#         ans += 3 * C
+# print(ans)
+
+# boj 16400
+import sys
+input = sys.stdin.readline
+
+def isPrime(num):
+    for i in range(2, int(num ** 0.5) + 1):
+        if num % i == 0:
+            return False
+    return True
+
+
+n = int(input())
+dp, prime = [0] * (n + 1), []
+dp[0] = 1
+
+for i in range(2, n + 1):
+    if isPrime(i):
+        prime.append(i)
+
+for i in prime:
+    for j in range(i, n + 1):
+        dp[j] = (dp[j] + dp[j - i]) % 123456789
+
+print(dp[n])
