@@ -5364,26 +5364,39 @@ sys.stdin = open("practice_input.txt", "r")
 # print(ans)
 
 # boj 16400
-import sys
-input = sys.stdin.readline
+# import sys
+# input = sys.stdin.readline
+#
+# def isPrime(num):
+#     for i in range(2, int(num ** 0.5) + 1):
+#         if num % i == 0:
+#             return False
+#     return True
+#
+#
+# n = int(input())
+# dp, prime = [0] * (n + 1), []
+# dp[0] = 1
+#
+# for i in range(2, n + 1):
+#     if isPrime(i):
+#         prime.append(i)
+#
+# for i in prime:
+#     for j in range(i, n + 1):
+#         dp[j] = (dp[j] + dp[j - i]) % 123456789
+#
+# print(dp[n])
 
-def isPrime(num):
-    for i in range(2, int(num ** 0.5) + 1):
-        if num % i == 0:
-            return False
-    return True
 
-
-n = int(input())
-dp, prime = [0] * (n + 1), []
-dp[0] = 1
-
-for i in range(2, n + 1):
-    if isPrime(i):
-        prime.append(i)
-
-for i in prime:
-    for j in range(i, n + 1):
-        dp[j] = (dp[j] + dp[j - i]) % 123456789
-
-print(dp[n])
+# boj 6484
+def pf(number):
+    factors=[]
+    d=2
+    while(number>1):
+        while(number%d==0):
+            factors.append(d)
+            number=number/d
+        d+=1
+    return factors
+print(pf(1234569864896848585348583409583048340))
