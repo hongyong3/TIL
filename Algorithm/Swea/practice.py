@@ -5390,13 +5390,112 @@ sys.stdin = open("practice_input.txt", "r")
 
 
 # boj 6484
-def pf(number):
-    factors=[]
-    d=2
-    while(number>1):
-        while(number%d==0):
-            factors.append(d)
-            number=number/d
-        d+=1
-    return factors
-print(pf(1234569864896848585348583409583048340))
+# def findPrimeFactors(n, k):
+#     tPrimeFactorsMap = {}
+#     tCompositeChecker = [True] * 2 + [False] * n
+#     for p in range(n + 1):
+#         if tCompositeChecker[p]:
+#             continue
+#         q, m = p, 1
+#         tPrimeCnt = 0
+#         tPrimePowers = [0] * (n + 1)
+#
+#         while True:
+#             tPrimePowers[q] = tPrimePowers[m] + 1
+#             if q <= k:
+#                 tPrimeCnt -= tPrimePowers[q]
+#             if q > n - k:
+#                 tPrimeCnt += tPrimePowers[q]
+#
+#             q += p
+#             m += 1
+#             if q > n:
+#                 break
+#             tCompositeChecker[q] = True
+#         tPrimeFactorsMap[p] = tPrimeCnt
+#     return tPrimeFactorsMap
+#
+# T = int(input())
+# for test_case in range(1):
+#     N, K = map(int, input().split())
+#     ans = 1
+#     a = findPrimeFactors(N, K)
+#     print(a)
+#     print(len(a))
+#     for val in a.values():
+#         if val:
+#             ans *= (val + 1)
+#             ans %= 1000000007
+#     print("#{} {}".format(test_case + 1, ans))
+
+# boj 1676
+# n=int(input())
+# a,b=0,5
+# while b<=n:
+#     a+=n//b
+#     b*=5
+# print(a)
+
+# swea 6484
+# def x_y(x, y):
+#     xy = 1
+#     while y > 0:
+#         if (y % 2) == 1:
+#             xy *= x
+#             y -= 1
+#             xy %= m
+#         x *= x
+#         x %= m
+#         y /= 2
+#     return xy
+#
+# T = int(input())
+# for test_case in range(T):
+#     N, R = map(int, input().split())
+#     ans1, ans2, m = 1, 1, 1234567891
+#     for i in range(N - R + 1, N + 1):
+#         ans1 *= i
+#         ans1 %= m
+#     for i in range(1, R + 1):
+#         ans2 *= i
+#         ans2 %= m
+#
+#     ans2 = x_y(ans2, m - 2)
+#     ans2 %= m
+#     ans1 *= ans2
+#     ans1 %= m
+#     arr = {}
+#
+#     num = ans1
+#     k = 2
+#     while num != 1:
+#         if num % k == 0:
+#             if k not in arr:
+#                 arr[k] = 1
+#             else:
+#                 arr[k] += 1
+#             num //= k
+#         else:
+#             k += 1
+#     ans = 1
+#     for i in arr.values():
+#         ans *= (i + 1)
+#     print("#{} {}".format(test_case + 1, ans))
+
+# boj 15996
+# n, a = map(int, input().split())
+# ans = 0
+# while n:
+#     ans += n // a
+#     n //= a
+# print(ans)
+
+# boj 13723
+import sys
+input = sys.stdin.readline
+n = int(input())
+ans = 1
+while n != ans:
+    n //= ans
+    ans += 1
+print(ans)
