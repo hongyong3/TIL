@@ -5491,6 +5491,9 @@ sys.stdin = open("practice_input.txt", "r")
 # print(ans)
 
 # boj 13723
+'''
+점화식이 있을 듯...
+'''
 import sys
 input = sys.stdin.readline
 n = int(input())
