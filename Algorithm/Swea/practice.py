@@ -5490,15 +5490,56 @@ sys.stdin = open("practice_input.txt", "r")
 #     n //= a
 # print(ans)
 
-# boj 13723
-'''
-점화식이 있을 듯...
-'''
-import sys
-input = sys.stdin.readline
-n = int(input())
-ans = 1
-while n != ans:
-    n //= ans
-    ans += 1
-print(ans)
+# boj 1440
+# s = input()
+# i = 0
+# while i < len(s):
+#     print(s[i], end = '')
+#     if s[i] in 'aeiou':
+#         i += 2
+#     i += 1
+
+# boj 14891
+# from collections import deque
+#
+# def left(idx, l, dir):
+#     if l < 0:
+#         return
+#     if gear[idx][6] != gear[l][2]:
+#         left(l, l - 1, - dir)
+#         gear[l].rotate(- dir)
+#
+#
+# def right(idx, r, dir):
+#     if r > 3:
+#         return
+#     if gear[idx][2] != gear[r][6]:
+#         right(r, r + 1, - dir)
+#         gear[r].rotate(- dir)
+#
+#
+# gear = [deque(input()) for _ in range(4)]
+# ans = 0
+# k = int(input())
+#
+# for _ in range(k):
+#     n, d = map(int, input().split())
+#     left(n - 1, n - 2, d)
+#     right(n - 1, n, d)
+#     gear[n - 1].rotate(d)
+#
+# for i in range(4):
+#     if gear[i][0] == '1':
+#         ans += 2 ** i
+# print(ans)
+
+# boj 13136
+# r, c, n = map(int, input().split())
+# s = r // n if r / n == int(r/ n) else (r // n) + 1
+# g = c // n if c / n == int(c/ n) else (c // n) + 1
+# print(s * g)
+
+# boj 7891
+t = int(input())
+for _ in range(t):
+    print(sum(map(int, input().split())))
