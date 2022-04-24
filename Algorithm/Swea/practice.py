@@ -5540,6 +5540,6 @@ sys.stdin = open("practice_input.txt", "r")
 # print(s * g)
 
 # boj 7891
-t = int(input())
-for _ in range(t):
-    print(sum(map(int, input().split())))
+# t = int(input())
+# for _ in range(t):
+#     print(sum(map(int, input().split())))
