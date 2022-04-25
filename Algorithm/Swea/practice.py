@@ -5543,3 +5543,9 @@ sys.stdin = open("practice_input.txt", "r")
 # t = int(input())
 # for _ in range(t):
 #     print(sum(map(int, input().split())))
+
+# boj 2004
+import sys
+input = sys.stdin.readline
+
+n, m = map(int, input().split())
