@@ -5545,7 +5545,44 @@ sys.stdin = open("practice_input.txt", "r")
 #     print(sum(map(int, input().split())))
 
 # boj 2004
-import sys
-input = sys.stdin.readline
+# import sys
+# input = sys.stdin.readline
+#
+# def fivecnt(n):
+#     res = 0
+#     while n:
+#         n //= 5
+#         res += n
+#     return res
+#
+# def twocnt(n):
+#     res = 0
+#     while n:
+#         n //= 2
+#         res += n
+#     return res
+#
+# n, m = map(int, input().split())
+# if m == 0:
+#     print(0)
+# else:
+#     twocnt = twocnt(n) - twocnt(m) - twocnt(n - m)
+#     fivecnt = fivecnt(n) - fivecnt(m) - fivecnt(n - m)
+#     print(min(twocnt, fivecnt))
 
-n, m = map(int, input().split())
+# boj 1
+T = int(input())
+for test_case in range(T):
+    N = int(input())
+    arr = list(map(int, input().split()))
+    even, odd = [], []
+    ans = 'yes'
+    for i in arr:
+        if i % 2:
+            odd.append(i)
+        else:
+            even.append(i)
+    if not even:
+        print("#{} {}".format(test_case + 1, 'no'))
+    else:
+        print("#{} {}".format(test_case + 1, 'yes'))
