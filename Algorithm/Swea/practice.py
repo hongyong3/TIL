@@ -5571,18 +5571,45 @@ sys.stdin = open("practice_input.txt", "r")
 #     print(min(twocnt, fivecnt))
 
 # boj 1
-T = int(input())
-for test_case in range(T):
-    N = int(input())
-    arr = list(map(int, input().split()))
-    even, odd = [], []
-    ans = 'yes'
-    for i in arr:
-        if i % 2:
-            odd.append(i)
-        else:
-            even.append(i)
-    if not even:
-        print("#{} {}".format(test_case + 1, 'no'))
-    else:
-        print("#{} {}".format(test_case + 1, 'yes'))
+# T = int(input())
+# for test_case in range(T):
+#     N = int(input())
+#     arr = list(map(int, input().split()))
+#     even, odd = [], []
+#     ans = 'yes'
+#     for i in arr:
+#         if i % 2:
+#             odd.append(i)
+#         else:
+#             even.append(i)
+#     if not even:
+#         print("#{} {}".format(test_case + 1, 'no'))
+#     else:
+#         print("#{} {}".format(test_case + 1, 'yes'))
+
+# boj 10816
+# import sys
+# input = sys.stdin.readline
+# n = int(input())
+# data = list(map(int, input().split()))
+# arr = {}
+# for i in data:
+#     if i not in arr:
+#         arr[i] = 1
+#     else:
+#         arr[i] += 1
+# m = int(input())
+# data = list(map(int, input().split()))
+# for i in data[:m - 1]:
+#     if i not in arr:
+#         print(0, end = ' ')
+#     else:
+#         print(arr[i], end = ' ')
+# if data[- 1] not in arr:
+#     print(0)
+# else:
+#     print(arr[data[- 1]])
+
+# boj 20057
+n = int(input())
+arr = [list(map(int, input().split())) for _ in range(n)]
