@@ -5610,6 +5610,65 @@ sys.stdin = open("practice_input.txt", "r")
 # else:
 #     print(arr[data[- 1]])
 
-# boj 20057
-n = int(input())
-arr = [list(map(int, input().split())) for _ in range(n)]
+# boj 9550
+# t = int(input())
+# for _ in range(t):
+#     n, k = map(int, input().split())
+#     arr = list(map(int, input().split()))
+#     ans = 0
+#     for i in arr:
+#         ans += i // k
+#     print(ans)
+
+# boj 11098
+# t = int(input())
+# for _ in range(t):
+#     n = int(input())
+#     price, ans = 0, ''
+#     for _ in range(n):
+#         p, name = input().split()
+#         if price < int(p):
+#             ans = name
+#             price = int(p)
+#     print(ans)
+
+# boj 1019
+# import sys
+# input = sys.stdin.readline
+#
+# def solve(x, p):
+#     while x:
+#         ans[x % 10] += p
+#         x //= 10
+#
+#
+# n = int(input())
+# ans = [0] * 10
+# s, p = 1, 1
+# while s <= n:
+#     while n % 10 != 9:
+#         solve(n, p)
+#         n -= 1
+#     if n < s:
+#         break
+#     while s % 10:
+#         solve(s, p)
+#         s += 1
+#     s //= 10
+#     n //= 10
+#     for i in range(10):
+#         ans[i] += (n - s + 1) * p
+#     p *= 10
+# print(*ans)
+
+# boj 9950
+while True:
+    l, w, a = map(int, input().split())
+    if l == w == a == 0:
+        break
+    if l == 0:
+        print(a // w, w, a)
+    elif w == 0:
+        print(l, a // l, a)
+    else:
+        print(l, w, l * w)
