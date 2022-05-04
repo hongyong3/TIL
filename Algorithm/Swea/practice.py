@@ -5672,3 +5672,76 @@ sys.stdin = open("practice_input.txt", "r")
 #         print(l, a // l, a)
 #     else:
 #         print(l, w, l * w)
+
+# boj 7523
+# def solve(num):
+#     return num * (num + 1) // 2
+#
+#
+# T = int(input())
+# for t in range(T):
+#     n, m = map(int, input().split())
+#     print("Scenario #{}:".format(t + 1))
+#     print(solve(m) - solve(n - 1))
+#     print()
+
+# boj 2153
+# def isPrime(num):
+#     for i in range(2, int(num ** 0.5) + 1):
+#         if num % i == 0:
+#             return False
+#     return True
+#
+# s = input()
+# ans = 0
+# for i in s:
+#     if i.isupper():
+#         ans += ord(i) - 38
+#     else:
+#         ans += ord(i) - 96
+# print('It is a prime word.' if isPrime(ans) else 'It is not a prime word.')
+
+# boj 2108
+# import sys
+# from collections import Counter
+# input = sys.stdin.readline
+# n = int(input())
+# arr = sorted([int(input()) for _ in range(n)])
+# print(round(sum(arr) / n))
+# print(arr[n // 2])
+# cnt = Counter(arr).most_common()
+# print(cnt[1][0] if len(cnt) > 1 and cnt[0][1] == cnt[1][1] else cnt[0][0])
+# print(arr[- 1] - arr[0])
+
+# boj 1246
+# n, m = map(int, input().split())
+# arr = sorted([int(input()) for _ in range(m)])
+# ans1, ans2 = 0, 0
+# for i in range(m):
+#     p = arr[i] * ((m - i) if m - i <= n else n)
+#     if ans2 < p:
+#         ans2 = p
+#         ans1 = arr[i]
+# print(ans1, ans2)
+
+# boj 4740
+# while True:
+#     s = input()
+#     if s == '***':
+#         break
+#     print(s[:: - 1])
+
+# boj 13866
+# a, b, c, d = map(int, input().split())
+# print(abs((a + d) - (b + c)))
+
+# boj 22193
+# n, m = map(int, input().split())
+# a = int(input())
+# b = int(input())
+# print(a * b)
+
+# boj 11948
+arr1 = sorted([int(input()) for _ in range(4)])
+arr2 = sorted([int(input()) for _ in range(2)])
+print(sum(arr1[1:]) + arr2[1])
