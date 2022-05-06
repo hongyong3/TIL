@@ -5742,6 +5742,26 @@ sys.stdin = open("practice_input.txt", "r")
 # print(a * b)
 
 # boj 11948
-arr1 = sorted([int(input()) for _ in range(4)])
-arr2 = sorted([int(input()) for _ in range(2)])
-print(sum(arr1[1:]) + arr2[1])
+# arr1 = sorted([int(input()) for _ in range(4)])
+# arr2 = sorted([int(input()) for _ in range(2)])
+# print(sum(arr1[1:]) + arr2[1])
+
+# boj 1198
+# def area(a, b, c):
+#     x = a[0] * b[1] + b[0] * c[1] + c[0] * a[1]
+#     y = b[0] * a[1] + c[0] * b[1] + a[0] * c[1]
+#     return abs(x - y) * 0.5
+#
+# n = int(input())
+# arr = [list(map(int, input().split())) for _ in range(n)]
+# ans = 0
+# for i in range(n):
+#     for j in range(i + 1, n):
+#         for k in range(j + 1, n):
+#             ans = max(ans, area(arr[i], arr[j], arr[k]))
+# print(ans)
+
+# boj 13752
+# n = int(input())
+# for _ in range(n):
+#     print('=' * int(input()))
