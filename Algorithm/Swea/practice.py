@@ -5765,3 +5765,38 @@ sys.stdin = open("practice_input.txt", "r")
 # n = int(input())
 # for _ in range(n):
 #     print('=' * int(input()))
+
+# boj 14175
+# m, n, k = map(int, input().split())
+# for _ in range(m):
+#     s = input()
+#     ans = ''
+#     for i in s:
+#         ans += i * k
+#     for _ in range(k):
+#         print(ans)
+
+# boj 1356
+def solve(x, y):
+    n, m = 1, 1
+    for i in x:
+        n *= int(i)
+    for j in y:
+        m *= int(j)
+    if n == m:
+        return True
+    return False
+
+
+n = input()
+len = len(n)
+if len == 1:
+    print("NO")
+else:
+    for i in range(1, len):
+        a, b = n[:i], n[i:]
+        if solve(a, b):
+            print("YES")
+            break
+    else:
+        print("NO")
