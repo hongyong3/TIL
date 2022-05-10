@@ -5777,26 +5777,60 @@ sys.stdin = open("practice_input.txt", "r")
 #         print(ans)
 
 # boj 1356
-def solve(x, y):
-    n, m = 1, 1
-    for i in x:
-        n *= int(i)
-    for j in y:
-        m *= int(j)
-    if n == m:
-        return True
-    return False
+# def solve(x, y):
+#     n, m = 1, 1
+#     for i in x:
+#         n *= int(i)
+#     for j in y:
+#         m *= int(j)
+#     if n == m:
+#         return True
+#     return False
+#
+#
+# n = input()
+# len = len(n)
+# if len == 1:
+#     print("NO")
+# else:
+#     for i in range(1, len):
+#         a, b = n[:i], n[i:]
+#         if solve(a, b):
+#             print("YES")
+#             break
+#     else:
+#         print("NO")
 
+# swea1
+def permutation(arr, r):
+    global xx
+    arr = sorted(arr)
+    used = [0 for _ in range(len(arr))]
+    def generate(chosen, used):
+        global permuArr
+        if len(chosen) == r:
+            if chosen[0] != '0':
+                permuArr.append(int(''.join(chosen)))
+            return
+        for i in range(len(arr)):
+            if not used[i]:
+                chosen.append(arr[i])
+                used[i] = 1
+                generate(chosen, used)
+                used[i] = 0
+                chosen.pop()
+    generate([], used)
 
-n = input()
-len = len(n)
-if len == 1:
-    print("NO")
-else:
-    for i in range(1, len):
-        a, b = n[:i], n[i:]
-        if solve(a, b):
-            print("YES")
-            break
-    else:
-        print("NO")
+T = int(input())
+for test_case in range(T):
+    N = int(input())
+    arrN = list(str(N))
+    permuArr = []
+    permutation(arrN, len(arrN))
+    ans = "impossible"
+    for i in permuArr:
+         if i > N:
+            if i % N == 0:
+                ans = "possible"
+                break
+    print("#{} {}".format(test_case + 1, ans))
