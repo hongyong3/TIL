@@ -1,9 +1,7 @@
 import sys
-sys.stdin = open("D_input.txt", "r")
+sys.stdin = open("D4_14362_input.txt", "r")
 
 T = int(input())
 for test_case in range(T):
-    N = int(input())
-    N, M = map(int, input().split())
-    arr = list(map(int, input().split()))
+    S = input()
     
