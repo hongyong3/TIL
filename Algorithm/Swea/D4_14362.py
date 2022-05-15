@@ -23,8 +23,8 @@ for test_case in range(T):
 
     for i in command:
         if i == 'S':
-            x = dr[r][0]
-            y = dr[r][1]
+            x += dr[r][0]
+            y += dr[r][1]
             d = abs(x ** 2 + y ** 2)
             if d < dd:
                 d = dd
@@ -36,4 +36,3 @@ for test_case in range(T):
             d -= 1
             if d == - 1:
                 d = 3
-    print(dd)
