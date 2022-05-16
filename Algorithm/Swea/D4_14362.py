@@ -12,27 +12,27 @@ L : 반시계방향
         [0, 1]      ->  [1, 0]      남 -> 동
 R : 시계방향
 '''
+dx = [1, 0, - 1, 0] # 우, 하
+dy = [0, - 1, 0, 1]
 T = int(input())
 for test_case in range(T):
     command = input()
     ans = 'oo'
-    dd = 0
-    dr = [[1, 0], [0, 1], [- 1, 0], [0, - 1]]
+    distance = 0
+
     x, y, r = 0, 0, 0
     d = 0
 
     for i in command:
         if i == 'S':
-            x += dr[r][0]
-            y += dr[r][1]
-            d = abs(x ** 2 + y ** 2)
-            if d < dd:
-                d = dd
+            x += dx[r]
+            y += dy[r]
+            distance = abs(x ** 2 + y ** 2)
+            if d < distance:
+                d = distance
         elif i == 'R':
-            d += 1
-            if d == 4:
-                d = 0
-        elif i == 'C':
-            d -= 1
-            if d == - 1:
-                d = 3
+            r = (r + 1) % 4
+        elif i == 'L':
+            r = (r - 1) % 4
+    # print(x, y)
+    print(d)
