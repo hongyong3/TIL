@@ -34,5 +34,3 @@ for test_case in range(T):
             r = (r + 1) % 4
         elif i == 'L':
             r = (r - 1) % 4
-    # print(x, y)
-    print(d)
