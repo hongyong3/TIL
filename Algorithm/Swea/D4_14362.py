@@ -12,6 +12,8 @@ L : 반시계방향
         [0, 1]      ->  [1, 0]      남 -> 동
 R : 시계방향
 '''
+
+
 dx = [1, 0, - 1, 0]
 dy = [0, - 1, 0, 1]
 T = int(input())
@@ -20,8 +22,7 @@ for test_case in range(T):
     ans = 'oo'
     distance = 0
 
-    x, y, r = 0, 0, 0
-    d = 0
+    x, y, r, d = 0, 0, 0, 0
 
     for i in command:
         if i == 'S':
