@@ -20,6 +20,7 @@ for test_case in range(T):
             elif i == 'L':
                 d = (d + 1) % 4
         arr.add(ans)
+
     if len(arr) == 4:
         ans = 'oo'
     print("#{} {}".format(test_case + 1, ans))
