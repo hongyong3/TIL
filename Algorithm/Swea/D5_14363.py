@@ -13,4 +13,3 @@ for test_case in range(T):
                 a[i][j] = '#'
             else:
                 a[i][j] = '.'
-
