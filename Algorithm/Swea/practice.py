@@ -5834,3 +5834,43 @@ sys.stdin = open("practice_input.txt", "r")
 #                 ans = "possible"
 #                 break
 #     print("#{} {}".format(test_case + 1, ans))
+
+# boj 14625
+# sh, sm = map(int, input().split())
+# eh, em = map(int, input().split())
+# n = int(input())
+# ans = 0
+# while True:
+#     if sh % 10 == n or sh // 10 == n or sm % 10 == n or sm // 10 == n:
+#         ans += 1
+#     if sh == eh and sm == em:
+#         break
+#     sm += 1
+#     if sm == 60:
+#         sm = 0
+#         sh += 1
+# print(ans)
+
+# boj 1408
+sh, sm, ss = map(int, input().split(':'))
+eh, em, es = map(int, input().split(':'))
+
+es -= ss
+em -= sm
+eh -= sh
+if es < 0:
+    es = 60 + es
+    es = str(es)
+    if len(es) == 1:
+        es = '0' + es
+    em -= 1
+if em < 0:
+    em = 60 + em
+    em = str(em)
+    if len(em) == 1:
+        em = '0' + em
+    eh -= 1
+eh = str(eh)
+if len(eh) == 1:
+    eh = '0' + eh
+print("{}:{}:{}".format(eh, em, es))
