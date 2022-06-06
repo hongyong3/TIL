@@ -5852,25 +5852,25 @@ sys.stdin = open("practice_input.txt", "r")
 # print(ans)
 
 # boj 1408
-sh, sm, ss = map(int, input().split(':'))
-eh, em, es = map(int, input().split(':'))
-
-es -= ss
-em -= sm
-eh -= sh
-if es < 0:
-    es = 60 + es
-    es = str(es)
-    if len(es) == 1:
-        es = '0' + es
-    em -= 1
-if em < 0:
-    em = 60 + em
-    em = str(em)
-    if len(em) == 1:
-        em = '0' + em
-    eh -= 1
-eh = str(eh)
-if len(eh) == 1:
-    eh = '0' + eh
-print("{}:{}:{}".format(eh, em, es))
+# sh, sm, ss = map(int, input().split(':'))
+# eh, em, es = map(int, input().split(':'))
+#
+# es -= ss
+# em -= sm
+# eh -= sh
+# if es < 0:
+#     es = 60 + es
+#     es = str(es)
+#     if len(es) == 1:
+#         es = '0' + es
+#     em -= 1
+# if em < 0:
+#     em = 60 + em
+#     em = str(em)
+#     if len(em) == 1:
+#         em = '0' + em
+#     eh -= 1
+# eh = str(eh)
+# if len(eh) == 1:
+#     eh = '0' + eh
+# print("{}:{}:{}".format(eh, em, es))
