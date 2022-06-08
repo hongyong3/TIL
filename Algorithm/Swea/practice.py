@@ -5874,3 +5874,4 @@ sys.stdin = open("practice_input.txt", "r")
 # if len(eh) == 1:
 #     eh = '0' + eh
 # print("{}:{}:{}".format(eh, em, es))
+
