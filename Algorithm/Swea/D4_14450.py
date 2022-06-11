@@ -3,7 +3,7 @@ sys.stdin = open("D4_14450_input.txt", "r")
 
 # 40 / 87
 T = int(input())
-for test_case in range(T):
+for test_case in range(1):
     L, R, Q = input().split()
     arr = list(input().split())
     ans = ''
@@ -12,8 +12,16 @@ for test_case in range(T):
         if len(i) > idx or int(i) > int(R):
             ans += 'X'
             continue
-        for k in range(len(i)):
-            a, b, c = int(L[: k + 1]), int(i[: k + 1]), int(R[: k + 1])
+
+        for j in range(len(i)):
+            b = int(i[: j + 1])
+            for k in range(len(L)):
+                pass
+            for k in range(len(R)):
+                pass
+
+
+            a, c = int(L[: j + 1]), int(R[: j + 1])
             if not (a <= b <= c):
                 ans += 'X'
                 break
