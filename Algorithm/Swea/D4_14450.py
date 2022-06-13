@@ -15,11 +15,12 @@ for test_case in range(1):
 
         for j in range(len(i)):
             b = int(i[: j + 1])
+            # l과 b 비교
             for k in range(len(L)):
                 pass
+            # r과 b 비교
             for k in range(len(R)):
                 pass
-
 
             a, c = int(L[: j + 1]), int(R[: j + 1])
             if not (a <= b <= c):
