@@ -28,4 +28,5 @@ for test_case in range(1):
                 break
         else:
             ans += 'O'
+            
     print("#{} {}".format(test_case + 1, ans))
