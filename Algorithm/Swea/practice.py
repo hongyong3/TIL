@@ -5875,3 +5875,6 @@ sys.stdin = open("practice_input.txt", "r")
 #     eh = '0' + eh
 # print("{}:{}:{}".format(eh, em, es))
 
+T = int(input())
+for test_case in range(T):
+    X, N, Y, M = map(int, input().split())
