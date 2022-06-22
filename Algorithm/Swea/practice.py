@@ -5878,3 +5878,6 @@ sys.stdin = open("practice_input.txt", "r")
 T = int(input())
 for test_case in range(T):
     X, N, Y, M = map(int, input().split())
+    '''
+    x^n == y^m의 개수
+    '''
