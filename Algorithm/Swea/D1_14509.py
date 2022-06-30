@@ -5,8 +5,13 @@ T = int(input())
 for test_case in range(T):
     N = int(input())
     arr = list(map(int, input().split()))
-    ans = - 1
 
-    for i in range(N):
-        ans = max(ans, sum(arr[:i]), sum(arr[i + 1:]))
+    temp, ans, = 0, min(sum(arr[1:]), sum(arr[:- 1]))
+    for i in range(1, N - 1):
+        if sum(arr[:i]) > sum(arr[i + 1:]):
+            temp = sum(arr[:i])
+        elif sum(arr[:i]) < sum(arr[i + 1:]):
+            temp = sum(arr[i + 1:])
+        if ans > temp:
+            ans = temp
     print("#{} {}".format(test_case + 1, ans))
