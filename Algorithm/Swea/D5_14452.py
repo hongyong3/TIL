@@ -117,4 +117,4 @@ for test_case in range(T):
     #         #     tt += min(M // (ysq // g), N // (xsq // g))
     #         ans += temp1
     # print(ans + temp1)
-    print(ans)
+    # print(ans)
