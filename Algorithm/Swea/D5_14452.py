@@ -79,6 +79,7 @@ ex) X, N, Y, M = 31, 41, 59, 26
 #     print(primeArr)
 #     print(asd)
 
+
 def gcd(a, b):
     while b:
         a, b = b, a % b
@@ -92,29 +93,30 @@ for test_case in range(T):
     asd = []
     numChk = []
     tt = 0
-    # for i in range(2, int(max(X, Y) ** 0.5) + 1):
-    #     if i * i > max(X, Y):
-    #         break
-    #     x = i
-    #     xsq = 1
-    #     if x in numChk:
-    #         continue
-    #     while x <= X:
-    #         y = x * i
-    #         ysq = xsq + 1
-    #         temp1 = 0
-    #         while y <= Y:
-    #             g = gcd(xsq, ysq)
-    #             temp1 += min(N // (ysq // g), M // (xsq // g))
-    #             y *= i
-    #             ysq += 1
-    #         asd.append([x, y // i, temp1])
-    #         if x not in numChk:
-    #             numChk.append(x)
-    #         x *= i
-    #         xsq += 1
-    #         # if X <= x <= Y:
-    #         #     tt += min(M // (ysq // g), N // (xsq // g))
-    #         ans += temp1
-    # print(ans + temp1)
-    # print(ans)
+
+    for i in range(2, int(max(X, Y) ** 0.5) + 1):
+        if i * i > max(X, Y):
+            break
+        x = i
+        xsq = 1
+        if x in numChk:
+            continue
+        while x <= X:
+            y = x * i
+            ysq = xsq + 1
+            temp1 = 0
+            while y <= Y:
+                g = gcd(xsq, ysq)
+                temp1 += min(N // (ysq // g), M // (xsq // g))
+                y *= i
+                ysq += 1
+            asd.append([x, y // i, temp1])
+            if x not in numChk:
+                numChk.append(x)
+            x *= i
+            xsq += 1
+            # if X <= x <= Y:
+            #     tt += min(M // (ysq // g), N // (xsq // g))
+            ans += temp1
+    print(ans + temp1)
+    print(ans)
