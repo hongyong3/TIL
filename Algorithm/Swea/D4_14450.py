@@ -20,24 +20,24 @@ for test_case in range(T):
             if a > b:
                 flag = False
             jdx += 1
-        # for j in range(len(i)):
-        #     flag = True
-        #     b = int(i[: j + 1])
-        #     # l과 b 비교
-        #     jdx = 0
-        #     while jdx < max(len(i), len(L)):
-        #         if int(j)
-        #     for k in range(len(L)):
-        #         pass
-        #     # r과 b 비교
-        #     for k in range(len(R)):
-        #         pass
-        #
-        #     a, c = int(L[: j + 1]), int(R[: j + 1])
-        #     if not (a <= b <= c):
-        #         ans += 'X'
-        #         break
-        # else:
-        #     ans += 'O'
+        for j in range(len(i)):
+            flag = True
+            b = int(i[: j + 1])
+            # l과 b 비교
+            jdx = 0
+            while jdx < max(len(i), len(L)):
+                if int(j)
+            for k in range(len(L)):
+                pass
+            # r과 b 비교
+            for k in range(len(R)):
+                pass
+
+            a, c = int(L[: j + 1]), int(R[: j + 1])
+            if not (a <= b <= c):
+                ans += 'X'
+                break
+        else:
+            ans += 'O'
             
     print("#{} {}".format(test_case + 1, ans))
