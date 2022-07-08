@@ -15,10 +15,10 @@ for test_case in range(T):
                 x += dx[d]
                 y += dy[d]
                 ans = max(ans, x ** 2 + y ** 2)
-            elif i == 'R':
-                d = (d + 1) % 4
             elif i == 'L':
                 d = (d - 1) % 4
+            elif i == 'R':
+                d = (d + 1) % 4
         arr.add(ans)
 
     if len(arr) == 4:
