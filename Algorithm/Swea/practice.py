@@ -5875,9 +5875,14 @@ sys.stdin = open("practice_input.txt", "r")
 #     eh = '0' + eh
 # print("{}:{}:{}".format(eh, em, es))
 
-T = int(input())
-for test_case in range(T):
-    X, N, Y, M = map(int, input().split())
-    '''
-    x^n == y^m의 개수
-    '''
+# boj 21756
+n = int(input())
+arr = [i for i in range(1, n + 1)]
+temp = []
+while len(arr) != 1:
+    for i in range(len(arr)):
+        if i % 2:
+            temp.append(arr[i])
+    arr = temp
+    temp = []
+print(*arr)
