@@ -69,22 +69,53 @@ A : 나연, B : 다현, K번 반복
 #         cycle += 1
 #     print("#{} {}".format(test_case + 1, arr[K % cycle - 1]))
 
+# T = int(input())
+# for test_case in range(T):
+#     A, B, K = map(int, input().split())
+#     P, Q = min(A, B), max(A, B)
+#     cycle = 1
+#     arr = [P]
+#     cnt = K
+#     while cnt:
+#         num = P
+#         P, Q = P + num, Q - num
+#         if P > Q:
+#             P, Q = Q, P
+#         if P not in arr:
+#             arr.append(P)
+#         else:
+#             break
+#         cnt -= 1
+#         cycle += 1
+#     print("#{} {}".format(test_case + 1, arr[K % cycle]))
+
+# T = int(input())
+# for test_case in range(T):
+#     A, B, K = map(int, input().split())
+#     P, Q = min(A, B), max(A, B)
+#     cycle = 1
+#     arr = [P]
+#     cnt = K
+#     while cnt:
+#         Q -= P
+#         P *= 2
+#         if P > Q:
+#             P, Q = Q, P
+#         if P not in arr:
+#             arr.append(P)
+#         else:
+#             break
+#         cnt -= 1
+#         cycle += 1
+#     print("#{} {}".format(test_case + 1, arr[K % cycle]))
+
 T = int(input())
 for test_case in range(T):
     A, B, K = map(int, input().split())
-    P, Q = min(A, B), max(A, B)
-    cycle = 1
-    arr = [P]
-    cnt = K
-    while cnt:
-        num = P
-        P, Q = P + num, Q - num
-        if P > Q:
-            P, Q = Q, P
-        if P not in arr:
-            arr.append(P)
-        else:
-            break
-        cnt -= 1
-        cycle += 1
-    print("#{} {}".format(test_case + 1, arr[K % cycle]))
+    if A == B:
+        ans = 0
+    else:
+        if A > B:
+            A, B = B, A
+        arr = [A]
+        
