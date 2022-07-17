@@ -5876,13 +5876,13 @@ sys.stdin = open("practice_input.txt", "r")
 # print("{}:{}:{}".format(eh, em, es))
 
 # boj 21756
-n = int(input())
-arr = [i for i in range(1, n + 1)]
-temp = []
-while len(arr) != 1:
-    for i in range(len(arr)):
-        if i % 2:
-            temp.append(arr[i])
-    arr = temp
-    temp = []
-print(*arr)
+# n = int(input())
+# arr = [i for i in range(1, n + 1)]
+# temp = []
+# while len(arr) != 1:
+#     for i in range(len(arr)):
+#         if i % 2:
+#             temp.append(arr[i])
+#     arr = temp
+#     temp = []
+# print(*arr)
