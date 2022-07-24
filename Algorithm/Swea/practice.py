@@ -5888,6 +5888,9 @@ sys.stdin = open("practice_input.txt", "r")
 # print(*arr)
 
 # boj 25393
+'''
+...?
+'''
 N = int(input())
 lrArr = [list(map(int, input().split())) for _ in range(N)]
 Q = int(input())
