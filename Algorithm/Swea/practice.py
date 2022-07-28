@@ -5891,7 +5891,7 @@ sys.stdin = open("practice_input.txt", "r")
 '''
 ...?
 '''
-N = int(input())
-lrArr = [list(map(int, input().split())) for _ in range(N)]
-Q = int(input())
-qArr = [list(map(int, input().split())) for _ in range(Q)]
+# N = int(input())
+# lrArr = [list(map(int, input().split())) for _ in range(N)]
+# Q = int(input())
+# qArr = [list(map(int, input().split())) for _ in range(Q)]
