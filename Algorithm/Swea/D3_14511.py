@@ -40,9 +40,8 @@ for test_case in range(1):
                             chk[idx] = 1
                             idx += 1
                         else:
-                            
+
             # 경우 3. 짝수 > 홀수 -> [짝, 홀, 짝, 홀, 짝]
             else:
                 pass
-
     print("#{} {}".format(test_case + 1, ans))
