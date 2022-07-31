@@ -1,11 +1,36 @@
 import sys
 sys.stdin = open("D3_14511_input.txt", "r")
 
+import copy
+def solve2(idx, lst, val):
+    jdx = 1
+    while True:
+        if lst[idx + jdx] % 2 == val:
+            lst.insert(idx, lst.pop(idx + jdx))
+            break
+        else:
+            jdx += 1
+    return jdx
+
+
+def solve(lst, val):
+    idx, res = 0, 0
+    while idx < N:
+        if idx % 2:
+            if lst[idx] % 2 != val:
+                res += solve2(idx, lst, val)
+        else:
+            if lst[idx] % 2 == val:
+                res += solve2(idx, lst, (val + 1) % 2)
+        idx += 1
+    return res
+
+
 T = int(input())
-for test_case in range(1):
+for test_case in range(T):
     N = int(input())
     arr = list(map(int, input().split()))
-    ans, odd, even = 2, 0, 0
+    ans, odd, even = 0, 0, 0
 
     for i in arr:
         if i % 2:
@@ -16,32 +41,11 @@ for test_case in range(1):
     if abs(odd - even) > 1:
         ans = - 1
     else:
-        if N < 3:
-            ans = 0
-
-        else:
-            chk = [0] * N
-            # 경우 1. 짝수 = 홀수 -> [짝, 홀, 짝, 홀, 짝, 홀] or [홀, 짝, 홀, 짝, 홀, 짝]
+        if N > 2:
             if odd == even:
-                pass
-            # 경우 2. 짝수 < 홀수 -> [홀, 짝, 홀, 짝, 홀]
+                ans = min(solve(copy.deepcopy(arr), 0), solve(arr, 1))
             elif odd > even:
-                idx = 0
-                jdx = 1
-                while True:
-                    if idx % 2 == 0:
-                        if arr[idx] % 2:
-                            chk[idx] = 1
-                            idx += 1
-                        else:
-                            pass
-                    else:
-                        if arr[idx] % 2 == 0:
-                            chk[idx] = 1
-                            idx += 1
-                        else:
-
-            # 경우 3. 짝수 > 홀수 -> [짝, 홀, 짝, 홀, 짝]
+                ans = solve(arr, 0)
             else:
-                pass
+                ans = solve(arr, 1)
     print("#{} {}".format(test_case + 1, ans))
