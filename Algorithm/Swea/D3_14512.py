@@ -8,16 +8,9 @@ for test_case in range(T):
     time = [0] * M
     print("#{} {} {}".format(test_case + 1, N, M))
     for i in arr:
-        print(i)
         s, e = i
     # for _ in range(N):
     #     s, e = map(int, input().split())
         for t in range(s - 1, e):
             time[t] += 1
     print(time)
-    # arr = list(map(int, input().split()))
-    # arr = [list(map(int, input().split())) for _ in range(N)]
-    # print("#{} {} {}".format(test_case + 1, N, M))
-
-    # print(arr)
-    # print()
