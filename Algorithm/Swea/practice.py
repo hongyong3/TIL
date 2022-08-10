@@ -5901,27 +5901,37 @@ sys.stdin = open("practice_input.txt", "r")
 #     print("#{} {}".format(test_case + 1, ans))
 
 # swea2
-# 20 // 29
+# 27 // 29
+'''
+평면의 방정식
+Ax + By + Cz + D = 0
+p1 = (x1, y1, z1)
+p2 = (x2, y2, z2)
+p3 = (x3, y3, z3)
+
+A = y1 * (z2 - z3) + y2 * (z3 - z1) + y3 * (z1 - z2)
+B = z1 * (x2 - x3) + z2 * (x3 - x1) + z3 * (x1 - x2)
+C = x1 * (y2 - y3) + x2 * (y3 - y1) + x3 * (y1 - y2)
+D = x1 * (y2 * z3 - y3 * z2) + x2 * (y3 * z1 - y1 * z3) + x3 * (y1 * z2 - y2 * z1)
+'''
+
 def v(x1, y1, z1, x2, y2, z2, x3, y3, z3):
     A = y1 * (z2 - z3) + y2 * (z3 - z1) + y3 * (z1 - z2)
     B = z1 * (x2 - x3) + z2 * (x3 - x1) + z3 * (x1 - x2)
     C = x1 * (y2 - y3) + x2 * (y3 - y1) + x3 * (y1 - y2)
-    D = - (x1 * (y2 * z3 - y3 * z2) + x2 * (y3 * z1 - y1 * z3) + x3 * (y1 * z2 - y2 * z1))
+    D = x1 * (y2 * z3 - y3 * z2) + x2 * (y3 * z1 - y1 * z3) + x3 * (y1 * z2 - y2 * z1)
     return A, B, C, D
 
 
 T = int(input())
 for test_case in range(T):
     N = int(input())
-    fly = [list(map(int, input().split())) for _ in range(N)]
-    if N < 4:
-        ans = "TAK"
-    else:
-        a, b, c, d = v(fly[0][0], fly[0][1], fly[0][2], fly[1][0], fly[1][1], fly[1][2], fly[2][0], fly[2][1], fly[2][2])
-        for x, y, z in fly:
-            if a * x + b * y * c * z + d:
+    arr = [list(map(int, input().split())) for _ in range(N)]
+    ans = "TAK"
+    if N > 3:
+        a, b, c, d = v(*arr[0], *arr[1], *arr[2])
+        for x, y, z in arr:
+            if a * x + b * y + c * z - d:
                 ans = "NIE"
                 break
-        else:
-            ans = "TAK"
     print("#{} {}".format(test_case + 1, ans))
