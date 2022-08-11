@@ -5902,36 +5902,83 @@ sys.stdin = open("practice_input.txt", "r")
 
 # swea2
 # 27 // 29
-'''
-평면의 방정식
-Ax + By + Cz + D = 0
-p1 = (x1, y1, z1)
-p2 = (x2, y2, z2)
-p3 = (x3, y3, z3)
+# '''
+# 평면의 방정식
+# Ax + By + Cz + D = 0
+# p1 = (x1, y1, z1)
+# p2 = (x2, y2, z2)
+# p3 = (x3, y3, z3)
+#
+# A = y1 * (z2 - z3) + y2 * (z3 - z1) + y3 * (z1 - z2)
+# B = z1 * (x2 - x3) + z2 * (x3 - x1) + z3 * (x1 - x2)
+# C = x1 * (y2 - y3) + x2 * (y3 - y1) + x3 * (y1 - y2)
+# D = x1 * (y2 * z3 - y3 * z2) + x2 * (y3 * z1 - y1 * z3) + x3 * (y1 * z2 - y2 * z1)
+# '''
+#
+# def v(x1, y1, z1, x2, y2, z2, x3, y3, z3):
+#     A = y1 * (z2 - z3) + y2 * (z3 - z1) + y3 * (z1 - z2)
+#     B = z1 * (x2 - x3) + z2 * (x3 - x1) + z3 * (x1 - x2)
+#     C = x1 * (y2 - y3) + x2 * (y3 - y1) + x3 * (y1 - y2)
+#     D = x1 * (y2 * z3 - y3 * z2) + x2 * (y3 * z1 - y1 * z3) + x3 * (y1 * z2 - y2 * z1)
+#     return A, B, C, D
+#
+#
+# T = int(input())
+# for test_case in range(T):
+#     N = int(input())
+#     arr = [list(map(int, input().split())) for _ in range(N)]
+#     ans = "TAK"
+#     if N > 3:
+#         a, b, c, d = v(*arr[0], *arr[1], *arr[2])
+#         for x, y, z in arr:
+#             if a * x + b * y + c * z - d:
+#                 ans = "NIE"
+#                 break
+#     print("#{} {}".format(test_case + 1, ans))
 
-A = y1 * (z2 - z3) + y2 * (z3 - z1) + y3 * (z1 - z2)
-B = z1 * (x2 - x3) + z2 * (x3 - x1) + z3 * (x1 - x2)
-C = x1 * (y2 - y3) + x2 * (y3 - y1) + x3 * (y1 - y2)
-D = x1 * (y2 * z3 - y3 * z2) + x2 * (y3 * z1 - y1 * z3) + x3 * (y1 * z2 - y2 * z1)
-'''
+# boj 2583
+# from collections import deque
+# dx = [- 1, 1, 0, 0]
+# dy = [0, 0, - 1, 1]
+#
+# def bfs(x, y):
+#     area = 1
+#     q = deque()
+#     q.append([x, y])
+#     while q:
+#         x, y = q.pop()
+#         for k in range(4):
+#             nx = x + dx[k]
+#             ny = y + dy[k]
+#             if 0 <= nx < M and 0 <= ny < N and not arr[nx][ny]:
+#                 area += 1
+#                 arr[nx][ny] = 1
+#                 q.append([nx, ny])
+#     return area
+#
+# M, N, K = map(int, input().split())
+# arr = [[0] * N for _ in range(M)]
+# ans1, ans2 = 0, []
+# for _ in range(K):
+#     x1, y1, x2, y2 = map(int, input().split())
+#     for y in range(y1, y2):
+#         for x in range(x1, x2):
+#             arr[y][x] = 1
+#
+# for i in range(M):
+#     for j in range(N):
+#         if not arr[i][j]:
+#             arr[i][j] = 1
+#             ans1 += 1
+#             ans2.append(bfs(i, j))
+# print(ans1)
+# print(*sorted(ans2))
 
-def v(x1, y1, z1, x2, y2, z2, x3, y3, z3):
-    A = y1 * (z2 - z3) + y2 * (z3 - z1) + y3 * (z1 - z2)
-    B = z1 * (x2 - x3) + z2 * (x3 - x1) + z3 * (x1 - x2)
-    C = x1 * (y2 - y3) + x2 * (y3 - y1) + x3 * (y1 - y2)
-    D = x1 * (y2 * z3 - y3 * z2) + x2 * (y3 * z1 - y1 * z3) + x3 * (y1 * z2 - y2 * z1)
-    return A, B, C, D
-
-
-T = int(input())
-for test_case in range(T):
-    N = int(input())
-    arr = [list(map(int, input().split())) for _ in range(N)]
-    ans = "TAK"
-    if N > 3:
-        a, b, c, d = v(*arr[0], *arr[1], *arr[2])
-        for x, y, z in arr:
-            if a * x + b * y + c * z - d:
-                ans = "NIE"
-                break
-    print("#{} {}".format(test_case + 1, ans))
+# boj 25304
+X = int(input())
+price = 0
+N = int(input())
+for _ in range(N):
+    a, b = map(int, input().split())
+    price += a * b
+print("Yes" if X == price else "No")
