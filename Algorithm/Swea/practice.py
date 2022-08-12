@@ -5975,10 +5975,10 @@ sys.stdin = open("practice_input.txt", "r")
 # print(*sorted(ans2))
 
 # boj 25304
-X = int(input())
-price = 0
-N = int(input())
-for _ in range(N):
-    a, b = map(int, input().split())
-    price += a * b
-print("Yes" if X == price else "No")
+# X = int(input())
+# price = 0
+# N = int(input())
+# for _ in range(N):
+#     a, b = map(int, input().split())
+#     price += a * b
+# print("Yes" if X == price else "No")
