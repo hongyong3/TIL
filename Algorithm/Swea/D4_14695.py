@@ -62,51 +62,57 @@ for test_case in range(T):
     N = int(input())
     arr = [list(map(int, input().split())) for _ in range(N)]
     ans = "TAK"
-    xchk, ychk, zchk = [0, 0], [0, 0], [0, 0]
+
     if N > 3:
+        chk1 = 1
         a, b, c, d = v(*arr[0], *arr[1], *arr[2])
         for x, y, z in arr:
             n = a * x + b * y + c * z + d
             if n:
                 ans = "NIE"
+                chk1 = 0
                 break
 
-        chk = 0
-        for i in range(N - 1):
-            if chk:
-                break
-            x, y, z = arr[i]
-            xchk, ychk, zchk = 0, 0, 0
-            xp, yp, zp = 0, 0, 0
-            for j in range(i + 1, N):
-                if x == arr[j][0]:
-                    xp += 1
-                    if xp == 2:
-                        xchk[0], xchk[1] = 1, x
-                        chk = 1
-                        break
-                if y == arr[j][1]:
-                    yp += 1
-                    if yp == 2:
-                        ychk[0], ychk[1] = 1, y
-                if z == arr[j][2]:
-                    zp += 1
-                    if zp == 2:
-                        zchk[0], zchk[1] = 1, z
-
-        if xchk:
-            for i in range(N):
-                if i != xchk[1] and xp[i] != 0:
-                    ans = "NIE"
-                    break
-        if ychk:
-            for i in range(N):
-                if i != ychk[1] and yp[i] != 0:
-                    ans = "NIE"
-                    break
-        if zchk:
-            for i in range(N):
-                if i != zchk[1] and zp[i] != 0:
-                    ans = "NIE"
-                    break
+        # if chk1:
+        #     chk2, idx = 0, 0
+        #     for i in range(N - 1):
+        #         if chk2:
+        #             break
+        #         xchk, ychk, zchk = 0, 0, 0
+        #         x1, y1, z1 = arr[i]
+        #         xp, yp, zp = 0, 0, 0
+        #         for j in range(i + 1, N):
+        #             x2, y2, z2 = a52rr[j]
+        #             if x1 == x2:
+        #                 xp += 1
+        #                 if xp == 2:
+        #                     xchk, chk2, idx = 1, 1, i
+        #                     break
+        #             if y1 == y2:
+        #                 yp += 1
+        #                 if yp == 2:
+        #                     ychk, chk2, idx = 1, 1, i
+        #                     break
+        #             if z1 == z2:
+        #                 zp += 1
+        #                 if zp == 2:
+        #                     zchk, chk2, idx = 1, 1, i
+        #                     break
+        #
+        #     if chk2:
+        #         if xchk:
+        #             for i in arr:
+        #                 if i[0] != x1:
+        #                     ans = "NIE"
+        #                     break
+        #         elif ychk:
+        #             for i in arr:
+        #                 if i[1] != y1:
+        #                     ans = "NIE"
+        #                     break
+        #         elif zchk:
+        #             for i in arr:
+        #                 if i[2] != z1:
+        #                     ans = "NIE"
+        #                     break
     print("#{} {}".format(test_case + 1, ans))
