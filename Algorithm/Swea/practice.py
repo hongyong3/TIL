@@ -5982,3 +5982,43 @@ sys.stdin = open("practice_input.txt", "r")
 #     a, b = map(int, input().split())
 #     price += a * b
 # print("Yes" if X == price else "No")
+
+# boj 14606
+# N = int(input())
+# print(N * (N - 1) // 2)
+
+# boj 16987
+def solve(idx, arr):
+    global ans
+
+    if idx == N:
+        res = 0
+        for i in range(N):
+            if arr[i] <= 0:
+                res += 1
+        if ans < res:
+            ans = res
+        return
+
+    if arr[idx] > 0:
+        for i in range(N):
+            chk = 0
+            if arr[i] > 0 and i != idx:
+                chk = 1
+                temp = arr[:]
+                temp[i] -= w[idx]
+                temp[idx] -= w[i]
+                solve(idx + 1, temp)
+        if not chk:
+            solve(idx + 1, arr)
+    else:
+        solve(idx + 1, arr)
+
+
+N = int(input())
+s, w, ans = [0] * N, [0] * N, 0
+for i in range(N):
+    s[i], w[i] = map(int,input().split())
+
+solve(0, s)
+print(ans)
