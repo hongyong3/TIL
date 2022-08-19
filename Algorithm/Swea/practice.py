@@ -5988,37 +5988,90 @@ sys.stdin = open("practice_input.txt", "r")
 # print(N * (N - 1) // 2)
 
 # boj 16987
-def solve(idx, arr):
-    global ans
+# def solve(idx, arr):
+#     global ans
+#
+#     if idx == N:
+#         res = 0
+#         for i in range(N):
+#             if arr[i] <= 0:
+#                 res += 1
+#         if ans < res:
+#             ans = res
+#         return
+#
+#     if arr[idx] > 0:
+#         for i in range(N):
+#             chk = 0
+#             if arr[i] > 0 and i != idx:
+#                 chk = 1
+#                 temp = arr[:]
+#                 temp[i] -= w[idx]
+#                 temp[idx] -= w[i]
+#                 solve(idx + 1, temp)
+#         if not chk:
+#             solve(idx + 1, arr)
+#     else:
+#         solve(idx + 1, arr)
+#
+#
+# N = int(input())
+# s, w, ans = [0] * N, [0] * N, 0
+# for i in range(N):
+#     s[i], w[i] = map(int,input().split())
+#
+# solve(0, s)
+# print(ans)
 
-    if idx == N:
-        res = 0
-        for i in range(N):
-            if arr[i] <= 0:
-                res += 1
-        if ans < res:
-            ans = res
-        return
+# boj 2548
 
-    if arr[idx] > 0:
-        for i in range(N):
-            chk = 0
-            if arr[i] > 0 and i != idx:
-                chk = 1
-                temp = arr[:]
-                temp[i] -= w[idx]
-                temp[idx] -= w[i]
-                solve(idx + 1, temp)
-        if not chk:
-            solve(idx + 1, arr)
-    else:
-        solve(idx + 1, arr)
+# import sys
+# input = sys.stdin.readline
+#
+# N = int(input())
+# arr = sorted(list(map(int, input().split())))
+# idx = 0
+# number = float('inf')
+# diff = float('inf')
+# tempNum = - 1
+# while idx < N:
+#     num = arr[idx]
+#     if tempNum == num:
+#         idx += 1
+#         continue
+#     temp = 0
+#     for i in arr:
+#         temp += abs(num - i)
+#         if temp > diff:
+#             break
+#     if diff >= temp:
+#         if diff == temp:
+#             if number > num:
+#                 number = num
+#                 diff = temp
+#         else:
+#             number = num
+#             diff = temp
+#     tempNum = num
+#     idx += 1
+# print(number)
 
-
+import sys
+input = sys.stdin.readline
 N = int(input())
-s, w, ans = [0] * N, [0] * N, 0
-for i in range(N):
-    s[i], w[i] = map(int,input().split())
+arr = list(map(int, input().split()))
+dic = {}
+for i in arr:
+    if i not in dic:
+        dic[i] = 1
+    else:
+        dic[i] += 1
+print(dic)
 
-solve(0, s)
-print(ans)
+ans, idx, diff = 0, 0, float('inf')
+
+# while idx < N:
+#     temp = 0
+#     num = dic[idx]
+#     for k, v in dic.items():
+#         print(k, v)
