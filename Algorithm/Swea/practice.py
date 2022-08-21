@@ -6023,6 +6023,11 @@ sys.stdin = open("practice_input.txt", "r")
 # solve(0, s)
 # print(ans)
 
+# boj 16479
+# K = int(input())
+# D1, D2 = map(int, input().split())
+# print(K ** 2 - ((D1 - D2) / 2) ** 2)
+
 # boj 2548
 
 # import sys
@@ -6056,22 +6061,17 @@ sys.stdin = open("practice_input.txt", "r")
 #     idx += 1
 # print(number)
 
+# import sys
+# input = sys.stdin.readline
+# N = int(input())
+# arr = sorted(list(map(int, input().split())))
+# l, r = divmod(N, 2)
+# print(arr[l + r - 1])
+
+# boj 1269
 import sys
 input = sys.stdin.readline
-N = int(input())
-arr = list(map(int, input().split()))
-dic = {}
-for i in arr:
-    if i not in dic:
-        dic[i] = 1
-    else:
-        dic[i] += 1
-print(dic)
-
-ans, idx, diff = 0, 0, float('inf')
-
-# while idx < N:
-#     temp = 0
-#     num = dic[idx]
-#     for k, v in dic.items():
-#         print(k, v)
+n, m = map(int, input().split())
+a = set(map(int, input().split()))
+b = set(map(int, input().split()))
+print(len(a - b) + len(b - a))
