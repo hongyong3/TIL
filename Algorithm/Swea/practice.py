@@ -6075,3 +6075,57 @@ sys.stdin = open("practice_input.txt", "r")
 # a = set(map(int, input().split()))
 # b = set(map(int, input().split()))
 # print(len(a - b) + len(b - a))
+
+# boj 10971
+
+# def dfs(n, cost, cnt):
+#     global ans
+#     if cnt == N:
+#         if arr[n][sn]:
+#             if ans > cost + arr[n][sn]:
+#                 ans = cost + arr[n][sn]
+#     for i in range(N):
+#         if not chk[i] and arr[n][i]:
+#             chk[i] = 1
+#             dfs(i, cost + arr[n][i], cnt + 1)
+#             chk[i] = 0
+#
+#
+# N = int(input())
+# arr = [list(map(int, input().split())) for _ in range(N)]
+# chk = [0] * N
+# ans = float('inf')
+# for i in range(N):
+#     sn = i
+#     chk[i] = 1
+#     dfs(i, 0, 1)
+#     chk[i] = 0
+# print(ans)
+
+def dfs(n, cost, cnt):
+    global ans
+    if cnt == N:
+        if arr[n][sn]:
+            if ans > cost + arr[n][sn]:
+                ans = cost + arr[n][sn]
+    for i in range(N):
+        if not chk[i] and arr[n][i]:
+            chk[i] = 1
+            if ans < cost + arr[n][i]:
+                chk[i] = 0
+                continue
+            else:
+                dfs(i, cost + arr[n][i], cnt + 1)
+                chk[i] = 0
+
+
+N = int(input())
+arr = [list(map(int, input().split())) for _ in range(N)]
+chk = [0] * N
+ans = float('inf')
+for i in range(N):
+    sn = i
+    chk[i] = 1
+    dfs(i, 0, 1)
+    chk[i] = 0
+print(ans)
