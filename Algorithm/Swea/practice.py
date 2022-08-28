@@ -6129,3 +6129,33 @@ sys.stdin = open("practice_input.txt", "r")
 #     dfs(i, 0, 1)
 #     chk[i] = 0
 # print(ans)
+
+# boj 2023
+# def solve(num, k):
+#     if k == N:
+#         print(num)
+#         return
+#
+#     for i in la:
+#         chk = 1
+#         num *= 10
+#         num += i
+#         for j in range(2, int(num ** 0.5) + 1):
+#             if num % j == 0:
+#                 chk = 0
+#                 break
+#         if chk:
+#             solve(num, k + 1)
+#         num -= i
+#         num //= 10
+#     return
+#
+# N = int(input())
+# n1 = [2, 3, 5, 7]
+# la = [1, 3, 5, 7, 9]
+# for i in n1:
+#     solve(i, 1)
+
+# boj 10163
+N = int(input())
+arr = [list(map(int, input().split())) for _ in range(N)]
