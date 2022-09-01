@@ -6157,5 +6157,5 @@ sys.stdin = open("practice_input.txt", "r")
 #     solve(i, 1)
 
 # boj 10163
-# N = int(input())
-# arr = [list(map(int, input().split())) for _ in range(N)]
+N = int(input())
+arr = [list(map(int, input().split())) for _ in range(N)]
