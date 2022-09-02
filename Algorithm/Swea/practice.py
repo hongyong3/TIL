@@ -6158,4 +6158,9 @@ sys.stdin = open("practice_input.txt", "r")
 
 # boj 10163
 N = int(input())
-arr = [list(map(int, input().split())) for _ in range(N)]
+# arr = [list(map(int, input().split())) for _ in range(N)]
+sq = []
+for _ in range(N):
+    a, b, c, d = map(int, input().split())
+    sq.append(c * d)
+print(sq)
