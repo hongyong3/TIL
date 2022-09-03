@@ -6163,4 +6163,3 @@ sq = []
 for _ in range(N):
     a, b, c, d = map(int, input().split())
     sq.append(c * d)
-print(sq)
