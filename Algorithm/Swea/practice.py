@@ -6157,9 +6157,21 @@ sys.stdin = open("practice_input.txt", "r")
 #     solve(i, 1)
 
 # boj 10163
+import sys
+input = sys.stdin.readline
+arr = [[0] * 101 for _ in range(101)]
 N = int(input())
-sq = []
-# arr = [list(map(int, input().split())) for _ in range(N)]
-for _ in range(N):
-    a, b, c, d = map(int, input().split())
-    sq.append(c * d)
+for i in range(1, N + 1):
+    sx, sy, w, h = map(int, input().split())
+    for x in range(w):
+        for y in range(h):
+            arr[sx + x][sy + y] = i
+
+ans = [0] * (N + 1)
+for i in arr:
+    for j in i:
+        if j:
+            ans[j] += 1
+
+for i in ans[1:]:
+    print(i)
