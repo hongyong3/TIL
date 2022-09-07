@@ -6157,21 +6157,43 @@ sys.stdin = open("practice_input.txt", "r")
 #     solve(i, 1)
 
 # boj 10163
-import sys
-input = sys.stdin.readline
-arr = [[0] * 101 for _ in range(101)]
+# PyPy3
+# import sys
+# input = sys.stdin.readline
+# arr = [[0] * 1001 for _ in range(1001)]
+# N = int(input())
+# for i in range(1, N + 1):
+#     sx, sy, w, h = map(int, input().split())
+#     for x in range(sx, sx + w):
+#         for y in range(sy, sy + h):
+#             arr[x][y] = i
+#
+# ans = [0] * (N + 1)
+# for i in arr:
+#     for j in i:
+#         if j:
+#             ans[j] += 1
+#
+# for i in ans[1:]:
+#     print(i)
+
+
+# boj 2567
+# arr = [[0] * 101 for _ in range(101)]
+arr = [[0] * 26 for _ in range(26)]
 N = int(input())
-for i in range(1, N + 1):
-    sx, sy, w, h = map(int, input().split())
-    for x in range(w):
-        for y in range(h):
-            arr[sx + x][sy + y] = i
+for _ in range(N):
+    sx, sy = map(int, input().split())
+    for x in range(sx, sx + 10):
+        if arr[x][sy] == 0:
+            arr[x][sy] = 1
+        if arr[x][sy + 10] == 0:
+            arr[x][sy + 10] = 1
+    for y in range(sy, sy + 10):
+        if arr[sx][y] == 0:
+            arr[sx][y] = 1
+        if arr[sx + 10][y] == 0:
+            arr[sx + 10][y] = 1
 
-ans = [0] * (N + 1)
 for i in arr:
-    for j in i:
-        if j:
-            ans[j] += 1
-
-for i in ans[1:]:
-    print(i)
+    print(*i)
