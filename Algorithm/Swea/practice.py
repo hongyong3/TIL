@@ -6185,15 +6185,15 @@ N = int(input())
 for _ in range(N):
     sx, sy = map(int, input().split())
     for x in range(sx, sx + 10):
-        if arr[x][sy] == 0:
-            arr[x][sy] = 1
-        if arr[x][sy + 10] == 0:
-            arr[x][sy + 10] = 1
+        if arr[25 - sy][x] == 0:
+            arr[25 - sy][x] = 1
+        if arr[15 - sy][x] == 0:
+            arr[15 - sy][x] = 1
     for y in range(sy, sy + 10):
-        if arr[sx][y] == 0:
-            arr[sx][y] = 1
-        if arr[sx + 10][y] == 0:
-            arr[sx + 10][y] = 1
-
-for i in arr:
-    print(*i)
+        if arr[25 - y][sx] == 0:
+            arr[25 - y][sx] = 1
+        if arr[25 - y][sx + 9] == 0:
+            arr[25 - y][sx + 9] = 1
+    for i in arr:
+        print(*i)
+    print()
