@@ -6177,23 +6177,35 @@ sys.stdin = open("practice_input.txt", "r")
 # for i in ans[1:]:
 #     print(i)
 
+# swea 1
+# alpha = 'abcdefghijklmnopqrstuvwxyz'
+# T = int(input())
+# for test_case in range(T):
+#     s = input()
+#     ans = 0
+#     for i in range(len(s)):
+#         if alpha[i] == s[i]:
+#             ans += 1
+#         else:
+#             break
+#     print("#{} {}".format(test_case + 1, ans))
 
 # boj 2567
 # arr = [[0] * 101 for _ in range(101)]
-arr = [[0] * 26 for _ in range(26)]
-N = int(input())
-for _ in range(N):
-    sx, sy = map(int, input().split())
-    for x in range(sx, sx + 10):
-        if arr[25 - sy][x] == 0:
-            arr[25 - sy][x] = 1
-        if arr[15 - sy][x] == 0:
-            arr[15 - sy][x] = 1
-    for y in range(sy, sy + 10):
-        if arr[25 - y][sx] == 0:
-            arr[25 - y][sx] = 1
-        if arr[25 - y][sx + 9] == 0:
-            arr[25 - y][sx + 9] = 1
-    for i in arr:
-        print(*i)
-    print()
+# arr = [[0] * 26 for _ in range(26)]
+# N = int(input())
+# for _ in range(N):
+#     sx, sy = map(int, input().split())
+#     for x in range(sx, sx + 10):
+#         if arr[25 - sy][x] == 0:
+#             arr[25 - sy][x] = 1
+#         if arr[15 - sy][x] == 0:
+#             arr[15 - sy][x] = 1
+#     for y in range(sy, sy + 10):
+#         if arr[25 - y][sx] == 0:
+#             arr[25 - y][sx] = 1
+#         if arr[25 - y][sx + 9] == 0:
+#             arr[25 - y][sx + 9] = 1
+#     for i in arr:
+#         print(*i)
+#     print()
