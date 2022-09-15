@@ -36,3 +36,5 @@ for test_case in range(T):
             else:
                 lr = 1
     print("#{} {}".format(test_case + 1, NDepth + startDepth))
+
+    
