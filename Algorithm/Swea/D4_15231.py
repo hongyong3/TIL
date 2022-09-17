@@ -2,9 +2,9 @@ import sys
 sys.stdin = open("D4_15231_input.txt", "r")
 
 '''
-이진트리 깊이 30
-갈 수 있는 길 29
-n = 0~ 
+이진트리 최고 깊이 : 30
+갈 수 있는 길 : 29
+n = 0 ~ 
 [2^n, 2^(n+1) - 1]
 '''
 
@@ -36,5 +36,3 @@ for test_case in range(T):
             else:
                 lr = 1
     print("#{} {}".format(test_case + 1, NDepth + startDepth))
-
-    
