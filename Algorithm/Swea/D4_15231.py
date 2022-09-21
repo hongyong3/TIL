@@ -8,7 +8,7 @@ n = 0 ~
 [2^n, 2^(n+1) - 1]
 '''
 
-# 18090 // 100000 Runtime Error
+# 67928 // 100000
 arr = []
 s, e = 1, 0
 for i in range(30):
@@ -17,6 +17,7 @@ for i in range(30):
     arr.append([i, s // 2, (s // 2) + (s // 4), e])    # depth, startNum, middleNum, endNum
 
 T = int(input())
+ans = []
 for test_case in range(T):
     N, M = map(int, input().split())
 
@@ -35,4 +36,7 @@ for test_case in range(T):
                 lr = 0
             else:
                 lr = 1
-    print("#{} {}".format(test_case + 1, NDepth + startDepth))
+    ans.append("#{} {}".format(test_case + 1, NDepth + startDepth))
+
+for i in ans:
+    print(i)

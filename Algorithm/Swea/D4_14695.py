@@ -137,4 +137,5 @@ for test_case in range(T):
             if a * x + b * y + c * z - d:
                 ans = "NIE"
                 break
+
     print("#{} {}".format(test_case + 1, ans))
