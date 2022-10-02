@@ -6209,3 +6209,42 @@ sys.stdin = open("practice_input.txt", "r")
 #     for i in arr:
 #         print(*i)
 #     print()
+
+# boj 10989
+# import sys
+# input = sys.stdin.readline
+# N = int(input())
+# arr = [0] * 10001
+# for i in range(N):
+#     arr[int(input())] += 1
+#
+# for i in range(10001):
+#     print('%s\n' % i * arr[i], end = '')
+
+# import sys
+# input = sys.stdin.readline
+# N = int(input())
+# arr = {}
+# for i in range(N):
+#     num = int(input())
+#     if num not in arr:
+#         arr[num] = 1
+#     else:
+#         arr[num] += 1
+#
+# for i in sorted(arr.items()):
+#     for _ in range(i[1]):
+#         print(i[0])
+
+# import sys
+# input = sys.stdin.readline
+# N = int(input())
+# arr = [0] * 10001
+# for _ in range(N):
+#     arr[int(input())] += 1
+#
+# for i in range(10001):
+#     for _ in range(arr[i]):
+#         sys.stdout.write(str(i) + '\n')
+
+arr = list(map(int, input().split()))
