@@ -6248,3 +6248,4 @@ sys.stdin = open("practice_input.txt", "r")
 #         sys.stdout.write(str(i) + '\n')
 
 arr = list(map(int, input().split()))
+
