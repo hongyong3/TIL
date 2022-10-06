@@ -6247,5 +6247,8 @@ sys.stdin = open("practice_input.txt", "r")
 #     for _ in range(arr[i]):
 #         sys.stdout.write(str(i) + '\n')
 
-arr = list(map(int, input().split()))
-
+# boj 2072
+N = int(input())
+arr = [[0] * 19 for _ in range(19)]
+for _ in range(N):
+    x, y = map(int, input().split())
