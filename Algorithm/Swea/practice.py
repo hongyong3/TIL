@@ -6248,7 +6248,49 @@ sys.stdin = open("practice_input.txt", "r")
 #         sys.stdout.write(str(i) + '\n')
 
 # boj 2072
+dx = [0, 1, 1, 1] # 오른쪽, 아래, 좌하, 우하
+dy = [1, 0, - 1, 1]
+
+def dfs(x, y, val):
+    res = 0
+    for k in range(4):
+        cnt = 1
+        while True:
+            nx = x + dx[k]
+            ny = y + dy[k]
+            if not (0 <= nx < 19 and 0 <= ny < 19):
+                break
+            if arr[nx][ny] == val:
+                cnt += 1
+            else:
+                break
+        if cnt == 5:
+            res = 1
+            break
+    return res
+
 N = int(input())
 arr = [[0] * 19 for _ in range(19)]
-for _ in range(N):
+for i in range(1, N + 1):
     x, y = map(int, input().split())
+    if i < 9:
+        if i % 2:   # 흑
+            arr[x - 1][y - 1] = 1
+        else:   # 백
+            arr[x - 1][y - 1] = 2
+    else:
+        ans = 0
+        if i % 2:   # 흑
+            arr[x - 1][y - 1] = 1
+            ans = dfs(x - 1, y - 1, 1)
+        else:   # 백
+            arr[x - 1][y - 1] = 2
+            ans = dfs(x - 1, y - 1, 2)
+        if ans == 1:
+            print(1)
+            break
+else:
+    print(- 1)
+
+# for a in arr:
+#     print(* a)
