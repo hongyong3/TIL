@@ -6291,6 +6291,3 @@ for i in range(1, N + 1):
             break
 else:
     print(- 1)
-
-# for a in arr:
-#     print(* a)
