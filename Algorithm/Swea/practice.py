@@ -6248,46 +6248,52 @@ sys.stdin = open("practice_input.txt", "r")
 #         sys.stdout.write(str(i) + '\n')
 
 # boj 2072
-dx = [0, 1, 1, 1] # 오른쪽, 아래, 좌하, 우하
-dy = [1, 0, - 1, 1]
+# import sys
+# from collections import deque
+# input = sys.stdin.readline
+#
+# def bfs(x, y, d, val):
+#     dir = [d, [- i for i in d]]
+#     q = deque()
+#     q.append([x, y])
+#     cnt = 1
+#     while q:
+#         x, y = q.popleft()
+#         for dx, dy in dir:
+#             nx = x + dx
+#             ny = y + dy
+#             if 0 <= nx < 20 and 0 <= ny < 20 and not visited[nx][ny] and arr[nx][ny] == val:
+#                 visited[nx][ny] = 1
+#                 cnt += 1
+#                 q.append([nx, ny])
+#     return cnt
+#
+# N = int(input())
+# arr = [[0] * 20 for _ in range(20)]
+# for i in range(1, N + 1):
+#     x, y = map(int, input().split())
+#     color = 1 if i % 2 else 2
+#     arr[x][y] = color
+#     visited = [[0] * 20 for _ in range(20)]
+#     visited[x][y] = 1
+#
+#     for k in [[- 1, - 1], [- 1, 0], [- 1, 1], [0, 1]]:
+#         if bfs(x, y, k, color) == 5:
+#             print(i)
+#             exit()
+# else:
+#     print(- 1)
 
-def dfs(x, y, val):
-    res = 0
-    for k in range(4):
-        cnt = 1
-        while True:
-            nx = x + dx[k]
-            ny = y + dy[k]
-            if not (0 <= nx < 19 and 0 <= ny < 19):
-                break
-            if arr[nx][ny] == val:
-                cnt += 1
-            else:
-                break
-        if cnt == 5:
-            res = 1
-            break
-    return res
-
-N = int(input())
-arr = [[0] * 19 for _ in range(19)]
-for i in range(1, N + 1):
-    x, y = map(int, input().split())
-    if i < 9:
-        if i % 2:   # 흑
-            arr[x - 1][y - 1] = 1
-        else:   # 백
-            arr[x - 1][y - 1] = 2
-    else:
-        ans = 0
-        if i % 2:   # 흑
-            arr[x - 1][y - 1] = 1
-            ans = dfs(x - 1, y - 1, 1)
-        else:   # 백
-            arr[x - 1][y - 1] = 2
-            ans = dfs(x - 1, y - 1, 2)
-        if ans == 1:
-            print(1)
-            break
-else:
-    print(- 1)
+# boj 2721
+T = []
+W = []
+num1 = 0
+for i in range(1, 301):
+    num1 += i
+    T.append(num1)
+    W.append(num1[- 1])
+print(T)
+print(W)
+T = int(input())
+for _ in range(T):
+    N = int(input())
