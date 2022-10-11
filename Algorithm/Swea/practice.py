@@ -6292,8 +6292,7 @@ for i in range(1, 301):
     num1 += i
     T.append(num1)
     W.append(num1[- 1])
-print(T)
-print(W)
+
 T = int(input())
 for _ in range(T):
     N = int(input())
