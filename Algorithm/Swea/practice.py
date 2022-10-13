@@ -6285,14 +6285,15 @@ sys.stdin = open("practice_input.txt", "r")
 #     print(- 1)
 
 # boj 2721
-T = []
-W = []
-num1 = 0
+T, W, A = [0] * 302, [0] * 302, [0] * 302
+for i in range(1, 302):
+    A[i] = i
+    T[i] = T[i - 1] + A[i]
 for i in range(1, 301):
-    num1 += i
-    T.append(num1)
-    W.append(num1[- 1])
+    for j in range(1, i + 1):
+        W[i] += j * T[j + 1]
 
 T = int(input())
 for _ in range(T):
     N = int(input())
+    print(W[N])
