@@ -6285,15 +6285,26 @@ sys.stdin = open("practice_input.txt", "r")
 #     print(- 1)
 
 # boj 2721
-T, W, A = [0] * 302, [0] * 302, [0] * 302
-for i in range(1, 302):
-    A[i] = i
-    T[i] = T[i - 1] + A[i]
-for i in range(1, 301):
-    for j in range(1, i + 1):
-        W[i] += j * T[j + 1]
+# T, W, A = [0] * 302, [0] * 302, [0] * 302
+# for i in range(1, 302):
+#     A[i] = i
+#     T[i] = T[i - 1] + A[i]
+# for i in range(1, 301):
+#     for j in range(1, i + 1):
+#         W[i] += j * T[j + 1]
+#
+# T = int(input())
+# for _ in range(T):
+#     N = int(input())
+#     print(W[N])
 
-T = int(input())
-for _ in range(T):
-    N = int(input())
-    print(W[N])
+# boj 14467
+N = int(input())
+arr = {}
+for _ in range(N):
+    a, b = map(int, input().split())
+    if a not in arr:
+        arr[a] = 1
+    else:
+        arr[a] += 1
+print(arr)
