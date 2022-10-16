@@ -6299,12 +6299,18 @@ sys.stdin = open("practice_input.txt", "r")
 #     print(W[N])
 
 # boj 14467
+# N = int(input())
+# arr = [[- 1] * 10, [0] * 10]
+#
+# for _ in range(N):
+#     a, b = map(int, input().split())
+#     if arr[0][a - 1] == - 1:
+#         arr[0][a - 1] = b
+#     if arr[0][a - 1] != b:
+#         arr[0][a - 1] = b
+#         arr[1][a - 1] += 1
+# print(sum(arr[1]))
+
+# boj 20500
 N = int(input())
-arr = {}
-for _ in range(N):
-    a, b = map(int, input().split())
-    if a not in arr:
-        arr[a] = 1
-    else:
-        arr[a] += 1
-print(arr)
+# print(2 ** 1515)
