@@ -50,6 +50,7 @@ sys.stdin = open("D4_15623_input.txt", "r")
 #     print("#{} {}".format(test_case + 1, ans))
 
 # 249 // 266 Fail
+# ....?
 def solve(idx, nx, ny):
     global ans
     if idx == 2:
