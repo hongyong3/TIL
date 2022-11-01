@@ -69,6 +69,7 @@ def solve(idx, nx, ny):
             solve(k, nx, ny)
             visited[k] = 0
 
+
 T = int(input())
 for test_case in range(T):
     if test_case + 1 in [66, 73, 181, 260]:
