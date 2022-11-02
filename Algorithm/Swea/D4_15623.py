@@ -56,6 +56,7 @@ def solve(idx, nx, ny):
         ans = min(ans, nx * ny)
         return
 
+
     for k in range(1, N + 1):
         if graph[idx][k] != 0 and not visited[k]:
             visited[k] = 1
@@ -76,6 +77,7 @@ for test_case in range(T):
         temp = input()
     N, M = map(int, input().split())
     graph = [[0] * (N + 1) for _ in range(N + 1)]
+
     for i in range(M):
         A, B, X, Y = map(int, input().split())
         graph[A][B] = [X, Y]
@@ -87,6 +89,7 @@ for test_case in range(T):
             chk1 = 1
         if graph[2][i] != 0:
             chk2 = 1
+    
     if chk1 and chk2:
         ans = float('inf')
         visited = [0] * (N + 1)
