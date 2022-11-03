@@ -89,7 +89,7 @@ for test_case in range(T):
             chk1 = 1
         if graph[2][i] != 0:
             chk2 = 1
-    
+
     if chk1 and chk2:
         ans = float('inf')
         visited = [0] * (N + 1)
@@ -102,4 +102,5 @@ for test_case in range(T):
                 visited[j] = 0
     else:
         ans = - 1
+        
     print("#{} {}".format(test_case + 1, ans))
