@@ -72,7 +72,7 @@ for test_case in range(T):
         temp = input()
     N, M = map(int, input().split())
     graph = [[0] * (N + 1) for _ in range(N + 1)]
-
+    ans = - 1
     for i in range(M):
         A, B, X, Y = map(int, input().split())
         graph[A][B] = [X, Y]
@@ -95,7 +95,4 @@ for test_case in range(T):
                 if ans > numX * numY:
                     solve1(j, numX, numY)
                 visited[j] = 0
-    else:
-        ans = - 1
-
     print("#{} {}".format(test_case + 1, ans))
