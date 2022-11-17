@@ -6311,6 +6311,15 @@ sys.stdin = open("practice_input.txt", "r")
 #         arr[1][a - 1] += 1
 # print(sum(arr[1]))
 
-# boj 20500
+# boj 25965
 N = int(input())
-# print(2 ** 1515)
+for _ in range(N):
+    M = int(input())
+    ans, K, D, A = 0, 0, 0, 0
+    arr = [list(map(int, input().split())) for _ in range(M)]
+    k, d, a = map(int, input().split())
+    for i in arr:
+        temp = i[0] * k - i[1] * d + i[2] * a
+        if temp > 0:
+            ans += temp
+    print(ans)
