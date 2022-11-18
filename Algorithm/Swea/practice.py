@@ -6312,14 +6312,56 @@ sys.stdin = open("practice_input.txt", "r")
 # print(sum(arr[1]))
 
 # boj 25965
+# N = int(input())
+# for _ in range(N):
+#     M = int(input())
+#     ans, K, D, A = 0, 0, 0, 0
+#     arr = [list(map(int, input().split())) for _ in range(M)]
+#     k, d, a = map(int, input().split())
+#     for i in arr:
+#         temp = i[0] * k - i[1] * d + i[2] * a
+#         if temp > 0:
+#             ans += temp
+#     print(ans)
+
+# boj 11034
+# while True:
+#     try:
+#         A, B, C = map(int, input().split())
+#         ans = 0
+#         while True:
+#             AB = B - A
+#             BC = C - B
+#             if AB == 1 and BC == 1:
+#                 break
+#             if AB > BC:
+#                 C = B
+#                 B -= 1
+#             else:
+#                 A = B
+#                 B += 1
+#             ans += 1
+#         print(ans)
+#     except:
+#         exit()
+
+# boj 17615
+import sys
+input = sys.stdin.readline
+
 N = int(input())
-for _ in range(N):
-    M = int(input())
-    ans, K, D, A = 0, 0, 0, 0
-    arr = [list(map(int, input().split())) for _ in range(M)]
-    k, d, a = map(int, input().split())
-    for i in arr:
-        temp = i[0] * k - i[1] * d + i[2] * a
-        if temp > 0:
-            ans += temp
-    print(ans)
+S = input()
+arr = []
+temp, cnt = '', 1
+for i in S:
+    if len(temp) == 0:
+        temp = i
+    else:
+        if temp == i:
+            cnt += 1
+        else:
+            arr.append(temp * cnt)
+            temp = i
+            cnt = 1
+arr.append(temp * cnt)
+print(arr)
