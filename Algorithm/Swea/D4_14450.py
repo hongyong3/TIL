@@ -58,5 +58,4 @@ T = int(input())
 for test_case in range(T):
     L, R, Q = input().split()
     chklen = 1 if len(str(L)) == len(str(R)) else 0
-    print(chklen)
     arr = list(input().split())
