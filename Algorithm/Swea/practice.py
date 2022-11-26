@@ -6346,22 +6346,26 @@ sys.stdin = open("practice_input.txt", "r")
 #         exit()
 
 # boj 17615
-import sys
-input = sys.stdin.readline
+# import sys
+# input = sys.stdin.readline
+#
+# N = int(input())
+# S = input()
+# arr = []
+# temp, cnt = '', 1
+# for i in S:
+#     if len(temp) == 0:
+#         temp = i
+#     else:
+#         if temp == i:
+#             cnt += 1
+#         else:
+#             arr.append(temp * cnt)
+#             temp = i
+#             cnt = 1
+# arr.append(temp * cnt)
+# print(arr)
 
+# boj 1268
 N = int(input())
-S = input()
-arr = []
-temp, cnt = '', 1
-for i in S:
-    if len(temp) == 0:
-        temp = i
-    else:
-        if temp == i:
-            cnt += 1
-        else:
-            arr.append(temp * cnt)
-            temp = i
-            cnt = 1
-arr.append(temp * cnt)
-print(arr)
+arr = [list(map(int, input().split())) for _ in range(N)]
