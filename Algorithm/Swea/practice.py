@@ -6369,4 +6369,13 @@ sys.stdin = open("practice_input.txt", "r")
 # boj 1268
 N = int(input())
 arr = [list(map(int, input().split())) for _ in range(N)]
-print(arr)
+ans = [0] * N
+for i in range(N):
+    visited = [0] * N
+    for j in range(5):
+        for idx in range(N):
+            if idx != i and arr[idx][j] == arr[i][j]:
+                visited[idx] = 1
+    ans[i] = len(list(filter(lambda x: x, visited)))
+
+print(ans.index(max(ans)) + 1)
