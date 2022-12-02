@@ -6379,7 +6379,3 @@ sys.stdin = open("practice_input.txt", "r")
 #     ans[i] = len(list(filter(lambda x: x, visited)))
 #
 # print(ans.index(max(ans)) + 1)
-
-
-N_list=list(map(int,input().split(" ")))
-print(N_list)
