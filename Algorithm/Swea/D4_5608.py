@@ -192,3 +192,27 @@ for test_case in range(T):
     maxCount = max(arr2)
     maxNum = len(arr2) - 1 - arr2[::-1].index(maxCount)
     print("#{} {} {}".format(test_case + 1, maxCount, maxNum))
+
+# def numchk(num):
+#     global ans1, ans2
+#     if num < 8:
+#         ans1 += num
+#         ans2 += num
+#     elif num == 8:
+#         ans1 += 7
+#         ans2 += 7
+#     elif num < 23:
+#         ans1 += 8
+#         ans2 += 15
+#     elif num == 23:
+#         ans1 += 9
+#         ans2 += 23
+#     return
+#
+#
+#
+# T = int(input())
+# for test_case in range(T):
+#     M = int(input())
+#     ans1, ans2 = 0, 0   # 세제곱수, X
+#     a = int(pow(M, 1 / 3))
