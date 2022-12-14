@@ -132,9 +132,15 @@ for test_case in range(T):
     arr = [list(map(int, input().split())) for _ in range(N)]
     ans = "TAK"
     if N > 3:
-        a, b, c, d = v(*arr[0], *arr[1], *arr[2])
-        for x, y, z in arr:
-            if a * x + b * y + c * z - d:
+        idx = 2
+        while idx < N:
+            A, B, C, D = v(*arr[0], *arr[1], *arr[idx])
+            if A == B == C == D == 0:
+                idx += 1
+            else:
+                break
+        for x, y, z in arr[idx:]:
+            if A * x + B * y + C * z - D:
                 ans = "NIE"
                 break
 
