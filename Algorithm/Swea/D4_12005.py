@@ -138,7 +138,7 @@ for test_case in range(T):
     k, m = map(int, input().split())
     n = 1 if k - 1000000 <= 1 else k - 1000000
     maxN = k + 1000000
-    
+
     while n <= maxN:
         if n == 1:
             fnm = n + m
