@@ -4,9 +4,10 @@ sys.stdin = open("D5_15871_input.txt", "r")
 # 101 // 151 Fail
 numArr = [0, 1]
 num = 1
-for i in range(50):
+for i in range(60):
     num *= 2
     numArr.append(num)
+print(numArr)
 
 T = int(input())
 for test_case in range(T):
@@ -27,7 +28,6 @@ for test_case in range(T):
                     if arr[i] not in numArr:
                         ans = "no"
                         break
+        # else:
 
-        else:
-            
     print("#{} {}".format(test_case + 1, ans))
