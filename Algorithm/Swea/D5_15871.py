@@ -27,5 +27,4 @@ for test_case in range(T):
                     if arr[i] not in numArr:
                         ans = "no"
                         break
-
     print("#{} {}".format(test_case + 1, ans))
