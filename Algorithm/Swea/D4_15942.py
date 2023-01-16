@@ -1,33 +1,32 @@
 import sys
 sys.stdin = open("D4_15942_input.txt", "r")
 
+# 14 / 29
 T = int(input())
 for test_case in range(T):
     N, K = map(int, input().split())
     arr = sorted(list(map(int, input().split())))
     ans = 0
-    print(arr)
-    while arr:
-        if len(arr) > 1:
-            for i in range(len(arr)):
-                if K < arr[i]:
-                    ans += 1
-                    K += arr[i - 1]
-                    arr.pop(i - 1)
-                    break
+
+    '''
+    - 처음 보유한 함선이 0인 경우
+    - 처음 보유한 함선이 arr[0]보다 작은 경우
+    - (처음 보유한 함선) + (모든 행성의 인구 - A_n) < A_n
+    '''
+    if K == 0 or K < arr[0] or K + sum(arr[:N - 1]) < arr[- 1]:
+        ans = - 1
+    else:
+        idx = 1
+        while idx < len(arr):
+            if K < arr[idx]:
+                ans += 1
+                K += arr[idx - 1]
+                arr.pop(idx - 1)
+                idx -= 1
             else:
-                if K < arr[- 1]:
-                    ans = - 1
-                    break
-                else:
-                    K -= arr[- 1]
-                    arr.pop(- 1)
-        else:
-            if K < arr[- 1]:
-                ans = - 1
-                break
-            else:
-                K -= arr[- 1]
-                arr.pop(- 1)
-    print(arr)
-    print(ans)
+                idx += 1
+
+        if K < sum(arr):
+            ans += 1
+
+    print("#{} {}".format(test_case + 1, ans))
