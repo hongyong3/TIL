@@ -7,13 +7,15 @@ for test_case in range(T):
     N, K = map(int, input().split())
     arr = sorted(list(map(int, input().split())))
     ans = 0
+    total = sum(arr)
 
     '''
     - 처음 보유한 함선이 0인 경우
     - 처음 보유한 함선이 arr[0]보다 작은 경우
     - (처음 보유한 함선) + (모든 행성의 인구 - A_n) < A_n
     '''
-    if K == 0 or K < arr[0] or K + sum(arr[:N - 1]) < arr[- 1]:
+    
+    if K == 0 or K < arr[0] or K + total < arr[- 1] * 2:
         ans = - 1
     else:
         idx = 1
@@ -28,5 +30,4 @@ for test_case in range(T):
 
         if K < sum(arr):
             ans += 1
-
     print("#{} {}".format(test_case + 1, ans))
