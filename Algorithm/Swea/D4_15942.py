@@ -59,17 +59,16 @@ for test_case in range(T):
                 idx += 1
 
         # 여기만 고치면 끝
-        if K < arr[- 1]:
-            jdx = - 2
-            while True:
-                if K >= arr[jdx]:
-                    K += arr[jdx]
-                    total -= arr[jdx]
-                    ans += 1
-                    arr.pop(jdx)
-                    break
-                else:
-                    jdx += 1
+        jdx = - 2
+        while K < arr[- 1]:
+            if K >= arr[jdx]:
+                K += arr[jdx]
+                total -= arr[jdx]
+                ans += 1
+                arr.pop(jdx)
+                break
+            else:
+                jdx += 1
 
         while K < total:
             ans += 1
