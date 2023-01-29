@@ -37,6 +37,7 @@ sys.stdin = open("D4_15942_input.txt", "r")
 
 
 # 27 / 29 Fail
+# 새로 짜야 할듯..
 T = int(input())
 for test_case in range(T):
     N, K = map(int, input().split())
