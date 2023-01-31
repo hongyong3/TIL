@@ -85,14 +85,34 @@ for test_case in range(T):
     N, K = map(int, input().split())
     arr = sorted(list(map(int, input().split())))
     total = sum(arr)
-
     if K < arr[0] or K + total < arr[- 1] * 2:
         ans = - 1
     else:
-        poplist = []
-        for i in range(N):
-            if K < arr[i]:
-                K += arr[i - 1]
-                poplist.append(i - 1)
-                total -= arr[i - 1]
+        ans, idx = 0, 1
+        while idx < N:
+            if K < arr[idx]:
+                K += arr[idx - 1]
+                total -= arr[idx - 1]
+                arr.pop(idx - 1)
+                # idx -= 1
+                N -= 1
+                ans += 1
+            else:
+                idx += 1
+        jdx = - 2
+        while K < arr[- 1]:
+            if K >= arr[jdx]:
+                K += arr[jdx]
+                total -= arr[jdx]
+                ans += 1
+                arr.pop(jdx)
+
+            else:
+                jdx -= 1
+
+        while K < total:
+            ans += 1
+            K += arr[- 1]
+            total -= arr[- 1]
+            arr.pop(- 1)
     print("#{} {}".format(test_case + 1, ans))
