@@ -87,6 +87,8 @@ for test_case in range(T):
     total = sum(arr)
     if K < arr[0] or K + total < arr[- 1] * 2:
         ans = - 1
+    elif K >= total:
+        ans = 0
     else:
         ans, idx = 0, 1
         while idx < N:
@@ -94,7 +96,6 @@ for test_case in range(T):
                 K += arr[idx - 1]
                 total -= arr[idx - 1]
                 arr.pop(idx - 1)
-                # idx -= 1
                 N -= 1
                 ans += 1
             else:
