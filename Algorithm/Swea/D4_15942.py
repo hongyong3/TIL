@@ -80,6 +80,21 @@ sys.stdin = open("D4_15942_input.txt", "r")
 #
 #     print("#{} {}".format(test_case + 1, ans))
 
+# 22 / 29 Fail
+def upperBound(k, e):
+    global N, K, s, total
+    while s < e:
+        m = (s + e) // 2
+        if k < arr[m]:
+            e = m
+        else:
+            s = m + 1
+    K += arr[s - 1]
+    total -= arr[s - 1]
+    arr.pop(s - 1)
+    N -= 1
+    return s
+
 T = int(input())
 for test_case in range(T):
     N, K = map(int, input().split())
@@ -87,33 +102,11 @@ for test_case in range(T):
     total = sum(arr)
     if K < arr[0] or K + total < arr[- 1] * 2:
         ans = - 1
-    elif K >= total:
-        ans = 0
     else:
-        ans, idx = 0, 1
-        while idx < N:
-            if K < arr[idx]:
-                K += arr[idx - 1]
-                total -= arr[idx - 1]
-                arr.pop(idx - 1)
-                N -= 1
-                ans += 1
-            else:
-                idx += 1
-        jdx = - 2
-        while K < arr[- 1]:
-            if K >= arr[jdx]:
-                K += arr[jdx]
-                total -= arr[jdx]
-                ans += 1
-                arr.pop(jdx)
-
-            else:
-                jdx -= 1
-
+        ans = 0
+        s = 0
         while K < total:
+            arr[upperBound(K, N - 1)]
             ans += 1
-            K += arr[- 1]
-            total -= arr[- 1]
-            arr.pop(- 1)
+
     print("#{} {}".format(test_case + 1, ans))
