@@ -82,17 +82,27 @@ sys.stdin = open("D4_15942_input.txt", "r")
 
 # 22 / 29 Fail
 def upperBound(k, e):
-    global N, K, s, total
+    global N, K, s, total, visited
     while s < e:
         m = (s + e) // 2
         if k < arr[m]:
             e = m
         else:
             s = m + 1
-    K += arr[s - 1]
-    total -= arr[s - 1]
-    arr.pop(s - 1)
-    N -= 1
+    if not visited[s - 1]:
+        K += arr[s - 1]
+        total -= arr[s - 1]
+        visited[s - 1] = 1
+    else:
+        idx = 1
+        while True:
+            if not visited[s - 1 - idx]:
+                K += arr[s - 1 - idx]
+                total -= arr[s - 1 - idx]
+                visited[s- 1 - idx] = 1
+                break
+            else:
+                idx += 1
     return s
 
 T = int(input())
@@ -104,6 +114,7 @@ for test_case in range(T):
         ans = - 1
     else:
         ans = 0
+        visited = [0] * N
         s = 0
         while K < total:
             arr[upperBound(K, N - 1)]
