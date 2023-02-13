@@ -29,8 +29,8 @@ def solve(n):
 T = int(input())
 for test_case in range(T):
     N = int(input())
-    if N < 100:
-        arr = [str(i) + '.png' for i in range(1, N + 1)][:min(50, N)]
+    if N < 143:
+        arr = sorted([str(i) + '.png' for i in range(1, N + 1)])[:min(50, N)]
     else:
         ans = l = len(str(N)) - 1
         arr = [str(10 ** i) + '.png' for i in range(l)] # 1, 10, 100, 10^(n - 1)...
@@ -66,4 +66,3 @@ for test_case in range(T):
                 solve(num)
 
     print("#{}".format(test_case + 1), * sorted(arr))
-    print(len(arr))
