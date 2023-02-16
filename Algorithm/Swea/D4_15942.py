@@ -131,7 +131,7 @@ def upperBound(k):
             s = m + 1
         else:
             e = m
-    return e
+    return e - 1
 
 
 def find(v):
@@ -146,12 +146,13 @@ for test_case in range(T):
     arr = sorted(list(map(int, input().split())))
     total = sum(arr)
     visited = [0] * N
-    point = [i for i in range(N + 1)]
+    point = [i for i in range(N)]
+    print(arr)
     ans = 0
     while K < total:
         idx = upperBound(K)
         if idx:
-            val = find(idx) - 1
+            val = find(idx)
             if visited[val]:
                 ans = - 1
                 break
@@ -160,8 +161,9 @@ for test_case in range(T):
             total -= arr[val]
             ans += 1
             visited[val] = 1
+
             if val:
-                point[val] = find(val)
+                point[val] = find(val - 1)
         else:
             ans = - 1
             break
