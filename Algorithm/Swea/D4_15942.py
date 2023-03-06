@@ -147,7 +147,7 @@ for test_case in range(T):
     total = sum(arr)
     visited = [0] * N
     point = [i for i in range(N)]
-    print(arr)
+
     ans = 0
     while K < total:
         idx = upperBound(K)
