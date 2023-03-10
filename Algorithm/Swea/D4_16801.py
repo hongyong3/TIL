@@ -11,8 +11,3 @@ for test_case in range(T):
     for i in range(N):
         arr.append(arrA[i] * arrF[i])
         # arr.append([arrA[i], arrF[i], arrA[i] * arrF[i]])
-    print(K)
-    print(arrA)
-    print(arrF)
-    print(arr)
-    print()
