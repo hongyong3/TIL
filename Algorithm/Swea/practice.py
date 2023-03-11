@@ -6379,3 +6379,39 @@ sys.stdin = open("practice_input.txt", "r")
 #     ans[i] = len(list(filter(lambda x: x, visited)))
 #
 # print(ans.index(max(ans)) + 1)
+
+# import time
+#
+# def binary_search(array, elem):
+#     low = 0
+#     high = len(array) - 1
+#     temp = 0
+#
+#     while low < high and not temp:
+#         mid = (low + high) // 2
+#         if array[mid] == elem:
+#             temp = 1
+#         else:
+#             if elem < arr[mid]:
+#                 high = mid - 1
+#             else:
+#                 low = mid + 1
+#     return temp
+#
+# arr = [i for i in range(55000000)]
+# start = time.time()
+# arrr = sorted(arr)
+# print(time.time() - start)
+#
+# start = time.time()
+# arrr = binary_search(arr, 0)
+# print(time.time() - start)
+
+arr = [1, 2, 3, 4, 5, 6, 6]
+dic = {}
+for i in range(7):
+    if arr[i] not in dic:
+        dic[arr[i]] = [i]
+    else:
+        dic[arr[i]].append(i)
+print(dic)
