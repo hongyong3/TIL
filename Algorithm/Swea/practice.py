@@ -6407,11 +6407,47 @@ sys.stdin = open("practice_input.txt", "r")
 # arrr = binary_search(arr, 0)
 # print(time.time() - start)
 
-arr = [1, 2, 3, 4, 5, 6, 6]
-dic = {}
-for i in range(7):
-    if arr[i] not in dic:
-        dic[arr[i]] = [i]
-    else:
-        dic[arr[i]].append(i)
-print(dic)
+# arr = [1, 2, 3, 4, 5, 6, 6]
+# dic = {}
+# for i in range(7):
+#     if arr[i] not in dic:
+#         dic[arr[i]] = [i]
+#     else:
+#         dic[arr[i]].append(i)
+# print(dic)
+
+
+
+# 경우 1) arr[i] > arr[j]:
+# - arr[i]가 arr[j + 1]도 볼 수 있다.
+
+# 경우 2) arr[i] < arr[j]:
+# - arr[i]가 arr[j + 1]을 볼 수 없다.
+
+# 경우 3) arr[i] == arr[j]:
+# - arr[i] > arr[j + 1]인 경우
+# - arr[i] < arr[j + 1]인 경우
+
+T = int(input())
+for test_case in range(T):
+    N = int(input())
+    arr = list(map(int, input().split()))
+    ans = 0
+    visited = [[0] * N for _ in range(N)]
+    idx, jdx = 0, 1
+    chk1 = 0    # 1 > 2
+    chk2 = 0    # 1 = 2
+    chk3 = 0    # 1 < 2
+
+    while idx < N - 1:
+        if arr[idx] > arr[jdx]:
+            chk1 = 1
+            jdx += 1
+
+        elif arr[idx] == arr[jdx]:
+            chk2 = 1
+            jdx += 1
+
+        else:
+            chk3 = 1
+            jdx += 1
