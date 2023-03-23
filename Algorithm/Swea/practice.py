@@ -6428,6 +6428,7 @@ sys.stdin = open("practice_input.txt", "r")
 # - arr[i] > arr[j + 1]인 경우
 # - arr[i] < arr[j + 1]인 경우
 
+# boj 16803
 T = int(input())
 for test_case in range(T):
     N = int(input())
