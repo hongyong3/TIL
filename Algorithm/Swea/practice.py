@@ -6429,26 +6429,57 @@ sys.stdin = open("practice_input.txt", "r")
 # - arr[i] < arr[j + 1]인 경우
 
 # boj 16803
-T = int(input())
-for test_case in range(T):
-    N = int(input())
-    arr = list(map(int, input().split()))
-    ans = 0
-    visited = [[0] * N for _ in range(N)]
-    idx, jdx = 0, 1
-    chk1 = 0    # 1 > 2
-    chk2 = 0    # 1 = 2
-    chk3 = 0    # 1 < 2
+# T = int(input())
+# for test_case in range(T):
+#     N = int(input())
+#     arr = list(map(int, input().split()))
+#     ans = 0
+#     visited = [[0] * N for _ in range(N)]
+#     idx, jdx = 0, 1
+#     chk1 = 0    # 1 > 2
+#     chk2 = 0    # 1 = 2
+#     chk3 = 0    # 1 < 2
+#
+#     while idx < N - 1:
+#         if arr[idx] > arr[jdx]:
+#             chk1 = 1
+#             jdx += 1
+#
+#         elif arr[idx] == arr[jdx]:
+#             chk2 = 1
+#             jdx += 1
+#
+#         else:
+#             chk3 = 1
+#             jdx += 1
 
-    while idx < N - 1:
-        if arr[idx] > arr[jdx]:
-            chk1 = 1
-            jdx += 1
+# boj 6588
+# import sys
+# input = sys.stdin.readline
+# num = 5000001
+# arr = [1] * num
+# for i in range(2, int((num - 1) ** 0.5) + 1):
+#     if arr[i]:
+#         for k in range(i + i, num, i):
+#             arr[k] = 0
+# while True:
+#     n = int(input())
+#     if n == 0:
+#         break
+#     chk = 0
+#     for i in range(3, len(arr) + 1):
+#         if arr[i] and arr[n - i]:
+#             print("{} = {} + {}".format(n, i, n - i))
+#             chk = 1
+#             break
+#     if chk == 0:
+#         print("Goldbach's conjecture is wrong.")
 
-        elif arr[idx] == arr[jdx]:
-            chk2 = 1
-            jdx += 1
-
-        else:
-            chk3 = 1
-            jdx += 1
+# boj 11444
+import sys
+input = sys.stdin.readline
+n = int(input())
+arr = [0, 1]
+for i in range(2, n + 1):
+    arr.append(arr[i - 2] + arr[i - 1])
+print(arr[n] % 1000000007)

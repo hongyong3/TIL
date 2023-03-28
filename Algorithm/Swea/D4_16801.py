@@ -40,5 +40,11 @@ sys.stdin = open("D4_16801_input.txt", "r")
 
 '''
 K의 값이 너무 큼.
-시간 복잡도에 K가 상관없이 코드 작성.
+시간복잡도에 K가 상관 없는 코드 작성.
 '''
+
+T = int(input())
+for test_case in range(T):
+    N, K = map(int, input().split())
+    arrA = list(map(int, input().split()))
+    arrF = list(map(int, input().split()))
