@@ -6478,8 +6478,30 @@ sys.stdin = open("practice_input.txt", "r")
 # boj 11444
 import sys
 input = sys.stdin.readline
+mod = 1000000007
+def power(adj, n):
+    if n == 1:
+        return adj
+    elif n % 2:
+        return multi(power(adj, n - 1), adj)
+    else:
+        return power(multi(adj, adj), n // 2)
+
+
+def multi(a, b):
+    temp = [[0] * len(b[0]) for _ in range(2)]
+    for i in range(2):
+        for j in range(len(b[0])):
+            total = 0
+            for k in range(2):
+                total += a[i][k] * b[k][j]
+            temp[i][j] = total % mod
+    return temp
+
 n = int(input())
-arr = [0, 1]
-for i in range(2, n + 1):
-    arr.append(arr[i - 2] + arr[i - 1])
-print(arr[n] % 1000000007)
+adj = [[1, 1], [1, 0]]
+start = [[1], [1]]
+if n < 3:
+    print(1)
+else:
+    print(multi(power(adj, n - 2), start)[0][0])
