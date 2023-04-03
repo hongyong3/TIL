@@ -6476,32 +6476,50 @@ sys.stdin = open("practice_input.txt", "r")
 #         print("Goldbach's conjecture is wrong.")
 
 # boj 11444
-import sys
-input = sys.stdin.readline
-mod = 1000000007
-def power(adj, n):
-    if n == 1:
-        return adj
-    elif n % 2:
-        return multi(power(adj, n - 1), adj)
-    else:
-        return power(multi(adj, adj), n // 2)
+# import sys
+# input = sys.stdin.readline
+# mod = 1000000007
+# def power(adj, n):
+#     if n == 1:
+#         return adj
+#     elif n % 2:
+#         return multi(power(adj, n - 1), adj)
+#     else:
+#         return power(multi(adj, adj), n // 2)
+#
+#
+# def multi(a, b):
+#     temp = [[0] * len(b[0]) for _ in range(2)]
+#     for i in range(2):
+#         for j in range(len(b[0])):
+#             total = 0
+#             for k in range(2):
+#                 total += a[i][k] * b[k][j]
+#             temp[i][j] = total % mod
+#     return temp
+#
+# n = int(input())
+# adj = [[1, 1], [1, 0]]
+# start = [[1], [1]]
+# if n < 3:
+#     print(1)
+# else:
+#     print(multi(power(adj, n - 2), start)[0][0])
 
-
-def multi(a, b):
-    temp = [[0] * len(b[0]) for _ in range(2)]
-    for i in range(2):
-        for j in range(len(b[0])):
-            total = 0
-            for k in range(2):
-                total += a[i][k] * b[k][j]
-            temp[i][j] = total % mod
-    return temp
-
-n = int(input())
-adj = [[1, 1], [1, 0]]
-start = [[1], [1]]
-if n < 3:
-    print(1)
+k, m = 3, 5
+if k - 619 <= 0:
+    n = 1
 else:
-    print(multi(power(adj, n - 2), start)[0][0])
+    n = k - 619
+while n <= k + 619:
+    if n == 1:
+        fnm = n + m
+    elif n % 2:
+        fnm = n + 1 + (m * 2)
+        if fnm % n == 0:
+            fnm += 2
+    else:
+        fnm = n + (2 * m - 1)
+    if fnm - n == k ^ n:
+        break
+    n += 1

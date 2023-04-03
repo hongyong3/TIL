@@ -133,26 +133,43 @@ sys.stdin = open("D4_12005_input.txt", "r")
 #         print(n)
 
 # 5 // 12 Fail
+# T = int(input())
+# for test_case in range(T):
+#     k, m = map(int, input().split())
+#     n = 1 if k - 1000000 <= 1 else k - 1000000
+#     maxN = k + 1000000
+#
+#     while n <= maxN:
+#         if n == 1:
+#             fnm = n + m
+#         elif n % 2:   # 홀수
+#             mok, nam = m // n, m % n
+#             if nam:
+#                 fnm = (n + 1) * (mok * 1) + nam
+#             else:
+#                 fnm = n + (n + 1) * mok
+#         else:   # 짝수
+#             fnm = n + (2 * m) - 1
+#         if fnm - n == k ^ n:
+#             break
+#         n += 1
+#     else:
+#         n = - 1
+#     print("#{} {}".format(test_case + 1, n))
+
 T = int(input())
 for test_case in range(T):
     k, m = map(int, input().split())
-    n = 1 if k - 1000000 <= 1 else k - 1000000
-    maxN = k + 1000000
+    if k - 619 <= 0:
+        n = 1   # 범위는 n <= k + 619
+    else:
+        n = k - 619 # 범위는 k - 619 <= n <= k + 619
 
-    while n <= maxN:
+    while n <= k + 619:
         if n == 1:
             fnm = n + m
-        elif n % 2:   # 홀수
-            mok, nam = m // n, m % n
-            if nam:
-                fnm = (n + 1) * (mok * 1) + nam
-            else:
-                fnm = n + (n + 1) * mok
-        else:   # 짝수
-            fnm = n + (2 * m) - 1
-        if fnm - n == k ^ n:
-            break
-        n += 1
-    else:
-        n = - 1
-    print("#{} {}".format(test_case + 1, n))
+        elif n % 2: # odd num
+            fnm = (n + 1) + (m * 2)
+            pass
+        else:   # even num
+            pass
