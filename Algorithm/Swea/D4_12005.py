@@ -157,19 +157,28 @@ sys.stdin = open("D4_12005_input.txt", "r")
 #         n = - 1
 #     print("#{} {}".format(test_case + 1, n))
 
+import math
 T = int(input())
 for test_case in range(T):
     k, m = map(int, input().split())
-    if k - 619 <= 0:
-        n = 1   # 범위는 n <= k + 619
+    if k - 617 <= 0:
+        n = 1
     else:
-        n = k - 619 # 범위는 k - 619 <= n <= k + 619
-
-    while n <= k + 619:
+        n = k - 617
+    while n <= k + 617:
         if n == 1:
             fnm = n + m
-        elif n % 2: # odd num
-            fnm = (n + 1) + (m * 2)
-            pass
-        else:   # even num
-            pass
+        else:
+            fnm, cnt = n + 1, 0
+            while cnt != m:
+                if math.gcd(fnm, n) == 1:
+                    cnt += 1
+                    if cnt == m:
+                        break
+                fnm += 1
+        if fnm - n == k ^ n:
+            break
+        n += 1
+    else:
+        n = - 1
+    print("#{} {}".format(test_case + 1, n))

@@ -6506,20 +6506,40 @@ sys.stdin = open("practice_input.txt", "r")
 # else:
 #     print(multi(power(adj, n - 2), start)[0][0])
 
-k, m = 3, 5
-if k - 619 <= 0:
-    n = 1
-else:
-    n = k - 619
-while n <= k + 619:
-    if n == 1:
-        fnm = n + m
-    elif n % 2:
-        fnm = n + 1 + (m * 2)
-        if fnm % n == 0:
-            fnm += 2
-    else:
-        fnm = n + (2 * m - 1)
-    if fnm - n == k ^ n:
-        break
-    n += 1
+# import math
+#
+# k, m = 6, 5
+# if k - 619 <= 0:
+#     n = 1
+# else:
+#     n = k - 619
+#
+# n = 6
+# while n <= k + 619:
+#         if n == 1:
+#             fnm = n + m
+#         else: # odd num
+#             fnm, cnt = n + 1, 0
+#             while cnt != m:
+#                 if math.gcd(fnm, n) == 1:
+#                     cnt += 1
+#                     if cnt == m:
+#                         break
+#                 fnm += 1
+#         if fnm - n == k ^ n:
+#             break
+#         n += 1
+# else:
+#     n = - 1
+def factorization(n):
+    res = set()
+    d = 2
+    while d <= n:
+        if n % d == 0:
+            res.add(d)
+            n /= d
+        else:
+            d += 1
+    return sorted(res)
+
+print(factorization(2354346547676))

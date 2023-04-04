@@ -8,6 +8,17 @@ for test_case in range(T):
     arr = list(map(int, input().split()))
     ans = 0
     idx = 0
-    while idx < N:
-        if X % arr[idx]:
-            idx += 1
+    if X == 0:
+        if X in arr:
+            pass
+    else:
+        cut = []
+        idx = 0
+        for i in range(N):
+            if arr[i] == 0:
+                continue
+            if X % arr[i]:
+                cut.append([idx, i])
+                idx = i + 1
+        else:
+            cut.append([idx, N])
