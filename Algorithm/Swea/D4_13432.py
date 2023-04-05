@@ -13,7 +13,7 @@ def factorization(n):
     while d <= n:
         if n % d == 0:
             res.add(d)
-            n /= d
+            n //= d
         else:
             d += 1
     return sorted(res)

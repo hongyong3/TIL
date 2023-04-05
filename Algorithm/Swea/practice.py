@@ -6531,15 +6531,19 @@ sys.stdin = open("practice_input.txt", "r")
 #         n += 1
 # else:
 #     n = - 1
-def factorization(n):
-    res = set()
-    d = 2
-    while d <= n:
-        if n % d == 0:
-            res.add(d)
-            n /= d
-        else:
-            d += 1
-    return sorted(res)
+# def factorization(n):
+#     res = set()
+#     d = 2
+#     while d <= n:
+#         if n % d == 0:
+#             res.add(d)
+#             n /= d
+#         else:
+#             d += 1
+#     return sorted(res)
+#
+# print(factorization(2354346547676))
 
-print(factorization(2354346547676))
+a = 15
+a /= 3
+print(a)
