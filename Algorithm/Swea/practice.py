@@ -6544,6 +6544,17 @@ sys.stdin = open("practice_input.txt", "r")
 #
 # print(factorization(2354346547676))
 
-a = 15
-a /= 3
-print(a)
+# swea1
+# T = int(input())
+# for test_case in range(T):
+#     N = int(input())
+#     ans = 2 * N + 1
+#     for i in range(1, N + 1):
+#         ans += (2 * int((N ** 2 - i ** 2) ** 0.5) + 1) * 2
+#     print("#{} {}".format(test_case + 1, ans))
+
+# swea2
+T = int(input())
+for test_case in range(T):
+    N = int(input())
+    arr = list(map(int, input().split()))
