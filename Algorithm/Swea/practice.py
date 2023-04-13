@@ -6554,7 +6554,7 @@ sys.stdin = open("practice_input.txt", "r")
 #     print("#{} {}".format(test_case + 1, ans))
 
 # swea2
-T = int(input())
-for test_case in range(T):
-    N = int(input())
-    arr = list(map(int, input().split()))
+# T = int(input())
+# for test_case in range(T):
+#     N = int(input())
+#     arr = list(map(int, input().split()))
