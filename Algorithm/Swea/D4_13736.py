@@ -109,13 +109,21 @@ A : 나연, B : 다현, K번 반복
 #         cycle += 1
 #     print("#{} {}".format(test_case + 1, arr[K % cycle]))
 
+
+def cycle(n, total):
+    if n == 0:
+        return 1
+    res = cycle(n // 2, total)
+    res = (res * res) % total
+    if n & 1:
+        res = (res * 2) % total
+    return res
+
+
 T = int(input())
 for test_case in range(T):
     A, B, K = map(int, input().split())
-    if A == B:
-        ans = 0
-    else:
-        if A > B:
-            A, B = B, A
-        arr = [A]
-        
+    total = A + B
+    res = (cycle(K, total) * A) % total
+    ans = min(res, total - res)
+    print("#{} {}".format(test_case + 1, ans))
