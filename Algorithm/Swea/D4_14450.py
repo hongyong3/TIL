@@ -46,11 +46,11 @@ sys.stdin = open("D4_14450_input.txt", "r")
 #
 #     print(ans)
 
-# 자릿수가 같을 경우
+# 자리수가 같을 경우
 def same():
     pass
 
-# 자릿수가 다를 경우
+# 자리수가 다를 경우
 def diff():
     pass
 
