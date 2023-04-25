@@ -6558,3 +6558,8 @@ sys.stdin = open("practice_input.txt", "r")
 # for test_case in range(T):
 #     N = int(input())
 #     arr = list(map(int, input().split()))
+
+# swea1
+T = int(input())
+for test_case in range(T):
+    N = int(input())
