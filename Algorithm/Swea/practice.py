@@ -6560,6 +6560,8 @@ sys.stdin = open("practice_input.txt", "r")
 #     arr = list(map(int, input().split()))
 
 # swea1
-T = int(input())
-for test_case in range(T):
-    N = int(input())
+
+for t in range(int(input())):
+    S,T=input().split()
+    a="yes"if S*len(T)==T*len(S) else "no"
+    print(f'#{t+1} {a}')
