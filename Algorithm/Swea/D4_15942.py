@@ -123,47 +123,49 @@ sys.stdin = open("D4_15942_input.txt", "r")
 #     print("#{} {}".format(test_case + 1, ans))
 
 
-def upperBound(k):
-    s, e = 0, N - 1
+def upperBound(n, k):
+    s, e = 0, n
     while s < e:
         m = (s + e) // 2
         if arr[m] <= k:
             s = m + 1
         else:
             e = m
-    return e - 1
+    return e
 
 
-def find(v):    # 수정 필요
+def find(v):
     if point[v] == v:
         return v
     else:
         point[v] = find(point[v])
+        return point[v]
 
 T = int(input())
 for test_case in range(T):
     N, K = map(int, input().split())
-    arr = sorted(list(map(int, input().split())))
+    arr = [0] + sorted(list(map(int, input().split())))
     total = sum(arr)
-    visited = [0] * N
-    point = [i for i in range(N)]
-
+    visited = [0] * (N + 1)
+    point = [i for i in range(N + 1)]
     ans = 0
-    while K < total:
-        idx = upperBound(K)
-        if idx:
-            val = find(idx)
-            if visited[val]:
+
+    while total > K:
+        p = upperBound(N + 1, K) - 1
+
+        if p > 0:
+            p = find(p)
+            if visited[p]:
                 ans = - 1
                 break
 
-            K += arr[val]
-            total -= arr[val]
+            K += arr[p]
+            total -= arr[p]
             ans += 1
-            visited[val] = 1
+            visited[p] = 1
 
-            if val:
-                point[val] = find(val - 1)
+            if p:
+                point[p] = find(p - 1)
         else:
             ans = - 1
             break
