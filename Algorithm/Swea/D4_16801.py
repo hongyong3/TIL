@@ -48,4 +48,3 @@ for test_case in range(T):
     N, K = map(int, input().split())
     arrA = list(map(int, input().split()))
     arrF = list(map(int, input().split()))
-    

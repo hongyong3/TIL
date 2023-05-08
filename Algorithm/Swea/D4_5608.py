@@ -166,32 +166,32 @@ print(dp[n])
 # for test_case in range(T):
 #     M = int(input())
 
-T = int(input())
-for test_case in range(T):
-    N = int(input())
-
-    idx = 0
-    arr1 = [0]
-    arr2 = [0] * (N + 1)
-    maxCount, maxNum = 0, 0
-
-    for i in range(1, N):
-        if pow(i, 3) < N:
-            arr1.append(pow(i, 3))
-            arr2[pow(i, 3)] = 1
-        else:
-            break
-    arr1.append(0)
-
-    for i in range(N + 1):
-        if i == arr1[idx]:
-            idx += 1
-        else:
-            arr2[i] = arr2[i - arr1[idx - 1]] + 1
-
-    maxCount = max(arr2)
-    maxNum = len(arr2) - 1 - arr2[::-1].index(maxCount)
-    print("#{} {} {}".format(test_case + 1, maxCount, maxNum))
+# T = int(input())
+# for test_case in range(T):
+#     N = int(input())
+#
+#     idx = 0
+#     arr1 = [0]
+#     arr2 = [0] * (N + 1)
+#     maxCount, maxNum = 0, 0
+#
+#     for i in range(1, N):
+#         if pow(i, 3) < N:
+#             arr1.append(pow(i, 3))
+#             arr2[pow(i, 3)] = 1
+#         else:
+#             break
+#     arr1.append(0)
+#
+#     for i in range(N + 1):
+#         if i == arr1[idx]:
+#             idx += 1
+#         else:
+#             arr2[i] = arr2[i - arr1[idx - 1]] + 1
+#
+#     maxCount = max(arr2)
+#     maxNum = len(arr2) - 1 - arr2[::-1].index(maxCount)
+#     print("#{} {} {}".format(test_case + 1, maxCount, maxNum))
 
 # def numchk(num):
 #     global ans1, ans2
@@ -216,3 +216,8 @@ for test_case in range(T):
 #     M = int(input())
 #     ans1, ans2 = 0, 0   # 세제곱수, X
 #     a = int(pow(M, 1 / 3))
+
+'''
+X 이하의 세제곱수중에 가장 큰 세제곱수를 골라 X에서 뺀 후, 이를 반복한다.
+
+'''
