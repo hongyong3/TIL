@@ -11,11 +11,13 @@ for test_case in range(T):
     total = sum(arrA)
     i = 0
     l = Q - N
+    s = arrA[i]
+    e = total // N
     while l:
         ai = total // N
         print(ai, end = ' ')
-        # total -= arrA[i]
-        # total += ans[- 1]
+        total -= s
+        total += ans[- 1]
         l -= 1
         i += 1
     print()
