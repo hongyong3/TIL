@@ -6561,7 +6561,21 @@ sys.stdin = open("practice_input.txt", "r")
 
 # swea1
 
-for t in range(int(input())):
-    S,T=input().split()
-    a="yes"if S*len(T)==T*len(S) else "no"
-    print(f'#{t+1} {a}')
+# for t in range(int(input())):
+#     S,T=input().split()
+#     a="yes"if S*len(T)==T*len(S) else "no"
+#     print(f'#{t+1} {a}')
+
+# boj 21598
+# for _ in range(int(input())):
+#     print("SciComLove")
+
+# boj 2738
+# N, M = map(int, input().split())
+# A = [list(map(int, input().split())) for _ in range(N)]
+# B = [list(map(int, input().split())) for _ in range(N)]
+# for i in range(N):
+#     for j in range(M):
+#         A[i][j] += B[i][j]
+# for i in A:
+#     print(*i)

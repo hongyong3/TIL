@@ -9,16 +9,19 @@ for test_case in range(T):
     arrX = list(map(int, input().split()))
     print("#{}".format(test_case + 1), *arrA, end=' ')
     total = sum(arrA)
-    i = 0
+    i, j = 0, 0
     l = Q - N
-    s = arrA[i]
-    e = total // N
+    e = [total // N]
+
     while l:
         ai = total // N
+        e.append(ai)
         print(ai, end = ' ')
-        total -= s
-        total += ans[- 1]
+        if i < N:
+            total += ai - arrA[i]
+            i += 1
+        else:
+            total += ai - e[j]
+            j += 1
         l -= 1
-        i += 1
     print()
-    # print("#{}".format(test_case + 1), *ans)
