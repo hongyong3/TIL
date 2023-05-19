@@ -6581,12 +6581,13 @@ sys.stdin = open("practice_input.txt", "r")
 #     print(*i)
 
 # oj 18870
-import sys
-input = sys.stdin.readline
-N = int(input())
-arr = list(map(int, input().split()))
-X = list(sorted(set(arr)))
-dic = {X[i]: i for i in range(len(X))}
+# import sys
+# input = sys.stdin.readline
+# N = int(input())
+# arr = list(map(int, input().split()))
+# X = list(sorted(set(arr)))
+# dic = {X[i]: i for i in range(len(X))}
+#
+# for i in arr:
+#     print(dic[i], end = " ")
 
-for i in arr:
-    print(dic[i], end = " ")
