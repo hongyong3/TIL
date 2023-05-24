@@ -16,6 +16,5 @@ for test_case in range(T):
             dic[y] = x
         else:
             dic[y] += x
-        # print(x, y)
-    print(dic)
+
     letters = [list(input()) for _ in range(N)]
