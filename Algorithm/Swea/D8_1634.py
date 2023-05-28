@@ -18,8 +18,6 @@ for test_case in range(1):
     for i in range(26):
         print(xy[i], alpha[i])
 
-
-
     # for _ in range(M):
     #     x, y = input().split()
     #     if x not in dic:
