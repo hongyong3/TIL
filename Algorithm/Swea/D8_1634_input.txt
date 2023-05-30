@@ -1,4 +1,11 @@
 2
+3 3
+a c
+b a
+a b
+aaa abc
+abc aaa
+acm bcm
 9 5
 c t
 i r
@@ -14,10 +21,3 @@ can the
 work people
 it of
 out the
-3 3
-a c
-b a
-a b
-aaa abc
-abc aaa
-acm bcm
