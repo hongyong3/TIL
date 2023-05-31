@@ -25,4 +25,4 @@ for test_case in range(T):
             x = 10 ** i
             arr.append(str(x) + '.png')
         cnt = len(arr)
-        # while cnt < 50:
+        while cnt < 50:
