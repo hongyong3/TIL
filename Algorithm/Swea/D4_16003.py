@@ -12,7 +12,6 @@ sys.stdin = open("D4_16003_input.txt", "r")
 10^n + 10^(n-1) + 1 ~ 10^n + 10^(n-1) + 9
 '''
 
-
 T = int(input())
 for test_case in range(T):
     N = int(input())
