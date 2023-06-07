@@ -1,6 +1,8 @@
 import sys
 sys.stdin = open("D5_17301_input.txt", "r")
 
+
+# RunTime Error
 T = int(input())
 for test_case in range(T):
     N = int(input())
