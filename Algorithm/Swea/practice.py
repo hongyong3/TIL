@@ -6580,7 +6580,7 @@ sys.stdin = open("practice_input.txt", "r")
 # for i in A:
 #     print(*i)
 
-# oj 18870
+# boj 18870
 # import sys
 # input = sys.stdin.readline
 # N = int(input())
@@ -6591,3 +6591,35 @@ sys.stdin = open("practice_input.txt", "r")
 # for i in arr:
 #     print(dic[i], end = " ")
 
+# swea 1
+# T = int(input())
+# for test_case in range(T):
+#     N = int(input())
+#     s = input()
+#     if N % 2:
+#         ans = "No"
+#     else:
+#         ans = "Yes" if s[:N // 2] == s[N // 2:] else "No"
+#     print("#{} {}".format(test_case + 1, ans))
+
+# T = int(input())
+# for test_case in range(T):
+#     N = int(input())
+#     s = input()
+#     print("#{} {}".format(test_case + 1, "Yes" if N % 2 == 0 and s[:N // 2] == s[N // 2:] else "No"))
+
+# swea 2
+'''
+파스칼의 삼각형과 이항계수의 성질
+x, y가 가능한 경우 
+1. (x + y) // 3 == 0인 경우
+만약 x가 y보다 크다면 x == 2y
+'''
+T = int(input())
+for test_case in range(T):
+    X, Y = map(int, input().split())
+    if (X + Y) % 3:
+        ans = 0
+    else:
+        
+        print(ans)
