@@ -6608,6 +6608,7 @@ sys.stdin = open("practice_input.txt", "r")
 #     s = input()
 #     print("#{} {}".format(test_case + 1, "Yes" if N % 2 == 0 and s[:N // 2] == s[N // 2:] else "No"))
 
+
 # swea 2
 '''
 파스칼의 삼각형과 이항계수의 성질
@@ -6616,10 +6617,16 @@ x, y가 가능한 경우
 만약 x가 y보다 크다면 x == 2y
 '''
 T = int(input())
+mod = 1000000007
 for test_case in range(T):
     X, Y = map(int, input().split())
+    if X < Y:
+        X, Y = Y, X
+
     if (X + Y) % 3:
         ans = 0
     else:
-        
-        print(ans)
+        if X > Y and X // Y != 2:
+            ans = 0
+        else:
+            pass
