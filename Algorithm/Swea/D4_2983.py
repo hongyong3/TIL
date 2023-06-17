@@ -45,3 +45,4 @@ for test_case in range(T):
     SA = manber_myers(S, range(N), 1)
     kasai(S, SA)
     print("#{} {}".format(test_case + 1, max(lcp[:N])))
+    
