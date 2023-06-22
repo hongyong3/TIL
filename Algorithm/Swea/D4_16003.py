@@ -29,4 +29,5 @@ for test_case in range(T):
                 arr.append(str(i) + '.png')
                 if cnt == 50:
                     break
+
     print("#{}".format(test_case + 1), *arr)
