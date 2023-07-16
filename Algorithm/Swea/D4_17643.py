@@ -18,4 +18,10 @@ for test_case in range(T):
         if max(X, Y) < 3 ** i:
             break
         arr.append(3 ** i)
+    idx, jdx = 0, len(arr)
+    for i in range(len(arr)):
+        if X > arr[i]:
+            idx = i
+            break
+    print(idx, jdx)
     print(arr)
