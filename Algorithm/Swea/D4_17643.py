@@ -29,9 +29,3 @@ for test_case in range(T):
         if X < arr[i]:
             break
         idx += 1
-
-
-    print(arr)
-    print(idx, jdx)
-    print(arr[:idx], arr[idx:jdx])
-    print()
