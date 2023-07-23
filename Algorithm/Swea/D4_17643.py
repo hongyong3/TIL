@@ -14,7 +14,7 @@ for test_case in range(T):
         X, Y = Y, X
 
     if X % 3:
-        chk = 1 # chk이면 X에 1이 , 아니면 Y에 1이
+        chk = 1 # chk이면 X에 1, 아니면 Y에 1
 
     arr = []
     for i in range(20):
