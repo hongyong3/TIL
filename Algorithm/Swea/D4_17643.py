@@ -29,3 +29,4 @@ for test_case in range(T):
         if X < arr[i]:
             break
         idx += 1
+        
