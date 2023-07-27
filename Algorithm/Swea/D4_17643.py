@@ -7,26 +7,28 @@ for test_case in range(T):
     X, Y = abs(X), abs(Y)
     ans = "yes"
     if X % 3 and Y % 3:
-        print("#{} {}".format(test_case + 1, "no"))
-        continue
+        ans = "no"
+    else:
+        if X > Y:
+            X, Y = Y, X
+        if X % 3:
+            chk = 1 # chk이면 X에 1, 아니면 Y에 1
 
-    if X > Y:
-        X, Y = Y, X
+        arr = []
+        num = 0
 
-    if X % 3:
-        chk = 1 # chk이면 X에 1, 아니면 Y에 1
+        for i in range(20):
+            p = 3 ** i
+            arr.append(p)
+            if Y < p - num:
+                arr.pop()
+                break
+            num += p
 
-    arr = []
-    for i in range(20):
-        arr.append(3 ** i)
-        if max(X, Y) <= 3 ** i:
-            if 3 ** i not in arr:
-                arr.append(3 ** i)
-            break
+        idx, jdx = 0, len(arr)
+        for i in range(len(arr)):
+            if X < arr[i]:
+                break
+            idx += 1
 
-    idx, jdx = 0, len(arr)
-    for i in range(len(arr)):
-        if X < arr[i]:
-            break
-        idx += 1
         
