@@ -88,32 +88,33 @@ sys.stdin = open("D5_13550_input.txt", "r")
 #     print(i)
 
 # 2808 / 1799854 Runtime Error
-mod = 1000003
-T = int(input())
-for test_case in range(T):
-    a, d, n = map(int, input().split())
-    n %= mod
-    if n % 2:
-        a1 = a
-        an = a + (n - 1) * d
-        am = (a1 + an) // 2
-        m = am
-        for i in range(n // 2, 0, - 1):
-            am *= (m + i * d) * (m - i * d) % mod
-            am %= mod
-    else:
-        a2 = a + d
-        an = a + (n - 1) * d
-        am = (a2 + an) // 2
-        m = am
-        for i in range(n // 2 - 1, 0, - 1):
-            am *= (m + i * d) * (m - i * d) % mod
-            am %= mod
-        am *= a
-        am %= 1000003
-    print("#{} {}".format(test_case + 1, am % mod))
+# mod = 1000003
+# T = int(input())
+# for test_case in range(T):
+#     a, d, n = map(int, input().split())
+#     n %= mod
+#     if n % 2:
+#         a1 = a
+#         an = a + (n - 1) * d
+#         am = (a1 + an) // 2
+#         m = am
+#         for i in range(n // 2, 0, - 1):
+#             am *= (m + i * d) * (m - i * d) % mod
+#             am %= mod
+#     else:
+#         a2 = a + d
+#         an = a + (n - 1) * d
+#         am = (a2 + an) // 2
+#         m = am
+#         for i in range(n // 2 - 1, 0, - 1):
+#             am *= (m + i * d) * (m - i * d) % mod
+#             am %= mod
+#         am *= a
+#         am %= 1000003
+#     print("#{} {}".format(test_case + 1, am % mod))
 
 T = int(input())
+ans = []
 for test_case in range(T):
     a, d, n = map(int, input().split())
     n %= 1000003
@@ -135,4 +136,6 @@ for test_case in range(T):
             am %= 1000003
         am *= a
         am %= 1000003
-    print("#{} {}".format(test_case + 1, am))
+    ans.append("#{} {}".format(test_case + 1, am))
+for i in ans:
+    print(i)

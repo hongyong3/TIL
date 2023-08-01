@@ -221,3 +221,16 @@ print(dp[n])
 X 이하의 세제곱수중에 가장 큰 세제곱수를 골라 X에서 뺀 후, 이를 반복한다.
 
 '''
+
+for i in range(1,31):
+    print(i ** 3)
+# T = int(input())
+# for test_case in range(T):
+#     M = int(input())
+#     cnt, ans, num = 0, 0, 1
+#     while num ** 3 < M:
+#         num += 1
+#     num -= 1
+#     ans = num ** 3
+#     print(num)
+#     print(ans)
