@@ -1,4 +1,6 @@
-3
-3 3
-2 2
-999999 999999
+5
+hello 9
+aaaa 3
+apple 4
+aaabbb 6
+bb 3

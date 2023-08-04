@@ -6631,7 +6631,51 @@ sys.stdin = open("practice_input.txt", "r")
 #         else:
 #             pass
 
-arr = []
-for i in range(20):
-    arr.append(3 ** i)
-print(arr)
+# swea 17900
+# T = int(input())
+# for test_case in range(T):
+#     n = input().split()
+#     cnt = [[0] * 5 for _ in range(5)]
+#     for i in range(119):
+#         cnt[0][ord(n[i][0]) - 49] += 1
+#         cnt[1][ord(n[i][1]) - 49] += 1
+#         cnt[2][ord(n[i][2]) - 49] += 1
+#         cnt[3][ord(n[i][3]) - 49] += 1
+#         cnt[4][ord(n[i][4]) - 49] += 1
+#     ans = ''
+#     for i in range(5):
+#         for j in range(5):
+#             if cnt[i][j] == 23:
+#                 ans += str(j + 1)
+#     print(ans)
+
+# swea 11092
+# T = int(input())
+# for test_case in range(T):
+#     N = int(input())
+#     arr = list(map(int, input().split()))
+#     minIdx, maxIdx = 0, 0
+#     for i in range(N):
+#         if arr[i] >= arr[maxIdx]:
+#             maxIdx = i
+#         if arr[i] < arr[minIdx]:
+#             minIdx = i
+#     print("#{} {}".format(test_case + 1, abs(minIdx - maxIdx)))
+
+# swea 13389
+T = int(input())
+for test_case in range(1):
+    S, N = input().split()
+    N = int(N)
+    alpha, password = '', 0
+
+    for i in range(len(S) - 1):
+        alpha += S[i]
+        if S[i] == S[i + 1]:
+            alpha += 'a'
+    alpha += S[- 1]
+
+    for i in range(len(alpha)):
+        password += (ord(alpha[:: - 1][i]) - 96) * 26 ** i
+    print(password)
+    
