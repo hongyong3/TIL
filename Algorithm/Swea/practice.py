@@ -6678,4 +6678,3 @@ for test_case in range(1):
     for i in range(len(alpha)):
         password += (ord(alpha[:: - 1][i]) - 96) * 26 ** i
     print(password)
-    
