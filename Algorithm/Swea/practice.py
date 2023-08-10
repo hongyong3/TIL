@@ -6663,18 +6663,31 @@ sys.stdin = open("practice_input.txt", "r")
 #     print("#{} {}".format(test_case + 1, abs(minIdx - maxIdx)))
 
 # swea 13389
+# T = int(input())
+# for test_case in range(1):
+#     S, N = input().split()
+#     N = int(N)
+#     alpha, password = '', 0
+#
+#     for i in range(len(S) - 1):
+#         alpha += S[i]
+#         if S[i] == S[i + 1]:
+#             alpha += 'a'
+#     alpha += S[- 1]
+#
+#     for i in range(len(alpha)):
+#         password += (ord(alpha[:: - 1][i]) - 96) * 26 ** i
+#     print(password)
+
+
+# swea 17937
+# T = int(input())
+# for test_case in range(T):
+#     A, B = map(int, input().split())
+#     print("#{} {}".format(test_case + 1, A if A == B else 1))
+
+# swea 17938
+
 T = int(input())
-for test_case in range(1):
-    S, N = input().split()
-    N = int(N)
-    alpha, password = '', 0
-
-    for i in range(len(S) - 1):
-        alpha += S[i]
-        if S[i] == S[i + 1]:
-            alpha += 'a'
-    alpha += S[- 1]
-
-    for i in range(len(alpha)):
-        password += (ord(alpha[:: - 1][i]) - 96) * 26 ** i
-    print(password)
+for test_case in range(T):
+    X, Y, Z = map(int, input().split())

@@ -1,6 +1,4 @@
-5
-hello 9
-aaaa 3
-apple 4
-aaabbb 6
-bb 3
+3
+3 3 3
+1 2 3
+7 4 4
