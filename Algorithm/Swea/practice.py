@@ -6687,7 +6687,13 @@ sys.stdin = open("practice_input.txt", "r")
 #     print("#{} {}".format(test_case + 1, A if A == B else 1))
 
 # swea 17938
-
 T = int(input())
 for test_case in range(T):
     X, Y, Z = map(int, input().split())
+    if X == Y == Z:
+        ans1 = ans2 = ans3 = '1' * X
+    else:
+        # ans1, ans2, ans3 = [], [], []
+        if max(X, Y, Z) == X:
+            ans1, ans2 = [''] * X, [''] * X
+        print(ans1, ans2)
