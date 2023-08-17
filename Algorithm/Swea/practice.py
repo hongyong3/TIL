@@ -6694,6 +6694,7 @@ for test_case in range(T):
         ans1 = ans2 = ans3 = '1' * X
     else:
         # ans1, ans2, ans3 = [], [], []
-        if max(X, Y, Z) == X:
-            ans1, ans2 = [''] * X, [''] * X
+        ans1 = ['1'] * X
+        ans2 = ['1'] * X
+        ans3 = ['1'] *
         print(ans1, ans2)
