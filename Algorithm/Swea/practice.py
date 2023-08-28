@@ -6700,6 +6700,14 @@ sys.stdin = open("practice_input.txt", "r")
 #         print(ans1, ans2, ans3)
 
 # swea 17940
+def solve(n):
+    global A, B
+    if n - B < A:
+        return
+    
+
+
+
 T = int(input())
 for test_case in range(T):
     N, A, B = map(int, input().split())
@@ -6708,5 +6716,5 @@ for test_case in range(T):
         if N - B < A:
             ans = - 1
         else:
-            
+            solve(N)
     print(ans)
