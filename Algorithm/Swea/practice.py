@@ -6707,7 +6707,6 @@ def solve(n):
     
 
 
-
 T = int(input())
 for test_case in range(T):
     N, A, B = map(int, input().split())
