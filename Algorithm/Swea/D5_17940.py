@@ -6,6 +6,7 @@ T = int(input())
 for test_case in range(T):
     N, A, B = map(int, input().split())
     ans = 0
+
     if N != B:
         if N - B < A:
             ans = - 1
@@ -15,4 +16,5 @@ for test_case in range(T):
                 ans += N * B
             if N != B:
                 ans += A * (N - A)
+
     print("#{} {}".format(test_case + 1, ans))
