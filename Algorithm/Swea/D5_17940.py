@@ -8,10 +8,10 @@ for test_case in range(T):
     ans = 0
 
     if N != B:
-        if N - B < A:
+        if N < A + B:
             ans = - 1
         else:
-            while N - B >= A:
+            while N >= A + B:
                 N -= B
                 ans += N * B
             if N != B:
