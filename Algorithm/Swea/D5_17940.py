@@ -16,5 +16,4 @@ for test_case in range(T):
                 ans += N * B
             if N != B:
                 ans += A * (N - A)
-
     print("#{} {}".format(test_case + 1, ans))
