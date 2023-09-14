@@ -6701,17 +6701,32 @@ sys.stdin = open("practice_input.txt", "r")
 
 # swea 17940
 # Fail 59 // 191
+# T = int(input())
+# for test_case in range(T):
+#     N, A, B = map(int, input().split())
+#     ans = 0
+#     if N != B:
+#         if N - B < A:
+#             ans = - 1
+#         else:
+#             while N - B >= A:
+#                 N -= B
+#                 ans += N * B
+#             if N != B:
+#                 ans += A * (N - A)
+#     print("#{} {}".format(test_case + 1, ans))
+
+# swea 18662
+# Fail 38 // 61
 T = int(input())
 for test_case in range(T):
-    N, A, B = map(int, input().split())
+    A, B, C = list(map(int, input().split()))
     ans = 0
-    if N != B:
-        if N - B < A:
-            ans = - 1
+    if B - A != C - B:
+        if max(A, B, C) == A:
+            ans = A - B
+        elif max(A, B, C) == B:
+            ans = min(B - (A + C) / 2, 2 * B - A + C)
         else:
-            while N - B >= A:
-                N -= B
-                ans += N * B
-            if N != B:
-                ans += A * (N - A)
-    print("#{} {}".format(test_case + 1, ans))
+            ans = min(abs(A - 2 * B - C), abs(B - (A + C) / 2))
+    print("#{} {}".format(test_case + 1, round(ans, 1)))
