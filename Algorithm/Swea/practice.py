@@ -6729,5 +6729,4 @@ for test_case in range(T):
             ans = min(B - (A + C) / 2, 2 * B - A + C)
         else:
             ans = min(abs(A - 2 * B - C), abs(B - (A + C) / 2))
-
     print("#{} {}".format(test_case + 1, round(ans, 1)))
