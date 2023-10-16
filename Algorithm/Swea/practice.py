@@ -6718,15 +6718,32 @@ sys.stdin = open("practice_input.txt", "r")
 
 # swea 18662
 # Fail 38 // 61
+# T = int(input())
+# for test_case in range(T):
+#     A, B, C = list(map(int, input().split()))
+#     ans = 0
+#     if B - A != C - B:
+#         if max(A, B, C) == A:
+#             ans = A - B
+#         elif max(A, B, C) == B:
+#             ans = min(B - (A + C) / 2, 2 * B - A + C)
+#         else:
+#             ans = min(abs(A - 2 * B - C), abs(B - (A + C) / 2))
+#     print("#{} {}".format(test_case + 1, round(ans, 1)))
+
+# swea 18799
+
+from itertools import combinations
 T = int(input())
 for test_case in range(T):
-    A, B, C = list(map(int, input().split()))
-    ans = 0
-    if B - A != C - B:
-        if max(A, B, C) == A:
-            ans = A - B
-        elif max(A, B, C) == B:
-            ans = min(B - (A + C) / 2, 2 * B - A + C)
-        else:
-            ans = min(abs(A - 2 * B - C), abs(B - (A + C) / 2))
-    print("#{} {}".format(test_case + 1, round(ans, 1)))
+    N = int(input())
+    arr = list(map(int, input().split()))
+    avg = 0
+    for i in range(1, N + 1):
+        tot = list(combinations(arr, i))
+        for j in tot:
+            avg += sum(j) / i
+    ans = avg / (2 ** N - 1)
+    if ans == int(ans):
+        ans = int(ans)
+    print("#{} {}".format(test_case + 1, ans))
