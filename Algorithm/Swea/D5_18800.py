@@ -15,4 +15,4 @@ for test_case in range(T):
         ans = - 1
     else:
         ans = 0
-    print(ans)
+    
