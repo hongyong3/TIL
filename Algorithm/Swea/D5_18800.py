@@ -17,4 +17,3 @@ for test_case in range(T):
     if N < len(chk):    # except
         ans = - 1
     else:
-        
