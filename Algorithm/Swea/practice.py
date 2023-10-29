@@ -6806,5 +6806,15 @@ sys.stdin = open("practice_input.txt", "r")
 T = int(input())
 for test_case in range(T):
     N = int(input())
-    arr = sorted([list(map(int, input().split())) for _ in range(N)])
-    print(arr)
+    arr = []
+    mk, mp = float('inf'), 0
+    for _ in range(N):
+        k, p = map(int, input().split())
+        arr.append([k, p])
+        if mk > k:
+            mk = k
+        if mp < p:
+            mp = p
+
+    arr = sorted(arr)
+    -
