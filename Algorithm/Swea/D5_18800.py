@@ -17,4 +17,4 @@ for test_case in range(T):
     if N < len(chk):    # except
         ans = - 1
     else:
-        
+        # 제일 작은 것을 옮기는 게 좋은가?
