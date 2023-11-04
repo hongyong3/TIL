@@ -6817,4 +6817,4 @@ for test_case in range(T):
             mp = p
 
     arr = sorted(arr)
-    -
+    print(arr)
