@@ -6,3 +6,4 @@ for test_case in range(T):
     N = int(input())
     arr = [input() for _ in range(N)]
     # arr = list(map(int, input().split()))
+    alpha = [0] * 26
