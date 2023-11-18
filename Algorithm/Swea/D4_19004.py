@@ -20,4 +20,5 @@ for test_case in range(1):
     else:
         ans = float('inf')
         # 탐색 해보자..
-        # for i in range()
+        for i in range(len(coordinate)):
+            
