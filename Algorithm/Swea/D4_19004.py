@@ -20,5 +20,7 @@ for test_case in range(1):
     else:
         ans = float('inf')
         # 탐색 해보자..
-        for i in range(len(coordinate)):
-            
+        for i in range(1, len(coordinate)):
+            for j in range(len(coordinate[i])):
+                x, y = coordinate[i][j][0], coordinate[i][j][1]
+                
