@@ -1,6 +1,17 @@
 import sys
 sys.stdin = open("D4_19004_input.txt", "r")
 
+def solve(k, dis):
+    global ans
+    if k == K:
+        if dis < ans:
+            ans = dis
+        else:
+            return
+
+    while
+
+
 T = int(input())
 for test_case in range(1):
     N, K = map(int, input().split())
@@ -19,8 +30,8 @@ for test_case in range(1):
         ans = - 1
     else:
         ans = float('inf')
-        # 탐색 해보자..
-        for i in range(1, len(coordinate)):
-            for j in range(len(coordinate[i])):
-                x, y = coordinate[i][j][0], coordinate[i][j][1]
-                
+        # 탐색 해보자..  가지치기 필수
+        solve(1, 0)   # K, distance
+        # for i in range(1, len(coordinate)):
+        #     for j in range(len(coordinate[i])):
+        #         x, y = coordinate[i][j][0], coordinate[i][j][1]
