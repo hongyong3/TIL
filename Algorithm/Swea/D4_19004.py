@@ -35,4 +35,4 @@ for test_case in range(T):
         # for i in range(1, len(coordinate)):
         #     for j in range(len(coordinate[i])):
         #         x, y = coordinate[i][j][0], coordinate[i][j][1]
-    print(ans)
+    
