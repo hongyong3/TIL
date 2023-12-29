@@ -8,9 +8,14 @@ for test_case in range(T):
     maxH = max(arr)
     ans = 0
     h = arr[0]
+
     for i in arr[1:]:
-        if h < i:
+        if h == maxH:
+            ans += 1
+            continue
+        elif h < i:
             h = i
         else:
             ans += 1
+
     print("#{} {}".format(test_case + 1, ans))
